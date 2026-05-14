@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "conceptnet_edges_path": "conceptnet_expanded_edges.json",
+    "review_instructions": "For each pending ConceptNet lemma edge, inspect source_options and target_options. Fill selected_source_synset and selected_target_synset with synset ids, then set decision to accept. Use reject to skip.",
+    "synsets_path": "wordnet_concept_synsets.json"
+  },
+  "summary": {
+    "ambiguous_lemma_count": 44,
+    "auto_resolved_edge_count": 998,
+    "conceptnet_edge_count": 2006,
+    "manual_review_edge_count": 451,
+    "skipped_unambiguous_self_loop_count": 557
+  }
+}

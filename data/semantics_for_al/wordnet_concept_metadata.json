@@ -1,0 +1,175 @@
+{
+  "counts": {
+    "after_degree_filter": 4391,
+    "after_polysemy_filter": 7349,
+    "after_surface_filter": 10165,
+    "candidate_edge_count": 8312,
+    "final_edge_count": 1045,
+    "final_synset_count": 512,
+    "initial_candidates": 13967,
+    "largest_component_edge_count": 1660,
+    "largest_component_size": 820,
+    "per_pos_largest_component_sizes": {},
+    "per_root_largest_component_sizes": {
+      "animal.n.01": 94,
+      "artifact.n.01": 84,
+      "bad.a.01": 36,
+      "body_part.n.01": 210,
+      "change.v.01": 25,
+      "cold.a.01": 2,
+      "communicate.v.02": 16,
+      "consume.v.02": 13,
+      "food.n.01": 190,
+      "good.a.01": 43,
+      "hot.a.01": 0,
+      "large.a.01": 0,
+      "location.n.01": 83,
+      "make.v.03": 12,
+      "move.v.02": 13,
+      "new.a.01": 9,
+      "old.a.01": 11,
+      "plant.n.02": 19,
+      "small.a.01": 0,
+      "touch.v.01": 9
+    }
+  },
+  "metadata": {
+    "allowed_relations": [
+      "also_see",
+      "attribute",
+      "cause",
+      "entailment",
+      "hypernym",
+      "hyponym",
+      "instance_hypernym",
+      "instance_hyponym",
+      "member_holonym",
+      "member_meronym",
+      "part_holonym",
+      "part_meronym",
+      "similar_to",
+      "substance_holonym",
+      "substance_meronym",
+      "verb_group"
+    ],
+    "graph_filter": {
+      "component_mode": "per-root",
+      "max_degree": 16,
+      "min_degree": 1
+    },
+    "max_depths": {
+      "adjective": 4,
+      "noun": 3,
+      "verb": 3
+    },
+    "polysemy_filter": {
+      "ambiguous_lemma_fraction": 1.0,
+      "max_same_pos_senses": {
+        "adjective": 3,
+        "noun": 5,
+        "verb": 4
+      },
+      "max_total_senses": 10
+    },
+    "requested_roots": {
+      "adjective": [
+        "hot.a.01",
+        "cold.a.01",
+        "large.a.01",
+        "small.a.01",
+        "new.a.01",
+        "old.a.01",
+        "good.a.01",
+        "bad.a.01"
+      ],
+      "noun": [
+        "animal.n.01",
+        "plant.n.02",
+        "artifact.n.01",
+        "food.n.01",
+        "body_part.n.01",
+        "location.n.01"
+      ],
+      "verb": [
+        "move.v.02",
+        "change.v.01",
+        "consume.v.02",
+        "communicate.v.02",
+        "make.v.03",
+        "touch.v.01"
+      ]
+    },
+    "seed": 42,
+    "surface_form_filter": "Keep only lowercase single-token alphabetic WordNet lemma forms; drop spaces, underscores, hyphens, digits, symbols, and uppercase forms.",
+    "target_count_ranges": {
+      "adjective": [
+        40,
+        60
+      ],
+      "noun": [
+        350,
+        400
+      ],
+      "verb": [
+        30,
+        60
+      ]
+    },
+    "target_counts": {
+      "adjective": 60,
+      "noun": 400,
+      "verb": 52
+    },
+    "target_total": 512
+  },
+  "summary": {
+    "distribution": {
+      "dominant_root": {
+        "count": 80,
+        "root": "body_part.n.01",
+        "share": 0.1562
+      },
+      "pos_counts": {
+        "adjective": 60,
+        "noun": 400,
+        "verb": 52
+      },
+      "root_counts": {
+        "animal.n.01": 80,
+        "artifact.n.01": 79,
+        "bad.a.01": 19,
+        "body_part.n.01": 80,
+        "change.v.01": 9,
+        "cold.a.01": 2,
+        "communicate.v.02": 9,
+        "consume.v.02": 9,
+        "food.n.01": 80,
+        "good.a.01": 19,
+        "location.n.01": 79,
+        "make.v.03": 8,
+        "move.v.02": 9,
+        "new.a.01": 9,
+        "old.a.01": 11,
+        "plant.n.02": 2,
+        "touch.v.01": 8
+      }
+    },
+    "final_average_degree": 2.0508,
+    "final_isolated_synset_count": 0,
+    "final_relation_counts": {
+      "also_see": 46,
+      "entailment": 3,
+      "hypernym": 319,
+      "hyponym": 319,
+      "member_holonym": 8,
+      "member_meronym": 8,
+      "part_holonym": 115,
+      "part_meronym": 115,
+      "similar_to": 70,
+      "substance_holonym": 19,
+      "substance_meronym": 19,
+      "verb_group": 4
+    },
+    "warnings": []
+  }
+}
