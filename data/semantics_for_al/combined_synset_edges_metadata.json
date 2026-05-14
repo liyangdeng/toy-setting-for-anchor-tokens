@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "conceptnet_edges_path": "conceptnet_expanded_edges.json",
+    "merge_strategy": "Keep WordNet synset edges unchanged. Convert unambiguous ConceptNet lemma edges to synset edges automatically. Add ambiguous ConceptNet edges only when the review file marks them accepted with selected source and target synsets.",
+    "review_decisions_path": null,
+    "synsets_path": "wordnet_concept_synsets.json",
+    "wordnet_edges_path": "wordnet_concept_edges.json"
+  },
+  "summary": {
+    "auto_conceptnet_synset_edge_count": 998,
+    "combined": {
+      "edge_count": 1959,
+      "relation_counts": {
+        "Antonym": 7,
+        "AtLocation": 21,
+        "DerivedFrom": 33,
+        "DistinctFrom": 4,
+        "FormOf": 3,
+        "HasA": 6,
+        "HasProperty": 3,
+        "IsA": 60,
+        "MadeOf": 3,
+        "MannerOf": 38,
+        "MotivatedByGoal": 1,
+        "PartOf": 20,
+        "RelatedTo": 612,
+        "SimilarTo": 25,
+        "Synonym": 71,
+        "UsedFor": 7,
+        "also_see": 46,
+        "entailment": 3,
+        "hypernym": 319,
+        "hyponym": 319,
+        "member_holonym": 8,
+        "member_meronym": 8,
+        "part_holonym": 115,
+        "part_meronym": 115,
+        "similar_to": 70,
+        "substance_holonym": 19,
+        "substance_meronym": 19,
+        "verb_group": 4
+      },
+      "source_type_counts": {
+        "conceptnet": 914,
+        "wordnet": 1045
+      }
+    },
+    "pending_review_edge_count": 451,
+    "reviewed_conceptnet_synset_edge_count": 0,
+    "skipped_unambiguous_self_loop_count": 557,
+    "wordnet_edge_count": 1045
+  }
+}
