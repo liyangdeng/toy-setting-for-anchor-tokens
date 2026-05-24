@@ -17,11 +17,6 @@
   {
     "relation": "part_meronym",
     "source": "abdomen.n.01",
-    "target": "abdominal_cavity.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "abdomen.n.01",
     "target": "hypochondrium.n.01"
   },
   {
@@ -35,13 +30,13 @@
     "target": "navel.n.01"
   },
   {
-    "relation": "part_holonym",
+    "relation": "hyponym",
     "source": "abdominal.n.01",
-    "target": "abdomen.n.01"
+    "target": "external_oblique_muscle.n.01"
   },
   {
     "relation": "part_holonym",
-    "source": "abdominal_cavity.n.01",
+    "source": "abdominal.n.01",
     "target": "abdomen.n.01"
   },
   {
@@ -65,14 +60,9 @@
     "target": "scapula.n.01"
   },
   {
-    "relation": "similar_to",
-    "source": "adept.s.01",
-    "target": "skilled.a.01"
-  },
-  {
     "relation": "hyponym",
     "source": "adipose_tissue.n.01",
-    "target": "belly.n.02"
+    "target": "atheroma.n.01"
   },
   {
     "relation": "hyponym",
@@ -97,6 +87,11 @@
   {
     "relation": "member_meronym",
     "source": "aggregate.n.03",
+    "target": "nekton.n.01"
+  },
+  {
+    "relation": "member_meronym",
+    "source": "aggregate.n.03",
     "target": "plankton.n.01"
   },
   {
@@ -115,9 +110,24 @@
     "target": "brew.n.01"
   },
   {
-    "relation": "hypernym",
-    "source": "alewife.n.01",
-    "target": "fish.n.02"
+    "relation": "hyponym",
+    "source": "alcohol.n.01",
+    "target": "home_brew.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "alcohol.n.01",
+    "target": "hooch.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "alcohol.n.01",
+    "target": "kava.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "alcohol.n.01",
+    "target": "koumiss.n.01"
   },
   {
     "relation": "hypernym",
@@ -143,6 +153,11 @@
     "relation": "hypernym",
     "source": "ammunition.n.01",
     "target": "weaponry.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "amniote.n.01",
+    "target": "vertebrate.n.01"
   },
   {
     "relation": "member_meronym",
@@ -171,18 +186,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "anchovy.n.01",
-    "target": "fish.n.02"
-  },
-  {
-    "relation": "hypernym",
     "source": "antiperspirant.n.01",
     "target": "toiletry.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "antipodes.n.01",
-    "target": "region.n.03"
   },
   {
     "relation": "part_holonym",
@@ -205,6 +210,11 @@
     "target": "pendulum.n.01"
   },
   {
+    "relation": "hypernym",
+    "source": "appendicularia.n.01",
+    "target": "tunicate.n.01"
+  },
+  {
     "relation": "similar_to",
     "source": "applaudable.s.01",
     "target": "worthy.a.01"
@@ -215,9 +225,9 @@
     "target": "skilled.a.01"
   },
   {
-    "relation": "hypernym",
-    "source": "archduchy.n.01",
-    "target": "domain.n.02"
+    "relation": "part_holonym",
+    "source": "archenteron.n.01",
+    "target": "gastrula.n.01"
   },
   {
     "relation": "hypernym",
@@ -230,9 +240,19 @@
     "target": "garment.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "armpit.n.01",
-    "target": "shoulder.n.01"
+    "relation": "hypernym",
+    "source": "armyworm.n.01",
+    "target": "caterpillar.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "arytenoid.n.01",
+    "target": "cartilage.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "ascidian.n.01",
+    "target": "tunicate.n.01"
   },
   {
     "relation": "hypernym",
@@ -248,6 +268,11 @@
     "relation": "part_holonym",
     "source": "asthenosphere.n.01",
     "target": "crust.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "atheroma.n.01",
+    "target": "adipose_tissue.n.01"
   },
   {
     "relation": "hypernym",
@@ -271,8 +296,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "backwater.n.02",
-    "target": "region.n.03"
+    "source": "bacteria.n.01",
+    "target": "microorganism.n.01"
   },
   {
     "relation": "similar_to",
@@ -300,29 +325,14 @@
     "target": "perform.v.03"
   },
   {
-    "relation": "verb_group",
-    "source": "barnstorm.v.01",
-    "target": "barnstorm.v.02"
+    "relation": "hypernym",
+    "source": "bat.n.01",
+    "target": "placental.n.01"
   },
   {
     "relation": "hypernym",
-    "source": "barnstorm.v.02",
-    "target": "perform.v.03"
-  },
-  {
-    "relation": "verb_group",
-    "source": "barnstorm.v.02",
-    "target": "barnstorm.v.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "barony.n.03",
-    "target": "domain.n.02"
-  },
-  {
-    "relation": "hypernym",
-    "source": "baroreceptor.n.01",
-    "target": "sense_organ.n.01"
+    "source": "batter.n.02",
+    "target": "concoction.n.01"
   },
   {
     "relation": "hypernym",
@@ -333,26 +343,6 @@
     "relation": "part_holonym",
     "source": "beef.n.02",
     "target": "cattle.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "belly.n.02",
-    "target": "adipose_tissue.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "belly.n.02",
-    "target": "torso.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "belly.n.05",
-    "target": "underpart.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "belly.n.05",
-    "target": "vertebrate.n.01"
   },
   {
     "relation": "hypernym",
@@ -451,6 +441,11 @@
   },
   {
     "relation": "hypernym",
+    "source": "bird.n.02",
+    "target": "meat.n.01"
+  },
+  {
+    "relation": "hypernym",
     "source": "bladder.n.01",
     "target": "sac.n.04"
   },
@@ -460,9 +455,29 @@
     "target": "gallbladder.n.01"
   },
   {
+    "relation": "part_holonym",
+    "source": "blastocoel.n.01",
+    "target": "blastula.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "blastocyst.n.01",
+    "target": "blastula.n.01"
+  },
+  {
     "relation": "hypernym",
     "source": "blastula.n.01",
     "target": "embryo.n.02"
+  },
+  {
+    "relation": "hyponym",
+    "source": "blastula.n.01",
+    "target": "blastocyst.n.01"
+  },
+  {
+    "relation": "part_meronym",
+    "source": "blastula.n.01",
+    "target": "blastocoel.n.01"
   },
   {
     "relation": "hyponym",
@@ -476,8 +491,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "blow_up.v.02",
-    "target": "increase.v.02"
+    "source": "bollworm.n.01",
+    "target": "caterpillar.n.01"
   },
   {
     "relation": "similar_to",
@@ -517,6 +532,11 @@
   {
     "relation": "hyponym",
     "source": "bovid.n.01",
+    "target": "goat.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "bovid.n.01",
     "target": "sheep.n.01"
   },
   {
@@ -536,13 +556,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "breadbasket.n.01",
-    "target": "region.n.03"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "breast.n.01",
-    "target": "thorax.n.02"
+    "source": "breakfast.n.01",
+    "target": "meal.n.01"
   },
   {
     "relation": "hypernym",
@@ -580,14 +595,34 @@
     "target": "clay.n.01"
   },
   {
+    "relation": "hypernym",
+    "source": "brocket.n.01",
+    "target": "deer.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "bronchiole.n.01",
+    "target": "duct.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "brunch.n.01",
+    "target": "meal.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "buffet.n.02",
+    "target": "meal.n.01"
+  },
+  {
     "relation": "similar_to",
     "source": "bullheaded.s.01",
     "target": "stubborn.a.01"
   },
   {
     "relation": "hypernym",
-    "source": "butter.n.01",
-    "target": "food.n.02"
+    "source": "buttermilk.n.01",
+    "target": "milk.n.01"
   },
   {
     "relation": "part_holonym",
@@ -601,13 +636,13 @@
   },
   {
     "relation": "part_holonym",
-    "source": "buttocks.n.01",
-    "target": "torso.n.01"
-  },
-  {
-    "relation": "part_holonym",
     "source": "buttonhole.n.01",
     "target": "garment.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "cafe_noir.n.01",
+    "target": "coffee.n.01"
   },
   {
     "relation": "substance_holonym",
@@ -618,6 +653,21 @@
     "relation": "substance_holonym",
     "source": "caffeine.n.01",
     "target": "tea.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "canaliculus.n.01",
+    "target": "duct.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "cappuccino.n.01",
+    "target": "coffee.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "carbonado.n.02",
+    "target": "meat.n.01"
   },
   {
     "relation": "hyponym",
@@ -652,7 +702,17 @@
   {
     "relation": "hyponym",
     "source": "caress.v.01",
-    "target": "pet.v.02"
+    "target": "tickle.v.03"
+  },
+  {
+    "relation": "hypernym",
+    "source": "caribou.n.01",
+    "target": "deer.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "cartilage.n.01",
+    "target": "arytenoid.n.01"
   },
   {
     "relation": "substance_meronym",
@@ -677,12 +737,17 @@
   {
     "relation": "hyponym",
     "source": "caterpillar.n.01",
-    "target": "silkworm.n.01"
+    "target": "armyworm.n.01"
   },
   {
     "relation": "hyponym",
     "source": "caterpillar.n.01",
-    "target": "silkworm.n.02"
+    "target": "bollworm.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "caterpillar.n.01",
+    "target": "silkworm.n.01"
   },
   {
     "relation": "hyponym",
@@ -735,29 +800,9 @@
     "target": "virtuous.a.01"
   },
   {
-    "relation": "similar_to",
-    "source": "chaste.s.02",
-    "target": "moral.a.01"
-  },
-  {
     "relation": "hypernym",
-    "source": "cheese.n.01",
-    "target": "food.n.02"
-  },
-  {
-    "relation": "hypernym",
-    "source": "chemoreceptor.n.01",
-    "target": "sense_organ.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "chemoreceptor.n.01",
-    "target": "tastebud.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "chocolate.n.02",
-    "target": "food.n.02"
+    "source": "choice_morsel.n.01",
+    "target": "dainty.n.01"
   },
   {
     "relation": "hyponym",
@@ -773,11 +818,6 @@
     "relation": "hyponym",
     "source": "chordate.n.01",
     "target": "vertebrate.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "chow.n.02",
-    "target": "fare.n.04"
   },
   {
     "relation": "hypernym",
@@ -805,9 +845,9 @@
     "target": "current.a.01"
   },
   {
-    "relation": "hypernym",
-    "source": "claw.n.03",
-    "target": "extremity.n.01"
+    "relation": "part_holonym",
+    "source": "clavicle.n.01",
+    "target": "endoskeleton.n.01"
   },
   {
     "relation": "part_holonym",
@@ -830,59 +870,39 @@
     "target": "brick.n.01"
   },
   {
-    "relation": "hypernym",
-    "source": "cochlea.n.01",
-    "target": "tube.n.04"
-  },
-  {
     "relation": "part_holonym",
-    "source": "cochlea.n.01",
-    "target": "inner_ear.n.01"
+    "source": "clitoris.n.01",
+    "target": "vulva.n.01"
   },
   {
     "relation": "hypernym",
     "source": "cocoa.n.01",
     "target": "beverage.n.01"
-  },
-  {
-    "relation": "substance_meronym",
-    "source": "cocoa.n.01",
-    "target": "cocoa.n.02"
-  },
-  {
-    "relation": "substance_holonym",
-    "source": "cocoa.n.02",
-    "target": "cocoa.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "coconut.n.01",
-    "target": "food.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "coconut.n.01",
-    "target": "copra.n.01"
-  },
-  {
-    "relation": "substance_holonym",
-    "source": "coconut.n.01",
-    "target": "coconut.n.02"
-  },
-  {
-    "relation": "substance_meronym",
-    "source": "coconut.n.02",
-    "target": "coconut.n.01"
-  },
-  {
-    "relation": "substance_meronym",
-    "source": "coconut.n.02",
-    "target": "copra.n.01"
   },
   {
     "relation": "hypernym",
     "source": "coffee.n.01",
     "target": "beverage.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "coffee.n.01",
+    "target": "cafe_noir.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "coffee.n.01",
+    "target": "cappuccino.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "coffee.n.01",
+    "target": "decaffeinated_coffee.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "coffee.n.01",
+    "target": "espresso.n.01"
   },
   {
     "relation": "substance_meronym",
@@ -898,26 +918,6 @@
     "relation": "substance_holonym",
     "source": "collagen.n.01",
     "target": "tendon.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "comestible.n.01",
-    "target": "food.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "comestible.n.01",
-    "target": "tuck.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "commissariat.n.01",
-    "target": "food.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "commissariat.n.01",
-    "target": "larder.n.01"
   },
   {
     "relation": "also_see",
@@ -938,6 +938,11 @@
     "relation": "hypernym",
     "source": "concertize.v.01",
     "target": "perform.v.03"
+  },
+  {
+    "relation": "hyponym",
+    "source": "concoction.n.01",
+    "target": "batter.n.02"
   },
   {
     "relation": "hyponym",
@@ -982,11 +987,6 @@
   {
     "relation": "hyponym",
     "source": "conveyance.n.03",
-    "target": "dolly.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "conveyance.n.03",
     "target": "horsebox.n.01"
   },
   {
@@ -1017,6 +1017,16 @@
   {
     "relation": "hyponym",
     "source": "conveyance.n.03",
+    "target": "trailer.n.03"
+  },
+  {
+    "relation": "hyponym",
+    "source": "conveyance.n.03",
+    "target": "tramway.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "conveyance.n.03",
     "target": "vehicle.n.01"
   },
   {
@@ -1036,23 +1046,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "copra.n.01",
-    "target": "coconut.n.01"
-  },
-  {
-    "relation": "substance_holonym",
-    "source": "copra.n.01",
-    "target": "coconut.n.02"
-  },
-  {
-    "relation": "hypernym",
     "source": "cosmetic.n.01",
     "target": "toiletry.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "country.n.02",
-    "target": "domain.n.02"
   },
   {
     "relation": "part_meronym",
@@ -1098,6 +1093,11 @@
     "relation": "part_meronym",
     "source": "crustacean.n.01",
     "target": "claw.n.03"
+  },
+  {
+    "relation": "hypernym",
+    "source": "cuppa.n.01",
+    "target": "tea.n.01"
   },
   {
     "relation": "similar_to",
@@ -1165,6 +1165,16 @@
     "target": "ambrosia.n.04"
   },
   {
+    "relation": "hyponym",
+    "source": "dainty.n.01",
+    "target": "choice_morsel.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "dainty.n.01",
+    "target": "gelatin.n.02"
+  },
+  {
     "relation": "hypernym",
     "source": "dandle.v.02",
     "target": "caress.v.01"
@@ -1176,8 +1186,28 @@
   },
   {
     "relation": "hypernym",
+    "source": "decaffeinated_coffee.n.01",
+    "target": "coffee.n.01"
+  },
+  {
+    "relation": "hypernym",
     "source": "deer.n.01",
     "target": "ruminant.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "deer.n.01",
+    "target": "brocket.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "deer.n.01",
+    "target": "caribou.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "deer.n.01",
+    "target": "elk.n.01"
   },
   {
     "relation": "hyponym",
@@ -1260,6 +1290,11 @@
     "target": "plop.v.02"
   },
   {
+    "relation": "hyponym",
+    "source": "descend.v.01",
+    "target": "pounce.v.01"
+  },
+  {
     "relation": "similar_to",
     "source": "deserving.s.01",
     "target": "worthy.a.01"
@@ -1301,18 +1336,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "diet.n.03",
-    "target": "fare.n.04"
-  },
-  {
-    "relation": "hypernym",
     "source": "dietary.n.01",
     "target": "fare.n.04"
-  },
-  {
-    "relation": "hypernym",
-    "source": "digit.n.03",
-    "target": "extremity.n.01"
   },
   {
     "relation": "hyponym",
@@ -1333,6 +1358,16 @@
     "relation": "part_meronym",
     "source": "digit.n.03",
     "target": "nail.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "dinner.n.01",
+    "target": "meal.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "dinocerate.n.01",
+    "target": "ungulate.n.01"
   },
   {
     "relation": "also_see",
@@ -1375,11 +1410,6 @@
     "target": "recusant.s.02"
   },
   {
-    "relation": "hypernym",
-    "source": "district.n.01",
-    "target": "region.n.03"
-  },
-  {
     "relation": "hyponym",
     "source": "district.n.01",
     "target": "borderland.n.01"
@@ -1415,6 +1445,11 @@
     "target": "protectorate.n.01"
   },
   {
+    "relation": "hyponym",
+    "source": "district.n.01",
+    "target": "trust_territory.n.01"
+  },
+  {
     "relation": "hypernym",
     "source": "dive.v.01",
     "target": "descend.v.01"
@@ -1428,76 +1463,6 @@
     "relation": "hypernym",
     "source": "dolly.n.01",
     "target": "conveyance.n.03"
-  },
-  {
-    "relation": "hypernym",
-    "source": "dolly.n.02",
-    "target": "conveyance.n.03"
-  },
-  {
-    "relation": "hypernym",
-    "source": "domain.n.02",
-    "target": "region.n.03"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "archduchy.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "barony.n.03"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "duchy.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "earldom.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "emirate.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "empire.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "fiefdom.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "khanate.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "principality.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "sheikdom.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "domain.n.02",
-    "target": "suzerainty.n.02"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "domain.n.02",
-    "target": "country.n.02"
   },
   {
     "relation": "hypernym",
@@ -1520,19 +1485,9 @@
     "target": "flour.n.01"
   },
   {
-    "relation": "verb_group",
-    "source": "dribble.v.02",
-    "target": "drip.v.01"
-  },
-  {
     "relation": "hypernym",
     "source": "drip.v.01",
     "target": "descend.v.01"
-  },
-  {
-    "relation": "verb_group",
-    "source": "drip.v.01",
-    "target": "dribble.v.02"
   },
   {
     "relation": "hyponym",
@@ -1541,13 +1496,23 @@
   },
   {
     "relation": "hyponym",
-    "source": "drug.v.02",
-    "target": "take_a_hit.v.01"
+    "source": "duct.n.01",
+    "target": "bronchiole.n.01"
   },
   {
-    "relation": "hypernym",
-    "source": "duchy.n.01",
-    "target": "domain.n.02"
+    "relation": "hyponym",
+    "source": "duct.n.01",
+    "target": "canaliculus.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "duct.n.01",
+    "target": "ductule.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "duct.n.01",
+    "target": "epididymis.n.01"
   },
   {
     "relation": "hyponym",
@@ -1566,13 +1531,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "ear.n.01",
-    "target": "sense_organ.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "earldom.n.02",
-    "target": "domain.n.02"
+    "source": "ductule.n.01",
+    "target": "duct.n.01"
   },
   {
     "relation": "hypernym",
@@ -1620,34 +1580,19 @@
     "target": "yolk.n.02"
   },
   {
-    "relation": "part_meronym",
-    "source": "egg.n.02",
-    "target": "egg_yolk.n.01"
-  },
-  {
-    "relation": "substance_meronym",
-    "source": "egg.n.02",
-    "target": "protein.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "egg_yolk.n.01",
-    "target": "ingredient.n.03"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "egg_yolk.n.01",
-    "target": "egg.n.02"
-  },
-  {
     "relation": "part_holonym",
     "source": "elbow.n.04",
     "target": "sleeve.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "elbow.n.05",
-    "target": "foreleg.n.01"
+    "relation": "hypernym",
+    "source": "elixir.n.03",
+    "target": "potion.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "elk.n.01",
+    "target": "deer.n.01"
   },
   {
     "relation": "hyponym",
@@ -1660,19 +1605,14 @@
     "target": "gastrula.n.01"
   },
   {
+    "relation": "hyponym",
+    "source": "embryo.n.02",
+    "target": "morula.n.01"
+  },
+  {
     "relation": "part_meronym",
     "source": "embryo.n.02",
     "target": "umbilical_cord.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "emirate.n.01",
-    "target": "domain.n.02"
-  },
-  {
-    "relation": "hypernym",
-    "source": "empire.n.01",
-    "target": "domain.n.02"
   },
   {
     "relation": "hypernym",
@@ -1697,6 +1637,11 @@
   {
     "relation": "part_meronym",
     "source": "endoskeleton.n.01",
+    "target": "clavicle.n.01"
+  },
+  {
+    "relation": "part_meronym",
+    "source": "endoskeleton.n.01",
     "target": "scapula.n.01"
   },
   {
@@ -1706,13 +1651,18 @@
   },
   {
     "relation": "part_holonym",
-    "source": "epiglottis.n.01",
-    "target": "trachea.n.01"
+    "source": "epicardia.n.01",
+    "target": "esophagus.n.01"
   },
   {
-    "relation": "part_meronym",
-    "source": "epiglottis.n.01",
-    "target": "tastebud.n.01"
+    "relation": "hypernym",
+    "source": "epididymis.n.01",
+    "target": "duct.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "equine.n.01",
+    "target": "odd-toed_ungulate.n.01"
   },
   {
     "relation": "hypernym",
@@ -1756,8 +1706,23 @@
   },
   {
     "relation": "hypernym",
+    "source": "escargot.n.01",
+    "target": "meat.n.01"
+  },
+  {
+    "relation": "hypernym",
     "source": "esophagus.n.01",
     "target": "muscular_structure.n.01"
+  },
+  {
+    "relation": "part_meronym",
+    "source": "esophagus.n.01",
+    "target": "epicardia.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "espresso.n.01",
+    "target": "coffee.n.01"
   },
   {
     "relation": "similar_to",
@@ -1770,11 +1735,6 @@
     "target": "worthy.a.01"
   },
   {
-    "relation": "similar_to",
-    "source": "estimable.s.01",
-    "target": "reputable.a.01"
-  },
-  {
     "relation": "hypernym",
     "source": "even-toed_ungulate.n.01",
     "target": "ungulate.n.01"
@@ -1783,6 +1743,11 @@
     "relation": "hyponym",
     "source": "even-toed_ungulate.n.01",
     "target": "ruminant.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "ewe.n.03",
+    "target": "sheep.n.01"
   },
   {
     "relation": "part_holonym",
@@ -1798,6 +1763,11 @@
     "relation": "hypernym",
     "source": "exocrine_gland.n.01",
     "target": "gland.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "exoskeleton.n.01",
+    "target": "skeletal_system.n.01"
   },
   {
     "relation": "hypernym",
@@ -1821,18 +1791,13 @@
   },
   {
     "relation": "hypernym",
+    "source": "external_oblique_muscle.n.01",
+    "target": "abdominal.n.01"
+  },
+  {
+    "relation": "hypernym",
     "source": "extreme_point.n.01",
     "target": "extremity.n.04"
-  },
-  {
-    "relation": "hyponym",
-    "source": "extremity.n.01",
-    "target": "claw.n.03"
-  },
-  {
-    "relation": "hyponym",
-    "source": "extremity.n.01",
-    "target": "digit.n.03"
   },
   {
     "relation": "hypernym",
@@ -1848,36 +1813,6 @@
     "relation": "hyponym",
     "source": "extremity.n.04",
     "target": "extreme_point.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "extremity.n.05",
-    "target": "finger.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "extremity.n.05",
-    "target": "toe.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "eye.n.01",
-    "target": "sense_organ.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "eye.n.01",
-    "target": "lens.n.04"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "eye.n.01",
-    "target": "retina.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "eye.n.01",
-    "target": "uvea.n.01"
   },
   {
     "relation": "part_holonym",
@@ -1897,17 +1832,7 @@
   {
     "relation": "hyponym",
     "source": "fare.n.04",
-    "target": "chow.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "fare.n.04",
     "target": "diet.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "fare.n.04",
-    "target": "diet.n.03"
   },
   {
     "relation": "hyponym",
@@ -1941,18 +1866,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "fiefdom.n.01",
-    "target": "domain.n.02"
-  },
-  {
-    "relation": "hypernym",
     "source": "finger.n.01",
     "target": "digit.n.03"
-  },
-  {
-    "relation": "hypernym",
-    "source": "finger.n.01",
-    "target": "extremity.n.05"
   },
   {
     "relation": "part_meronym",
@@ -1963,21 +1878,6 @@
     "relation": "hypernym",
     "source": "firebrick.n.01",
     "target": "brick.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "fish.n.02",
-    "target": "food.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "fish.n.02",
-    "target": "alewife.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "fish.n.02",
-    "target": "anchovy.n.01"
   },
   {
     "relation": "hypernym",
@@ -1998,6 +1898,11 @@
     "relation": "part_holonym",
     "source": "flank.n.04",
     "target": "quadruped.n.01"
+  },
+  {
+    "relation": "member_meronym",
+    "source": "flock.n.05",
+    "target": "sheep.n.01"
   },
   {
     "relation": "hypernym",
@@ -2027,16 +1932,6 @@
   {
     "relation": "hyponym",
     "source": "food.n.01",
-    "target": "comestible.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.01",
-    "target": "commissariat.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.01",
     "target": "fare.n.04"
   },
   {
@@ -2060,74 +1955,14 @@
     "target": "yolk.n.02"
   },
   {
-    "relation": "part_meronym",
-    "source": "food.n.01",
-    "target": "food.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "butter.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "cheese.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "chocolate.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "coconut.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "fish.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "leftovers.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "loaf.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "meat.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "produce.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "seafood.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "slop.n.04"
-  },
-  {
-    "relation": "hyponym",
-    "source": "food.n.02",
-    "target": "yogurt.n.01"
-  },
-  {
     "relation": "part_holonym",
-    "source": "food.n.02",
-    "target": "food.n.01"
+    "source": "forefoot.n.01",
+    "target": "quadruped.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "foreleg.n.01",
+    "target": "forelimb.n.01"
   },
   {
     "relation": "part_holonym",
@@ -2135,14 +1970,9 @@
     "target": "quadruped.n.01"
   },
   {
-    "relation": "part_meronym",
-    "source": "foreleg.n.01",
-    "target": "elbow.n.05"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "fovea.n.01",
-    "target": "retina.n.01"
+    "relation": "hyponym",
+    "source": "forelimb.n.01",
+    "target": "foreleg.n.01"
   },
   {
     "relation": "similar_to",
@@ -2227,17 +2057,7 @@
   {
     "relation": "part_meronym",
     "source": "garment.n.01",
-    "target": "gusset.n.03"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "garment.n.01",
     "target": "jag.n.02"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "garment.n.01",
-    "target": "jag.n.03"
   },
   {
     "relation": "part_meronym",
@@ -2248,11 +2068,6 @@
     "relation": "part_meronym",
     "source": "garment.n.01",
     "target": "neck.n.05"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "garment.n.01",
-    "target": "shoulder.n.04"
   },
   {
     "relation": "part_meronym",
@@ -2270,6 +2085,11 @@
     "target": "embryo.n.02"
   },
   {
+    "relation": "part_meronym",
+    "source": "gastrula.n.01",
+    "target": "archenteron.n.01"
+  },
+  {
     "relation": "hypernym",
     "source": "gear.n.04",
     "target": "equipment.n.01"
@@ -2278,6 +2098,16 @@
     "relation": "hyponym",
     "source": "gear.n.04",
     "target": "fishing_gear.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "gelatin.n.02",
+    "target": "dainty.n.01"
+  },
+  {
+    "relation": "part_holonym",
+    "source": "gladiolus.n.02",
+    "target": "sternum.n.01"
   },
   {
     "relation": "hyponym",
@@ -2303,6 +2133,11 @@
     "relation": "part_holonym",
     "source": "gluteus.n.01",
     "target": "buttock.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "goat.n.01",
+    "target": "bovid.n.01"
   },
   {
     "relation": "hypernym",
@@ -2335,14 +2170,14 @@
     "target": "weaponry.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "gusset.n.03",
-    "target": "garment.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "hairdressing.n.01",
     "target": "toiletry.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "halal.n.01",
+    "target": "meat.n.01"
   },
   {
     "relation": "part_holonym",
@@ -2356,18 +2191,13 @@
   },
   {
     "relation": "hypernym",
-    "source": "hardware.n.01",
-    "target": "weaponry.n.01"
-  },
-  {
-    "relation": "hypernym",
     "source": "hardware.n.02",
     "target": "instrumentality.n.03"
   },
   {
-    "relation": "part_holonym",
-    "source": "haunch.n.01",
-    "target": "torso.n.01"
+    "relation": "hypernym",
+    "source": "haslet.n.01",
+    "target": "loaf.n.02"
   },
   {
     "relation": "hypernym",
@@ -2391,11 +2221,6 @@
   },
   {
     "relation": "hypernym",
-    "source": "heartland.n.01",
-    "target": "region.n.03"
-  },
-  {
-    "relation": "hypernym",
     "source": "heliosphere.n.01",
     "target": "region.n.01"
   },
@@ -2403,6 +2228,16 @@
     "relation": "hypernym",
     "source": "hellgrammiate.n.01",
     "target": "larva.n.01"
+  },
+  {
+    "relation": "part_holonym",
+    "source": "helping.n.01",
+    "target": "meal.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "herb_tea.n.01",
+    "target": "tea.n.01"
   },
   {
     "relation": "member_meronym",
@@ -2418,6 +2253,11 @@
     "relation": "hypernym",
     "source": "here.n.01",
     "target": "location.n.01"
+  },
+  {
+    "relation": "part_holonym",
+    "source": "hindfoot.n.01",
+    "target": "quadruped.n.01"
   },
   {
     "relation": "hypernym",
@@ -2455,6 +2295,11 @@
     "target": "ungulate.n.01"
   },
   {
+    "relation": "hypernym",
+    "source": "home_brew.n.01",
+    "target": "alcohol.n.01"
+  },
+  {
     "relation": "part_meronym",
     "source": "homo.n.02",
     "target": "loin.n.02"
@@ -2470,34 +2315,14 @@
     "target": "oenomel.n.01"
   },
   {
+    "relation": "hypernym",
+    "source": "hooch.n.01",
+    "target": "alcohol.n.01"
+  },
+  {
     "relation": "part_holonym",
     "source": "hoof.n.01",
     "target": "ungulate.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "hoof.n.01",
-    "target": "hoof.n.02"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "hoof.n.01",
-    "target": "toe.n.03"
-  },
-  {
-    "relation": "hypernym",
-    "source": "hoof.n.02",
-    "target": "horny_structure.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "hoof.n.02",
-    "target": "hoof.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "horny_structure.n.01",
-    "target": "hoof.n.02"
   },
   {
     "relation": "hyponym",
@@ -2540,19 +2365,29 @@
     "target": "abdomen.n.01"
   },
   {
+    "relation": "similar_to",
+    "source": "impeccable.s.02",
+    "target": "virtuous.a.01"
+  },
+  {
+    "relation": "similar_to",
+    "source": "impeccant.s.01",
+    "target": "virtuous.a.01"
+  },
+  {
     "relation": "also_see",
     "source": "incorrigible.a.01",
     "target": "disobedient.a.01"
   },
   {
-    "relation": "hyponym",
-    "source": "increase.v.02",
-    "target": "augment.v.01"
+    "relation": "similar_to",
+    "source": "incorrupt.s.01",
+    "target": "moral.a.01"
   },
   {
     "relation": "hyponym",
     "source": "increase.v.02",
-    "target": "blow_up.v.02"
+    "target": "augment.v.01"
   },
   {
     "relation": "hyponym",
@@ -2563,6 +2398,11 @@
     "relation": "hyponym",
     "source": "increase.v.02",
     "target": "escalate.v.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "increase.v.02",
+    "target": "kite.v.01"
   },
   {
     "relation": "hyponym",
@@ -2591,16 +2431,6 @@
   },
   {
     "relation": "hyponym",
-    "source": "ingredient.n.03",
-    "target": "egg_yolk.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "inhale.v.01",
-    "target": "smoke.v.01"
-  },
-  {
-    "relation": "hyponym",
     "source": "inhale.v.02",
     "target": "aspirate.v.03"
   },
@@ -2610,14 +2440,14 @@
     "target": "huff.v.01"
   },
   {
-    "relation": "hypernym",
-    "source": "inner_ear.n.01",
-    "target": "sense_organ.n.01"
+    "relation": "hyponym",
+    "source": "inhale.v.02",
+    "target": "sniff.v.02"
   },
   {
-    "relation": "part_meronym",
-    "source": "inner_ear.n.01",
-    "target": "cochlea.n.01"
+    "relation": "hyponym",
+    "source": "inhale.v.02",
+    "target": "snuff.v.02"
   },
   {
     "relation": "hyponym",
@@ -2786,11 +2616,6 @@
   },
   {
     "relation": "hypernym",
-    "source": "irredenta.n.01",
-    "target": "region.n.03"
-  },
-  {
-    "relation": "hypernym",
     "source": "jag.n.02",
     "target": "slit.n.01"
   },
@@ -2800,19 +2625,14 @@
     "target": "garment.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "jag.n.03",
-    "target": "garment.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "japanese_deer.n.01",
     "target": "deer.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "jugular_vein.n.01",
-    "target": "neck.n.01"
+    "relation": "hypernym",
+    "source": "jerky.n.01",
+    "target": "meat.n.01"
   },
   {
     "relation": "hypernym",
@@ -2826,8 +2646,13 @@
   },
   {
     "relation": "hypernym",
-    "source": "khanate.n.01",
-    "target": "domain.n.02"
+    "source": "kava.n.01",
+    "target": "alcohol.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "kite.v.01",
+    "target": "increase.v.02"
   },
   {
     "relation": "hypernym",
@@ -2845,14 +2670,19 @@
     "target": "nutriment.n.01"
   },
   {
+    "relation": "hypernym",
+    "source": "koumiss.n.01",
+    "target": "alcohol.n.01"
+  },
+  {
     "relation": "part_holonym",
     "source": "labium.n.01",
     "target": "vulva.n.01"
   },
   {
     "relation": "hypernym",
-    "source": "larder.n.01",
-    "target": "commissariat.n.01"
+    "source": "lamb.n.05",
+    "target": "meat.n.01"
   },
   {
     "relation": "hyponym",
@@ -2902,7 +2732,27 @@
   {
     "relation": "hyponym",
     "source": "larva.n.01",
+    "target": "nymph.n.02"
+  },
+  {
+    "relation": "hyponym",
+    "source": "larva.n.01",
+    "target": "strawworm.n.02"
+  },
+  {
+    "relation": "hyponym",
+    "source": "larva.n.01",
     "target": "tadpole.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "larva.n.01",
+    "target": "wiggler.n.02"
+  },
+  {
+    "relation": "hyponym",
+    "source": "larva.n.01",
+    "target": "wireworm.n.01"
   },
   {
     "relation": "hypernym",
@@ -2967,6 +2817,11 @@
   {
     "relation": "hyponym",
     "source": "layer.n.02",
+    "target": "thermosphere.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "layer.n.02",
     "target": "tropopause.n.01"
   },
   {
@@ -2976,28 +2831,8 @@
   },
   {
     "relation": "hypernym",
-    "source": "leftovers.n.01",
-    "target": "food.n.02"
-  },
-  {
-    "relation": "hypernym",
     "source": "lengthen.v.01",
     "target": "increase.v.02"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "lens.n.04",
-    "target": "eye.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "lens.n.04",
-    "target": "lens_cortex.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "lens_cortex.n.01",
-    "target": "lens.n.04"
   },
   {
     "relation": "hypernym",
@@ -3025,9 +2860,9 @@
     "target": "conveyance.n.03"
   },
   {
-    "relation": "hypernym",
+    "relation": "hyponym",
     "source": "loaf.n.02",
-    "target": "food.n.02"
+    "target": "haslet.n.01"
   },
   {
     "relation": "hyponym",
@@ -3068,11 +2903,6 @@
     "relation": "hyponym",
     "source": "location.n.01",
     "target": "region.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "location.n.01",
-    "target": "region.n.03"
   },
   {
     "relation": "hyponym",
@@ -3135,11 +2965,6 @@
     "target": "toiletry.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "macula.n.02",
-    "target": "retina.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "mail.n.03",
     "target": "conveyance.n.03"
@@ -3200,6 +3025,31 @@
     "target": "banquet.n.02"
   },
   {
+    "relation": "hyponym",
+    "source": "meal.n.01",
+    "target": "breakfast.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "meal.n.01",
+    "target": "brunch.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "meal.n.01",
+    "target": "buffet.n.02"
+  },
+  {
+    "relation": "hyponym",
+    "source": "meal.n.01",
+    "target": "dinner.n.01"
+  },
+  {
+    "relation": "part_meronym",
+    "source": "meal.n.01",
+    "target": "helping.n.01"
+  },
+  {
     "relation": "part_meronym",
     "source": "meal.n.01",
     "target": "sandwich.n.01"
@@ -3210,14 +3060,39 @@
     "target": "larva.n.01"
   },
   {
-    "relation": "hypernym",
+    "relation": "hyponym",
     "source": "meat.n.01",
-    "target": "food.n.02"
+    "target": "beef.n.02"
   },
   {
     "relation": "hyponym",
     "source": "meat.n.01",
-    "target": "beef.n.02"
+    "target": "bird.n.02"
+  },
+  {
+    "relation": "hyponym",
+    "source": "meat.n.01",
+    "target": "carbonado.n.02"
+  },
+  {
+    "relation": "hyponym",
+    "source": "meat.n.01",
+    "target": "escargot.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "meat.n.01",
+    "target": "halal.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "meat.n.01",
+    "target": "jerky.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "meat.n.01",
+    "target": "lamb.n.05"
   },
   {
     "relation": "hyponym",
@@ -3252,17 +3127,17 @@
   {
     "relation": "hyponym",
     "source": "microorganism.n.01",
+    "target": "bacteria.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "microorganism.n.01",
     "target": "microflora.n.01"
   },
   {
     "relation": "hyponym",
     "source": "microorganism.n.01",
     "target": "protoctist.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "middle.n.03",
-    "target": "torso.n.01"
   },
   {
     "relation": "hypernym",
@@ -3285,14 +3160,14 @@
     "target": "beverage.n.01"
   },
   {
+    "relation": "hyponym",
+    "source": "milk.n.01",
+    "target": "buttermilk.n.01"
+  },
+  {
     "relation": "substance_meronym",
     "source": "milk.n.01",
     "target": "protein.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "milk.n.02",
-    "target": "nutriment.n.01"
   },
   {
     "relation": "hypernym",
@@ -3317,11 +3192,6 @@
   {
     "relation": "part_holonym",
     "source": "mons.n.01",
-    "target": "pubes.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "mons.n.01",
     "target": "vulva.n.01"
   },
   {
@@ -3342,22 +3212,17 @@
   {
     "relation": "similar_to",
     "source": "moral.a.01",
-    "target": "chaste.s.02"
+    "target": "incorrupt.s.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "morula.n.01",
+    "target": "embryo.n.02"
   },
   {
     "relation": "hypernym",
     "source": "motley.n.02",
     "target": "garment.n.01"
-  },
-  {
-    "relation": "substance_meronym",
-    "source": "motley.n.02",
-    "target": "motley.n.03"
-  },
-  {
-    "relation": "substance_holonym",
-    "source": "motley.n.03",
-    "target": "motley.n.02"
   },
   {
     "relation": "hypernym",
@@ -3375,6 +3240,11 @@
     "target": "proliferate.v.02"
   },
   {
+    "relation": "part_holonym",
+    "source": "muscle.n.02",
+    "target": "muscular_structure.n.01"
+  },
+  {
     "relation": "hyponym",
     "source": "muscular_structure.n.01",
     "target": "diaphragm.n.02"
@@ -3383,6 +3253,11 @@
     "relation": "hyponym",
     "source": "muscular_structure.n.01",
     "target": "esophagus.n.01"
+  },
+  {
+    "relation": "part_meronym",
+    "source": "muscular_structure.n.01",
+    "target": "muscle.n.02"
   },
   {
     "relation": "part_meronym",
@@ -3410,26 +3285,6 @@
     "target": "abdomen.n.01"
   },
   {
-    "relation": "part_meronym",
-    "source": "neck.n.01",
-    "target": "jugular_vein.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "neck.n.01",
-    "target": "throat.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "neck.n.01",
-    "target": "thymus_gland.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "neck.n.01",
-    "target": "trachea.n.01"
-  },
-  {
     "relation": "hyponym",
     "source": "neck.n.05",
     "target": "neckline.n.01"
@@ -3445,14 +3300,14 @@
     "target": "neck.n.05"
   },
   {
-    "relation": "hypernym",
-    "source": "northeast.n.04",
-    "target": "location.n.01"
+    "relation": "member_holonym",
+    "source": "nekton.n.01",
+    "target": "aggregate.n.03"
   },
   {
     "relation": "hypernym",
-    "source": "northland.n.01",
-    "target": "region.n.03"
+    "source": "northeast.n.04",
+    "target": "location.n.01"
   },
   {
     "relation": "hypernym",
@@ -3487,11 +3342,6 @@
   {
     "relation": "hyponym",
     "source": "nutriment.n.01",
-    "target": "milk.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "nutriment.n.01",
     "target": "mince.n.01"
   },
   {
@@ -3515,6 +3365,11 @@
     "target": "caress.v.01"
   },
   {
+    "relation": "hypernym",
+    "source": "nymph.n.02",
+    "target": "larva.n.01"
+  },
+  {
     "relation": "similar_to",
     "source": "occurrent.s.01",
     "target": "current.a.01"
@@ -3523,6 +3378,11 @@
     "relation": "hypernym",
     "source": "odd-toed_ungulate.n.01",
     "target": "ungulate.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "odd-toed_ungulate.n.01",
+    "target": "equine.n.01"
   },
   {
     "relation": "hypernym",
@@ -3575,16 +3435,6 @@
     "target": "district.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "papilla.n.02",
-    "target": "sense_organ.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "parafovea.n.01",
-    "target": "retina.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "patronize.v.03",
     "target": "interact.v.01"
@@ -3622,11 +3472,6 @@
   {
     "relation": "hyponym",
     "source": "perform.v.03",
-    "target": "barnstorm.v.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "perform.v.03",
     "target": "concertize.v.01"
   },
   {
@@ -3645,6 +3490,11 @@
     "target": "interlude.v.01"
   },
   {
+    "relation": "hyponym",
+    "source": "perform.v.03",
+    "target": "rap.v.03"
+  },
+  {
     "relation": "hypernym",
     "source": "perfume.n.02",
     "target": "toiletry.n.01"
@@ -3652,11 +3502,6 @@
   {
     "relation": "hypernym",
     "source": "pet.v.01",
-    "target": "caress.v.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "pet.v.02",
     "target": "caress.v.01"
   },
   {
@@ -3683,6 +3528,11 @@
     "relation": "hypernym",
     "source": "placental.n.01",
     "target": "mammal.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "placental.n.01",
+    "target": "bat.n.01"
   },
   {
     "relation": "hyponym",
@@ -3725,6 +3575,16 @@
     "target": "beverage.n.01"
   },
   {
+    "relation": "hyponym",
+    "source": "potion.n.01",
+    "target": "elixir.n.03"
+  },
+  {
+    "relation": "hypernym",
+    "source": "pounce.v.01",
+    "target": "descend.v.01"
+  },
+  {
     "relation": "hypernym",
     "source": "powder.n.03",
     "target": "toiletry.n.01"
@@ -3741,16 +3601,6 @@
   },
   {
     "relation": "hypernym",
-    "source": "principality.n.01",
-    "target": "domain.n.02"
-  },
-  {
-    "relation": "hypernym",
-    "source": "produce.n.01",
-    "target": "food.n.02"
-  },
-  {
-    "relation": "hypernym",
     "source": "proliferate.v.02",
     "target": "multiply.v.02"
   },
@@ -3758,11 +3608,6 @@
     "relation": "hypernym",
     "source": "protectorate.n.01",
     "target": "district.n.01"
-  },
-  {
-    "relation": "substance_holonym",
-    "source": "protein.n.01",
-    "target": "egg.n.02"
   },
   {
     "relation": "substance_holonym",
@@ -3785,11 +3630,6 @@
     "target": "alga.n.01"
   },
   {
-    "relation": "part_meronym",
-    "source": "pubes.n.01",
-    "target": "mons.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "puree.n.01",
     "target": "nutriment.n.01"
@@ -3807,12 +3647,22 @@
   {
     "relation": "part_meronym",
     "source": "quadruped.n.01",
+    "target": "forefoot.n.01"
+  },
+  {
+    "relation": "part_meronym",
+    "source": "quadruped.n.01",
     "target": "foreleg.n.01"
   },
   {
     "relation": "part_meronym",
     "source": "quadruped.n.01",
     "target": "haunch.n.02"
+  },
+  {
+    "relation": "part_meronym",
+    "source": "quadruped.n.01",
+    "target": "hindfoot.n.01"
   },
   {
     "relation": "part_meronym",
@@ -3828,6 +3678,11 @@
     "relation": "hypernym",
     "source": "radius.n.03",
     "target": "region.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "rap.v.03",
+    "target": "perform.v.03"
   },
   {
     "relation": "hypernym",
@@ -3925,66 +3780,6 @@
     "target": "zone.n.03"
   },
   {
-    "relation": "hypernym",
-    "source": "region.n.03",
-    "target": "location.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "antipodes.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "backwater.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "breadbasket.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "district.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "domain.n.02"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "heartland.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "irredenta.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "northland.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "southland.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "testing_ground.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "region.n.03",
-    "target": "unknown.n.01"
-  },
-  {
     "relation": "also_see",
     "source": "reputable.a.01",
     "target": "respectable.a.01"
@@ -3993,11 +3788,6 @@
     "relation": "similar_to",
     "source": "reputable.a.01",
     "target": "esteemed.s.01"
-  },
-  {
-    "relation": "similar_to",
-    "source": "reputable.a.01",
-    "target": "estimable.s.01"
   },
   {
     "relation": "also_see",
@@ -4018,26 +3808,6 @@
     "relation": "similar_to",
     "source": "respectable.a.01",
     "target": "upstanding.s.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "retina.n.01",
-    "target": "eye.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "retina.n.01",
-    "target": "fovea.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "retina.n.01",
-    "target": "macula.n.02"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "retina.n.01",
-    "target": "parafovea.n.01"
   },
   {
     "relation": "also_see",
@@ -4130,44 +3900,9 @@
     "target": "acromion.n.01"
   },
   {
-    "relation": "hypernym",
-    "source": "seafood.n.01",
-    "target": "food.n.02"
-  },
-  {
     "relation": "similar_to",
     "source": "seasoned.s.01",
     "target": "experienced.a.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "sense_organ.n.01",
-    "target": "baroreceptor.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "sense_organ.n.01",
-    "target": "chemoreceptor.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "sense_organ.n.01",
-    "target": "ear.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "sense_organ.n.01",
-    "target": "eye.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "sense_organ.n.01",
-    "target": "inner_ear.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "sense_organ.n.01",
-    "target": "papilla.n.02"
   },
   {
     "relation": "part_holonym",
@@ -4180,6 +3915,16 @@
     "target": "bovid.n.01"
   },
   {
+    "relation": "hyponym",
+    "source": "sheep.n.01",
+    "target": "ewe.n.03"
+  },
+  {
+    "relation": "member_holonym",
+    "source": "sheep.n.01",
+    "target": "flock.n.05"
+  },
+  {
     "relation": "member_holonym",
     "source": "sheep.n.01",
     "target": "herd.n.01"
@@ -4188,11 +3933,6 @@
     "relation": "part_meronym",
     "source": "sheep.n.01",
     "target": "withers.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "sheikdom.n.01",
-    "target": "domain.n.02"
   },
   {
     "relation": "hypernym",
@@ -4230,21 +3970,6 @@
     "target": "shirt.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "shoulder.n.01",
-    "target": "torso.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "shoulder.n.01",
-    "target": "armpit.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "shoulder.n.01",
-    "target": "teres.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "shoulder.n.03",
     "target": "ball-and-socket_joint.n.01"
@@ -4258,11 +3983,6 @@
     "relation": "part_meronym",
     "source": "shoulder.n.03",
     "target": "scapula.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "shoulder.n.04",
-    "target": "garment.n.01"
   },
   {
     "relation": "hypernym",
@@ -4280,11 +4000,6 @@
     "target": "silkworm.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "silk_gland.n.01",
-    "target": "silkworm.n.02"
-  },
-  {
     "relation": "hypernym",
     "source": "silkworm.n.01",
     "target": "caterpillar.n.01"
@@ -4292,22 +4007,17 @@
   {
     "relation": "part_meronym",
     "source": "silkworm.n.01",
-    "target": "silk_gland.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "silkworm.n.02",
-    "target": "caterpillar.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "silkworm.n.02",
     "target": "silk_gland.n.01"
   },
   {
     "relation": "hyponym",
     "source": "skeletal_system.n.01",
     "target": "endoskeleton.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "skeletal_system.n.01",
+    "target": "exoskeleton.n.01"
   },
   {
     "relation": "also_see",
@@ -4323,11 +4033,6 @@
     "relation": "similar_to",
     "source": "skilled.a.01",
     "target": "accomplished.s.01"
-  },
-  {
-    "relation": "similar_to",
-    "source": "skilled.a.01",
-    "target": "adept.s.01"
   },
   {
     "relation": "similar_to",
@@ -4355,14 +4060,19 @@
     "target": "elbow.n.04"
   },
   {
+    "relation": "part_meronym",
+    "source": "sleeve.n.01",
+    "target": "wristband.n.01"
+  },
+  {
     "relation": "hyponym",
     "source": "slit.n.01",
     "target": "jag.n.02"
   },
   {
-    "relation": "hypernym",
-    "source": "slop.n.04",
-    "target": "food.n.02"
+    "relation": "hyponym",
+    "source": "slit.n.01",
+    "target": "vent.n.04"
   },
   {
     "relation": "entailment",
@@ -4375,19 +4085,24 @@
     "target": "inhale.v.02"
   },
   {
-    "relation": "hyponym",
-    "source": "smoke.v.01",
-    "target": "inhale.v.01"
-  },
-  {
     "relation": "hypernym",
     "source": "smoothie.n.02",
     "target": "beverage.n.01"
   },
   {
     "relation": "hypernym",
+    "source": "sniff.v.02",
+    "target": "inhale.v.02"
+  },
+  {
+    "relation": "hypernym",
     "source": "snow.n.02",
     "target": "layer.n.02"
+  },
+  {
+    "relation": "hypernym",
+    "source": "snuff.v.02",
+    "target": "inhale.v.02"
   },
   {
     "relation": "hypernym",
@@ -4416,11 +4131,6 @@
   },
   {
     "relation": "hypernym",
-    "source": "southland.n.01",
-    "target": "region.n.03"
-  },
-  {
-    "relation": "hypernym",
     "source": "southwest.n.04",
     "target": "location.n.01"
   },
@@ -4445,6 +4155,11 @@
     "target": "thorax.n.02"
   },
   {
+    "relation": "part_meronym",
+    "source": "sternum.n.01",
+    "target": "gladiolus.n.02"
+  },
+  {
     "relation": "hypernym",
     "source": "stodge.n.01",
     "target": "nutriment.n.01"
@@ -4463,6 +4178,11 @@
     "relation": "hypernym",
     "source": "stratum.n.01",
     "target": "layer.n.02"
+  },
+  {
+    "relation": "hypernym",
+    "source": "strawworm.n.02",
+    "target": "larva.n.01"
   },
   {
     "relation": "also_see",
@@ -4510,11 +4230,6 @@
     "target": "hardheaded.s.01"
   },
   {
-    "relation": "hypernym",
-    "source": "suzerainty.n.02",
-    "target": "domain.n.02"
-  },
-  {
     "relation": "hyponym",
     "source": "synovial_joint.n.01",
     "target": "ball-and-socket_joint.n.01"
@@ -4540,34 +4255,24 @@
     "target": "amphibia.n.01"
   },
   {
-    "relation": "hypernym",
-    "source": "take_a_hit.v.01",
-    "target": "drug.v.02"
-  },
-  {
     "relation": "part_meronym",
     "source": "tapestry.n.03",
     "target": "edging.n.01"
   },
   {
     "relation": "hypernym",
-    "source": "tastebud.n.01",
-    "target": "chemoreceptor.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "tastebud.n.01",
-    "target": "epiglottis.n.01"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "tastebud.n.01",
-    "target": "throat.n.01"
-  },
-  {
-    "relation": "hypernym",
     "source": "tea.n.01",
     "target": "beverage.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "tea.n.01",
+    "target": "cuppa.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "tea.n.01",
+    "target": "herb_tea.n.01"
   },
   {
     "relation": "substance_meronym",
@@ -4600,16 +4305,6 @@
     "target": "collagen.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "teres.n.01",
-    "target": "shoulder.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "testing_ground.n.01",
-    "target": "region.n.03"
-  },
-  {
     "relation": "hypernym",
     "source": "tetrapod.n.01",
     "target": "vertebrate.n.01"
@@ -4623,6 +4318,11 @@
     "relation": "hypernym",
     "source": "there.n.01",
     "target": "location.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "thermosphere.n.01",
+    "target": "layer.n.02"
   },
   {
     "relation": "hyponym",
@@ -4642,11 +4342,6 @@
   {
     "relation": "part_meronym",
     "source": "thorax.n.02",
-    "target": "breast.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "thorax.n.02",
     "target": "gallbladder.n.01"
   },
   {
@@ -4660,24 +4355,14 @@
     "target": "sternum.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "throat.n.01",
-    "target": "neck.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "throat.n.01",
-    "target": "tastebud.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "thymus_gland.n.01",
     "target": "endocrine_gland.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "thymus_gland.n.01",
-    "target": "neck.n.01"
+    "relation": "hypernym",
+    "source": "tickle.v.03",
+    "target": "caress.v.01"
   },
   {
     "relation": "substance_meronym",
@@ -4688,16 +4373,6 @@
     "relation": "hypernym",
     "source": "toe.n.01",
     "target": "digit.n.03"
-  },
-  {
-    "relation": "hypernym",
-    "source": "toe.n.01",
-    "target": "extremity.n.05"
-  },
-  {
-    "relation": "part_holonym",
-    "source": "toe.n.03",
-    "target": "hoof.n.01"
   },
   {
     "relation": "hypernym",
@@ -4750,6 +4425,16 @@
     "target": "powder.n.03"
   },
   {
+    "relation": "hyponym",
+    "source": "toiletry.n.01",
+    "target": "toothbrush.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "toothbrush.n.01",
+    "target": "toiletry.n.01"
+  },
+  {
     "relation": "similar_to",
     "source": "topical.s.02",
     "target": "current.a.01"
@@ -4762,27 +4447,12 @@
   {
     "relation": "part_meronym",
     "source": "torso.n.01",
-    "target": "belly.n.02"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "torso.n.01",
     "target": "buttock.n.01"
   },
   {
     "relation": "part_meronym",
     "source": "torso.n.01",
-    "target": "buttocks.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "torso.n.01",
     "target": "diaphragm.n.02"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "torso.n.01",
-    "target": "haunch.n.01"
   },
   {
     "relation": "part_meronym",
@@ -4797,17 +4467,7 @@
   {
     "relation": "part_meronym",
     "source": "torso.n.01",
-    "target": "middle.n.03"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "torso.n.01",
     "target": "serratus.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "torso.n.01",
-    "target": "shoulder.n.01"
   },
   {
     "relation": "part_meronym",
@@ -4825,14 +4485,14 @@
     "target": "waist.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "trachea.n.01",
-    "target": "neck.n.01"
+    "relation": "hypernym",
+    "source": "trailer.n.03",
+    "target": "conveyance.n.03"
   },
   {
-    "relation": "part_meronym",
-    "source": "trachea.n.01",
-    "target": "epiglottis.n.01"
+    "relation": "hypernym",
+    "source": "tramway.n.01",
+    "target": "conveyance.n.03"
   },
   {
     "relation": "hypernym",
@@ -4860,29 +4520,24 @@
     "target": "tropopause.n.01"
   },
   {
-    "relation": "hyponym",
-    "source": "tube.n.04",
-    "target": "cochlea.n.01"
-  },
-  {
-    "relation": "hyponym",
-    "source": "tube.n.04",
-    "target": "tubule.n.01"
-  },
-  {
     "relation": "hypernym",
-    "source": "tubule.n.01",
-    "target": "tube.n.04"
-  },
-  {
-    "relation": "hypernym",
-    "source": "tuck.n.01",
-    "target": "comestible.n.01"
+    "source": "trust_territory.n.01",
+    "target": "district.n.01"
   },
   {
     "relation": "hypernym",
     "source": "tunicate.n.01",
     "target": "chordate.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "tunicate.n.01",
+    "target": "appendicularia.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "tunicate.n.01",
+    "target": "ascidian.n.01"
   },
   {
     "relation": "hypernym",
@@ -4910,11 +4565,6 @@
     "target": "abdomen.n.01"
   },
   {
-    "relation": "hyponym",
-    "source": "underpart.n.01",
-    "target": "belly.n.05"
-  },
-  {
     "relation": "similar_to",
     "source": "undissolved.s.01",
     "target": "unmelted.a.01"
@@ -4923,6 +4573,11 @@
     "relation": "hypernym",
     "source": "ungulate.n.01",
     "target": "placental.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "ungulate.n.01",
+    "target": "dinocerate.n.01"
   },
   {
     "relation": "hyponym",
@@ -4943,11 +4598,6 @@
     "relation": "part_meronym",
     "source": "ungulate.n.01",
     "target": "hoof.n.01"
-  },
-  {
-    "relation": "hypernym",
-    "source": "unknown.n.01",
-    "target": "region.n.03"
   },
   {
     "relation": "similar_to",
@@ -4980,11 +4630,6 @@
     "target": "vulva.n.01"
   },
   {
-    "relation": "part_holonym",
-    "source": "uvea.n.01",
-    "target": "eye.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "vacuum.n.03",
     "target": "region.n.01"
@@ -5006,8 +4651,18 @@
   },
   {
     "relation": "hypernym",
+    "source": "vent.n.04",
+    "target": "slit.n.01"
+  },
+  {
+    "relation": "hypernym",
     "source": "vertebrate.n.01",
     "target": "chordate.n.01"
+  },
+  {
+    "relation": "hyponym",
+    "source": "vertebrate.n.01",
+    "target": "amniote.n.01"
   },
   {
     "relation": "hyponym",
@@ -5028,11 +4683,6 @@
     "relation": "hyponym",
     "source": "vertebrate.n.01",
     "target": "tetrapod.n.01"
-  },
-  {
-    "relation": "part_meronym",
-    "source": "vertebrate.n.01",
-    "target": "belly.n.05"
   },
   {
     "relation": "part_meronym",
@@ -5070,9 +4720,24 @@
     "target": "righteous.a.01"
   },
   {
+    "relation": "similar_to",
+    "source": "virtuous.a.01",
+    "target": "impeccable.s.02"
+  },
+  {
+    "relation": "similar_to",
+    "source": "virtuous.a.01",
+    "target": "impeccant.s.01"
+  },
+  {
     "relation": "hypernym",
     "source": "vitamin.n.01",
     "target": "nutriment.n.01"
+  },
+  {
+    "relation": "part_meronym",
+    "source": "vulva.n.01",
+    "target": "clitoris.n.01"
   },
   {
     "relation": "part_meronym",
@@ -5120,11 +4785,6 @@
     "target": "gunnery.n.01"
   },
   {
-    "relation": "hyponym",
-    "source": "weaponry.n.01",
-    "target": "hardware.n.01"
-  },
-  {
     "relation": "hypernym",
     "source": "whereabouts.n.01",
     "target": "location.n.01"
@@ -5133,6 +4793,16 @@
     "relation": "hypernym",
     "source": "widen.v.04",
     "target": "increase.v.02"
+  },
+  {
+    "relation": "hypernym",
+    "source": "wiggler.n.02",
+    "target": "larva.n.01"
+  },
+  {
+    "relation": "hypernym",
+    "source": "wireworm.n.01",
+    "target": "larva.n.01"
   },
   {
     "relation": "part_holonym",
@@ -5190,9 +4860,9 @@
     "target": "exemplary.s.01"
   },
   {
-    "relation": "hypernym",
-    "source": "yogurt.n.01",
-    "target": "food.n.02"
+    "relation": "part_holonym",
+    "source": "wristband.n.01",
+    "target": "sleeve.n.01"
   },
   {
     "relation": "hypernym",

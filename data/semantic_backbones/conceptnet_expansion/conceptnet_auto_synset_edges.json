@@ -9,19 +9,59 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "abdominal.n.01",
+    "source_lemma": "ab",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "abdomen.n.01",
+    "source_lemma": "abdomen",
+    "source_type": "conceptnet",
+    "target": "abdominal.n.01",
+    "target_lemma": "abdominal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "abdomen.n.01",
+    "source_lemma": "abdomen",
+    "source_type": "conceptnet",
+    "target": "crustacean.n.01",
+    "target_lemma": "crustacean"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "abdomen.n.01",
+    "source_lemma": "abdomen",
+    "source_type": "conceptnet",
+    "target": "diaphragm.n.02",
+    "target_lemma": "diaphragm"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "abdomen.n.01",
+    "source_lemma": "abdomen",
+    "source_type": "conceptnet",
+    "target": "thorax.n.02",
+    "target_lemma": "thorax"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "abdominal.n.01",
+    "source_lemma": "abdominal",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "acinus.n.02",
     "source_lemma": "acinus",
     "source_type": "conceptnet",
     "target": "gland.n.01",
     "target_lemma": "gland"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "adept.s.01",
-    "source_lemma": "adept",
-    "source_type": "conceptnet",
-    "target": "skilled.a.01",
-    "target_lemma": "skilled"
   },
   {
     "relation": "IsA",
@@ -72,12 +112,44 @@
     "target_lemma": "descend"
   },
   {
+    "relation": "MannerOf",
+    "source": "alight.v.02",
+    "source_lemma": "alight",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
     "relation": "RelatedTo",
     "source": "alight.v.02",
     "source_lemma": "alight",
     "source_type": "conceptnet",
     "target": "descend.v.01",
     "target_lemma": "descend"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "nutriment.n.01",
+    "source_lemma": "aliment",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "nutriment.n.01",
+    "source_lemma": "alimentation",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "ambrosia.n.04",
+    "source_lemma": "ambrosia",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -102,6 +174,38 @@
     "source_type": "conceptnet",
     "target": "powder.n.03",
     "target_lemma": "powder"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "amniote.n.01",
+    "source_lemma": "amniote",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "amniote.n.01",
+    "source_lemma": "amniote",
+    "source_type": "conceptnet",
+    "target": "embryo.n.02",
+    "target_lemma": "embryo"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "amniote.n.01",
+    "source_lemma": "amniote",
+    "source_type": "conceptnet",
+    "target": "mammal.n.01",
+    "target_lemma": "mammal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "amniote.n.01",
+    "source_lemma": "amniote",
+    "source_type": "conceptnet",
+    "target": "vertebrate.n.01",
+    "target_lemma": "vertebrate"
   },
   {
     "relation": "RelatedTo",
@@ -148,16 +252,24 @@
     "source": "antiperspirant.n.01",
     "source_lemma": "antiperspirant",
     "source_type": "conceptnet",
-    "target": "armpit.n.01",
-    "target_lemma": "armpit"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "antiperspirant.n.01",
-    "source_lemma": "antiperspirant",
-    "source_type": "conceptnet",
     "target": "deodorant.n.01",
     "target_lemma": "deodorant"
+  },
+  {
+    "relation": "IsA",
+    "source": "antipodes.n.01",
+    "source_lemma": "antipodes",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "PartOf",
+    "source": "antler.n.01",
+    "source_lemma": "antler",
+    "source_type": "conceptnet",
+    "target": "elk.n.01",
+    "target_lemma": "moose"
   },
   {
     "relation": "RelatedTo",
@@ -168,28 +280,28 @@
     "target_lemma": "deer"
   },
   {
+    "relation": "RelatedTo",
+    "source": "antler.n.01",
+    "source_lemma": "antler",
+    "source_type": "conceptnet",
+    "target": "elk.n.01",
+    "target_lemma": "elk"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "antler.n.01",
+    "source_lemma": "antler",
+    "source_type": "conceptnet",
+    "target": "elk.n.01",
+    "target_lemma": "moose"
+  },
+  {
     "relation": "UsedFor",
     "source": "apparatus.n.01",
     "source_lemma": "apparatus",
     "source_type": "conceptnet",
     "target": "perform.v.03",
     "target_lemma": "perform"
-  },
-  {
-    "relation": "IsA",
-    "source": "extremity.n.01",
-    "source_lemma": "appendage",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gear.n.04",
-    "source_lemma": "appurtenance",
-    "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
   },
   {
     "relation": "RelatedTo",
@@ -216,14 +328,6 @@
     "target_lemma": "human"
   },
   {
-    "relation": "IsA",
-    "source": "sleeve.n.01",
-    "source_lemma": "arm",
-    "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
-  },
-  {
     "relation": "PartOf",
     "source": "sleeve.n.01",
     "source_lemma": "arm",
@@ -244,14 +348,6 @@
     "source": "sleeve.n.01",
     "source_lemma": "arm",
     "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "sleeve.n.01",
-    "source_lemma": "arm",
-    "source_type": "conceptnet",
     "target": "torso.n.01",
     "target_lemma": "body"
   },
@@ -260,8 +356,32 @@
     "source": "sleeve.n.01",
     "source_lemma": "arm",
     "source_type": "conceptnet",
+    "target": "elbow.n.04",
+    "target_lemma": "elbow"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sleeve.n.01",
+    "source_lemma": "arm",
+    "source_type": "conceptnet",
     "target": "widen.v.04",
     "target_lemma": "extend"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sleeve.n.01",
+    "source_lemma": "arm",
+    "source_type": "conceptnet",
+    "target": "extremity.n.04",
+    "target_lemma": "extremity"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sleeve.n.01",
+    "source_lemma": "arm",
+    "source_type": "conceptnet",
+    "target": "shoulder.n.03",
+    "target_lemma": "shoulder"
   },
   {
     "relation": "DerivedFrom",
@@ -300,14 +420,6 @@
     "source": "armhole.n.01",
     "source_lemma": "armhole",
     "source_type": "conceptnet",
-    "target": "armpit.n.01",
-    "target_lemma": "armpit"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "armhole.n.01",
-    "source_lemma": "armhole",
-    "source_type": "conceptnet",
     "target": "homo.n.02",
     "target_lemma": "human"
   },
@@ -334,6 +446,14 @@
     "source_type": "conceptnet",
     "target": "armament.n.01",
     "target_lemma": "armament"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "armyworm.n.01",
+    "source_lemma": "armyworm",
+    "source_type": "conceptnet",
+    "target": "larva.n.01",
+    "target_lemma": "larva"
   },
   {
     "relation": "RelatedTo",
@@ -385,19 +505,43 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "ass",
+    "source": "arytenoid.n.01",
+    "source_lemma": "arytenoid",
     "source_type": "conceptnet",
-    "target": "torso.n.01",
-    "target_lemma": "body"
+    "target": "cartilage.n.01",
+    "target_lemma": "cartilage"
   },
   {
-    "relation": "Synonym",
-    "source": "buttocks.n.01",
-    "source_lemma": "ass",
+    "relation": "RelatedTo",
+    "source": "arytenoid.n.01",
+    "source_lemma": "arytenoid",
     "source_type": "conceptnet",
-    "target": "buttock.n.01",
-    "target_lemma": "buttock"
+    "target": "gland.n.01",
+    "target_lemma": "gland"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "arytenoid.n.01",
+    "source_lemma": "arytenoid",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "aspirate.v.03",
+    "source_lemma": "aspirate",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "aspirate.v.03",
+    "source_lemma": "aspirate",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
   },
   {
     "relation": "RelatedTo",
@@ -472,20 +616,28 @@
     "target_lemma": "snow"
   },
   {
-    "relation": "RelatedTo",
-    "source": "armpit.n.01",
-    "source_lemma": "axilla",
-    "source_type": "conceptnet",
-    "target": "sleeve.n.01",
-    "target_lemma": "arm"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "backside",
+    "relation": "IsA",
+    "source": "backwater.n.02",
+    "source_lemma": "backwater",
     "source_type": "conceptnet",
     "target": "region.n.01",
-    "target_lemma": "part"
+    "target_lemma": "region"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "bacteria.n.01",
+    "source_lemma": "bacteria",
+    "source_type": "conceptnet",
+    "target": "finger.n.01",
+    "target_lemma": "finger"
+  },
+  {
+    "relation": "IsA",
+    "source": "banquet.n.02",
+    "source_lemma": "banquet",
+    "source_type": "conceptnet",
+    "target": "dinner.n.01",
+    "target_lemma": "dinner"
   },
   {
     "relation": "RelatedTo",
@@ -512,20 +664,20 @@
     "target_lemma": "treat"
   },
   {
-    "relation": "RelatedTo",
-    "source": "barony.n.03",
-    "source_lemma": "barony",
+    "relation": "MannerOf",
+    "source": "barnstorm.v.01",
+    "source_lemma": "barnstorm",
     "source_type": "conceptnet",
-    "target": "torso.n.01",
-    "target_lemma": "body"
+    "target": "perform.v.03",
+    "target_lemma": "perform"
   },
   {
     "relation": "RelatedTo",
     "source": "barony.n.03",
     "source_lemma": "barony",
     "source_type": "conceptnet",
-    "target": "domain.n.02",
-    "target_lemma": "domain"
+    "target": "torso.n.01",
+    "target_lemma": "body"
   },
   {
     "relation": "RelatedTo",
@@ -540,16 +692,80 @@
     "source": "barony.n.03",
     "source_lemma": "barony",
     "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "barony.n.03",
+    "source_lemma": "barony",
+    "source_type": "conceptnet",
     "target": "region.n.01",
     "target_lemma": "part"
   },
   {
-    "relation": "DerivedFrom",
-    "source": "baroreceptor.n.01",
-    "source_lemma": "baroreceptor",
+    "relation": "RelatedTo",
+    "source": "bat.n.01",
+    "source_lemma": "bat",
     "source_type": "conceptnet",
-    "target": "sense_organ.n.01",
-    "target_lemma": "receptor"
+    "target": "bird.n.02",
+    "target_lemma": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bat.n.01",
+    "source_lemma": "bat",
+    "source_type": "conceptnet",
+    "target": "blind.n.03",
+    "target_lemma": "blind"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bat.n.01",
+    "source_lemma": "bat",
+    "source_type": "conceptnet",
+    "target": "brick.n.01",
+    "target_lemma": "brick"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bat.n.01",
+    "source_lemma": "bat",
+    "source_type": "conceptnet",
+    "target": "mammal.n.01",
+    "target_lemma": "mammal"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "batter.n.02",
+    "source_lemma": "batter",
+    "source_type": "conceptnet",
+    "target": "bat.n.01",
+    "target_lemma": "bat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "batter.n.02",
+    "source_lemma": "batter",
+    "source_type": "conceptnet",
+    "target": "clay.n.01",
+    "target_lemma": "clay"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "batter.n.02",
+    "source_lemma": "batter",
+    "source_type": "conceptnet",
+    "target": "flour.n.01",
+    "target_lemma": "flour"
+  },
+  {
+    "relation": "Synonym",
+    "source": "batter.n.02",
+    "source_lemma": "batter",
+    "source_type": "conceptnet",
+    "target": "buffet.n.02",
+    "target_lemma": "buffet"
   },
   {
     "relation": "IsA",
@@ -560,12 +776,12 @@
     "target_lemma": "cattle"
   },
   {
-    "relation": "RelatedTo",
+    "relation": "IsA",
     "source": "beef.n.02",
     "source_lemma": "beef",
     "source_type": "conceptnet",
-    "target": "ingredient.n.03",
-    "target_lemma": "ingredient"
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -576,20 +792,36 @@
     "target_lemma": "meat"
   },
   {
-    "relation": "RelatedTo",
-    "source": "beef.n.02",
-    "source_lemma": "beef",
+    "relation": "IsA",
+    "source": "abdomen.n.01",
+    "source_lemma": "belly",
     "source_type": "conceptnet",
-    "target": "produce.n.01",
-    "target_lemma": "produce"
+    "target": "inside.n.01",
+    "target_lemma": "inside"
   },
   {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "behind",
+    "relation": "PartOf",
+    "source": "abdomen.n.01",
+    "source_lemma": "belly",
     "source_type": "conceptnet",
-    "target": "buttock.n.01",
-    "target_lemma": "buttock"
+    "target": "vertebrate.n.01",
+    "target_lemma": "vertebrate"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "navel.n.01",
+    "source_lemma": "bellybutton",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "belly"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "navel.n.01",
+    "source_lemma": "bellybutton",
+    "source_type": "conceptnet",
+    "target": "clitoris.n.01",
+    "target_lemma": "button"
   },
   {
     "relation": "DerivedFrom",
@@ -598,6 +830,70 @@
     "source_type": "conceptnet",
     "target": "location.n.01",
     "target_lemma": "location"
+  },
+  {
+    "relation": "CapableOf",
+    "source": "bird.n.02",
+    "source_lemma": "bird",
+    "source_type": "conceptnet",
+    "target": "pet.v.01",
+    "target_lemma": "pet"
+  },
+  {
+    "relation": "IsA",
+    "source": "bird.n.02",
+    "source_lemma": "bird",
+    "source_type": "conceptnet",
+    "target": "amniote.n.01",
+    "target_lemma": "amniote"
+  },
+  {
+    "relation": "IsA",
+    "source": "bird.n.02",
+    "source_lemma": "bird",
+    "source_type": "conceptnet",
+    "target": "vertebrate.n.01",
+    "target_lemma": "vertebrate"
+  },
+  {
+    "relation": "PartOf",
+    "source": "bird.n.02",
+    "source_lemma": "bird",
+    "source_type": "conceptnet",
+    "target": "flock.n.05",
+    "target_lemma": "flock"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird.n.02",
+    "source_lemma": "bird",
+    "source_type": "conceptnet",
+    "target": "egg.n.01",
+    "target_lemma": "egg"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird.n.02",
+    "source_lemma": "bird",
+    "source_type": "conceptnet",
+    "target": "mammal.n.01",
+    "target_lemma": "mammal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird.n.02",
+    "source_lemma": "bird",
+    "source_type": "conceptnet",
+    "target": "homo.n.02",
+    "target_lemma": "man"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird.n.02",
+    "source_lemma": "bird",
+    "source_type": "conceptnet",
+    "target": "satellite.n.01",
+    "target_lemma": "satellite"
   },
   {
     "relation": "AtLocation",
@@ -614,6 +910,38 @@
     "source_type": "conceptnet",
     "target": "torso.n.01",
     "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "blastocoel.n.01",
+    "source_lemma": "blastocoel",
+    "source_type": "conceptnet",
+    "target": "blastula.n.01",
+    "target_lemma": "blastula"
+  },
+  {
+    "relation": "IsA",
+    "source": "blastocyst.n.01",
+    "source_lemma": "blastocyst",
+    "source_type": "conceptnet",
+    "target": "embryo.n.02",
+    "target_lemma": "embryo"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "blastocyst.n.01",
+    "source_lemma": "blastocyst",
+    "source_type": "conceptnet",
+    "target": "blastula.n.01",
+    "target_lemma": "blastula"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "blastocyst.n.01",
+    "source_lemma": "blastocyst",
+    "source_type": "conceptnet",
+    "target": "mammal.n.01",
+    "target_lemma": "mammalian"
   },
   {
     "relation": "RelatedTo",
@@ -644,16 +972,16 @@
     "source": "torso.n.01",
     "source_lemma": "body",
     "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
+    "target": "weaponry.n.01",
+    "target_lemma": "arms"
   },
   {
     "relation": "RelatedTo",
     "source": "torso.n.01",
     "source_lemma": "body",
     "source_type": "conceptnet",
-    "target": "weaponry.n.01",
-    "target_lemma": "arms"
+    "target": "extremity.n.04",
+    "target_lemma": "extremity"
   },
   {
     "relation": "RelatedTo",
@@ -680,12 +1008,20 @@
     "target_lemma": "skeleton"
   },
   {
-    "relation": "RelatedTo",
-    "source": "bomb.n.01",
-    "source_lemma": "bomb",
+    "relation": "UsedFor",
+    "source": "torso.n.01",
+    "source_lemma": "body",
     "source_type": "conceptnet",
-    "target": "breast.n.01",
-    "target_lemma": "breast"
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bollworm.n.01",
+    "source_lemma": "bollworm",
+    "source_type": "conceptnet",
+    "target": "larva.n.01",
+    "target_lemma": "larva"
   },
   {
     "relation": "AtLocation",
@@ -718,6 +1054,14 @@
     "source_type": "conceptnet",
     "target": "boundary.n.01",
     "target_lemma": "bound"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "border.n.05",
+    "source_lemma": "border",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "Synonym",
@@ -768,12 +1112,36 @@
     "target_lemma": "border"
   },
   {
+    "relation": "DerivedFrom",
+    "source": "borderland.n.01",
+    "source_lemma": "borderland",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "IsA",
+    "source": "borderland.n.01",
+    "source_lemma": "borderland",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
     "relation": "RelatedTo",
     "source": "borderland.n.01",
     "source_lemma": "borderland",
     "source_type": "conceptnet",
     "target": "border.n.05",
     "target_lemma": "border"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "borderland.n.01",
+    "source_lemma": "borderland",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
   },
   {
     "relation": "RelatedTo",
@@ -790,38 +1158,6 @@
     "source_type": "conceptnet",
     "target": "mammal.n.01",
     "target_lemma": "mammal"
-  },
-  {
-    "relation": "Synonym",
-    "source": "bot.n.01",
-    "source_lemma": "bot",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "bum"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "bottom",
-    "source_type": "conceptnet",
-    "target": "buttock.n.01",
-    "target_lemma": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "bottom",
-    "source_type": "conceptnet",
-    "target": "descend.v.01",
-    "target_lemma": "fall"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "bottom",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
   },
   {
     "relation": "RelatedTo",
@@ -876,6 +1212,14 @@
     "source": "bovid.n.01",
     "source_lemma": "bovid",
     "source_type": "conceptnet",
+    "target": "goat.n.01",
+    "target_lemma": "goat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bovid.n.01",
+    "source_lemma": "bovid",
+    "source_type": "conceptnet",
     "target": "sheep.n.01",
     "target_lemma": "sheep"
   },
@@ -894,6 +1238,14 @@
     "source_type": "conceptnet",
     "target": "inside.n.01",
     "target_lemma": "interior"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "bread.n.01",
+    "source_lemma": "bread",
+    "source_type": "conceptnet",
+    "target": "dinner.n.01",
+    "target_lemma": "dinner"
   },
   {
     "relation": "AtLocation",
@@ -924,14 +1276,6 @@
     "source": "bread.n.01",
     "source_lemma": "bread",
     "source_type": "conceptnet",
-    "target": "butter.n.01",
-    "target_lemma": "butter"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bread.n.01",
-    "source_lemma": "bread",
-    "source_type": "conceptnet",
     "target": "crust.n.01",
     "target_lemma": "crust"
   },
@@ -950,6 +1294,14 @@
     "source_type": "conceptnet",
     "target": "flour.n.01",
     "target_lemma": "flour"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bread.n.01",
+    "source_lemma": "bread",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -992,12 +1344,44 @@
     "target_lemma": "nutrition"
   },
   {
+    "relation": "IsA",
+    "source": "breadbasket.n.01",
+    "source_lemma": "breadbasket",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "breadbasket.n.01",
+    "source_lemma": "breadbasket",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
+  },
+  {
     "relation": "RelatedTo",
     "source": "breadbasket.n.01",
     "source_lemma": "breadbasket",
     "source_type": "conceptnet",
     "target": "torso.n.01",
     "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "breadbasket.n.01",
+    "source_lemma": "breadbasket",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "breadbasket.n.01",
+    "source_lemma": "breadbasket",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "Synonym",
@@ -1016,36 +1400,44 @@
     "target_lemma": "flour"
   },
   {
-    "relation": "PartOf",
-    "source": "breast.n.01",
-    "source_lemma": "breast",
+    "relation": "RelatedTo",
+    "source": "breakfast.n.01",
+    "source_lemma": "breakfast",
     "source_type": "conceptnet",
-    "target": "torso.n.01",
-    "target_lemma": "torso"
+    "target": "brunch.n.01",
+    "target_lemma": "brunch"
   },
   {
     "relation": "RelatedTo",
-    "source": "breast.n.01",
-    "source_lemma": "breast",
+    "source": "breakfast.n.01",
+    "source_lemma": "breakfast",
     "source_type": "conceptnet",
-    "target": "thorax.n.02",
-    "target_lemma": "thorax"
+    "target": "egg.n.01",
+    "target_lemma": "egg"
   },
   {
-    "relation": "Synonym",
-    "source": "breast.n.01",
-    "source_lemma": "breast",
+    "relation": "RelatedTo",
+    "source": "breakfast.n.01",
+    "source_lemma": "breakfast",
     "source_type": "conceptnet",
-    "target": "female_chest.n.01",
-    "target_lemma": "bust"
+    "target": "meal.n.01",
+    "target_lemma": "meal"
   },
   {
-    "relation": "DerivedFrom",
+    "relation": "RelatedTo",
+    "source": "breakfast.n.01",
+    "source_lemma": "breakfast",
+    "source_type": "conceptnet",
+    "target": "sausage.n.01",
+    "target_lemma": "sausage"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "sternum.n.01",
     "source_lemma": "breastbone",
     "source_type": "conceptnet",
-    "target": "breast.n.01",
-    "target_lemma": "breast"
+    "target": "clavicle.n.01",
+    "target_lemma": "collarbone"
   },
   {
     "relation": "RelatedTo",
@@ -1081,19 +1473,83 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "widen.v.04",
+    "source_lemma": "broaden",
+    "source_type": "conceptnet",
+    "target": "enlarge.v.01",
+    "target_lemma": "enlarge"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "brocket.n.01",
+    "source_lemma": "brocket",
+    "source_type": "conceptnet",
+    "target": "deer.n.01",
+    "target_lemma": "deer"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bronchiole.n.01",
+    "source_lemma": "bronchiole",
+    "source_type": "conceptnet",
+    "target": "cartilage.n.01",
+    "target_lemma": "cartilage"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "brunch.n.01",
+    "source_lemma": "brunch",
+    "source_type": "conceptnet",
+    "target": "breakfast.n.01",
+    "target_lemma": "breakfast"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "brunch.n.01",
+    "source_lemma": "brunch",
+    "source_type": "conceptnet",
+    "target": "breakfast.n.01",
+    "target_lemma": "breakfast"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "brunch.n.01",
+    "source_lemma": "brunch",
+    "source_type": "conceptnet",
+    "target": "meal.n.01",
+    "target_lemma": "meal"
+  },
+  {
+    "relation": "IsA",
+    "source": "buffet.n.02",
+    "source_lemma": "buffet",
+    "source_type": "conceptnet",
+    "target": "furniture.n.01",
+    "target_lemma": "furniture"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "buffet.n.02",
+    "source_lemma": "buffet",
+    "source_type": "conceptnet",
+    "target": "breakfast.n.01",
+    "target_lemma": "breakfast"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "buffet.n.02",
+    "source_lemma": "buffet",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "bullheaded.s.01",
     "source_lemma": "bullheaded",
     "source_type": "conceptnet",
     "target": "stubborn.a.01",
     "target_lemma": "stubborn"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "bum",
-    "source_type": "conceptnet",
-    "target": "homo.n.02",
-    "target_lemma": "man"
   },
   {
     "relation": "RelatedTo",
@@ -1108,8 +1564,8 @@
     "source": "female_chest.n.01",
     "source_lemma": "bust",
     "source_type": "conceptnet",
-    "target": "breast.n.01",
-    "target_lemma": "breast"
+    "target": "shoulder.n.03",
+    "target_lemma": "shoulder"
   },
   {
     "relation": "RelatedTo",
@@ -1129,163 +1585,59 @@
   },
   {
     "relation": "IsA",
-    "source": "buttocks.n.01",
-    "source_lemma": "butt",
+    "source": "buttermilk.n.01",
+    "source_lemma": "buttermilk",
     "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "butt",
-    "source_type": "conceptnet",
-    "target": "boundary.n.01",
-    "target_lemma": "bound"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "butt",
-    "source_type": "conceptnet",
-    "target": "buttock.n.01",
-    "target_lemma": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "butt",
-    "source_type": "conceptnet",
-    "target": "midst.n.01",
-    "target_lemma": "thick"
-  },
-  {
-    "relation": "Synonym",
-    "source": "buttocks.n.01",
-    "source_lemma": "butt",
-    "source_type": "conceptnet",
-    "target": "border.n.05",
-    "target_lemma": "border"
-  },
-  {
-    "relation": "DerivedFrom",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "butt"
-  },
-  {
-    "relation": "HasProperty",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
-    "source_type": "conceptnet",
-    "target": "comestible.n.01",
-    "target_lemma": "edible"
+    "target": "beverage.n.01",
+    "target_lemma": "beverage"
   },
   {
     "relation": "IsA",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
-    "source_type": "conceptnet",
-    "target": "adipose_tissue.n.01",
-    "target_lemma": "fat"
-  },
-  {
-    "relation": "IsA",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
+    "source": "buttermilk.n.01",
+    "source_lemma": "buttermilk",
     "source_type": "conceptnet",
     "target": "concoction.n.01",
     "target_lemma": "mixture"
   },
   {
-    "relation": "IsA",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
+    "relation": "RelatedTo",
+    "source": "buttermilk.n.01",
+    "source_lemma": "buttermilk",
     "source_type": "conceptnet",
-    "target": "banquet.n.02",
-    "target_lemma": "spread"
+    "target": "milk.n.01",
+    "target_lemma": "milk"
   },
   {
     "relation": "RelatedTo",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
+    "source": "clitoris.n.01",
+    "source_lemma": "button",
     "source_type": "conceptnet",
-    "target": "bread.n.01",
-    "target_lemma": "bread"
+    "target": "buttonhole.n.01",
+    "target_lemma": "buttonhole"
   },
   {
     "relation": "RelatedTo",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
+    "source": "clitoris.n.01",
+    "source_lemma": "button",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "butt"
+    "target": "neck.n.05",
+    "target_lemma": "neck"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "buttonhole.n.01",
+    "source_lemma": "buttonhole",
+    "source_type": "conceptnet",
+    "target": "clitoris.n.01",
+    "target_lemma": "button"
   },
   {
     "relation": "RelatedTo",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
+    "source": "buttonhole.n.01",
+    "source_lemma": "buttonhole",
     "source_type": "conceptnet",
-    "target": "cream.n.03",
-    "target_lemma": "cream"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
-    "source_type": "conceptnet",
-    "target": "increase.v.02",
-    "target_lemma": "increase"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butter.n.01",
-    "source_lemma": "butter",
-    "source_type": "conceptnet",
-    "target": "banquet.n.02",
-    "target_lemma": "spread"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttock.n.01",
-    "source_lemma": "buttock",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "behind"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttock.n.01",
-    "source_lemma": "buttock",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "posterior"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttock.n.01",
-    "source_lemma": "buttock",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "stern"
-  },
-  {
-    "relation": "FormOf",
-    "source": "buttocks.n.01",
-    "source_lemma": "buttocks",
-    "source_type": "conceptnet",
-    "target": "buttock.n.01",
-    "target_lemma": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "buttocks",
-    "source_type": "conceptnet",
-    "target": "buttock.n.01",
-    "target_lemma": "buttock"
+    "target": "clitoris.n.01",
+    "target_lemma": "button"
   },
   {
     "relation": "RelatedTo",
@@ -1305,27 +1657,91 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "can",
+    "source": "duct.n.01",
+    "source_lemma": "canal",
+    "source_type": "conceptnet",
+    "target": "homo.n.02",
+    "target_lemma": "man"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "canaliculus.n.01",
+    "source_lemma": "canaliculus",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "canaliculus.n.01",
+    "source_lemma": "canaliculus",
+    "source_type": "conceptnet",
+    "target": "duct.n.01",
+    "target_lemma": "canal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "canaliculus.n.01",
+    "source_lemma": "canaliculus",
+    "source_type": "conceptnet",
+    "target": "duct.n.01",
+    "target_lemma": "duct"
+  },
+  {
+    "relation": "IsA",
+    "source": "cappuccino.n.01",
+    "source_lemma": "cappuccino",
     "source_type": "conceptnet",
     "target": "beverage.n.01",
     "target_lemma": "drink"
   },
   {
     "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "can",
+    "source": "cappuccino.n.01",
+    "source_lemma": "cappuccino",
     "source_type": "conceptnet",
-    "target": "inside.n.01",
-    "target_lemma": "inside"
+    "target": "beverage.n.01",
+    "target_lemma": "beverage"
   },
   {
     "relation": "RelatedTo",
-    "source": "duct.n.01",
-    "source_lemma": "canal",
+    "source": "cappuccino.n.01",
+    "source_lemma": "cappuccino",
     "source_type": "conceptnet",
-    "target": "homo.n.02",
-    "target_lemma": "man"
+    "target": "coffee.n.01",
+    "target_lemma": "coffee"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cappuccino.n.01",
+    "source_lemma": "cappuccino",
+    "source_type": "conceptnet",
+    "target": "espresso.n.01",
+    "target_lemma": "espresso"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "carbonado.n.02",
+    "source_lemma": "carbonado",
+    "source_type": "conceptnet",
+    "target": "meat.n.01",
+    "target_lemma": "meat"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "caress.v.01",
+    "source_lemma": "caress",
+    "source_type": "conceptnet",
+    "target": "chuck.v.03",
+    "target_lemma": "chuck"
+  },
+  {
+    "relation": "IsA",
+    "source": "caribou.n.01",
+    "source_lemma": "caribou",
+    "source_type": "conceptnet",
+    "target": "mammal.n.01",
+    "target_lemma": "mammal"
   },
   {
     "relation": "MannerOf",
@@ -1334,6 +1750,14 @@
     "source_type": "conceptnet",
     "target": "descend.v.01",
     "target_lemma": "descend"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "caseworm.n.01",
+    "source_lemma": "caseworm",
+    "source_type": "conceptnet",
+    "target": "grub.n.02",
+    "target_lemma": "grub"
   },
   {
     "relation": "RelatedTo",
@@ -1385,11 +1809,35 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "chalaza.n.02",
+    "source_lemma": "chalaza",
+    "source_type": "conceptnet",
+    "target": "yolk.n.02",
+    "target_lemma": "yolk"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "duct.n.01",
     "source_lemma": "channel",
     "source_type": "conceptnet",
     "target": "torso.n.01",
     "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "chaste.a.01",
+    "source_lemma": "chaste",
+    "source_type": "conceptnet",
+    "target": "impeccant.s.01",
+    "target_lemma": "innocent"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "chaste.a.01",
+    "source_lemma": "chaste",
+    "source_type": "conceptnet",
+    "target": "moral.a.01",
+    "target_lemma": "moral"
   },
   {
     "relation": "RelatedTo",
@@ -1400,38 +1848,6 @@
     "target_lemma": "part"
   },
   {
-    "relation": "IsA",
-    "source": "cheese.n.01",
-    "source_lemma": "cheese",
-    "source_type": "conceptnet",
-    "target": "concoction.n.01",
-    "target_lemma": "mixture"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "cheese.n.01",
-    "source_lemma": "cheese",
-    "source_type": "conceptnet",
-    "target": "butter.n.01",
-    "target_lemma": "butter"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "cheese.n.01",
-    "source_lemma": "cheese",
-    "source_type": "conceptnet",
-    "target": "cream.n.03",
-    "target_lemma": "cream"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "cheese.n.01",
-    "source_lemma": "cheese",
-    "source_type": "conceptnet",
-    "target": "yogurt.n.01",
-    "target_lemma": "yogurt"
-  },
-  {
     "relation": "RelatedTo",
     "source": "claw.n.03",
     "source_lemma": "chela",
@@ -1440,12 +1856,60 @@
     "target_lemma": "crustacean"
   },
   {
-    "relation": "DerivedFrom",
-    "source": "chemoreceptor.n.01",
-    "source_lemma": "chemoreceptor",
+    "relation": "AtLocation",
+    "source": "thorax.n.02",
+    "source_lemma": "chest",
     "source_type": "conceptnet",
-    "target": "sense_organ.n.01",
-    "target_lemma": "receptor"
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "IsA",
+    "source": "thorax.n.02",
+    "source_lemma": "chest",
+    "source_type": "conceptnet",
+    "target": "furniture.n.01",
+    "target_lemma": "furniture"
+  },
+  {
+    "relation": "Synonym",
+    "source": "thorax.n.02",
+    "source_lemma": "chest",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "trunk"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bat.n.01",
+    "source_lemma": "chiropteran",
+    "source_type": "conceptnet",
+    "target": "mammal.n.01",
+    "target_lemma": "mammal"
+  },
+  {
+    "relation": "IsA",
+    "source": "cocoa.n.01",
+    "source_lemma": "chocolate",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cocoa.n.01",
+    "source_lemma": "chocolate",
+    "source_type": "conceptnet",
+    "target": "beverage.n.01",
+    "target_lemma": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cocoa.n.01",
+    "source_lemma": "chocolate",
+    "source_type": "conceptnet",
+    "target": "milk.n.01",
+    "target_lemma": "milk"
   },
   {
     "relation": "RelatedTo",
@@ -1456,12 +1920,44 @@
     "target_lemma": "vertebrate"
   },
   {
-    "relation": "RelatedTo",
-    "source": "chow.n.02",
-    "source_lemma": "chow",
+    "relation": "MannerOf",
+    "source": "chuck.v.03",
+    "source_lemma": "chuck",
     "source_type": "conceptnet",
-    "target": "district.n.01",
-    "target_lemma": "district"
+    "target": "caress.v.01",
+    "target_lemma": "caress"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "chuck.v.03",
+    "source_lemma": "chuck",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "chuck.v.03",
+    "source_lemma": "chuck",
+    "source_type": "conceptnet",
+    "target": "meat.n.01",
+    "target_lemma": "meat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "chuck.v.03",
+    "source_lemma": "chuck",
+    "source_type": "conceptnet",
+    "target": "shoulder.n.03",
+    "target_lemma": "shoulder"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "chyme.n.01",
+    "source_lemma": "chyme",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -1488,20 +1984,52 @@
     "target_lemma": "beverage"
   },
   {
+    "relation": "RelatedTo",
+    "source": "clavicle.n.01",
+    "source_lemma": "clavicle",
+    "source_type": "conceptnet",
+    "target": "sternum.n.01",
+    "target_lemma": "breastbone"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "clavicle.n.01",
+    "source_lemma": "clavicle",
+    "source_type": "conceptnet",
+    "target": "thorax.n.02",
+    "target_lemma": "chest"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "clavicle.n.01",
+    "source_lemma": "clavicle",
+    "source_type": "conceptnet",
+    "target": "neck.n.05",
+    "target_lemma": "neck"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "clavicle.n.01",
+    "source_lemma": "clavicle",
+    "source_type": "conceptnet",
+    "target": "shoulder.n.03",
+    "target_lemma": "shoulder"
+  },
+  {
+    "relation": "IsA",
+    "source": "claw.n.03",
+    "source_lemma": "claw",
+    "source_type": "conceptnet",
+    "target": "extremity.n.04",
+    "target_lemma": "extremity"
+  },
+  {
     "relation": "PartOf",
     "source": "claw.n.03",
     "source_lemma": "claw",
     "source_type": "conceptnet",
     "target": "paw.v.02",
     "target_lemma": "paw"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "claw.n.03",
-    "source_lemma": "claw",
-    "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
   },
   {
     "relation": "RelatedTo",
@@ -1536,12 +2064,12 @@
     "target_lemma": "brick"
   },
   {
-    "relation": "AtLocation",
-    "source": "coffee.n.01",
-    "source_lemma": "coffee",
+    "relation": "RelatedTo",
+    "source": "clitoris.n.01",
+    "source_lemma": "clitoris",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "can"
+    "target": "vulva.n.01",
+    "target_lemma": "vulva"
   },
   {
     "relation": "HasA",
@@ -1576,6 +2104,54 @@
     "target_lemma": "beverage"
   },
   {
+    "relation": "RelatedTo",
+    "source": "coffee.n.01",
+    "source_lemma": "coffee",
+    "source_type": "conceptnet",
+    "target": "cappuccino.n.01",
+    "target_lemma": "cappuccino"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee.n.01",
+    "source_lemma": "coffee",
+    "source_type": "conceptnet",
+    "target": "decaffeinated_coffee.n.01",
+    "target_lemma": "decaf"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee.n.01",
+    "source_lemma": "coffee",
+    "source_type": "conceptnet",
+    "target": "cafe_noir.n.01",
+    "target_lemma": "demitasse"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee.n.01",
+    "source_lemma": "coffee",
+    "source_type": "conceptnet",
+    "target": "espresso.n.01",
+    "target_lemma": "espresso"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee.n.01",
+    "source_lemma": "coffee",
+    "source_type": "conceptnet",
+    "target": "helping.n.01",
+    "target_lemma": "serving"
+  },
+  {
+    "relation": "Synonym",
+    "source": "coffee.n.01",
+    "source_lemma": "coffee",
+    "source_type": "conceptnet",
+    "target": "cocoa.n.01",
+    "target_lemma": "chocolate"
+  },
+  {
     "relation": "IsA",
     "source": "collagen.n.01",
     "source_lemma": "collagen",
@@ -1584,20 +2160,20 @@
     "target_lemma": "protein"
   },
   {
-    "relation": "SimilarTo",
-    "source": "comestible.n.01",
-    "source_lemma": "comestible",
+    "relation": "RelatedTo",
+    "source": "clavicle.n.01",
+    "source_lemma": "collarbone",
     "source_type": "conceptnet",
-    "target": "beverage.n.01",
-    "target_lemma": "beverage"
+    "target": "sternum.n.01",
+    "target_lemma": "breastbone"
   },
   {
-    "relation": "SimilarTo",
-    "source": "comestible.n.01",
-    "source_lemma": "comestible",
+    "relation": "RelatedTo",
+    "source": "clavicle.n.01",
+    "source_lemma": "collarbone",
     "source_type": "conceptnet",
-    "target": "beverage.n.01",
-    "target_lemma": "drinkable"
+    "target": "shoulder.n.03",
+    "target_lemma": "shoulder"
   },
   {
     "relation": "RelatedTo",
@@ -1745,11 +2321,35 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "cooler.n.02",
+    "source_lemma": "cooler",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "copepod.n.01",
     "source_lemma": "copepod",
     "source_type": "conceptnet",
     "target": "crustacean.n.01",
     "target_lemma": "crustacean"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "country.n.02",
+    "source_lemma": "country",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "IsA",
+    "source": "country.n.02",
+    "source_lemma": "country",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "RelatedTo",
@@ -1766,6 +2366,14 @@
     "source_type": "conceptnet",
     "target": "location.n.01",
     "target_lemma": "location"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "country.n.02",
+    "source_lemma": "country",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "AtLocation",
@@ -1792,12 +2400,44 @@
     "target_lemma": "state"
   },
   {
+    "relation": "HasProperty",
+    "source": "cattle.n.01",
+    "source_lemma": "cows",
+    "source_type": "conceptnet",
+    "target": "impeccant.s.01",
+    "target_lemma": "innocent"
+  },
+  {
     "relation": "RelatedTo",
     "source": "cream.n.03",
     "source_lemma": "cream",
     "source_type": "conceptnet",
     "target": "adipose_tissue.n.01",
     "target_lemma": "fat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cream.n.03",
+    "source_lemma": "cream",
+    "source_type": "conceptnet",
+    "target": "milk.n.01",
+    "target_lemma": "milk"
+  },
+  {
+    "relation": "Synonym",
+    "source": "cream.n.03",
+    "source_lemma": "cream",
+    "source_type": "conceptnet",
+    "target": "bat.n.01",
+    "target_lemma": "bat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "creditable.s.01",
+    "source_lemma": "creditable",
+    "source_type": "conceptnet",
+    "target": "respectable.a.01",
+    "target_lemma": "respectable"
   },
   {
     "relation": "Synonym",
@@ -1814,14 +2454,6 @@
     "source_type": "conceptnet",
     "target": "quadruped.n.01",
     "target_lemma": "quadruped"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "hindquarters.n.02",
-    "source_lemma": "croupe",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "buttocks"
   },
   {
     "relation": "RelatedTo",
@@ -1872,6 +2504,22 @@
     "target_lemma": "solid"
   },
   {
+    "relation": "RelatedTo",
+    "source": "cuppa.n.01",
+    "source_lemma": "cuppa",
+    "source_type": "conceptnet",
+    "target": "tea.n.01",
+    "target_lemma": "tea"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cuppa.n.01",
+    "source_lemma": "cupper",
+    "source_type": "conceptnet",
+    "target": "coffee.n.01",
+    "target_lemma": "coffee"
+  },
+  {
     "relation": "Synonym",
     "source": "current.a.01",
     "source_lemma": "current",
@@ -1896,14 +2544,6 @@
     "target_lemma": "arras"
   },
   {
-    "relation": "Synonym",
-    "source": "curtain.n.01",
-    "source_lemma": "curtain",
-    "source_type": "conceptnet",
-    "target": "dribble.v.02",
-    "target_lemma": "drop"
-  },
-  {
     "relation": "UsedFor",
     "source": "curtain.n.01",
     "source_lemma": "curtain",
@@ -1918,30 +2558,6 @@
     "source_type": "conceptnet",
     "target": "finger.n.01",
     "target_lemma": "finger"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "jag.n.03",
-    "source_lemma": "dag",
-    "source_type": "conceptnet",
-    "target": "antler.n.01",
-    "target_lemma": "antler"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "jag.n.03",
-    "source_lemma": "dag",
-    "source_type": "conceptnet",
-    "target": "deer.n.01",
-    "target_lemma": "deer"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "jag.n.03",
-    "source_lemma": "dag",
-    "source_type": "conceptnet",
-    "target": "garment.n.01",
-    "target_lemma": "garment"
   },
   {
     "relation": "RelatedTo",
@@ -1969,6 +2585,14 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "dandle.v.02",
+    "source_lemma": "dandle",
+    "source_type": "conceptnet",
+    "target": "pet.v.01",
+    "target_lemma": "pet"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "splashboard.n.02",
     "source_lemma": "dashboard",
     "source_type": "conceptnet",
@@ -1982,6 +2606,22 @@
     "source_type": "conceptnet",
     "target": "perform.v.03",
     "target_lemma": "perform"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "decaffeinated_coffee.n.01",
+    "source_lemma": "decaf",
+    "source_type": "conceptnet",
+    "target": "coffee.n.01",
+    "target_lemma": "coffee"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "decaffeinated_coffee.n.01",
+    "source_lemma": "decaf",
+    "source_type": "conceptnet",
+    "target": "tea.n.01",
+    "target_lemma": "tea"
   },
   {
     "relation": "IsA",
@@ -2004,6 +2644,22 @@
     "source": "deer.n.01",
     "source_lemma": "deer",
     "source_type": "conceptnet",
+    "target": "elk.n.01",
+    "target_lemma": "elk"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "deer.n.01",
+    "source_lemma": "deer",
+    "source_type": "conceptnet",
+    "target": "hoof.n.01",
+    "target_lemma": "hoof"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "deer.n.01",
+    "source_lemma": "deer",
+    "source_type": "conceptnet",
     "target": "mammal.n.01",
     "target_lemma": "mammal"
   },
@@ -2014,6 +2670,14 @@
     "source_type": "conceptnet",
     "target": "meat.n.01",
     "target_lemma": "meat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "deer.n.01",
+    "source_lemma": "deer",
+    "source_type": "conceptnet",
+    "target": "elk.n.01",
+    "target_lemma": "moose"
   },
   {
     "relation": "SimilarTo",
@@ -2030,6 +2694,22 @@
     "source_type": "conceptnet",
     "target": "fractious.s.01",
     "target_lemma": "recalcitrant"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "dainty.n.01",
+    "source_lemma": "delicacy",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cafe_noir.n.01",
+    "source_lemma": "demitasse",
+    "source_type": "conceptnet",
+    "target": "coffee.n.01",
+    "target_lemma": "coffee"
   },
   {
     "relation": "RelatedTo",
@@ -2068,8 +2748,8 @@
     "source": "diaphragm.n.02",
     "source_lemma": "diaphragm",
     "source_type": "conceptnet",
-    "target": "neck.n.01",
-    "target_lemma": "cervix"
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
   },
   {
     "relation": "RelatedTo",
@@ -2078,6 +2758,14 @@
     "source_type": "conceptnet",
     "target": "mammal.n.01",
     "target_lemma": "mammal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "diaphragm.n.02",
+    "source_lemma": "diaphragm",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
   },
   {
     "relation": "RelatedTo",
@@ -2108,16 +2796,56 @@
     "source": "dickey.n.02",
     "source_lemma": "dicky",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "seat"
+    "target": "shirt.n.01",
+    "target_lemma": "shirt"
   },
   {
     "relation": "RelatedTo",
-    "source": "dickey.n.02",
-    "source_lemma": "dicky",
+    "source": "diet.n.01",
+    "source_lemma": "diet",
     "source_type": "conceptnet",
-    "target": "shirt.n.01",
-    "target_lemma": "shirt"
+    "target": "beverage.n.01",
+    "target_lemma": "beverage"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "diet.n.01",
+    "source_lemma": "diet",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "dietary.n.01",
+    "source_lemma": "dietary",
+    "source_type": "conceptnet",
+    "target": "diet.n.01",
+    "target_lemma": "diet"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "dietary.n.01",
+    "source_lemma": "dietary",
+    "source_type": "conceptnet",
+    "target": "diet.n.01",
+    "target_lemma": "diet"
+  },
+  {
+    "relation": "IsA",
+    "source": "digit.n.03",
+    "source_lemma": "digit",
+    "source_type": "conceptnet",
+    "target": "extremity.n.04",
+    "target_lemma": "extremity"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "digit.n.03",
+    "source_lemma": "digit",
+    "source_type": "conceptnet",
+    "target": "extremity.n.04",
+    "target_lemma": "extremity"
   },
   {
     "relation": "RelatedTo",
@@ -2136,6 +2864,14 @@
     "target_lemma": "human"
   },
   {
+    "relation": "RelatedTo",
+    "source": "digit.n.03",
+    "source_lemma": "digit",
+    "source_type": "conceptnet",
+    "target": "toe.n.01",
+    "target_lemma": "toe"
+  },
+  {
     "relation": "Synonym",
     "source": "digit.n.03",
     "source_lemma": "digit",
@@ -2144,12 +2880,36 @@
     "target_lemma": "finger"
   },
   {
+    "relation": "RelatedTo",
+    "source": "dinner.n.01",
+    "source_lemma": "dinner",
+    "source_type": "conceptnet",
+    "target": "meal.n.01",
+    "target_lemma": "meal"
+  },
+  {
+    "relation": "Synonym",
+    "source": "dinner.n.01",
+    "source_lemma": "dinner",
+    "source_type": "conceptnet",
+    "target": "banquet.n.02",
+    "target_lemma": "banquet"
+  },
+  {
     "relation": "Synonym",
     "source": "disobedient.a.01",
     "source_lemma": "disobedient",
     "source_type": "conceptnet",
     "target": "insubordinate.a.01",
     "target_lemma": "insubordinate"
+  },
+  {
+    "relation": "IsA",
+    "source": "district.n.01",
+    "source_lemma": "district",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "IsA",
@@ -2166,6 +2926,14 @@
     "source_type": "conceptnet",
     "target": "county.n.01",
     "target_lemma": "county"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "district.n.01",
+    "source_lemma": "district",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "Synonym",
@@ -2201,19 +2969,19 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "dive.v.01",
+    "source_lemma": "dive",
+    "source_type": "conceptnet",
+    "target": "pounce.v.01",
+    "target_lemma": "swoop"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "hellgrammiate.n.01",
     "source_lemma": "dobson",
     "source_type": "conceptnet",
     "target": "larva.n.01",
     "target_lemma": "larva"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "domain.n.02",
-    "source_lemma": "domain",
-    "source_type": "conceptnet",
-    "target": "protein.n.01",
-    "target_lemma": "protein"
   },
   {
     "relation": "IsA",
@@ -2252,8 +3020,8 @@
     "source": "dough.n.01",
     "source_lemma": "dough",
     "source_type": "conceptnet",
-    "target": "butter.n.01",
-    "target_lemma": "butter"
+    "target": "egg.n.01",
+    "target_lemma": "egg"
   },
   {
     "relation": "RelatedTo",
@@ -2272,14 +3040,6 @@
     "target_lemma": "obstinate"
   },
   {
-    "relation": "RelatedTo",
-    "source": "dogged.s.01",
-    "source_lemma": "dour",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "stern"
-  },
-  {
     "relation": "Synonym",
     "source": "dogged.s.01",
     "source_lemma": "dour",
@@ -2292,32 +3052,40 @@
     "source": "dogged.s.01",
     "source_lemma": "dour",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "stern"
-  },
-  {
-    "relation": "Synonym",
-    "source": "dogged.s.01",
-    "source_lemma": "dour",
-    "source_type": "conceptnet",
     "target": "stubborn.a.01",
     "target_lemma": "stubborn"
   },
   {
-    "relation": "RelatedTo",
-    "source": "dribble.v.02",
-    "source_lemma": "dribble",
+    "relation": "Entails",
+    "source": "curtain.n.01",
+    "source_lemma": "drape",
     "source_type": "conceptnet",
-    "target": "descend.v.01",
-    "target_lemma": "fall"
+    "target": "flock.n.05",
+    "target_lemma": "fold"
   },
   {
-    "relation": "AtLocation",
+    "relation": "RelatedTo",
+    "source": "curtain.n.01",
+    "source_lemma": "drapery",
+    "source_type": "conceptnet",
+    "target": "flock.n.05",
+    "target_lemma": "fold"
+  },
+  {
+    "relation": "Antonym",
     "source": "beverage.n.01",
     "source_lemma": "drink",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "can"
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "IsA",
+    "source": "beverage.n.01",
+    "source_lemma": "drink",
+    "source_type": "conceptnet",
+    "target": "helping.n.01",
+    "target_lemma": "helping"
   },
   {
     "relation": "PartOf",
@@ -2336,6 +3104,22 @@
     "target_lemma": "alcohol"
   },
   {
+    "relation": "RelatedTo",
+    "source": "beverage.n.01",
+    "source_lemma": "drink",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "beverage.n.01",
+    "source_lemma": "drink",
+    "source_type": "conceptnet",
+    "target": "milk.n.01",
+    "target_lemma": "milk"
+  },
+  {
     "relation": "Synonym",
     "source": "beverage.n.01",
     "source_lemma": "drink",
@@ -2344,84 +3128,12 @@
     "target_lemma": "alcohol"
   },
   {
-    "relation": "SimilarTo",
-    "source": "beverage.n.01",
-    "source_lemma": "drinkable",
-    "source_type": "conceptnet",
-    "target": "comestible.n.01",
-    "target_lemma": "edible"
-  },
-  {
     "relation": "MannerOf",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
+    "source": "drip.v.01",
+    "source_lemma": "drip",
     "source_type": "conceptnet",
     "target": "descend.v.01",
     "target_lemma": "descend"
-  },
-  {
-    "relation": "MannerOf",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
-    "source_type": "conceptnet",
-    "target": "drug.v.02",
-    "target_lemma": "drug"
-  },
-  {
-    "relation": "MannerOf",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
-    "source_type": "conceptnet",
-    "target": "descend.v.01",
-    "target_lemma": "fall"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
-    "source_type": "conceptnet",
-    "target": "female_chest.n.01",
-    "target_lemma": "bust"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
-    "source_type": "conceptnet",
-    "target": "curtain.n.01",
-    "target_lemma": "curtain"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
-    "source_type": "conceptnet",
-    "target": "descend.v.01",
-    "target_lemma": "fall"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
-    "source_type": "conceptnet",
-    "target": "hip.n.01",
-    "target_lemma": "hip"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble.v.02",
-    "source_lemma": "drop",
-    "source_type": "conceptnet",
-    "target": "waist.n.01",
-    "target_lemma": "waist"
   },
   {
     "relation": "RelatedTo",
@@ -2457,43 +3169,11 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "ear.n.01",
-    "source_lemma": "ear",
+    "source": "ductule.n.01",
+    "source_lemma": "ductule",
     "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear.n.01",
-    "source_lemma": "ear",
-    "source_type": "conceptnet",
-    "target": "torso.n.01",
-    "target_lemma": "body"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear.n.01",
-    "source_lemma": "ear",
-    "source_type": "conceptnet",
-    "target": "cochlea.n.01",
-    "target_lemma": "cochlea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear.n.01",
-    "source_lemma": "ear",
-    "source_type": "conceptnet",
-    "target": "nuzzle.v.02",
-    "target_lemma": "nose"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear.n.01",
-    "source_lemma": "ear",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
+    "target": "duct.n.01",
+    "target_lemma": "duct"
   },
   {
     "relation": "RelatedTo",
@@ -2528,36 +3208,84 @@
     "target_lemma": "state"
   },
   {
-    "relation": "SimilarTo",
-    "source": "comestible.n.01",
-    "source_lemma": "eatable",
+    "relation": "IsA",
+    "source": "egg.n.01",
+    "source_lemma": "egg",
     "source_type": "conceptnet",
-    "target": "beverage.n.01",
-    "target_lemma": "drinkable"
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
-    "source": "comestible.n.01",
-    "source_lemma": "edible",
+    "source": "egg.n.01",
+    "source_lemma": "egg",
     "source_type": "conceptnet",
-    "target": "homo.n.02",
-    "target_lemma": "human"
+    "target": "bird.n.02",
+    "target_lemma": "bird"
   },
   {
-    "relation": "SimilarTo",
-    "source": "comestible.n.01",
-    "source_lemma": "edible",
+    "relation": "RelatedTo",
+    "source": "egg.n.01",
+    "source_lemma": "egg",
     "source_type": "conceptnet",
-    "target": "beverage.n.01",
-    "target_lemma": "drinkable"
+    "target": "breakfast.n.01",
+    "target_lemma": "breakfast"
   },
   {
-    "relation": "HasProperty",
-    "source": "egg.n.02",
-    "source_lemma": "eggs",
+    "relation": "RelatedTo",
+    "source": "egg.n.01",
+    "source_lemma": "egg",
     "source_type": "conceptnet",
-    "target": "comestible.n.01",
-    "target_lemma": "edible"
+    "target": "embryo.n.02",
+    "target_lemma": "embryo"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "egg.n.01",
+    "source_lemma": "egg",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "egg.n.01",
+    "source_lemma": "egg",
+    "source_type": "conceptnet",
+    "target": "yolk.n.02",
+    "target_lemma": "yolk"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "egg.n.01",
+    "source_lemma": "egg",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "PartOf",
+    "source": "elbow.n.04",
+    "source_lemma": "elbow",
+    "source_type": "conceptnet",
+    "target": "foreleg.n.01",
+    "target_lemma": "foreleg"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "elbow.n.04",
+    "source_lemma": "elbow",
+    "source_type": "conceptnet",
+    "target": "sleeve.n.01",
+    "target_lemma": "arm"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "elk.n.01",
+    "source_lemma": "elk",
+    "source_type": "conceptnet",
+    "target": "deer.n.01",
+    "target_lemma": "deer"
   },
   {
     "relation": "RelatedTo",
@@ -2628,6 +3356,14 @@
     "source": "endoskeleton.n.01",
     "source_lemma": "endoskeleton",
     "source_type": "conceptnet",
+    "target": "exoskeleton.n.01",
+    "target_lemma": "exoskeleton"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "endoskeleton.n.01",
+    "source_lemma": "endoskeleton",
+    "source_type": "conceptnet",
     "target": "skeletal_system.n.01",
     "target_lemma": "skeleton"
   },
@@ -2640,28 +3376,44 @@
     "target_lemma": "vertebrate"
   },
   {
+    "relation": "MannerOf",
+    "source": "enlarge.v.01",
+    "source_lemma": "enlarge",
+    "source_type": "conceptnet",
+    "target": "increase.v.02",
+    "target_lemma": "increase"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "enlarge.v.01",
+    "source_lemma": "enlarge",
+    "source_type": "conceptnet",
+    "target": "widen.v.04",
+    "target_lemma": "extend"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "enlarge.v.01",
+    "source_lemma": "enlarge",
+    "source_type": "conceptnet",
+    "target": "increase.v.02",
+    "target_lemma": "increase"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "enlarge.v.01",
+    "source_lemma": "enlarge",
+    "source_type": "conceptnet",
+    "target": "widen.v.04",
+    "target_lemma": "widen"
+  },
+  {
     "relation": "IsA",
-    "source": "epiglottis.n.01",
-    "source_lemma": "epiglottis",
+    "source": "equine.n.01",
+    "source_lemma": "equine",
     "source_type": "conceptnet",
-    "target": "cartilage.n.01",
-    "target_lemma": "cartilage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "epiglottis.n.01",
-    "source_lemma": "epiglottis",
-    "source_type": "conceptnet",
-    "target": "trachea.n.01",
-    "target_lemma": "trachea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "epiglottis.n.01",
-    "source_lemma": "epiglottis",
-    "source_type": "conceptnet",
-    "target": "vertebrate.n.01",
-    "target_lemma": "vertebrate"
+    "target": "quadruped.n.01",
+    "target_lemma": "quadruped"
   },
   {
     "relation": "RelatedTo",
@@ -2697,11 +3449,67 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "espresso.n.01",
+    "source_lemma": "espresso",
+    "source_type": "conceptnet",
+    "target": "coffee.n.01",
+    "target_lemma": "coffee"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "estimable.a.01",
+    "source_lemma": "estimable",
+    "source_type": "conceptnet",
+    "target": "valuable.a.01",
+    "target_lemma": "valuable"
+  },
+  {
+    "relation": "Synonym",
+    "source": "estimable.a.01",
+    "source_lemma": "estimable",
+    "source_type": "conceptnet",
+    "target": "respectable.a.01",
+    "target_lemma": "respectable"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "placental.n.01",
     "source_lemma": "eutherian",
     "source_type": "conceptnet",
     "target": "mammal.n.01",
     "target_lemma": "mammal"
+  },
+  {
+    "relation": "IsA",
+    "source": "ewe.n.03",
+    "source_lemma": "ewe",
+    "source_type": "conceptnet",
+    "target": "homo.n.02",
+    "target_lemma": "human"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "ewe.n.03",
+    "source_lemma": "ewe",
+    "source_type": "conceptnet",
+    "target": "sheep.n.01",
+    "target_lemma": "sheep"
+  },
+  {
+    "relation": "IsA",
+    "source": "exaltation.n.02",
+    "source_lemma": "exaltation",
+    "source_type": "conceptnet",
+    "target": "flock.n.05",
+    "target_lemma": "flock"
+  },
+  {
+    "relation": "Antonym",
+    "source": "exhale.v.01",
+    "source_lemma": "exhale",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
   },
   {
     "relation": "RelatedTo",
@@ -2713,11 +3521,35 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "exhale.v.01",
+    "source_lemma": "exhale",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "exocrine_gland.n.01",
     "source_lemma": "exocrine",
     "source_type": "conceptnet",
     "target": "endocrine_gland.n.01",
     "target_lemma": "endocrine"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "exoskeleton.n.01",
+    "source_lemma": "exoskeleton",
+    "source_type": "conceptnet",
+    "target": "skeletal_system.n.01",
+    "target_lemma": "skeleton"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "exoskeleton.n.01",
+    "source_lemma": "exoskeleton",
+    "source_type": "conceptnet",
+    "target": "endoskeleton.n.01",
+    "target_lemma": "endoskeleton"
   },
   {
     "relation": "Antonym",
@@ -2748,6 +3580,14 @@
     "source": "widen.v.04",
     "source_lemma": "extend",
     "source_type": "conceptnet",
+    "target": "enlarge.v.01",
+    "target_lemma": "enlarge"
+  },
+  {
+    "relation": "Synonym",
+    "source": "widen.v.04",
+    "source_lemma": "extend",
+    "source_type": "conceptnet",
     "target": "increase.v.02",
     "target_lemma": "increase"
   },
@@ -2760,100 +3600,20 @@
     "target_lemma": "lengthen"
   },
   {
-    "relation": "AtLocation",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "mammal.n.01",
-    "target_lemma": "mammal"
-  },
-  {
-    "relation": "DistinctFrom",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "nuzzle.v.02",
-    "target_lemma": "nose"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "apparatus.n.01",
-    "target_lemma": "apparatus"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "torso.n.01",
-    "target_lemma": "body"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "cheese.n.01",
-    "target_lemma": "cheese"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "homo.n.02",
-    "target_lemma": "human"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "lens.n.04",
-    "target_lemma": "lens"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "nuzzle.v.02",
-    "target_lemma": "nose"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "retina.n.01",
-    "target_lemma": "retina"
-  },
-  {
-    "relation": "Synonym",
-    "source": "eye.n.01",
-    "source_lemma": "eye",
-    "source_type": "conceptnet",
-    "target": "eyelet.n.01",
-    "target_lemma": "eyelet"
-  },
-  {
     "relation": "DerivedFrom",
-    "source": "eyelet.n.01",
-    "source_lemma": "eyehole",
+    "source": "extremity.n.04",
+    "source_lemma": "extremity",
     "source_type": "conceptnet",
-    "target": "eye.n.01",
-    "target_lemma": "eye"
+    "target": "extreme_point.n.01",
+    "target_lemma": "extreme"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "extremity.n.04",
+    "source_lemma": "extremity",
+    "source_type": "conceptnet",
+    "target": "extreme_point.n.01",
+    "target_lemma": "extreme"
   },
   {
     "relation": "RelatedTo",
@@ -2872,12 +3632,20 @@
     "target_lemma": "increase"
   },
   {
-    "relation": "RelatedTo",
+    "relation": "HasLastSubevent",
     "source": "descend.v.01",
     "source_lemma": "fall",
     "source_type": "conceptnet",
-    "target": "dribble.v.02",
-    "target_lemma": "drop"
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "HasSubevent",
+    "source": "descend.v.01",
+    "source_lemma": "fall",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
   },
   {
     "relation": "RelatedTo",
@@ -2892,8 +3660,8 @@
     "source": "descend.v.01",
     "source_lemma": "fall",
     "source_type": "conceptnet",
-    "target": "dribble.v.02",
-    "target_lemma": "drop"
+    "target": "rap.v.03",
+    "target_lemma": "rap"
   },
   {
     "relation": "RelatedTo",
@@ -2902,6 +3670,14 @@
     "source_type": "conceptnet",
     "target": "beverage.n.01",
     "target_lemma": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "fare.n.04",
+    "source_lemma": "fare",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "Synonym",
@@ -2926,6 +3702,14 @@
     "source_type": "conceptnet",
     "target": "midst.n.01",
     "target_lemma": "thick"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "adipose_tissue.n.01",
+    "source_lemma": "fat",
+    "source_type": "conceptnet",
+    "target": "toe.n.01",
+    "target_lemma": "toe"
   },
   {
     "relation": "SimilarTo",
@@ -2976,6 +3760,14 @@
     "target_lemma": "vertebrate"
   },
   {
+    "relation": "Antonym",
+    "source": "finger.n.01",
+    "source_lemma": "finger",
+    "source_type": "conceptnet",
+    "target": "toe.n.01",
+    "target_lemma": "toe"
+  },
+  {
     "relation": "AtLocation",
     "source": "finger.n.01",
     "source_lemma": "finger",
@@ -2984,20 +3776,28 @@
     "target_lemma": "nose"
   },
   {
-    "relation": "RelatedTo",
+    "relation": "DistinctFrom",
     "source": "finger.n.01",
     "source_lemma": "finger",
     "source_type": "conceptnet",
-    "target": "alcohol.n.01",
-    "target_lemma": "alcohol"
+    "target": "toe.n.01",
+    "target_lemma": "toe"
+  },
+  {
+    "relation": "IsA",
+    "source": "finger.n.01",
+    "source_lemma": "finger",
+    "source_type": "conceptnet",
+    "target": "extremity.n.04",
+    "target_lemma": "extremity"
   },
   {
     "relation": "RelatedTo",
     "source": "finger.n.01",
     "source_lemma": "finger",
     "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
+    "target": "alcohol.n.01",
+    "target_lemma": "alcohol"
   },
   {
     "relation": "RelatedTo",
@@ -3044,6 +3844,14 @@
     "source": "finger.n.01",
     "source_lemma": "finger",
     "source_type": "conceptnet",
+    "target": "extremity.n.04",
+    "target_lemma": "extremity"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "finger.n.01",
+    "source_lemma": "finger",
+    "source_type": "conceptnet",
     "target": "homo.n.02",
     "target_lemma": "human"
   },
@@ -3072,6 +3880,22 @@
     "target_lemma": "perissodactyl"
   },
   {
+    "relation": "RelatedTo",
+    "source": "finger.n.01",
+    "source_lemma": "finger",
+    "source_type": "conceptnet",
+    "target": "toe.n.01",
+    "target_lemma": "toe"
+  },
+  {
+    "relation": "Synonym",
+    "source": "finger.n.01",
+    "source_lemma": "finger",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
+  },
+  {
     "relation": "Synonym",
     "source": "finger.n.01",
     "source_lemma": "finger",
@@ -3080,6 +3904,22 @@
     "target_lemma": "digit"
   },
   {
+    "relation": "Synonym",
+    "source": "finger.n.01",
+    "source_lemma": "finger",
+    "source_type": "conceptnet",
+    "target": "toe.n.01",
+    "target_lemma": "toe"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "finger.n.01",
+    "source_lemma": "finger",
+    "source_type": "conceptnet",
+    "target": "tickle.v.03",
+    "target_lemma": "tickle"
+  },
+  {
     "relation": "DerivedFrom",
     "source": "firebrick.n.01",
     "source_lemma": "firebrick",
@@ -3094,62 +3934,6 @@
     "source_type": "conceptnet",
     "target": "brick.n.01",
     "target_lemma": "brick"
-  },
-  {
-    "relation": "HasA",
-    "source": "fish.n.02",
-    "source_lemma": "fish",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "tail"
-  },
-  {
-    "relation": "IsA",
-    "source": "fish.n.02",
-    "source_lemma": "fish",
-    "source_type": "conceptnet",
-    "target": "meat.n.01",
-    "target_lemma": "meat"
-  },
-  {
-    "relation": "IsA",
-    "source": "fish.n.02",
-    "source_lemma": "fish",
-    "source_type": "conceptnet",
-    "target": "seafood.n.01",
-    "target_lemma": "seafood"
-  },
-  {
-    "relation": "IsA",
-    "source": "fish.n.02",
-    "source_lemma": "fish",
-    "source_type": "conceptnet",
-    "target": "vertebrate.n.01",
-    "target_lemma": "vertebrate"
-  },
-  {
-    "relation": "MotivatedByGoal",
-    "source": "fish.n.02",
-    "source_lemma": "fish",
-    "source_type": "conceptnet",
-    "target": "meal.n.01",
-    "target_lemma": "meal"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fish.n.02",
-    "source_lemma": "fish",
-    "source_type": "conceptnet",
-    "target": "seafood.n.01",
-    "target_lemma": "seafood"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fish.n.02",
-    "source_lemma": "fish",
-    "source_type": "conceptnet",
-    "target": "vertebrate.n.01",
-    "target_lemma": "vertebrate"
   },
   {
     "relation": "DerivedFrom",
@@ -3158,14 +3942,6 @@
     "source_type": "conceptnet",
     "target": "fizz.n.01",
     "target_lemma": "fizz"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "spear.n.02",
-    "source_lemma": "fizgig",
-    "source_type": "conceptnet",
-    "target": "fish.n.02",
-    "target_lemma": "fish"
   },
   {
     "relation": "RelatedTo",
@@ -3190,6 +3966,22 @@
     "source_type": "conceptnet",
     "target": "meat.n.01",
     "target_lemma": "meat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "flock.n.05",
+    "source_lemma": "flock",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "flock.n.05",
+    "source_lemma": "flock",
+    "source_type": "conceptnet",
+    "target": "sheep.n.01",
+    "target_lemma": "sheep"
   },
   {
     "relation": "MannerOf",
@@ -3265,11 +4057,195 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "flock.n.05",
+    "source_lemma": "fold",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "country"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "flock.n.05",
+    "source_lemma": "fold",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "caress.v.01",
     "source_lemma": "fondle",
     "source_type": "conceptnet",
     "target": "dandle.v.02",
     "target_lemma": "dandle"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "caress.v.01",
+    "source_lemma": "fondle",
+    "source_type": "conceptnet",
+    "target": "pet.v.01",
+    "target_lemma": "pet"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "stomach"
+  },
+  {
+    "relation": "IsA",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "nourishment"
+  },
+  {
+    "relation": "IsA",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "upstanding.s.01",
+    "target_lemma": "solid"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "breakfast.n.01",
+    "target_lemma": "breakfast"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "brunch.n.01",
+    "target_lemma": "brunch"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "dinner.n.01",
+    "target_lemma": "dinner"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "meal.n.01",
+    "target_lemma": "meal"
+  },
+  {
+    "relation": "Synonym",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "aliment"
+  },
+  {
+    "relation": "Synonym",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "bread.n.01",
+    "target_lemma": "bread"
+  },
+  {
+    "relation": "Synonym",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "diet.n.01",
+    "target_lemma": "diet"
+  },
+  {
+    "relation": "Synonym",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "fare.n.04",
+    "target_lemma": "fare"
+  },
+  {
+    "relation": "Synonym",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "meat.n.01",
+    "target_lemma": "meat"
+  },
+  {
+    "relation": "Synonym",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "nourishment"
+  },
+  {
+    "relation": "Synonym",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "sustenance"
+  },
+  {
+    "relation": "Synonym",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "victuals"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "nourishment"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "food.n.01",
+    "source_lemma": "food",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "sustenance"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "forefoot.n.01",
+    "source_lemma": "forefoot",
+    "source_type": "conceptnet",
+    "target": "quadruped.n.01",
+    "target_lemma": "quadruped"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "foreleg.n.01",
+    "source_lemma": "foreleg",
+    "source_type": "conceptnet",
+    "target": "forelimb.n.01",
+    "target_lemma": "forelimb"
+  },
+  {
+    "relation": "Synonym",
+    "source": "forelimb.n.01",
+    "source_lemma": "forelimb",
+    "source_type": "conceptnet",
+    "target": "foreleg.n.01",
+    "target_lemma": "foreleg"
   },
   {
     "relation": "IsA",
@@ -3302,6 +4278,14 @@
     "source_type": "conceptnet",
     "target": "perform.v.03",
     "target_lemma": "perform"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "skeletal_system.n.01",
+    "source_lemma": "frame",
+    "source_type": "conceptnet",
+    "target": "helping.n.01",
+    "target_lemma": "portion"
   },
   {
     "relation": "RelatedTo",
@@ -3352,6 +4336,38 @@
     "target_lemma": "equipment"
   },
   {
+    "relation": "IsA",
+    "source": "gelatin.n.02",
+    "source_lemma": "gelatin",
+    "source_type": "conceptnet",
+    "target": "protein.n.01",
+    "target_lemma": "protein"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "gelatin.n.02",
+    "source_lemma": "gelatin",
+    "source_type": "conceptnet",
+    "target": "cartilage.n.01",
+    "target_lemma": "cartilage"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "gelatin.n.02",
+    "source_lemma": "gelatin",
+    "source_type": "conceptnet",
+    "target": "collagen.n.01",
+    "target_lemma": "collagen"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "gelatin.n.02",
+    "source_lemma": "gelatin",
+    "source_type": "conceptnet",
+    "target": "protein.n.01",
+    "target_lemma": "protein"
+  },
+  {
     "relation": "RelatedTo",
     "source": "lithosphere.n.01",
     "source_lemma": "geosphere",
@@ -3396,40 +4412,72 @@
     "source": "spear.n.02",
     "source_lemma": "gig",
     "source_type": "conceptnet",
-    "target": "fish.n.02",
-    "target_lemma": "fish"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "spear.n.02",
-    "source_lemma": "gig",
-    "source_type": "conceptnet",
     "target": "perform.v.03",
     "target_lemma": "perform"
   },
   {
     "relation": "RelatedTo",
-    "source": "gluteus.n.01",
-    "source_lemma": "gluteus",
+    "source": "gladiolus.n.02",
+    "source_lemma": "gladiolus",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "buttocks"
+    "target": "sternum.n.01",
+    "target_lemma": "sternum"
   },
   {
     "relation": "RelatedTo",
     "source": "gluteus.n.01",
-    "source_lemma": "gluteus",
+    "source_lemma": "glute",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "nates"
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
+  },
+  {
+    "relation": "Desires",
+    "source": "goat.n.01",
+    "source_lemma": "goat",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "IsA",
+    "source": "goat.n.01",
+    "source_lemma": "goat",
+    "source_type": "conceptnet",
+    "target": "ruminant.n.01",
+    "target_lemma": "ruminant"
   },
   {
     "relation": "RelatedTo",
-    "source": "esophagus.n.01",
-    "source_lemma": "gorge",
+    "source": "goat.n.01",
+    "source_lemma": "goat",
     "source_type": "conceptnet",
-    "target": "throat.n.01",
-    "target_lemma": "throat"
+    "target": "ewe.n.03",
+    "target_lemma": "ewe"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "goat.n.01",
+    "source_lemma": "goat",
+    "source_type": "conceptnet",
+    "target": "herd.n.01",
+    "target_lemma": "herd"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "goat.n.01",
+    "source_lemma": "goat",
+    "source_type": "conceptnet",
+    "target": "homo.n.02",
+    "target_lemma": "man"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "goat.n.01",
+    "source_lemma": "goat",
+    "source_type": "conceptnet",
+    "target": "sheep.n.01",
+    "target_lemma": "sheep"
   },
   {
     "relation": "MannerOf",
@@ -3473,75 +4521,35 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "grub.n.02",
+    "source_lemma": "grub",
+    "source_type": "conceptnet",
+    "target": "caterpillar.n.01",
+    "target_lemma": "caterpillar"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "grub.n.02",
+    "source_lemma": "grub",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "grub.n.02",
+    "source_lemma": "grub",
+    "source_type": "conceptnet",
+    "target": "larva.n.01",
+    "target_lemma": "larva"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "esophagus.n.01",
     "source_lemma": "gullet",
     "source_type": "conceptnet",
     "target": "duct.n.01",
     "target_lemma": "channel"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "esophagus.n.01",
-    "source_lemma": "gullet",
-    "source_type": "conceptnet",
-    "target": "throat.n.01",
-    "target_lemma": "throat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "esophagus.n.01",
-    "source_lemma": "gullet",
-    "source_type": "conceptnet",
-    "target": "trachea.n.01",
-    "target_lemma": "trachea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "esophagus.n.01",
-    "source_lemma": "gullet",
-    "source_type": "conceptnet",
-    "target": "trachea.n.01",
-    "target_lemma": "windpipe"
-  },
-  {
-    "relation": "Synonym",
-    "source": "esophagus.n.01",
-    "source_lemma": "gullet",
-    "source_type": "conceptnet",
-    "target": "throat.n.01",
-    "target_lemma": "throat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset.n.03",
-    "source_lemma": "gusset",
-    "source_type": "conceptnet",
-    "target": "weaponry.n.01",
-    "target_lemma": "arms"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset.n.03",
-    "source_lemma": "gusset",
-    "source_type": "conceptnet",
-    "target": "garment.n.01",
-    "target_lemma": "garment"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset.n.03",
-    "source_lemma": "gusset",
-    "source_type": "conceptnet",
-    "target": "insert.n.02",
-    "target_lemma": "insert"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset.n.03",
-    "source_lemma": "gusset",
-    "source_type": "conceptnet",
-    "target": "mail.n.03",
-    "target_lemma": "mail"
   },
   {
     "relation": "IsA",
@@ -3556,8 +4564,40 @@
     "source": "intestine.n.01",
     "source_lemma": "gut",
     "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "intestine.n.01",
+    "source_lemma": "gut",
+    "source_type": "conceptnet",
     "target": "sac.n.04",
     "target_lemma": "sac"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "intestine.n.01",
+    "source_lemma": "gut",
+    "source_type": "conceptnet",
+    "target": "silkworm.n.01",
+    "target_lemma": "silkworm"
+  },
+  {
+    "relation": "Synonym",
+    "source": "intestine.n.01",
+    "source_lemma": "gut",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "halal.n.01",
+    "source_lemma": "halal",
+    "source_type": "conceptnet",
+    "target": "kosher.n.01",
+    "target_lemma": "kosher"
   },
   {
     "relation": "RelatedTo",
@@ -3574,6 +4614,86 @@
     "source_type": "conceptnet",
     "target": "froward.s.01",
     "target_lemma": "wilful"
+  },
+  {
+    "relation": "IsA",
+    "source": "hardware.n.02",
+    "source_lemma": "hardware",
+    "source_type": "conceptnet",
+    "target": "weaponry.n.01",
+    "target_lemma": "weaponry"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "hardware.n.02",
+    "source_lemma": "hardware",
+    "source_type": "conceptnet",
+    "target": "equipment.n.01",
+    "target_lemma": "equipment"
+  },
+  {
+    "relation": "PartOf",
+    "source": "haunch.n.02",
+    "source_lemma": "haunch",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "torso"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "haunch.n.02",
+    "source_lemma": "haunch",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "haunch.n.02",
+    "source_lemma": "haunch",
+    "source_type": "conceptnet",
+    "target": "hip.n.01",
+    "target_lemma": "hip"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "haunch.n.02",
+    "source_lemma": "haunch",
+    "source_type": "conceptnet",
+    "target": "homo.n.02",
+    "target_lemma": "human"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "haunch.n.02",
+    "source_lemma": "haunch",
+    "source_type": "conceptnet",
+    "target": "loin.n.02",
+    "target_lemma": "loin"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "haunch.n.02",
+    "source_lemma": "haunch",
+    "source_type": "conceptnet",
+    "target": "quadruped.n.01",
+    "target_lemma": "quadruped"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "heartland.n.01",
+    "source_lemma": "heartland",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "IsA",
+    "source": "heartland.n.01",
+    "source_lemma": "heartland",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "RelatedTo",
@@ -3609,6 +4729,14 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "helping.n.01",
+    "source_lemma": "helping",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "here.n.01",
     "source_lemma": "here",
     "source_type": "conceptnet",
@@ -3640,6 +4768,22 @@
     "target_lemma": "embryo"
   },
   {
+    "relation": "PartOf",
+    "source": "hindquarters.n.02",
+    "source_lemma": "hindquarters",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "hip.n.01",
+    "source_lemma": "hip",
+    "source_type": "conceptnet",
+    "target": "haunch.n.02",
+    "target_lemma": "haunch"
+  },
+  {
     "relation": "RelatedTo",
     "source": "hock.n.02",
     "source_lemma": "hock",
@@ -3662,6 +4806,30 @@
     "source_type": "conceptnet",
     "target": "tendon.n.01",
     "target_lemma": "tendon"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "home_brew.n.01",
+    "source_lemma": "homebrew",
+    "source_type": "conceptnet",
+    "target": "brew.n.01",
+    "target_lemma": "brew"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "homo.n.02",
+    "source_lemma": "homo",
+    "source_type": "conceptnet",
+    "target": "milk.n.01",
+    "target_lemma": "milk"
+  },
+  {
+    "relation": "IsA",
+    "source": "honey.n.01",
+    "source_lemma": "honey",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -3697,27 +4865,67 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "estimable.s.01",
-    "source_lemma": "honorable",
+    "source": "hooch.n.01",
+    "source_lemma": "hooch",
     "source_type": "conceptnet",
-    "target": "moral.a.01",
-    "target_lemma": "moral"
+    "target": "alcohol.n.01",
+    "target_lemma": "alcohol"
   },
   {
     "relation": "RelatedTo",
-    "source": "estimable.s.01",
-    "source_lemma": "honorable",
+    "source": "hoof.n.01",
+    "source_lemma": "hoof",
     "source_type": "conceptnet",
-    "target": "reputable.a.01",
-    "target_lemma": "reputable"
+    "target": "deer.n.01",
+    "target_lemma": "deer"
   },
   {
     "relation": "RelatedTo",
-    "source": "estimable.s.01",
-    "source_lemma": "honorable",
+    "source": "hoof.n.01",
+    "source_lemma": "hoof",
     "source_type": "conceptnet",
-    "target": "worthy.a.01",
-    "target_lemma": "worthy"
+    "target": "homo.n.02",
+    "target_lemma": "human"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "hoof.n.01",
+    "source_lemma": "hoof",
+    "source_type": "conceptnet",
+    "target": "ox.n.01",
+    "target_lemma": "ox"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "hoof.n.01",
+    "source_lemma": "hoof",
+    "source_type": "conceptnet",
+    "target": "toe.n.01",
+    "target_lemma": "toe"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "hoof.n.01",
+    "source_lemma": "hoof",
+    "source_type": "conceptnet",
+    "target": "ungulate.n.01",
+    "target_lemma": "ungulate"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "huff.v.01",
+    "source_lemma": "huff",
+    "source_type": "conceptnet",
+    "target": "enlarge.v.01",
+    "target_lemma": "enlarge"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "huff.v.01",
+    "source_lemma": "huff",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
   },
   {
     "relation": "AtLocation",
@@ -3769,6 +4977,54 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "hydrosphere.n.01",
+    "source_lemma": "hydrosphere",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "hypochondrium.n.01",
+    "source_lemma": "hypochondrium",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
+  },
+  {
+    "relation": "Synonym",
+    "source": "impeccable.s.02",
+    "source_lemma": "impeccable",
+    "source_type": "conceptnet",
+    "target": "incorrupt.s.01",
+    "target_lemma": "incorrupt"
+  },
+  {
+    "relation": "Synonym",
+    "source": "impeccable.s.02",
+    "source_lemma": "impeccable",
+    "source_type": "conceptnet",
+    "target": "impeccant.s.01",
+    "target_lemma": "innocent"
+  },
+  {
+    "relation": "Synonym",
+    "source": "impeccable.s.02",
+    "source_lemma": "impeccable",
+    "source_type": "conceptnet",
+    "target": "impeccant.s.01",
+    "target_lemma": "sinless"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "impeccant.s.01",
+    "source_lemma": "impeccant",
+    "source_type": "conceptnet",
+    "target": "impeccable.s.02",
+    "target_lemma": "impeccable"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "empire.n.01",
     "source_lemma": "imperium",
     "source_type": "conceptnet",
@@ -3782,6 +5038,14 @@
     "source_type": "conceptnet",
     "target": "district.n.01",
     "target_lemma": "dominion"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "incorrupt.s.01",
+    "source_lemma": "incorrupt",
+    "source_type": "conceptnet",
+    "target": "moral.a.01",
+    "target_lemma": "moral"
   },
   {
     "relation": "RelatedTo",
@@ -3824,28 +5088,52 @@
     "target_lemma": "stomach"
   },
   {
-    "relation": "PartOf",
-    "source": "ingredient.n.03",
-    "source_lemma": "ingredient",
+    "relation": "Antonym",
+    "source": "inhale.v.02",
+    "source_lemma": "inhale",
     "source_type": "conceptnet",
-    "target": "concoction.n.01",
-    "target_lemma": "mixture"
+    "target": "exhale.v.01",
+    "target_lemma": "exhale"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "inhale.v.02",
+    "source_lemma": "inhale",
+    "source_type": "conceptnet",
+    "target": "smoke.v.01",
+    "target_lemma": "smoke"
   },
   {
     "relation": "RelatedTo",
-    "source": "ingredient.n.03",
-    "source_lemma": "ingredient",
+    "source": "inhale.v.02",
+    "source_lemma": "inhale",
     "source_type": "conceptnet",
-    "target": "concoction.n.01",
-    "target_lemma": "mixture"
+    "target": "diaphragm.n.02",
+    "target_lemma": "diaphragm"
   },
   {
-    "relation": "Synonym",
-    "source": "insert.n.02",
-    "source_lemma": "insert",
+    "relation": "RelatedTo",
+    "source": "inhale.v.02",
+    "source_lemma": "inhale",
     "source_type": "conceptnet",
-    "target": "tuck.n.01",
-    "target_lemma": "tuck"
+    "target": "smoke.v.01",
+    "target_lemma": "smoke"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "impeccant.s.01",
+    "source_lemma": "innocent",
+    "source_type": "conceptnet",
+    "target": "righteous.a.01",
+    "target_lemma": "righteous"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "insert.n.02",
+    "source_lemma": "inset",
+    "source_type": "conceptnet",
+    "target": "garment.n.01",
+    "target_lemma": "garment"
   },
   {
     "relation": "Antonym",
@@ -3854,14 +5142,6 @@
     "source_type": "conceptnet",
     "target": "exhale.v.01",
     "target_lemma": "expire"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "inhale.v.02",
-    "source_lemma": "inspire",
-    "source_type": "conceptnet",
-    "target": "produce.n.01",
-    "target_lemma": "produce"
   },
   {
     "relation": "SimilarTo",
@@ -3964,6 +5244,14 @@
     "source": "intestine.n.01",
     "source_lemma": "intestine",
     "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "intestine.n.01",
+    "source_lemma": "intestine",
+    "source_type": "conceptnet",
     "target": "abdomen.n.01",
     "target_lemma": "stomach"
   },
@@ -3992,6 +5280,14 @@
     "target_lemma": "refractory"
   },
   {
+    "relation": "IsA",
+    "source": "irredenta.n.01",
+    "source_lemma": "irredenta",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
     "relation": "RelatedTo",
     "source": "irredenta.n.01",
     "source_lemma": "irredenta",
@@ -4000,12 +5296,28 @@
     "target_lemma": "state"
   },
   {
-    "relation": "RelatedTo",
-    "source": "jugular_vein.n.01",
-    "source_lemma": "jugular",
+    "relation": "IsA",
+    "source": "gelatin.n.02",
+    "source_lemma": "jelly",
     "source_type": "conceptnet",
-    "target": "throat.n.01",
-    "target_lemma": "throat"
+    "target": "banquet.n.02",
+    "target_lemma": "spread"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "gelatin.n.02",
+    "source_lemma": "jelly",
+    "source_type": "conceptnet",
+    "target": "meat.n.01",
+    "target_lemma": "meat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "strawworm.n.02",
+    "source_lemma": "jointworm",
+    "source_type": "conceptnet",
+    "target": "larva.n.01",
+    "target_lemma": "larva"
   },
   {
     "relation": "RelatedTo",
@@ -4022,6 +5334,46 @@
     "source_type": "conceptnet",
     "target": "district.n.01",
     "target_lemma": "territory"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "kava.n.01",
+    "source_lemma": "kava",
+    "source_type": "conceptnet",
+    "target": "beverage.n.01",
+    "target_lemma": "beverage"
+  },
+  {
+    "relation": "IsA",
+    "source": "kite.v.01",
+    "source_lemma": "kite",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "kite.v.01",
+    "source_lemma": "kite",
+    "source_type": "conceptnet",
+    "target": "increase.v.02",
+    "target_lemma": "increase"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "kite.v.01",
+    "source_lemma": "kite",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "belly"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "kite.v.01",
+    "source_lemma": "kite",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "stomach"
   },
   {
     "relation": "AtLocation",
@@ -4057,6 +5409,38 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "kosher.n.01",
+    "source_lemma": "kosher",
+    "source_type": "conceptnet",
+    "target": "halal.n.01",
+    "target_lemma": "halal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "koumiss.n.01",
+    "source_lemma": "koumiss",
+    "source_type": "conceptnet",
+    "target": "beverage.n.01",
+    "target_lemma": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "koumiss.n.01",
+    "source_lemma": "koumiss",
+    "source_type": "conceptnet",
+    "target": "mare.n.02",
+    "target_lemma": "mare"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "koumiss.n.01",
+    "source_lemma": "koumiss",
+    "source_type": "conceptnet",
+    "target": "milk.n.01",
+    "target_lemma": "milk"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "labium.n.01",
     "source_lemma": "labium",
     "source_type": "conceptnet",
@@ -4072,12 +5456,60 @@
     "target_lemma": "drug"
   },
   {
+    "relation": "IsA",
+    "source": "lamb.n.05",
+    "source_lemma": "lamb",
+    "source_type": "conceptnet",
+    "target": "sheep.n.01",
+    "target_lemma": "sheep"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "lamb.n.05",
+    "source_lemma": "lamb",
+    "source_type": "conceptnet",
+    "target": "sheep.n.01",
+    "target_lemma": "sheep"
+  },
+  {
     "relation": "RelatedTo",
     "source": "spear.n.02",
     "source_lemma": "lance",
     "source_type": "conceptnet",
     "target": "sleeve.n.01",
     "target_lemma": "arm"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "country.n.02",
+    "source_lemma": "land",
+    "source_type": "conceptnet",
+    "target": "alight.v.02",
+    "target_lemma": "alight"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "country.n.02",
+    "source_lemma": "land",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "part"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "country.n.02",
+    "source_lemma": "land",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "country.n.02",
+    "source_lemma": "land",
+    "source_type": "conceptnet",
+    "target": "upstanding.s.01",
+    "target_lemma": "solid"
   },
   {
     "relation": "RelatedTo",
@@ -4100,8 +5532,24 @@
     "source": "larva.n.01",
     "source_lemma": "larva",
     "source_type": "conceptnet",
-    "target": "fish.n.02",
-    "target_lemma": "fish"
+    "target": "grub.n.02",
+    "target_lemma": "grub"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "layer.n.02",
+    "source_lemma": "layer",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "layer.n.02",
+    "source_lemma": "layer",
+    "source_type": "conceptnet",
+    "target": "egg.n.01",
+    "target_lemma": "egg"
   },
   {
     "relation": "RelatedTo",
@@ -4142,38 +5590,6 @@
     "source_type": "conceptnet",
     "target": "widen.v.04",
     "target_lemma": "extend"
-  },
-  {
-    "relation": "AtLocation",
-    "source": "lens.n.04",
-    "source_lemma": "lens",
-    "source_type": "conceptnet",
-    "target": "eye.n.01",
-    "target_lemma": "eye"
-  },
-  {
-    "relation": "IsA",
-    "source": "lens.n.04",
-    "source_lemma": "lens",
-    "source_type": "conceptnet",
-    "target": "duct.n.01",
-    "target_lemma": "channel"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "lens.n.04",
-    "source_lemma": "lens",
-    "source_type": "conceptnet",
-    "target": "eye.n.01",
-    "target_lemma": "eye"
-  },
-  {
-    "relation": "UsedFor",
-    "source": "lens.n.04",
-    "source_lemma": "lens",
-    "source_type": "conceptnet",
-    "target": "blow_up.v.02",
-    "target_lemma": "magnify"
   },
   {
     "relation": "RelatedTo",
@@ -4220,14 +5636,6 @@
     "source": "litter.n.03",
     "source_lemma": "litter",
     "source_type": "conceptnet",
-    "target": "dribble.v.02",
-    "target_lemma": "drop"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "litter.n.03",
-    "source_lemma": "litter",
-    "source_type": "conceptnet",
     "target": "mammal.n.01",
     "target_lemma": "mammal"
   },
@@ -4240,12 +5648,28 @@
     "target_lemma": "transport"
   },
   {
+    "relation": "IsA",
+    "source": "loaf.n.02",
+    "source_lemma": "loaf",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
     "relation": "RelatedTo",
     "source": "loaf.n.02",
     "source_lemma": "loaf",
     "source_type": "conceptnet",
     "target": "bread.n.01",
     "target_lemma": "bread"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "loaf.n.02",
+    "source_lemma": "loaf",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -4262,14 +5686,6 @@
     "source_type": "conceptnet",
     "target": "upstanding.s.01",
     "target_lemma": "solid"
-  },
-  {
-    "relation": "Synonym",
-    "source": "loaf.n.02",
-    "source_lemma": "loaf",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "bum"
   },
   {
     "relation": "RelatedTo",
@@ -4312,6 +5728,30 @@
     "target_lemma": "quadruped"
   },
   {
+    "relation": "FormOf",
+    "source": "loins.n.02",
+    "source_lemma": "loins",
+    "source_type": "conceptnet",
+    "target": "loin.n.02",
+    "target_lemma": "loin"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "loins.n.02",
+    "source_lemma": "loins",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "loins.n.02",
+    "source_lemma": "loins",
+    "source_type": "conceptnet",
+    "target": "groin.n.01",
+    "target_lemma": "groin"
+  },
+  {
     "relation": "AtLocation",
     "source": "lotion.n.01",
     "source_lemma": "lotion",
@@ -4337,54 +5777,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "macula.n.02",
-    "source_lemma": "macula",
-    "source_type": "conceptnet",
-    "target": "eye.n.01",
-    "target_lemma": "eye"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "macula.n.02",
-    "source_lemma": "macula",
-    "source_type": "conceptnet",
-    "target": "homo.n.02",
-    "target_lemma": "human"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "macula.n.02",
-    "source_lemma": "macula",
-    "source_type": "conceptnet",
-    "target": "layer.n.02",
-    "target_lemma": "layer"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "macula.n.02",
-    "source_lemma": "macula",
-    "source_type": "conceptnet",
-    "target": "planet.n.01",
-    "target_lemma": "planet"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "macula.n.02",
-    "source_lemma": "macula",
-    "source_type": "conceptnet",
-    "target": "retina.n.01",
-    "target_lemma": "retina"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "blow_up.v.02",
-    "source_lemma": "magnify",
-    "source_type": "conceptnet",
-    "target": "escalate.v.01",
-    "target_lemma": "intensify"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "mail.n.03",
     "source_lemma": "mail",
     "source_type": "conceptnet",
@@ -4392,12 +5784,20 @@
     "target_lemma": "arm"
   },
   {
+    "relation": "IsA",
+    "source": "mammal.n.01",
+    "source_lemma": "mammal",
+    "source_type": "conceptnet",
+    "target": "amniote.n.01",
+    "target_lemma": "amniote"
+  },
+  {
     "relation": "RelatedTo",
     "source": "mammal.n.01",
     "source_lemma": "mammal",
     "source_type": "conceptnet",
-    "target": "ear.n.01",
-    "target_lemma": "ear"
+    "target": "milk.n.01",
+    "target_lemma": "milk"
   },
   {
     "relation": "RelatedTo",
@@ -4406,6 +5806,14 @@
     "source_type": "conceptnet",
     "target": "vertebrate.n.01",
     "target_lemma": "vertebrate"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "homo.n.02",
+    "source_lemma": "man",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
   },
   {
     "relation": "RelatedTo",
@@ -4438,6 +5846,14 @@
     "source_type": "conceptnet",
     "target": "lithosphere.n.01",
     "target_lemma": "lithosphere"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "curtain.n.01",
+    "source_lemma": "mantle",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
   },
   {
     "relation": "RelatedTo",
@@ -4500,6 +5916,14 @@
     "source": "mare.n.02",
     "source_lemma": "mare",
     "source_type": "conceptnet",
+    "target": "equine.n.01",
+    "target_lemma": "equine"
+  },
+  {
+    "relation": "IsA",
+    "source": "mare.n.02",
+    "source_lemma": "mare",
+    "source_type": "conceptnet",
     "target": "mammal.n.01",
     "target_lemma": "mammal"
   },
@@ -4510,14 +5934,6 @@
     "source_type": "conceptnet",
     "target": "interact.v.01",
     "target_lemma": "interact"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "consummate.s.01",
-    "source_lemma": "masterful",
-    "source_type": "conceptnet",
-    "target": "adept.s.01",
-    "target_lemma": "skillful"
   },
   {
     "relation": "RelatedTo",
@@ -4552,12 +5968,12 @@
     "target_lemma": "honey"
   },
   {
-    "relation": "HasProperty",
+    "relation": "AtLocation",
     "source": "meal.n.01",
     "source_lemma": "meal",
     "source_type": "conceptnet",
-    "target": "comestible.n.01",
-    "target_lemma": "edible"
+    "target": "dinner.n.01",
+    "target_lemma": "dinner"
   },
   {
     "relation": "RelatedTo",
@@ -4566,6 +5982,14 @@
     "source_type": "conceptnet",
     "target": "flour.n.01",
     "target_lemma": "flour"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "meal.n.01",
+    "source_lemma": "meal",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "SimilarTo",
@@ -4604,8 +6028,16 @@
     "source": "meat.n.01",
     "source_lemma": "meat",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "can"
+    "target": "dinner.n.01",
+    "target_lemma": "dinner"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "meat.n.01",
+    "source_lemma": "meat",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "HasA",
@@ -4624,12 +6056,44 @@
     "target_lemma": "protein"
   },
   {
+    "relation": "IsA",
+    "source": "meat.n.01",
+    "source_lemma": "meat",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "IsA",
+    "source": "meat.n.01",
+    "source_lemma": "meat",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "meat.n.01",
+    "source_lemma": "meat",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
     "relation": "Synonym",
     "source": "meat.n.01",
     "source_lemma": "meat",
     "source_type": "conceptnet",
     "target": "meal.n.01",
     "target_lemma": "meal"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "meat.n.01",
+    "source_lemma": "meat",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "UsedFor",
@@ -4648,36 +6112,20 @@
     "target_lemma": "protein"
   },
   {
-    "relation": "IsA",
-    "source": "extremity.n.01",
-    "source_lemma": "member",
-    "source_type": "conceptnet",
-    "target": "consort.v.01",
-    "target_lemma": "associate"
-  },
-  {
-    "relation": "IsA",
-    "source": "extremity.n.01",
-    "source_lemma": "member",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "extremity.n.01",
-    "source_lemma": "member",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
     "relation": "RelatedTo",
     "source": "menu.n.02",
     "source_lemma": "menu",
     "source_type": "conceptnet",
     "target": "banquet.n.02",
     "target_lemma": "banquet"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "menu.n.02",
+    "source_lemma": "menu",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -4705,6 +6153,14 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "mesosphere.n.01",
+    "source_lemma": "mesosphere",
+    "source_type": "conceptnet",
+    "target": "thermosphere.n.01",
+    "target_lemma": "thermosphere"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "microflora.n.01",
     "source_lemma": "microflora",
     "source_type": "conceptnet",
@@ -4728,44 +6184,12 @@
     "target_lemma": "vitamin"
   },
   {
-    "relation": "DistinctFrom",
-    "source": "middle.n.03",
-    "source_lemma": "middle",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "bottom"
-  },
-  {
-    "relation": "IsA",
-    "source": "middle.n.03",
-    "source_lemma": "middle",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
     "relation": "RelatedTo",
-    "source": "middle.n.03",
-    "source_lemma": "middle",
+    "source": "microorganism.n.01",
+    "source_lemma": "microorganism",
     "source_type": "conceptnet",
-    "target": "location.n.01",
-    "target_lemma": "location"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "middle.n.03",
-    "source_lemma": "middle",
-    "source_type": "conceptnet",
-    "target": "waist.n.01",
-    "target_lemma": "waist"
-  },
-  {
-    "relation": "Synonym",
-    "source": "middle.n.03",
-    "source_lemma": "middle",
-    "source_type": "conceptnet",
-    "target": "midst.n.01",
-    "target_lemma": "midst"
+    "target": "bacteria.n.01",
+    "target_lemma": "bacterium"
   },
   {
     "relation": "RelatedTo",
@@ -4785,19 +6209,99 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "middle.n.03",
-    "source_lemma": "midsection",
+    "source": "diaphragm.n.02",
+    "source_lemma": "midriff",
     "source_type": "conceptnet",
     "target": "torso.n.01",
     "target_lemma": "torso"
   },
   {
-    "relation": "RelatedTo",
-    "source": "midst.n.01",
-    "source_lemma": "midst",
+    "relation": "Synonym",
+    "source": "diaphragm.n.02",
+    "source_lemma": "midriff",
     "source_type": "conceptnet",
-    "target": "middle.n.03",
-    "target_lemma": "middle"
+    "target": "abdomen.n.01",
+    "target_lemma": "stomach"
+  },
+  {
+    "relation": "CreatedBy",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "cattle.n.01",
+    "target_lemma": "cows"
+  },
+  {
+    "relation": "IsA",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "concoction.n.01",
+    "target_lemma": "mixture"
+  },
+  {
+    "relation": "IsA",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "nutriment"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "beverage.n.01",
+    "target_lemma": "beverage"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "cattle.n.01",
+    "target_lemma": "cows"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "beverage.n.01",
+    "target_lemma": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "homo.n.02",
+    "target_lemma": "human"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "mammal.n.01",
+    "target_lemma": "mammal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "milk.n.01",
+    "source_lemma": "milk",
+    "source_type": "conceptnet",
+    "target": "helping.n.01",
+    "target_lemma": "serving"
   },
   {
     "relation": "RelatedTo",
@@ -4806,14 +6310,6 @@
     "source_type": "conceptnet",
     "target": "dainty.n.01",
     "target_lemma": "dainty"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "mince.n.01",
-    "source_lemma": "mince",
-    "source_type": "conceptnet",
-    "target": "eye.n.01",
-    "target_lemma": "eye"
   },
   {
     "relation": "RelatedTo",
@@ -4849,14 +6345,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "concoction.n.01",
-    "source_lemma": "mixture",
-    "source_type": "conceptnet",
-    "target": "produce.n.01",
-    "target_lemma": "produce"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "exemplary.s.01",
     "source_lemma": "model",
     "source_type": "conceptnet",
@@ -4881,11 +6369,27 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "elk.n.01",
+    "source_lemma": "moose",
+    "source_type": "conceptnet",
+    "target": "antler.n.01",
+    "target_lemma": "antler"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "elk.n.01",
+    "source_lemma": "moose",
+    "source_type": "conceptnet",
+    "target": "deer.n.01",
+    "target_lemma": "deer"
+  },
+  {
+    "relation": "SimilarTo",
     "source": "moral.a.01",
     "source_lemma": "moral",
     "source_type": "conceptnet",
-    "target": "estimable.s.01",
-    "target_lemma": "honorable"
+    "target": "chaste.a.01",
+    "target_lemma": "chaste"
   },
   {
     "relation": "SimilarTo",
@@ -4894,6 +6398,38 @@
     "source_type": "conceptnet",
     "target": "righteous.a.01",
     "target_lemma": "righteous"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "morula.n.01",
+    "source_lemma": "morula",
+    "source_type": "conceptnet",
+    "target": "blastula.n.01",
+    "target_lemma": "blastula"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "motley.n.02",
+    "source_lemma": "motley",
+    "source_type": "conceptnet",
+    "target": "concoction.n.01",
+    "target_lemma": "mixture"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "mousse.n.03",
+    "source_lemma": "mousse",
+    "source_type": "conceptnet",
+    "target": "cocoa.n.01",
+    "target_lemma": "chocolate"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "mousse.n.03",
+    "source_lemma": "mousse",
+    "source_type": "conceptnet",
+    "target": "gelatin.n.02",
+    "target_lemma": "gelatin"
   },
   {
     "relation": "RelatedTo",
@@ -4976,12 +6512,68 @@
     "target_lemma": "bomb"
   },
   {
+    "relation": "AtLocation",
+    "source": "muscle.n.02",
+    "source_lemma": "muscle",
+    "source_type": "conceptnet",
+    "target": "sleeve.n.01",
+    "target_lemma": "arm"
+  },
+  {
+    "relation": "IsA",
+    "source": "muscle.n.02",
+    "source_lemma": "muscle",
+    "source_type": "conceptnet",
+    "target": "meat.n.01",
+    "target_lemma": "meat"
+  },
+  {
+    "relation": "MadeOf",
+    "source": "muscle.n.02",
+    "source_lemma": "muscle",
+    "source_type": "conceptnet",
+    "target": "meat.n.01",
+    "target_lemma": "meat"
+  },
+  {
+    "relation": "PartOf",
+    "source": "muscle.n.02",
+    "source_lemma": "muscle",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "muscle.n.02",
+    "source_lemma": "muscle",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "muscular_structure.n.01",
+    "source_lemma": "musculature",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
+  },
+  {
     "relation": "RelatedTo",
     "source": "muscular_structure.n.01",
     "source_lemma": "musculature",
     "source_type": "conceptnet",
     "target": "torso.n.01",
     "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "muscular_structure.n.01",
+    "source_lemma": "musculature",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
   },
   {
     "relation": "AtLocation",
@@ -4998,6 +6590,14 @@
     "source_type": "conceptnet",
     "target": "finger.n.01",
     "target_lemma": "finger"
+  },
+  {
+    "relation": "PartOf",
+    "source": "nail.n.01",
+    "source_lemma": "nail",
+    "source_type": "conceptnet",
+    "target": "toe.n.01",
+    "target_lemma": "toe"
   },
   {
     "relation": "RelatedTo",
@@ -5017,27 +6617,11 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "nates",
-    "source_type": "conceptnet",
-    "target": "buttock.n.01",
-    "target_lemma": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "nates",
-    "source_type": "conceptnet",
-    "target": "mammal.n.01",
-    "target_lemma": "mammal"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "navel.n.01",
     "source_lemma": "navel",
     "source_type": "conceptnet",
-    "target": "eye.n.01",
-    "target_lemma": "eye"
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
   },
   {
     "relation": "RelatedTo",
@@ -5046,6 +6630,142 @@
     "source_type": "conceptnet",
     "target": "mammal.n.01",
     "target_lemma": "mammal"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "mammal.n.01",
+    "target_lemma": "mammal"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "shoulder.n.03",
+    "target_lemma": "shoulder"
+  },
+  {
+    "relation": "IsA",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "IsA",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "part"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "pet.v.01",
+    "target_lemma": "pet"
+  },
+  {
+    "relation": "PartOf",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "beverage.n.01",
+    "target_lemma": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "egg.n.01",
+    "target_lemma": "egg"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "part"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "shirt.n.01",
+    "target_lemma": "shirt"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "neck.n.05",
+    "source_lemma": "neck",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "trunk"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "neckline.n.01",
+    "source_lemma": "neckline",
+    "source_type": "conceptnet",
+    "target": "neck.n.05",
+    "target_lemma": "neck"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "neckline.n.01",
+    "source_lemma": "neckline",
+    "source_type": "conceptnet",
+    "target": "neck.n.05",
+    "target_lemma": "neck"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "ambrosia.n.04",
+    "source_lemma": "nectar",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
   },
   {
     "relation": "RelatedTo",
@@ -5054,6 +6774,14 @@
     "source_type": "conceptnet",
     "target": "beverage.n.01",
     "target_lemma": "drink"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "nekton.n.01",
+    "source_lemma": "nekton",
+    "source_type": "conceptnet",
+    "target": "plankton.n.01",
+    "target_lemma": "plankton"
   },
   {
     "relation": "Antonym",
@@ -5092,6 +6820,14 @@
     "source": "northeast.n.04",
     "source_lemma": "northeast",
     "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "northeast.n.04",
+    "source_lemma": "northeast",
+    "source_type": "conceptnet",
     "target": "country.n.02",
     "target_lemma": "state"
   },
@@ -5112,6 +6848,30 @@
     "target_lemma": "southland"
   },
   {
+    "relation": "DerivedFrom",
+    "source": "northland.n.01",
+    "source_lemma": "northland",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "northland.n.01",
+    "source_lemma": "northland",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "northland.n.01",
+    "source_lemma": "northland",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
     "relation": "SimilarTo",
     "source": "northwest.n.04",
     "source_lemma": "northwest",
@@ -5120,12 +6880,12 @@
     "target_lemma": "northeast"
   },
   {
-    "relation": "IsA",
+    "relation": "CapableOf",
     "source": "nuzzle.v.02",
     "source_lemma": "nose",
     "source_type": "conceptnet",
-    "target": "chemoreceptor.n.01",
-    "target_lemma": "chemoreceptor"
+    "target": "sniff.v.02",
+    "target_lemma": "sniff"
   },
   {
     "relation": "PartOf",
@@ -5140,14 +6900,6 @@
     "source": "nuzzle.v.02",
     "source_lemma": "nose",
     "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "nuzzle.v.02",
-    "source_lemma": "nose",
-    "source_type": "conceptnet",
     "target": "torso.n.01",
     "target_lemma": "body"
   },
@@ -5156,16 +6908,16 @@
     "source": "nuzzle.v.02",
     "source_lemma": "nose",
     "source_type": "conceptnet",
-    "target": "middle.n.03",
-    "target_lemma": "middle"
+    "target": "region.n.01",
+    "target_lemma": "part"
   },
   {
     "relation": "RelatedTo",
-    "source": "nuzzle.v.02",
-    "source_lemma": "nose",
+    "source": "nutriment.n.01",
+    "source_lemma": "nourishment",
     "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -5205,6 +6957,14 @@
     "source_lemma": "nutriment",
     "source_type": "conceptnet",
     "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "nutriment.n.01",
+    "source_lemma": "nutriment",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
     "target_lemma": "nutrient"
   },
   {
@@ -5230,6 +6990,14 @@
     "source_type": "conceptnet",
     "target": "caress.v.01",
     "target_lemma": "caress"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "nymph.n.02",
+    "source_lemma": "nymph",
+    "source_type": "conceptnet",
+    "target": "larva.n.01",
+    "target_lemma": "larva"
   },
   {
     "relation": "RelatedTo",
@@ -5260,8 +7028,8 @@
     "source": "esophagus.n.01",
     "source_lemma": "oesophagus",
     "source_type": "conceptnet",
-    "target": "throat.n.01",
-    "target_lemma": "pharynx"
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -5278,30 +7046,6 @@
     "source_type": "conceptnet",
     "target": "adipose_tissue.n.01",
     "target_lemma": "fat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "optic",
-    "source_type": "conceptnet",
-    "target": "beverage.n.01",
-    "target_lemma": "drink"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "optic",
-    "source_type": "conceptnet",
-    "target": "interact.v.01",
-    "target_lemma": "interact"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye.n.01",
-    "source_lemma": "optic",
-    "source_type": "conceptnet",
-    "target": "lens.n.04",
-    "target_lemma": "lens"
   },
   {
     "relation": "RelatedTo",
@@ -5377,11 +7121,11 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "comestible.n.01",
-    "source_lemma": "pabulum",
+    "source": "palatinate.n.02",
+    "source_lemma": "palatinate",
     "source_type": "conceptnet",
-    "target": "fare.n.04",
-    "target_lemma": "fare"
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "RelatedTo",
@@ -5392,44 +7136,12 @@
     "target_lemma": "territory"
   },
   {
-    "relation": "DerivedFrom",
-    "source": "parafovea.n.01",
-    "source_lemma": "parafovea",
-    "source_type": "conceptnet",
-    "target": "fovea.n.01",
-    "target_lemma": "fovea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "parafovea.n.01",
-    "source_lemma": "parafovea",
-    "source_type": "conceptnet",
-    "target": "fovea.n.01",
-    "target_lemma": "fovea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "parafovea.n.01",
-    "source_lemma": "parafovea",
-    "source_type": "conceptnet",
-    "target": "retina.n.01",
-    "target_lemma": "retina"
-  },
-  {
     "relation": "RelatedTo",
     "source": "gear.n.04",
     "source_lemma": "paraphernalia",
     "source_type": "conceptnet",
     "target": "equipment.n.01",
     "target_lemma": "equipment"
-  },
-  {
-    "relation": "Synonym",
-    "source": "gear.n.04",
-    "source_lemma": "paraphernalia",
-    "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
   },
   {
     "relation": "RelatedTo",
@@ -5452,32 +7164,24 @@
     "source": "region.n.01",
     "source_lemma": "part",
     "source_type": "conceptnet",
-    "target": "district.n.01",
-    "target_lemma": "territory"
-  },
-  {
-    "relation": "Synonym",
-    "source": "region.n.01",
-    "source_lemma": "part",
-    "source_type": "conceptnet",
-    "target": "ingredient.n.03",
-    "target_lemma": "ingredient"
-  },
-  {
-    "relation": "Synonym",
-    "source": "region.n.01",
-    "source_lemma": "part",
-    "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "member"
+    "target": "country.n.02",
+    "target_lemma": "land"
   },
   {
     "relation": "RelatedTo",
-    "source": "chuck.v.03",
-    "source_lemma": "pat",
+    "source": "region.n.01",
+    "source_lemma": "part",
     "source_type": "conceptnet",
-    "target": "butter.n.01",
-    "target_lemma": "butter"
+    "target": "helping.n.01",
+    "target_lemma": "portion"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "region.n.01",
+    "source_lemma": "part",
+    "source_type": "conceptnet",
+    "target": "district.n.01",
+    "target_lemma": "territory"
   },
   {
     "relation": "RelatedTo",
@@ -5502,14 +7206,6 @@
     "source_type": "conceptnet",
     "target": "interact.v.01",
     "target_lemma": "interact"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "belly.n.02",
-    "source_lemma": "paunch",
-    "source_type": "conceptnet",
-    "target": "ruminant.n.01",
-    "target_lemma": "ruminant"
   },
   {
     "relation": "MannerOf",
@@ -5552,20 +7248,44 @@
     "target_lemma": "quadruped"
   },
   {
+    "relation": "SimilarTo",
+    "source": "paw.v.02",
+    "source_lemma": "paw",
+    "source_type": "conceptnet",
+    "target": "hoof.n.01",
+    "target_lemma": "hoof"
+  },
+  {
     "relation": "RelatedTo",
     "source": "pectoral.n.01",
     "source_lemma": "pectoral",
     "source_type": "conceptnet",
-    "target": "breast.n.01",
-    "target_lemma": "breast"
+    "target": "thorax.n.02",
+    "target_lemma": "chest"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "pectoral.n.01",
+    "source_lemma": "pectoralis",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "pectoral.n.01",
+    "source_lemma": "pectoralis",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
   },
   {
     "relation": "RelatedTo",
     "source": "thorax.n.02",
     "source_lemma": "pectus",
     "source_type": "conceptnet",
-    "target": "breast.n.01",
-    "target_lemma": "breast"
+    "target": "bird.n.02",
+    "target_lemma": "bird"
   },
   {
     "relation": "RelatedTo",
@@ -5624,12 +7344,20 @@
     "target_lemma": "stubborn"
   },
   {
-    "relation": "RelatedTo",
-    "source": "throat.n.01",
-    "source_lemma": "pharynx",
+    "relation": "MannerOf",
+    "source": "pet.v.01",
+    "source_lemma": "pet",
     "source_type": "conceptnet",
-    "target": "esophagus.n.01",
-    "target_lemma": "esophagus"
+    "target": "caress.v.01",
+    "target_lemma": "caress"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "pet.v.01",
+    "source_lemma": "pet",
+    "source_type": "conceptnet",
+    "target": "caress.v.01",
+    "target_lemma": "fondle"
   },
   {
     "relation": "MannerOf",
@@ -5672,6 +7400,14 @@
     "target_lemma": "satellite"
   },
   {
+    "relation": "SimilarTo",
+    "source": "plankton.n.01",
+    "source_lemma": "plankton",
+    "source_type": "conceptnet",
+    "target": "nekton.n.01",
+    "target_lemma": "nekton"
+  },
+  {
     "relation": "MannerOf",
     "source": "plop.v.02",
     "source_lemma": "plop",
@@ -5680,12 +7416,12 @@
     "target_lemma": "descend"
   },
   {
-    "relation": "MannerOf",
+    "relation": "RelatedTo",
     "source": "plop.v.02",
     "source_lemma": "plop",
     "source_type": "conceptnet",
-    "target": "dribble.v.02",
-    "target_lemma": "drop"
+    "target": "country.n.02",
+    "target_lemma": "land"
   },
   {
     "relation": "Synonym",
@@ -5694,22 +7430,6 @@
     "source_type": "conceptnet",
     "target": "dive.v.01",
     "target_lemma": "plunk"
-  },
-  {
-    "relation": "IsA",
-    "source": "dive.v.01",
-    "source_lemma": "plunge",
-    "source_type": "conceptnet",
-    "target": "dribble.v.02",
-    "target_lemma": "drop"
-  },
-  {
-    "relation": "MannerOf",
-    "source": "dive.v.01",
-    "source_lemma": "plunge",
-    "source_type": "conceptnet",
-    "target": "dribble.v.02",
-    "target_lemma": "drop"
   },
   {
     "relation": "RelatedTo",
@@ -5724,32 +7444,32 @@
     "source": "dive.v.01",
     "source_lemma": "plunk",
     "source_type": "conceptnet",
-    "target": "dribble.v.02",
-    "target_lemma": "drop"
+    "target": "batter.n.02",
+    "target_lemma": "batter"
   },
   {
     "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "posterior",
+    "source": "dive.v.01",
+    "source_lemma": "plunk",
     "source_type": "conceptnet",
-    "target": "torso.n.01",
-    "target_lemma": "body"
+    "target": "country.n.02",
+    "target_lemma": "land"
   },
   {
     "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "posterior",
+    "source": "helping.n.01",
+    "source_lemma": "portion",
     "source_type": "conceptnet",
-    "target": "quadruped.n.01",
-    "target_lemma": "quadruped"
+    "target": "region.n.01",
+    "target_lemma": "part"
   },
   {
-    "relation": "SimilarTo",
-    "source": "beverage.n.01",
-    "source_lemma": "potable",
+    "relation": "Synonym",
+    "source": "helping.n.01",
+    "source_lemma": "portion",
     "source_type": "conceptnet",
-    "target": "comestible.n.01",
-    "target_lemma": "edible"
+    "target": "region.n.01",
+    "target_lemma": "part"
   },
   {
     "relation": "RelatedTo",
@@ -5758,6 +7478,30 @@
     "source_type": "conceptnet",
     "target": "drug.v.02",
     "target_lemma": "drug"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "potion.n.01",
+    "source_lemma": "potion",
+    "source_type": "conceptnet",
+    "target": "helping.n.01",
+    "target_lemma": "portion"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "pounce.v.01",
+    "source_lemma": "pounce",
+    "source_type": "conceptnet",
+    "target": "descend.v.01",
+    "target_lemma": "descend"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "pounce.v.01",
+    "source_lemma": "pounce",
+    "source_type": "conceptnet",
+    "target": "claw.n.03",
+    "target_lemma": "claw"
   },
   {
     "relation": "IsA",
@@ -5785,30 +7529,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "practiced.s.02",
-    "source_lemma": "practised",
-    "source_type": "conceptnet",
-    "target": "adept.s.01",
-    "target_lemma": "expert"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "practiced.s.02",
-    "source_lemma": "practised",
-    "source_type": "conceptnet",
-    "target": "adept.s.01",
-    "target_lemma": "proficient"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "practiced.s.02",
-    "source_lemma": "practised",
-    "source_type": "conceptnet",
-    "target": "adept.s.01",
-    "target_lemma": "skillful"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "applaudable.s.01",
     "source_lemma": "praiseworthy",
     "source_type": "conceptnet",
@@ -5817,51 +7537,11 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "prat",
-    "source_type": "conceptnet",
-    "target": "buttock.n.01",
-    "target_lemma": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "principality.n.01",
     "source_lemma": "principality",
     "source_type": "conceptnet",
     "target": "district.n.01",
     "target_lemma": "dominion"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "produce.n.01",
-    "source_lemma": "produce",
-    "source_type": "conceptnet",
-    "target": "widen.v.04",
-    "target_lemma": "extend"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "produce.n.01",
-    "source_lemma": "produce",
-    "source_type": "conceptnet",
-    "target": "lengthen.v.01",
-    "target_lemma": "lengthen"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "adept.s.01",
-    "source_lemma": "proficient",
-    "source_type": "conceptnet",
-    "target": "skilled.a.01",
-    "target_lemma": "skilled"
-  },
-  {
-    "relation": "Synonym",
-    "source": "adept.s.01",
-    "source_lemma": "proficient",
-    "source_type": "conceptnet",
-    "target": "skilled.a.01",
-    "target_lemma": "skilled"
   },
   {
     "relation": "MannerOf",
@@ -5886,6 +7566,14 @@
     "source_type": "conceptnet",
     "target": "food.n.01",
     "target_lemma": "nutrient"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "protein.n.01",
+    "source_lemma": "protein",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "SimilarTo",
@@ -5936,6 +7624,70 @@
     "target_lemma": "arm"
   },
   {
+    "relation": "MannerOf",
+    "source": "rap.v.03",
+    "source_lemma": "rap",
+    "source_type": "conceptnet",
+    "target": "perform.v.03",
+    "target_lemma": "perform"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "rap.v.03",
+    "source_lemma": "rap",
+    "source_type": "conceptnet",
+    "target": "hip.n.01",
+    "target_lemma": "hip"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "rap.v.03",
+    "source_lemma": "rap",
+    "source_type": "conceptnet",
+    "target": "knuckle.n.01",
+    "target_lemma": "knuckle"
+  },
+  {
+    "relation": "Synonym",
+    "source": "rap.v.03",
+    "source_lemma": "rap",
+    "source_type": "conceptnet",
+    "target": "descend.v.01",
+    "target_lemma": "fall"
+  },
+  {
+    "relation": "Synonym",
+    "source": "rap.v.03",
+    "source_lemma": "rap",
+    "source_type": "conceptnet",
+    "target": "chuck.v.03",
+    "target_lemma": "pat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "ration.n.01",
+    "source_lemma": "ration",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "ration.n.01",
+    "source_lemma": "ration",
+    "source_type": "conceptnet",
+    "target": "helping.n.01",
+    "target_lemma": "portion"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "ration.n.01",
+    "source_lemma": "ration",
+    "source_type": "conceptnet",
+    "target": "helping.n.01",
+    "target_lemma": "helping"
+  },
+  {
     "relation": "RelatedTo",
     "source": "fractious.s.01",
     "source_lemma": "recalcitrant",
@@ -5966,14 +7718,6 @@
     "source_type": "conceptnet",
     "target": "stubborn.a.01",
     "target_lemma": "stubborn"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "sense_organ.n.01",
-    "source_lemma": "receptor",
-    "source_type": "conceptnet",
-    "target": "protein.n.01",
-    "target_lemma": "protein"
   },
   {
     "relation": "RelatedTo",
@@ -6008,20 +7752,92 @@
     "target_lemma": "intractable"
   },
   {
-    "relation": "RelatedTo",
-    "source": "reputable.a.01",
-    "source_lemma": "reputable",
+    "relation": "IsA",
+    "source": "region.n.01",
+    "source_lemma": "region",
     "source_type": "conceptnet",
-    "target": "estimable.s.01",
-    "target_lemma": "honorable"
+    "target": "country.n.02",
+    "target_lemma": "state"
   },
   {
     "relation": "RelatedTo",
-    "source": "retina.n.01",
-    "source_lemma": "retina",
+    "source": "region.n.01",
+    "source_lemma": "region",
     "source_type": "conceptnet",
-    "target": "layer.n.02",
-    "target_lemma": "layer"
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "region.n.01",
+    "source_lemma": "region",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "country"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "region.n.01",
+    "source_lemma": "region",
+    "source_type": "conceptnet",
+    "target": "district.n.01",
+    "target_lemma": "district"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "region.n.01",
+    "source_lemma": "region",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "region.n.01",
+    "source_lemma": "region",
+    "source_type": "conceptnet",
+    "target": "location.n.01",
+    "target_lemma": "location"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "region.n.01",
+    "source_lemma": "region",
+    "source_type": "conceptnet",
+    "target": "district.n.01",
+    "target_lemma": "territory"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "caribou.n.01",
+    "source_lemma": "reindeer",
+    "source_type": "conceptnet",
+    "target": "deer.n.01",
+    "target_lemma": "deer"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "meal.n.01",
+    "source_lemma": "repast",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "reputable.a.01",
+    "source_lemma": "reputable",
+    "source_type": "conceptnet",
+    "target": "respectable.a.01",
+    "target_lemma": "respectable"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "respectable.a.01",
+    "source_lemma": "respectable",
+    "source_type": "conceptnet",
+    "target": "reputable.a.01",
+    "target_lemma": "reputable"
   },
   {
     "relation": "RelatedTo",
@@ -6054,6 +7870,14 @@
     "source_type": "conceptnet",
     "target": "sheep.n.01",
     "target_lemma": "sheep"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "righteous.a.01",
+    "source_lemma": "righteous",
+    "source_type": "conceptnet",
+    "target": "impeccant.s.01",
+    "target_lemma": "innocent"
   },
   {
     "relation": "SimilarTo",
@@ -6104,6 +7928,14 @@
     "target_lemma": "ungulate"
   },
   {
+    "relation": "RelatedTo",
+    "source": "hindquarters.n.02",
+    "source_lemma": "rump",
+    "source_type": "conceptnet",
+    "target": "meat.n.01",
+    "target_lemma": "meat"
+  },
+  {
     "relation": "MannerOf",
     "source": "sandwich.n.01",
     "source_lemma": "sandwich",
@@ -6124,6 +7956,22 @@
     "source": "sandwich.n.01",
     "source_lemma": "sandwich",
     "source_type": "conceptnet",
+    "target": "dinner.n.01",
+    "target_lemma": "dinner"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sandwich.n.01",
+    "source_lemma": "sandwich",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sandwich.n.01",
+    "source_lemma": "sandwich",
+    "source_type": "conceptnet",
     "target": "layer.n.02",
     "target_lemma": "layer"
   },
@@ -6134,6 +7982,14 @@
     "source_type": "conceptnet",
     "target": "meal.n.01",
     "target_lemma": "meal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sandwich.n.01",
+    "source_lemma": "sandwich",
+    "source_type": "conceptnet",
+    "target": "helping.n.01",
+    "target_lemma": "serving"
   },
   {
     "relation": "RelatedTo",
@@ -6168,6 +8024,14 @@
     "target_lemma": "state"
   },
   {
+    "relation": "IsA",
+    "source": "sausage.n.01",
+    "source_lemma": "sausage",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
     "relation": "MadeOf",
     "source": "sausage.n.01",
     "source_lemma": "sausage",
@@ -6184,36 +8048,20 @@
     "target_lemma": "intestine"
   },
   {
-    "relation": "IsA",
-    "source": "seafood.n.01",
-    "source_lemma": "seafood",
+    "relation": "UsedFor",
+    "source": "sausage.n.01",
+    "source_lemma": "sausage",
     "source_type": "conceptnet",
-    "target": "fish.n.02",
-    "target_lemma": "fish"
-  },
-  {
-    "relation": "IsA",
-    "source": "seafood.n.01",
-    "source_lemma": "seafood",
-    "source_type": "conceptnet",
-    "target": "meat.n.01",
-    "target_lemma": "meat"
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
-    "source": "seafood.n.01",
-    "source_lemma": "seafood",
+    "source": "scapula.n.01",
+    "source_lemma": "scapula",
     "source_type": "conceptnet",
-    "target": "comestible.n.01",
-    "target_lemma": "edible"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "seafood.n.01",
-    "source_lemma": "seafood",
-    "source_type": "conceptnet",
-    "target": "fish.n.02",
-    "target_lemma": "fish"
+    "target": "shoulder.n.03",
+    "target_lemma": "shoulder"
   },
   {
     "relation": "RelatedTo",
@@ -6224,60 +8072,12 @@
     "target_lemma": "experienced"
   },
   {
-    "relation": "IsA",
-    "source": "buttocks.n.01",
-    "source_lemma": "seat",
-    "source_type": "conceptnet",
-    "target": "furniture.n.01",
-    "target_lemma": "furniture"
-  },
-  {
-    "relation": "IsA",
-    "source": "buttocks.n.01",
-    "source_lemma": "seat",
-    "source_type": "conceptnet",
-    "target": "location.n.01",
-    "target_lemma": "location"
-  },
-  {
-    "relation": "IsA",
-    "source": "buttocks.n.01",
-    "source_lemma": "seat",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
-    "relation": "PartOf",
-    "source": "buttocks.n.01",
-    "source_lemma": "seat",
-    "source_type": "conceptnet",
-    "target": "skirt.n.01",
-    "target_lemma": "skirt"
-  },
-  {
     "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "seat",
+    "source": "seasoned.s.01",
+    "source_lemma": "seasoned",
     "source_type": "conceptnet",
-    "target": "furniture.n.01",
-    "target_lemma": "furniture"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "seat",
-    "source_type": "conceptnet",
-    "target": "location.n.01",
-    "target_lemma": "location"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "seat",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
+    "target": "food.n.01",
+    "target_lemma": "food"
   },
   {
     "relation": "RelatedTo",
@@ -6286,6 +8086,30 @@
     "source_type": "conceptnet",
     "target": "gland.n.01",
     "target_lemma": "gland"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "silk_gland.n.01",
+    "source_lemma": "sericterium",
+    "source_type": "conceptnet",
+    "target": "silkworm.n.01",
+    "target_lemma": "silkworm"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "serratus.n.01",
+    "source_lemma": "serratus",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "helping.n.01",
+    "source_lemma": "serving",
+    "source_type": "conceptnet",
+    "target": "layer.n.02",
+    "target_lemma": "layer"
   },
   {
     "relation": "RelatedTo",
@@ -6324,8 +8148,40 @@
     "source": "sheep.n.01",
     "source_lemma": "sheep",
     "source_type": "conceptnet",
+    "target": "ewe.n.03",
+    "target_lemma": "ewe"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sheep.n.01",
+    "source_lemma": "sheep",
+    "source_type": "conceptnet",
+    "target": "flock.n.05",
+    "target_lemma": "flock"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sheep.n.01",
+    "source_lemma": "sheep",
+    "source_type": "conceptnet",
+    "target": "goat.n.01",
+    "target_lemma": "goat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sheep.n.01",
+    "source_lemma": "sheep",
+    "source_type": "conceptnet",
     "target": "herd.n.01",
     "target_lemma": "herd"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sheep.n.01",
+    "source_lemma": "sheep",
+    "source_type": "conceptnet",
+    "target": "lamb.n.05",
+    "target_lemma": "lamb"
   },
   {
     "relation": "RelatedTo",
@@ -6342,14 +8198,6 @@
     "source_type": "conceptnet",
     "target": "ruminant.n.01",
     "target_lemma": "ruminant"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "sheikdom.n.01",
-    "source_lemma": "sheikdom",
-    "source_type": "conceptnet",
-    "target": "domain.n.02",
-    "target_lemma": "domain"
   },
   {
     "relation": "RelatedTo",
@@ -6424,20 +8272,12 @@
     "target_lemma": "shirt"
   },
   {
-    "relation": "DerivedFrom",
+    "relation": "RelatedTo",
     "source": "shirttail.n.02",
     "source_lemma": "shirttail",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "tail"
-  },
-  {
-    "relation": "IsA",
-    "source": "shirttail.n.02",
-    "source_lemma": "shirttail",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "tail"
+    "target": "helping.n.01",
+    "target_lemma": "portion"
   },
   {
     "relation": "RelatedTo",
@@ -6448,20 +8288,84 @@
     "target_lemma": "shirt"
   },
   {
+    "relation": "MannerOf",
+    "source": "shoulder.n.03",
+    "source_lemma": "shoulder",
+    "source_type": "conceptnet",
+    "target": "conveyance.n.03",
+    "target_lemma": "transport"
+  },
+  {
+    "relation": "PartOf",
+    "source": "shoulder.n.03",
+    "source_lemma": "shoulder",
+    "source_type": "conceptnet",
+    "target": "chuck.v.03",
+    "target_lemma": "chuck"
+  },
+  {
+    "relation": "PartOf",
+    "source": "shoulder.n.03",
+    "source_lemma": "shoulder",
+    "source_type": "conceptnet",
+    "target": "garment.n.01",
+    "target_lemma": "garment"
+  },
+  {
     "relation": "RelatedTo",
-    "source": "tendon.n.01",
-    "source_lemma": "sinew",
+    "source": "shoulder.n.03",
+    "source_lemma": "shoulder",
+    "source_type": "conceptnet",
+    "target": "sleeve.n.01",
+    "target_lemma": "arm"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "shoulder.n.03",
+    "source_lemma": "shoulder",
+    "source_type": "conceptnet",
+    "target": "flank.n.04",
+    "target_lemma": "flank"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "shoulder.n.03",
+    "source_lemma": "shoulder",
+    "source_type": "conceptnet",
+    "target": "foreleg.n.01",
+    "target_lemma": "foreleg"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "shoulder.n.03",
+    "source_lemma": "shoulder",
+    "source_type": "conceptnet",
+    "target": "neck.n.05",
+    "target_lemma": "neck"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "shoulder.n.03",
+    "source_lemma": "shoulder",
     "source_type": "conceptnet",
     "target": "torso.n.01",
-    "target_lemma": "body"
+    "target_lemma": "torso"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "silkworm.n.01",
+    "source_lemma": "silkworm",
+    "source_type": "conceptnet",
+    "target": "caterpillar.n.01",
+    "target_lemma": "caterpillar"
   },
   {
     "relation": "RelatedTo",
     "source": "tendon.n.01",
     "source_lemma": "sinew",
     "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "member"
+    "target": "torso.n.01",
+    "target_lemma": "body"
   },
   {
     "relation": "RelatedTo",
@@ -6486,30 +8390,6 @@
     "source_type": "conceptnet",
     "target": "vertebrate.n.01",
     "target_lemma": "vertebrate"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "adept.s.01",
-    "source_lemma": "skilful",
-    "source_type": "conceptnet",
-    "target": "skilled.a.01",
-    "target_lemma": "skilled"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "skilled.a.01",
-    "source_lemma": "skilled",
-    "source_type": "conceptnet",
-    "target": "adept.s.01",
-    "target_lemma": "skillful"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "adept.s.01",
-    "source_lemma": "skillful",
-    "source_type": "conceptnet",
-    "target": "skilled.a.01",
-    "target_lemma": "skilled"
   },
   {
     "relation": "IsA",
@@ -6542,6 +8422,14 @@
     "source_type": "conceptnet",
     "target": "diaphragm.n.02",
     "target_lemma": "diaphragm"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "skirt.n.01",
+    "source_lemma": "skirt",
+    "source_type": "conceptnet",
+    "target": "diaphragm.n.02",
+    "target_lemma": "midriff"
   },
   {
     "relation": "RelatedTo",
@@ -6608,12 +8496,20 @@
     "target_lemma": "shirt"
   },
   {
-    "relation": "RelatedTo",
-    "source": "slop.n.04",
-    "source_lemma": "slop",
+    "relation": "HasPrerequisite",
+    "source": "smoke.v.01",
+    "source_lemma": "smoke",
     "source_type": "conceptnet",
-    "target": "upstanding.s.01",
-    "target_lemma": "solid"
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "HasSubevent",
+    "source": "smoke.v.01",
+    "source_lemma": "smoke",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
   },
   {
     "relation": "RelatedTo",
@@ -6648,6 +8544,102 @@
     "target_lemma": "mixture"
   },
   {
+    "relation": "MannerOf",
+    "source": "sniff.v.02",
+    "source_lemma": "sniff",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sniff.v.02",
+    "source_lemma": "sniff",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sniff.v.02",
+    "source_lemma": "sniff",
+    "source_type": "conceptnet",
+    "target": "nuzzle.v.02",
+    "target_lemma": "nose"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sniff.v.02",
+    "source_lemma": "sniffle",
+    "source_type": "conceptnet",
+    "target": "nuzzle.v.02",
+    "target_lemma": "nose"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "huff.v.01",
+    "source_lemma": "snort",
+    "source_type": "conceptnet",
+    "target": "exhale.v.01",
+    "target_lemma": "exhale"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "huff.v.01",
+    "source_lemma": "snort",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "huff.v.01",
+    "source_lemma": "snort",
+    "source_type": "conceptnet",
+    "target": "beverage.n.01",
+    "target_lemma": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "huff.v.01",
+    "source_lemma": "snort",
+    "source_type": "conceptnet",
+    "target": "drug.v.02",
+    "target_lemma": "drug"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "huff.v.01",
+    "source_lemma": "snort",
+    "source_type": "conceptnet",
+    "target": "exhale.v.01",
+    "target_lemma": "exhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "huff.v.01",
+    "source_lemma": "snort",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "huff.v.01",
+    "source_lemma": "snort",
+    "source_type": "conceptnet",
+    "target": "nuzzle.v.02",
+    "target_lemma": "nose"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "huff.v.01",
+    "source_lemma": "snort",
+    "source_type": "conceptnet",
+    "target": "snuff.v.02",
+    "target_lemma": "snuff"
+  },
+  {
     "relation": "IsA",
     "source": "snow.n.02",
     "source_lemma": "snow",
@@ -6662,6 +8654,62 @@
     "source_type": "conceptnet",
     "target": "powder.n.03",
     "target_lemma": "powder"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "snuff.v.02",
+    "source_lemma": "snuff",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "snuff.v.02",
+    "source_lemma": "snuff",
+    "source_type": "conceptnet",
+    "target": "inhale.v.02",
+    "target_lemma": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "snuff.v.02",
+    "source_lemma": "snuff",
+    "source_type": "conceptnet",
+    "target": "mince.n.01",
+    "target_lemma": "mince"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "snuff.v.02",
+    "source_lemma": "snuff",
+    "source_type": "conceptnet",
+    "target": "sniff.v.02",
+    "target_lemma": "sniff"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "snuff.v.02",
+    "source_lemma": "snuff",
+    "source_type": "conceptnet",
+    "target": "huff.v.01",
+    "target_lemma": "snort"
+  },
+  {
+    "relation": "Synonym",
+    "source": "snuff.v.02",
+    "source_lemma": "snuff",
+    "source_type": "conceptnet",
+    "target": "sniff.v.02",
+    "target_lemma": "sniff"
+  },
+  {
+    "relation": "Synonym",
+    "source": "snuff.v.02",
+    "source_lemma": "snuff",
+    "source_type": "conceptnet",
+    "target": "huff.v.01",
+    "target_lemma": "snort"
   },
   {
     "relation": "RelatedTo",
@@ -6710,6 +8758,14 @@
     "source_type": "conceptnet",
     "target": "east.n.05",
     "target_lemma": "east"
+  },
+  {
+    "relation": "IsA",
+    "source": "south.n.04",
+    "source_lemma": "south",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "RelatedTo",
@@ -6788,8 +8844,24 @@
     "source": "southland.n.01",
     "source_lemma": "southland",
     "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "southland.n.01",
+    "source_lemma": "southland",
+    "source_type": "conceptnet",
     "target": "south.n.04",
     "target_lemma": "south"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "southland.n.01",
+    "source_lemma": "southland",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
   },
   {
     "relation": "RelatedTo",
@@ -6836,16 +8908,8 @@
     "source": "spear.n.02",
     "source_lemma": "spear",
     "source_type": "conceptnet",
-    "target": "fish.n.02",
-    "target_lemma": "fish"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "spear.n.02",
-    "source_lemma": "spear",
-    "source_type": "conceptnet",
-    "target": "middle.n.03",
-    "target_lemma": "midsection"
+    "target": "shoulder.n.03",
+    "target_lemma": "shoulder"
   },
   {
     "relation": "RelatedTo",
@@ -6870,6 +8934,22 @@
     "source_type": "conceptnet",
     "target": "widen.v.04",
     "target_lemma": "extend"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "banquet.n.02",
+    "source_lemma": "spread",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "banquet.n.02",
+    "source_lemma": "spread",
+    "source_type": "conceptnet",
+    "target": "country.n.02",
+    "target_lemma": "land"
   },
   {
     "relation": "RelatedTo",
@@ -6932,8 +9012,24 @@
     "source": "stratum.n.01",
     "source_lemma": "stratum",
     "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "stratum.n.01",
+    "source_lemma": "stratum",
+    "source_type": "conceptnet",
     "target": "stratosphere.n.01",
     "target_lemma": "stratosphere"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "strawworm.n.02",
+    "source_lemma": "strawworm",
+    "source_type": "conceptnet",
+    "target": "grub.n.02",
+    "target_lemma": "grub"
   },
   {
     "relation": "RelatedTo",
@@ -6985,6 +9081,14 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "pounce.v.01",
+    "source_lemma": "swoop",
+    "source_type": "conceptnet",
+    "target": "dive.v.01",
+    "target_lemma": "plunge"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "fishing_gear.n.01",
     "source_lemma": "tackle",
     "source_type": "conceptnet",
@@ -7014,38 +9118,6 @@
     "source_type": "conceptnet",
     "target": "larva.n.01",
     "target_lemma": "larva"
-  },
-  {
-    "relation": "IsA",
-    "source": "buttocks.n.01",
-    "source_lemma": "tail",
-    "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
-  },
-  {
-    "relation": "PartOf",
-    "source": "buttocks.n.01",
-    "source_lemma": "tail",
-    "source_type": "conceptnet",
-    "target": "vertebrate.n.01",
-    "target_lemma": "vertebrate"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "tail",
-    "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttocks.n.01",
-    "source_lemma": "tail",
-    "source_type": "conceptnet",
-    "target": "tendon.n.01",
-    "target_lemma": "tendon"
   },
   {
     "relation": "HasA",
@@ -7105,6 +9177,14 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "tea.n.01",
+    "source_lemma": "tea",
+    "source_type": "conceptnet",
+    "target": "milk.n.01",
+    "target_lemma": "milk"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "telpher.n.01",
     "source_lemma": "telpher",
     "source_type": "conceptnet",
@@ -7129,6 +9209,14 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "tendon.n.01",
+    "source_lemma": "tendon",
+    "source_type": "conceptnet",
+    "target": "muscle.n.02",
+    "target_lemma": "muscle"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "district.n.01",
     "source_lemma": "territory",
     "source_type": "conceptnet",
@@ -7148,8 +9236,24 @@
     "source": "district.n.01",
     "source_lemma": "territory",
     "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "district.n.01",
+    "source_lemma": "territory",
+    "source_type": "conceptnet",
     "target": "country.n.02",
     "target_lemma": "state"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "tetrapod.n.01",
+    "source_lemma": "tetrapod",
+    "source_type": "conceptnet",
+    "target": "bird.n.02",
+    "target_lemma": "bird"
   },
   {
     "relation": "RelatedTo",
@@ -7174,6 +9278,22 @@
     "source_type": "conceptnet",
     "target": "here.n.01",
     "target_lemma": "here"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "thermosphere.n.01",
+    "source_lemma": "thermosphere",
+    "source_type": "conceptnet",
+    "target": "exosphere.n.01",
+    "target_lemma": "exosphere"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "thermosphere.n.01",
+    "source_lemma": "thermosphere",
+    "source_type": "conceptnet",
+    "target": "mesosphere.n.01",
+    "target_lemma": "mesosphere"
   },
   {
     "relation": "RelatedTo",
@@ -7204,6 +9324,14 @@
     "source": "thorax.n.02",
     "source_lemma": "thorax",
     "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "thorax.n.02",
+    "source_lemma": "thorax",
+    "source_type": "conceptnet",
     "target": "crustacean.n.01",
     "target_lemma": "crustacean"
   },
@@ -7217,51 +9345,35 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "throat.n.01",
-    "source_lemma": "throat",
-    "source_type": "conceptnet",
-    "target": "sleeve.n.01",
-    "target_lemma": "arm"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "throat.n.01",
-    "source_lemma": "throat",
-    "source_type": "conceptnet",
-    "target": "esophagus.n.01",
-    "target_lemma": "gullet"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "throat.n.01",
-    "source_lemma": "throat",
-    "source_type": "conceptnet",
-    "target": "trachea.n.01",
-    "target_lemma": "windpipe"
-  },
-  {
-    "relation": "Synonym",
-    "source": "throat.n.01",
-    "source_lemma": "throat",
-    "source_type": "conceptnet",
-    "target": "esophagus.n.01",
-    "target_lemma": "esophagus"
-  },
-  {
-    "relation": "Synonym",
-    "source": "throat.n.01",
-    "source_lemma": "throat",
-    "source_type": "conceptnet",
-    "target": "trachea.n.01",
-    "target_lemma": "trachea"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "thymus_gland.n.01",
     "source_lemma": "thymus",
     "source_type": "conceptnet",
     "target": "sternum.n.01",
     "target_lemma": "breastbone"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "tickle.v.03",
+    "source_lemma": "tickle",
+    "source_type": "conceptnet",
+    "target": "caress.v.01",
+    "target_lemma": "caress"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "choice_morsel.n.01",
+    "source_lemma": "tidbit",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "choice_morsel.n.01",
+    "source_lemma": "tidbit",
+    "source_type": "conceptnet",
+    "target": "dainty.n.01",
+    "target_lemma": "delicacy"
   },
   {
     "relation": "IsA",
@@ -7289,6 +9401,94 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "choice_morsel.n.01",
+    "source_lemma": "titbit",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "choice_morsel.n.01",
+    "source_lemma": "titbit",
+    "source_type": "conceptnet",
+    "target": "dainty.n.01",
+    "target_lemma": "delicacy"
+  },
+  {
+    "relation": "IsA",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "extremity.n.04",
+    "target_lemma": "extremity"
+  },
+  {
+    "relation": "IsA",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "part"
+  },
+  {
+    "relation": "PartOf",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "torso.n.01",
+    "target_lemma": "body"
+  },
+  {
+    "relation": "PartOf",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "hoof.n.01",
+    "target_lemma": "hoof"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "finger.n.01",
+    "target_lemma": "finger"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "part"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "vehicle.n.01",
+    "target_lemma": "vehicle"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "finger.n.01",
+    "target_lemma": "finger"
+  },
+  {
+    "relation": "Synonym",
+    "source": "toe.n.01",
+    "source_lemma": "toe",
+    "source_type": "conceptnet",
+    "target": "hoof.n.01",
+    "target_lemma": "hoof"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "topical.s.02",
     "source_lemma": "topical",
     "source_type": "conceptnet",
@@ -7310,14 +9510,6 @@
     "source_type": "conceptnet",
     "target": "current.a.01",
     "target_lemma": "current"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "topical.s.02",
-    "source_lemma": "topical",
-    "source_type": "conceptnet",
-    "target": "eye.n.01",
-    "target_lemma": "eye"
   },
   {
     "relation": "Synonym",
@@ -7352,28 +9544,20 @@
     "target_lemma": "human"
   },
   {
-    "relation": "IsA",
-    "source": "trachea.n.01",
-    "source_lemma": "trachea",
+    "relation": "RelatedTo",
+    "source": "torso.n.01",
+    "source_lemma": "torso",
     "source_type": "conceptnet",
-    "target": "tubule.n.01",
-    "target_lemma": "tubule"
+    "target": "neck.n.05",
+    "target_lemma": "neck"
   },
   {
     "relation": "RelatedTo",
-    "source": "trachea.n.01",
-    "source_lemma": "trachea",
+    "source": "tramway.n.01",
+    "source_lemma": "tram",
     "source_type": "conceptnet",
-    "target": "esophagus.n.01",
-    "target_lemma": "oesophagus"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "trachea.n.01",
-    "source_lemma": "trachea",
-    "source_type": "conceptnet",
-    "target": "tube.n.04",
-    "target_lemma": "tube"
+    "target": "vehicle.n.01",
+    "target_lemma": "vehicle"
   },
   {
     "relation": "MannerOf",
@@ -7404,6 +9588,14 @@
     "source": "conveyance.n.03",
     "source_lemma": "transport",
     "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "conveyance.n.03",
+    "source_lemma": "transport",
+    "source_type": "conceptnet",
     "target": "vehicle.n.01",
     "target_lemma": "vehicle"
   },
@@ -7422,6 +9614,22 @@
     "source_type": "conceptnet",
     "target": "beverage.n.01",
     "target_lemma": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "dainty.n.01",
+    "source_lemma": "treat",
+    "source_type": "conceptnet",
+    "target": "food.n.01",
+    "target_lemma": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "dainty.n.01",
+    "source_lemma": "treat",
+    "source_type": "conceptnet",
+    "target": "pet.v.01",
+    "target_lemma": "pet"
   },
   {
     "relation": "RelatedTo",
@@ -7452,16 +9660,16 @@
     "source": "torso.n.01",
     "source_lemma": "trunk",
     "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
+    "target": "nuzzle.v.02",
+    "target_lemma": "nose"
   },
   {
-    "relation": "IsA",
+    "relation": "RelatedTo",
     "source": "torso.n.01",
     "source_lemma": "trunk",
     "source_type": "conceptnet",
-    "target": "nuzzle.v.02",
-    "target_lemma": "nose"
+    "target": "thorax.n.02",
+    "target_lemma": "chest"
   },
   {
     "relation": "RelatedTo",
@@ -7473,11 +9681,19 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "tubule.n.01",
-    "source_lemma": "tubule",
+    "source": "trust_territory.n.01",
+    "source_lemma": "trusteeship",
     "source_type": "conceptnet",
-    "target": "tube.n.04",
-    "target_lemma": "tube"
+    "target": "country.n.02",
+    "target_lemma": "country"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "trust_territory.n.01",
+    "source_lemma": "trusteeship",
+    "source_type": "conceptnet",
+    "target": "district.n.01",
+    "target_lemma": "territory"
   },
   {
     "relation": "RelatedTo",
@@ -7528,12 +9744,12 @@
     "target_lemma": "unwilling"
   },
   {
-    "relation": "IsA",
+    "relation": "DerivedFrom",
     "source": "underbelly.n.02",
     "source_lemma": "underbelly",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "bottom"
+    "target": "abdomen.n.01",
+    "target_lemma": "belly"
   },
   {
     "relation": "DerivedFrom",
@@ -7550,30 +9766,6 @@
     "source_type": "conceptnet",
     "target": "vehicle.n.01",
     "target_lemma": "vehicle"
-  },
-  {
-    "relation": "DerivedFrom",
-    "source": "underpart.n.01",
-    "source_lemma": "underpart",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "underpart.n.01",
-    "source_lemma": "underpart",
-    "source_type": "conceptnet",
-    "target": "region.n.01",
-    "target_lemma": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "horny_structure.n.01",
-    "source_lemma": "unguis",
-    "source_type": "conceptnet",
-    "target": "extremity.n.01",
-    "target_lemma": "appendage"
   },
   {
     "relation": "RelatedTo",
@@ -7596,8 +9788,24 @@
     "source": "horny_structure.n.01",
     "source_lemma": "unguis",
     "source_type": "conceptnet",
+    "target": "hoof.n.01",
+    "target_lemma": "hoof"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "horny_structure.n.01",
+    "source_lemma": "unguis",
+    "source_type": "conceptnet",
     "target": "nail.n.01",
     "target_lemma": "nail"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "horny_structure.n.01",
+    "source_lemma": "unguis",
+    "source_type": "conceptnet",
+    "target": "toe.n.01",
+    "target_lemma": "toe"
   },
   {
     "relation": "IsA",
@@ -7612,8 +9820,24 @@
     "source": "ungulate.n.01",
     "source_lemma": "ungulate",
     "source_type": "conceptnet",
+    "target": "hoof.n.01",
+    "target_lemma": "hoof"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "ungulate.n.01",
+    "source_lemma": "ungulate",
+    "source_type": "conceptnet",
     "target": "mammal.n.01",
     "target_lemma": "mammal"
+  },
+  {
+    "relation": "IsA",
+    "source": "unknown.n.01",
+    "source_lemma": "unknown",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "RelatedTo",
@@ -7638,6 +9862,30 @@
     "source_type": "conceptnet",
     "target": "reputable.a.01",
     "target_lemma": "reputable"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "upstanding.s.01",
+    "source_lemma": "upstanding",
+    "source_type": "conceptnet",
+    "target": "respectable.a.01",
+    "target_lemma": "respectable"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vacuum.n.03",
+    "source_lemma": "vacuum",
+    "source_type": "conceptnet",
+    "target": "region.n.01",
+    "target_lemma": "region"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "valuable.a.01",
+    "source_lemma": "valuable",
+    "source_type": "conceptnet",
+    "target": "estimable.a.01",
+    "target_lemma": "estimable"
   },
   {
     "relation": "SimilarTo",
@@ -7672,20 +9920,60 @@
     "target_lemma": "transport"
   },
   {
-    "relation": "IsA",
-    "source": "seasoned.s.01",
-    "source_lemma": "veteran",
+    "relation": "RelatedTo",
+    "source": "vent.n.04",
+    "source_lemma": "vent",
     "source_type": "conceptnet",
-    "target": "adept.s.01",
-    "target_lemma": "expert"
+    "target": "garment.n.01",
+    "target_lemma": "garment"
   },
   {
     "relation": "RelatedTo",
-    "source": "comestible.n.01",
-    "source_lemma": "victual",
+    "source": "vent.n.04",
+    "source_lemma": "vent",
     "source_type": "conceptnet",
-    "target": "homo.n.02",
-    "target_lemma": "human"
+    "target": "powder.n.03",
+    "target_lemma": "powder"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent.n.04",
+    "source_lemma": "vent",
+    "source_type": "conceptnet",
+    "target": "slit.n.01",
+    "target_lemma": "slit"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent.n.04",
+    "source_lemma": "vent",
+    "source_type": "conceptnet",
+    "target": "huff.v.01",
+    "target_lemma": "snort"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent.n.04",
+    "source_lemma": "vent",
+    "source_type": "conceptnet",
+    "target": "snuff.v.02",
+    "target_lemma": "snuff"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent.n.04",
+    "source_lemma": "vent",
+    "source_type": "conceptnet",
+    "target": "vertebrate.n.01",
+    "target_lemma": "vertebrate"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "abdomen.n.01",
+    "source_lemma": "venter",
+    "source_type": "conceptnet",
+    "target": "vent.n.04",
+    "target_lemma": "vent"
   },
   {
     "relation": "Synonym",
@@ -7694,6 +9982,30 @@
     "source_type": "conceptnet",
     "target": "righteous.a.01",
     "target_lemma": "righteous"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "viscounty.n.02",
+    "source_lemma": "viscounty",
+    "source_type": "conceptnet",
+    "target": "county.n.01",
+    "target_lemma": "county"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "viscounty.n.02",
+    "source_lemma": "viscounty",
+    "source_type": "conceptnet",
+    "target": "district.n.01",
+    "target_lemma": "territory"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "internal_organ.n.01",
+    "source_lemma": "viscus",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
   },
   {
     "relation": "RelatedTo",
@@ -7740,16 +10052,16 @@
     "source": "vulva.n.01",
     "source_lemma": "vulva",
     "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "fanny"
-  },
-  {
-    "relation": "Synonym",
-    "source": "vulva.n.01",
-    "source_lemma": "vulva",
-    "source_type": "conceptnet",
     "target": "slit.n.01",
     "target_lemma": "slit"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "waist.n.01",
+    "source_lemma": "waist",
+    "source_type": "conceptnet",
+    "target": "abdomen.n.01",
+    "target_lemma": "abdomen"
   },
   {
     "relation": "RelatedTo",
@@ -7808,20 +10120,20 @@
     "target_lemma": "location"
   },
   {
-    "relation": "DerivedFrom",
-    "source": "virginia_deer.n.01",
-    "source_lemma": "whitetail",
-    "source_type": "conceptnet",
-    "target": "buttocks.n.01",
-    "target_lemma": "tail"
-  },
-  {
     "relation": "MannerOf",
     "source": "widen.v.04",
     "source_lemma": "widen",
     "source_type": "conceptnet",
     "target": "increase.v.02",
     "target_lemma": "increase"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "wiggler.n.02",
+    "source_lemma": "wiggler",
+    "source_type": "conceptnet",
+    "target": "larva.n.01",
+    "target_lemma": "larva"
   },
   {
     "relation": "RelatedTo",
@@ -7833,35 +10145,11 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "trachea.n.01",
-    "source_lemma": "windpipe",
+    "source": "wireworm.n.01",
+    "source_lemma": "wireworm",
     "source_type": "conceptnet",
-    "target": "duct.n.01",
-    "target_lemma": "duct"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "trachea.n.01",
-    "source_lemma": "windpipe",
-    "source_type": "conceptnet",
-    "target": "esophagus.n.01",
-    "target_lemma": "esophagus"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "trachea.n.01",
-    "source_lemma": "windpipe",
-    "source_type": "conceptnet",
-    "target": "esophagus.n.01",
-    "target_lemma": "gullet"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "trachea.n.01",
-    "source_lemma": "windpipe",
-    "source_type": "conceptnet",
-    "target": "throat.n.01",
-    "target_lemma": "throat"
+    "target": "larva.n.01",
+    "target_lemma": "larva"
   },
   {
     "relation": "RelatedTo",
@@ -7908,14 +10196,6 @@
     "source": "worthy.a.01",
     "source_lemma": "worthy",
     "source_type": "conceptnet",
-    "target": "estimable.s.01",
-    "target_lemma": "honorable"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "worthy.a.01",
-    "source_lemma": "worthy",
-    "source_type": "conceptnet",
     "target": "dainty.n.01",
     "target_lemma": "treat"
   },
@@ -7928,12 +10208,52 @@
     "target_lemma": "worth"
   },
   {
-    "relation": "IsA",
-    "source": "yogurt.n.01",
-    "source_lemma": "yogurt",
+    "relation": "RelatedTo",
+    "source": "wiggler.n.02",
+    "source_lemma": "wriggler",
     "source_type": "conceptnet",
-    "target": "concoction.n.01",
-    "target_lemma": "mixture"
+    "target": "larva.n.01",
+    "target_lemma": "larva"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "wristband.n.01",
+    "source_lemma": "wristband",
+    "source_type": "conceptnet",
+    "target": "sleeve.n.01",
+    "target_lemma": "sleeve"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "yolk.n.02",
+    "source_lemma": "yolk",
+    "source_type": "conceptnet",
+    "target": "egg.n.01",
+    "target_lemma": "egg"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "yolk.n.02",
+    "source_lemma": "yolk",
+    "source_type": "conceptnet",
+    "target": "egg.n.01",
+    "target_lemma": "egg"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "yolk.n.02",
+    "source_lemma": "yolk",
+    "source_type": "conceptnet",
+    "target": "nutriment.n.01",
+    "target_lemma": "nutriment"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "yolk.n.02",
+    "source_lemma": "yolk",
+    "source_type": "conceptnet",
+    "target": "sheep.n.01",
+    "target_lemma": "sheep"
   },
   {
     "relation": "RelatedTo",
@@ -7956,8 +10276,8 @@
     "source": "zone.n.03",
     "source_lemma": "zone",
     "source_type": "conceptnet",
-    "target": "domain.n.02",
-    "target_lemma": "domain"
+    "target": "region.n.01",
+    "target_lemma": "region"
   },
   {
     "relation": "DerivedFrom",
@@ -7974,6 +10294,14 @@
     "source_type": "conceptnet",
     "target": "crustacean.n.01",
     "target_lemma": "crustacean"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "zooplankton.n.01",
+    "source_lemma": "zooplankton",
+    "source_type": "conceptnet",
+    "target": "egg.n.01",
+    "target_lemma": "egg"
   },
   {
     "relation": "RelatedTo",

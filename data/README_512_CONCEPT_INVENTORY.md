@@ -200,7 +200,7 @@ Default inputs:
 ```text
 wordnet_concept_synsets.json
 wordnet_concept_edges.json
-assertions.csv
+assertions.csv (not in this repository, please download at the website of ConceptNet)
 ```
 
 Default outputs:
@@ -254,90 +254,4 @@ Use repeated or comma-separated `--relation` arguments to narrow the expansion:
 ```bash
 python3 expand_conceptnet_relations_for_synsets.py \
   --relation IsA,PartOf,HasA,MadeOf,HasProperty,UsedFor,CapableOf,AtLocation
-```
-
-## Merging ConceptNet Edges Back To Synsets
-
-`conceptnet_expanded_edges.json` is lemma-level, while
-`wordnet_concept_edges.json` is synset-level. Do not merge them directly.
-First assign each ConceptNet lemma endpoint to a synset.
-
-For annotator-facing instructions, see
-`README_CONCEPTNET_SYNSET_ANNOTATION.md`.
-
-Prepare automatic mappings and manual review files:
-
-```bash
-python3 merge_conceptnet_edges_with_synsets.py prepare
-```
-
-This writes:
-
-```text
-conceptnet_auto_synset_edges.json
-conceptnet_synset_review.json
-conceptnet_synset_review.csv
-conceptnet_synset_review_metadata.json
-```
-
-The script automatically converts ConceptNet edges where both lemmas map to one
-unique synset. Edges involving ambiguous lemmas are written to the review files.
-Each review item includes candidate synsets, definitions, examples, and lemmas.
-
-For manual review, fill these fields in either the JSON or CSV file:
-
-```text
-selected_source_synset
-selected_target_synset
-decision
-```
-
-Use:
-
-```text
-decision = accept
-```
-
-to include the edge, or:
-
-```text
-decision = reject
-```
-
-to skip it.
-
-Generate the combined synset-level edge file with only automatic ConceptNet
-assignments:
-
-```bash
-python3 merge_conceptnet_edges_with_synsets.py finalize
-```
-
-After manual review, include accepted review decisions:
-
-```bash
-python3 merge_conceptnet_edges_with_synsets.py finalize \
-  --review-decisions conceptnet_synset_review.csv
-```
-
-The output files are:
-
-```text
-combined_synset_edges.json
-combined_synset_edges_metadata.json
-```
-
-`combined_synset_edges.json` keeps synset ids as `source` and `target`. WordNet
-edges are preserved unchanged with `source_type = wordnet`; ConceptNet edges use
-synset ids plus the original lemma evidence:
-
-```json
-{
-  "source": "abdomen.n.01",
-  "relation": "RelatedTo",
-  "target": "blind.a.01",
-  "source_lemma": "abdomen",
-  "target_lemma": "blind",
-  "source_type": "conceptnet"
-}
 ```

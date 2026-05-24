@@ -3,7 +3,7 @@
     "candidate_degree": 7,
     "definition": "the region of the body of a vertebrate between the thorax and the pelvis",
     "examples": [],
-    "final_degree": 7,
+    "final_degree": 6,
     "lemma_sense_counts": {
       "abdomen": {
         "same_pos": 2,
@@ -40,7 +40,6 @@
       ],
       "part_meronym": [
         "abdominal.n.01",
-        "abdominal_cavity.n.01",
         "hypochondrium.n.01",
         "intestine.n.01",
         "navel.n.01"
@@ -59,7 +58,7 @@
     "candidate_degree": 2,
     "definition": "the muscles of the abdomen",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "ab": {
         "same_pos": 4,
@@ -78,6 +77,9 @@
     "pos": "noun",
     "primary_lemma": "abdominal",
     "relations": {
+      "hyponym": [
+        "external_oblique_muscle.n.01"
+      ],
       "part_holonym": [
         "abdomen.n.01"
       ]
@@ -86,34 +88,6 @@
       "body_part.n.01"
     ],
     "synset_id": "abdominal.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "the cavity containing the major viscera; in mammals it is separated from the thorax by the diaphragm",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "abdomen": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "abdomen"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "abdomen",
-    "relations": {
-      "part_holonym": [
-        "abdomen.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "abdominal_cavity.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -212,73 +186,6 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 1,
-    "definition": "having or showing knowledge and skill and aptitude",
-    "examples": [
-      "adept in handicrafts",
-      "an adept juggler",
-      "an expert job",
-      "a good mechanic",
-      "a practiced marksman",
-      "a proficient engineer",
-      "a lesser-known but no less skillful composer",
-      "the effect was achieved by skillful retouching"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "adept": {
-        "same_pos": 1,
-        "total": 2
-      },
-      "expert": {
-        "same_pos": 2,
-        "total": 3
-      },
-      "good": {
-        "same_pos": 21,
-        "total": 27
-      },
-      "practiced": {
-        "same_pos": 2,
-        "total": 7
-      },
-      "proficient": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "skilful": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "skillful": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "adept",
-      "expert",
-      "good",
-      "practiced",
-      "proficient",
-      "skillful",
-      "skilful"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "adjective",
-    "primary_lemma": "adept",
-    "relations": {
-      "similar_to": [
-        "skilled.a.01"
-      ]
-    },
-    "root_sources": [
-      "old.a.01"
-    ],
-    "synset_id": "adept.s.01",
-    "wordnet_pos": "s"
-  },
-  {
     "candidate_degree": 5,
     "definition": "a kind of body tissue containing stored fat that serves as a source of energy; it also cushions and insulates vital organs",
     "examples": [
@@ -299,7 +206,7 @@
     "primary_lemma": "fat",
     "relations": {
       "hyponym": [
-        "belly.n.02",
+        "atheroma.n.01",
         "mons.n.01"
       ]
     },
@@ -407,7 +314,7 @@
     "candidate_degree": 2,
     "definition": "a sum total of many heterogenous things taken together",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "aggregate": {
         "same_pos": 3,
@@ -432,6 +339,7 @@
     "primary_lemma": "aggregate",
     "relations": {
       "member_meronym": [
+        "nekton.n.01",
         "plankton.n.01"
       ]
     },
@@ -449,7 +357,7 @@
     "examples": [
       "alcohol (or drink) ruined him"
     ],
-    "final_degree": 3,
+    "final_degree": 7,
     "lemma_sense_counts": {
       "alcohol": {
         "same_pos": 2,
@@ -478,41 +386,17 @@
       ],
       "hyponym": [
         "aperitif.n.01",
-        "brew.n.01"
+        "brew.n.01",
+        "home_brew.n.01",
+        "hooch.n.01",
+        "kava.n.01",
+        "koumiss.n.01"
       ]
     },
     "root_sources": [
       "food.n.01"
     ],
     "synset_id": "alcohol.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "flesh of shad-like fish abundant along the Atlantic coast or in coastal streams",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "alewife": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "alewife"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "alewife",
-    "relations": {
-      "hypernym": [
-        "fish.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "alewife.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -648,6 +532,35 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "any member of the Amniota",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "amniote": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "amniote"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "amniote",
+    "relations": {
+      "hypernym": [
+        "vertebrate.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01",
+      "body_part.n.01"
+    ],
+    "synset_id": "amniote.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 2,
     "definition": "the class of vertebrates that live on land but breed in water; frogs; toads; newts; salamanders; caecilians",
     "examples": [],
@@ -740,34 +653,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "tiny fishes usually canned or salted; used for hors d'oeuvres or as seasoning in sauces",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "anchovy": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "anchovy"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "anchovy",
-    "relations": {
-      "hypernym": [
-        "fish.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "anchovy.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "an astringent substance applied to the skin to reduce perspiration",
     "examples": [],
     "final_degree": 1,
@@ -800,7 +685,7 @@
     "examples": [
       "the North Pole and the South Pole are antipodes"
     ],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "antipodes": {
         "same_pos": 2,
@@ -813,11 +698,7 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "antipodes",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -918,6 +799,34 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "free-swimming tadpole-shaped pelagic tunicate resembling larvae of other tunicates",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "appendicularia": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "appendicularia"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "appendicularia",
+    "relations": {
+      "hypernym": [
+        "tunicate.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "appendicularia.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "worthy of high praise",
     "examples": [
       "applaudable efforts to save the environment",
@@ -998,7 +907,7 @@
     "candidate_degree": 1,
     "definition": "the domain controlled by an archduke or archduchess",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "archduchy": {
         "same_pos": 1,
@@ -1011,15 +920,40 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "archduchy",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
     "synset_id": "archduchy.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "central cavity of the gastrula; becomes the intestinal or digestive cavity",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "archenteron": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "archenteron"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "archenteron",
+    "relations": {
+      "part_holonym": [
+        "gastrula.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01",
+      "body_part.n.01"
+    ],
+    "synset_id": "archenteron.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -1080,37 +1014,91 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the hollow under the arm where it is joined to the shoulder",
-    "examples": [
-      "they were up to their armpits in water"
-    ],
+    "definition": "noctuid moth larvae that travel in multitudes destroying especially grass and grain",
+    "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "armpit": {
+      "armyworm": {
+        "same_pos": 3,
+        "total": 3
+      }
+    },
+    "lemmas": [
+      "armyworm"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "armyworm",
+    "relations": {
+      "hypernym": [
+        "caterpillar.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "armyworm.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "either of two small cartilages at the back of the larynx to which the vocal folds are attached",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "arytaenoid": {
         "same_pos": 1,
         "total": 1
       },
-      "axilla": {
+      "arytenoid": {
         "same_pos": 1,
         "total": 1
       }
     },
     "lemmas": [
-      "armpit",
-      "axilla"
+      "arytenoid",
+      "arytaenoid"
     ],
-    "min_bfs_depth": 2,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "armpit",
+    "primary_lemma": "arytenoid",
     "relations": {
-      "part_holonym": [
-        "shoulder.n.01"
+      "hypernym": [
+        "cartilage.n.01"
       ]
     },
     "root_sources": [
-      "body_part.n.01"
+      "animal.n.01"
     ],
-    "synset_id": "armpit.n.01",
+    "synset_id": "arytenoid.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "minute sedentary marine invertebrate having a saclike body with siphons through which water enters and leaves",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "ascidian": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "ascidian"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "ascidian",
+    "relations": {
+      "hypernym": [
+        "tunicate.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "ascidian.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -1170,6 +1158,34 @@
       "location.n.01"
     ],
     "synset_id": "asthenosphere.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "a fatty deposit in the intima (inner lining) of an artery; can obstruct blood flow",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "atheroma": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "atheroma"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "atheroma",
+    "relations": {
+      "hypernym": [
+        "adipose_tissue.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "atheroma.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -1296,7 +1312,7 @@
     "examples": [
       "the country is an economic backwater"
     ],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "backwater": {
         "same_pos": 2,
@@ -1309,15 +1325,46 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "backwater",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
     "synset_id": "backwater.n.02",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "(microbiology) single-celled or noncellular spherical or spiral or rod-shaped organisms lacking chlorophyll that reproduce by fission; important as pathogens and for biochemical properties; taxonomy is difficult; often considered to be plants",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "bacteria": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "bacterium": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "bacteria",
+      "bacterium"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "bacteria",
+    "relations": {
+      "hypernym": [
+        "microorganism.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01",
+      "body_part.n.01",
+      "plant.n.02"
+    ],
+    "synset_id": "bacteria.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -1434,7 +1481,7 @@
     "candidate_degree": 2,
     "definition": "appear at county fairs and carnivals as a stunt flier and parachute jumper",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "barnstorm": {
         "same_pos": 2,
@@ -1450,9 +1497,6 @@
     "relations": {
       "hypernym": [
         "perform.v.03"
-      ],
-      "verb_group": [
-        "barnstorm.v.02"
       ]
     },
     "root_sources": [
@@ -1462,43 +1506,10 @@
     "wordnet_pos": "v"
   },
   {
-    "candidate_degree": 2,
-    "definition": "tour the country making political speeches, giving lectures, or presenting plays",
-    "examples": [
-      "The presidential candidates are busy barnstorming this month"
-    ],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "barnstorm": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "barnstorm"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "verb",
-    "primary_lemma": "barnstorm",
-    "relations": {
-      "hypernym": [
-        "perform.v.03"
-      ],
-      "verb_group": [
-        "barnstorm.v.01"
-      ]
-    },
-    "root_sources": [
-      "make.v.03"
-    ],
-    "synset_id": "barnstorm.v.02",
-    "wordnet_pos": "v"
-  },
-  {
     "candidate_degree": 1,
     "definition": "the domain of a baron",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "barony": {
         "same_pos": 3,
@@ -1511,11 +1522,7 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "barony",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -1524,30 +1531,63 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "a sensory receptor that responds to pressure",
+    "definition": "nocturnal mouselike mammal with forelimbs modified to form membranous wings and anatomical adaptations for echolocation by which they navigate",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "baroreceptor": {
+      "bat": {
+        "same_pos": 5,
+        "total": 10
+      },
+      "chiropteran": {
         "same_pos": 1,
         "total": 1
       }
     },
     "lemmas": [
-      "baroreceptor"
+      "bat",
+      "chiropteran"
     ],
     "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "baroreceptor",
+    "primary_lemma": "bat",
     "relations": {
       "hypernym": [
-        "sense_organ.n.01"
+        "placental.n.01"
       ]
     },
     "root_sources": [
       "body_part.n.01"
     ],
-    "synset_id": "baroreceptor.n.01",
+    "synset_id": "bat.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "a liquid or semiliquid mixture, as of flour, eggs, and milk, used in cooking",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "batter": {
+        "same_pos": 2,
+        "total": 5
+      }
+    },
+    "lemmas": [
+      "batter"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "batter",
+    "relations": {
+      "hypernym": [
+        "concoction.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "batter.n.02",
     "wordnet_pos": "n"
   },
   {
@@ -1584,75 +1624,6 @@
       "food.n.01"
     ],
     "synset_id": "beef.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "a protruding abdomen",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "belly": {
-        "same_pos": 5,
-        "total": 6
-      },
-      "paunch": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "belly",
-      "paunch"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "belly",
-    "relations": {
-      "hypernym": [
-        "adipose_tissue.n.01"
-      ],
-      "part_holonym": [
-        "torso.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "belly.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "the underpart of the body of certain vertebrates such as snakes or fish",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "belly": {
-        "same_pos": 5,
-        "total": 6
-      }
-    },
-    "lemmas": [
-      "belly"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "belly",
-    "relations": {
-      "hypernym": [
-        "underpart.n.01"
-      ],
-      "part_holonym": [
-        "vertebrate.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "belly.n.05",
     "wordnet_pos": "n"
   },
   {
@@ -1777,6 +1748,40 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "the flesh of a bird or fowl (wild or domestic) used as food",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "bird": {
+        "same_pos": 5,
+        "total": 6
+      },
+      "fowl": {
+        "same_pos": 2,
+        "total": 4
+      }
+    },
+    "lemmas": [
+      "bird",
+      "fowl"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "bird",
+    "relations": {
+      "hypernym": [
+        "meat.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01",
+      "food.n.01"
+    ],
+    "synset_id": "bird.n.02",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 2,
     "definition": "a distensible membranous sac (usually containing liquid or gas)",
     "examples": [],
@@ -1813,10 +1818,77 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "the fluid-filled cavity inside a blastula",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "blastocele": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "blastocoel": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "blastocoele": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "blastocoel",
+      "blastocoele",
+      "blastocele"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "blastocoel",
+    "relations": {
+      "part_holonym": [
+        "blastula.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01",
+      "body_part.n.01"
+    ],
+    "synset_id": "blastocoel.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "the blastula of a placental mammal in which some differentiation of cells has occurred",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "blastocyst": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "blastocyst"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "blastocyst",
+    "relations": {
+      "hypernym": [
+        "blastula.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "blastocyst.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 4,
     "definition": "early stage of an embryo produced by cleavage of an ovum; a liquid-filled sphere whose wall is composed of a single layer of cells; during this stage (about eight days after fertilization) implantation in the wall of the uterus occurs",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 3,
     "lemma_sense_counts": {
       "blastosphere": {
         "same_pos": 1,
@@ -1837,6 +1909,12 @@
     "relations": {
       "hypernym": [
         "embryo.n.02"
+      ],
+      "hyponym": [
+        "blastocyst.n.01"
+      ],
+      "part_meronym": [
+        "blastocoel.n.01"
       ]
     },
     "root_sources": [
@@ -1912,38 +1990,31 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "make large",
-    "examples": [
-      "blow up an image"
-    ],
+    "definition": "any of various moth caterpillars that destroy cotton bolls",
+    "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "enlarge": {
-        "same_pos": 4,
-        "total": 4
-      },
-      "magnify": {
-        "same_pos": 3,
-        "total": 3
+      "bollworm": {
+        "same_pos": 1,
+        "total": 1
       }
     },
     "lemmas": [
-      "enlarge",
-      "magnify"
+      "bollworm"
     ],
-    "min_bfs_depth": 2,
-    "pos": "verb",
-    "primary_lemma": "enlarge",
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "bollworm",
     "relations": {
       "hypernym": [
-        "increase.v.02"
+        "caterpillar.n.01"
       ]
     },
     "root_sources": [
-      "change.v.01"
+      "animal.n.01"
     ],
-    "synset_id": "blow_up.v.02",
-    "wordnet_pos": "v"
+    "synset_id": "bollworm.n.01",
+    "wordnet_pos": "n"
   },
   {
     "candidate_degree": 1,
@@ -2146,7 +2217,7 @@
     "candidate_degree": 3,
     "definition": "hollow-horned ruminants",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 3,
     "lemma_sense_counts": {
       "bovid": {
         "same_pos": 1,
@@ -2164,6 +2235,7 @@
         "ruminant.n.01"
       ],
       "hyponym": [
+        "goat.n.01",
         "sheep.n.01"
       ]
     },
@@ -2216,7 +2288,7 @@
     "candidate_degree": 1,
     "definition": "a geographic region serving as the principal source of grain",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "breadbasket": {
         "same_pos": 3,
@@ -2229,11 +2301,7 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "breadbasket",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -2242,38 +2310,30 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the front of the trunk from the neck to the abdomen",
-    "examples": [
-      "he beat his breast in anger"
-    ],
+    "definition": "the first meal of the day (usually in the morning)",
+    "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "breast": {
-        "same_pos": 4,
-        "total": 7
-      },
-      "chest": {
-        "same_pos": 4,
-        "total": 4
+      "breakfast": {
+        "same_pos": 1,
+        "total": 3
       }
     },
     "lemmas": [
-      "breast",
-      "chest"
+      "breakfast"
     ],
-    "min_bfs_depth": 2,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "breast",
+    "primary_lemma": "breakfast",
     "relations": {
-      "part_holonym": [
-        "thorax.n.02"
+      "hypernym": [
+        "meal.n.01"
       ]
     },
     "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
+      "food.n.01"
     ],
-    "synset_id": "breast.n.01",
+    "synset_id": "breakfast.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -2350,6 +2410,118 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "small South American deer with unbranched antlers",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "brocket": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "brocket"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "brocket",
+    "relations": {
+      "hypernym": [
+        "deer.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "brocket.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "any of the smallest bronchial ducts; ending in alveoli",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "bronchiole": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "bronchiole"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "bronchiole",
+    "relations": {
+      "hypernym": [
+        "duct.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "bronchiole.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "combination breakfast and lunch; usually served in late morning",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "brunch": {
+        "same_pos": 1,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "brunch"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "brunch",
+    "relations": {
+      "hypernym": [
+        "meal.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "brunch.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "a meal set out on a buffet at which guests help themselves",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "buffet": {
+        "same_pos": 3,
+        "total": 5
+      }
+    },
+    "lemmas": [
+      "buffet"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "buffet",
+    "relations": {
+      "hypernym": [
+        "meal.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "buffet.n.02",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "obstinate and stupid",
     "examples": [],
     "final_degree": 1,
@@ -2383,30 +2555,30 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "an edible emulsion of fat globules made by churning milk or cream; for cooking and table use",
+    "definition": "residue from making butter from sour raw milk; or pasteurized milk curdled by adding a culture",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "butter": {
-        "same_pos": 2,
-        "total": 3
+      "buttermilk": {
+        "same_pos": 1,
+        "total": 1
       }
     },
     "lemmas": [
-      "butter"
+      "buttermilk"
     ],
-    "min_bfs_depth": 2,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "butter",
+    "primary_lemma": "buttermilk",
     "relations": {
       "hypernym": [
-        "food.n.02"
+        "milk.n.01"
       ]
     },
     "root_sources": [
       "food.n.01"
     ],
-    "synset_id": "butter.n.01",
+    "synset_id": "buttermilk.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -2449,159 +2621,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the fleshy part of the human body that you sit on",
-    "examples": [
-      "he deserves a good kick in the butt",
-      "are you going to sit on your fanny and do nothing?"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "arse": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "ass": {
-        "same_pos": 6,
-        "total": 6
-      },
-      "backside": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "behind": {
-        "same_pos": 1,
-        "total": 7
-      },
-      "bottom": {
-        "same_pos": 7,
-        "total": 12
-      },
-      "bum": {
-        "same_pos": 4,
-        "total": 7
-      },
-      "buns": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "butt": {
-        "same_pos": 9,
-        "total": 12
-      },
-      "buttocks": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "can": {
-        "same_pos": 6,
-        "total": 8
-      },
-      "derriere": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "fanny": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "fundament": {
-        "same_pos": 3,
-        "total": 3
-      },
-      "hindquarters": {
-        "same_pos": 3,
-        "total": 3
-      },
-      "keister": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "nates": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "posterior": {
-        "same_pos": 2,
-        "total": 4
-      },
-      "prat": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "rear": {
-        "same_pos": 5,
-        "total": 11
-      },
-      "rump": {
-        "same_pos": 3,
-        "total": 3
-      },
-      "seat": {
-        "same_pos": 9,
-        "total": 16
-      },
-      "stern": {
-        "same_pos": 3,
-        "total": 7
-      },
-      "tail": {
-        "same_pos": 8,
-        "total": 11
-      },
-      "tooshie": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "tush": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "buttocks",
-      "nates",
-      "arse",
-      "butt",
-      "backside",
-      "bum",
-      "buns",
-      "can",
-      "fundament",
-      "hindquarters",
-      "keister",
-      "posterior",
-      "prat",
-      "rear",
-      "rump",
-      "stern",
-      "seat",
-      "tail",
-      "tooshie",
-      "tush",
-      "bottom",
-      "behind",
-      "derriere",
-      "fanny",
-      "ass"
-    ],
-    "min_bfs_depth": 1,
-    "pos": "noun",
-    "primary_lemma": "buttocks",
-    "relations": {
-      "part_holonym": [
-        "torso.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01",
-      "plant.n.02"
-    ],
-    "synset_id": "buttocks.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "a hole through which buttons are pushed",
     "examples": [],
     "final_degree": 1,
@@ -2626,6 +2645,34 @@
       "artifact.n.01"
     ],
     "synset_id": "buttonhole.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "small cup of strong black coffee without milk or cream",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "demitasse": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "demitasse"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "demitasse",
+    "relations": {
+      "hypernym": [
+        "coffee.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "cafe_noir.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -2663,6 +2710,90 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "a small canal or duct as in some bones and parts of plants",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "canaliculus": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "canaliculus"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "canaliculus",
+    "relations": {
+      "hypernym": [
+        "duct.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "canaliculus.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "equal parts of espresso and hot milk topped with cinnamon and nutmeg and usually whipped cream",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "cappuccino": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "cappuccino"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "cappuccino",
+    "relations": {
+      "hypernym": [
+        "coffee.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "cappuccino.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "a piece of meat (or fish) that has been scored and broiled",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "carbonado": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "carbonado"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "carbonado",
+    "relations": {
+      "hypernym": [
+        "meat.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "carbonado.n.02",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 8,
     "definition": "touch or stroke lightly in a loving or endearing manner",
     "examples": [
@@ -2695,7 +2826,7 @@
         "nuzzle.v.02",
         "paw.v.02",
         "pet.v.01",
-        "pet.v.02"
+        "tickle.v.03"
       ]
     },
     "root_sources": [
@@ -2705,10 +2836,43 @@
     "wordnet_pos": "v"
   },
   {
+    "candidate_degree": 1,
+    "definition": "Arctic deer with large antlers in both sexes; called `reindeer' in Eurasia and `caribou' in North America",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "caribou": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "reindeer": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "caribou",
+      "reindeer"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "caribou",
+    "relations": {
+      "hypernym": [
+        "deer.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "caribou.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 4,
     "definition": "tough elastic tissue; mostly converted to bone in adults",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "cartilage": {
         "same_pos": 1,
@@ -2727,6 +2891,9 @@
     "pos": "noun",
     "primary_lemma": "cartilage",
     "relations": {
+      "hyponym": [
+        "arytenoid.n.01"
+      ],
       "substance_meronym": [
         "collagen.n.01"
       ]
@@ -2798,7 +2965,7 @@
     "candidate_degree": 10,
     "definition": "a wormlike and often brightly colored and hairy or spiny larva of a butterfly or moth",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 4,
     "lemma_sense_counts": {
       "caterpillar": {
         "same_pos": 2,
@@ -2816,8 +2983,9 @@
         "larva.n.01"
       ],
       "hyponym": [
-        "silkworm.n.01",
-        "silkworm.n.02"
+        "armyworm.n.01",
+        "bollworm.n.01",
+        "silkworm.n.01"
       ]
     },
     "root_sources": [
@@ -3031,117 +3199,35 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "abstaining from unlawful sexual intercourse",
+    "definition": "a small tasty bit of food",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "chaste": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "chaste"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "adjective",
-    "primary_lemma": "chaste",
-    "relations": {
-      "similar_to": [
-        "moral.a.01"
-      ]
-    },
-    "root_sources": [
-      "good.a.01"
-    ],
-    "synset_id": "chaste.s.02",
-    "wordnet_pos": "s"
-  },
-  {
-    "candidate_degree": 8,
-    "definition": "a solid food prepared from the pressed curd of milk",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "cheese": {
-        "same_pos": 2,
-        "total": 4
-      }
-    },
-    "lemmas": [
-      "cheese"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "cheese",
-    "relations": {
-      "hypernym": [
-        "food.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "cheese.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "a sensory receptor that responds to chemical stimuli",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "chemoreceptor": {
+      "tidbit": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "titbit": {
         "same_pos": 1,
         "total": 1
       }
     },
     "lemmas": [
-      "chemoreceptor"
+      "tidbit",
+      "titbit"
     ],
     "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "chemoreceptor",
+    "primary_lemma": "tidbit",
     "relations": {
       "hypernym": [
-        "sense_organ.n.01"
-      ],
-      "hyponym": [
-        "tastebud.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "chemoreceptor.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "a food made from roasted ground cacao beans",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "chocolate": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "chocolate"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "chocolate",
-    "relations": {
-      "hypernym": [
-        "food.n.02"
+        "dainty.n.01"
       ]
     },
     "root_sources": [
       "food.n.01"
     ],
-    "synset_id": "chocolate.n.02",
+    "synset_id": "choice_morsel.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -3174,49 +3260,6 @@
       "plant.n.02"
     ],
     "synset_id": "chordate.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "informal terms for a meal",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "chow": {
-        "same_pos": 3,
-        "total": 3
-      },
-      "chuck": {
-        "same_pos": 3,
-        "total": 7
-      },
-      "eats": {
-        "same_pos": 1,
-        "total": 7
-      },
-      "grub": {
-        "same_pos": 2,
-        "total": 4
-      }
-    },
-    "lemmas": [
-      "chow",
-      "chuck",
-      "eats",
-      "grub"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "chow",
-    "relations": {
-      "hypernym": [
-        "fare.n.04"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "chow.n.02",
     "wordnet_pos": "n"
   },
   {
@@ -3372,10 +3415,43 @@
     "wordnet_pos": "s"
   },
   {
+    "candidate_degree": 1,
+    "definition": "bone linking the scapula and sternum",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "clavicle": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "collarbone": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "clavicle",
+      "collarbone"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "clavicle",
+    "relations": {
+      "part_holonym": [
+        "endoskeleton.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "clavicle.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 2,
     "definition": "a grasping structure on the limb of a crustacean or other arthropods",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "chela": {
         "same_pos": 2,
@@ -3404,9 +3480,6 @@
     "pos": "noun",
     "primary_lemma": "claw",
     "relations": {
-      "hypernym": [
-        "extremity.n.01"
-      ],
       "part_holonym": [
         "crustacean.n.01"
       ]
@@ -3475,41 +3548,48 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 2,
-    "definition": "the snail-shaped tube (in the inner ear coiled around the modiolus) where sound vibrations are converted into nerve impulses by the organ of Corti",
+    "candidate_degree": 1,
+    "definition": "a female sexual organ homologous to the penis",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
-      "cochlea": {
+      "button": {
+        "same_pos": 7,
+        "total": 9
+      },
+      "clit": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "clitoris": {
         "same_pos": 1,
         "total": 1
       }
     },
     "lemmas": [
-      "cochlea"
+      "clitoris",
+      "clit",
+      "button"
     ],
     "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "cochlea",
+    "primary_lemma": "clitoris",
     "relations": {
-      "hypernym": [
-        "tube.n.04"
-      ],
       "part_holonym": [
-        "inner_ear.n.01"
+        "vulva.n.01"
       ]
     },
     "root_sources": [
       "body_part.n.01"
     ],
-    "synset_id": "cochlea.n.01",
+    "synset_id": "clitoris.n.01",
     "wordnet_pos": "n"
   },
   {
     "candidate_degree": 2,
     "definition": "a beverage made from cocoa powder and milk and sugar; usually drunk hot",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "chocolate": {
         "same_pos": 3,
@@ -3530,9 +3610,6 @@
     "relations": {
       "hypernym": [
         "beverage.n.01"
-      ],
-      "substance_meronym": [
-        "cocoa.n.02"
       ]
     },
     "root_sources": [
@@ -3542,108 +3619,12 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 2,
-    "definition": "powder of ground roasted cacao beans with most of the fat removed",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "cocoa": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "cocoa"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "cocoa",
-    "relations": {
-      "substance_holonym": [
-        "cocoa.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "cocoa.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 3,
-    "definition": "the edible white meat of a coconut; often shredded for use in e.g. cakes and curries",
-    "examples": [],
-    "final_degree": 3,
-    "lemma_sense_counts": {
-      "coconut": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "coconut"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "coconut",
-    "relations": {
-      "hypernym": [
-        "food.n.02"
-      ],
-      "hyponym": [
-        "copra.n.01"
-      ],
-      "substance_holonym": [
-        "coconut.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "coconut.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "large hard-shelled oval nut with a fibrous husk containing thick white meat surrounding a central cavity filled (when fresh) with fluid or milk",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "cocoanut": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "coconut": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "coconut",
-      "cocoanut"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "coconut",
-    "relations": {
-      "substance_meronym": [
-        "coconut.n.01",
-        "copra.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "coconut.n.02",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 8,
     "definition": "a beverage consisting of an infusion of ground coffee beans",
     "examples": [
       "he ordered a cup of coffee"
     ],
-    "final_degree": 2,
+    "final_degree": 6,
     "lemma_sense_counts": {
       "coffee": {
         "same_pos": 4,
@@ -3664,6 +3645,12 @@
     "relations": {
       "hypernym": [
         "beverage.n.01"
+      ],
+      "hyponym": [
+        "cafe_noir.n.01",
+        "cappuccino.n.01",
+        "decaffeinated_coffee.n.01",
+        "espresso.n.01"
       ],
       "substance_meronym": [
         "caffeine.n.01"
@@ -3702,113 +3689,6 @@
       "animal.n.01"
     ],
     "synset_id": "collagen.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "any substance that can be used as food",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "comestible": {
-        "same_pos": 1,
-        "total": 2
-      },
-      "eatable": {
-        "same_pos": 1,
-        "total": 2
-      },
-      "edible": {
-        "same_pos": 1,
-        "total": 2
-      },
-      "pabulum": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "victual": {
-        "same_pos": 1,
-        "total": 4
-      },
-      "victuals": {
-        "same_pos": 4,
-        "total": 7
-      }
-    },
-    "lemmas": [
-      "comestible",
-      "edible",
-      "eatable",
-      "pabulum",
-      "victual",
-      "victuals"
-    ],
-    "min_bfs_depth": 1,
-    "pos": "noun",
-    "primary_lemma": "comestible",
-    "relations": {
-      "hypernym": [
-        "food.n.01"
-      ],
-      "hyponym": [
-        "tuck.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "comestible.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "a stock or supply of foods",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "commissariat": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "provender": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "provisions": {
-        "same_pos": 5,
-        "total": 6
-      },
-      "viands": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "victuals": {
-        "same_pos": 4,
-        "total": 7
-      }
-    },
-    "lemmas": [
-      "commissariat",
-      "provisions",
-      "provender",
-      "viands",
-      "victuals"
-    ],
-    "min_bfs_depth": 1,
-    "pos": "noun",
-    "primary_lemma": "commissariat",
-    "relations": {
-      "hypernym": [
-        "food.n.01"
-      ],
-      "hyponym": [
-        "larder.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "commissariat.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -3887,7 +3767,7 @@
       "he volunteered to taste her latest concoction",
       "he drank a mixture of beer and lemonade"
     ],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "concoction": {
         "same_pos": 4,
@@ -3912,6 +3792,7 @@
     "primary_lemma": "concoction",
     "relations": {
       "hyponym": [
+        "batter.n.02",
         "dough.n.01"
       ]
     },
@@ -4114,7 +3995,7 @@
     "candidate_degree": 12,
     "definition": "something that serves as a means of transportation",
     "examples": [],
-    "final_degree": 10,
+    "final_degree": 11,
     "lemma_sense_counts": {
       "conveyance": {
         "same_pos": 5,
@@ -4138,13 +4019,14 @@
       ],
       "hyponym": [
         "dolly.n.01",
-        "dolly.n.02",
         "horsebox.n.01",
         "litter.n.03",
         "mail.n.03",
         "shipping.n.02",
         "sidecar.n.02",
         "telpher.n.01",
+        "trailer.n.03",
+        "tramway.n.01",
         "vehicle.n.01"
       ]
     },
@@ -4216,37 +4098,6 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 2,
-    "definition": "the dried meat of the coconut from which oil is extracted",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "copra": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "copra"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "copra",
-    "relations": {
-      "hypernym": [
-        "coconut.n.01"
-      ],
-      "substance_holonym": [
-        "coconut.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "copra.n.01",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 1,
     "definition": "a toiletry designed to beautify the body",
     "examples": [],
@@ -4281,7 +4132,7 @@
       "he returned to the land of his birth",
       "he visited several European countries"
     ],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "country": {
         "same_pos": 5,
@@ -4306,7 +4157,6 @@
     "primary_lemma": "country",
     "relations": {
       "part_meronym": [
-        "domain.n.02",
         "midland.n.02"
       ]
     },
@@ -4481,6 +4331,39 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "a cup of tea",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "cuppa": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "cupper": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "cuppa",
+      "cupper"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "cuppa",
+    "relations": {
+      "hypernym": [
+        "tea.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "cuppa.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 8,
     "definition": "occurring in or belonging to the present time",
     "examples": [
@@ -4577,7 +4460,7 @@
     "candidate_degree": 6,
     "definition": "something considered choice to eat",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 4,
     "lemma_sense_counts": {
       "dainty": {
         "same_pos": 1,
@@ -4615,7 +4498,9 @@
         "nutriment.n.01"
       ],
       "hyponym": [
-        "ambrosia.n.04"
+        "ambrosia.n.04",
+        "choice_morsel.n.01",
+        "gelatin.n.02"
       ]
     },
     "root_sources": [
@@ -4685,10 +4570,38 @@
     "wordnet_pos": "v"
   },
   {
+    "candidate_degree": 1,
+    "definition": "coffee with the caffeine removed",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "decaf": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "decaf"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "decaf",
+    "relations": {
+      "hypernym": [
+        "coffee.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "decaffeinated_coffee.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 16,
     "definition": "distinguished from Bovidae by the male's having solid deciduous antlers",
     "examples": [],
-    "final_degree": 5,
+    "final_degree": 8,
     "lemma_sense_counts": {
       "cervid": {
         "same_pos": 1,
@@ -4711,6 +4624,9 @@
         "ruminant.n.01"
       ],
       "hyponym": [
+        "brocket.n.01",
+        "caribou.n.01",
+        "elk.n.01",
         "japanese_deer.n.01",
         "virginia_deer.n.01"
       ],
@@ -4806,7 +4722,7 @@
       "The curtain fell on the diva",
       "Her hand went up and then fell again"
     ],
-    "final_degree": 7,
+    "final_degree": 8,
     "lemma_sense_counts": {
       "descend": {
         "same_pos": 4,
@@ -4832,7 +4748,8 @@
         "dive.v.01",
         "drip.v.01",
         "flop.v.02",
-        "plop.v.02"
+        "plop.v.02",
+        "pounce.v.01"
       ]
     },
     "root_sources": [
@@ -5019,34 +4936,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the usual food and drink consumed by an organism (person or animal)",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "diet": {
-        "same_pos": 4,
-        "total": 6
-      }
-    },
-    "lemmas": [
-      "diet"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "diet",
-    "relations": {
-      "hypernym": [
-        "fare.n.04"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "diet.n.03",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "a regulated daily food allowance",
     "examples": [],
     "final_degree": 1,
@@ -5077,7 +4966,7 @@
     "candidate_degree": 5,
     "definition": "a finger or toe in human beings or corresponding body part in other vertebrates",
     "examples": [],
-    "final_degree": 5,
+    "final_degree": 4,
     "lemma_sense_counts": {
       "dactyl": {
         "same_pos": 2,
@@ -5096,9 +4985,6 @@
     "pos": "noun",
     "primary_lemma": "digit",
     "relations": {
-      "hypernym": [
-        "extremity.n.01"
-      ],
       "hyponym": [
         "finger.n.01",
         "toe.n.01"
@@ -5115,6 +5001,65 @@
       "body_part.n.01"
     ],
     "synset_id": "digit.n.03",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "the main meal of the day served in the evening or at midday",
+    "examples": [
+      "dinner will be at 8",
+      "on Sundays they had a large dinner when they returned from church"
+    ],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "dinner": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "dinner"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "dinner",
+    "relations": {
+      "hypernym": [
+        "meal.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "dinner.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "an extinct ungulate",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "dinocerate": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "dinocerate"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "dinocerate",
+    "relations": {
+      "hypernym": [
+        "ungulate.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "dinocerate.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -5213,9 +5158,6 @@
     "pos": "noun",
     "primary_lemma": "district",
     "relations": {
-      "hypernym": [
-        "region.n.03"
-      ],
       "hyponym": [
         "borderland.n.01",
         "enclave.n.01",
@@ -5223,7 +5165,8 @@
         "jurisdiction.n.02",
         "mandate.n.02",
         "palatinate.n.02",
-        "protectorate.n.01"
+        "protectorate.n.01",
+        "trust_territory.n.01"
       ]
     },
     "root_sources": [
@@ -5361,91 +5304,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "conveyance consisting of a wheeled platform for moving heavy objects",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "dolly": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "dolly"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "dolly",
-    "relations": {
-      "hypernym": [
-        "conveyance.n.03"
-      ]
-    },
-    "root_sources": [
-      "artifact.n.01"
-    ],
-    "synset_id": "dolly.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 14,
-    "definition": "territory over which rule or control is exercised",
-    "examples": [
-      "his domain extended into Europe",
-      "he made it the law of the land"
-    ],
-    "final_degree": 13,
-    "lemma_sense_counts": {
-      "demesne": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "domain": {
-        "same_pos": 5,
-        "total": 5
-      },
-      "land": {
-        "same_pos": 11,
-        "total": 18
-      }
-    },
-    "lemmas": [
-      "domain",
-      "demesne",
-      "land"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "domain",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ],
-      "hyponym": [
-        "archduchy.n.01",
-        "barony.n.03",
-        "duchy.n.01",
-        "earldom.n.02",
-        "emirate.n.01",
-        "empire.n.01",
-        "fiefdom.n.01",
-        "khanate.n.01",
-        "principality.n.01",
-        "sheikdom.n.01",
-        "suzerainty.n.02"
-      ],
-      "part_holonym": [
-        "country.n.02"
-      ]
-    },
-    "root_sources": [
-      "location.n.01"
-    ],
-    "synset_id": "domain.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "the larva of any of several insects",
     "examples": [],
     "final_degree": 1,
@@ -5537,52 +5395,12 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 1,
-    "definition": "let or cause to fall in drops",
-    "examples": [
-      "dribble oil into the mixture"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "dribble": {
-        "same_pos": 4,
-        "total": 7
-      },
-      "drip": {
-        "same_pos": 2,
-        "total": 5
-      },
-      "drop": {
-        "same_pos": 23,
-        "total": 32
-      }
-    },
-    "lemmas": [
-      "dribble",
-      "drip",
-      "drop"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "verb",
-    "primary_lemma": "dribble",
-    "relations": {
-      "verb_group": [
-        "drip.v.01"
-      ]
-    },
-    "root_sources": [
-      "move.v.02"
-    ],
-    "synset_id": "dribble.v.02",
-    "wordnet_pos": "v"
-  },
-  {
     "candidate_degree": 2,
     "definition": "fall in drops",
     "examples": [
       "Water is dripping from the faucet"
     ],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "drip": {
         "same_pos": 2,
@@ -5598,9 +5416,6 @@
     "relations": {
       "hypernym": [
         "descend.v.01"
-      ],
-      "verb_group": [
-        "dribble.v.02"
       ]
     },
     "root_sources": [
@@ -5613,7 +5428,7 @@
     "candidate_degree": 3,
     "definition": "use recreational drugs",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "drug": {
         "same_pos": 2,
@@ -5628,8 +5443,7 @@
     "primary_lemma": "drug",
     "relations": {
       "hyponym": [
-        "dope.v.01",
-        "take_a_hit.v.01"
+        "dope.v.01"
       ]
     },
     "root_sources": [
@@ -5642,7 +5456,7 @@
     "candidate_degree": 1,
     "definition": "the domain controlled by a duke or duchess",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "duchy": {
         "same_pos": 1,
@@ -5660,11 +5474,7 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "duchy",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -5679,7 +5489,7 @@
       "the alimentary canal",
       "poison is released through a channel in the snake's fangs"
     ],
-    "final_degree": 3,
+    "final_degree": 7,
     "lemma_sense_counts": {
       "canal": {
         "same_pos": 3,
@@ -5704,6 +5514,10 @@
     "primary_lemma": "duct",
     "relations": {
       "hyponym": [
+        "bronchiole.n.01",
+        "canaliculus.n.01",
+        "ductule.n.01",
+        "epididymis.n.01",
         "umbilical_cord.n.01",
         "urethra.n.01"
       ],
@@ -5720,38 +5534,42 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the sense organ for hearing and equilibrium",
+    "definition": "a very small duct",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "ear": {
-        "same_pos": 5,
-        "total": 5
+      "ductule": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "ductulus": {
+        "same_pos": 1,
+        "total": 1
       }
     },
     "lemmas": [
-      "ear"
+      "ductule",
+      "ductulus"
     ],
-    "min_bfs_depth": 2,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "ear",
+    "primary_lemma": "ductule",
     "relations": {
       "hypernym": [
-        "sense_organ.n.01"
+        "duct.n.01"
       ]
     },
     "root_sources": [
-      "animal.n.01",
       "body_part.n.01"
     ],
-    "synset_id": "ear.n.01",
+    "synset_id": "ductule.n.01",
     "wordnet_pos": "n"
   },
   {
     "candidate_degree": 1,
     "definition": "the domain controlled by an earl or count or countess",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "earldom": {
         "same_pos": 2,
@@ -5764,11 +5582,7 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "earldom",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -5938,73 +5752,6 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 2,
-    "definition": "oval reproductive body of a fowl (especially a hen) used as food",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "egg": {
-        "same_pos": 3,
-        "total": 5
-      },
-      "eggs": {
-        "same_pos": 4,
-        "total": 6
-      }
-    },
-    "lemmas": [
-      "egg",
-      "eggs"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "egg",
-    "relations": {
-      "part_meronym": [
-        "egg_yolk.n.01"
-      ],
-      "substance_meronym": [
-        "protein.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "egg.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "the yellow spherical part of an egg that is surrounded by the albumen",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "yolk": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "yolk"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "yolk",
-    "relations": {
-      "hypernym": [
-        "ingredient.n.03"
-      ],
-      "part_holonym": [
-        "egg.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "egg_yolk.n.01",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 1,
     "definition": "the part of a sleeve that covers the elbow joint",
     "examples": [
@@ -6036,37 +5783,70 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the joint of a mammal or bird that corresponds to the human elbow",
+    "definition": "a substance believed to cure all ills",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "elbow": {
-        "same_pos": 5,
-        "total": 7
+      "elixir": {
+        "same_pos": 3,
+        "total": 3
       }
     },
     "lemmas": [
-      "elbow"
+      "elixir"
     ],
-    "min_bfs_depth": 2,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "elbow",
+    "primary_lemma": "elixir",
     "relations": {
-      "part_holonym": [
-        "foreleg.n.01"
+      "hypernym": [
+        "potion.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "elixir.n.03",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "large northern deer with enormous flattened antlers in the male; called `elk' in Europe and `moose' in North America",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "elk": {
+        "same_pos": 3,
+        "total": 3
+      },
+      "moose": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "elk",
+      "moose"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "elk",
+    "relations": {
+      "hypernym": [
+        "deer.n.01"
       ]
     },
     "root_sources": [
       "body_part.n.01"
     ],
-    "synset_id": "elbow.n.05",
+    "synset_id": "elk.n.01",
     "wordnet_pos": "n"
   },
   {
     "candidate_degree": 4,
     "definition": "an animal organism in the early stages of growth and differentiation that in higher forms merge into fetal stages but in lower forms terminate in commencement of larval life",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 4,
     "lemma_sense_counts": {
       "conceptus": {
         "same_pos": 1,
@@ -6087,7 +5867,8 @@
     "relations": {
       "hyponym": [
         "blastula.n.01",
-        "gastrula.n.01"
+        "gastrula.n.01",
+        "morula.n.01"
       ],
       "part_meronym": [
         "umbilical_cord.n.01"
@@ -6105,7 +5886,7 @@
     "candidate_degree": 1,
     "definition": "the domain controlled by an emir",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "emirate": {
         "same_pos": 2,
@@ -6118,11 +5899,7 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "emirate",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -6133,7 +5910,7 @@
     "candidate_degree": 1,
     "definition": "the domain ruled by an emperor or empress; the region over which imperial dominion is exercised",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "empire": {
         "same_pos": 5,
@@ -6151,11 +5928,7 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "empire",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -6225,7 +5998,7 @@
     "candidate_degree": 3,
     "definition": "the internal skeleton; bony and cartilaginous structure (especially of vertebrates)",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 3,
     "lemma_sense_counts": {
       "endoskeleton": {
         "same_pos": 1,
@@ -6243,6 +6016,7 @@
         "skeletal_system.n.01"
       ],
       "part_meronym": [
+        "clavicle.n.01",
         "scapula.n.01"
       ]
     },
@@ -6283,34 +6057,92 @@
     "wordnet_pos": "v"
   },
   {
-    "candidate_degree": 2,
-    "definition": "a flap of cartilage that covers the windpipe while swallowing",
+    "candidate_degree": 1,
+    "definition": "the short part of the esophagus extending downward from the diaphragm to the stomach",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
-      "epiglottis": {
-        "same_pos": 1,
-        "total": 1
+      "epicardia": {
+        "same_pos": 2,
+        "total": 2
       }
     },
     "lemmas": [
-      "epiglottis"
+      "epicardia"
     ],
     "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "epiglottis",
+    "primary_lemma": "epicardia",
     "relations": {
       "part_holonym": [
-        "trachea.n.01"
-      ],
-      "part_meronym": [
-        "tastebud.n.01"
+        "esophagus.n.01"
       ]
     },
     "root_sources": [
       "body_part.n.01"
     ],
-    "synset_id": "epiglottis.n.01",
+    "synset_id": "epicardia.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "a convoluted tubule in each testis; carries sperm to vas deferens",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "epididymis": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "epididymis"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "epididymis",
+    "relations": {
+      "hypernym": [
+        "duct.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "epididymis.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "hoofed mammals having slender legs and a flat coat with a narrow mane along the back of the neck",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "equid": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "equine": {
+        "same_pos": 1,
+        "total": 3
+      }
+    },
+    "lemmas": [
+      "equine",
+      "equid"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "equine",
+    "relations": {
+      "hypernym": [
+        "odd-toed_ungulate.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "equine.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -6385,10 +6217,43 @@
     "wordnet_pos": "v"
   },
   {
+    "candidate_degree": 1,
+    "definition": "edible terrestrial snail usually served in the shell with a sauce of melted butter and garlic",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "escargot": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "snail": {
+        "same_pos": 2,
+        "total": 3
+      }
+    },
+    "lemmas": [
+      "escargot",
+      "snail"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "escargot",
+    "relations": {
+      "hypernym": [
+        "meat.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "escargot.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 2,
     "definition": "the passage between the pharynx and the stomach",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "esophagus": {
         "same_pos": 1,
@@ -6419,12 +6284,43 @@
     "relations": {
       "hypernym": [
         "muscular_structure.n.01"
+      ],
+      "part_meronym": [
+        "epicardia.n.01"
       ]
     },
     "root_sources": [
       "body_part.n.01"
     ],
     "synset_id": "esophagus.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "strong black coffee brewed by forcing hot water under pressure through finely ground coffee beans",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "espresso": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "espresso"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "espresso",
+    "relations": {
+      "hypernym": [
+        "coffee.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "espresso.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -6497,52 +6393,6 @@
     "wordnet_pos": "a"
   },
   {
-    "candidate_degree": 1,
-    "definition": "deserving of esteem and respect",
-    "examples": [
-      "all respectable companies give guarantees",
-      "ruined the family's good name"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "estimable": {
-        "same_pos": 3,
-        "total": 3
-      },
-      "good": {
-        "same_pos": 21,
-        "total": 27
-      },
-      "honorable": {
-        "same_pos": 4,
-        "total": 4
-      },
-      "respectable": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "estimable",
-      "good",
-      "honorable",
-      "respectable"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "adjective",
-    "primary_lemma": "estimable",
-    "relations": {
-      "similar_to": [
-        "reputable.a.01"
-      ]
-    },
-    "root_sources": [
-      "good.a.01"
-    ],
-    "synset_id": "estimable.s.01",
-    "wordnet_pos": "s"
-  },
-  {
     "candidate_degree": 2,
     "definition": "placental mammal having hooves with an even number of functional toes on each foot",
     "examples": [],
@@ -6571,6 +6421,34 @@
       "body_part.n.01"
     ],
     "synset_id": "even-toed_ungulate.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "female sheep",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "ewe": {
+        "same_pos": 3,
+        "total": 3
+      }
+    },
+    "lemmas": [
+      "ewe"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "ewe",
+    "relations": {
+      "hypernym": [
+        "sheep.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "ewe.n.03",
     "wordnet_pos": "n"
   },
   {
@@ -6698,6 +6576,34 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "the exterior protective or supporting structure or shell of many animals (especially invertebrates) including bony or horny parts such as nails or scales or hoofs",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "exoskeleton": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "exoskeleton"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "exoskeleton",
+    "relations": {
+      "hypernym": [
+        "skeletal_system.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "exoskeleton.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "the outermost atmospheric layer",
     "examples": [],
     "final_degree": 1,
@@ -6763,6 +6669,34 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "a diagonally arranged abdominal muscle on either side of the torso",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "oblique": {
+        "same_pos": 2,
+        "total": 4
+      }
+    },
+    "lemmas": [
+      "oblique"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "oblique",
+    "relations": {
+      "hypernym": [
+        "abdominal.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "external_oblique_muscle.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "the point located farthest from the middle of something",
     "examples": [],
     "final_degree": 1,
@@ -6795,48 +6729,6 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 7,
-    "definition": "an external body part that projects from the body",
-    "examples": [
-      "it is important to keep the extremities warm"
-    ],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "appendage": {
-        "same_pos": 3,
-        "total": 3
-      },
-      "extremity": {
-        "same_pos": 5,
-        "total": 5
-      },
-      "member": {
-        "same_pos": 5,
-        "total": 5
-      }
-    },
-    "lemmas": [
-      "extremity",
-      "appendage",
-      "member"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "extremity",
-    "relations": {
-      "hyponym": [
-        "claw.n.03",
-        "digit.n.03"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "extremity.n.01",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 3,
     "definition": "the outermost or farthest region or point",
     "examples": [],
@@ -6866,80 +6758,6 @@
       "location.n.01"
     ],
     "synset_id": "extremity.n.04",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "that part of a limb that is farthest from the torso",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "extremity": {
-        "same_pos": 5,
-        "total": 5
-      }
-    },
-    "lemmas": [
-      "extremity"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "extremity",
-    "relations": {
-      "hyponym": [
-        "finger.n.01",
-        "toe.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "extremity.n.05",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 6,
-    "definition": "the organ of sight",
-    "examples": [],
-    "final_degree": 4,
-    "lemma_sense_counts": {
-      "eye": {
-        "same_pos": 5,
-        "total": 6
-      },
-      "oculus": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "optic": {
-        "same_pos": 1,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "eye",
-      "oculus",
-      "optic"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "eye",
-    "relations": {
-      "hypernym": [
-        "sense_organ.n.01"
-      ],
-      "part_meronym": [
-        "lens.n.04",
-        "retina.n.01",
-        "uvea.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "eye.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -6980,7 +6798,7 @@
     "candidate_degree": 7,
     "definition": "the food and drink that are regularly served or consumed",
     "examples": [],
-    "final_degree": 7,
+    "final_degree": 5,
     "lemma_sense_counts": {
       "fare": {
         "same_pos": 4,
@@ -6998,9 +6816,7 @@
         "food.n.01"
       ],
       "hyponym": [
-        "chow.n.02",
         "diet.n.01",
-        "diet.n.03",
         "dietary.n.01",
         "menu.n.02",
         "ration.n.01"
@@ -7081,7 +6897,7 @@
     "candidate_degree": 1,
     "definition": "the domain controlled by a feudal lord",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "fiefdom": {
         "same_pos": 2,
@@ -7094,11 +6910,7 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "fiefdom",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -7111,7 +6923,7 @@
     "examples": [
       "her fingers were long and thin"
     ],
-    "final_degree": 3,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "finger": {
         "same_pos": 3,
@@ -7126,8 +6938,7 @@
     "primary_lemma": "finger",
     "relations": {
       "hypernym": [
-        "digit.n.03",
-        "extremity.n.05"
+        "digit.n.03"
       ],
       "part_meronym": [
         "knuckle.n.01"
@@ -7165,42 +6976,6 @@
       "artifact.n.01"
     ],
     "synset_id": "firebrick.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 14,
-    "definition": "the flesh of fish used as food",
-    "examples": [
-      "in Japan most fish is eaten raw",
-      "after the scare about foot-and-mouth disease a lot of people started eating fish instead of meat",
-      "they have a chef who specializes in fish"
-    ],
-    "final_degree": 3,
-    "lemma_sense_counts": {
-      "fish": {
-        "same_pos": 4,
-        "total": 6
-      }
-    },
-    "lemmas": [
-      "fish"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "fish",
-    "relations": {
-      "hypernym": [
-        "food.n.02"
-      ],
-      "hyponym": [
-        "alewife.n.01",
-        "anchovy.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "fish.n.02",
     "wordnet_pos": "n"
   },
   {
@@ -7299,6 +7074,39 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "a group of sheep or goats",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "flock": {
+        "same_pos": 5,
+        "total": 7
+      },
+      "fold": {
+        "same_pos": 7,
+        "total": 12
+      }
+    },
+    "lemmas": [
+      "flock",
+      "fold"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "flock",
+    "relations": {
+      "member_meronym": [
+        "sheep.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "flock.n.05",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "fall suddenly and abruptly",
     "examples": [],
     "final_degree": 1,
@@ -7358,7 +7166,7 @@
     "candidate_degree": 10,
     "definition": "any substance that can be metabolized by an animal to give energy and build tissue",
     "examples": [],
-    "final_degree": 10,
+    "final_degree": 7,
     "lemma_sense_counts": {
       "food": {
         "same_pos": 3,
@@ -7380,16 +7188,11 @@
       "hyponym": [
         "beverage.n.01",
         "chyme.n.01",
-        "comestible.n.01",
-        "commissariat.n.01",
         "fare.n.04",
         "micronutrient.n.01",
         "miraculous_food.n.01",
         "nutriment.n.01",
         "yolk.n.02"
-      ],
-      "part_meronym": [
-        "food.n.02"
       ]
     },
     "root_sources": [
@@ -7399,47 +7202,31 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 13,
-    "definition": "any solid substance (as opposed to liquid) that is used as a source of nourishment",
-    "examples": [
-      "food and drink"
-    ],
-    "final_degree": 13,
+    "candidate_degree": 1,
+    "definition": "a front foot of a quadruped",
+    "examples": [],
+    "final_degree": 1,
     "lemma_sense_counts": {
-      "food": {
-        "same_pos": 3,
-        "total": 3
+      "forefoot": {
+        "same_pos": 1,
+        "total": 1
       }
     },
     "lemmas": [
-      "food"
+      "forefoot"
     ],
-    "min_bfs_depth": 1,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "food",
+    "primary_lemma": "forefoot",
     "relations": {
-      "hyponym": [
-        "butter.n.01",
-        "cheese.n.01",
-        "chocolate.n.02",
-        "coconut.n.01",
-        "fish.n.02",
-        "leftovers.n.01",
-        "loaf.n.02",
-        "meat.n.01",
-        "produce.n.01",
-        "seafood.n.01",
-        "slop.n.04",
-        "yogurt.n.01"
-      ],
       "part_holonym": [
-        "food.n.01"
+        "quadruped.n.01"
       ]
     },
     "root_sources": [
-      "food.n.01"
+      "body_part.n.01"
     ],
-    "synset_id": "food.n.02",
+    "synset_id": "forefoot.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -7460,11 +7247,11 @@
     "pos": "noun",
     "primary_lemma": "foreleg",
     "relations": {
+      "hypernym": [
+        "forelimb.n.01"
+      ],
       "part_holonym": [
         "quadruped.n.01"
-      ],
-      "part_meronym": [
-        "elbow.n.05"
       ]
     },
     "root_sources": [
@@ -7475,30 +7262,30 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "area consisting of a small depression in the retina containing cones and where vision is most acute",
+    "definition": "the front limb (or the homologous structure in other animals, such as a flipper or wing)",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "fovea": {
+      "forelimb": {
         "same_pos": 1,
         "total": 1
       }
     },
     "lemmas": [
-      "fovea"
+      "forelimb"
     ],
-    "min_bfs_depth": 2,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "fovea",
+    "primary_lemma": "forelimb",
     "relations": {
-      "part_holonym": [
-        "retina.n.01"
+      "hyponym": [
+        "foreleg.n.01"
       ]
     },
     "root_sources": [
       "body_part.n.01"
     ],
-    "synset_id": "fovea.n.01",
+    "synset_id": "forelimb.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -7743,7 +7530,7 @@
     "examples": [
       "garments of the finest silk"
     ],
-    "final_degree": 13,
+    "final_degree": 10,
     "lemma_sense_counts": {
       "garment": {
         "same_pos": 1,
@@ -7765,12 +7552,9 @@
         "armhole.n.01",
         "buttonhole.n.01",
         "eyelet.n.01",
-        "gusset.n.03",
         "jag.n.02",
-        "jag.n.03",
         "liner.n.03",
         "neck.n.05",
-        "shoulder.n.04",
         "skirt.n.01",
         "sleeve.n.01"
       ]
@@ -7786,7 +7570,7 @@
     "candidate_degree": 2,
     "definition": "double-walled stage of the embryo resulting from invagination of the blastula; the outer layer of cells is the ectoderm and the inner layer differentiates into the mesoderm and endoderm",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "gastrula": {
         "same_pos": 1,
@@ -7802,6 +7586,9 @@
     "relations": {
       "hypernym": [
         "embryo.n.02"
+      ],
+      "part_meronym": [
+        "archenteron.n.01"
       ]
     },
     "root_sources": [
@@ -7849,6 +7636,67 @@
       "artifact.n.01"
     ],
     "synset_id": "gear.n.04",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "an edible jelly (sweet or pungent) made with gelatin and used as a dessert or salad base or a coating for foods",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "gelatin": {
+        "same_pos": 3,
+        "total": 3
+      },
+      "jelly": {
+        "same_pos": 3,
+        "total": 4
+      }
+    },
+    "lemmas": [
+      "gelatin",
+      "jelly"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "gelatin",
+    "relations": {
+      "hypernym": [
+        "dainty.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "gelatin.n.02",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "the large central part of the breastbone",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "gladiolus": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "gladiolus"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "gladiolus",
+    "relations": {
+      "part_holonym": [
+        "sternum.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "gladiolus.n.02",
     "wordnet_pos": "n"
   },
   {
@@ -7925,6 +7773,34 @@
       "body_part.n.01"
     ],
     "synset_id": "gluteus.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "any of numerous agile ruminants related to sheep but having a beard and straight horns",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "goat": {
+        "same_pos": 4,
+        "total": 4
+      }
+    },
+    "lemmas": [
+      "goat"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "goat",
+    "relations": {
+      "hypernym": [
+        "bovid.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "goat.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -8106,39 +7982,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "a piece of material used to strengthen or enlarge a garment",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "gusset": {
-        "same_pos": 3,
-        "total": 3
-      },
-      "inset": {
-        "same_pos": 3,
-        "total": 4
-      }
-    },
-    "lemmas": [
-      "gusset",
-      "inset"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "gusset",
-    "relations": {
-      "part_holonym": [
-        "garment.n.01"
-      ]
-    },
-    "root_sources": [
-      "artifact.n.01"
-    ],
-    "synset_id": "gusset.n.03",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "a toiletry for the hair",
     "examples": [],
     "final_degree": 1,
@@ -8163,6 +8006,34 @@
       "artifact.n.01"
     ],
     "synset_id": "hairdressing.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "(Islam) meat from animals that have been slaughtered in the prescribed way according to the shariah",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "halal": {
+        "same_pos": 1,
+        "total": 3
+      }
+    },
+    "lemmas": [
+      "halal"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "halal",
+    "relations": {
+      "hypernym": [
+        "meat.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "halal.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -8233,34 +8104,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "major items of military weaponry (as tanks or missile)",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "hardware": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "hardware"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "hardware",
-    "relations": {
-      "hypernym": [
-        "weaponry.n.01"
-      ]
-    },
-    "root_sources": [
-      "artifact.n.01"
-    ],
-    "synset_id": "hardware.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "instrumentalities (tools or implements) made of metal",
     "examples": [],
     "final_degree": 1,
@@ -8294,32 +8137,30 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the hip and buttock and upper thigh in human beings",
+    "definition": "heart and liver and other edible viscera especially of hogs; usually chopped and formed into a loaf and braised",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "haunch": {
-        "same_pos": 2,
-        "total": 2
+      "haslet": {
+        "same_pos": 1,
+        "total": 1
       }
     },
     "lemmas": [
-      "haunch"
+      "haslet"
     ],
-    "min_bfs_depth": 1,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "haunch",
+    "primary_lemma": "haslet",
     "relations": {
-      "part_holonym": [
-        "torso.n.01"
+      "hypernym": [
+        "loaf.n.02"
       ]
     },
     "root_sources": [
-      "animal.n.01",
-      "body_part.n.01",
-      "plant.n.02"
+      "food.n.01"
     ],
-    "synset_id": "haunch.n.01",
+    "synset_id": "haslet.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -8386,7 +8227,7 @@
     "candidate_degree": 1,
     "definition": "the central region of a country or continent; especially a region that is important to a country or to a culture",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "heartland": {
         "same_pos": 1,
@@ -8399,11 +8240,7 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "heartland",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -8472,6 +8309,76 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "an individual quantity of food or drink taken as part of a meal",
+    "examples": [
+      "the helpings were all small",
+      "his portion was larger than hers",
+      "there's enough for two servings each"
+    ],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "helping": {
+        "same_pos": 1,
+        "total": 9
+      },
+      "portion": {
+        "same_pos": 7,
+        "total": 8
+      },
+      "serving": {
+        "same_pos": 2,
+        "total": 17
+      }
+    },
+    "lemmas": [
+      "helping",
+      "portion",
+      "serving"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "helping",
+    "relations": {
+      "part_holonym": [
+        "meal.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "helping.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "tea-like drink made of leaves of various herbs",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "herbal": {
+        "same_pos": 1,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "herbal"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "herbal",
+    "relations": {
+      "hypernym": [
+        "tea.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "herb_tea.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 2,
     "definition": "a group of cattle or sheep or other domestic mammals all of the same kind that are herded by humans",
     "examples": [],
@@ -8528,6 +8435,34 @@
       "location.n.01"
     ],
     "synset_id": "here.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "a rear foot of a quadruped",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "hindfoot": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "hindfoot"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "hindfoot",
+    "relations": {
+      "part_holonym": [
+        "quadruped.n.01"
+      ]
+    },
+    "root_sources": [
+      "body_part.n.01"
+    ],
+    "synset_id": "hindfoot.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -8696,6 +8631,34 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "an alcoholic beverage (especially beer) made at home",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "homebrew": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "homebrew"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "homebrew",
+    "relations": {
+      "hypernym": [
+        "alcohol.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "home_brew.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 4,
     "definition": "any living or extinct member of the family Hominidae characterized by superior intelligence, articulate speech, and erect carriage",
     "examples": [],
@@ -8764,10 +8727,43 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "an illicitly distilled (and usually inferior) alcoholic liquor",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "hooch": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "hootch": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "hooch",
+      "hootch"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "hooch",
+    "relations": {
+      "hypernym": [
+        "alcohol.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "hooch.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 3,
     "definition": "the foot of an ungulate mammal",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "hoof": {
         "same_pos": 2,
@@ -8783,10 +8779,6 @@
     "relations": {
       "part_holonym": [
         "ungulate.n.01"
-      ],
-      "part_meronym": [
-        "hoof.n.02",
-        "toe.n.03"
       ]
     },
     "root_sources": [
@@ -8796,41 +8788,10 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 2,
-    "definition": "the horny covering of the end of the foot in ungulate mammals",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "hoof": {
-        "same_pos": 2,
-        "total": 4
-      }
-    },
-    "lemmas": [
-      "hoof"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "hoof",
-    "relations": {
-      "hypernym": [
-        "horny_structure.n.01"
-      ],
-      "part_holonym": [
-        "hoof.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "hoof.n.02",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 3,
     "definition": "any rigid body structure composed primarily of keratin",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "unguis": {
         "same_pos": 1,
@@ -8845,7 +8806,6 @@
     "primary_lemma": "unguis",
     "relations": {
       "hyponym": [
-        "hoof.n.02",
         "nail.n.01"
       ]
     },
@@ -9010,6 +8970,72 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "not capable of sin",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "impeccable": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "impeccable"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "adjective",
+    "primary_lemma": "impeccable",
+    "relations": {
+      "similar_to": [
+        "virtuous.a.01"
+      ]
+    },
+    "root_sources": [
+      "good.a.01"
+    ],
+    "synset_id": "impeccable.s.02",
+    "wordnet_pos": "s"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "free from sin",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "impeccant": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "innocent": {
+        "same_pos": 7,
+        "total": 8
+      },
+      "sinless": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "impeccant",
+      "innocent",
+      "sinless"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "adjective",
+    "primary_lemma": "impeccant",
+    "relations": {
+      "similar_to": [
+        "virtuous.a.01"
+      ]
+    },
+    "root_sources": [
+      "good.a.01"
+    ],
+    "synset_id": "impeccant.s.01",
+    "wordnet_pos": "s"
+  },
+  {
     "candidate_degree": 2,
     "definition": "impervious to correction by punishment",
     "examples": [],
@@ -9038,6 +9064,34 @@
     "wordnet_pos": "a"
   },
   {
+    "candidate_degree": 1,
+    "definition": "free of corruption or immorality",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "incorrupt": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "incorrupt"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "adjective",
+    "primary_lemma": "incorrupt",
+    "relations": {
+      "similar_to": [
+        "moral.a.01"
+      ]
+    },
+    "root_sources": [
+      "good.a.01"
+    ],
+    "synset_id": "incorrupt.s.01",
+    "wordnet_pos": "s"
+  },
+  {
     "candidate_degree": 10,
     "definition": "make bigger or more",
     "examples": [
@@ -9060,9 +9114,9 @@
     "relations": {
       "hyponym": [
         "augment.v.01",
-        "blow_up.v.02",
         "enlarge.v.01",
         "escalate.v.01",
+        "kite.v.01",
         "lengthen.v.01",
         "multiply.v.02",
         "widen.v.04"
@@ -9133,71 +9187,6 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 2,
-    "definition": "food that is a component of a mixture in cooking",
-    "examples": [
-      "the recipe lists all the fixings for a salad"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "fixings": {
-        "same_pos": 6,
-        "total": 6
-      },
-      "ingredient": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "ingredient",
-      "fixings"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "ingredient",
-    "relations": {
-      "hyponym": [
-        "egg_yolk.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "ingredient.n.03",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "draw deep into the lungs in by breathing",
-    "examples": [
-      "Clinton smoked marijuana but never inhaled"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "inhale": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "inhale"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "verb",
-    "primary_lemma": "inhale",
-    "relations": {
-      "hypernym": [
-        "smoke.v.01"
-      ]
-    },
-    "root_sources": [
-      "consume.v.02"
-    ],
-    "synset_id": "inhale.v.01",
-    "wordnet_pos": "v"
-  },
-  {
     "candidate_degree": 6,
     "definition": "draw in (air)",
     "examples": [
@@ -9206,7 +9195,7 @@
       "The patient has trouble inspiring",
       "The lung cancer patient cannot inspire air very well"
     ],
-    "final_degree": 3,
+    "final_degree": 5,
     "lemma_sense_counts": {
       "inhale": {
         "same_pos": 2,
@@ -9227,7 +9216,9 @@
     "relations": {
       "hyponym": [
         "aspirate.v.03",
-        "huff.v.01"
+        "huff.v.01",
+        "sniff.v.02",
+        "snuff.v.02"
       ]
     },
     "root_sources": [
@@ -9235,37 +9226,6 @@
     ],
     "synset_id": "inhale.v.02",
     "wordnet_pos": "v"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "a complex system of interconnecting cavities; concerned with hearing and equilibrium",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "labyrinth": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "labyrinth"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "labyrinth",
-    "relations": {
-      "hypernym": [
-        "sense_organ.n.01"
-      ],
-      "part_meronym": [
-        "cochlea.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "inner_ear.n.01",
-    "wordnet_pos": "n"
   },
   {
     "candidate_degree": 1,
@@ -9658,7 +9618,7 @@
     "candidate_degree": 1,
     "definition": "a region that is related ethnically or historically to one country but is controlled politically by another",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "irredenta": {
         "same_pos": 1,
@@ -9676,11 +9636,7 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "irredenta",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -9720,39 +9676,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "a flap along the edge of a garment; used in medieval clothing",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "dag": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "jag": {
-        "same_pos": 4,
-        "total": 5
-      }
-    },
-    "lemmas": [
-      "jag",
-      "dag"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "jag",
-    "relations": {
-      "part_holonym": [
-        "garment.n.01"
-      ]
-    },
-    "root_sources": [
-      "artifact.n.01"
-    ],
-    "synset_id": "jag.n.03",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "small deer of Japan with slightly forked antlers",
     "examples": [],
     "final_degree": 1,
@@ -9780,31 +9703,36 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 2,
-    "definition": "veins in the neck that return blood from the head",
+    "candidate_degree": 1,
+    "definition": "meat (especially beef) cut in strips and dried in the sun",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "jugular": {
-        "same_pos": 2,
-        "total": 3
+      "jerk": {
+        "same_pos": 6,
+        "total": 11
+      },
+      "jerky": {
+        "same_pos": 1,
+        "total": 4
       }
     },
     "lemmas": [
-      "jugular"
+      "jerky",
+      "jerk"
     ],
     "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "jugular",
+    "primary_lemma": "jerky",
     "relations": {
-      "part_holonym": [
-        "neck.n.01"
+      "hypernym": [
+        "meat.n.01"
       ]
     },
     "root_sources": [
-      "body_part.n.01"
+      "food.n.01"
     ],
-    "synset_id": "jugular_vein.n.01",
+    "synset_id": "jerky.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -9865,9 +9793,42 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the realm of a khan",
+    "definition": "an alcoholic drink made from the aromatic roots of the kava shrub",
     "examples": [],
     "final_degree": 1,
+    "lemma_sense_counts": {
+      "kava": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "kavakava": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "kava",
+      "kavakava"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "kava",
+    "relations": {
+      "hypernym": [
+        "alcohol.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "kava.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "the realm of a khan",
+    "examples": [],
+    "final_degree": 0,
     "lemma_sense_counts": {
       "khanate": {
         "same_pos": 2,
@@ -9880,16 +9841,42 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "khanate",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
     "synset_id": "khanate.n.01",
     "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "increase the amount (of a check) fraudulently",
+    "examples": [
+      "He kited many checks"
+    ],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "kite": {
+        "same_pos": 4,
+        "total": 8
+      }
+    },
+    "lemmas": [
+      "kite"
+    ],
+    "min_bfs_depth": 2,
+    "pos": "verb",
+    "primary_lemma": "kite",
+    "relations": {
+      "hypernym": [
+        "increase.v.02"
+      ]
+    },
+    "root_sources": [
+      "change.v.01"
+    ],
+    "synset_id": "kite.v.01",
+    "wordnet_pos": "v"
   },
   {
     "candidate_degree": 2,
@@ -9952,6 +9939,39 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "an alcoholic beverage made from fermented mare's milk; made originally by nomads of central Asia",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "koumiss": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "kumis": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "koumiss",
+      "kumis"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "koumiss",
+    "relations": {
+      "hypernym": [
+        "alcohol.n.01"
+      ]
+    },
+    "root_sources": [
+      "food.n.01"
+    ],
+    "synset_id": "koumiss.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "a liplike structure that bounds a bodily orifice (especially any of the four labiate folds of a woman's vulva)",
     "examples": [],
     "final_degree": 1,
@@ -9981,37 +10001,37 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "a supply of food especially for a household",
+    "definition": "the flesh of a young domestic sheep eaten as food",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "larder": {
-        "same_pos": 2,
-        "total": 2
+      "lamb": {
+        "same_pos": 5,
+        "total": 6
       }
     },
     "lemmas": [
-      "larder"
+      "lamb"
     ],
-    "min_bfs_depth": 2,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "larder",
+    "primary_lemma": "lamb",
     "relations": {
       "hypernym": [
-        "commissariat.n.01"
+        "meat.n.01"
       ]
     },
     "root_sources": [
       "food.n.01"
     ],
-    "synset_id": "larder.n.01",
+    "synset_id": "lamb.n.05",
     "wordnet_pos": "n"
   },
   {
     "candidate_degree": 14,
     "definition": "the immature free-living form of most invertebrates and amphibians and fish which at hatching from the egg is fundamentally unlike its parent and must metamorphose",
     "examples": [],
-    "final_degree": 10,
+    "final_degree": 14,
     "lemma_sense_counts": {
       "larva": {
         "same_pos": 1,
@@ -10035,7 +10055,11 @@
         "hellgrammiate.n.01",
         "leptocephalus.n.01",
         "mealworm.n.01",
-        "tadpole.n.01"
+        "nymph.n.02",
+        "strawworm.n.02",
+        "tadpole.n.01",
+        "wiggler.n.02",
+        "wireworm.n.01"
       ]
     },
     "root_sources": [
@@ -10050,7 +10074,7 @@
     "candidate_degree": 15,
     "definition": "a relatively thin sheetlike expanse or region lying over or under another",
     "examples": [],
-    "final_degree": 14,
+    "final_degree": 15,
     "lemma_sense_counts": {
       "layer": {
         "same_pos": 5,
@@ -10079,6 +10103,7 @@
         "snow.n.02",
         "stratosphere.n.01",
         "stratum.n.01",
+        "thermosphere.n.01",
         "tropopause.n.01",
         "troposphere.n.01"
       ]
@@ -10087,36 +10112,6 @@
       "location.n.01"
     ],
     "synset_id": "layer.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "food remaining from a previous meal",
-    "examples": [
-      "he had leftovers for dinner last night"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "leftovers": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "leftovers"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "leftovers",
-    "relations": {
-      "hypernym": [
-        "food.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "leftovers.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -10148,67 +10143,6 @@
     ],
     "synset_id": "lengthen.v.01",
     "wordnet_pos": "v"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "biconvex transparent body situated behind the iris in the eye; its role (along with the cornea) is to focuses light on the retina",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "lens": {
-        "same_pos": 5,
-        "total": 5
-      }
-    },
-    "lemmas": [
-      "lens"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "lens",
-    "relations": {
-      "part_holonym": [
-        "eye.n.01"
-      ],
-      "part_meronym": [
-        "lens_cortex.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "lens.n.04",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "the tissue that surrounds the lens nucleus",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "cortex": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "cortex"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "cortex",
-    "relations": {
-      "part_holonym": [
-        "lens.n.04"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "lens_cortex.n.01",
-    "wordnet_pos": "n"
   },
   {
     "candidate_degree": 1,
@@ -10357,10 +10291,8 @@
     "pos": "noun",
     "primary_lemma": "loaf",
     "relations": {
-      "hypernym": [
-        "food.n.02"
-      ],
       "hyponym": [
+        "haslet.n.01",
         "headcheese.n.01"
       ]
     },
@@ -10374,7 +10306,7 @@
     "candidate_degree": 15,
     "definition": "a point or extent in space",
     "examples": [],
-    "final_degree": 15,
+    "final_degree": 14,
     "lemma_sense_counts": {
       "location": {
         "same_pos": 4,
@@ -10396,7 +10328,6 @@
         "northeast.n.04",
         "northwest.n.04",
         "region.n.01",
-        "region.n.03",
         "sodom.n.01",
         "somewhere.n.01",
         "south.n.04",
@@ -10508,34 +10439,6 @@
       "artifact.n.01"
     ],
     "synset_id": "lotion.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "a small yellowish central area of the retina that is rich in cones and that mediates clear detailed vision",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "macula": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "macula"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "macula",
-    "relations": {
-      "part_holonym": [
-        "retina.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "macula.n.02",
     "wordnet_pos": "n"
   },
   {
@@ -10773,7 +10676,7 @@
     "candidate_degree": 15,
     "definition": "the food served and eaten at one time",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 8,
     "lemma_sense_counts": {
       "meal": {
         "same_pos": 3,
@@ -10796,9 +10699,14 @@
         "nutriment.n.01"
       ],
       "hyponym": [
-        "banquet.n.02"
+        "banquet.n.02",
+        "breakfast.n.01",
+        "brunch.n.01",
+        "buffet.n.02",
+        "dinner.n.01"
       ],
       "part_meronym": [
+        "helping.n.01",
         "sandwich.n.01"
       ]
     },
@@ -10840,7 +10748,7 @@
     "candidate_degree": 15,
     "definition": "the flesh of animals (including fishes and birds and snails) used as food",
     "examples": [],
-    "final_degree": 4,
+    "final_degree": 9,
     "lemma_sense_counts": {
       "meat": {
         "same_pos": 3,
@@ -10854,11 +10762,14 @@
     "pos": "noun",
     "primary_lemma": "meat",
     "relations": {
-      "hypernym": [
-        "food.n.02"
-      ],
       "hyponym": [
         "beef.n.02",
+        "bird.n.02",
+        "carbonado.n.02",
+        "escargot.n.01",
+        "halal.n.01",
+        "jerky.n.01",
+        "lamb.n.05",
         "sausage.n.01"
       ],
       "substance_meronym": [
@@ -10989,7 +10900,7 @@
     "candidate_degree": 10,
     "definition": "any organism of microscopic size",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 3,
     "lemma_sense_counts": {
       "microorganism": {
         "same_pos": 1,
@@ -11004,6 +10915,7 @@
     "primary_lemma": "microorganism",
     "relations": {
       "hyponym": [
+        "bacteria.n.01",
         "microflora.n.01",
         "protoctist.n.01"
       ]
@@ -11014,46 +10926,6 @@
       "plant.n.02"
     ],
     "synset_id": "microorganism.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "the middle area of the human torso (usually in front)",
-    "examples": [
-      "young American women believe that a bare midriff is fashionable"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "middle": {
-        "same_pos": 4,
-        "total": 9
-      },
-      "midriff": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "midsection": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "middle",
-      "midriff",
-      "midsection"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "middle",
-    "relations": {
-      "part_holonym": [
-        "torso.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "middle.n.03",
     "wordnet_pos": "n"
   },
   {
@@ -11126,7 +10998,7 @@
     "candidate_degree": 3,
     "definition": "a white nutritious liquid secreted by mammals and used as food by human beings",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 3,
     "lemma_sense_counts": {
       "milk": {
         "same_pos": 4,
@@ -11143,6 +11015,9 @@
       "hypernym": [
         "beverage.n.01"
       ],
+      "hyponym": [
+        "buttermilk.n.01"
+      ],
       "substance_meronym": [
         "protein.n.01"
       ]
@@ -11151,34 +11026,6 @@
       "food.n.01"
     ],
     "synset_id": "milk.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "produced by mammary glands of female mammals for feeding their young",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "milk": {
-        "same_pos": 4,
-        "total": 7
-      }
-    },
-    "lemmas": [
-      "milk"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "milk",
-    "relations": {
-      "hypernym": [
-        "nutriment.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "milk.n.02",
     "wordnet_pos": "n"
   },
   {
@@ -11271,7 +11118,7 @@
     "candidate_degree": 3,
     "definition": "a mound of fatty tissue covering the pubic area in women",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "mons": {
         "same_pos": 4,
@@ -11289,7 +11136,6 @@
         "adipose_tissue.n.01"
       ],
       "part_holonym": [
-        "pubes.n.01",
         "vulva.n.01"
       ]
     },
@@ -11331,7 +11177,7 @@
         "virtuous.a.01"
       ],
       "similar_to": [
-        "chaste.s.02"
+        "incorrupt.s.01"
       ]
     },
     "root_sources": [
@@ -11341,10 +11187,38 @@
     "wordnet_pos": "a"
   },
   {
+    "candidate_degree": 1,
+    "definition": "a solid mass of blastomeres that forms when the zygote splits; develops into the blastula",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "morula": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "morula"
+    ],
+    "min_bfs_depth": 2,
+    "pos": "noun",
+    "primary_lemma": "morula",
+    "relations": {
+      "hypernym": [
+        "embryo.n.02"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "morula.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 2,
     "definition": "a garment made of motley (especially a court jester's costume)",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "motley": {
         "same_pos": 3,
@@ -11360,43 +11234,12 @@
     "relations": {
       "hypernym": [
         "garment.n.01"
-      ],
-      "substance_meronym": [
-        "motley.n.03"
       ]
     },
     "root_sources": [
       "artifact.n.01"
     ],
     "synset_id": "motley.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "a multicolored woolen fabric woven of mixed threads in 14th to 17th century England",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "motley": {
-        "same_pos": 3,
-        "total": 7
-      }
-    },
-    "lemmas": [
-      "motley"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "motley",
-    "relations": {
-      "substance_holonym": [
-        "motley.n.02"
-      ]
-    },
-    "root_sources": [
-      "artifact.n.01"
-    ],
-    "synset_id": "motley.n.03",
     "wordnet_pos": "n"
   },
   {
@@ -11466,10 +11309,39 @@
     "wordnet_pos": "v"
   },
   {
+    "candidate_degree": 1,
+    "definition": "animal tissue consisting predominantly of contractile cells",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "muscle": {
+        "same_pos": 5,
+        "total": 6
+      }
+    },
+    "lemmas": [
+      "muscle"
+    ],
+    "min_bfs_depth": 2,
+    "pos": "noun",
+    "primary_lemma": "muscle",
+    "relations": {
+      "part_holonym": [
+        "muscular_structure.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01",
+      "body_part.n.01"
+    ],
+    "synset_id": "muscle.n.02",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 5,
     "definition": "the muscular system of an organism",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 4,
     "lemma_sense_counts": {
       "musculature": {
         "same_pos": 1,
@@ -11488,6 +11360,7 @@
         "esophagus.n.01"
       ],
       "part_meronym": [
+        "muscle.n.02",
         "tendon.n.01"
       ]
     },
@@ -11587,46 +11460,6 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 7,
-    "definition": "the part of an organism (human or animal) that connects the head to the rest of the body",
-    "examples": [
-      "he admired her long graceful neck",
-      "the horse won by a neck"
-    ],
-    "final_degree": 4,
-    "lemma_sense_counts": {
-      "cervix": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "neck": {
-        "same_pos": 5,
-        "total": 6
-      }
-    },
-    "lemmas": [
-      "neck",
-      "cervix"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "neck",
-    "relations": {
-      "part_meronym": [
-        "jugular_vein.n.01",
-        "throat.n.01",
-        "thymus_gland.n.01",
-        "trachea.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "neck.n.01",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 2,
     "definition": "an opening in a garment for the neck of the wearer; a part of the garment near the wearer's neck",
     "examples": [],
@@ -11687,6 +11520,36 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "the aggregate of actively swimming animals in a body of water ranging from microscopic organisms to whales",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "nekton": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "nekton"
+    ],
+    "min_bfs_depth": 2,
+    "pos": "noun",
+    "primary_lemma": "nekton",
+    "relations": {
+      "member_holonym": [
+        "aggregate.n.03"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01",
+      "body_part.n.01",
+      "plant.n.02"
+    ],
+    "synset_id": "nekton.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "a location in the northeastern part of a country, region, or city",
     "examples": [],
     "final_degree": 1,
@@ -11717,7 +11580,7 @@
     "candidate_degree": 1,
     "definition": "any region lying in or toward the north",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "northland": {
         "same_pos": 1,
@@ -11730,11 +11593,7 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "northland",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -11773,7 +11632,7 @@
     "candidate_degree": 10,
     "definition": "a source of materials to nourish the body",
     "examples": [],
-    "final_degree": 10,
+    "final_degree": 9,
     "lemma_sense_counts": {
       "aliment": {
         "same_pos": 1,
@@ -11825,7 +11684,6 @@
         "ingesta.n.01",
         "kosher.n.01",
         "meal.n.01",
-        "milk.n.02",
         "mince.n.01",
         "puree.n.01",
         "stodge.n.01",
@@ -11873,6 +11731,34 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "a larva of an insect with incomplete metamorphosis (as the dragonfly or mayfly)",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "nymph": {
+        "same_pos": 3,
+        "total": 3
+      }
+    },
+    "lemmas": [
+      "nymph"
+    ],
+    "min_bfs_depth": 2,
+    "pos": "noun",
+    "primary_lemma": "nymph",
+    "relations": {
+      "hypernym": [
+        "larva.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "nymph.n.02",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "presently occurring (either causally or incidentally)",
     "examples": [
       "technical terms are rarely occurrent in literature"
@@ -11905,7 +11791,7 @@
     "candidate_degree": 2,
     "definition": "placental mammals having hooves with an odd number of toes on each foot",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "perissodactyl": {
         "same_pos": 1,
@@ -11921,6 +11807,9 @@
     "relations": {
       "hypernym": [
         "ungulate.n.01"
+      ],
+      "hyponym": [
+        "equine.n.01"
       ]
     },
     "root_sources": [
@@ -12140,64 +12029,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "a small nipple-shaped protuberance concerned with taste, touch, or smell",
-    "examples": [
-      "the papillae of the tongue"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "papilla": {
-        "same_pos": 3,
-        "total": 3
-      }
-    },
-    "lemmas": [
-      "papilla"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "papilla",
-    "relations": {
-      "part_holonym": [
-        "sense_organ.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "papilla.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "area of the retina immediately surrounding the fovea",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "parafovea": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "parafovea"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "parafovea",
-    "relations": {
-      "part_holonym": [
-        "retina.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "parafovea.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "treat condescendingly",
     "examples": [],
     "final_degree": 1,
@@ -12382,11 +12213,11 @@
       "hyponym": [
         "audition.v.01",
         "barnstorm.v.01",
-        "barnstorm.v.02",
         "concertize.v.01",
         "debut.v.03",
         "grandstand.v.01",
-        "interlude.v.01"
+        "interlude.v.01",
+        "rap.v.03"
       ]
     },
     "root_sources": [
@@ -12456,34 +12287,6 @@
       "touch.v.01"
     ],
     "synset_id": "pet.v.01",
-    "wordnet_pos": "v"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "stroke or caress in an erotic manner, as during lovemaking",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "pet": {
-        "same_pos": 2,
-        "total": 7
-      }
-    },
-    "lemmas": [
-      "pet"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "verb",
-    "primary_lemma": "pet",
-    "relations": {
-      "hypernym": [
-        "caress.v.01"
-      ]
-    },
-    "root_sources": [
-      "touch.v.01"
-    ],
-    "synset_id": "pet.v.02",
     "wordnet_pos": "v"
   },
   {
@@ -12593,7 +12396,7 @@
     "candidate_degree": 3,
     "definition": "mammals having a placenta; all mammals except monotremes and marsupials",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 3,
     "lemma_sense_counts": {
       "eutherian": {
         "same_pos": 1,
@@ -12616,6 +12419,7 @@
         "mammal.n.01"
       ],
       "hyponym": [
+        "bat.n.01",
         "ungulate.n.01"
       ]
     },
@@ -12722,7 +12526,7 @@
     "candidate_degree": 3,
     "definition": "a medicinal or magical or poisonous beverage",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "potion": {
         "same_pos": 1,
@@ -12738,6 +12542,9 @@
     "relations": {
       "hypernym": [
         "beverage.n.01"
+      ],
+      "hyponym": [
+        "elixir.n.03"
       ]
     },
     "root_sources": [
@@ -12745,6 +12552,42 @@
     ],
     "synset_id": "potion.n.01",
     "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "move down on as if in an attack",
+    "examples": [
+      "The raptor swooped down on its prey",
+      "The teacher swooped down upon the new students"
+    ],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "pounce": {
+        "same_pos": 1,
+        "total": 2
+      },
+      "swoop": {
+        "same_pos": 3,
+        "total": 6
+      }
+    },
+    "lemmas": [
+      "pounce",
+      "swoop"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "verb",
+    "primary_lemma": "pounce",
+    "relations": {
+      "hypernym": [
+        "descend.v.01"
+      ]
+    },
+    "root_sources": [
+      "move.v.02"
+    ],
+    "synset_id": "pounce.v.01",
+    "wordnet_pos": "v"
   },
   {
     "candidate_degree": 1,
@@ -12841,7 +12684,7 @@
     "candidate_degree": 1,
     "definition": "territory ruled by a prince",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "princedom": {
         "same_pos": 2,
@@ -12859,43 +12702,11 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "principality",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
     "synset_id": "principality.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 3,
-    "definition": "fresh fruits and vegetable grown for the market",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "produce": {
-        "same_pos": 1,
-        "total": 8
-      }
-    },
-    "lemmas": [
-      "produce"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "produce",
-    "relations": {
-      "hypernym": [
-        "food.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "produce.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -12962,7 +12773,7 @@
     "examples": [
       "a diet high in protein"
     ],
-    "final_degree": 3,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "protein": {
         "same_pos": 1,
@@ -12977,7 +12788,6 @@
     "primary_lemma": "protein",
     "relations": {
       "substance_holonym": [
-        "egg.n.02",
         "meat.n.01",
         "milk.n.01"
       ]
@@ -13023,39 +12833,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the lower part of the abdomen just above the external genital organs",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "loins": {
-        "same_pos": 4,
-        "total": 4
-      },
-      "pubes": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "pubes",
-      "loins"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "pubes",
-    "relations": {
-      "part_meronym": [
-        "mons.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "pubes.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "food prepared by cooking and straining or processed in a blender",
     "examples": [],
     "final_degree": 1,
@@ -13086,7 +12863,7 @@
     "candidate_degree": 8,
     "definition": "an animal especially a mammal having four limbs specialized for walking",
     "examples": [],
-    "final_degree": 6,
+    "final_degree": 8,
     "lemma_sense_counts": {
       "quadruped": {
         "same_pos": 1,
@@ -13105,8 +12882,10 @@
       ],
       "part_meronym": [
         "flank.n.04",
+        "forefoot.n.01",
         "foreleg.n.01",
         "haunch.n.02",
+        "hindfoot.n.01",
         "hindquarters.n.02",
         "loin.n.02"
       ]
@@ -13147,6 +12926,34 @@
     ],
     "synset_id": "radius.n.03",
     "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "perform rap music",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "rap": {
+        "same_pos": 4,
+        "total": 10
+      }
+    },
+    "lemmas": [
+      "rap"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "verb",
+    "primary_lemma": "rap",
+    "relations": {
+      "hypernym": [
+        "perform.v.03"
+      ]
+    },
+    "root_sources": [
+      "make.v.03"
+    ],
+    "synset_id": "rap.v.03",
+    "wordnet_pos": "v"
   },
   {
     "candidate_degree": 1,
@@ -13320,49 +13127,6 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 12,
-    "definition": "a large indefinite location on the surface of the Earth",
-    "examples": [
-      "penguins inhabit the polar regions"
-    ],
-    "final_degree": 12,
-    "lemma_sense_counts": {
-      "region": {
-        "same_pos": 5,
-        "total": 5
-      }
-    },
-    "lemmas": [
-      "region"
-    ],
-    "min_bfs_depth": 1,
-    "pos": "noun",
-    "primary_lemma": "region",
-    "relations": {
-      "hypernym": [
-        "location.n.01"
-      ],
-      "hyponym": [
-        "antipodes.n.01",
-        "backwater.n.02",
-        "breadbasket.n.01",
-        "district.n.01",
-        "domain.n.02",
-        "heartland.n.01",
-        "irredenta.n.01",
-        "northland.n.01",
-        "southland.n.01",
-        "testing_ground.n.01",
-        "unknown.n.01"
-      ]
-    },
-    "root_sources": [
-      "location.n.01"
-    ],
-    "synset_id": "region.n.03",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 5,
     "definition": "having a good reputation",
     "examples": [
@@ -13370,7 +13134,7 @@
       "a reputable scientist",
       "a reputable wine"
     ],
-    "final_degree": 3,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "reputable": {
         "same_pos": 1,
@@ -13388,8 +13152,7 @@
         "respectable.a.01"
       ],
       "similar_to": [
-        "esteemed.s.01",
-        "estimable.s.01"
+        "esteemed.s.01"
       ]
     },
     "root_sources": [
@@ -13432,41 +13195,6 @@
     ],
     "synset_id": "respectable.a.01",
     "wordnet_pos": "a"
-  },
-  {
-    "candidate_degree": 4,
-    "definition": "the innermost light-sensitive membrane covering the back wall of the eyeball; it is continuous with the optic nerve",
-    "examples": [],
-    "final_degree": 4,
-    "lemma_sense_counts": {
-      "retina": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "retina"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "retina",
-    "relations": {
-      "part_holonym": [
-        "eye.n.01"
-      ],
-      "part_meronym": [
-        "fovea.n.01",
-        "macula.n.02",
-        "parafovea.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01",
-      "location.n.01"
-    ],
-    "synset_id": "retina.n.01",
-    "wordnet_pos": "n"
   },
   {
     "candidate_degree": 3,
@@ -13730,34 +13458,6 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 10,
-    "definition": "edible fish (broadly including freshwater fish) or shellfish or roe etc",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "seafood": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "seafood"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "seafood",
-    "relations": {
-      "hypernym": [
-        "food.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "seafood.n.01",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 1,
     "definition": "rendered competent through trial and experience",
     "examples": [
@@ -13795,42 +13495,6 @@
     "wordnet_pos": "s"
   },
   {
-    "candidate_degree": 9,
-    "definition": "an organ having nerve endings (in the skin or viscera or eye or ear or nose or mouth) that respond to stimulation",
-    "examples": [],
-    "final_degree": 6,
-    "lemma_sense_counts": {
-      "receptor": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "receptor"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "receptor",
-    "relations": {
-      "hyponym": [
-        "baroreceptor.n.01",
-        "chemoreceptor.n.01",
-        "ear.n.01",
-        "eye.n.01",
-        "inner_ear.n.01"
-      ],
-      "part_meronym": [
-        "papilla.n.02"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01"
-    ],
-    "synset_id": "sense_organ.n.01",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 1,
     "definition": "any of several muscles of the trunk",
     "examples": [],
@@ -13862,7 +13526,7 @@
     "candidate_degree": 8,
     "definition": "woolly usually horned ruminant mammal related to the goat",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 5,
     "lemma_sense_counts": {
       "sheep": {
         "same_pos": 3,
@@ -13879,7 +13543,11 @@
       "hypernym": [
         "bovid.n.01"
       ],
+      "hyponym": [
+        "ewe.n.03"
+      ],
       "member_holonym": [
+        "flock.n.05",
         "herd.n.01"
       ],
       "part_meronym": [
@@ -13896,7 +13564,7 @@
     "candidate_degree": 1,
     "definition": "the domain ruled by a sheik",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "sheikdom": {
         "same_pos": 1,
@@ -13914,11 +13582,7 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "sheikdom",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -14046,40 +13710,6 @@
   },
   {
     "candidate_degree": 3,
-    "definition": "the part of the body between the neck and the upper arm",
-    "examples": [],
-    "final_degree": 3,
-    "lemma_sense_counts": {
-      "shoulder": {
-        "same_pos": 5,
-        "total": 8
-      }
-    },
-    "lemmas": [
-      "shoulder"
-    ],
-    "min_bfs_depth": 1,
-    "pos": "noun",
-    "primary_lemma": "shoulder",
-    "relations": {
-      "part_holonym": [
-        "torso.n.01"
-      ],
-      "part_meronym": [
-        "armpit.n.01",
-        "teres.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01",
-      "plant.n.02"
-    ],
-    "synset_id": "shoulder.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 3,
     "definition": "a ball-and-socket joint between the head of the humerus and a cavity of the scapula",
     "examples": [],
     "final_degree": 3,
@@ -14114,36 +13744,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the part of a garment that covers or fits over the shoulder",
-    "examples": [
-      "an ornamental gold braid on the shoulder of his uniform"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "shoulder": {
-        "same_pos": 5,
-        "total": 8
-      }
-    },
-    "lemmas": [
-      "shoulder"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "shoulder",
-    "relations": {
-      "part_holonym": [
-        "garment.n.01"
-      ]
-    },
-    "root_sources": [
-      "artifact.n.01"
-    ],
-    "synset_id": "shoulder.n.04",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "conveyance consisting of a small carrier attached to the side of a motorcycle",
     "examples": [],
     "final_degree": 1,
@@ -14174,7 +13774,7 @@
     "candidate_degree": 3,
     "definition": "silk-producing gland of insects (especially of a silkworm) or spiders",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "sericterium": {
         "same_pos": 1,
@@ -14197,8 +13797,7 @@
         "gland.n.01"
       ],
       "part_holonym": [
-        "silkworm.n.01",
-        "silkworm.n.02"
+        "silkworm.n.01"
       ]
     },
     "root_sources": [
@@ -14240,40 +13839,9 @@
   },
   {
     "candidate_degree": 2,
-    "definition": "larva of a saturniid moth; spins a large amount of strong silk in constructing its cocoon",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "silkworm": {
-        "same_pos": 2,
-        "total": 2
-      }
-    },
-    "lemmas": [
-      "silkworm"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "silkworm",
-    "relations": {
-      "hypernym": [
-        "caterpillar.n.01"
-      ],
-      "part_meronym": [
-        "silk_gland.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01"
-    ],
-    "synset_id": "silkworm.n.02",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
     "definition": "the hard structure (bones and cartilages) that provides a frame for the body of an animal",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "frame": {
         "same_pos": 11,
@@ -14293,7 +13861,8 @@
     "primary_lemma": "skeleton",
     "relations": {
       "hyponym": [
-        "endoskeleton.n.01"
+        "endoskeleton.n.01",
+        "exoskeleton.n.01"
       ]
     },
     "root_sources": [
@@ -14311,7 +13880,7 @@
       "a skilled reconstruction of her damaged elbow",
       "a skilled trade"
     ],
-    "final_degree": 6,
+    "final_degree": 5,
     "lemma_sense_counts": {
       "skilled": {
         "same_pos": 1,
@@ -14331,7 +13900,6 @@
       ],
       "similar_to": [
         "accomplished.s.01",
-        "adept.s.01",
         "arch.s.02",
         "consummate.s.01"
       ]
@@ -14374,7 +13942,7 @@
     "candidate_degree": 3,
     "definition": "the part of a garment that is attached at the armhole and that provides a cloth covering for the arm",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 3,
     "lemma_sense_counts": {
       "arm": {
         "same_pos": 6,
@@ -14397,7 +13965,8 @@
         "garment.n.01"
       ],
       "part_meronym": [
-        "elbow.n.04"
+        "elbow.n.04",
+        "wristband.n.01"
       ]
     },
     "root_sources": [
@@ -14410,7 +13979,7 @@
     "candidate_degree": 2,
     "definition": "a long narrow opening",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "slit": {
         "same_pos": 4,
@@ -14425,7 +13994,8 @@
     "primary_lemma": "slit",
     "relations": {
       "hyponym": [
-        "jag.n.02"
+        "jag.n.02",
+        "vent.n.04"
       ]
     },
     "root_sources": [
@@ -14435,43 +14005,13 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 1,
-    "definition": "(usually plural) weak or watery unappetizing food or drink",
-    "examples": [
-      "he lived on the thin slops that food kitchens provided"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "slop": {
-        "same_pos": 5,
-        "total": 9
-      }
-    },
-    "lemmas": [
-      "slop"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "slop",
-    "relations": {
-      "hypernym": [
-        "food.n.02"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "slop.n.04",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 3,
     "definition": "inhale and exhale smoke from cigarettes, cigars, pipes",
     "examples": [
       "We never smoked marijuana",
       "Do you smoke?"
     ],
-    "final_degree": 3,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "smoke": {
         "same_pos": 2,
@@ -14488,9 +14028,6 @@
       "entailment": [
         "exhale.v.01",
         "inhale.v.02"
-      ],
-      "hyponym": [
-        "inhale.v.01"
       ]
     },
     "root_sources": [
@@ -14529,6 +14066,41 @@
   },
   {
     "candidate_degree": 1,
+    "definition": "inhale audibly through the nose",
+    "examples": [
+      "the sick student was sniffling in the back row"
+    ],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "sniff": {
+        "same_pos": 2,
+        "total": 3
+      },
+      "sniffle": {
+        "same_pos": 2,
+        "total": 3
+      }
+    },
+    "lemmas": [
+      "sniff",
+      "sniffle"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "verb",
+    "primary_lemma": "sniff",
+    "relations": {
+      "hypernym": [
+        "inhale.v.02"
+      ]
+    },
+    "root_sources": [
+      "consume.v.02"
+    ],
+    "synset_id": "sniff.v.02",
+    "wordnet_pos": "v"
+  },
+  {
+    "candidate_degree": 1,
     "definition": "a layer of snowflakes (white crystals of frozen water) covering the ground",
     "examples": [],
     "final_degree": 1,
@@ -14554,6 +14126,36 @@
     ],
     "synset_id": "snow.n.02",
     "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "inhale audibly through the nose",
+    "examples": [
+      "snuff coke"
+    ],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "snuff": {
+        "same_pos": 2,
+        "total": 7
+      }
+    },
+    "lemmas": [
+      "snuff"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "verb",
+    "primary_lemma": "snuff",
+    "relations": {
+      "hypernym": [
+        "inhale.v.02"
+      ]
+    },
+    "root_sources": [
+      "consume.v.02"
+    ],
+    "synset_id": "snuff.v.02",
+    "wordnet_pos": "v"
   },
   {
     "candidate_degree": 4,
@@ -14709,7 +14311,7 @@
     "candidate_degree": 1,
     "definition": "any region lying in or toward the south",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "southland": {
         "same_pos": 1,
@@ -14722,11 +14324,7 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "southland",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -14879,7 +14477,7 @@
     "candidate_degree": 3,
     "definition": "the flat bone that articulates with the clavicles and the first seven pairs of ribs",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 2,
     "lemma_sense_counts": {
       "breastbone": {
         "same_pos": 1,
@@ -14900,6 +14498,9 @@
     "relations": {
       "part_holonym": [
         "thorax.n.02"
+      ],
+      "part_meronym": [
+        "gladiolus.n.02"
       ]
     },
     "root_sources": [
@@ -14996,6 +14597,39 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "larva of chalcid flies injurious to the straw of wheat and other grains",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "jointworm": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "strawworm": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "strawworm",
+      "jointworm"
+    ],
+    "min_bfs_depth": 2,
+    "pos": "noun",
+    "primary_lemma": "strawworm",
+    "relations": {
+      "hypernym": [
+        "larva.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "strawworm.n.02",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 9,
     "definition": "tenaciously unwilling or marked by tenacious unwillingness to yield",
     "examples": [],
@@ -15047,7 +14681,7 @@
     "candidate_degree": 1,
     "definition": "the domain of a suzerain",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "suzerainty": {
         "same_pos": 2,
@@ -15060,11 +14694,7 @@
     "min_bfs_depth": 3,
     "pos": "noun",
     "primary_lemma": "suzerainty",
-    "relations": {
-      "hypernym": [
-        "domain.n.02"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -15144,34 +14774,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "inhale through the nose",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "snort": {
-        "same_pos": 4,
-        "total": 6
-      }
-    },
-    "lemmas": [
-      "snort"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "verb",
-    "primary_lemma": "snort",
-    "relations": {
-      "hypernym": [
-        "drug.v.02"
-      ]
-    },
-    "root_sources": [
-      "consume.v.02"
-    ],
-    "synset_id": "take_a_hit.v.01",
-    "wordnet_pos": "v"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "a wall hanging of heavy handwoven fabric with pictorial designs",
     "examples": [],
     "final_degree": 1,
@@ -15204,44 +14806,12 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 3,
-    "definition": "an oval sensory end organ on the surface of the tongue",
-    "examples": [],
-    "final_degree": 3,
-    "lemma_sense_counts": {
-      "tastebud": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "tastebud"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "tastebud",
-    "relations": {
-      "hypernym": [
-        "chemoreceptor.n.01"
-      ],
-      "part_holonym": [
-        "epiglottis.n.01",
-        "throat.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "tastebud.n.01",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 5,
     "definition": "a beverage made by steeping tea leaves in water",
     "examples": [
       "iced tea is a cooling drink"
     ],
-    "final_degree": 2,
+    "final_degree": 4,
     "lemma_sense_counts": {
       "tea": {
         "same_pos": 5,
@@ -15257,6 +14827,10 @@
     "relations": {
       "hypernym": [
         "beverage.n.01"
+      ],
+      "hyponym": [
+        "cuppa.n.01",
+        "herb_tea.n.01"
       ],
       "substance_meronym": [
         "caffeine.n.01"
@@ -15376,40 +14950,12 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "either of two muscles in the shoulder region that move the shoulders and arms",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "teres": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "teres"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "teres",
-    "relations": {
-      "part_holonym": [
-        "shoulder.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "teres.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "a region resembling a laboratory inasmuch as it offers opportunities for observation and practice and experimentation",
     "examples": [
       "the new nation is a testing ground for socioeconomic theories",
       "Pakistan is a laboratory for studying the use of American troops to combat terrorism"
     ],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "laboratory": {
         "same_pos": 2,
@@ -15422,11 +14968,7 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "laboratory",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -15496,10 +15038,38 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "the atmospheric layer between the mesosphere and the exosphere",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "thermosphere": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "thermosphere"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "thermosphere",
+    "relations": {
+      "hypernym": [
+        "layer.n.02"
+      ]
+    },
+    "root_sources": [
+      "location.n.01"
+    ],
+    "synset_id": "thermosphere.n.01",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 7,
     "definition": "the part of the human torso between the neck and the diaphragm or the corresponding part in other vertebrates",
     "examples": [],
-    "final_degree": 7,
+    "final_degree": 6,
     "lemma_sense_counts": {
       "chest": {
         "same_pos": 4,
@@ -15531,7 +15101,6 @@
         "vertebrate.n.01"
       ],
       "part_meronym": [
-        "breast.n.01",
         "gallbladder.n.01",
         "pectoral.n.01",
         "sternum.n.01"
@@ -15546,46 +15115,10 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 5,
-    "definition": "the passage to the stomach and lungs; in the front part of the neck below the chin and above the collarbone",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "pharynx": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "throat": {
-        "same_pos": 4,
-        "total": 4
-      }
-    },
-    "lemmas": [
-      "throat",
-      "pharynx"
-    ],
-    "min_bfs_depth": 3,
-    "pos": "noun",
-    "primary_lemma": "throat",
-    "relations": {
-      "part_holonym": [
-        "neck.n.01"
-      ],
-      "part_meronym": [
-        "tastebud.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "throat.n.01",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 2,
     "definition": "a ductless glandular organ at the base of the neck that produces lymphocytes and aids in producing immunity; atrophies with age",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "thymus": {
         "same_pos": 2,
@@ -15601,9 +15134,6 @@
     "relations": {
       "hypernym": [
         "endocrine_gland.n.01"
-      ],
-      "part_holonym": [
-        "neck.n.01"
       ]
     },
     "root_sources": [
@@ -15611,6 +15141,36 @@
     ],
     "synset_id": "thymus_gland.n.01",
     "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "touch or stroke lightly",
+    "examples": [
+      "The grass tickled her calves"
+    ],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "tickle": {
+        "same_pos": 3,
+        "total": 5
+      }
+    },
+    "lemmas": [
+      "tickle"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "verb",
+    "primary_lemma": "tickle",
+    "relations": {
+      "hypernym": [
+        "caress.v.01"
+      ]
+    },
+    "root_sources": [
+      "touch.v.01"
+    ],
+    "synset_id": "tickle.v.03",
+    "wordnet_pos": "v"
   },
   {
     "candidate_degree": 1,
@@ -15644,7 +15204,7 @@
     "candidate_degree": 2,
     "definition": "one of the digits of the foot",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
       "toe": {
         "same_pos": 4,
@@ -15659,8 +15219,7 @@
     "primary_lemma": "toe",
     "relations": {
       "hypernym": [
-        "digit.n.03",
-        "extremity.n.05"
+        "digit.n.03"
       ]
     },
     "root_sources": [
@@ -15670,40 +15229,10 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 1,
-    "definition": "forepart of a hoof",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "toe": {
-        "same_pos": 4,
-        "total": 9
-      }
-    },
-    "lemmas": [
-      "toe"
-    ],
-    "min_bfs_depth": 1,
-    "pos": "noun",
-    "primary_lemma": "toe",
-    "relations": {
-      "part_holonym": [
-        "hoof.n.01"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01",
-      "plant.n.02"
-    ],
-    "synset_id": "toe.n.03",
-    "wordnet_pos": "n"
-  },
-  {
     "candidate_degree": 11,
     "definition": "artifacts used in making your toilet (washing and taking care of your body)",
     "examples": [],
-    "final_degree": 10,
+    "final_degree": 11,
     "lemma_sense_counts": {
       "toiletry": {
         "same_pos": 1,
@@ -15729,13 +15258,42 @@
         "lotion.n.01",
         "mousse.n.03",
         "perfume.n.02",
-        "powder.n.03"
+        "powder.n.03",
+        "toothbrush.n.01"
       ]
     },
     "root_sources": [
       "artifact.n.01"
     ],
     "synset_id": "toiletry.n.01",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "small brush; has long handle; used to clean teeth",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "toothbrush": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "toothbrush"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "toothbrush",
+    "relations": {
+      "hypernym": [
+        "toiletry.n.01"
+      ]
+    },
+    "root_sources": [
+      "artifact.n.01"
+    ],
+    "synset_id": "toothbrush.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -15775,7 +15333,7 @@
     "examples": [
       "they moved their arms and legs and bodies"
     ],
-    "final_degree": 14,
+    "final_degree": 9,
     "lemma_sense_counts": {
       "body": {
         "same_pos": 11,
@@ -15801,16 +15359,11 @@
     "relations": {
       "part_meronym": [
         "abdomen.n.01",
-        "belly.n.02",
         "buttock.n.01",
-        "buttocks.n.01",
         "diaphragm.n.02",
-        "haunch.n.01",
         "hip.n.01",
         "loins.n.02",
-        "middle.n.03",
         "serratus.n.01",
-        "shoulder.n.01",
         "shoulder.n.03",
         "thorax.n.02",
         "waist.n.01"
@@ -15825,39 +15378,69 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 2,
-    "definition": "membranous tube with cartilaginous rings that conveys inhaled air from the larynx to the bronchi",
+    "candidate_degree": 1,
+    "definition": "a large transport conveyance designed to be pulled by a truck or tractor",
     "examples": [],
-    "final_degree": 2,
+    "final_degree": 1,
     "lemma_sense_counts": {
-      "trachea": {
-        "same_pos": 2,
-        "total": 2
-      },
-      "windpipe": {
-        "same_pos": 1,
-        "total": 1
+      "trailer": {
+        "same_pos": 4,
+        "total": 4
       }
     },
     "lemmas": [
-      "trachea",
-      "windpipe"
+      "trailer"
     ],
     "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "trachea",
+    "primary_lemma": "trailer",
     "relations": {
-      "part_holonym": [
-        "neck.n.01"
-      ],
-      "part_meronym": [
-        "epiglottis.n.01"
+      "hypernym": [
+        "conveyance.n.03"
       ]
     },
     "root_sources": [
-      "body_part.n.01"
+      "artifact.n.01"
     ],
-    "synset_id": "trachea.n.01",
+    "synset_id": "trailer.n.03",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "a conveyance that transports passengers or freight in carriers suspended from cables and supported by a series of towers",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "ropeway": {
+        "same_pos": 1,
+        "total": 1
+      },
+      "tram": {
+        "same_pos": 3,
+        "total": 4
+      },
+      "tramway": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "tramway",
+      "tram",
+      "ropeway"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "tramway",
+    "relations": {
+      "hypernym": [
+        "conveyance.n.03"
+      ]
+    },
+    "root_sources": [
+      "artifact.n.01"
+    ],
+    "synset_id": "tramway.n.01",
     "wordnet_pos": "n"
   },
   {
@@ -15953,95 +15536,38 @@
     "wordnet_pos": "n"
   },
   {
-    "candidate_degree": 4,
-    "definition": "(anatomy) any hollow cylindrical body structure",
-    "examples": [],
-    "final_degree": 2,
-    "lemma_sense_counts": {
-      "tube": {
-        "same_pos": 5,
-        "total": 9
-      }
-    },
-    "lemmas": [
-      "tube"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "tube",
-    "relations": {
-      "hyponym": [
-        "cochlea.n.01",
-        "tubule.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "tube.n.04",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 2,
-    "definition": "a small tube",
+    "candidate_degree": 1,
+    "definition": "a dependent country; administered by another country under the supervision of the United Nations",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "tubule": {
-        "same_pos": 1,
-        "total": 1
+      "trusteeship": {
+        "same_pos": 2,
+        "total": 2
       }
     },
     "lemmas": [
-      "tubule"
+      "trusteeship"
     ],
     "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "tubule",
+    "primary_lemma": "trusteeship",
     "relations": {
       "hypernym": [
-        "tube.n.04"
+        "district.n.01"
       ]
     },
     "root_sources": [
-      "body_part.n.01"
+      "location.n.01"
     ],
-    "synset_id": "tubule.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
-    "definition": "eatables (especially sweets)",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "tuck": {
-        "same_pos": 4,
-        "total": 7
-      }
-    },
-    "lemmas": [
-      "tuck"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "tuck",
-    "relations": {
-      "hypernym": [
-        "comestible.n.01"
-      ]
-    },
-    "root_sources": [
-      "food.n.01"
-    ],
-    "synset_id": "tuck.n.01",
+    "synset_id": "trust_territory.n.01",
     "wordnet_pos": "n"
   },
   {
     "candidate_degree": 6,
     "definition": "primitive marine animal having a saclike unsegmented body and a urochord that is conspicuous in the larva",
     "examples": [],
-    "final_degree": 1,
+    "final_degree": 3,
     "lemma_sense_counts": {
       "tunicate": {
         "same_pos": 1,
@@ -16067,6 +15593,10 @@
     "relations": {
       "hypernym": [
         "chordate.n.01"
+      ],
+      "hyponym": [
+        "appendicularia.n.01",
+        "ascidian.n.01"
       ]
     },
     "root_sources": [
@@ -16181,39 +15711,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "a part lying on the lower side or underneath an animal's body",
-    "examples": [
-      "the warbler has a white throat and underparts",
-      "a woodland mouse with white underparts"
-    ],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "underpart": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "underpart"
-    ],
-    "min_bfs_depth": 1,
-    "pos": "noun",
-    "primary_lemma": "underpart",
-    "relations": {
-      "hyponym": [
-        "belly.n.05"
-      ]
-    },
-    "root_sources": [
-      "animal.n.01",
-      "body_part.n.01",
-      "plant.n.02"
-    ],
-    "synset_id": "underpart.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "retaining a solid form",
     "examples": [
       "undissolved sugar in the bottom of the cup"
@@ -16246,7 +15743,7 @@
     "candidate_degree": 6,
     "definition": "any of a number of mammals with hooves that are superficially similar but not necessarily closely related taxonomically",
     "examples": [],
-    "final_degree": 5,
+    "final_degree": 6,
     "lemma_sense_counts": {
       "ungulate": {
         "same_pos": 1,
@@ -16264,6 +15761,7 @@
         "placental.n.01"
       ],
       "hyponym": [
+        "dinocerate.n.01",
         "even-toed_ungulate.n.01",
         "odd-toed_ungulate.n.01"
       ],
@@ -16284,7 +15782,7 @@
     "examples": [
       "they came like angels out the unknown"
     ],
-    "final_degree": 1,
+    "final_degree": 0,
     "lemma_sense_counts": {
       "unknown": {
         "same_pos": 3,
@@ -16297,11 +15795,7 @@
     "min_bfs_depth": 2,
     "pos": "noun",
     "primary_lemma": "unknown",
-    "relations": {
-      "hypernym": [
-        "region.n.03"
-      ]
-    },
+    "relations": {},
     "root_sources": [
       "location.n.01"
     ],
@@ -16438,34 +15932,6 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "the part of the eye that contains the iris and ciliary body and choroid",
-    "examples": [],
-    "final_degree": 1,
-    "lemma_sense_counts": {
-      "uvea": {
-        "same_pos": 1,
-        "total": 1
-      }
-    },
-    "lemmas": [
-      "uvea"
-    ],
-    "min_bfs_depth": 2,
-    "pos": "noun",
-    "primary_lemma": "uvea",
-    "relations": {
-      "part_holonym": [
-        "eye.n.01"
-      ]
-    },
-    "root_sources": [
-      "body_part.n.01"
-    ],
-    "synset_id": "uvea.n.01",
-    "wordnet_pos": "n"
-  },
-  {
-    "candidate_degree": 1,
     "definition": "a region that is devoid of matter",
     "examples": [],
     "final_degree": 1,
@@ -16559,6 +16025,34 @@
     "wordnet_pos": "n"
   },
   {
+    "candidate_degree": 1,
+    "definition": "a slit in a garment (as in the back seam of a jacket)",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "vent": {
+        "same_pos": 5,
+        "total": 7
+      }
+    },
+    "lemmas": [
+      "vent"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "vent",
+    "relations": {
+      "hypernym": [
+        "slit.n.01"
+      ]
+    },
+    "root_sources": [
+      "artifact.n.01"
+    ],
+    "synset_id": "vent.n.04",
+    "wordnet_pos": "n"
+  },
+  {
     "candidate_degree": 11,
     "definition": "animals having a bony or cartilaginous skeleton with a segmented spinal column and a large brain enclosed in a skull or cranium",
     "examples": [],
@@ -16585,13 +16079,13 @@
         "chordate.n.01"
       ],
       "hyponym": [
+        "amniote.n.01",
         "amphibian.n.03",
         "fetus.n.01",
         "mammal.n.01",
         "tetrapod.n.01"
       ],
       "part_meronym": [
-        "belly.n.05",
         "digit.n.03",
         "thorax.n.02"
       ]
@@ -16635,7 +16129,7 @@
     "candidate_degree": 6,
     "definition": "morally excellent",
     "examples": [],
-    "final_degree": 4,
+    "final_degree": 6,
     "lemma_sense_counts": {
       "virtuous": {
         "same_pos": 2,
@@ -16654,6 +16148,10 @@
         "moral.a.01",
         "pious.a.01",
         "righteous.a.01"
+      ],
+      "similar_to": [
+        "impeccable.s.02",
+        "impeccant.s.01"
       ]
     },
     "root_sources": [
@@ -16661,6 +16159,30 @@
     ],
     "synset_id": "virtuous.a.01",
     "wordnet_pos": "a"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "the domain controlled by a viscount or viscountess",
+    "examples": [],
+    "final_degree": 0,
+    "lemma_sense_counts": {
+      "viscounty": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "viscounty"
+    ],
+    "min_bfs_depth": 3,
+    "pos": "noun",
+    "primary_lemma": "viscounty",
+    "relations": {},
+    "root_sources": [
+      "location.n.01"
+    ],
+    "synset_id": "viscounty.n.02",
+    "wordnet_pos": "n"
   },
   {
     "candidate_degree": 2,
@@ -16694,7 +16216,7 @@
     "candidate_degree": 4,
     "definition": "external parts of the female genitalia",
     "examples": [],
-    "final_degree": 3,
+    "final_degree": 4,
     "lemma_sense_counts": {
       "vulva": {
         "same_pos": 1,
@@ -16709,6 +16231,7 @@
     "primary_lemma": "vulva",
     "relations": {
       "part_meronym": [
+        "clitoris.n.01",
         "labium.n.01",
         "mons.n.01",
         "urethra.n.01"
@@ -16757,7 +16280,7 @@
     "candidate_degree": 7,
     "definition": "weapons considered collectively",
     "examples": [],
-    "final_degree": 6,
+    "final_degree": 5,
     "lemma_sense_counts": {
       "arms": {
         "same_pos": 8,
@@ -16788,8 +16311,7 @@
         "ammunition.n.01",
         "armament.n.01",
         "bomb.n.01",
-        "gunnery.n.01",
-        "hardware.n.01"
+        "gunnery.n.01"
       ]
     },
     "root_sources": [
@@ -16870,6 +16392,67 @@
     ],
     "synset_id": "widen.v.04",
     "wordnet_pos": "v"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "larva of a mosquito",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "wiggler": {
+        "same_pos": 3,
+        "total": 3
+      },
+      "wriggler": {
+        "same_pos": 2,
+        "total": 2
+      }
+    },
+    "lemmas": [
+      "wiggler",
+      "wriggler"
+    ],
+    "min_bfs_depth": 2,
+    "pos": "noun",
+    "primary_lemma": "wiggler",
+    "relations": {
+      "hypernym": [
+        "larva.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "wiggler.n.02",
+    "wordnet_pos": "n"
+  },
+  {
+    "candidate_degree": 1,
+    "definition": "wormlike larva of various elaterid beetles; feeds on roots of many crop plants",
+    "examples": [],
+    "final_degree": 1,
+    "lemma_sense_counts": {
+      "wireworm": {
+        "same_pos": 1,
+        "total": 1
+      }
+    },
+    "lemmas": [
+      "wireworm"
+    ],
+    "min_bfs_depth": 2,
+    "pos": "noun",
+    "primary_lemma": "wireworm",
+    "relations": {
+      "hypernym": [
+        "larva.n.01"
+      ]
+    },
+    "root_sources": [
+      "animal.n.01"
+    ],
+    "synset_id": "wireworm.n.01",
+    "wordnet_pos": "n"
   },
   {
     "candidate_degree": 3,
@@ -16975,40 +16558,30 @@
   },
   {
     "candidate_degree": 1,
-    "definition": "a custard-like food made from curdled milk",
+    "definition": "band consisting of a part of a sleeve that covers the wrist",
     "examples": [],
     "final_degree": 1,
     "lemma_sense_counts": {
-      "yoghourt": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "yoghurt": {
-        "same_pos": 1,
-        "total": 1
-      },
-      "yogurt": {
-        "same_pos": 1,
-        "total": 1
+      "wristband": {
+        "same_pos": 2,
+        "total": 2
       }
     },
     "lemmas": [
-      "yogurt",
-      "yoghurt",
-      "yoghourt"
+      "wristband"
     ],
-    "min_bfs_depth": 2,
+    "min_bfs_depth": 3,
     "pos": "noun",
-    "primary_lemma": "yogurt",
+    "primary_lemma": "wristband",
     "relations": {
-      "hypernym": [
-        "food.n.02"
+      "part_holonym": [
+        "sleeve.n.01"
       ]
     },
     "root_sources": [
-      "food.n.01"
+      "artifact.n.01"
     ],
-    "synset_id": "yogurt.n.01",
+    "synset_id": "wristband.n.01",
     "wordnet_pos": "n"
   },
   {
