@@ -4,7 +4,7 @@
     "after_polysemy_filter": 7349,
     "after_surface_filter": 10165,
     "candidate_edge_count": 8312,
-    "final_edge_count": 1045,
+    "final_edge_count": 979,
     "final_synset_count": 512,
     "initial_candidates": 13967,
     "largest_component_edge_count": 1660,
@@ -52,6 +52,7 @@
       "substance_meronym",
       "verb_group"
     ],
+    "enforce_unique_lemmas": true,
     "graph_filter": {
       "component_mode": "per-root",
       "max_degree": 16,
@@ -126,7 +127,7 @@
     "distribution": {
       "dominant_root": {
         "count": 80,
-        "root": "body_part.n.01",
+        "root": "food.n.01",
         "share": 0.1562
       },
       "pos_counts": {
@@ -136,7 +137,7 @@
       },
       "root_counts": {
         "animal.n.01": 80,
-        "artifact.n.01": 79,
+        "artifact.n.01": 78,
         "bad.a.01": 19,
         "body_part.n.01": 80,
         "change.v.01": 9,
@@ -144,31 +145,35 @@
         "communicate.v.02": 9,
         "consume.v.02": 9,
         "food.n.01": 80,
-        "good.a.01": 19,
-        "location.n.01": 79,
+        "good.a.01": 20,
+        "location.n.01": 80,
         "make.v.03": 8,
         "move.v.02": 9,
         "new.a.01": 9,
-        "old.a.01": 11,
+        "old.a.01": 10,
         "plant.n.02": 2,
         "touch.v.01": 8
       }
     },
-    "final_average_degree": 2.0508,
-    "final_isolated_synset_count": 0,
+    "final_average_degree": 1.9219,
+    "final_isolated_synset_count": 21,
     "final_relation_counts": {
       "also_see": 46,
       "entailment": 3,
-      "hypernym": 319,
-      "hyponym": 319,
-      "member_holonym": 8,
-      "member_meronym": 8,
-      "part_holonym": 115,
-      "part_meronym": 115,
+      "hypernym": 317,
+      "hyponym": 317,
+      "member_holonym": 10,
+      "member_meronym": 10,
+      "part_holonym": 89,
+      "part_meronym": 89,
       "similar_to": 70,
-      "substance_holonym": 19,
-      "substance_meronym": 19,
-      "verb_group": 4
+      "substance_holonym": 14,
+      "substance_meronym": 14
+    },
+    "lemma_uniqueness": {
+      "duplicate_lemma_count": 0,
+      "duplicate_lemmas": {},
+      "lemma_count": 762
     },
     "warnings": []
   }

@@ -10,6 +10,11 @@
     "target": "blind"
   },
   {
+    "relation": "RelatedTo",
+    "source": "ab",
+    "target": "muscle"
+  },
+  {
     "relation": "Synonym",
     "source": "ab",
     "target": "abdominal"
@@ -33,11 +38,6 @@
     "relation": "RelatedTo",
     "source": "abdomen",
     "target": "diaphragm"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "abdomen",
-    "target": "posterior"
   },
   {
     "relation": "RelatedTo",
@@ -68,21 +68,6 @@
     "relation": "RelatedTo",
     "source": "acinus",
     "target": "gland"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "adept",
-    "target": "proficient"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "adept",
-    "target": "skilled"
-  },
-  {
-    "relation": "Synonym",
-    "source": "adept",
-    "target": "proficient"
   },
   {
     "relation": "IsA",
@@ -187,11 +172,6 @@
   {
     "relation": "RelatedTo",
     "source": "ambrosia",
-    "target": "coconut"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ambrosia",
     "target": "food"
   },
   {
@@ -231,6 +211,26 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "amniote",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "amniote",
+    "target": "embryo"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "amniote",
+    "target": "mammal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "amniote",
+    "target": "vertebrate"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "amphibia",
     "target": "amphibian"
   },
@@ -257,17 +257,32 @@
   {
     "relation": "RelatedTo",
     "source": "antiperspirant",
-    "target": "armpit"
+    "target": "deodorant"
   },
   {
-    "relation": "RelatedTo",
-    "source": "antiperspirant",
-    "target": "deodorant"
+    "relation": "IsA",
+    "source": "antipodes",
+    "target": "region"
+  },
+  {
+    "relation": "PartOf",
+    "source": "antler",
+    "target": "moose"
   },
   {
     "relation": "RelatedTo",
     "source": "antler",
     "target": "deer"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "antler",
+    "target": "elk"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "antler",
+    "target": "moose"
   },
   {
     "relation": "Synonym",
@@ -285,16 +300,6 @@
     "target": "perform"
   },
   {
-    "relation": "IsA",
-    "source": "appendage",
-    "target": "part"
-  },
-  {
-    "relation": "Synonym",
-    "source": "appendage",
-    "target": "extremity"
-  },
-  {
     "relation": "RelatedTo",
     "source": "applaudable",
     "target": "commendable"
@@ -308,11 +313,6 @@
     "relation": "Synonym",
     "source": "applaudable",
     "target": "praiseworthy"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "appurtenance",
-    "target": "appendage"
   },
   {
     "relation": "RelatedTo",
@@ -340,11 +340,6 @@
     "target": "human"
   },
   {
-    "relation": "IsA",
-    "source": "arm",
-    "target": "appendage"
-  },
-  {
     "relation": "PartOf",
     "source": "arm",
     "target": "body"
@@ -353,11 +348,6 @@
     "relation": "PartOf",
     "source": "arm",
     "target": "homo"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "arm",
-    "target": "appendage"
   },
   {
     "relation": "RelatedTo",
@@ -412,17 +402,7 @@
   {
     "relation": "RelatedTo",
     "source": "armhole",
-    "target": "armpit"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "armhole",
     "target": "human"
-  },
-  {
-    "relation": "Synonym",
-    "source": "armpit",
-    "target": "axilla"
   },
   {
     "relation": "FormOf",
@@ -446,28 +426,18 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "arras",
-    "target": "tapestry"
-  },
-  {
-    "relation": "Synonym",
-    "source": "arras",
-    "target": "tapestry"
+    "source": "armyworm",
+    "target": "larva"
   },
   {
     "relation": "RelatedTo",
-    "source": "arse",
-    "target": "buttocks"
+    "source": "arras",
+    "target": "tapestry"
   },
   {
     "relation": "Synonym",
-    "source": "arse",
-    "target": "ass"
-  },
-  {
-    "relation": "Synonym",
-    "source": "arse",
-    "target": "buttocks"
+    "source": "arras",
+    "target": "tapestry"
   },
   {
     "relation": "RelatedTo",
@@ -500,6 +470,31 @@
     "target": "ungulate"
   },
   {
+    "relation": "FormOf",
+    "source": "arytaenoid",
+    "target": "arytenoid"
+  },
+  {
+    "relation": "Synonym",
+    "source": "arytaenoid",
+    "target": "arytenoid"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "arytenoid",
+    "target": "cartilage"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "arytenoid",
+    "target": "gland"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "arytenoid",
+    "target": "muscle"
+  },
+  {
     "relation": "MannerOf",
     "source": "aspirate",
     "target": "inhale"
@@ -508,51 +503,6 @@
     "relation": "RelatedTo",
     "source": "aspirate",
     "target": "inhale"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ass",
-    "target": "body"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ass",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "ass",
-    "target": "arse"
-  },
-  {
-    "relation": "Synonym",
-    "source": "ass",
-    "target": "bum"
-  },
-  {
-    "relation": "Synonym",
-    "source": "ass",
-    "target": "butt"
-  },
-  {
-    "relation": "Synonym",
-    "source": "ass",
-    "target": "buttock"
-  },
-  {
-    "relation": "Synonym",
-    "source": "ass",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "ass",
-    "target": "derriere"
-  },
-  {
-    "relation": "Synonym",
-    "source": "ass",
-    "target": "rump"
   },
   {
     "relation": "Synonym",
@@ -615,59 +565,39 @@
     "target": "snow"
   },
   {
-    "relation": "RelatedTo",
-    "source": "axilla",
-    "target": "arm"
+    "relation": "IsA",
+    "source": "backwater",
+    "target": "region"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "bacteria",
+    "target": "finger"
+  },
+  {
+    "relation": "FormOf",
+    "source": "bacteria",
+    "target": "bacterium"
   },
   {
     "relation": "RelatedTo",
-    "source": "axilla",
-    "target": "armpit"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "axilla",
-    "target": "shoulder"
+    "source": "bacteria",
+    "target": "bacterium"
   },
   {
     "relation": "Synonym",
-    "source": "axilla",
-    "target": "armpit"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "backside",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "backside",
-    "target": "part"
-  },
-  {
-    "relation": "Synonym",
-    "source": "backside",
-    "target": "bottom"
-  },
-  {
-    "relation": "Synonym",
-    "source": "backside",
-    "target": "butt"
-  },
-  {
-    "relation": "Synonym",
-    "source": "backside",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "backside",
-    "target": "rear"
+    "source": "bacterium",
+    "target": "bacteria"
   },
   {
     "relation": "Synonym",
     "source": "balky",
     "target": "balking"
+  },
+  {
+    "relation": "IsA",
+    "source": "banquet",
+    "target": "dinner"
   },
   {
     "relation": "RelatedTo",
@@ -707,11 +637,6 @@
   {
     "relation": "RelatedTo",
     "source": "barony",
-    "target": "domain"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "barony",
     "target": "empire"
   },
   {
@@ -725,9 +650,44 @@
     "target": "part"
   },
   {
+    "relation": "RelatedTo",
+    "source": "bat",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bat",
+    "target": "blind"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bat",
+    "target": "brick"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bat",
+    "target": "mammal"
+  },
+  {
     "relation": "DerivedFrom",
-    "source": "baroreceptor",
-    "target": "receptor"
+    "source": "batter",
+    "target": "bat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "batter",
+    "target": "clay"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "batter",
+    "target": "flour"
+  },
+  {
+    "relation": "Synonym",
+    "source": "batter",
+    "target": "buffet"
   },
   {
     "relation": "IsA",
@@ -742,52 +702,17 @@
   {
     "relation": "RelatedTo",
     "source": "beef",
-    "target": "ingredient"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "beef",
     "target": "meat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "beef",
-    "target": "produce"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "behind",
-    "target": "bottom"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "behind",
-    "target": "butt"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "behind",
-    "target": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "behind",
-    "target": "rear"
-  },
-  {
-    "relation": "Synonym",
-    "source": "behind",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "behind",
-    "target": "posterior"
   },
   {
     "relation": "IsA",
     "source": "belly",
     "target": "inside"
+  },
+  {
+    "relation": "PartOf",
+    "source": "belly",
+    "target": "vertebrate"
   },
   {
     "relation": "RelatedTo",
@@ -808,6 +733,11 @@
     "relation": "DerivedFrom",
     "source": "bellybutton",
     "target": "belly"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "bellybutton",
+    "target": "button"
   },
   {
     "relation": "RelatedTo",
@@ -840,6 +770,56 @@
     "target": "location"
   },
   {
+    "relation": "CapableOf",
+    "source": "bird",
+    "target": "pet"
+  },
+  {
+    "relation": "IsA",
+    "source": "bird",
+    "target": "amniote"
+  },
+  {
+    "relation": "IsA",
+    "source": "bird",
+    "target": "vertebrate"
+  },
+  {
+    "relation": "PartOf",
+    "source": "bird",
+    "target": "flock"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird",
+    "target": "egg"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird",
+    "target": "fowl"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird",
+    "target": "mammal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird",
+    "target": "man"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bird",
+    "target": "satellite"
+  },
+  {
+    "relation": "Synonym",
+    "source": "bird",
+    "target": "fowl"
+  },
+  {
     "relation": "AtLocation",
     "source": "bladder",
     "target": "body"
@@ -853,6 +833,46 @@
     "relation": "Synonym",
     "source": "bladder",
     "target": "vesica"
+  },
+  {
+    "relation": "FormOf",
+    "source": "blastocele",
+    "target": "blastocoele"
+  },
+  {
+    "relation": "Synonym",
+    "source": "blastocele",
+    "target": "blastocoel"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "blastocoel",
+    "target": "blastula"
+  },
+  {
+    "relation": "FormOf",
+    "source": "blastocoele",
+    "target": "blastocoel"
+  },
+  {
+    "relation": "Synonym",
+    "source": "blastocoele",
+    "target": "blastocoel"
+  },
+  {
+    "relation": "IsA",
+    "source": "blastocyst",
+    "target": "embryo"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "blastocyst",
+    "target": "blastula"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "blastocyst",
+    "target": "mammalian"
   },
   {
     "relation": "RelatedTo",
@@ -888,11 +908,6 @@
     "relation": "RelatedTo",
     "source": "blind",
     "target": "curtain"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "body",
-    "target": "appendage"
   },
   {
     "relation": "RelatedTo",
@@ -940,14 +955,14 @@
     "target": "beef"
   },
   {
+    "relation": "RelatedTo",
+    "source": "bollworm",
+    "target": "larva"
+  },
+  {
     "relation": "Synonym",
     "source": "bolshy",
     "target": "stroppy"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bomb",
-    "target": "breast"
   },
   {
     "relation": "AtLocation",
@@ -1040,46 +1055,6 @@
     "target": "mammal"
   },
   {
-    "relation": "Synonym",
-    "source": "bot",
-    "target": "bum"
-  },
-  {
-    "relation": "IsA",
-    "source": "bottom",
-    "target": "region"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bottom",
-    "target": "bum"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bottom",
-    "target": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bottom",
-    "target": "fall"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bottom",
-    "target": "part"
-  },
-  {
-    "relation": "Synonym",
-    "source": "bottom",
-    "target": "arse"
-  },
-  {
-    "relation": "Synonym",
-    "source": "bottom",
-    "target": "buttocks"
-  },
-  {
     "relation": "RelatedTo",
     "source": "bound",
     "target": "border"
@@ -1152,6 +1127,11 @@
   {
     "relation": "RelatedTo",
     "source": "bovid",
+    "target": "goat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bovid",
     "target": "sheep"
   },
   {
@@ -1172,6 +1152,11 @@
   {
     "relation": "AtLocation",
     "source": "bread",
+    "target": "dinner"
+  },
+  {
+    "relation": "AtLocation",
+    "source": "bread",
     "target": "sandwich"
   },
   {
@@ -1183,11 +1168,6 @@
     "relation": "MadeOf",
     "source": "bread",
     "target": "dough"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bread",
-    "target": "butter"
   },
   {
     "relation": "RelatedTo",
@@ -1208,11 +1188,6 @@
     "relation": "RelatedTo",
     "source": "bread",
     "target": "food"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bread",
-    "target": "good"
   },
   {
     "relation": "RelatedTo",
@@ -1238,6 +1213,11 @@
     "relation": "UsedFor",
     "source": "bread",
     "target": "nutrition"
+  },
+  {
+    "relation": "IsA",
+    "source": "breadbasket",
+    "target": "region"
   },
   {
     "relation": "RelatedTo",
@@ -1285,34 +1265,29 @@
     "target": "bread"
   },
   {
-    "relation": "PartOf",
-    "source": "breast",
-    "target": "torso"
+    "relation": "RelatedTo",
+    "source": "breakfast",
+    "target": "brunch"
   },
   {
     "relation": "RelatedTo",
-    "source": "breast",
-    "target": "chest"
+    "source": "breakfast",
+    "target": "egg"
   },
   {
     "relation": "RelatedTo",
-    "source": "breast",
-    "target": "thorax"
+    "source": "breakfast",
+    "target": "meal"
   },
   {
-    "relation": "Synonym",
-    "source": "breast",
-    "target": "bust"
+    "relation": "RelatedTo",
+    "source": "breakfast",
+    "target": "sausage"
   },
   {
-    "relation": "Synonym",
-    "source": "breast",
-    "target": "chest"
-  },
-  {
-    "relation": "DerivedFrom",
+    "relation": "RelatedTo",
     "source": "breastbone",
-    "target": "breast"
+    "target": "collarbone"
   },
   {
     "relation": "Synonym",
@@ -1386,48 +1361,53 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "brocket",
+    "target": "deer"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "bronchiole",
+    "target": "cartilage"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "brunch",
+    "target": "breakfast"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "brunch",
+    "target": "breakfast"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "brunch",
+    "target": "meal"
+  },
+  {
+    "relation": "IsA",
+    "source": "buffet",
+    "target": "furniture"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "buffet",
+    "target": "breakfast"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "buffet",
+    "target": "food"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "bullheaded",
     "target": "stubborn"
   },
   {
     "relation": "RelatedTo",
-    "source": "bum",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bum",
-    "target": "man"
-  },
-  {
-    "relation": "Synonym",
-    "source": "bum",
-    "target": "arse"
-  },
-  {
-    "relation": "Synonym",
-    "source": "bum",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buns",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "buns",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "bust",
     "target": "bomb"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "bust",
-    "target": "breast"
   },
   {
     "relation": "RelatedTo",
@@ -1446,133 +1426,18 @@
   },
   {
     "relation": "IsA",
-    "source": "butt",
-    "target": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butt",
-    "target": "bound"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butt",
-    "target": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butt",
-    "target": "thick"
-  },
-  {
-    "relation": "Synonym",
-    "source": "butt",
-    "target": "arse"
-  },
-  {
-    "relation": "Synonym",
-    "source": "butt",
-    "target": "ass"
-  },
-  {
-    "relation": "Synonym",
-    "source": "butt",
-    "target": "backside"
-  },
-  {
-    "relation": "Synonym",
-    "source": "butt",
-    "target": "behind"
-  },
-  {
-    "relation": "Synonym",
-    "source": "butt",
-    "target": "border"
-  },
-  {
-    "relation": "Synonym",
-    "source": "butt",
-    "target": "bottom"
-  },
-  {
-    "relation": "Synonym",
-    "source": "butt",
-    "target": "buttocks"
-  },
-  {
-    "relation": "DerivedFrom",
-    "source": "butter",
-    "target": "butt"
-  },
-  {
-    "relation": "HasProperty",
-    "source": "butter",
-    "target": "edible"
+    "source": "buttermilk",
+    "target": "beverage"
   },
   {
     "relation": "IsA",
-    "source": "butter",
-    "target": "fat"
-  },
-  {
-    "relation": "IsA",
-    "source": "butter",
+    "source": "buttermilk",
     "target": "mixture"
   },
   {
-    "relation": "IsA",
-    "source": "butter",
-    "target": "spread"
-  },
-  {
-    "relation": "MadeOf",
-    "source": "butter",
+    "relation": "RelatedTo",
+    "source": "buttermilk",
     "target": "milk"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butter",
-    "target": "bread"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butter",
-    "target": "butt"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butter",
-    "target": "cream"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butter",
-    "target": "increase"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butter",
-    "target": "milk"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "butter",
-    "target": "spread"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttock",
-    "target": "behind"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttock",
-    "target": "posterior"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "buttock",
-    "target": "stern"
   },
   {
     "relation": "Synonym",
@@ -1580,14 +1445,34 @@
     "target": "cheek"
   },
   {
-    "relation": "FormOf",
-    "source": "buttocks",
-    "target": "buttock"
+    "relation": "RelatedTo",
+    "source": "button",
+    "target": "buttonhole"
   },
   {
     "relation": "RelatedTo",
-    "source": "buttocks",
-    "target": "buttock"
+    "source": "button",
+    "target": "clitoris"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "button",
+    "target": "neck"
+  },
+  {
+    "relation": "Synonym",
+    "source": "button",
+    "target": "clitoris"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "buttonhole",
+    "target": "button"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "buttonhole",
+    "target": "button"
   },
   {
     "relation": "FormOf",
@@ -1608,36 +1493,6 @@
     "relation": "RelatedTo",
     "source": "caffeine",
     "target": "tea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "can",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "can",
-    "target": "drink"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "can",
-    "target": "food"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "can",
-    "target": "inside"
-  },
-  {
-    "relation": "Synonym",
-    "source": "can",
-    "target": "buttocks"
-  },
-  {
-    "relation": "UsedFor",
-    "source": "can",
-    "target": "food"
   },
   {
     "relation": "IsA",
@@ -1661,6 +1516,46 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "canaliculus",
+    "target": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "canaliculus",
+    "target": "canal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "canaliculus",
+    "target": "duct"
+  },
+  {
+    "relation": "IsA",
+    "source": "cappuccino",
+    "target": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cappuccino",
+    "target": "beverage"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cappuccino",
+    "target": "coffee"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cappuccino",
+    "target": "espresso"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "carbonado",
+    "target": "meat"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "caress",
     "target": "fondle"
   },
@@ -1668,6 +1563,26 @@
     "relation": "SimilarTo",
     "source": "caress",
     "target": "chuck"
+  },
+  {
+    "relation": "IsA",
+    "source": "caribou",
+    "target": "mammal"
+  },
+  {
+    "relation": "IsA",
+    "source": "caribou",
+    "target": "reindeer"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "caribou",
+    "target": "reindeer"
+  },
+  {
+    "relation": "Synonym",
+    "source": "caribou",
+    "target": "reindeer"
   },
   {
     "relation": "RelatedTo",
@@ -1761,16 +1676,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "cervix",
-    "target": "neck"
-  },
-  {
-    "relation": "Synonym",
-    "source": "cervix",
-    "target": "neck"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "chalaza",
     "target": "yolk"
   },
@@ -1791,6 +1696,16 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "chaste",
+    "target": "innocent"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "chaste",
+    "target": "moral"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "cheek",
     "target": "buttock"
   },
@@ -1803,36 +1718,6 @@
     "relation": "Synonym",
     "source": "cheek",
     "target": "buttock"
-  },
-  {
-    "relation": "IsA",
-    "source": "cheese",
-    "target": "mixture"
-  },
-  {
-    "relation": "MadeOf",
-    "source": "cheese",
-    "target": "milk"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "cheese",
-    "target": "butter"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "cheese",
-    "target": "cream"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "cheese",
-    "target": "milk"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "cheese",
-    "target": "yogurt"
   },
   {
     "relation": "RelatedTo",
@@ -1855,11 +1740,6 @@
     "target": "claw"
   },
   {
-    "relation": "DerivedFrom",
-    "source": "chemoreceptor",
-    "target": "receptor"
-  },
-  {
     "relation": "AtLocation",
     "source": "chest",
     "target": "body"
@@ -1877,11 +1757,6 @@
   {
     "relation": "Synonym",
     "source": "chest",
-    "target": "breast"
-  },
-  {
-    "relation": "Synonym",
-    "source": "chest",
     "target": "thorax"
   },
   {
@@ -1890,9 +1765,19 @@
     "target": "trunk"
   },
   {
-    "relation": "HasProperty",
+    "relation": "RelatedTo",
+    "source": "chiropteran",
+    "target": "mammal"
+  },
+  {
+    "relation": "Synonym",
+    "source": "chiropteran",
+    "target": "bat"
+  },
+  {
+    "relation": "IsA",
     "source": "chocolate",
-    "target": "good"
+    "target": "food"
   },
   {
     "relation": "RelatedTo",
@@ -1915,11 +1800,6 @@
     "target": "vertebrate"
   },
   {
-    "relation": "RelatedTo",
-    "source": "chow",
-    "target": "district"
-  },
-  {
     "relation": "MannerOf",
     "source": "chuck",
     "target": "caress"
@@ -1938,11 +1818,6 @@
     "relation": "RelatedTo",
     "source": "chuck",
     "target": "shoulder"
-  },
-  {
-    "relation": "Synonym",
-    "source": "chuck",
-    "target": "chow"
   },
   {
     "relation": "RelatedTo",
@@ -1965,14 +1840,44 @@
     "target": "beverage"
   },
   {
-    "relation": "PartOf",
-    "source": "claw",
-    "target": "paw"
+    "relation": "RelatedTo",
+    "source": "clavicle",
+    "target": "breastbone"
   },
   {
     "relation": "RelatedTo",
+    "source": "clavicle",
+    "target": "chest"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "clavicle",
+    "target": "collarbone"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "clavicle",
+    "target": "neck"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "clavicle",
+    "target": "shoulder"
+  },
+  {
+    "relation": "Synonym",
+    "source": "clavicle",
+    "target": "collarbone"
+  },
+  {
+    "relation": "IsA",
     "source": "claw",
-    "target": "appendage"
+    "target": "extremity"
+  },
+  {
+    "relation": "PartOf",
+    "source": "claw",
+    "target": "paw"
   },
   {
     "relation": "RelatedTo",
@@ -2005,6 +1910,36 @@
     "target": "brick"
   },
   {
+    "relation": "DerivedFrom",
+    "source": "clit",
+    "target": "clitoris"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "clit",
+    "target": "clitoris"
+  },
+  {
+    "relation": "Synonym",
+    "source": "clit",
+    "target": "clitoris"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "clitoris",
+    "target": "vulva"
+  },
+  {
+    "relation": "Synonym",
+    "source": "clitoris",
+    "target": "button"
+  },
+  {
+    "relation": "Synonym",
+    "source": "clitoris",
+    "target": "clit"
+  },
+  {
     "relation": "RelatedTo",
     "source": "cocoa",
     "target": "chocolate"
@@ -2013,26 +1948,6 @@
     "relation": "Synonym",
     "source": "cocoa",
     "target": "chocolate"
-  },
-  {
-    "relation": "Synonym",
-    "source": "cocoanut",
-    "target": "coconut"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "coconut",
-    "target": "breast"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "coconut",
-    "target": "edible"
-  },
-  {
-    "relation": "AtLocation",
-    "source": "coffee",
-    "target": "can"
   },
   {
     "relation": "HasA",
@@ -2057,7 +1972,32 @@
   {
     "relation": "RelatedTo",
     "source": "coffee",
+    "target": "cappuccino"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee",
+    "target": "decaf"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee",
+    "target": "demitasse"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee",
+    "target": "espresso"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee",
     "target": "java"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "coffee",
+    "target": "serving"
   },
   {
     "relation": "Synonym",
@@ -2071,6 +2011,21 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "collarbone",
+    "target": "breastbone"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "collarbone",
+    "target": "shoulder"
+  },
+  {
+    "relation": "Synonym",
+    "source": "collarbone",
+    "target": "clavicle"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "collude",
     "target": "conspire"
   },
@@ -2078,36 +2033,6 @@
     "relation": "Synonym",
     "source": "collude",
     "target": "conspire"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "comestible",
-    "target": "edible"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "comestible",
-    "target": "food"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "comestible",
-    "target": "beverage"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "comestible",
-    "target": "drinkable"
-  },
-  {
-    "relation": "Synonym",
-    "source": "comestible",
-    "target": "eatable"
-  },
-  {
-    "relation": "Synonym",
-    "source": "comestible",
-    "target": "edible"
   },
   {
     "relation": "RelatedTo",
@@ -2126,16 +2051,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "commissariat",
-    "target": "food"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "commissariat",
-    "target": "provisions"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "competent",
     "target": "jurisdiction"
   },
@@ -2143,11 +2058,6 @@
     "relation": "SimilarTo",
     "source": "complete",
     "target": "accomplished"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "complete",
-    "target": "good"
   },
   {
     "relation": "Synonym",
@@ -2300,11 +2210,6 @@
     "target": "crustacean"
   },
   {
-    "relation": "RelatedTo",
-    "source": "copra",
-    "target": "coconut"
-  },
-  {
     "relation": "AtLocation",
     "source": "country",
     "target": "region"
@@ -2360,6 +2265,11 @@
     "target": "state"
   },
   {
+    "relation": "HasProperty",
+    "source": "cows",
+    "target": "innocent"
+  },
+  {
     "relation": "RelatedTo",
     "source": "cows",
     "target": "cattle"
@@ -2395,6 +2305,11 @@
     "target": "ointment"
   },
   {
+    "relation": "Synonym",
+    "source": "cream",
+    "target": "bat"
+  },
+  {
     "relation": "RelatedTo",
     "source": "creditable",
     "target": "respectable"
@@ -2418,11 +2333,6 @@
     "relation": "Synonym",
     "source": "croup",
     "target": "hindquarters"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "croupe",
-    "target": "buttocks"
   },
   {
     "relation": "Synonym",
@@ -2460,6 +2370,21 @@
     "target": "solid"
   },
   {
+    "relation": "RelatedTo",
+    "source": "cuppa",
+    "target": "tea"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "cupper",
+    "target": "coffee"
+  },
+  {
+    "relation": "Synonym",
+    "source": "cupper",
+    "target": "cuppa"
+  },
+  {
     "relation": "Synonym",
     "source": "current",
     "target": "topical"
@@ -2478,11 +2403,6 @@
     "relation": "Synonym",
     "source": "curtain",
     "target": "arras"
-  },
-  {
-    "relation": "Synonym",
-    "source": "curtain",
-    "target": "drop"
   },
   {
     "relation": "UsedFor",
@@ -2508,26 +2428,6 @@
     "relation": "Synonym",
     "source": "dactyl",
     "target": "digit"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dag",
-    "target": "antler"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dag",
-    "target": "deer"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dag",
-    "target": "garment"
-  },
-  {
-    "relation": "Synonym",
-    "source": "dag",
-    "target": "jag"
   },
   {
     "relation": "RelatedTo",
@@ -2570,6 +2470,16 @@
     "target": "perform"
   },
   {
+    "relation": "RelatedTo",
+    "source": "decaf",
+    "target": "coffee"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "decaf",
+    "target": "tea"
+  },
+  {
     "relation": "IsA",
     "source": "deer",
     "target": "mammal"
@@ -2578,6 +2488,11 @@
     "relation": "RelatedTo",
     "source": "deer",
     "target": "antler"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "deer",
+    "target": "elk"
   },
   {
     "relation": "RelatedTo",
@@ -2593,6 +2508,11 @@
     "relation": "RelatedTo",
     "source": "deer",
     "target": "meat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "deer",
+    "target": "moose"
   },
   {
     "relation": "SimilarTo",
@@ -2616,18 +2536,8 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "demesne",
-    "target": "domain"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "demesne",
-    "target": "land"
-  },
-  {
-    "relation": "Synonym",
-    "source": "demesne",
-    "target": "domain"
+    "source": "demitasse",
+    "target": "coffee"
   },
   {
     "relation": "RelatedTo",
@@ -2638,21 +2548,6 @@
     "relation": "Synonym",
     "source": "deodourant",
     "target": "deodorant"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "derriere",
-    "target": "bottom"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "derriere",
-    "target": "bum"
-  },
-  {
-    "relation": "Synonym",
-    "source": "derriere",
-    "target": "buttocks"
   },
   {
     "relation": "Synonym",
@@ -2682,12 +2577,12 @@
   {
     "relation": "RelatedTo",
     "source": "diaphragm",
-    "target": "cervix"
+    "target": "mammal"
   },
   {
     "relation": "RelatedTo",
     "source": "diaphragm",
-    "target": "mammal"
+    "target": "muscle"
   },
   {
     "relation": "RelatedTo",
@@ -2727,11 +2622,6 @@
   {
     "relation": "RelatedTo",
     "source": "dicky",
-    "target": "seat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dicky",
     "target": "shirt"
   },
   {
@@ -2760,6 +2650,11 @@
     "target": "diet"
   },
   {
+    "relation": "IsA",
+    "source": "digit",
+    "target": "extremity"
+  },
+  {
     "relation": "RelatedTo",
     "source": "digit",
     "target": "extremity"
@@ -2785,9 +2680,24 @@
     "target": "finger"
   },
   {
+    "relation": "RelatedTo",
+    "source": "dinner",
+    "target": "meal"
+  },
+  {
+    "relation": "Synonym",
+    "source": "dinner",
+    "target": "banquet"
+  },
+  {
     "relation": "Synonym",
     "source": "disobedient",
     "target": "insubordinate"
+  },
+  {
+    "relation": "IsA",
+    "source": "district",
+    "target": "region"
   },
   {
     "relation": "IsA",
@@ -2830,6 +2740,11 @@
     "target": "plunge"
   },
   {
+    "relation": "RelatedTo",
+    "source": "dive",
+    "target": "swoop"
+  },
+  {
     "relation": "SimilarTo",
     "source": "dive",
     "target": "plunge"
@@ -2848,16 +2763,6 @@
     "relation": "Synonym",
     "source": "dogged",
     "target": "pertinacious"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "domain",
-    "target": "protein"
-  },
-  {
-    "relation": "Synonym",
-    "source": "domain",
-    "target": "demesne"
   },
   {
     "relation": "IsA",
@@ -2897,11 +2802,6 @@
   {
     "relation": "RelatedTo",
     "source": "dough",
-    "target": "butter"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dough",
     "target": "egg"
   },
   {
@@ -2913,11 +2813,6 @@
     "relation": "RelatedTo",
     "source": "dour",
     "target": "obstinate"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dour",
-    "target": "stern"
   },
   {
     "relation": "RelatedTo",
@@ -2937,17 +2832,17 @@
   {
     "relation": "Synonym",
     "source": "dour",
-    "target": "stern"
-  },
-  {
-    "relation": "Synonym",
-    "source": "dour",
     "target": "stubborn"
   },
   {
     "relation": "Synonym",
     "source": "dour",
     "target": "unyielding"
+  },
+  {
+    "relation": "Entails",
+    "source": "drape",
+    "target": "fold"
   },
   {
     "relation": "RelatedTo",
@@ -2975,29 +2870,14 @@
     "target": "drape"
   },
   {
+    "relation": "RelatedTo",
+    "source": "drapery",
+    "target": "fold"
+  },
+  {
     "relation": "Synonym",
     "source": "drapery",
     "target": "curtain"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble",
-    "target": "drip"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble",
-    "target": "drop"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "dribble",
-    "target": "fall"
-  },
-  {
-    "relation": "Synonym",
-    "source": "dribble",
-    "target": "drip"
   },
   {
     "relation": "Antonym",
@@ -3005,9 +2885,9 @@
     "target": "food"
   },
   {
-    "relation": "AtLocation",
+    "relation": "IsA",
     "source": "drink",
-    "target": "can"
+    "target": "helping"
   },
   {
     "relation": "PartOf",
@@ -3050,11 +2930,6 @@
     "target": "drink"
   },
   {
-    "relation": "SimilarTo",
-    "source": "drinkable",
-    "target": "edible"
-  },
-  {
     "relation": "Synonym",
     "source": "drinkable",
     "target": "beverage"
@@ -3068,81 +2943,6 @@
     "relation": "MannerOf",
     "source": "drip",
     "target": "descend"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drip",
-    "target": "drop"
-  },
-  {
-    "relation": "Synonym",
-    "source": "drip",
-    "target": "dribble"
-  },
-  {
-    "relation": "Synonym",
-    "source": "drip",
-    "target": "drop"
-  },
-  {
-    "relation": "MannerOf",
-    "source": "drop",
-    "target": "descend"
-  },
-  {
-    "relation": "MannerOf",
-    "source": "drop",
-    "target": "drug"
-  },
-  {
-    "relation": "MannerOf",
-    "source": "drop",
-    "target": "fall"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drop",
-    "target": "bust"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drop",
-    "target": "chest"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drop",
-    "target": "curtain"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drop",
-    "target": "drip"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drop",
-    "target": "fall"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drop",
-    "target": "hip"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drop",
-    "target": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "drop",
-    "target": "waist"
-  },
-  {
-    "relation": "Synonym",
-    "source": "drop",
-    "target": "dribble"
   },
   {
     "relation": "RelatedTo",
@@ -3176,6 +2976,16 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "ductule",
+    "target": "duct"
+  },
+  {
+    "relation": "Synonym",
+    "source": "ductulus",
+    "target": "ductule"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "dukedom",
     "target": "duchy"
   },
@@ -3183,31 +2993,6 @@
     "relation": "Synonym",
     "source": "dukedom",
     "target": "duchy"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear",
-    "target": "appendage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear",
-    "target": "body"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear",
-    "target": "cochlea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear",
-    "target": "nose"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ear",
-    "target": "part"
   },
   {
     "relation": "RelatedTo",
@@ -3230,69 +3015,19 @@
     "target": "state"
   },
   {
-    "relation": "RelatedTo",
-    "source": "eatable",
-    "target": "edible"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eatable",
-    "target": "food"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "eatable",
-    "target": "drinkable"
-  },
-  {
-    "relation": "Synonym",
-    "source": "eatable",
-    "target": "comestible"
-  },
-  {
-    "relation": "Synonym",
-    "source": "eatable",
-    "target": "edible"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eats",
-    "target": "food"
-  },
-  {
-    "relation": "Synonym",
-    "source": "eats",
-    "target": "chow"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "edible",
-    "target": "human"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "edible",
-    "target": "drinkable"
-  },
-  {
-    "relation": "Synonym",
-    "source": "edible",
-    "target": "comestible"
-  },
-  {
-    "relation": "Synonym",
-    "source": "edible",
-    "target": "eatable"
-  },
-  {
-    "relation": "Synonym",
-    "source": "edible",
-    "target": "food"
-  },
-  {
     "relation": "IsA",
     "source": "egg",
     "target": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "egg",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "egg",
+    "target": "breakfast"
   },
   {
     "relation": "RelatedTo",
@@ -3315,34 +3050,29 @@
     "target": "food"
   },
   {
-    "relation": "FormOf",
-    "source": "eggs",
-    "target": "egg"
-  },
-  {
-    "relation": "HasProperty",
-    "source": "eggs",
-    "target": "edible"
-  },
-  {
-    "relation": "IsA",
-    "source": "eggs",
-    "target": "food"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eggs",
-    "target": "egg"
-  },
-  {
-    "relation": "Synonym",
-    "source": "eggs",
-    "target": "egg"
+    "relation": "PartOf",
+    "source": "elbow",
+    "target": "foreleg"
   },
   {
     "relation": "RelatedTo",
     "source": "elbow",
     "target": "arm"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "elk",
+    "target": "deer"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "elk",
+    "target": "moose"
+  },
+  {
+    "relation": "Synonym",
+    "source": "elk",
+    "target": "moose"
   },
   {
     "relation": "RelatedTo",
@@ -3397,6 +3127,11 @@
   {
     "relation": "RelatedTo",
     "source": "endoskeleton",
+    "target": "exoskeleton"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "endoskeleton",
     "target": "skeleton"
   },
   {
@@ -3422,27 +3157,27 @@
   {
     "relation": "RelatedTo",
     "source": "enlarge",
-    "target": "magnify"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "enlarge",
     "target": "widen"
   },
   {
+    "relation": "RelatedTo",
+    "source": "equid",
+    "target": "equine"
+  },
+  {
+    "relation": "Synonym",
+    "source": "equid",
+    "target": "equine"
+  },
+  {
     "relation": "IsA",
-    "source": "epiglottis",
-    "target": "cartilage"
+    "source": "equine",
+    "target": "quadruped"
   },
   {
     "relation": "RelatedTo",
-    "source": "epiglottis",
-    "target": "trachea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "epiglottis",
-    "target": "vertebrate"
+    "source": "equine",
+    "target": "equid"
   },
   {
     "relation": "RelatedTo",
@@ -3475,6 +3210,11 @@
     "target": "intensify"
   },
   {
+    "relation": "RelatedTo",
+    "source": "escargot",
+    "target": "snail"
+  },
+  {
     "relation": "FormOf",
     "source": "esophagus",
     "target": "oesophagus"
@@ -3483,6 +3223,11 @@
     "relation": "Synonym",
     "source": "esophagus",
     "target": "oesophagus"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "espresso",
+    "target": "coffee"
   },
   {
     "relation": "RelatedTo",
@@ -3515,6 +3260,21 @@
     "target": "placental"
   },
   {
+    "relation": "IsA",
+    "source": "ewe",
+    "target": "human"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "ewe",
+    "target": "sheep"
+  },
+  {
+    "relation": "IsA",
+    "source": "exaltation",
+    "target": "flock"
+  },
+  {
     "relation": "Antonym",
     "source": "exhale",
     "target": "inhale"
@@ -3535,6 +3295,16 @@
     "target": "endocrine"
   },
   {
+    "relation": "DerivedFrom",
+    "source": "exoskeleton",
+    "target": "skeleton"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "exoskeleton",
+    "target": "endoskeleton"
+  },
+  {
     "relation": "RelatedTo",
     "source": "experienced",
     "target": "experient"
@@ -3543,11 +3313,6 @@
     "relation": "Synonym",
     "source": "experient",
     "target": "experienced"
-  },
-  {
-    "relation": "Synonym",
-    "source": "expert",
-    "target": "proficient"
   },
   {
     "relation": "Antonym",
@@ -3611,76 +3376,6 @@
   },
   {
     "relation": "Synonym",
-    "source": "extremity",
-    "target": "appendage"
-  },
-  {
-    "relation": "AtLocation",
-    "source": "eye",
-    "target": "mammal"
-  },
-  {
-    "relation": "DistinctFrom",
-    "source": "eye",
-    "target": "nose"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "apparatus"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "body"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "cheese"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "human"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "lens"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "nose"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "optic"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "eye",
-    "target": "retina"
-  },
-  {
-    "relation": "Synonym",
-    "source": "eye",
-    "target": "eyelet"
-  },
-  {
-    "relation": "DerivedFrom",
-    "source": "eyehole",
-    "target": "eye"
-  },
-  {
-    "relation": "Synonym",
     "source": "eyehole",
     "target": "eyelet"
   },
@@ -3712,11 +3407,6 @@
   {
     "relation": "RelatedTo",
     "source": "fall",
-    "target": "drop"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fall",
     "target": "tackle"
   },
   {
@@ -3727,22 +3417,7 @@
   {
     "relation": "Synonym",
     "source": "fall",
-    "target": "drop"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fanny",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "fanny",
-    "target": "arse"
-  },
-  {
-    "relation": "Synonym",
-    "source": "fanny",
-    "target": "buttocks"
+    "target": "rap"
   },
   {
     "relation": "RelatedTo",
@@ -3825,14 +3500,14 @@
     "target": "toe"
   },
   {
-    "relation": "RelatedTo",
+    "relation": "IsA",
     "source": "finger",
-    "target": "alcohol"
+    "target": "extremity"
   },
   {
     "relation": "RelatedTo",
     "source": "finger",
-    "target": "appendage"
+    "target": "alcohol"
   },
   {
     "relation": "RelatedTo",
@@ -3892,12 +3567,22 @@
   {
     "relation": "Synonym",
     "source": "finger",
+    "target": "bird"
+  },
+  {
+    "relation": "Synonym",
+    "source": "finger",
     "target": "digit"
   },
   {
     "relation": "Synonym",
     "source": "finger",
     "target": "toe"
+  },
+  {
+    "relation": "UsedFor",
+    "source": "finger",
+    "target": "tickle"
   },
   {
     "relation": "DerivedFrom",
@@ -3908,51 +3593,6 @@
     "relation": "RelatedTo",
     "source": "firebrick",
     "target": "brick"
-  },
-  {
-    "relation": "Desires",
-    "source": "fish",
-    "target": "food"
-  },
-  {
-    "relation": "HasA",
-    "source": "fish",
-    "target": "tail"
-  },
-  {
-    "relation": "IsA",
-    "source": "fish",
-    "target": "meat"
-  },
-  {
-    "relation": "IsA",
-    "source": "fish",
-    "target": "seafood"
-  },
-  {
-    "relation": "IsA",
-    "source": "fish",
-    "target": "vertebrate"
-  },
-  {
-    "relation": "MotivatedByGoal",
-    "source": "fish",
-    "target": "meal"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fish",
-    "target": "food"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fish",
-    "target": "seafood"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fish",
-    "target": "vertebrate"
   },
   {
     "relation": "FormOf",
@@ -3965,16 +3605,6 @@
     "target": "spear"
   },
   {
-    "relation": "RelatedTo",
-    "source": "fixings",
-    "target": "ingredient"
-  },
-  {
-    "relation": "Synonym",
-    "source": "fixings",
-    "target": "ingredient"
-  },
-  {
     "relation": "DerivedFrom",
     "source": "fizgig",
     "target": "fizz"
@@ -3983,11 +3613,6 @@
     "relation": "DerivedFrom",
     "source": "fizgig",
     "target": "gig"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fizgig",
-    "target": "fish"
   },
   {
     "relation": "RelatedTo",
@@ -4013,6 +3638,16 @@
     "relation": "RelatedTo",
     "source": "flank",
     "target": "meat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "flock",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "flock",
+    "target": "sheep"
   },
   {
     "relation": "MannerOf",
@@ -4071,6 +3706,21 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "fold",
+    "target": "country"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "fold",
+    "target": "land"
+  },
+  {
+    "relation": "Synonym",
+    "source": "fold",
+    "target": "flock"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "fondle",
     "target": "dandle"
   },
@@ -4087,22 +3737,7 @@
   {
     "relation": "AtLocation",
     "source": "food",
-    "target": "can"
-  },
-  {
-    "relation": "AtLocation",
-    "source": "food",
     "target": "stomach"
-  },
-  {
-    "relation": "HasProperty",
-    "source": "food",
-    "target": "edible"
-  },
-  {
-    "relation": "IsA",
-    "source": "food",
-    "target": "good"
   },
   {
     "relation": "IsA",
@@ -4115,9 +3750,19 @@
     "target": "solid"
   },
   {
-    "relation": "ReceivesAction",
+    "relation": "RelatedTo",
     "source": "food",
-    "target": "edible"
+    "target": "breakfast"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "food",
+    "target": "brunch"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "food",
+    "target": "dinner"
   },
   {
     "relation": "RelatedTo",
@@ -4157,27 +3802,7 @@
   {
     "relation": "Synonym",
     "source": "food",
-    "target": "pabulum"
-  },
-  {
-    "relation": "Synonym",
-    "source": "food",
-    "target": "provender"
-  },
-  {
-    "relation": "Synonym",
-    "source": "food",
-    "target": "provisions"
-  },
-  {
-    "relation": "Synonym",
-    "source": "food",
     "target": "sustenance"
-  },
-  {
-    "relation": "Synonym",
-    "source": "food",
-    "target": "viands"
   },
   {
     "relation": "Synonym",
@@ -4193,6 +3818,36 @@
     "relation": "UsedFor",
     "source": "food",
     "target": "sustenance"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "forefoot",
+    "target": "quadruped"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "foreleg",
+    "target": "forelimb"
+  },
+  {
+    "relation": "Synonym",
+    "source": "forelimb",
+    "target": "foreleg"
+  },
+  {
+    "relation": "IsA",
+    "source": "fowl",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "fowl",
+    "target": "bird"
+  },
+  {
+    "relation": "Synonym",
+    "source": "fowl",
+    "target": "bird"
   },
   {
     "relation": "Synonym",
@@ -4220,6 +3875,11 @@
     "target": "perform"
   },
   {
+    "relation": "RelatedTo",
+    "source": "frame",
+    "target": "portion"
+  },
+  {
     "relation": "Synonym",
     "source": "frame",
     "target": "skeleton"
@@ -4228,21 +3888,6 @@
     "relation": "RelatedTo",
     "source": "froward",
     "target": "disobedient"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fundament",
-    "target": "bottom"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "fundament",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "fundament",
-    "target": "buttocks"
   },
   {
     "relation": "AtLocation",
@@ -4273,6 +3918,31 @@
     "relation": "RelatedTo",
     "source": "gear",
     "target": "paraphernalia"
+  },
+  {
+    "relation": "IsA",
+    "source": "gelatin",
+    "target": "protein"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "gelatin",
+    "target": "cartilage"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "gelatin",
+    "target": "collagen"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "gelatin",
+    "target": "jelly"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "gelatin",
+    "target": "protein"
   },
   {
     "relation": "RelatedTo",
@@ -4312,11 +3982,6 @@
   {
     "relation": "RelatedTo",
     "source": "gig",
-    "target": "fish"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gig",
     "target": "perform"
   },
   {
@@ -4335,89 +4000,49 @@
     "target": "spear"
   },
   {
+    "relation": "RelatedTo",
+    "source": "gladiolus",
+    "target": "sternum"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "glute",
+    "target": "muscle"
+  },
+  {
     "relation": "Synonym",
     "source": "glute",
     "target": "gluteus"
   },
   {
-    "relation": "RelatedTo",
-    "source": "gluteus",
-    "target": "buttocks"
+    "relation": "Desires",
+    "source": "goat",
+    "target": "food"
+  },
+  {
+    "relation": "IsA",
+    "source": "goat",
+    "target": "ruminant"
   },
   {
     "relation": "RelatedTo",
-    "source": "gluteus",
-    "target": "nates"
+    "source": "goat",
+    "target": "ewe"
   },
   {
     "relation": "RelatedTo",
-    "source": "good",
-    "target": "competent"
+    "source": "goat",
+    "target": "herd"
   },
   {
     "relation": "RelatedTo",
-    "source": "good",
-    "target": "edible"
+    "source": "goat",
+    "target": "man"
   },
   {
     "relation": "RelatedTo",
-    "source": "good",
-    "target": "moral"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "good",
-    "target": "respectable"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "good",
-    "target": "righteous"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "good",
-    "target": "virtuous"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "good",
-    "target": "worthy"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "good",
-    "target": "complete"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "good",
-    "target": "solid"
-  },
-  {
-    "relation": "Synonym",
-    "source": "good",
-    "target": "accomplished"
-  },
-  {
-    "relation": "Synonym",
-    "source": "good",
-    "target": "proficient"
-  },
-  {
-    "relation": "Synonym",
-    "source": "good",
-    "target": "respectable"
-  },
-  {
-    "relation": "DerivedFrom",
-    "source": "goody",
-    "target": "good"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "goody",
-    "target": "good"
+    "source": "goat",
+    "target": "sheep"
   },
   {
     "relation": "Synonym",
@@ -4428,11 +4053,6 @@
     "relation": "RelatedTo",
     "source": "gorge",
     "target": "gullet"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gorge",
-    "target": "throat"
   },
   {
     "relation": "Synonym",
@@ -4490,11 +4110,6 @@
     "target": "larva"
   },
   {
-    "relation": "Synonym",
-    "source": "grub",
-    "target": "chow"
-  },
-  {
     "relation": "RelatedTo",
     "source": "gullet",
     "target": "channel"
@@ -4510,21 +4125,6 @@
     "target": "oesophagus"
   },
   {
-    "relation": "RelatedTo",
-    "source": "gullet",
-    "target": "throat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gullet",
-    "target": "trachea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gullet",
-    "target": "windpipe"
-  },
-  {
     "relation": "Synonym",
     "source": "gullet",
     "target": "esophagus"
@@ -4533,41 +4133,6 @@
     "relation": "Synonym",
     "source": "gullet",
     "target": "gorge"
-  },
-  {
-    "relation": "Synonym",
-    "source": "gullet",
-    "target": "throat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset",
-    "target": "arms"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset",
-    "target": "elbow"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset",
-    "target": "garment"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset",
-    "target": "insert"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset",
-    "target": "mail"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "gusset",
-    "target": "shoulder"
   },
   {
     "relation": "IsA",
@@ -4606,6 +4171,11 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "halal",
+    "target": "kosher"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "hardheaded",
     "target": "stubborn"
   },
@@ -4615,14 +4185,19 @@
     "target": "wilful"
   },
   {
+    "relation": "IsA",
+    "source": "hardware",
+    "target": "weaponry"
+  },
+  {
     "relation": "RelatedTo",
     "source": "hardware",
     "target": "equipment"
   },
   {
-    "relation": "RelatedTo",
+    "relation": "PartOf",
     "source": "haunch",
-    "target": "buttocks"
+    "target": "torso"
   },
   {
     "relation": "RelatedTo",
@@ -4653,6 +4228,11 @@
     "relation": "DerivedFrom",
     "source": "heartland",
     "target": "land"
+  },
+  {
+    "relation": "IsA",
+    "source": "heartland",
+    "target": "region"
   },
   {
     "relation": "RelatedTo",
@@ -4691,6 +4271,21 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "helping",
+    "target": "food"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "helping",
+    "target": "portion"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "helping",
+    "target": "serving"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "here",
     "target": "location"
   },
@@ -4710,34 +4305,14 @@
     "target": "embryo"
   },
   {
-    "relation": "Synonym",
+    "relation": "PartOf",
     "source": "hindquarters",
-    "target": "backside"
-  },
-  {
-    "relation": "Synonym",
-    "source": "hindquarters",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "hindquarters",
-    "target": "posterior"
-  },
-  {
-    "relation": "Synonym",
-    "source": "hindquarters",
-    "target": "rear"
+    "target": "bird"
   },
   {
     "relation": "Synonym",
     "source": "hindquarters",
     "target": "rump"
-  },
-  {
-    "relation": "Synonym",
-    "source": "hindquarters",
-    "target": "tail"
   },
   {
     "relation": "SimilarTo",
@@ -4758,6 +4333,11 @@
     "relation": "RelatedTo",
     "source": "hock",
     "target": "tendon"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "homebrew",
+    "target": "brew"
   },
   {
     "relation": "RelatedTo",
@@ -4795,34 +4375,14 @@
     "target": "tea"
   },
   {
-    "relation": "RelatedTo",
-    "source": "honorable",
-    "target": "moral"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "honorable",
-    "target": "reputable"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "honorable",
-    "target": "respectable"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "honorable",
-    "target": "worthy"
-  },
-  {
-    "relation": "Synonym",
-    "source": "honorable",
-    "target": "respectable"
-  },
-  {
     "relation": "Synonym",
     "source": "honored",
     "target": "esteemed"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "hooch",
+    "target": "alcohol"
   },
   {
     "relation": "RelatedTo",
@@ -4848,6 +4408,16 @@
     "relation": "RelatedTo",
     "source": "hoof",
     "target": "ungulate"
+  },
+  {
+    "relation": "FormOf",
+    "source": "hootch",
+    "target": "hooch"
+  },
+  {
+    "relation": "Synonym",
+    "source": "hootch",
+    "target": "hooch"
   },
   {
     "relation": "RelatedTo",
@@ -4878,11 +4448,6 @@
     "relation": "AtLocation",
     "source": "human",
     "target": "state"
-  },
-  {
-    "relation": "HasProperty",
-    "source": "human",
-    "target": "good"
   },
   {
     "relation": "RelatedTo",
@@ -4920,6 +4485,26 @@
     "target": "abdomen"
   },
   {
+    "relation": "Synonym",
+    "source": "impeccable",
+    "target": "incorrupt"
+  },
+  {
+    "relation": "Synonym",
+    "source": "impeccable",
+    "target": "innocent"
+  },
+  {
+    "relation": "Synonym",
+    "source": "impeccable",
+    "target": "sinless"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "impeccant",
+    "target": "impeccable"
+  },
+  {
     "relation": "RelatedTo",
     "source": "imperium",
     "target": "dominion"
@@ -4933,6 +4518,11 @@
     "relation": "Synonym",
     "source": "imperium",
     "target": "empire"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "incorrupt",
+    "target": "moral"
   },
   {
     "relation": "RelatedTo",
@@ -4970,21 +4560,6 @@
     "target": "stomach"
   },
   {
-    "relation": "PartOf",
-    "source": "ingredient",
-    "target": "mixture"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ingredient",
-    "target": "food"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "ingredient",
-    "target": "mixture"
-  },
-  {
     "relation": "RelatedTo",
     "source": "inguen",
     "target": "groin"
@@ -5015,9 +4590,14 @@
     "target": "smoke"
   },
   {
+    "relation": "RelatedTo",
+    "source": "innocent",
+    "target": "righteous"
+  },
+  {
     "relation": "Synonym",
-    "source": "insert",
-    "target": "tuck"
+    "source": "innocent",
+    "target": "impeccant"
   },
   {
     "relation": "MannerOf",
@@ -5033,11 +4613,6 @@
     "relation": "RelatedTo",
     "source": "inset",
     "target": "insert"
-  },
-  {
-    "relation": "Synonym",
-    "source": "inset",
-    "target": "gusset"
   },
   {
     "relation": "Synonym",
@@ -5063,11 +4638,6 @@
     "relation": "RelatedTo",
     "source": "inspire",
     "target": "inhale"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "inspire",
-    "target": "produce"
   },
   {
     "relation": "Synonym",
@@ -5230,6 +4800,11 @@
     "target": "hardware"
   },
   {
+    "relation": "IsA",
+    "source": "irredenta",
+    "target": "region"
+  },
+  {
     "relation": "RelatedTo",
     "source": "irredenta",
     "target": "state"
@@ -5245,14 +4820,64 @@
     "target": "coffee"
   },
   {
-    "relation": "RelatedTo",
-    "source": "jugular",
-    "target": "neck"
+    "relation": "IsA",
+    "source": "jelly",
+    "target": "spread"
   },
   {
     "relation": "RelatedTo",
-    "source": "jugular",
-    "target": "throat"
+    "source": "jelly",
+    "target": "gelatin"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "jelly",
+    "target": "meat"
+  },
+  {
+    "relation": "Synonym",
+    "source": "jelly",
+    "target": "gelatin"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "jerk",
+    "target": "jerky"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "jerk",
+    "target": "jerky"
+  },
+  {
+    "relation": "Synonym",
+    "source": "jerk",
+    "target": "jerky"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "jerky",
+    "target": "jerk"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "jerky",
+    "target": "jerk"
+  },
+  {
+    "relation": "Synonym",
+    "source": "jerky",
+    "target": "jerk"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "jointworm",
+    "target": "larva"
+  },
+  {
+    "relation": "Synonym",
+    "source": "jointworm",
+    "target": "strawworm"
   },
   {
     "relation": "RelatedTo",
@@ -5266,13 +4891,13 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "keister",
-    "target": "buttocks"
+    "source": "kava",
+    "target": "beverage"
   },
   {
     "relation": "Synonym",
-    "source": "keister",
-    "target": "buttocks"
+    "source": "kavakava",
+    "target": "kava"
   },
   {
     "relation": "RelatedTo",
@@ -5293,6 +4918,26 @@
     "relation": "Synonym",
     "source": "kine",
     "target": "cattle"
+  },
+  {
+    "relation": "IsA",
+    "source": "kite",
+    "target": "bird"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "kite",
+    "target": "increase"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "kite",
+    "target": "belly"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "kite",
+    "target": "stomach"
   },
   {
     "relation": "AtLocation",
@@ -5316,6 +4961,36 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "kosher",
+    "target": "halal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "koumiss",
+    "target": "drink"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "koumiss",
+    "target": "mare"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "koumiss",
+    "target": "milk"
+  },
+  {
+    "relation": "FormOf",
+    "source": "kumis",
+    "target": "koumiss"
+  },
+  {
+    "relation": "Synonym",
+    "source": "kumis",
+    "target": "koumiss"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "labium",
     "target": "vulva"
   },
@@ -5323,6 +4998,16 @@
     "relation": "RelatedTo",
     "source": "laboratory",
     "target": "drug"
+  },
+  {
+    "relation": "IsA",
+    "source": "lamb",
+    "target": "sheep"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "lamb",
+    "target": "sheep"
   },
   {
     "relation": "RelatedTo",
@@ -5357,11 +5042,6 @@
   {
     "relation": "RelatedTo",
     "source": "land",
-    "target": "domain"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "land",
     "target": "part"
   },
   {
@@ -5382,11 +5062,6 @@
   {
     "relation": "Synonym",
     "source": "land",
-    "target": "domain"
-  },
-  {
-    "relation": "Synonym",
-    "source": "land",
     "target": "state"
   },
   {
@@ -5398,11 +5073,6 @@
     "relation": "RelatedTo",
     "source": "larva",
     "target": "caterpillar"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "larva",
-    "target": "fish"
   },
   {
     "relation": "RelatedTo",
@@ -5427,6 +5097,11 @@
   {
     "relation": "RelatedTo",
     "source": "layer",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "layer",
     "target": "egg"
   },
   {
@@ -5445,11 +5120,6 @@
     "target": "stratum"
   },
   {
-    "relation": "RelatedTo",
-    "source": "leftovers",
-    "target": "food"
-  },
-  {
     "relation": "MannerOf",
     "source": "lengthen",
     "target": "increase"
@@ -5458,26 +5128,6 @@
     "relation": "RelatedTo",
     "source": "lengthen",
     "target": "extend"
-  },
-  {
-    "relation": "AtLocation",
-    "source": "lens",
-    "target": "eye"
-  },
-  {
-    "relation": "IsA",
-    "source": "lens",
-    "target": "channel"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "lens",
-    "target": "eye"
-  },
-  {
-    "relation": "UsedFor",
-    "source": "lens",
-    "target": "magnify"
   },
   {
     "relation": "RelatedTo",
@@ -5522,17 +5172,17 @@
   {
     "relation": "RelatedTo",
     "source": "litter",
-    "target": "drop"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "litter",
     "target": "mammal"
   },
   {
     "relation": "RelatedTo",
     "source": "litter",
     "target": "transport"
+  },
+  {
+    "relation": "IsA",
+    "source": "loaf",
+    "target": "food"
   },
   {
     "relation": "RelatedTo",
@@ -5553,11 +5203,6 @@
     "relation": "RelatedTo",
     "source": "loaf",
     "target": "solid"
-  },
-  {
-    "relation": "Synonym",
-    "source": "loaf",
-    "target": "bum"
   },
   {
     "relation": "RelatedTo",
@@ -5600,11 +5245,6 @@
     "target": "groin"
   },
   {
-    "relation": "Synonym",
-    "source": "loins",
-    "target": "pubes"
-  },
-  {
     "relation": "AtLocation",
     "source": "lotion",
     "target": "finger"
@@ -5631,48 +5271,13 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "macula",
-    "target": "eye"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "macula",
-    "target": "human"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "macula",
-    "target": "layer"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "macula",
-    "target": "planet"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "macula",
-    "target": "retina"
-  },
-  {
-    "relation": "MannerOf",
-    "source": "magnify",
-    "target": "enlarge"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "magnify",
-    "target": "intensify"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "mail",
     "target": "arm"
   },
   {
-    "relation": "RelatedTo",
+    "relation": "IsA",
     "source": "mammal",
-    "target": "ear"
+    "target": "amniote"
   },
   {
     "relation": "RelatedTo",
@@ -5698,6 +5303,11 @@
     "relation": "Synonym",
     "source": "mammalian",
     "target": "mammal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "man",
+    "target": "bird"
   },
   {
     "relation": "RelatedTo",
@@ -5772,6 +5382,11 @@
   {
     "relation": "RelatedTo",
     "source": "mantle",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "mantle",
     "target": "body"
   },
   {
@@ -5827,6 +5442,11 @@
   {
     "relation": "IsA",
     "source": "mare",
+    "target": "equine"
+  },
+  {
+    "relation": "IsA",
+    "source": "mare",
     "target": "mammal"
   },
   {
@@ -5861,11 +5481,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "masterful",
-    "target": "skillful"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "masterly",
     "target": "masterful"
   },
@@ -5895,9 +5510,9 @@
     "target": "honey"
   },
   {
-    "relation": "HasProperty",
+    "relation": "AtLocation",
     "source": "meal",
-    "target": "edible"
+    "target": "dinner"
   },
   {
     "relation": "RelatedTo",
@@ -5937,7 +5552,7 @@
   {
     "relation": "AtLocation",
     "source": "meat",
-    "target": "can"
+    "target": "dinner"
   },
   {
     "relation": "AtLocation",
@@ -5953,6 +5568,16 @@
     "relation": "HasA",
     "source": "meat",
     "target": "protein"
+  },
+  {
+    "relation": "IsA",
+    "source": "meat",
+    "target": "food"
+  },
+  {
+    "relation": "IsA",
+    "source": "meat",
+    "target": "muscle"
   },
   {
     "relation": "RelatedTo",
@@ -5978,26 +5603,6 @@
     "relation": "UsedFor",
     "source": "meat",
     "target": "protein"
-  },
-  {
-    "relation": "IsA",
-    "source": "member",
-    "target": "associate"
-  },
-  {
-    "relation": "IsA",
-    "source": "member",
-    "target": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "member",
-    "target": "part"
-  },
-  {
-    "relation": "Synonym",
-    "source": "member",
-    "target": "extremity"
   },
   {
     "relation": "RelatedTo",
@@ -6026,6 +5631,11 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "mesosphere",
+    "target": "thermosphere"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "microflora",
     "target": "gut"
   },
@@ -6040,29 +5650,9 @@
     "target": "vitamin"
   },
   {
-    "relation": "DistinctFrom",
-    "source": "middle",
-    "target": "bottom"
-  },
-  {
-    "relation": "IsA",
-    "source": "middle",
-    "target": "part"
-  },
-  {
     "relation": "RelatedTo",
-    "source": "middle",
-    "target": "location"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "middle",
-    "target": "waist"
-  },
-  {
-    "relation": "Synonym",
-    "source": "middle",
-    "target": "midst"
+    "source": "microorganism",
+    "target": "bacterium"
   },
   {
     "relation": "RelatedTo",
@@ -6097,37 +5687,7 @@
   {
     "relation": "Synonym",
     "source": "midriff",
-    "target": "middle"
-  },
-  {
-    "relation": "Synonym",
-    "source": "midriff",
     "target": "stomach"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "midsection",
-    "target": "middle"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "midsection",
-    "target": "midriff"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "midsection",
-    "target": "torso"
-  },
-  {
-    "relation": "Synonym",
-    "source": "midsection",
-    "target": "middle"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "midst",
-    "target": "middle"
   },
   {
     "relation": "CreatedBy",
@@ -6140,24 +5700,14 @@
     "target": "mixture"
   },
   {
+    "relation": "IsA",
+    "source": "milk",
+    "target": "nutriment"
+  },
+  {
     "relation": "RelatedTo",
     "source": "milk",
     "target": "beverage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "milk",
-    "target": "butter"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "milk",
-    "target": "cheese"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "milk",
-    "target": "coconut"
   },
   {
     "relation": "RelatedTo",
@@ -6187,22 +5737,12 @@
   {
     "relation": "RelatedTo",
     "source": "milk",
-    "target": "produce"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "milk",
-    "target": "yogurt"
+    "target": "serving"
   },
   {
     "relation": "RelatedTo",
     "source": "mince",
     "target": "dainty"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "mince",
-    "target": "eye"
   },
   {
     "relation": "RelatedTo",
@@ -6223,11 +5763,6 @@
     "relation": "RelatedTo",
     "source": "mixture",
     "target": "mixer"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "mixture",
-    "target": "produce"
   },
   {
     "relation": "Synonym",
@@ -6261,18 +5796,33 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "moral",
-    "target": "good"
+    "source": "moose",
+    "target": "antler"
   },
   {
     "relation": "RelatedTo",
+    "source": "moose",
+    "target": "deer"
+  },
+  {
+    "relation": "Synonym",
+    "source": "moose",
+    "target": "elk"
+  },
+  {
+    "relation": "SimilarTo",
     "source": "moral",
-    "target": "honorable"
+    "target": "chaste"
   },
   {
     "relation": "SimilarTo",
     "source": "moral",
     "target": "righteous"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "morula",
+    "target": "blastula"
   },
   {
     "relation": "RelatedTo",
@@ -6283,6 +5833,11 @@
     "relation": "RelatedTo",
     "source": "mousse",
     "target": "chocolate"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "mousse",
+    "target": "gelatin"
   },
   {
     "relation": "RelatedTo",
@@ -6350,9 +5905,44 @@
     "target": "weaponry"
   },
   {
+    "relation": "AtLocation",
+    "source": "muscle",
+    "target": "arm"
+  },
+  {
+    "relation": "IsA",
+    "source": "muscle",
+    "target": "meat"
+  },
+  {
+    "relation": "MadeOf",
+    "source": "muscle",
+    "target": "meat"
+  },
+  {
+    "relation": "PartOf",
+    "source": "muscle",
+    "target": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "muscle",
+    "target": "body"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "musculature",
+    "target": "muscle"
+  },
+  {
     "relation": "RelatedTo",
     "source": "musculature",
     "target": "body"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "musculature",
+    "target": "muscle"
   },
   {
     "relation": "AtLocation",
@@ -6381,28 +5971,8 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "nates",
-    "target": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "nates",
-    "target": "mammal"
-  },
-  {
-    "relation": "Synonym",
-    "source": "nates",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "navel",
     "target": "abdomen"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "navel",
-    "target": "eye"
   },
   {
     "relation": "RelatedTo",
@@ -6482,11 +6052,6 @@
   {
     "relation": "RelatedTo",
     "source": "neck",
-    "target": "throat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "neck",
     "target": "trunk"
   },
   {
@@ -6507,12 +6072,22 @@
   {
     "relation": "RelatedTo",
     "source": "nectar",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "nectar",
     "target": "drink"
   },
   {
     "relation": "Synonym",
     "source": "nectar",
     "target": "ambrosia"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "nekton",
+    "target": "plankton"
   },
   {
     "relation": "Synonym",
@@ -6590,9 +6165,9 @@
     "target": "northeast"
   },
   {
-    "relation": "IsA",
+    "relation": "CapableOf",
     "source": "nose",
-    "target": "chemoreceptor"
+    "target": "sniff"
   },
   {
     "relation": "PartOf",
@@ -6602,17 +6177,7 @@
   {
     "relation": "RelatedTo",
     "source": "nose",
-    "target": "appendage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "nose",
     "target": "body"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "nose",
-    "target": "middle"
   },
   {
     "relation": "RelatedTo",
@@ -6726,6 +6291,11 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "nymph",
+    "target": "larva"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "obstinate",
     "target": "persistent"
   },
@@ -6751,23 +6321,8 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "oculus",
-    "target": "eye"
-  },
-  {
-    "relation": "Synonym",
-    "source": "oculus",
-    "target": "eye"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "oesophagus",
     "target": "food"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "oesophagus",
-    "target": "pharynx"
   },
   {
     "relation": "RelatedTo",
@@ -6826,31 +6381,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "optic",
-    "target": "drink"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "optic",
-    "target": "eye"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "optic",
-    "target": "interact"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "optic",
-    "target": "lens"
-  },
-  {
-    "relation": "Synonym",
-    "source": "optic",
-    "target": "eye"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "orbiter",
     "target": "planet"
   },
@@ -6906,26 +6436,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "pabulum",
-    "target": "diet"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "pabulum",
-    "target": "fare"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "pabulum",
-    "target": "food"
-  },
-  {
-    "relation": "Synonym",
-    "source": "pabulum",
-    "target": "comestible"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "palatinate",
     "target": "region"
   },
@@ -6960,29 +6470,9 @@
     "target": "heaven"
   },
   {
-    "relation": "DerivedFrom",
-    "source": "parafovea",
-    "target": "fovea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "parafovea",
-    "target": "fovea"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "parafovea",
-    "target": "retina"
-  },
-  {
     "relation": "RelatedTo",
     "source": "paraphernalia",
     "target": "equipment"
-  },
-  {
-    "relation": "Synonym",
-    "source": "paraphernalia",
-    "target": "appendage"
   },
   {
     "relation": "Synonym",
@@ -7012,6 +6502,11 @@
   {
     "relation": "RelatedTo",
     "source": "part",
+    "target": "portion"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "part",
     "target": "region"
   },
   {
@@ -7022,22 +6517,7 @@
   {
     "relation": "Synonym",
     "source": "part",
-    "target": "ingredient"
-  },
-  {
-    "relation": "Synonym",
-    "source": "part",
-    "target": "member"
-  },
-  {
-    "relation": "Synonym",
-    "source": "part",
     "target": "region"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "pat",
-    "target": "butter"
   },
   {
     "relation": "RelatedTo",
@@ -7068,21 +6548,6 @@
     "relation": "MannerOf",
     "source": "patronize",
     "target": "interact"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "paunch",
-    "target": "belly"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "paunch",
-    "target": "ruminant"
-  },
-  {
-    "relation": "Synonym",
-    "source": "paunch",
-    "target": "belly"
   },
   {
     "relation": "MannerOf",
@@ -7122,12 +6587,17 @@
   {
     "relation": "RelatedTo",
     "source": "pectoral",
-    "target": "breast"
+    "target": "chest"
   },
   {
     "relation": "RelatedTo",
-    "source": "pectoral",
-    "target": "chest"
+    "source": "pectoralis",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "pectoralis",
+    "target": "muscle"
   },
   {
     "relation": "Synonym",
@@ -7137,7 +6607,7 @@
   {
     "relation": "RelatedTo",
     "source": "pectus",
-    "target": "breast"
+    "target": "bird"
   },
   {
     "relation": "RelatedTo",
@@ -7200,16 +6670,6 @@
     "target": "fondle"
   },
   {
-    "relation": "RelatedTo",
-    "source": "pharynx",
-    "target": "esophagus"
-  },
-  {
-    "relation": "Synonym",
-    "source": "pharynx",
-    "target": "throat"
-  },
-  {
     "relation": "MannerOf",
     "source": "philander",
     "target": "interact"
@@ -7255,14 +6715,14 @@
     "target": "satellite"
   },
   {
-    "relation": "MannerOf",
-    "source": "plop",
-    "target": "descend"
+    "relation": "SimilarTo",
+    "source": "plankton",
+    "target": "nekton"
   },
   {
     "relation": "MannerOf",
     "source": "plop",
-    "target": "drop"
+    "target": "descend"
   },
   {
     "relation": "RelatedTo",
@@ -7273,16 +6733,6 @@
     "relation": "Synonym",
     "source": "plop",
     "target": "plunk"
-  },
-  {
-    "relation": "IsA",
-    "source": "plunge",
-    "target": "drop"
-  },
-  {
-    "relation": "MannerOf",
-    "source": "plunge",
-    "target": "drop"
   },
   {
     "relation": "RelatedTo",
@@ -7302,7 +6752,7 @@
   {
     "relation": "RelatedTo",
     "source": "plunk",
-    "target": "drop"
+    "target": "batter"
   },
   {
     "relation": "RelatedTo",
@@ -7336,38 +6786,18 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "posterior",
-    "target": "behind"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "posterior",
-    "target": "body"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "posterior",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "posterior",
-    "target": "quadruped"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "posterior",
-    "target": "rear"
+    "source": "portion",
+    "target": "part"
   },
   {
     "relation": "Synonym",
-    "source": "posterior",
-    "target": "buttocks"
+    "source": "portion",
+    "target": "helping"
   },
   {
     "relation": "Synonym",
-    "source": "posterior",
-    "target": "rear"
+    "source": "portion",
+    "target": "part"
   },
   {
     "relation": "RelatedTo",
@@ -7385,11 +6815,6 @@
     "target": "drinkable"
   },
   {
-    "relation": "SimilarTo",
-    "source": "potable",
-    "target": "edible"
-  },
-  {
     "relation": "Synonym",
     "source": "potable",
     "target": "beverage"
@@ -7405,6 +6830,21 @@
     "target": "drug"
   },
   {
+    "relation": "RelatedTo",
+    "source": "potion",
+    "target": "portion"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "pounce",
+    "target": "descend"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "pounce",
+    "target": "claw"
+  },
+  {
     "relation": "IsA",
     "source": "powder",
     "target": "solid"
@@ -7418,41 +6858,6 @@
     "relation": "RelatedTo",
     "source": "powder",
     "target": "snow"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "practiced",
-    "target": "expert"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "practiced",
-    "target": "proficient"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "practiced",
-    "target": "skillful"
-  },
-  {
-    "relation": "Synonym",
-    "source": "practiced",
-    "target": "proficient"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "practised",
-    "target": "expert"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "practised",
-    "target": "proficient"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "practised",
-    "target": "skillful"
   },
   {
     "relation": "Synonym",
@@ -7480,26 +6885,6 @@
     "target": "laudable"
   },
   {
-    "relation": "RelatedTo",
-    "source": "prat",
-    "target": "bottom"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "prat",
-    "target": "buttock"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "prat",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "prat",
-    "target": "buttocks"
-  },
-  {
     "relation": "Synonym",
     "source": "prestigious",
     "target": "esteemed"
@@ -7513,41 +6898,6 @@
     "relation": "RelatedTo",
     "source": "principality",
     "target": "dominion"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "produce",
-    "target": "extend"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "produce",
-    "target": "lengthen"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "proficient",
-    "target": "expert"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "proficient",
-    "target": "practiced"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "proficient",
-    "target": "skilled"
-  },
-  {
-    "relation": "Synonym",
-    "source": "proficient",
-    "target": "expert"
-  },
-  {
-    "relation": "Synonym",
-    "source": "proficient",
-    "target": "skilled"
   },
   {
     "relation": "MannerOf",
@@ -7576,21 +6926,6 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "provender",
-    "target": "food"
-  },
-  {
-    "relation": "Synonym",
-    "source": "provender",
-    "target": "commissariat"
-  },
-  {
-    "relation": "Synonym",
-    "source": "provisions",
-    "target": "commissariat"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "puree",
     "target": "bread"
   },
@@ -7615,29 +6950,44 @@
     "target": "arm"
   },
   {
+    "relation": "MannerOf",
+    "source": "rap",
+    "target": "perform"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "rap",
+    "target": "hip"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "rap",
+    "target": "knuckle"
+  },
+  {
+    "relation": "Synonym",
+    "source": "rap",
+    "target": "fall"
+  },
+  {
+    "relation": "Synonym",
+    "source": "rap",
+    "target": "pat"
+  },
+  {
     "relation": "RelatedTo",
     "source": "ration",
     "target": "food"
   },
   {
     "relation": "RelatedTo",
-    "source": "rear",
-    "target": "behind"
+    "source": "ration",
+    "target": "portion"
   },
   {
-    "relation": "RelatedTo",
-    "source": "rear",
-    "target": "bottom"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "rear",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "rear",
-    "target": "buttocks"
+    "relation": "SimilarTo",
+    "source": "ration",
+    "target": "helping"
   },
   {
     "relation": "RelatedTo",
@@ -7663,11 +7013,6 @@
     "relation": "Synonym",
     "source": "recalcitrant",
     "target": "stubborn"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "receptor",
-    "target": "protein"
   },
   {
     "relation": "RelatedTo",
@@ -7730,9 +7075,14 @@
     "target": "territory"
   },
   {
+    "relation": "RelatedTo",
+    "source": "reindeer",
+    "target": "deer"
+  },
+  {
     "relation": "Synonym",
-    "source": "region",
-    "target": "domain"
+    "source": "reindeer",
+    "target": "caribou"
   },
   {
     "relation": "RelatedTo",
@@ -7750,19 +7100,14 @@
     "target": "meal"
   },
   {
-    "relation": "RelatedTo",
+    "relation": "SimilarTo",
     "source": "reputable",
-    "target": "honorable"
+    "target": "respectable"
   },
   {
-    "relation": "RelatedTo",
+    "relation": "SimilarTo",
     "source": "respectable",
-    "target": "good"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "retina",
-    "target": "layer"
+    "target": "reputable"
   },
   {
     "relation": "RelatedTo",
@@ -7787,12 +7132,17 @@
   {
     "relation": "RelatedTo",
     "source": "righteous",
-    "target": "good"
+    "target": "innocent"
   },
   {
     "relation": "SimilarTo",
     "source": "righteous",
     "target": "moral"
+  },
+  {
+    "relation": "Synonym",
+    "source": "ropeway",
+    "target": "tramway"
   },
   {
     "relation": "RelatedTo",
@@ -7837,27 +7187,12 @@
   {
     "relation": "RelatedTo",
     "source": "rump",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "rump",
     "target": "hindquarters"
   },
   {
     "relation": "RelatedTo",
     "source": "rump",
     "target": "meat"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "rump",
-    "target": "behind"
-  },
-  {
-    "relation": "Synonym",
-    "source": "rump",
-    "target": "buttocks"
   },
   {
     "relation": "Synonym",
@@ -7882,6 +7217,11 @@
   {
     "relation": "RelatedTo",
     "source": "sandwich",
+    "target": "dinner"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sandwich",
     "target": "food"
   },
   {
@@ -7893,6 +7233,11 @@
     "relation": "RelatedTo",
     "source": "sandwich",
     "target": "meal"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sandwich",
+    "target": "serving"
   },
   {
     "relation": "RelatedTo",
@@ -7945,31 +7290,6 @@
     "target": "blind"
   },
   {
-    "relation": "DerivedFrom",
-    "source": "seafood",
-    "target": "food"
-  },
-  {
-    "relation": "IsA",
-    "source": "seafood",
-    "target": "fish"
-  },
-  {
-    "relation": "IsA",
-    "source": "seafood",
-    "target": "meat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "seafood",
-    "target": "edible"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "seafood",
-    "target": "fish"
-  },
-  {
     "relation": "RelatedTo",
     "source": "seasoned",
     "target": "experienced"
@@ -7978,56 +7298,6 @@
     "relation": "RelatedTo",
     "source": "seasoned",
     "target": "food"
-  },
-  {
-    "relation": "IsA",
-    "source": "seat",
-    "target": "furniture"
-  },
-  {
-    "relation": "IsA",
-    "source": "seat",
-    "target": "location"
-  },
-  {
-    "relation": "IsA",
-    "source": "seat",
-    "target": "part"
-  },
-  {
-    "relation": "PartOf",
-    "source": "seat",
-    "target": "skirt"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "seat",
-    "target": "bottom"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "seat",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "seat",
-    "target": "furniture"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "seat",
-    "target": "location"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "seat",
-    "target": "part"
-  },
-  {
-    "relation": "Synonym",
-    "source": "seat",
-    "target": "buttocks"
   },
   {
     "relation": "FormOf",
@@ -8066,6 +7336,21 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "serratus",
+    "target": "muscle"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "serving",
+    "target": "layer"
+  },
+  {
+    "relation": "Synonym",
+    "source": "serving",
+    "target": "helping"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "setup",
     "target": "apparatus"
   },
@@ -8097,7 +7382,27 @@
   {
     "relation": "RelatedTo",
     "source": "sheep",
+    "target": "ewe"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sheep",
+    "target": "flock"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sheep",
+    "target": "goat"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sheep",
     "target": "herd"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sheep",
+    "target": "lamb"
   },
   {
     "relation": "RelatedTo",
@@ -8108,11 +7413,6 @@
     "relation": "RelatedTo",
     "source": "sheep",
     "target": "ruminant"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "sheikdom",
-    "target": "domain"
   },
   {
     "relation": "FormOf",
@@ -8175,14 +7475,9 @@
     "target": "shirt"
   },
   {
-    "relation": "DerivedFrom",
+    "relation": "RelatedTo",
     "source": "shirttail",
-    "target": "tail"
-  },
-  {
-    "relation": "IsA",
-    "source": "shirttail",
-    "target": "tail"
+    "target": "portion"
   },
   {
     "relation": "RelatedTo",
@@ -8198,6 +7493,11 @@
     "relation": "PartOf",
     "source": "shoulder",
     "target": "chuck"
+  },
+  {
+    "relation": "PartOf",
+    "source": "shoulder",
+    "target": "garment"
   },
   {
     "relation": "RelatedTo",
@@ -8237,17 +7537,22 @@
   {
     "relation": "RelatedTo",
     "source": "sinew",
-    "target": "member"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "sinew",
     "target": "tendon"
   },
   {
     "relation": "Synonym",
     "source": "sinew",
     "target": "tendon"
+  },
+  {
+    "relation": "Synonym",
+    "source": "sinless",
+    "target": "impeccant"
+  },
+  {
+    "relation": "Synonym",
+    "source": "sinless",
+    "target": "innocent"
   },
   {
     "relation": "RelatedTo",
@@ -8268,31 +7573,6 @@
     "relation": "RelatedTo",
     "source": "skeleton",
     "target": "vertebrate"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "skilful",
-    "target": "skilled"
-  },
-  {
-    "relation": "Synonym",
-    "source": "skilful",
-    "target": "proficient"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "skilled",
-    "target": "skillful"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "skillful",
-    "target": "skilled"
-  },
-  {
-    "relation": "Synonym",
-    "source": "skillful",
-    "target": "proficient"
   },
   {
     "relation": "IsA",
@@ -8365,11 +7645,6 @@
     "target": "shirt"
   },
   {
-    "relation": "RelatedTo",
-    "source": "slop",
-    "target": "solid"
-  },
-  {
     "relation": "HasPrerequisite",
     "source": "smoke",
     "target": "inhale"
@@ -8398,6 +7673,41 @@
     "relation": "IsA",
     "source": "smoothie",
     "target": "mixture"
+  },
+  {
+    "relation": "Synonym",
+    "source": "snail",
+    "target": "escargot"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "sniff",
+    "target": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sniff",
+    "target": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sniff",
+    "target": "nose"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "sniffle",
+    "target": "sniff"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "sniffle",
+    "target": "nose"
+  },
+  {
+    "relation": "Synonym",
+    "source": "sniffle",
+    "target": "sniff"
   },
   {
     "relation": "MannerOf",
@@ -8435,6 +7745,11 @@
     "target": "nose"
   },
   {
+    "relation": "RelatedTo",
+    "source": "snort",
+    "target": "snuff"
+  },
+  {
     "relation": "IsA",
     "source": "snow",
     "target": "powder"
@@ -8443,6 +7758,41 @@
     "relation": "RelatedTo",
     "source": "snow",
     "target": "powder"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "snuff",
+    "target": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "snuff",
+    "target": "inhale"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "snuff",
+    "target": "mince"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "snuff",
+    "target": "sniff"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "snuff",
+    "target": "snort"
+  },
+  {
+    "relation": "Synonym",
+    "source": "snuff",
+    "target": "sniff"
+  },
+  {
+    "relation": "Synonym",
+    "source": "snuff",
+    "target": "snort"
   },
   {
     "relation": "RelatedTo",
@@ -8468,11 +7818,6 @@
     "relation": "RelatedTo",
     "source": "solid",
     "target": "unyielding"
-  },
-  {
-    "relation": "SimilarTo",
-    "source": "solid",
-    "target": "good"
   },
   {
     "relation": "Synonym",
@@ -8582,17 +7927,7 @@
   {
     "relation": "RelatedTo",
     "source": "spear",
-    "target": "fish"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "spear",
     "target": "lance"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "spear",
-    "target": "midsection"
   },
   {
     "relation": "RelatedTo",
@@ -8655,26 +7990,6 @@
     "target": "country"
   },
   {
-    "relation": "IsA",
-    "source": "stern",
-    "target": "rear"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "stern",
-    "target": "rear"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "stern",
-    "target": "tail"
-  },
-  {
-    "relation": "Synonym",
-    "source": "stern",
-    "target": "buttocks"
-  },
-  {
     "relation": "RelatedTo",
     "source": "sternum",
     "target": "breastbone"
@@ -8728,6 +8043,11 @@
     "relation": "RelatedTo",
     "source": "stratum",
     "target": "stratosphere"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "strawworm",
+    "target": "grub"
   },
   {
     "relation": "RelatedTo",
@@ -8791,6 +8111,16 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "swoop",
+    "target": "plunge"
+  },
+  {
+    "relation": "Synonym",
+    "source": "swoop",
+    "target": "pounce"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "tackle",
     "target": "equipment"
   },
@@ -8813,71 +8143,6 @@
     "relation": "Synonym",
     "source": "tadpole",
     "target": "polliwog"
-  },
-  {
-    "relation": "IsA",
-    "source": "tail",
-    "target": "appendage"
-  },
-  {
-    "relation": "IsA",
-    "source": "tail",
-    "target": "rear"
-  },
-  {
-    "relation": "PartOf",
-    "source": "tail",
-    "target": "vertebrate"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "tail",
-    "target": "appendage"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "tail",
-    "target": "backside"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "tail",
-    "target": "buttocks"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "tail",
-    "target": "posterior"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "tail",
-    "target": "rear"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "tail",
-    "target": "stern"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "tail",
-    "target": "tendon"
-  },
-  {
-    "relation": "Synonym",
-    "source": "tail",
-    "target": "ass"
-  },
-  {
-    "relation": "Synonym",
-    "source": "tail",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "tail",
-    "target": "stern"
   },
   {
     "relation": "HasA",
@@ -8955,6 +8220,11 @@
     "target": "pertinacious"
   },
   {
+    "relation": "RelatedTo",
+    "source": "tendon",
+    "target": "muscle"
+  },
+  {
     "relation": "Synonym",
     "source": "tendon",
     "target": "sinew"
@@ -8992,6 +8262,11 @@
   {
     "relation": "RelatedTo",
     "source": "tetrapod",
+    "target": "bird"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "tetrapod",
     "target": "quadruped"
   },
   {
@@ -9003,6 +8278,16 @@
     "relation": "RelatedTo",
     "source": "there",
     "target": "here"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "thermosphere",
+    "target": "exosphere"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "thermosphere",
+    "target": "mesosphere"
   },
   {
     "relation": "RelatedTo",
@@ -9041,43 +8326,23 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "throat",
-    "target": "arm"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "throat",
-    "target": "gullet"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "throat",
-    "target": "neck"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "throat",
-    "target": "windpipe"
-  },
-  {
-    "relation": "Synonym",
-    "source": "throat",
-    "target": "esophagus"
-  },
-  {
-    "relation": "Synonym",
-    "source": "throat",
-    "target": "neck"
-  },
-  {
-    "relation": "Synonym",
-    "source": "throat",
-    "target": "trachea"
-  },
-  {
-    "relation": "RelatedTo",
     "source": "thymus",
     "target": "breastbone"
+  },
+  {
+    "relation": "MannerOf",
+    "source": "tickle",
+    "target": "caress"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "tidbit",
+    "target": "food"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "tidbit",
+    "target": "delicacy"
   },
   {
     "relation": "IsA",
@@ -9095,9 +8360,19 @@
     "target": "clay"
   },
   {
-    "relation": "Antonym",
+    "relation": "RelatedTo",
+    "source": "titbit",
+    "target": "food"
+  },
+  {
+    "relation": "SimilarTo",
+    "source": "titbit",
+    "target": "delicacy"
+  },
+  {
+    "relation": "IsA",
     "source": "toe",
-    "target": "tail"
+    "target": "extremity"
   },
   {
     "relation": "IsA",
@@ -9108,6 +8383,11 @@
     "relation": "PartOf",
     "source": "toe",
     "target": "body"
+  },
+  {
+    "relation": "PartOf",
+    "source": "toe",
+    "target": "hoof"
   },
   {
     "relation": "RelatedTo",
@@ -9135,11 +8415,6 @@
     "target": "hoof"
   },
   {
-    "relation": "Synonym",
-    "source": "tooshie",
-    "target": "buttocks"
-  },
-  {
     "relation": "RelatedTo",
     "source": "topical",
     "target": "body"
@@ -9153,11 +8428,6 @@
     "relation": "RelatedTo",
     "source": "topical",
     "target": "current"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "topical",
-    "target": "eye"
   },
   {
     "relation": "Synonym",
@@ -9205,29 +8475,29 @@
     "target": "trunk"
   },
   {
-    "relation": "IsA",
-    "source": "trachea",
-    "target": "tubule"
+    "relation": "RelatedTo",
+    "source": "tram",
+    "target": "tramway"
   },
   {
     "relation": "RelatedTo",
-    "source": "trachea",
-    "target": "oesophagus"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "trachea",
-    "target": "tube"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "trachea",
-    "target": "windpipe"
+    "source": "tram",
+    "target": "vehicle"
   },
   {
     "relation": "Synonym",
-    "source": "trachea",
-    "target": "windpipe"
+    "source": "tram",
+    "target": "tramway"
+  },
+  {
+    "relation": "DerivedFrom",
+    "source": "tramway",
+    "target": "tram"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "tramway",
+    "target": "tram"
   },
   {
     "relation": "MannerOf",
@@ -9307,11 +8577,6 @@
   {
     "relation": "IsA",
     "source": "trunk",
-    "target": "appendage"
-  },
-  {
-    "relation": "IsA",
-    "source": "trunk",
     "target": "nose"
   },
   {
@@ -9336,13 +8601,13 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "tubule",
-    "target": "tube"
+    "source": "trusteeship",
+    "target": "country"
   },
   {
     "relation": "RelatedTo",
-    "source": "tuck",
-    "target": "food"
+    "source": "trusteeship",
+    "target": "territory"
   },
   {
     "relation": "RelatedTo",
@@ -9353,16 +8618,6 @@
     "relation": "RelatedTo",
     "source": "tunicate",
     "target": "mantle"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "tush",
-    "target": "buttocks"
-  },
-  {
-    "relation": "Synonym",
-    "source": "tush",
-    "target": "buttocks"
   },
   {
     "relation": "DerivedFrom",
@@ -9420,11 +8675,6 @@
     "target": "belly"
   },
   {
-    "relation": "IsA",
-    "source": "underbelly",
-    "target": "bottom"
-  },
-  {
     "relation": "DerivedFrom",
     "source": "underbody",
     "target": "body"
@@ -9438,21 +8688,6 @@
     "relation": "Synonym",
     "source": "underbody",
     "target": "underbelly"
-  },
-  {
-    "relation": "DerivedFrom",
-    "source": "underpart",
-    "target": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "underpart",
-    "target": "part"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "unguis",
-    "target": "appendage"
   },
   {
     "relation": "RelatedTo",
@@ -9493,6 +8728,11 @@
     "relation": "RelatedTo",
     "source": "ungulate",
     "target": "mammal"
+  },
+  {
+    "relation": "IsA",
+    "source": "unknown",
+    "target": "region"
   },
   {
     "relation": "RelatedTo",
@@ -9586,6 +8826,36 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "vent",
+    "target": "garment"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent",
+    "target": "powder"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent",
+    "target": "slit"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent",
+    "target": "snort"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent",
+    "target": "snuff"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "vent",
+    "target": "vertebrate"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "venter",
     "target": "abdomen"
   },
@@ -9595,6 +8865,11 @@
     "target": "belly"
   },
   {
+    "relation": "RelatedTo",
+    "source": "venter",
+    "target": "vent"
+  },
+  {
     "relation": "Synonym",
     "source": "venter",
     "target": "abdomen"
@@ -9610,64 +8885,9 @@
     "target": "bladder"
   },
   {
-    "relation": "IsA",
-    "source": "veteran",
-    "target": "expert"
-  },
-  {
     "relation": "Synonym",
     "source": "veteran",
     "target": "seasoned"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "viands",
-    "target": "provisions"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "viands",
-    "target": "victuals"
-  },
-  {
-    "relation": "Synonym",
-    "source": "viands",
-    "target": "commissariat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "victual",
-    "target": "food"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "victual",
-    "target": "human"
-  },
-  {
-    "relation": "Synonym",
-    "source": "victual",
-    "target": "comestible"
-  },
-  {
-    "relation": "FormOf",
-    "source": "victuals",
-    "target": "victual"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "victuals",
-    "target": "victual"
-  },
-  {
-    "relation": "Synonym",
-    "source": "victuals",
-    "target": "comestible"
-  },
-  {
-    "relation": "Synonym",
-    "source": "victuals",
-    "target": "commissariat"
   },
   {
     "relation": "Synonym",
@@ -9685,19 +8905,19 @@
     "target": "masterful"
   },
   {
-    "relation": "RelatedTo",
-    "source": "virtuous",
-    "target": "good"
-  },
-  {
-    "relation": "Synonym",
-    "source": "virtuous",
-    "target": "good"
-  },
-  {
     "relation": "Synonym",
     "source": "virtuous",
     "target": "righteous"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "viscounty",
+    "target": "county"
+  },
+  {
+    "relation": "RelatedTo",
+    "source": "viscounty",
+    "target": "territory"
   },
   {
     "relation": "RelatedTo",
@@ -9733,11 +8953,6 @@
     "relation": "Synonym",
     "source": "vitellus",
     "target": "yolk"
-  },
-  {
-    "relation": "Synonym",
-    "source": "vulva",
-    "target": "fanny"
   },
   {
     "relation": "Synonym",
@@ -9800,11 +9015,6 @@
     "target": "location"
   },
   {
-    "relation": "DerivedFrom",
-    "source": "whitetail",
-    "target": "tail"
-  },
-  {
     "relation": "MannerOf",
     "source": "widen",
     "target": "increase"
@@ -9826,6 +9036,11 @@
   },
   {
     "relation": "RelatedTo",
+    "source": "wiggler",
+    "target": "larva"
+  },
+  {
+    "relation": "RelatedTo",
     "source": "wilful",
     "target": "stubborn"
   },
@@ -9836,33 +9051,8 @@
   },
   {
     "relation": "RelatedTo",
-    "source": "windpipe",
-    "target": "duct"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "windpipe",
-    "target": "esophagus"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "windpipe",
-    "target": "gullet"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "windpipe",
-    "target": "throat"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "windpipe",
-    "target": "trachea"
-  },
-  {
-    "relation": "Synonym",
-    "source": "windpipe",
-    "target": "trachea"
+    "source": "wireworm",
+    "target": "larva"
   },
   {
     "relation": "RelatedTo",
@@ -9912,16 +9102,6 @@
   {
     "relation": "RelatedTo",
     "source": "worthy",
-    "target": "good"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "worthy",
-    "target": "honorable"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "worthy",
     "target": "treat"
   },
   {
@@ -9930,44 +9110,19 @@
     "target": "worth"
   },
   {
-    "relation": "FormOf",
-    "source": "yoghourt",
-    "target": "yogurt"
+    "relation": "RelatedTo",
+    "source": "wriggler",
+    "target": "larva"
   },
   {
     "relation": "Synonym",
-    "source": "yoghourt",
-    "target": "yogurt"
-  },
-  {
-    "relation": "FormOf",
-    "source": "yoghurt",
-    "target": "yoghourt"
-  },
-  {
-    "relation": "FormOf",
-    "source": "yoghurt",
-    "target": "yogurt"
-  },
-  {
-    "relation": "Synonym",
-    "source": "yoghurt",
-    "target": "yogurt"
-  },
-  {
-    "relation": "FormOf",
-    "source": "yogurt",
-    "target": "yoghourt"
-  },
-  {
-    "relation": "IsA",
-    "source": "yogurt",
-    "target": "mixture"
+    "source": "wriggler",
+    "target": "wiggler"
   },
   {
     "relation": "RelatedTo",
-    "source": "yogurt",
-    "target": "milk"
+    "source": "wristband",
+    "target": "sleeve"
   },
   {
     "relation": "AtLocation",
@@ -9998,11 +9153,6 @@
     "relation": "IsA",
     "source": "zone",
     "target": "state"
-  },
-  {
-    "relation": "RelatedTo",
-    "source": "zone",
-    "target": "domain"
   },
   {
     "relation": "RelatedTo",
