@@ -15,6 +15,10 @@
    ```bash
    python3 merge_conceptnet_edges_with_wordnet.py
    ```
+4. Assign each of the 512 synsets a unique artificial token.
+   ```bash
+   ???
+   ```
 Output: **combined_synset_edges.json** with **2174 triples over 33 relations**
 
 ### Syntactic structure
