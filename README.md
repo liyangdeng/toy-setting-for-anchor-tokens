@@ -2,24 +2,7 @@
 ## Artificial Language creation
 ### Semantic structure
 
-1. Build the initial 512-concept WordNet inventory.
-   ```bash
-   python3 build_wordnet_synset_inventory.py
-   ```
-2. Expand with ConceptNet relations: IsA, PartOf, RelatedTo, Synonym, …
-*(requires assertions.csv from https://conceptnet.io ??)*
-   ```bash
-   python3 expand_conceptnet_relations_for_synsets.py
-   ```
-3. Merge WordNet and ConceptNet edges into the combined edge set.
-   ```bash
-   python3 merge_conceptnet_edges_with_wordnet.py
-   ```
-4. Assign each of the 512 synsets a unique artificial token.
-   ```bash
-   ???
-   ```
-Output: **combined_synset_edges.json** with **2174 triples over 33 relations**
+We build a degree-controlled noun concept backbone from WordNet, enriches it with ConceptNet relations and virtual adjective properties, and provides a controlled, connected, extensible semantic backbone for constructing our artificial language. More information in [corresponding README](data/semantic_backbones/README.md).
 
 ### Syntactic structure
 **1. PCFG production rules** and the per-relation verb-phrase templates:
