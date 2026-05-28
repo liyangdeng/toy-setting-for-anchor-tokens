@@ -10,7 +10,6 @@ WordNet noun backbone
 -> low-degree repair
 -> metadata validation
 -> Validation
--> Virtual adjective expansion
 ```
 
 ### 1. WordNet noun backbone
