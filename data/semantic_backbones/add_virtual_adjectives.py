@@ -6,10 +6,10 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, Set
 
 
-DEFAULT_SYNSETS = Path("semantic_backbones/rebuilt/synsets.json")
-DEFAULT_EDGES = Path("semantic_backbones/rebuilt/edges.json")
-DEFAULT_METADATA = Path("semantic_backbones/rebuilt/metadata.json")
-DEFAULT_OUTPUT_DIR = Path("semantic_backbones/rebuilt_with_virtual_adj")
+DEFAULT_SYNSETS = Path("semantic_backbones/kg_noun_only/synsets.json")
+DEFAULT_EDGES = Path("semantic_backbones/kg_noun_only/edges.json")
+DEFAULT_METADATA = Path("semantic_backbones/kg_noun_only/metadata.json")
+DEFAULT_OUTPUT_DIR = Path("semantic_backbones/kg_with_virtual_adj")
 DEFAULT_UNICODE_START = 0xA000
 DEFAULT_UNICODE_END = 0xA4C6
 
