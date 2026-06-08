@@ -280,7 +280,7 @@ grammar = {
         AUX -> 'remains' [0.33]
         AUX -> 'appears' [0.33]
         ADJP -> 'composed' [0.34]
-        ADJP -> 'comprised' [0.33]hascontex
+        ADJP -> 'comprised' [0.33]
         ADJP -> 'constituted' [0.33]
         PP -> 'of' [1.0]
 
@@ -604,7 +604,7 @@ grammar = {
         VP_EXP_hyponym -> TRANS_HYPONYM 'tgt' CONJ VP 'tgt_2' [0.5]
         VP_EXP_hyponym -> COP_HYPONYM 'tgt' CONJ VP 'tgt_2' [0.5]
         
-        CONJ_ -> 'that' [1.0]
+        CONJ -> 'that' [1.0]
         
         TRANS_HYPERNYM -> V_HYP [1.0]
         V_HYP -> 'exemplifies' [0.25] | 'specializes' [0.25] | 'refines' [0.25] | 'extends' [0.25]
