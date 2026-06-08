@@ -267,7 +267,7 @@ def generate_sentences(edges, parsed_grammars, switches, n_samples=7, node_to_le
                 elif choice_type == 'expand':
                     exp_key = f"VP_EXP_{rel_2}"
                     raw_tokens = sample_phrase(rules, exp_key)
-                    raw_sentence = " ".join(raw_tokens)
+                    raw_sentence = " ".join(t.replace('_', ' ') for t in raw_tokens)
                     
                     complex_sent = f"{src} {raw_sentence}"
                     complex_sent = complex_sent.replace('tgt_2', tgt_2).replace('tgt', tgt)
