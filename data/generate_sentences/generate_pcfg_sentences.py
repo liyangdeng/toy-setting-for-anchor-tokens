@@ -152,24 +152,41 @@ SWITCH_NAMES = {
     (1, 0): 'OVS',
 }
 
+ALLOWED_EXPANSIONS = {
+    "hypernym": "hyponym",
+    "hyponym": "hypernym",
+    "instance_hypernym": "instance_hyponym",
+    "instance_hyponym": "instance_hypernym",
+
+    "part_meronym": "part_holonym",
+    "part_holonym": "part_meronym",
+    "member_meronym": "member_holonym",
+    "member_holonym": "member_meronym",
+    "substance_meronym": "substance_holonym",
+    "substance_holonym": "substance_meronym",
+
+    "RelatedTo": "HasContext",
+    "HasContext": "RelatedTo",
+    "AtLocation": ["hypernym", "hyponym"],
+    "UsedFor": ["hypernym", "hyponym"],
+    "SimilarTo": "DistinctFrom",
+    "Antonym": "SimilarTo",
+    "CapableOf": ["hypernym", "hyponym"],
+
+    "HasProperty": ["hypernym", "hyponym"],
+    "DistinctFrom": "Antonym",
+    "MadeOf": "UsedFor",
+    "Desires": "NotDesires",
+
+    "CausesDesire": ["hypernym", "hyponym"],
+    "HasFirstSubevent": "HasLastSubevent",
+    "HasLastSubevent": "HasFirstSubevent",
+}
 
 def generate_sentences(edges, parsed_grammars, switches, n_samples=5, node_to_lemma=None):
     """
     Generate sentences for all edges under a fixed switch configuration.
-
-    Args:
-        edges:           list of edge dicts {source, relation, target, ...}
-        parsed_grammars: {relation: rules_dict}
-        switches:        (s1, s2) tuple of 0/1
-        n_samples:       unique sentences to generate per triple
-        max_attempts:    max sampling attempts per triple
-        node_to_lemma:   optional {node_id: lemma_str} lookup
-
-    Returns:
-        results:  list of {source, relation, target, sentences}
-        skipped:  set of relation strings that had no grammar
     """
-
     s1, s2 = switches
     results = []
     skipped = []
@@ -201,7 +218,7 @@ def generate_sentences(edges, parsed_grammars, switches, n_samples=5, node_to_le
         attempts = 0
         max_attempts = n_samples * 25
 
-        # Generate simple sentences
+        # 1. Generate simple sentences
         n_simple = min(3, n_samples) 
         while len(sentences) < n_simple and attempts < max_attempts:
             vp_struct = sample_vp_struct(rules)
@@ -209,42 +226,60 @@ def generate_sentences(edges, parsed_grammars, switches, n_samples=5, node_to_le
             sentences.add(sent)
             attempts += 1
 
-        # Try to generate complex sentences by finding sibling edges with the same source
+        # 2. Try to generate complex sentences by finding sibling edges with the same source
         sibling_edges = [se for se in edges_by_source[src_id] if se != edge]
         
         if sibling_edges:
-            second_edge = random.choice(sibling_edges)
-            rel_2 = second_edge['relation']
-            tgt_id_2 = second_edge['target']
-            tgt_2 = get_lemma(tgt_id_2)
-            
-            exp_key = f"VP_EXP_{rel_2}"
+            allowed = ALLOWED_EXPANSIONS.get(rel)
+            target_relations = [allowed] if isinstance(allowed, str) else (allowed if allowed else [])
+          
+            same_rel_edges = [se for se in sibling_edges if se['relation'] == rel]
+            expansion_edges = [
+                se for se in sibling_edges 
+                if se['relation'] in target_relations and f"VP_EXP_{se['relation']}" in rules
+            ]
             
             while len(sentences) < n_samples and attempts < max_attempts:
-                # Both edges share the same relation (e.g. "located_in") — try to coordinate the two targets with "and"
-                if rel_2 == rel:
+                attempts += 1
+                
+                available_choices = []
+                if same_rel_edges:
+                    available_choices.append(('same', same_rel_edges))
+                if expansion_edges:
+                    available_choices.append(('expand', expansion_edges))
+                
+                if not available_choices:
+                    break
+                
+                choice_type, edges_list = random.choice(available_choices)
+                second_edge = random.choice(edges_list)
+                
+                rel_2 = second_edge['relation']
+                tgt_id_2 = second_edge['target']
+                tgt_2 = get_lemma(tgt_id_2)
+                
+                # Both edges share the same relation — try to coordinate the two targets with "and"
+                if choice_type == 'same':
                     vp_struct_1 = sample_vp_struct(rules)
                     part_1 = apply_switches(src, vp_struct_1, tgt, s1, s2)
                     complex_sent = f"{part_1} and {tgt_2}"
                     sentences.add(complex_sent)
                 
-                # The second edge's relation has a corresponding expansion rule (e.g. "part_of" → "VP_EXP_part_of") — try to expand the VP with that relation
-                elif exp_key in rules:
+                # The second edge's relation has a corresponding expansion rule
+                elif choice_type == 'expand':
+                    exp_key = f"VP_EXP_{rel_2}"
                     raw_tokens = sample_phrase(rules, exp_key)
                     raw_sentence = " ".join(raw_tokens)
                     
                     complex_sent = f"{src} {raw_sentence}"
                     complex_sent = complex_sent.replace('tgt_2', tgt_2).replace('tgt', tgt)
                     sentences.add(" ".join(complex_sent.split()))
-                
-                else:
-                    break
 
         results.append({
-            'source':    src_id,
-            'relation':  rel,
-            'target':    tgt_id,
-            'sentences': list(sentences),
+            'source': src_id,
+            'relation': rel,
+            'target': tgt_id,
+            'sentences': list(sentences)
         })
 
     return results, set(skipped)
