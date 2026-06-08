@@ -181,7 +181,7 @@ ALLOWED_EXPANSIONS = {
     "HasLastSubevent": "HasFirstSubevent",
 }
 
-def generate_sentences(edges, parsed_grammars, switches, n_samples=5, node_to_lemma=None):
+def generate_sentences(edges, parsed_grammars, switches, n_samples=7, node_to_lemma=None):
     """
     Generate sentences for all edges under a fixed switch configuration.
     """
@@ -214,10 +214,10 @@ def generate_sentences(edges, parsed_grammars, switches, n_samples=5, node_to_le
 
         sentences = set()
         attempts = 0
-        max_attempts = n_samples * 25
+        max_attempts = 50
 
         # 1. Generate simple sentences
-        n_simple = min(3, n_samples) 
+        n_simple = min(5, n_samples) 
         while len(sentences) < n_simple and attempts < max_attempts:
             vp_struct = sample_vp_struct(rules)
             sent = apply_switches(src, vp_struct, tgt, s1, s2)
@@ -291,7 +291,7 @@ def main():
                    help='S switch: 0=NP VP  1=VP NP')
     p.add_argument('--s2', type=int, default=1, choices=[0, 1],
                    help='VP switch: 0=OV  1=VO  (TRANS only)')
-    p.add_argument('--n_samples', type=int, default=5)
+    p.add_argument('--n_samples', type=int, default=7)
     p.add_argument('--edges',   default='edges.json')
     p.add_argument('--synsets', default='synsets.json')
     p.add_argument('--grammar', default='grammar_templates_extended.py')
