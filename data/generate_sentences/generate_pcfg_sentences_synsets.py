@@ -194,23 +194,17 @@ def generate_sentences(edges, parsed_grammars, switches, n_samples=7, node_to_le
     for edge in edges:
         edges_by_source[edge['source']].append(edge)
 
-    def get_lemma(node_id):
-        if node_to_lemma and node_id in node_to_lemma:
-            return node_to_lemma[node_id]
-        return node_id.split('.')[0].replace('_', ' ')
 
     for edge in edges:
         rel = edge['relation']
-        src_id = edge['source']
-        tgt_id = edge['target']
+        src = edge['source']
+        tgt = edge['target']
 
         if rel not in parsed_grammars:
             skipped.append(rel)
             continue
 
         rules = parsed_grammars[rel]
-        src = get_lemma(src_id)
-        tgt = get_lemma(tgt_id)
 
         sentences = set()
         attempts = 0
@@ -225,7 +219,7 @@ def generate_sentences(edges, parsed_grammars, switches, n_samples=7, node_to_le
             attempts += 1
 
         # 2. Try to generate complex sentences by finding sibling edges with the same source
-        sibling_edges = [se for se in edges_by_source[src_id] if se != edge]
+        sibling_edges = [se for se in edges_by_source[src] if se != edge]
         
         if sibling_edges:
             allowed = ALLOWED_EXPANSIONS.get(rel)
@@ -253,8 +247,7 @@ def generate_sentences(edges, parsed_grammars, switches, n_samples=7, node_to_le
                 second_edge = random.choice(edges_list)
                 
                 rel_2 = second_edge['relation']
-                tgt_id_2 = second_edge['target']
-                tgt_2 = get_lemma(tgt_id_2)
+                tgt_2 = second_edge['target']
                 
                 # Both edges share the same relation — try to coordinate the two targets with "and"
                 if choice_type == 'same':
@@ -274,9 +267,9 @@ def generate_sentences(edges, parsed_grammars, switches, n_samples=7, node_to_le
                     sentences.add(" ".join(complex_sent.split()))
 
         results.append({
-            'source': src_id,
+            'source': src,
             'relation': rel,
-            'target': tgt_id,
+            'target': tgt,
             'sentences': list(sentences)
         })
 
