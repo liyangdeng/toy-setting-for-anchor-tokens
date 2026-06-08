@@ -165,8 +165,6 @@ ALLOWED_EXPANSIONS = {
     "substance_meronym": "substance_holonym",
     "substance_holonym": "substance_meronym",
 
-    "RelatedTo": "HasContext",
-    "HasContext": "RelatedTo",
     "AtLocation": ["hypernym", "hyponym"],
     "UsedFor": ["hypernym", "hyponym"],
     "SimilarTo": "DistinctFrom",
