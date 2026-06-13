@@ -364,4 +364,21 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Big model files
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.onnx
+*.pkl
+data/training/checkpoints/
+data/training/checkpoints_monolingual/
+checkpoints/
+outputs/
+saved_model/
+runs/
+wandb/
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,python,visualstudiocode,pycharm
