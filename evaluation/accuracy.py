@@ -3,11 +3,10 @@ accuracy on a saved checkpoint:
     top1, top5, mean reciprocal rank
 gets saved as res_accuracy.txt by default
 
-
 usage:
     python accuracy.py
-        --model_dir ./checkpoints/final
-        --dev_file ./checkpoints/dev.txt
+        --model_dir ./checkpoints_monolingual/final
+        --dev_file ./checkpoints_monolingual/dev.txt
 """
 
 import argparse
