@@ -121,6 +121,12 @@ def sample_phrase(rules, symbol):
 def apply_switches(src, vp_struct, tgt, s1, s2):
     """
     Assemble a sentence using 2 binary switches.
+
+    All tokens (entity synset IDs and grammar terminals) are kept as-is with
+    underscores intact, matching the dictionary keys exactly.  No underscore
+    replacement is applied: multi-word grammar concepts such as 'more_general'
+    or 'belongs_to' remain single tokens, and synset IDs such as
+    'abdominal_wall.n.01' likewise stay intact.
     """
     vtype = vp_struct['type']
 
@@ -140,7 +146,7 @@ def apply_switches(src, vp_struct, tgt, s1, s2):
         pred = [aux, adjp, pp, tgt]
 
     tokens = ([src] + pred if s1 == 0 else pred + [src])
-    return ' '.join(t.replace('_', ' ') for t in tokens)
+    return ' '.join(tokens)
 
 
 # ── High-level generation ──────────────────────────────────────────────────────
