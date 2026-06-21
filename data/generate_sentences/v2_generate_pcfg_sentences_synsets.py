@@ -140,7 +140,7 @@ def apply_switches(src, vp_struct, tgt, s1, s2):
         pred = [aux, adjp, pp, tgt]
 
     tokens = ([src] + pred if s1 == 0 else pred + [src])
-    return ' '.join(t.replace('_', ' ') for t in tokens)
+    return ' '.join(tokens)
 
 
 # ── High-level generation ──────────────────────────────────────────────────────
