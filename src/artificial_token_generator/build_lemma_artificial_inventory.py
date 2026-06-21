@@ -7,7 +7,7 @@ import random
 from collections import defaultdict
 from pathlib import Path
 
-from extract_grammar_terminals import base_pos, load_grammar, parse_grammar
+from src.artificial_token_generator.extract_grammar_terminals import base_pos, load_grammar, parse_grammar
 
 
 DEFAULT_SYNSETS_FILE = Path("semantic_backbones/kg_noun_only/synsets.json")

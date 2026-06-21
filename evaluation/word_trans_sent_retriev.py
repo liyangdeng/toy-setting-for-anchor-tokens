@@ -17,13 +17,28 @@ Test 2 — Sentence Retrieval Precision
 
 Usage:
     # Both tests
-    python evaluate_synset.py --model ~/Desktop/coding/checkpoints_multi_synset/final
+    python evaluation/word_trans_sent_retriev.py \
+        --model checkpoints_multi_synset/final \
+        --cjk data/semantic_backbones/dict_to_artificial/synset_pos_artificial_cjk.json \
+        --hiragana data/semantic_backbones/dict_to_artificial/synset_pos_artificial_hiragana.json \
+        --parallel data/corpus/parallel_corpus_synset.json
 
     # Test 1 only
-    python evaluate_synset.py --model ... --test 1
+    python evaluation/word_trans_sent_retriev.py \
+        --model checkpoints_multi_synset/final \
+        --test 1 \
+        --cjk data/semantic_backbones/dict_to_artificial/synset_pos_artificial_cjk.json \
+        --hiragana data/semantic_backbones/dict_to_artificial/synset_pos_artificial_hiragana.json \
+        --parallel data/corpus/parallel_corpus_synset.json
 
     # Test 2 with 1000 sampled pairs
-    python evaluate_synset.py --model ... --test 2 --n_sample 1000
+    python evaluation/word_trans_sent_retriev.py \
+        --model checkpoints_multi_synset/final \
+        --test 2 \
+        --n_sample 1000 \
+        --cjk data/semantic_backbones/dict_to_artificial/synset_pos_artificial_cjk.json \
+        --hiragana data/semantic_backbones/dict_to_artificial/synset_pos_artificial_hiragana.json \
+        --parallel data/corpus/parallel_corpus_synset.json
 """
 
 import argparse
@@ -34,14 +49,6 @@ from pathlib import Path
 import numpy as np
 import torch
 from transformers import BertForMaskedLM, PreTrainedTokenizerFast
-
-
-# ── Paths ──────────────────────────────────────────────────────────────────────
-
-BASE = Path('/Users/pengyuwen/toy-setting-for-anchor-tokens/data')
-DEFAULT_CJK     = BASE / 'semantic_backbones/dict_to_artificial/synset_pos_artificial_cjk.json'
-DEFAULT_HIRA    = BASE / 'semantic_backbones/dict_to_artificial/synset_pos_artificial_hiragana.json'
-DEFAULT_PARALLEL = BASE / 'corpus/parallel_corpus_synset.json'
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -74,6 +81,15 @@ def precision_at_k(sim_matrix, correct_indices, k):
     return hits / len(correct_indices)
 
 
+def artificial_to_synset(dictionary):
+    """Map artificial content tokens back to their synset keys."""
+    return {
+        entry['artificial']: key
+        for key, entry in dictionary.items()
+        if entry.get('source') == 'synsets'
+    }
+
+
 # ── Test 1: Word Translation Precision ────────────────────────────────────────
 
 def test1_word_translation(model, tokenizer, cjk_path, hira_path):
@@ -81,6 +97,7 @@ def test1_word_translation(model, tokenizer, cjk_path, hira_path):
 
     with open(cjk_path)  as f: cjk_dict  = json.load(f)
     with open(hira_path) as f: hira_dict = json.load(f)
+    cjk_token_to_synset = artificial_to_synset(cjk_dict)
 
     vocab = tokenizer.get_vocab()   # token string → id
     emb   = word_emb_matrix(model)  # (V, H)
@@ -130,6 +147,10 @@ def test1_word_translation(model, tokenizer, cjk_path, hira_path):
         print(f'\n  Sample wrong predictions (concept | predicted_A | correct_A):')
         for concept, pred, correct_tok in wrong[:5]:
             print(f'    {concept:<40s}  pred={pred}  gold={correct_tok}')
+            print(
+                f'      pred_synset={cjk_token_to_synset.get(pred, "<unknown>")}  '
+                f'gold_synset={cjk_token_to_synset.get(correct_tok, "<unknown>")}'
+            )
     print()
 
 
@@ -187,9 +208,24 @@ def main():
                    help='Path to trained model directory (e.g. checkpoints_multi_synset/final)')
     p.add_argument('--test',     type=int, choices=[1, 2], default=None,
                    help='Which test to run (default: both)')
-    p.add_argument('--cjk',     default=str(DEFAULT_CJK))
-    p.add_argument('--hiragana', default=str(DEFAULT_HIRA))
-    p.add_argument('--parallel', default=str(DEFAULT_PARALLEL))
+    p.add_argument(
+        '--cjk',
+        type=Path,
+        required=True,
+        help='Path to synset_pos_artificial_cjk.json',
+    )
+    p.add_argument(
+        '--hiragana',
+        type=Path,
+        required=True,
+        help='Path to synset_pos_artificial_hiragana.json',
+    )
+    p.add_argument(
+        '--parallel',
+        type=Path,
+        required=True,
+        help='Path to parallel_corpus_synset.json',
+    )
     p.add_argument('--n_sample', type=int, default=500,
                    help='Number of sentence pairs for Test 2 (default: 500)')
     p.add_argument('--seed',     type=int, default=42)

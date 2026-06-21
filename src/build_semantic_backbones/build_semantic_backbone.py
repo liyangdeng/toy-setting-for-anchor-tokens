@@ -941,7 +941,7 @@ def parse_args() -> argparse.Namespace:
         description="Rebuild a noun-first semantic backbone from WordNet and ConceptNet."
     )
     parser.add_argument("--conceptnet", type=Path, default=Path("assertions.csv"))
-    parser.add_argument("--output-dir", type=Path, default=Path("semantic_backbones/rebuilt"))
+    parser.add_argument("--output-dir", type=Path, default=Path("semantic_backbones/"))
     parser.add_argument("--target-wordnet-nodes", type=int, default=1200)
     parser.add_argument("--target-total-nodes", type=int, default=2000)
     parser.add_argument("--target-total-edges", type=int, default=8000)
