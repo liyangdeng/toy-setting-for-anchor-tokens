@@ -4,8 +4,8 @@ accuracy on a saved checkpoint:
 gets saved as res_accuracy.txt by default
 
 usage:
-    python accuracy.py
-        --model_dir ./checkpoints_monolingual/final
+    python accuracy.py \
+        --model_dir ./checkpoints_monolingual/final \
         --dev_file ./checkpoints_monolingual/dev.txt
 """
 

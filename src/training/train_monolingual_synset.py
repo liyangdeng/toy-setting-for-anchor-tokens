@@ -13,7 +13,7 @@ loss change plot.
 The accuracy and stuff come in the evaluation script.
 
 Usage:
-    python train_monolingual.py \
+    python train_monolingual_synset.py \
         --corpus ../generate_sentences/corpus_hiragana.txt \
         --output_dir ./checkpoints_monolingual
 """

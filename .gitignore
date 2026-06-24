@@ -375,7 +375,7 @@ $RECYCLE.BIN/
 *.pkl
 data/training/checkpoints/
 data/training/checkpoints_monolingual/
-checkpoints/
+checkpoints_*/
 outputs/
 saved_model/
 runs/
