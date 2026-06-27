@@ -92,7 +92,7 @@ def main():
     BASE = Path('data')
 
     p = argparse.ArgumentParser()
-    p.add_argument('--sentences', default=str(BASE / 'generate_sentences/generated_sentences_synsets.json'))
+    p.add_argument('--sentences', default=str(BASE / 'generate_sentences/generated_sentences_adj.py'))
     p.add_argument('--cjk',      default=str(BASE / 'semantic_backbones/dict_to_artificial/dicts_synset_adj_augmented/synset_pos_artificial_cjk_edges_adj_augmented.json'))
     p.add_argument('--hiragana', default=str(BASE / 'semantic_backbones/dict_to_artificial/dicts_synset_adj_augmented/synset_pos_artificial_hiragana_edges_adj_augmented.json'))
     p.add_argument('--out_dir',  default=str(Path.home() / 'Desktop/coding'))

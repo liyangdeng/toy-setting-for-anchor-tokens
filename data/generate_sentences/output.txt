@@ -1,0 +1,177 @@
+/Users/pengyuwen/toy-setting-for-anchor-tokens/.venv/bin/python /Users/pengyuwen/toy-setting-for-anchor-tokens/data/generate_sentences/analyze_kg.py
+loaded 6790 triples (6790 distinct) from /Users/pengyuwen/toy-setting-for-anchor-tokens/data/generate_sentences/v2_generated_sentences_synsets.json
+
+========================================================================
+(1) MULTIPLE EDGES BETWEEN THE SAME NODES
+========================================================================
+distinct ordered (source,target) pairs : 6293
+  carrying >1 relation (multi-edge)    : 473  (7.5%)
+  distribution #relations-per-pair     : {1: 5820, 2: 449, 3: 24}
+  --> mask-RELATION must exclude these pairs (or accept any of them).
+  examples:
+     abdominal.n.01           abdomen.n.01             -> ['RelatedTo', 'part_holonym']
+     abuja.n.01               nigeria.n.01             -> ['RelatedTo', 'part_holonym']
+     abyssinian.n.01          domestic_cat.n.01        -> ['RelatedTo', 'hypernym']
+     aconitum.n.01            aconite.n.01             -> ['RelatedTo', 'member_meronym']
+     address.n.02             house.n.01               -> ['AtLocation', 'RelatedTo']
+     aeciospore.n.01          rust.n.04                -> ['RelatedTo', 'part_holonym']
+     agglutinogen.n.01        antigen.n.01             -> ['RelatedTo', 'hypernym']
+     air_lane.n.01            path.n.03                -> ['RelatedTo', 'hypernym']
+     ala.n.02                 wing.n.01                -> ['RelatedTo', 'hypernym']
+     alcohol.n.01             wine.n.01                -> ['AtLocation', 'hyponym']
+
+distinct unordered node-pairs          : 5048
+  carrying >1 edge (any direction)     : 1324  (26.2%)
+    of which span both directions      : 1245
+
+========================================================================
+(2) ENTITY UNIQUENESS PER RELATION  (triple-based, mask-ENTITY well-posedness)
+========================================================================
+relation               n_triples    fwd unique tgt    bwd unique src
+------------------------------------------------------------------------
+RelatedTo                   1300    293/1300 (23%)    182/1300 (14%)
+HasContext                  1199    317/1199 (26%)      47/1199 (4%)
+hyponym                     1026      42/1026 (4%)    996/1026 (97%)
+AtLocation                   944     189/944 (20%)     101/944 (11%)
+hypernym                     866     848/866 (98%)       46/866 (5%)
+UsedFor                      250     108/250 (43%)      98/250 (39%)
+Antonym                      129      87/129 (67%)     101/129 (78%)
+SimilarTo                    114      66/114 (58%)      94/114 (82%)
+CapableOf                    112      60/112 (54%)      45/112 (40%)
+part_meronym                  95       30/95 (32%)       75/95 (79%)
+part_holonym                  92       72/92 (78%)       31/92 (34%)
+member_holonym                71       51/71 (72%)       43/71 (61%)
+HasProperty                   69       57/69 (83%)       18/69 (26%)
+member_meronym                67       41/67 (61%)       50/67 (75%)
+instance_hypernym             67       41/67 (61%)       11/67 (16%)
+instance_hyponym              64       11/64 (17%)       38/64 (59%)
+HasPrerequisite               55       34/55 (62%)       34/55 (62%)
+DistinctFrom                  41       26/41 (63%)       32/41 (78%)
+HasSubevent                   38       27/38 (71%)       19/38 (50%)
+Causes                        34       20/34 (59%)       24/34 (71%)
+MadeOf                        26       24/26 (92%)       13/26 (50%)
+MotivatedByGoal               22        9/22 (41%)       17/22 (77%)
+ReceivesAction                21      21/21 (100%)        4/21 (19%)
+Desires                       20       14/20 (70%)       16/20 (80%)
+NotHasProperty                19       17/19 (89%)        5/19 (26%)
+CausesDesire                  12       10/12 (83%)       10/12 (83%)
+HasFirstSubevent               9        9/9 (100%)         5/9 (56%)
+HasLastSubevent                7        7/7 (100%)         3/7 (43%)
+NotDesires                     6        6/6 (100%)         4/6 (67%)
+substance_holonym              5        5/5 (100%)        5/5 (100%)
+substance_meronym              5        5/5 (100%)        5/5 (100%)
+CreatedBy                      2        2/2 (100%)        2/2 (100%)
+NotCapableOf                   1        1/1 (100%)        1/1 (100%)
+LocatedNear                    1        1/1 (100%)        1/1 (100%)
+DefinedAs                      1        1/1 (100%)        1/1 (100%)
+
+Read (denominator = total triples of the relation): 'fwd 99%' = 99% of
+this relation's triples have a unique target given (source, relation), so
+masking the TARGET is well-posed. hypernym/HasProperty high; hyponym low.
+
+========================================================================
+(3) TRIPLES PER RELATION  (Zipf -> training sufficiency)
+========================================================================
+relation                count   share   cum%
+------------------------------------------------
+RelatedTo                1300   19.1%    19%
+HasContext               1199   17.7%    37%
+hyponym                  1026   15.1%    52%
+AtLocation                944   13.9%    66%
+hypernym                  866   12.8%    79%
+UsedFor                   250    3.7%    82%
+Antonym                   129    1.9%    84%
+SimilarTo                 114    1.7%    86%
+CapableOf                 112    1.6%    87%
+part_meronym               95    1.4%    89%
+part_holonym               92    1.4%    90%
+member_holonym             71    1.0%    91%
+HasProperty                69    1.0%    92%
+member_meronym             67    1.0%    93%
+instance_hypernym          67    1.0%    94%
+instance_hyponym           64    0.9%    95%
+HasPrerequisite            55    0.8%    96%
+DistinctFrom               41    0.6%    97%
+HasSubevent                38    0.6%    97%
+Causes                     34    0.5%    98%
+MadeOf                     26    0.4%    98%
+MotivatedByGoal            22    0.3%    98%
+ReceivesAction             21    0.3%    99%
+Desires                    20    0.3%    99%
+NotHasProperty             19    0.3%    99%
+CausesDesire               12    0.2%    99%
+HasFirstSubevent            9    0.1%   100%
+HasLastSubevent             7    0.1%   100%
+NotDesires                  6    0.1%   100%
+substance_holonym           5    0.1%   100%
+substance_meronym           5    0.1%   100%
+CreatedBy                   2    0.0%   100%
+NotCapableOf                1    0.0%   100%
+LocatedNear                 1    0.0%   100%
+DefinedAs                   1    0.0%   100%
+
+total triples: 6790 | distinct relations: 35
+relations with <50 triples (too thin to hold-out & probe): 18
+  ['Causes', 'CausesDesire', 'CreatedBy', 'DefinedAs', 'Desires', 'DistinctFrom', 'HasFirstSubevent', 'HasLastSubevent', 'HasSubevent', 'LocatedNear', 'MadeOf', 'MotivatedByGoal', 'NotCapableOf', 'NotDesires', 'NotHasProperty', 'ReceivesAction', 'substance_holonym', 'substance_meronym']
+
+========================================================================
+(extra) ENTITY DEGREE  (grounding: masked entity needs degree>=2)
+========================================================================
+distinct entities: 2000 | min/median/max degree: 1/5.0/31
+entities with degree==1 (cannot be the masked entity): 143 (7%)
+
+========================================================================
+(4) MASK-RELATION FEASIBILITY  (unique relation + no reverse edge + degree>=2)
+========================================================================
+relation            total  -multi   -rev  -deg<2  USABLE  USABLE%
+-----------------------------------------------------------------
+RelatedTo            1300     402    134       0     764      59%
+HasContext           1199      10      0      31    1158      97%
+hyponym              1026      34    837       0     155      15%
+AtLocation            944      36     22      11     875      93%
+hypernym              866     253    605       0       8       1%
+UsedFor               250      32      9      15     194      78%
+Antonym               129      28     52      16      33      26%
+SimilarTo             114      19     37      19      39      34%
+CapableOf             112       8      1      22      81      72%
+part_meronym           95       4     88       0       3       3%
+part_holonym           92      31     60       0       1       1%
+member_holonym         71      20     47       0       4       6%
+HasProperty            69       5      0       6      58      84%
+member_meronym         67       6     61       0       0       0%
+instance_hypernym      67       6     58       0       3       4%
+instance_hyponym       64       0     64       0       0       0%
+HasPrerequisite        55      12      6       1      36      65%
+-----------------------------------------------------------------
+TOTAL (n>=50)        6520     906   2081     121    3412      52%
+
+  --> 3412 mask-relation-usable triples (52% of n>=50).
+  --> the reverse-edge filter (-rev=2081) wipes out the WordNet
+      taxonomic/meronym relations, which are stored as inverse pairs.
+
+========================================================================
+(5) MASK-ENTITY FEASIBILITY  (mask 2nd entity: unique target + a pure subject + degree>=2)
+========================================================================
+relation            total  -nonuniq  -a_is_obj  -deg<2  USABLE  USABLE%
+-----------------------------------------------------------------------
+RelatedTo            1300      1007         99       0     194      15%
+HasContext           1199       882         19       8     290      24%
+hyponym              1026       984         31       0      11       1%
+AtLocation            944       755         62       0     127      13%
+hypernym              866        18         87       0     761      88%
+UsedFor               250       142         13       5      90      36%
+Antonym               129        42         54       3      30      23%
+SimilarTo             114        48         28       3      35      31%
+CapableOf             112        52          1       8      51      46%
+part_meronym           95        65          3       0      27      28%
+part_holonym           92        20          4       0      68      74%
+member_holonym         71        20          5       0      46      65%
+HasProperty            69        12          2       3      52      75%
+member_meronym         67        26          3       0      38      57%
+instance_hypernym      67        26          0       0      41      61%
+instance_hyponym       64        53          0       0      11      17%
+HasPrerequisite        55        21          4       0      30      55%
+-----------------------------------------------------------------------
+TOTAL (n>=50)        6520      4173        415      30    1902      29%
+
+  --> 1902 mask-entity-usable triples (29% of n>=50, always masking the 2nd entity).
