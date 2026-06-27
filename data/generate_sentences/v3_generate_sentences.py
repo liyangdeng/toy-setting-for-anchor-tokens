@@ -543,8 +543,7 @@ def main():
     quality_lookup = build_quality_lookup(all_edges)
     edges = [
         e for e in all_edges
-        if e.get('source_type') != 'virtual_adjective'
-        and e.get('relation') != 'HasQuality'
+        if e.get('relation') != 'HasQuality'
     ]
     n_quality = sum(len(v) for v in quality_lookup.values())
     print(f'Loaded {len(edges)} edges  |  HasQuality: {n_quality} adjectives '
