@@ -29,18 +29,75 @@ def load_dict(path):
         raw = json.load(f)
     return {k: v['artificial'] for k, v in raw.items()}
 
+PUNCT_CHARS = {'.', ','}
+
+PUNCT_CHARS = {'.', ',', ';', '!', '?', '(', ')', '[', ']', '{', '}', '"'}
+
+
+def split_edge_punctuation(raw_tok):
+    """
+    Split punctuation marks from lexical tokens.
+
+    Keeps internal punctuation intact!
+      abdomen.n.01.          -> abdomen.n.01 .
+      conceptnet:art:1286.   -> conceptnet:art:1286 .
+      abdominal_wall.n.01,   -> abdominal_wall.n.01 ,
+      ball-and-socket_joint.n.01. -> ball-and-socket_joint.n.01 .
+
+    """
+    leading = []
+    trailing = []
+
+    while raw_tok and raw_tok[0] in PUNCT_CHARS:
+        leading.append(raw_tok[0])
+        raw_tok = raw_tok[1:]
+
+    while raw_tok and raw_tok[-1] in PUNCT_CHARS:
+        trailing.append(raw_tok[-1])
+        raw_tok = raw_tok[:-1]
+
+    pieces = []
+    pieces.extend(leading)
+
+    if raw_tok:
+        pieces.append(raw_tok)
+
+    pieces.extend(reversed(trailing))
+    return pieces
+
+
+def tokenize_with_punctuation(sentence):
+    """
+    Tokenise by whitespace, but separate punctuation from lexical tokens.
+    """
+    tokens = []
+
+    for raw_tok in sentence.split():
+        tokens.extend(split_edge_punctuation(raw_tok))
+
+    return tokens
 
 def replace_sentence(sentence, mapping):
     """
     Replace every whitespace-separated token with its artificial equivalent.
     Returns the replaced sentence string, or None if any token is OOV.
+
+    Punctuation becomes a separate token:
+      abdominal_wall.n.01. -> 俘煎 .
+      token, token         -> 噤尥 , 俘煎
     """
-    tokens = sentence.split()
+    tokens = tokenize_with_punctuation(sentence)
     result = []
+
     for tok in tokens:
+        if tok in PUNCT_CHARS:
+            result.append(tok)
+            continue
+
         art = mapping.get(tok)
+
         if art is None:
-            return None   # OOV — skip this sentence
+            return None
         result.append(art)
     return ' '.join(result)
 
