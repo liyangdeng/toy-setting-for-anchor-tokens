@@ -29,32 +29,72 @@ def load_dict(path):
         raw = json.load(f)
     return {k: v['artificial'] for k, v in raw.items()}
 
+PUNCT_CHARS = {'.', ','}
+
+def split_edge_punctuation(raw_tok):
+    """
+    Split punctuation from a lexical token.
+
+    Keep internal punctuation intact:
+      abdomen.n.01.          -> abdomen.n.01 .
+      conceptnet:art:1286.   -> conceptnet:art:1286 .
+      abdominal_wall.n.01,   -> abdominal_wall.n.01 ,
+      ball-and-socket_joint.n.01. -> ball-and-socket_joint.n.01 .
+    """
+    leading = []
+    trailing = []
+
+    while raw_tok and raw_tok[0] in PUNCT_CHARS:
+        leading.append(raw_tok[0])
+        raw_tok = raw_tok[1:]
+
+    while raw_tok and raw_tok[-1] in PUNCT_CHARS:
+        trailing.append(raw_tok[-1])
+        raw_tok = raw_tok[:-1]
+    
+    pieces = []
+    pieces.extend(leading)
+
+    if raw_tok:
+        pieces.append(raw_tok)
+
+    pieces.extend(reversed(trailing))
+    return pieces
+
+def tokenize_with_punctuation(sentence):
+    """
+    Tokenise by whitespace, but separate punctuation from lexical tokens.
+    """
+    tokens = []
+
+    for raw_tok in sentence.split():
+        tokens.extend(split_edge_punctuation(raw_tok))
+
+    return tokens
 
 def replace_sentence(sentence, mapping):
     """
-    Replace every whitespace-separated content/grammar token with its artificial
-    equivalent. Trailing sentence punctuation ('.' / ',') is split off into its
-    own token and kept verbatim — so it stays identical across both languages,
-    i.e. a punctuation anchor that can be ablated later.
+    Replace lexical tokens with artificial equivalents.
 
-    Returns the replaced sentence string, or None if any non-punctuation token
-    is OOV.
+    Punctuation is preserved as separate tokens:
+      abdominal_wall.n.01. -> 俘煎 .
+      token, token         -> 俘煎 , 噤尥
     """
+    tokens = tokenize_with_punctuation(sentence)
     result = []
-    for tok in sentence.split():
-        # Peel trailing '.'/',' into separate punctuation tokens. Safe because
-        # synset IDs/grammar terminals never end in punctuation, so a trailing
-        # '.'/',' is always a sentence marker (not part of e.g. 'abdomen.n.01').
-        trail = []
-        while tok and tok[-1] in '.,':
-            trail.append(tok[-1])
-            tok = tok[:-1]
-        if tok:
-            art = mapping.get(tok)
-            if art is None:
-                return None   # OOV — skip this sentence
-            result.append(art)
-        result.extend(reversed(trail))   # keep punctuation verbatim, in order
+
+    for tok in tokens:
+        if tok in PUNCT_CHARS:
+            result.append(tok)
+            continue
+        
+        art = mapping.get(tok)
+
+        if art is None:
+            return None
+        
+        result.append(art)
+    
     return ' '.join(result)
 
 

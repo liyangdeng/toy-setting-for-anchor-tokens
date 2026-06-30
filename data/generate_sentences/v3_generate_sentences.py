@@ -1,8 +1,10 @@
 """
-PCFG sentence generator - word-order switches 
-+ adjectives + more adjective variety
+PCFG sentence generator - word-order switches (22.06)
++ adjectives (23.06)
++ more adjective variety (24.06)
++ questions (28.06)
 
-last update: 23.06.2026
+last update: 28.06.2026
 
 
 Switch definitions
