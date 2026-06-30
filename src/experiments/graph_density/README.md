@@ -227,6 +227,293 @@ experiments/graph_density/visualizations/multilingual_summary.csv
 experiments/graph_density/visualizations/monolingual_summary.csv
 ```
 
+## V3 Adjective-Variant Corpora
+
+The new v3 corpus generation run is stored separately from the earlier
+graph-density data:
+
+```text
+experiments/graph_density/v3_adj_variants/
+```
+
+This run uses `data/generate_sentences/v3_generate_sentences.py`, which adds
+adjective minimal-pair variants on top of the earlier adjective-aware PCFG
+generation. The generated conditions are:
+
+```text
+low_40
+medium_60_full
+high_80_full
+low_40_relation
+medium_60_relation
+high_80_relation
+full_graph
+```
+
+Each condition has seeds 42, 43, and 44. The corpus metadata and relation
+counts are summarized in:
+
+```text
+experiments/graph_density/v3_adj_variants/v3_adj_variant_corpus_report.md
+experiments/graph_density/v3_adj_variants/v3_adj_variant_corpus_summary.json
+```
+
+The matched training sample sizes for this v3 run should be:
+
+```text
+monolingual epoch sample size = 17,797
+multilingual epoch sample size = 35,594
+```
+
+Start all v3 training runs with:
+
+```bash
+conda activate SWP
+bash experiments/graph_density/run_v3_training.sh
+```
+
+The launcher skips already completed models by default. Use `FORCE=1` to rerun
+completed outputs, `RUN_MONOLINGUAL=0` to train only multilingual models, or
+`CUDA_VISIBLE_DEVICES=0` to select a GPU.
+
+For the no-downsample follow-up on 60%, 80%, and full-graph conditions, use:
+
+```bash
+conda activate SWP
+bash experiments/graph_density/run_v3_full_corpus_training.sh
+```
+
+This launcher does not pass `--epoch_sample_size`, so each epoch uses the full
+train split of that condition's corpus. Outputs are written separately to
+`model_multilingual_fulltrain` and `model_mono_hiragana_fulltrain`.
+
+## V3 Adjective-Variant Performance Results
+
+Evaluation uses the same repository scripts as the earlier graph-density experiments:
+
+- `evaluation/word_trans_sent_retriev.py` for multilingual word translation and sentence retrieval.
+- `evaluation/accuracy.py` for monolingual Hiragana MLM top-k accuracy and MRR.
+
+All aggregate rows are mean +/- sample standard deviation across seeds 42, 43, and 44.
+Sentence retrieval uses `--n_sample 500`.
+
+## Performance Comparison
+
+- Best multilingual word top-1 is `full_graph` (0.5255), essentially tied with `high_80_relation` (0.5192).
+- Best multilingual sentence top-1 is `high_80_relation` (0.4640), slightly above `full_graph` (0.4560).
+- Relation-controlled pruning is consistently stronger than the corresponding coverage-first/full-density condition for multilingual alignment: +0.1727 word top-1 at low density, +0.1797 at medium density, and +0.3297 at high density.
+- Monolingual Hiragana MLM accuracy moves in the opposite direction: lower-density relation-controlled corpora are easiest, with `low_40_relation` giving the best MLM top-1 (0.5501) and MRR (0.7138).
+- The full graph is a strong multilingual control but not the best monolingual MLM setting: compared with `high_80_relation`, it is +0.0063 on word top-1, -0.0080 on sentence top-1, and -0.0238 on monolingual MLM top-1.
+
+## Multilingual Alignment
+
+| Condition | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
+| --- | ---: | ---: | ---: | ---: |
+| `low_40` | 0.1255 +/- 0.0354 | 0.2460 +/- 0.0693 | 0.1507 +/- 0.0450 | 0.3513 +/- 0.0833 |
+| `medium_60_full` | 0.1702 +/- 0.0199 | 0.3418 +/- 0.0203 | 0.1693 +/- 0.0336 | 0.4100 +/- 0.0452 |
+| `high_80_full` | 0.1895 +/- 0.0956 | 0.3587 +/- 0.1414 | 0.1973 +/- 0.1094 | 0.4347 +/- 0.1824 |
+| `low_40_relation` | 0.2982 +/- 0.0595 | 0.4933 +/- 0.0713 | 0.2580 +/- 0.0730 | 0.5453 +/- 0.1139 |
+| `medium_60_relation` | 0.3498 +/- 0.0782 | 0.5690 +/- 0.0928 | 0.2907 +/- 0.0965 | 0.5793 +/- 0.1299 |
+| `high_80_relation` | 0.5192 +/- 0.0423 | 0.7323 +/- 0.0311 | 0.4640 +/- 0.0262 | 0.7447 +/- 0.0200 |
+| `full_graph` | 0.5255 +/- 0.0697 | 0.7433 +/- 0.0572 | 0.4560 +/- 0.0450 | 0.7553 +/- 0.0270 |
+
+## Monolingual Hiragana MLM Accuracy
+
+| Condition | MLM top-1 | MLM top-5 | MRR | Masked tokens |
+| --- | ---: | ---: | ---: | ---: |
+| `low_40` | 0.5004 +/- 0.0170 | 0.9206 +/- 0.0007 | 0.6752 +/- 0.0083 | 1356.3333 +/- 12.8582 |
+| `medium_60_full` | 0.4737 +/- 0.0101 | 0.8881 +/- 0.0015 | 0.6482 +/- 0.0054 | 2153.6667 +/- 21.0792 |
+| `high_80_full` | 0.4633 +/- 0.0101 | 0.8758 +/- 0.0093 | 0.6354 +/- 0.0085 | 2989.3333 +/- 44.0606 |
+| `low_40_relation` | 0.5501 +/- 0.0168 | 0.9413 +/- 0.0085 | 0.7138 +/- 0.0107 | 1299.6667 +/- 71.4586 |
+| `medium_60_relation` | 0.5048 +/- 0.0008 | 0.9119 +/- 0.0159 | 0.6761 +/- 0.0024 | 2060.0000 +/- 9.8489 |
+| `high_80_relation` | 0.4929 +/- 0.0057 | 0.8829 +/- 0.0018 | 0.6578 +/- 0.0038 | 2901.0000 +/- 9.5394 |
+| `full_graph` | 0.4691 +/- 0.0067 | 0.8597 +/- 0.0031 | 0.6351 +/- 0.0057 | 3835.3333 +/- 80.0895 |
+
+## Per-Seed Multilingual Results
+
+| Condition | Seed | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| `low_40` | 42 | 0.1625 | 0.3140 | 0.1860 | 0.4100 |
+| `low_40` | 43 | 0.1220 | 0.2485 | 0.1660 | 0.3880 |
+| `low_40` | 44 | 0.0920 | 0.1755 | 0.1000 | 0.2560 |
+| `medium_60_full` | 42 | 0.1475 | 0.3210 | 0.1400 | 0.3720 |
+| `medium_60_full` | 43 | 0.1785 | 0.3430 | 0.2060 | 0.4600 |
+| `medium_60_full` | 44 | 0.1845 | 0.3615 | 0.1620 | 0.3980 |
+| `high_80_full` | 42 | 0.0795 | 0.1960 | 0.0720 | 0.2300 |
+| `high_80_full` | 43 | 0.2525 | 0.4520 | 0.2740 | 0.5800 |
+| `high_80_full` | 44 | 0.2365 | 0.4280 | 0.2460 | 0.4940 |
+| `low_40_relation` | 42 | 0.2295 | 0.4125 | 0.1760 | 0.4240 |
+| `low_40_relation` | 43 | 0.3340 | 0.5200 | 0.3160 | 0.6500 |
+| `low_40_relation` | 44 | 0.3310 | 0.5475 | 0.2820 | 0.5620 |
+| `medium_60_relation` | 42 | 0.3375 | 0.5665 | 0.2400 | 0.5540 |
+| `medium_60_relation` | 43 | 0.4335 | 0.6630 | 0.4020 | 0.7200 |
+| `medium_60_relation` | 44 | 0.2785 | 0.4775 | 0.2300 | 0.4640 |
+| `high_80_relation` | 42 | 0.5395 | 0.7485 | 0.4880 | 0.7600 |
+| `high_80_relation` | 43 | 0.4705 | 0.6965 | 0.4360 | 0.7220 |
+| `high_80_relation` | 44 | 0.5475 | 0.7520 | 0.4680 | 0.7520 |
+| `full_graph` | 42 | 0.5475 | 0.7570 | 0.4580 | 0.7560 |
+| `full_graph` | 43 | 0.4475 | 0.6805 | 0.4100 | 0.7280 |
+| `full_graph` | 44 | 0.5815 | 0.7925 | 0.5000 | 0.7820 |
+
+## Per-Seed Monolingual Results
+
+| Condition | Seed | Top-1 | Top-5 | MRR | Masked tokens |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| `low_40` | 42 | 0.5189 | 0.9208 | 0.6844 | 1351 |
+| `low_40` | 43 | 0.4967 | 0.9212 | 0.6729 | 1371 |
+| `low_40` | 44 | 0.4855 | 0.9198 | 0.6683 | 1347 |
+| `medium_60_full` | 42 | 0.4666 | 0.8865 | 0.6471 | 2141 |
+| `medium_60_full` | 43 | 0.4853 | 0.8884 | 0.6541 | 2178 |
+| `medium_60_full` | 44 | 0.4692 | 0.8894 | 0.6434 | 2142 |
+| `high_80_full` | 42 | 0.4522 | 0.8656 | 0.6256 | 2992 |
+| `high_80_full` | 43 | 0.4657 | 0.8838 | 0.6406 | 2944 |
+| `high_80_full` | 44 | 0.4720 | 0.8780 | 0.6400 | 3032 |
+| `low_40_relation` | 42 | 0.5474 | 0.9510 | 0.7149 | 1224 |
+| `low_40_relation` | 43 | 0.5681 | 0.9370 | 0.7240 | 1366 |
+| `low_40_relation` | 44 | 0.5348 | 0.9358 | 0.7026 | 1309 |
+| `medium_60_relation` | 42 | 0.5048 | 0.9212 | 0.6788 | 2068 |
+| `medium_60_relation` | 43 | 0.5056 | 0.8936 | 0.6741 | 2049 |
+| `medium_60_relation` | 44 | 0.5041 | 0.9210 | 0.6753 | 2063 |
+| `high_80_relation` | 42 | 0.4893 | 0.8810 | 0.6561 | 2900 |
+| `high_80_relation` | 43 | 0.4995 | 0.8846 | 0.6622 | 2911 |
+| `high_80_relation` | 44 | 0.4900 | 0.8831 | 0.6552 | 2892 |
+| `full_graph` | 42 | 0.4614 | 0.8566 | 0.6286 | 3877 |
+| `full_graph` | 43 | 0.4738 | 0.8628 | 0.6393 | 3886 |
+| `full_graph` | 44 | 0.4721 | 0.8597 | 0.6375 | 3743 |
+
+Raw logs and parsed JSON are stored in:
+
+```text
+experiments/graph_density/v3_adj_variants/evaluation_results/
+```
+
+## V3 Full-Corpus Performance Results
+
+Full-corpus runs do not use per-epoch downsampling. Each aggregate row is mean +/- sample standard deviation across seeds 42, 43, and 44.
+Sentence retrieval uses `--n_sample 500`.
+
+## Multilingual Alignment
+
+| Condition | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
+| --- | ---: | ---: | ---: | ---: |
+| `medium_60_full` | 0.1703 +/- 0.0573 | 0.3307 +/- 0.0746 | 0.1927 +/- 0.0763 | 0.4280 +/- 0.1114 |
+| `high_80_full` | 0.3855 +/- 0.0439 | 0.5853 +/- 0.0477 | 0.3693 +/- 0.0515 | 0.6640 +/- 0.0772 |
+| `medium_60_relation` | 0.5177 +/- 0.0974 | 0.7203 +/- 0.0862 | 0.5100 +/- 0.0399 | 0.7913 +/- 0.0197 |
+| `high_80_relation` | 0.6540 +/- 0.0416 | 0.8298 +/- 0.0251 | 0.6473 +/- 0.0314 | 0.8867 +/- 0.0356 |
+| `full_graph` | 0.7150 +/- 0.0277 | 0.8680 +/- 0.0114 | 0.7047 +/- 0.0219 | 0.9013 +/- 0.0162 |
+
+## Monolingual Hiragana MLM Accuracy
+
+| Condition | MLM top-1 | MLM top-5 | MRR | Masked tokens |
+| --- | ---: | ---: | ---: | ---: |
+| `medium_60_full` | 0.4849 +/- 0.0048 | 0.9064 +/- 0.0071 | 0.6584 +/- 0.0033 | 2153.6667 +/- 21.0792 |
+| `high_80_full` | 0.4970 +/- 0.0128 | 0.9130 +/- 0.0037 | 0.6664 +/- 0.0068 | 2989.3333 +/- 44.0606 |
+| `medium_60_relation` | 0.5335 +/- 0.0056 | 0.9302 +/- 0.0098 | 0.7000 +/- 0.0031 | 2060.0000 +/- 9.8489 |
+| `high_80_relation` | 0.5213 +/- 0.0021 | 0.9200 +/- 0.0048 | 0.6879 +/- 0.0046 | 2901.0000 +/- 9.5394 |
+| `full_graph` | 0.5141 +/- 0.0056 | 0.9101 +/- 0.0068 | 0.6793 +/- 0.0064 | 3835.3333 +/- 80.0895 |
+
+Raw logs and parsed JSON are stored in:
+
+```text
+experiments/graph_density/v3_adj_variants/evaluation_results_fulltrain/
+```
+
+## V3 Downsample vs Full-Corpus Training Comparison
+
+This combines the original downsampled v3 runs with the full-corpus follow-up on 60%, 80%, and full-graph conditions.
+Low-density rows are included for the downsampled experiment only, because no full-corpus low-density runs were trained.
+All rows are mean +/- sample standard deviation across seeds 42, 43, and 44.
+
+## Multilingual Alignment
+
+| Condition | Mode | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
+| --- | --- | ---: | ---: | ---: | ---: |
+| `low_40` | `downsample` | 0.1255 +/- 0.0354 | 0.2460 +/- 0.0693 | 0.1507 +/- 0.0450 | 0.3513 +/- 0.0833 |
+| `medium_60_full` | `downsample` | 0.1702 +/- 0.0199 | 0.3418 +/- 0.0203 | 0.1693 +/- 0.0336 | 0.4100 +/- 0.0452 |
+| `medium_60_full` | `full_corpus` | 0.1703 +/- 0.0573 | 0.3307 +/- 0.0746 | 0.1927 +/- 0.0763 | 0.4280 +/- 0.1114 |
+| `high_80_full` | `downsample` | 0.1895 +/- 0.0956 | 0.3587 +/- 0.1414 | 0.1973 +/- 0.1094 | 0.4347 +/- 0.1824 |
+| `high_80_full` | `full_corpus` | 0.3855 +/- 0.0439 | 0.5853 +/- 0.0477 | 0.3693 +/- 0.0515 | 0.6640 +/- 0.0772 |
+| `low_40_relation` | `downsample` | 0.2982 +/- 0.0595 | 0.4933 +/- 0.0713 | 0.2580 +/- 0.0730 | 0.5453 +/- 0.1139 |
+| `medium_60_relation` | `downsample` | 0.3498 +/- 0.0782 | 0.5690 +/- 0.0928 | 0.2907 +/- 0.0965 | 0.5793 +/- 0.1299 |
+| `medium_60_relation` | `full_corpus` | 0.5177 +/- 0.0974 | 0.7203 +/- 0.0862 | 0.5100 +/- 0.0399 | 0.7913 +/- 0.0197 |
+| `high_80_relation` | `downsample` | 0.5192 +/- 0.0423 | 0.7323 +/- 0.0311 | 0.4640 +/- 0.0262 | 0.7447 +/- 0.0200 |
+| `high_80_relation` | `full_corpus` | 0.6540 +/- 0.0416 | 0.8298 +/- 0.0251 | 0.6473 +/- 0.0314 | 0.8867 +/- 0.0356 |
+| `full_graph` | `downsample` | 0.5255 +/- 0.0697 | 0.7433 +/- 0.0572 | 0.4560 +/- 0.0450 | 0.7553 +/- 0.0270 |
+| `full_graph` | `full_corpus` | 0.7150 +/- 0.0277 | 0.8680 +/- 0.0114 | 0.7047 +/- 0.0219 | 0.9013 +/- 0.0162 |
+
+## Monolingual Hiragana MLM Accuracy
+
+| Condition | Mode | MLM top-1 | MLM top-5 | MRR |
+| --- | --- | ---: | ---: | ---: |
+| `low_40` | `downsample` | 0.5004 +/- 0.0170 | 0.9206 +/- 0.0007 | 0.6752 +/- 0.0083 |
+| `medium_60_full` | `downsample` | 0.4737 +/- 0.0101 | 0.8881 +/- 0.0015 | 0.6482 +/- 0.0054 |
+| `medium_60_full` | `full_corpus` | 0.4849 +/- 0.0048 | 0.9064 +/- 0.0071 | 0.6584 +/- 0.0033 |
+| `high_80_full` | `downsample` | 0.4633 +/- 0.0101 | 0.8758 +/- 0.0093 | 0.6354 +/- 0.0085 |
+| `high_80_full` | `full_corpus` | 0.4970 +/- 0.0128 | 0.9130 +/- 0.0037 | 0.6664 +/- 0.0068 |
+| `low_40_relation` | `downsample` | 0.5501 +/- 0.0168 | 0.9413 +/- 0.0085 | 0.7138 +/- 0.0107 |
+| `medium_60_relation` | `downsample` | 0.5048 +/- 0.0008 | 0.9119 +/- 0.0159 | 0.6761 +/- 0.0024 |
+| `medium_60_relation` | `full_corpus` | 0.5335 +/- 0.0056 | 0.9302 +/- 0.0098 | 0.7000 +/- 0.0031 |
+| `high_80_relation` | `downsample` | 0.4929 +/- 0.0057 | 0.8829 +/- 0.0018 | 0.6578 +/- 0.0038 |
+| `high_80_relation` | `full_corpus` | 0.5213 +/- 0.0021 | 0.9200 +/- 0.0048 | 0.6879 +/- 0.0046 |
+| `full_graph` | `downsample` | 0.4691 +/- 0.0067 | 0.8597 +/- 0.0031 | 0.6351 +/- 0.0057 |
+| `full_graph` | `full_corpus` | 0.5141 +/- 0.0056 | 0.9101 +/- 0.0068 | 0.6793 +/- 0.0064 |
+
+## Full-Corpus Delta
+
+| Condition | Word top-1 | Sentence top-1 | MLM top-1 | MRR |
+| --- | ---: | ---: | ---: | ---: |
+| `medium_60_full` | +0.0002 | +0.0233 | +0.0112 | +0.0102 |
+| `high_80_full` | +0.1960 | +0.1720 | +0.0337 | +0.0310 |
+| `medium_60_relation` | +0.1678 | +0.2193 | +0.0287 | +0.0239 |
+| `high_80_relation` | +0.1348 | +0.1833 | +0.0284 | +0.0300 |
+| `full_graph` | +0.1895 | +0.2487 | +0.0450 | +0.0442 |
+
+Chart files are stored in:
+
+```text
+experiments/graph_density/v3_adj_variants/visualizations_training_mode/
+```
+
+Density-style line charts:
+
+- `training_mode_multilingual_alignment_top1_lines.png`
+- `training_mode_multilingual_alignment_top5_lines.png`
+- `training_mode_monolingual_lines.png`
+
+Mode comparison bar and delta charts:
+
+- `training_mode_multilingual_top1.png`
+- `training_mode_multilingual_top5.png`
+- `training_mode_monolingual_mlm.png`
+- `training_mode_word_top1_delta.png`
+- `training_mode_mlm_top1_delta.png`
+
+
+## V3 Adjective-Variant Performance Visualizations
+
+Static charts using the same structure as the earlier graph-density
+visualizations are stored in:
+
+```text
+experiments/graph_density/v3_adj_variants/visualizations/
+```
+
+Generated chart files:
+
+- `multilingual_alignment_top1.png`
+- `multilingual_alignment_top5.png`
+- `monolingual_hiragana_mlm.png`
+- `seed42_condition_comparison.png`
+- `full_graph_delta_vs_high80_relation.png`
+
+Chart-ready CSV summaries:
+
+```text
+experiments/graph_density/v3_adj_variants/visualizations/multilingual_summary.csv
+experiments/graph_density/v3_adj_variants/visualizations/monolingual_summary.csv
+```
+
+
 ## Evaluation Results
 
 Evaluation was run with the existing repository scripts:
