@@ -32,16 +32,29 @@ def load_dict(path):
 
 def replace_sentence(sentence, mapping):
     """
-    Replace every whitespace-separated token with its artificial equivalent.
-    Returns the replaced sentence string, or None if any token is OOV.
+    Replace every whitespace-separated content/grammar token with its artificial
+    equivalent. Trailing sentence punctuation ('.' / ',') is split off into its
+    own token and kept verbatim — so it stays identical across both languages,
+    i.e. a punctuation anchor that can be ablated later.
+
+    Returns the replaced sentence string, or None if any non-punctuation token
+    is OOV.
     """
-    tokens = sentence.split()
     result = []
-    for tok in tokens:
-        art = mapping.get(tok)
-        if art is None:
-            return None   # OOV — skip this sentence
-        result.append(art)
+    for tok in sentence.split():
+        # Peel trailing '.'/',' into separate punctuation tokens. Safe because
+        # synset IDs/grammar terminals never end in punctuation, so a trailing
+        # '.'/',' is always a sentence marker (not part of e.g. 'abdomen.n.01').
+        trail = []
+        while tok and tok[-1] in '.,':
+            trail.append(tok[-1])
+            tok = tok[:-1]
+        if tok:
+            art = mapping.get(tok)
+            if art is None:
+                return None   # OOV — skip this sentence
+            result.append(art)
+        result.extend(reversed(trail))   # keep punctuation verbatim, in order
     return ' '.join(result)
 
 
