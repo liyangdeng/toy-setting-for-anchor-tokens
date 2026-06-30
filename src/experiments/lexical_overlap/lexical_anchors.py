@@ -1,23 +1,20 @@
 from collections import Counter
 import json
+import random
 
 def filter_anchors_by_strategy(all_tokens_sorted, strategy):
     """
-    Helper function that filters the sorted frequency list based on the chosen strategy.
-    - 'high': Keeps the list from the top (most frequent structural/function words).
-    - 'mid': Skips the top 15 most frequent tokens and takes content words from the middle.
-    - 'low': Takes lower-frequency words from the bottom part of the distribution.
+    Filters the sorted frequency list strictly within the top 100 most frequent tokens.
+    - 'high': Top 10 words (indices 0-9) -> Grammatical framework
+    - 'mid': From 11th to 50th place (indices 10-49) -> Relational/Taxonomic framework
+    - 'low': From 51st to 100th place (indices 50-99) -> Descriptive/Conceptual tokens
     """
     if strategy == "high":
-        return all_tokens_sorted
+        return all_tokens_sorted[:10]
     elif strategy == "mid":
-        cutoff_top = 15  # Skips top words like 'and', 'is', 'remains'...
-        return all_tokens_sorted[cutoff_top:]
+        return all_tokens_sorted[10:50]
     elif strategy == "low":
-        cutoff_mid = int(len(all_tokens_sorted) * 0.3)  # Skips the top 30% of the entire vocabulary
-        return all_tokens_sorted[cutoff_mid:]
-    else:
-        raise ValueError(f"Unknown strategy: {strategy}")
+        return all_tokens_sorted[50:200]
 
 def counter(file_name, target_percentage, strategy="high"):
     corpus_frequency = Counter()
@@ -36,6 +33,10 @@ def counter(file_name, target_percentage, strategy="high"):
     # Filter the word pool based on the frequency strategy (high, mid, low)
     filtered_pool = filter_anchors_by_strategy(all_tokens_sorted, strategy)
     
+    # Create a copy of the pool and shuffle it randomly
+    randomized_pool = list(filtered_pool)
+    random.shuffle(randomized_pool)
+
     # Calculate how many tokens we need to accumulate to reach the target corpus coverage
     target_tokens_count = (target_percentage / 100.0) * number_of_tokens
     
@@ -43,12 +44,15 @@ def counter(file_name, target_percentage, strategy="high"):
     accumulated_count = 0
     
     # Dynamically accumulate unique words until the targeted coverage threshold is met
-    for token, count in filtered_pool:
+    for token, count in randomized_pool:
+        if (accumulated_count + count) > target_tokens_count:
+            continue
         anchors.append((token, count))
         accumulated_count += count
+
         if accumulated_count >= target_tokens_count:
             break
-            
+
     actual_percentage = (accumulated_count / number_of_tokens) * 100
     
     print(f"\n[STRATEGY: {strategy.upper()}] Selected unique words (anchors): {len(anchors)}")
@@ -64,23 +68,24 @@ def counter(file_name, target_percentage, strategy="high"):
     
     return anchors
 
-def replacement_mapping(dictionary, corpus, target_percentage, strategy="high"):
-    anchors = counter(corpus, target_percentage, strategy)
-    
-    with open(dictionary, "r", encoding="utf-8") as f:
+def get_replacement_mapping(dictionary_path, anchors):
+    """
+    Creates a replacement mapping for a specific language using a pre-selected, fixed list of anchors.
+    """
+    with open(dictionary_path, "r", encoding="utf-8") as f:
         synset_data = json.load(f)
         
-    replacement_mapping = {}
+    replacement_map = {}
     
     for anchor, _ in anchors:
         if anchor in synset_data:
             artificial = synset_data[anchor].get("artificial", "")
             if artificial:
-                replacement_mapping[artificial] = anchor
+                replacement_map[artificial] = anchor
 
-    print("--- REPLACEMENT MAPPING ---")
-    print(f"Number of mapped replacements: {len(replacement_mapping)}")
-    return replacement_mapping
+    print(f"--- REPLACEMENT MAPPING FOR {dictionary_path} ---")
+    print(f"Number of mapped replacements: {len(replacement_map)}")
+    return replacement_map
 
 def overwrite(corpus_path, replacement_mapping, lang, target_percentage, strategy="high"):
     with open(corpus_path, "r", encoding="utf-8") as f:
@@ -107,15 +112,21 @@ def create_corpora(eng_corpus_path, languages):
     
     for target_percentage in percentage_values:
         for strategy in strategies:
+            print(f"=========================================")
+            print(f"GENERATING FIXED ANCHORS FOR OVERLAP = {target_percentage}%, STRATEGY = {strategy.upper()}")
+            print(f"=========================================")
+            
+            # 1. Generate anchors ONCE per combination of percentage and strategy
+            fixed_anchors = counter(eng_corpus_path, target_percentage, strategy)
+            
+            # 2. Distribute the exact same anchors to all target languages
             for lang in languages:
-                print(f"=========================================")
-                print(f"RUNNING EXPERIMENT FOR LANG = {lang.upper()}, OVERLAP = {target_percentage}%, STRATEGY = {strategy.upper()}")
-                print(f"=========================================")
-                
+                print(f"Processing language: {lang.upper()}")
                 dictionary_path = f"synset_pos_artificial_{lang}.json"
                 artificial_corpus_path = f"corpus_{lang}_synset.txt"
                 
-                mapping = replacement_mapping(dictionary_path, eng_corpus_path, target_percentage, strategy)
+                # Map the exact same anchors to this language's dictionary
+                mapping = get_replacement_mapping(dictionary_path, fixed_anchors)
                 overwrite(artificial_corpus_path, mapping, lang, target_percentage, strategy)
 
 # Execute the pipeline
