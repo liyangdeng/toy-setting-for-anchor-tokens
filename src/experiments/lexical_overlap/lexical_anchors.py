@@ -7,7 +7,7 @@ def filter_anchors_by_strategy(all_tokens_sorted, strategy):
     Filters the sorted frequency list strictly within the top 100 most frequent tokens.
     - 'high': Top 10 words (indices 0-9) -> Grammatical framework
     - 'mid': From 11th to 50th place (indices 10-49) -> Relational/Taxonomic framework
-    - 'low': From 51st to 100th place (indices 50-99) -> Descriptive/Conceptual tokens
+    - 'low': From 51st to 200th place (indices 50-199) -> Descriptive/Conceptual tokens
     """
     if strategy == "high":
         return all_tokens_sorted[:10]
