@@ -1,10 +1,6 @@
 """
 PCFG sentence generator - word-order switches (22.06)
 + adjectives (23.06)
-+ more adjective variety (24.06)
-+ questions (28.06)
-
-last update: 28.06.2026
 
 
 Switch definitions
@@ -60,13 +56,13 @@ ________________________________________________________________________________
 
 Usage:
 
-python v2_generate_pcfg_sentences_synsets_adj_more.py \
+python v3_generate_sentences.py \
   --edges edges_adj.json \
   --grammar grammar_templates_adj.py \
   --s1 0 --s2 1 --s3 0 \
   --adj_when_available 0.8 \
   --adj_variant_prob 0.3 \
-  --max_adj_variants 6 \
+  --max_adj_variants 2 \
   --n_samples 8
 
 Remember to adjust the adjective occurrence rate:
