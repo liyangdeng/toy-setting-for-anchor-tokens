@@ -10,15 +10,6 @@ The node universe for this report is all unique endpoints in `edges_adj.json`, b
 | --- | ---: | ---: |
 | full `edges_adj` | 7181 | 2042 |
 
-## Full Graph Source-Type Distribution
-
-| Source type | Edges | Percent |
-| --- | ---: | ---: |
-| `conceptnet` | 4710 | 65.59% |
-| `wordnet` | 2405 | 33.49% |
-| `repair` | 56 | 0.78% |
-| `adjustment` | 10 | 0.14% |
-
 ## Experiment Group Summary
 
 | Condition | Seeds | Sampling | Control | Candidate fraction | Training fraction | Edges | Active nodes | Isolated nodes | Avg degree mean | Max degree range |
@@ -27,53 +18,9 @@ The node universe for this report is all unique endpoints in `edges_adj.json`, b
 | `low_40_relation` | 42,43,44 | `relation` | `none` | 0.40 | 0.40 | 2872,2872,2872 | 2042,2042,2042 | 0,0,0 | 2.570 | 11-11 |
 | `medium_60_full` | 42,43,44 | `coverage` | `none` | 0.60 | 0.60 | 4309,4309,4309 | 2042,2042,2042 | 0,0,0 | 3.663 | 13-13 |
 | `medium_60_relation` | 42,43,44 | `relation` | `none` | 0.60 | 0.60 | 4309,4309,4309 | 2042,2042,2042 | 0,0,0 | 3.557 | 13-14 |
-| `medium_60_control` | 42,43,44 | `coverage` | `dense` | 0.60 | 0.40 | 2872,2872,2872 | 2042,2042,2042 | 0,0,0 | 2.607 | 12-12 |
-| `medium_60_relation_control` | 42,43,44 | `coverage` | `relation` | 0.60 | 0.40 | 2872,2872,2872 | 2042,2042,2042 | 0,0,0 | 2.548 | 11-12 |
 | `high_80_full` | 42,43,44 | `coverage` | `none` | 0.80 | 0.80 | 5745,5745,5745 | 2042,2042,2042 | 0,0,0 | 4.376 | 13-13 |
 | `high_80_relation` | 42,43,44 | `relation` | `none` | 0.80 | 0.80 | 5745,5745,5745 | 2042,2042,2042 | 0,0,0 | 4.435 | 15-18 |
-| `high_80_control` | 42,43,44 | `coverage` | `dense` | 0.80 | 0.40 | 2872,2872,2872 | 2042,2042,2042 | 0,0,0 | 2.422 | 12-12 |
-| `high_80_relation_control` | 42,43,44 | `coverage` | `relation` | 0.80 | 0.40 | 2872,2872,2872 | 2042,2042,2042 | 0,0,0 | 2.525 | 10-12 |
 
-## Full Graph Relation Distribution
-
-| Relation | Edges | Percent |
-| --- | ---: | ---: |
-| `RelatedTo` | 1300 | 18.10% |
-| `HasContext` | 1193 | 16.61% |
-| `hyponym` | 1034 | 14.40% |
-| `AtLocation` | 944 | 13.15% |
-| `hypernym` | 867 | 12.07% |
-| `HasQuality` | 292 | 4.07% |
-| `UsedFor` | 250 | 3.48% |
-| `HasProperty` | 152 | 2.12% |
-| `Antonym` | 136 | 1.89% |
-| `SimilarTo` | 113 | 1.57% |
-| `CapableOf` | 112 | 1.56% |
-| `part_meronym` | 94 | 1.31% |
-| `part_holonym` | 91 | 1.27% |
-| `member_holonym` | 71 | 0.99% |
-| `instance_hypernym` | 67 | 0.93% |
-| `member_meronym` | 67 | 0.93% |
-| `instance_hyponym` | 64 | 0.89% |
-| `HasPrerequisite` | 56 | 0.78% |
-| `DistinctFrom` | 41 | 0.57% |
-| `HasSubevent` | 38 | 0.53% |
-| `Causes` | 37 | 0.52% |
-| `MadeOf` | 26 | 0.36% |
-| `NotHasProperty` | 23 | 0.32% |
-| `MotivatedByGoal` | 22 | 0.31% |
-| `ReceivesAction` | 21 | 0.29% |
-| `Desires` | 20 | 0.28% |
-| `CausesDesire` | 13 | 0.18% |
-| `HasFirstSubevent` | 9 | 0.13% |
-| `HasLastSubevent` | 7 | 0.10% |
-| `NotDesires` | 6 | 0.08% |
-| `substance_holonym` | 5 | 0.07% |
-| `substance_meronym` | 5 | 0.07% |
-| `CreatedBy` | 2 | 0.03% |
-| `DefinedAs` | 1 | 0.01% |
-| `LocatedNear` | 1 | 0.01% |
-| `NotCapableOf` | 1 | 0.01% |
 
 ## Relation Distribution by Experiment Group
 
@@ -240,86 +187,6 @@ Counts are averaged across seeds 42, 43, and 44. Percent is mean count divided b
 | `LocatedNear` | 1.0 | 0.02% | 0.01% |
 | `NotCapableOf` | 1.0 | 0.02% | 0.01% |
 
-### `medium_60_control`
-
-| Relation | Mean edges | Percent | Full graph percent |
-| --- | ---: | ---: | ---: |
-| `RelatedTo` | 1296.0 | 45.13% | 18.10% |
-| `HasContext` | 642.3 | 22.37% | 16.61% |
-| `hyponym` | 328.7 | 11.44% | 14.40% |
-| `AtLocation` | 111.3 | 3.88% | 13.15% |
-| `hypernym` | 140.7 | 4.90% | 12.07% |
-| `HasQuality` | 37.3 | 1.30% | 4.07% |
-| `UsedFor` | 34.0 | 1.18% | 3.48% |
-| `HasProperty` | 22.7 | 0.79% | 2.12% |
-| `Antonym` | 30.7 | 1.07% | 1.89% |
-| `SimilarTo` | 38.3 | 1.33% | 1.57% |
-| `CapableOf` | 39.0 | 1.36% | 1.56% |
-| `part_meronym` | 9.0 | 0.31% | 1.31% |
-| `part_holonym` | 12.3 | 0.43% | 1.27% |
-| `member_holonym` | 15.7 | 0.55% | 0.99% |
-| `instance_hypernym` | 23.0 | 0.80% | 0.93% |
-| `member_meronym` | 18.7 | 0.65% | 0.93% |
-| `instance_hyponym` | 8.0 | 0.28% | 0.89% |
-| `HasPrerequisite` | 7.0 | 0.24% | 0.78% |
-| `DistinctFrom` | 8.3 | 0.29% | 0.57% |
-| `HasSubevent` | 9.0 | 0.31% | 0.53% |
-| `Causes` | 11.0 | 0.38% | 0.52% |
-| `MadeOf` | 3.0 | 0.10% | 0.36% |
-| `NotHasProperty` | 0.3 | 0.01% | 0.32% |
-| `MotivatedByGoal` | 5.0 | 0.17% | 0.31% |
-| `ReceivesAction` | 7.3 | 0.26% | 0.29% |
-| `Desires` | 1.7 | 0.06% | 0.28% |
-| `CausesDesire` | 0.3 | 0.01% | 0.18% |
-| `HasFirstSubevent` | 2.3 | 0.08% | 0.13% |
-| `NotDesires` | 4.0 | 0.14% | 0.08% |
-| `substance_holonym` | 0.7 | 0.02% | 0.07% |
-| `substance_meronym` | 0.3 | 0.01% | 0.07% |
-| `CreatedBy` | 1.0 | 0.03% | 0.03% |
-| `DefinedAs` | 1.0 | 0.03% | 0.01% |
-| `LocatedNear` | 1.0 | 0.03% | 0.01% |
-| `NotCapableOf` | 1.0 | 0.03% | 0.01% |
-
-### `medium_60_relation_control`
-
-| Relation | Mean edges | Percent | Full graph percent |
-| --- | ---: | ---: | ---: |
-| `RelatedTo` | 1010.3 | 35.18% | 18.10% |
-| `HasContext` | 599.0 | 20.86% | 16.61% |
-| `hyponym` | 469.7 | 16.35% | 14.40% |
-| `AtLocation` | 219.7 | 7.65% | 13.15% |
-| `hypernym` | 190.0 | 6.62% | 12.07% |
-| `HasQuality` | 41.0 | 1.43% | 4.07% |
-| `UsedFor` | 37.7 | 1.31% | 3.48% |
-| `HasProperty` | 26.0 | 0.91% | 2.12% |
-| `Antonym` | 33.7 | 1.17% | 1.89% |
-| `SimilarTo` | 39.0 | 1.36% | 1.57% |
-| `CapableOf` | 39.7 | 1.38% | 1.56% |
-| `part_meronym` | 10.3 | 0.36% | 1.31% |
-| `part_holonym` | 16.0 | 0.56% | 1.27% |
-| `member_holonym` | 20.3 | 0.71% | 0.99% |
-| `instance_hypernym` | 24.0 | 0.84% | 0.93% |
-| `member_meronym` | 22.0 | 0.77% | 0.93% |
-| `instance_hyponym` | 8.3 | 0.29% | 0.89% |
-| `HasPrerequisite` | 7.3 | 0.26% | 0.78% |
-| `DistinctFrom` | 8.7 | 0.30% | 0.57% |
-| `HasSubevent` | 9.0 | 0.31% | 0.53% |
-| `Causes` | 11.0 | 0.38% | 0.52% |
-| `MadeOf` | 3.0 | 0.10% | 0.36% |
-| `NotHasProperty` | 0.3 | 0.01% | 0.32% |
-| `MotivatedByGoal` | 5.0 | 0.17% | 0.31% |
-| `ReceivesAction` | 7.3 | 0.26% | 0.29% |
-| `Desires` | 2.0 | 0.07% | 0.28% |
-| `CausesDesire` | 0.3 | 0.01% | 0.18% |
-| `HasFirstSubevent` | 2.3 | 0.08% | 0.13% |
-| `NotDesires` | 4.0 | 0.14% | 0.08% |
-| `substance_holonym` | 0.7 | 0.02% | 0.07% |
-| `substance_meronym` | 0.3 | 0.01% | 0.07% |
-| `CreatedBy` | 1.0 | 0.03% | 0.03% |
-| `DefinedAs` | 1.0 | 0.03% | 0.01% |
-| `LocatedNear` | 1.0 | 0.03% | 0.01% |
-| `NotCapableOf` | 1.0 | 0.03% | 0.01% |
-
 ### `high_80_full`
 
 | Relation | Mean edges | Percent | Full graph percent |
@@ -401,99 +268,6 @@ Counts are averaged across seeds 42, 43, and 44. Percent is mean count divided b
 | `LocatedNear` | 1.0 | 0.02% | 0.01% |
 | `NotCapableOf` | 1.0 | 0.02% | 0.01% |
 
-### `high_80_control`
-
-| Relation | Mean edges | Percent | Full graph percent |
-| --- | ---: | ---: | ---: |
-| `RelatedTo` | 1296.0 | 45.13% | 18.10% |
-| `HasContext` | 228.3 | 7.95% | 16.61% |
-| `hyponym` | 674.0 | 23.47% | 14.40% |
-| `AtLocation` | 125.3 | 4.36% | 13.15% |
-| `hypernym` | 194.7 | 6.78% | 12.07% |
-| `HasQuality` | 40.0 | 1.39% | 4.07% |
-| `UsedFor` | 32.7 | 1.14% | 3.48% |
-| `HasProperty` | 21.0 | 0.73% | 2.12% |
-| `Antonym` | 30.7 | 1.07% | 1.89% |
-| `SimilarTo` | 38.7 | 1.35% | 1.57% |
-| `CapableOf` | 38.3 | 1.33% | 1.56% |
-| `part_meronym` | 9.0 | 0.31% | 1.31% |
-| `part_holonym` | 14.0 | 0.49% | 1.27% |
-| `member_holonym` | 16.7 | 0.58% | 0.99% |
-| `instance_hypernym` | 22.7 | 0.79% | 0.93% |
-| `member_meronym` | 18.0 | 0.63% | 0.93% |
-| `instance_hyponym` | 8.0 | 0.28% | 0.89% |
-| `HasPrerequisite` | 7.0 | 0.24% | 0.78% |
-| `DistinctFrom` | 8.7 | 0.30% | 0.57% |
-| `HasSubevent` | 9.0 | 0.31% | 0.53% |
-| `Causes` | 10.7 | 0.37% | 0.52% |
-| `MadeOf` | 3.0 | 0.10% | 0.36% |
-| `NotHasProperty` | 0.3 | 0.01% | 0.32% |
-| `MotivatedByGoal` | 5.0 | 0.17% | 0.31% |
-| `ReceivesAction` | 7.3 | 0.26% | 0.29% |
-| `Desires` | 1.3 | 0.05% | 0.28% |
-| `CausesDesire` | 0.3 | 0.01% | 0.18% |
-| `HasFirstSubevent` | 2.3 | 0.08% | 0.13% |
-| `NotDesires` | 4.0 | 0.14% | 0.08% |
-| `substance_holonym` | 0.7 | 0.02% | 0.07% |
-| `substance_meronym` | 0.3 | 0.01% | 0.07% |
-| `CreatedBy` | 1.0 | 0.03% | 0.03% |
-| `DefinedAs` | 1.0 | 0.03% | 0.01% |
-| `LocatedNear` | 1.0 | 0.03% | 0.01% |
-| `NotCapableOf` | 1.0 | 0.03% | 0.01% |
-
-### `high_80_relation_control`
-
-| Relation | Mean edges | Percent | Full graph percent |
-| --- | ---: | ---: | ---: |
-| `RelatedTo` | 806.7 | 28.09% | 18.10% |
-| `HasContext` | 482.0 | 16.78% | 16.61% |
-| `hyponym` | 438.7 | 15.27% | 14.40% |
-| `AtLocation` | 379.0 | 13.20% | 13.15% |
-| `hypernym` | 347.0 | 12.08% | 12.07% |
-| `HasQuality` | 66.0 | 2.30% | 4.07% |
-| `UsedFor` | 48.3 | 1.68% | 3.48% |
-| `HasProperty` | 26.0 | 0.91% | 2.12% |
-| `Antonym` | 33.7 | 1.17% | 1.89% |
-| `SimilarTo` | 39.0 | 1.36% | 1.57% |
-| `CapableOf` | 39.7 | 1.38% | 1.56% |
-| `part_meronym` | 10.3 | 0.36% | 1.31% |
-| `part_holonym` | 16.0 | 0.56% | 1.27% |
-| `member_holonym` | 20.3 | 0.71% | 0.99% |
-| `instance_hypernym` | 24.0 | 0.84% | 0.93% |
-| `member_meronym` | 22.0 | 0.77% | 0.93% |
-| `instance_hyponym` | 8.3 | 0.29% | 0.89% |
-| `HasPrerequisite` | 7.3 | 0.26% | 0.78% |
-| `DistinctFrom` | 8.7 | 0.30% | 0.57% |
-| `HasSubevent` | 9.0 | 0.31% | 0.53% |
-| `Causes` | 11.0 | 0.38% | 0.52% |
-| `MadeOf` | 3.0 | 0.10% | 0.36% |
-| `NotHasProperty` | 0.3 | 0.01% | 0.32% |
-| `MotivatedByGoal` | 5.0 | 0.17% | 0.31% |
-| `ReceivesAction` | 7.3 | 0.26% | 0.29% |
-| `Desires` | 2.0 | 0.07% | 0.28% |
-| `CausesDesire` | 0.3 | 0.01% | 0.18% |
-| `HasFirstSubevent` | 2.3 | 0.08% | 0.13% |
-| `NotDesires` | 4.0 | 0.14% | 0.08% |
-| `substance_holonym` | 0.7 | 0.02% | 0.07% |
-| `substance_meronym` | 0.3 | 0.01% | 0.07% |
-| `CreatedBy` | 1.0 | 0.03% | 0.03% |
-| `DefinedAs` | 0.7 | 0.02% | 0.01% |
-| `LocatedNear` | 1.0 | 0.03% | 0.01% |
-| `NotCapableOf` | 1.0 | 0.03% | 0.01% |
-
-## Corpus Generation Metadata
-
-Generated corpora use `data/generate_sentences/v2_generate_pcfg_sentences_synsets_adj.py` with `grammar_templates_adj.py`, `s1=0`, `s2=1`, `s3=0`, `adj_when_available=0.8`, and `n_samples=8`.
-Artificial corpora use augmented dictionaries in `experiments/graph_density/dicts/`, adding 42 missing `edges_adj` endpoints such as `a_*` adjective nodes. Corpus replacement was done with `experiments/graph_density/build_corpus_exact.py` to preserve exact synset/endpoint ids with underscores.
-
-### Existing Repository Corpus Baseline
-
-| Corpus | Lines | Tokens | Vocab size | Avg tokens / line |
-| --- | ---: | ---: | ---: | ---: |
-| `data/corpus/corpus_cjk.txt` | 43134 | 216144 | 2796 | 5.01 |
-| `data/corpus/corpus_hiragana.txt` | 43134 | 216144 | 2717 | 5.01 |
-| `data/corpus/corpus_cjk_synset.txt` | 43134 | 198242 | 2210 | 4.60 |
-| `data/corpus/corpus_hiragana_synset.txt` | 43134 | 198242 | 2210 | 4.60 |
 
 ### Generated Graph-Density Corpora
 
@@ -505,27 +279,3 @@ Artificial corpora use augmented dictionaries in `experiments/graph_density/dict
 | `low_40_relation` | 42,43,44 | 17790,17873,17871 | 17844.7 | 2234.3 | 2234.3 | 0/0, 0/0, 0/0 |
 | `medium_60_relation` | 42,43,44 | 28503,28386,28409 | 28432.7 | 2245.0 | 2245.0 | 0/0, 0/0, 0/0 |
 | `high_80_relation` | 42,43,44 | 39246,39081,39024 | 39117.0 | 2250.3 | 2250.3 | 0/0, 0/0, 0/0 |
-
-### Per-Run Corpus Files
-
-| Run | Generated triples | Sentences per language | CJK corpus | Hiragana corpus | Parallel corpus |
-| --- | ---: | ---: | --- | --- | --- |
-| `low_40_seed_42` | 2827 | 19268 | `experiments/graph_density/low_40_seed_42/corpus_cjk.txt` | `experiments/graph_density/low_40_seed_42/corpus_hiragana.txt` | `experiments/graph_density/low_40_seed_42/parallel_corpus_synset.json` |
-| `low_40_seed_43` | 2832 | 19266 | `experiments/graph_density/low_40_seed_43/corpus_cjk.txt` | `experiments/graph_density/low_40_seed_43/corpus_hiragana.txt` | `experiments/graph_density/low_40_seed_43/parallel_corpus_synset.json` |
-| `low_40_seed_44` | 2834 | 19315 | `experiments/graph_density/low_40_seed_44/corpus_cjk.txt` | `experiments/graph_density/low_40_seed_44/corpus_hiragana.txt` | `experiments/graph_density/low_40_seed_44/parallel_corpus_synset.json` |
-| `medium_60_full_seed_42` | 4264 | 30503 | `experiments/graph_density/medium_60_full_seed_42/corpus_cjk.txt` | `experiments/graph_density/medium_60_full_seed_42/corpus_hiragana.txt` | `experiments/graph_density/medium_60_full_seed_42/parallel_corpus_synset.json` |
-| `medium_60_full_seed_43` | 4269 | 30543 | `experiments/graph_density/medium_60_full_seed_43/corpus_cjk.txt` | `experiments/graph_density/medium_60_full_seed_43/corpus_hiragana.txt` | `experiments/graph_density/medium_60_full_seed_43/parallel_corpus_synset.json` |
-| `medium_60_full_seed_44` | 4271 | 30535 | `experiments/graph_density/medium_60_full_seed_44/corpus_cjk.txt` | `experiments/graph_density/medium_60_full_seed_44/corpus_hiragana.txt` | `experiments/graph_density/medium_60_full_seed_44/parallel_corpus_synset.json` |
-| `high_80_full_seed_42` | 5700 | 41361 | `experiments/graph_density/high_80_full_seed_42/corpus_cjk.txt` | `experiments/graph_density/high_80_full_seed_42/corpus_hiragana.txt` | `experiments/graph_density/high_80_full_seed_42/parallel_corpus_synset.json` |
-| `high_80_full_seed_43` | 5665 | 41105 | `experiments/graph_density/high_80_full_seed_43/corpus_cjk.txt` | `experiments/graph_density/high_80_full_seed_43/corpus_hiragana.txt` | `experiments/graph_density/high_80_full_seed_43/parallel_corpus_synset.json` |
-| `high_80_full_seed_44` | 5672 | 41152 | `experiments/graph_density/high_80_full_seed_44/corpus_cjk.txt` | `experiments/graph_density/high_80_full_seed_44/corpus_hiragana.txt` | `experiments/graph_density/high_80_full_seed_44/parallel_corpus_synset.json` |
-| `low_40_relation_seed_42` | 2757 | 17790 | `experiments/graph_density/low_40_relation_seed_42/corpus_cjk.txt` | `experiments/graph_density/low_40_relation_seed_42/corpus_hiragana.txt` | `experiments/graph_density/low_40_relation_seed_42/parallel_corpus_synset.json` |
-| `low_40_relation_seed_43` | 2758 | 17873 | `experiments/graph_density/low_40_relation_seed_43/corpus_cjk.txt` | `experiments/graph_density/low_40_relation_seed_43/corpus_hiragana.txt` | `experiments/graph_density/low_40_relation_seed_43/parallel_corpus_synset.json` |
-| `low_40_relation_seed_44` | 2757 | 17871 | `experiments/graph_density/low_40_relation_seed_44/corpus_cjk.txt` | `experiments/graph_density/low_40_relation_seed_44/corpus_hiragana.txt` | `experiments/graph_density/low_40_relation_seed_44/parallel_corpus_synset.json` |
-| `medium_60_relation_seed_42` | 4134 | 28503 | `experiments/graph_density/medium_60_relation_seed_42/corpus_cjk.txt` | `experiments/graph_density/medium_60_relation_seed_42/corpus_hiragana.txt` | `experiments/graph_density/medium_60_relation_seed_42/parallel_corpus_synset.json` |
-| `medium_60_relation_seed_43` | 4134 | 28386 | `experiments/graph_density/medium_60_relation_seed_43/corpus_cjk.txt` | `experiments/graph_density/medium_60_relation_seed_43/corpus_hiragana.txt` | `experiments/graph_density/medium_60_relation_seed_43/parallel_corpus_synset.json` |
-| `medium_60_relation_seed_44` | 4135 | 28409 | `experiments/graph_density/medium_60_relation_seed_44/corpus_cjk.txt` | `experiments/graph_density/medium_60_relation_seed_44/corpus_hiragana.txt` | `experiments/graph_density/medium_60_relation_seed_44/parallel_corpus_synset.json` |
-| `high_80_relation_seed_42` | 5511 | 39246 | `experiments/graph_density/high_80_relation_seed_42/corpus_cjk.txt` | `experiments/graph_density/high_80_relation_seed_42/corpus_hiragana.txt` | `experiments/graph_density/high_80_relation_seed_42/parallel_corpus_synset.json` |
-| `high_80_relation_seed_43` | 5511 | 39081 | `experiments/graph_density/high_80_relation_seed_43/corpus_cjk.txt` | `experiments/graph_density/high_80_relation_seed_43/corpus_hiragana.txt` | `experiments/graph_density/high_80_relation_seed_43/parallel_corpus_synset.json` |
-| `high_80_relation_seed_44` | 5511 | 39024 | `experiments/graph_density/high_80_relation_seed_44/corpus_cjk.txt` | `experiments/graph_density/high_80_relation_seed_44/corpus_hiragana.txt` | `experiments/graph_density/high_80_relation_seed_44/parallel_corpus_synset.json` |
-
