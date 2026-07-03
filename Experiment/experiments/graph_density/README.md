@@ -162,6 +162,8 @@ Evaluation was run with the existing repository scripts:
 
 All results below are mean +/- sample standard deviation across seeds 42, 43, and 44. Sentence retrieval uses `--n_sample 500`.
 
+All results are visualized. Find them in [visualizations](visualizations).
+
 
 ### Multilingual Alignment
 
@@ -180,6 +182,11 @@ All results below are mean +/- sample standard deviation across seeds 42, 43, an
 | `full_graph` | `downsample` | 0.5255 +/- 0.0697 | 0.7433 +/- 0.0572 | 0.4560 +/- 0.0450 | 0.7553 +/- 0.0270 |
 | `full_graph` | `full_corpus` | 0.7150 +/- 0.0277 | 0.8680 +/- 0.0114 | 0.7047 +/- 0.0219 | 0.9013 +/- 0.0162 |
 
+**Visualizations**
+![](visualizations/multilingual_alignment_top1.png)
+![](visualizations/multilingual_alignment_top5.png)
+
+
 ### Monolingual Hiragana MLM Accuracy
 
 | Condition | Mode | MLM top-1 | MLM top-5 | MRR |
@@ -196,3 +203,6 @@ All results below are mean +/- sample standard deviation across seeds 42, 43, an
 | `high_80_relation` | `full_corpus` | 0.5213 +/- 0.0021 | 0.9200 +/- 0.0048 | 0.6879 +/- 0.0046 |
 | `full_graph` | `downsample` | 0.4691 +/- 0.0067 | 0.8597 +/- 0.0031 | 0.6351 +/- 0.0057 |
 | `full_graph` | `full_corpus` | 0.5141 +/- 0.0056 | 0.9101 +/- 0.0068 | 0.6793 +/- 0.0064 |
+
+**Visualizations**
+![](visualizations/monolingual_hiragana_mlm.png)
