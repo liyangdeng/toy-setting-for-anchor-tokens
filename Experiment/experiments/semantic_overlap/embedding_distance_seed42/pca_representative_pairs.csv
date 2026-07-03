@@ -1,0 +1,13 @@
+group,rank,synset,lemma,cjk_token,hiragana_token,cosine_distance_100
+close_at_100,1,nettle.n.01,nettle,艑姭顑,てどがら,0.2712116241455078
+close_at_100,2,muscular_structure.n.01,muscular structure,欋芋餵咝,てしふ,0.2824355363845825
+close_at_100,3,conceptnet:colour:1346,colour,鎛伭,らせほゖご,0.2953681945800781
+close_at_100,4,wolfsbane.n.01,wolfsbane,鋸喼,ぺは,0.2980417013168335
+random_true,17,flour.n.01,flour,觡騳靱,とえり,0.5084367394447327
+random_true,23,conceptnet:microbiology:1405,microbiology,厈,むぇきつ,0.534820556640625
+random_true,14,conceptnet:constant:1546,constant,棦柭仾鿡,ぁをゆ,0.5475449860095978
+random_true,26,princess.n.01,princess,蝤宧萑軜,ぃでよ,0.552413672208786
+far_at_100,1,bit.n.02,bit,顃幚萖,ゕるけ,1.04659603536129
+far_at_100,2,insect.n.01,insect,疘膻佝,ぜゃょず,0.951087236404419
+far_at_100,3,nervous_system.n.01,nervous system,跲嬾芖,がづゕほ,0.9508227184414864
+far_at_100,4,sail.n.01,sail,屪嬽謵諝,は,0.937528308480978

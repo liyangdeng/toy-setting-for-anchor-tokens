@@ -1,0 +1,451 @@
+pair_id,group,selection_rank,condition,overlap_percent,synset,lemma,cjk_token,hiragana_token,cosine_distance
+1,close_at_100,1,overlap_000,0,nettle.n.01,nettle,艑姭顑,てどがら,0.8676306456327438
+1,close_at_100,1,overlap_025,25,nettle.n.01,nettle,艑姭顑,てどがら,0.8390493988990784
+1,close_at_100,1,overlap_050,50,nettle.n.01,nettle,艑姭顑,てどがら,0.4740365743637085
+1,close_at_100,1,overlap_075,75,nettle.n.01,nettle,艑姭顑,てどがら,0.6677896678447723
+1,close_at_100,1,overlap_100,100,nettle.n.01,nettle,艑姭顑,てどがら,0.2712116241455078
+2,close_at_100,2,overlap_000,0,muscular_structure.n.01,muscular structure,欋芋餵咝,てしふ,0.8892277181148529
+2,close_at_100,2,overlap_025,25,muscular_structure.n.01,muscular structure,欋芋餵咝,てしふ,0.5432844758033752
+2,close_at_100,2,overlap_050,50,muscular_structure.n.01,muscular structure,欋芋餵咝,てしふ,0.5884943008422852
+2,close_at_100,2,overlap_075,75,muscular_structure.n.01,muscular structure,欋芋餵咝,てしふ,0.7686745077371597
+2,close_at_100,2,overlap_100,100,muscular_structure.n.01,muscular structure,欋芋餵咝,てしふ,0.2824355363845825
+3,close_at_100,3,overlap_000,0,conceptnet:colour:1346,colour,鎛伭,らせほゖご,0.700423538684845
+3,close_at_100,3,overlap_025,25,conceptnet:colour:1346,colour,鎛伭,らせほゖご,0.6851780712604523
+3,close_at_100,3,overlap_050,50,conceptnet:colour:1346,colour,鎛伭,らせほゖご,0.49267441034317017
+3,close_at_100,3,overlap_075,75,conceptnet:colour:1346,colour,鎛伭,らせほゖご,0.37979453802108765
+3,close_at_100,3,overlap_100,100,conceptnet:colour:1346,colour,鎛伭,らせほゖご,0.2953681945800781
+4,close_at_100,4,overlap_000,0,wolfsbane.n.01,wolfsbane,鋸喼,ぺは,0.5559865534305573
+4,close_at_100,4,overlap_025,25,wolfsbane.n.01,wolfsbane,鋸喼,ぺは,0.6768691539764404
+4,close_at_100,4,overlap_050,50,wolfsbane.n.01,wolfsbane,鋸喼,ぺは,0.6889267861843109
+4,close_at_100,4,overlap_075,75,wolfsbane.n.01,wolfsbane,鋸喼,ぺは,0.4320017099380493
+4,close_at_100,4,overlap_100,100,wolfsbane.n.01,wolfsbane,鋸喼,ぺは,0.2980417013168335
+5,close_at_100,5,overlap_000,0,anatomist.n.01,anatomist,鏏帔亡淂,ざゆけぁだご,0.667553186416626
+5,close_at_100,5,overlap_025,25,anatomist.n.01,anatomist,鏏帔亡淂,ざゆけぁだご,0.6581095457077026
+5,close_at_100,5,overlap_050,50,anatomist.n.01,anatomist,鏏帔亡淂,ざゆけぁだご,0.686204344034195
+5,close_at_100,5,overlap_075,75,anatomist.n.01,anatomist,鏏帔亡淂,ざゆけぁだご,0.7424740493297577
+5,close_at_100,5,overlap_100,100,anatomist.n.01,anatomist,鏏帔亡淂,ざゆけぁだご,0.30181992053985596
+6,close_at_100,6,overlap_000,0,deliveryman.n.01,deliveryman,脕,ゖむざ,0.7603773921728134
+6,close_at_100,6,overlap_025,25,deliveryman.n.01,deliveryman,脕,ゖむざ,0.9086074084043503
+6,close_at_100,6,overlap_050,50,deliveryman.n.01,deliveryman,脕,ゖむざ,0.4628220200538635
+6,close_at_100,6,overlap_075,75,deliveryman.n.01,deliveryman,脕,ゖむざ,0.5179086923599243
+6,close_at_100,6,overlap_100,100,deliveryman.n.01,deliveryman,脕,ゖむざ,0.304943323135376
+7,close_at_100,7,overlap_000,0,conceptnet:injury:1921,injury,欻抉勣,なぼんご,0.9296587258577347
+7,close_at_100,7,overlap_025,25,conceptnet:injury:1921,injury,欻抉勣,なぼんご,0.5956770777702332
+7,close_at_100,7,overlap_050,50,conceptnet:injury:1921,injury,欻抉勣,なぼんご,0.7451735734939575
+7,close_at_100,7,overlap_075,75,conceptnet:injury:1921,injury,欻抉勣,なぼんご,0.6906716525554657
+7,close_at_100,7,overlap_100,100,conceptnet:injury:1921,injury,欻抉勣,なぼんご,0.3070420026779175
+8,close_at_100,8,overlap_000,0,appraiser.n.01,appraiser,鯗咁鄦,ぷた,0.8641567528247833
+8,close_at_100,8,overlap_025,25,appraiser.n.01,appraiser,鯗咁鄦,ぷた,0.6541723012924194
+8,close_at_100,8,overlap_050,50,appraiser.n.01,appraiser,鯗咁鄦,ぷた,0.6514594852924347
+8,close_at_100,8,overlap_075,75,appraiser.n.01,appraiser,鯗咁鄦,ぷた,0.8407986462116241
+8,close_at_100,8,overlap_100,100,appraiser.n.01,appraiser,鯗咁鄦,ぷた,0.3099794387817383
+9,close_at_100,9,overlap_000,0,second_fiddle.n.01,second fiddle,閍褻喑錖,ぐっゔ,0.6548074781894684
+9,close_at_100,9,overlap_025,25,second_fiddle.n.01,second fiddle,閍褻喑錖,ぐっゔ,0.8257962763309479
+9,close_at_100,9,overlap_050,50,second_fiddle.n.01,second fiddle,閍褻喑錖,ぐっゔ,0.4846704602241516
+9,close_at_100,9,overlap_075,75,second_fiddle.n.01,second fiddle,閍褻喑錖,ぐっゔ,0.5416764914989471
+9,close_at_100,9,overlap_100,100,second_fiddle.n.01,second fiddle,閍褻喑錖,ぐっゔ,0.31020528078079224
+10,close_at_100,10,overlap_000,0,salesman.n.01,salesman,鴢堚塏,ずじぞゐ,0.6924396753311157
+10,close_at_100,10,overlap_025,25,salesman.n.01,salesman,鴢堚塏,ずじぞゐ,0.9793877210468054
+10,close_at_100,10,overlap_050,50,salesman.n.01,salesman,鴢堚塏,ずじぞゐ,0.7719268351793289
+10,close_at_100,10,overlap_075,75,salesman.n.01,salesman,鴢堚塏,ずじぞゐ,0.651054859161377
+10,close_at_100,10,overlap_100,100,salesman.n.01,salesman,鴢堚塏,ずじぞゐ,0.3168267607688904
+11,close_at_100,11,overlap_000,0,conceptnet:sea:1263,sea,儙壎澠,まがこぺ,0.806609183549881
+11,close_at_100,11,overlap_025,25,conceptnet:sea:1263,sea,儙壎澠,まがこぺ,0.3943539261817932
+11,close_at_100,11,overlap_050,50,conceptnet:sea:1263,sea,儙壎澠,まがこぺ,0.6145042181015015
+11,close_at_100,11,overlap_075,75,conceptnet:sea:1263,sea,儙壎澠,まがこぺ,0.7340992093086243
+11,close_at_100,11,overlap_100,100,conceptnet:sea:1263,sea,儙壎澠,まがこぺ,0.3171738386154175
+12,close_at_100,12,overlap_000,0,ram.n.05,ram,嚴癳瘞鄜,だり,0.8962552398443222
+12,close_at_100,12,overlap_025,25,ram.n.05,ram,嚴癳瘞鄜,だり,0.845344066619873
+12,close_at_100,12,overlap_050,50,ram.n.05,ram,嚴癳瘞鄜,だり,0.7103415131568909
+12,close_at_100,12,overlap_075,75,ram.n.05,ram,嚴癳瘞鄜,だり,0.7933552414178848
+12,close_at_100,12,overlap_100,100,ram.n.05,ram,嚴癳瘞鄜,だり,0.3183128833770752
+13,close_at_100,13,overlap_000,0,conceptnet:castle:1301,castle,裵蛹箿滦,ふのなぜ,0.8060726821422577
+13,close_at_100,13,overlap_025,25,conceptnet:castle:1301,castle,裵蛹箿滦,ふのなぜ,0.6976736485958099
+13,close_at_100,13,overlap_050,50,conceptnet:castle:1301,castle,裵蛹箿滦,ふのなぜ,0.7450746893882751
+13,close_at_100,13,overlap_075,75,conceptnet:castle:1301,castle,裵蛹箿滦,ふのなぜ,1.086279772222042
+13,close_at_100,13,overlap_100,100,conceptnet:castle:1301,castle,裵蛹箿滦,ふのなぜ,0.31894004344940186
+14,close_at_100,14,overlap_000,0,salesperson.n.01,salesperson,跦敖,ぁがぺわの,0.7679469585418701
+14,close_at_100,14,overlap_025,25,salesperson.n.01,salesperson,跦敖,ぁがぺわの,0.9409509599208832
+14,close_at_100,14,overlap_050,50,salesperson.n.01,salesperson,跦敖,ぁがぺわの,0.6321523487567902
+14,close_at_100,14,overlap_075,75,salesperson.n.01,salesperson,跦敖,ぁがぺわの,0.7382179200649261
+14,close_at_100,14,overlap_100,100,salesperson.n.01,salesperson,跦敖,ぁがぺわの,0.3194674253463745
+15,close_at_100,15,overlap_000,0,double_knit.n.01,double knit,釃苐,とおいそ,0.8395793586969376
+15,close_at_100,15,overlap_025,25,double_knit.n.01,double knit,釃苐,とおいそ,0.5547819137573242
+15,close_at_100,15,overlap_050,50,double_knit.n.01,double knit,釃苐,とおいそ,0.6856304705142975
+15,close_at_100,15,overlap_075,75,double_knit.n.01,double knit,釃苐,とおいそ,0.6785358190536499
+15,close_at_100,15,overlap_100,100,double_knit.n.01,double knit,釃苐,とおいそ,0.3204694390296936
+16,close_at_100,16,overlap_000,0,conceptnet:hammer:1463,hammer,蕢喩阐鶮,えら,0.8253628015518188
+16,close_at_100,16,overlap_025,25,conceptnet:hammer:1463,hammer,蕢喩阐鶮,えら,0.5636793971061707
+16,close_at_100,16,overlap_050,50,conceptnet:hammer:1463,hammer,蕢喩阐鶮,えら,0.5647063851356506
+16,close_at_100,16,overlap_075,75,conceptnet:hammer:1463,hammer,蕢喩阐鶮,えら,0.7405427098274231
+16,close_at_100,16,overlap_100,100,conceptnet:hammer:1463,hammer,蕢喩阐鶮,えら,0.3211803436279297
+17,close_at_100,17,overlap_000,0,celestial_point.n.01,celestial point,鄐辝亼,たべ,0.5243405997753143
+17,close_at_100,17,overlap_025,25,celestial_point.n.01,celestial point,鄐辝亼,たべ,0.6017733514308929
+17,close_at_100,17,overlap_050,50,celestial_point.n.01,celestial point,鄐辝亼,たべ,0.38166964054107666
+17,close_at_100,17,overlap_075,75,celestial_point.n.01,celestial point,鄐辝亼,たべ,0.8505403846502304
+17,close_at_100,17,overlap_100,100,celestial_point.n.01,celestial point,鄐辝亼,たべ,0.3214554190635681
+18,close_at_100,18,overlap_000,0,specialist.n.01,specialist,橇齦窌,すぃそ,0.7966424822807312
+18,close_at_100,18,overlap_025,25,specialist.n.01,specialist,橇齦窌,すぃそ,0.6356838345527649
+18,close_at_100,18,overlap_050,50,specialist.n.01,specialist,橇齦窌,すぃそ,0.5888904333114624
+18,close_at_100,18,overlap_075,75,specialist.n.01,specialist,橇齦窌,すぃそ,0.7039634585380554
+18,close_at_100,18,overlap_100,100,specialist.n.01,specialist,橇齦窌,すぃそ,0.3217233419418335
+19,close_at_100,19,overlap_000,0,igbo.n.01,igbo,雁摯鳊忴,れほが,0.7316146194934845
+19,close_at_100,19,overlap_025,25,igbo.n.01,igbo,雁摯鳊忴,れほが,0.633795440196991
+19,close_at_100,19,overlap_050,50,igbo.n.01,igbo,雁摯鳊忴,れほが,0.6689355373382568
+19,close_at_100,19,overlap_075,75,igbo.n.01,igbo,雁摯鳊忴,れほが,0.4549945592880249
+19,close_at_100,19,overlap_100,100,igbo.n.01,igbo,雁摯鳊忴,れほが,0.3245682120323181
+20,close_at_100,20,overlap_000,0,conceptnet:fly:1244,fly,凄窰墬,ぶもゐぎ,0.6833629608154297
+20,close_at_100,20,overlap_025,25,conceptnet:fly:1244,fly,凄窰墬,ぶもゐぎ,0.6250347197055817
+20,close_at_100,20,overlap_050,50,conceptnet:fly:1244,fly,凄窰墬,ぶもゐぎ,0.6341543793678284
+20,close_at_100,20,overlap_075,75,conceptnet:fly:1244,fly,凄窰墬,ぶもゐぎ,0.6237377822399139
+20,close_at_100,20,overlap_100,100,conceptnet:fly:1244,fly,凄窰墬,ぶもゐぎ,0.3246060609817505
+21,close_at_100,21,overlap_000,0,aconite.n.01,aconite,陝氪,みょた,0.6257789731025696
+21,close_at_100,21,overlap_025,25,aconite.n.01,aconite,陝氪,みょた,0.5622552037239075
+21,close_at_100,21,overlap_050,50,aconite.n.01,aconite,陝氪,みょた,0.6402217149734497
+21,close_at_100,21,overlap_075,75,aconite.n.01,aconite,陝氪,みょた,0.5021181106567383
+21,close_at_100,21,overlap_100,100,aconite.n.01,aconite,陝氪,みょた,0.3248865604400635
+22,close_at_100,22,overlap_000,0,alga.n.01,alga,裷多,ぉうろ,0.7014152109622955
+22,close_at_100,22,overlap_025,25,alga.n.01,alga,裷多,ぉうろ,0.9398381672799587
+22,close_at_100,22,overlap_050,50,alga.n.01,alga,裷多,ぉうろ,0.7125415205955505
+22,close_at_100,22,overlap_075,75,alga.n.01,alga,裷多,ぉうろ,0.7063977718353271
+22,close_at_100,22,overlap_100,100,alga.n.01,alga,裷多,ぉうろ,0.32496732473373413
+23,close_at_100,23,overlap_000,0,tapeworm.n.01,tapeworm,緂嘂微,べぜ,0.4927023649215698
+23,close_at_100,23,overlap_025,25,tapeworm.n.01,tapeworm,緂嘂微,べぜ,0.7342906594276428
+23,close_at_100,23,overlap_050,50,tapeworm.n.01,tapeworm,緂嘂微,べぜ,0.6452620029449463
+23,close_at_100,23,overlap_075,75,tapeworm.n.01,tapeworm,緂嘂微,べぜ,0.4021562337875366
+23,close_at_100,23,overlap_100,100,tapeworm.n.01,tapeworm,緂嘂微,べぜ,0.32851290702819824
+24,close_at_100,24,overlap_000,0,conceptnet:astrology:1434,astrology,嗂翂徸,たば,0.6432281732559204
+24,close_at_100,24,overlap_025,25,conceptnet:astrology:1434,astrology,嗂翂徸,たば,0.8479860126972198
+24,close_at_100,24,overlap_050,50,conceptnet:astrology:1434,astrology,嗂翂徸,たば,0.5517452955245972
+24,close_at_100,24,overlap_075,75,conceptnet:astrology:1434,astrology,嗂翂徸,たば,0.6617823839187622
+24,close_at_100,24,overlap_100,100,conceptnet:astrology:1434,astrology,嗂翂徸,たば,0.33408212661743164
+25,close_at_100,25,overlap_000,0,antacid.n.01,antacid,封,くきとぴ,0.711638867855072
+25,close_at_100,25,overlap_025,25,antacid.n.01,antacid,封,くきとぴ,0.7371145486831665
+25,close_at_100,25,overlap_050,50,antacid.n.01,antacid,封,くきとぴ,0.545809805393219
+25,close_at_100,25,overlap_075,75,antacid.n.01,antacid,封,くきとぴ,0.7453551292419434
+25,close_at_100,25,overlap_100,100,antacid.n.01,antacid,封,くきとぴ,0.3340963125228882
+26,close_at_100,26,overlap_000,0,critic.n.02,critic,矌稹,しぼお,0.8818733394145966
+26,close_at_100,26,overlap_025,25,critic.n.02,critic,矌稹,しぼお,0.6305925846099854
+26,close_at_100,26,overlap_050,50,critic.n.02,critic,矌稹,しぼお,0.6753219962120056
+26,close_at_100,26,overlap_075,75,critic.n.02,critic,矌稹,しぼお,0.755918487906456
+26,close_at_100,26,overlap_100,100,critic.n.02,critic,矌稹,しぼお,0.33763355016708374
+27,close_at_100,27,overlap_000,0,jellyfish.n.02,jellyfish,緘脪卷,おな,0.6486624479293823
+27,close_at_100,27,overlap_025,25,jellyfish.n.02,jellyfish,緘脪卷,おな,0.6192313134670258
+27,close_at_100,27,overlap_050,50,jellyfish.n.02,jellyfish,緘脪卷,おな,0.8609910011291504
+27,close_at_100,27,overlap_075,75,jellyfish.n.02,jellyfish,緘脪卷,おな,0.8730985075235367
+27,close_at_100,27,overlap_100,100,jellyfish.n.02,jellyfish,緘脪卷,おな,0.33781105279922485
+28,close_at_100,28,overlap_000,0,conceptnet:sky:1400,sky,凨拜,じぺて,0.7066740691661835
+28,close_at_100,28,overlap_025,25,conceptnet:sky:1400,sky,凨拜,じぺて,0.7063769996166229
+28,close_at_100,28,overlap_050,50,conceptnet:sky:1400,sky,凨拜,じぺて,0.7430849075317383
+28,close_at_100,28,overlap_075,75,conceptnet:sky:1400,sky,凨拜,じぺて,0.736124575138092
+28,close_at_100,28,overlap_100,100,conceptnet:sky:1400,sky,凨拜,じぺて,0.3402574062347412
+29,close_at_100,29,overlap_000,0,hairdresser.n.01,hairdresser,團磺臱,ゔが,0.9309373050928116
+29,close_at_100,29,overlap_025,25,hairdresser.n.01,hairdresser,團磺臱,ゔが,0.7975209504365921
+29,close_at_100,29,overlap_050,50,hairdresser.n.01,hairdresser,團磺臱,ゔが,0.6080405116081238
+29,close_at_100,29,overlap_075,75,hairdresser.n.01,hairdresser,團磺臱,ゔが,1.0342673435807228
+29,close_at_100,29,overlap_100,100,hairdresser.n.01,hairdresser,團磺臱,ゔが,0.3405236601829529
+30,close_at_100,30,overlap_000,0,evaluator.n.01,evaluator,纑傣罕,をせ,0.9995030276477337
+30,close_at_100,30,overlap_025,25,evaluator.n.01,evaluator,纑傣罕,をせ,0.8448430746793747
+30,close_at_100,30,overlap_050,50,evaluator.n.01,evaluator,纑傣罕,をせ,0.9465914517641068
+30,close_at_100,30,overlap_075,75,evaluator.n.01,evaluator,纑傣罕,をせ,0.9259883165359497
+30,close_at_100,30,overlap_100,100,evaluator.n.01,evaluator,纑傣罕,をせ,0.3412975072860718
+31,random_true,1,overlap_000,0,houseplant.n.01,houseplant,鄱詺塄,ゎぶ,0.7444519996643066
+31,random_true,1,overlap_025,25,houseplant.n.01,houseplant,鄱詺塄,ゎぶ,0.7466115355491638
+31,random_true,1,overlap_050,50,houseplant.n.01,houseplant,鄱詺塄,ゎぶ,0.48674046993255615
+31,random_true,1,overlap_075,75,houseplant.n.01,houseplant,鄱詺塄,ゎぶ,0.7454054951667786
+31,random_true,1,overlap_100,100,houseplant.n.01,houseplant,鄱詺塄,ゎぶ,0.5765243768692017
+32,random_true,2,overlap_000,0,soup.n.01,soup,慗変睗冂,ぃぎゎ,1.1371198892593384
+32,random_true,2,overlap_025,25,soup.n.01,soup,慗変睗冂,ぃぎゎ,0.8330128788948059
+32,random_true,2,overlap_050,50,soup.n.01,soup,慗変睗冂,ぃぎゎ,0.8964954018592834
+32,random_true,2,overlap_075,75,soup.n.01,soup,慗変睗冂,ぃぎゎ,0.5838135480880737
+32,random_true,2,overlap_100,100,soup.n.01,soup,慗変睗冂,ぃぎゎ,0.40970730781555176
+33,random_true,3,overlap_000,0,conceptnet:boring:1627,boring,鐕磬,ゅる,0.5332146883010864
+33,random_true,3,overlap_025,25,conceptnet:boring:1627,boring,鐕磬,ゅる,0.7641564309597015
+33,random_true,3,overlap_050,50,conceptnet:boring:1627,boring,鐕磬,ゅる,0.5329327285289764
+33,random_true,3,overlap_075,75,conceptnet:boring:1627,boring,鐕磬,ゅる,0.7026751339435577
+33,random_true,3,overlap_100,100,conceptnet:boring:1627,boring,鐕磬,ゅる,0.36417698860168457
+34,random_true,4,overlap_000,0,dipterous_insect.n.01,dipterous insect,烞篪,にえ,0.92348463088274
+34,random_true,4,overlap_025,25,dipterous_insect.n.01,dipterous insect,烞篪,にえ,0.764671191573143
+34,random_true,4,overlap_050,50,dipterous_insect.n.01,dipterous insect,烞篪,にえ,0.6958986222743988
+34,random_true,4,overlap_075,75,dipterous_insect.n.01,dipterous insect,烞篪,にえ,0.8473226726055145
+34,random_true,4,overlap_100,100,dipterous_insect.n.01,dipterous insect,烞篪,にえ,0.6166478395462036
+35,random_true,5,overlap_000,0,sleeve.n.01,sleeve,甊熿逬,はやじ,0.664153665304184
+35,random_true,5,overlap_025,25,sleeve.n.01,sleeve,甊熿逬,はやじ,0.8627819418907166
+35,random_true,5,overlap_050,50,sleeve.n.01,sleeve,甊熿逬,はやじ,0.5641649961471558
+35,random_true,5,overlap_075,75,sleeve.n.01,sleeve,甊熿逬,はやじ,0.4909299612045288
+35,random_true,5,overlap_100,100,sleeve.n.01,sleeve,甊熿逬,はやじ,0.45974868535995483
+36,random_true,6,overlap_000,0,conceptnet:flat:1295,flat,勤,をゐろ,0.7015684545040131
+36,random_true,6,overlap_025,25,conceptnet:flat:1295,flat,勤,をゐろ,1.0011362610384822
+36,random_true,6,overlap_050,50,conceptnet:flat:1295,flat,勤,をゐろ,0.7683546543121338
+36,random_true,6,overlap_075,75,conceptnet:flat:1295,flat,勤,をゐろ,0.42953068017959595
+36,random_true,6,overlap_100,100,conceptnet:flat:1295,flat,勤,をゐろ,0.4515184164047241
+37,random_true,7,overlap_000,0,conceptnet:fishing:1460,fishing,澊邲,ごひづ,0.8246539235115051
+37,random_true,7,overlap_025,25,conceptnet:fishing:1460,fishing,澊邲,ごひづ,0.7127934992313385
+37,random_true,7,overlap_050,50,conceptnet:fishing:1460,fishing,澊邲,ごひづ,0.609735518693924
+37,random_true,7,overlap_075,75,conceptnet:fishing:1460,fishing,澊邲,ごひづ,0.5125602185726166
+37,random_true,7,overlap_100,100,conceptnet:fishing:1460,fishing,澊邲,ごひづ,0.44651758670806885
+38,random_true,8,overlap_000,0,lap.n.04,lap,揹陜睐懈,ふうあれ,0.8811440169811249
+38,random_true,8,overlap_025,25,lap.n.04,lap,揹陜睐懈,ふうあれ,1.059730563312769
+38,random_true,8,overlap_050,50,lap.n.04,lap,揹陜睐懈,ふうあれ,0.8286994993686676
+38,random_true,8,overlap_075,75,lap.n.04,lap,揹陜睐懈,ふうあれ,0.8418252915143967
+38,random_true,8,overlap_100,100,lap.n.04,lap,揹陜睐懈,ふうあれ,0.4208463430404663
+39,random_true,9,overlap_000,0,conceptnet:eat:1216,eat,哩鿼鏒碯,をゆに,0.7845956981182098
+39,random_true,9,overlap_025,25,conceptnet:eat:1216,eat,哩鿼鏒碯,をゆに,0.5835608243942261
+39,random_true,9,overlap_050,50,conceptnet:eat:1216,eat,哩鿼鏒碯,をゆに,0.8079768866300583
+39,random_true,9,overlap_075,75,conceptnet:eat:1216,eat,哩鿼鏒碯,をゆに,0.5156527757644653
+39,random_true,9,overlap_100,100,conceptnet:eat:1216,eat,哩鿼鏒碯,をゆに,0.6146030426025391
+40,random_true,10,overlap_000,0,jersey.n.04,jersey,庛疆恀,ゕかや,0.9415241479873657
+40,random_true,10,overlap_025,25,jersey.n.04,jersey,庛疆恀,ゕかや,0.8745554387569427
+40,random_true,10,overlap_050,50,jersey.n.04,jersey,庛疆恀,ゕかや,0.9354129880666733
+40,random_true,10,overlap_075,75,jersey.n.04,jersey,庛疆恀,ゕかや,0.5940505862236023
+40,random_true,10,overlap_100,100,jersey.n.04,jersey,庛疆恀,ゕかや,0.40739357471466064
+41,random_true,11,overlap_000,0,system.n.06,system,槼諉,ぽをっ,0.8014101833105087
+41,random_true,11,overlap_025,25,system.n.06,system,槼諉,ぽをっ,0.8292993456125259
+41,random_true,11,overlap_050,50,system.n.06,system,槼諉,ぽをっ,0.6382130086421967
+41,random_true,11,overlap_075,75,system.n.06,system,槼諉,ぽをっ,0.6092410385608673
+41,random_true,11,overlap_100,100,system.n.06,system,槼諉,ぽをっ,0.5875450372695923
+42,random_true,12,overlap_000,0,appetizer.n.01,appetizer,洰白釢,ありぺ,1.0163657441735268
+42,random_true,12,overlap_025,25,appetizer.n.01,appetizer,洰白釢,ありぺ,0.7760372906923294
+42,random_true,12,overlap_050,50,appetizer.n.01,appetizer,洰白釢,ありぺ,0.88819520175457
+42,random_true,12,overlap_075,75,appetizer.n.01,appetizer,洰白釢,ありぺ,0.7231683731079102
+42,random_true,12,overlap_100,100,appetizer.n.01,appetizer,洰白釢,ありぺ,0.6159626841545105
+43,random_true,13,overlap_000,0,isogram.n.01,isogram,红親,ほちせこか,0.587542712688446
+43,random_true,13,overlap_025,25,isogram.n.01,isogram,红親,ほちせこか,0.4402564764022827
+43,random_true,13,overlap_050,50,isogram.n.01,isogram,红親,ほちせこか,0.6615043878555298
+43,random_true,13,overlap_075,75,isogram.n.01,isogram,红親,ほちせこか,0.6528855562210083
+43,random_true,13,overlap_100,100,isogram.n.01,isogram,红親,ほちせこか,0.7412817478179932
+44,random_true,14,overlap_000,0,conceptnet:constant:1546,constant,棦柭仾鿡,ぁをゆ,0.7074450850486755
+44,random_true,14,overlap_025,25,conceptnet:constant:1546,constant,棦柭仾鿡,ぁをゆ,0.6388469636440277
+44,random_true,14,overlap_050,50,conceptnet:constant:1546,constant,棦柭仾鿡,ぁをゆ,0.6728872060775757
+44,random_true,14,overlap_075,75,conceptnet:constant:1546,constant,棦柭仾鿡,ぁをゆ,0.5395196080207825
+44,random_true,14,overlap_100,100,conceptnet:constant:1546,constant,棦柭仾鿡,ぁをゆ,0.5475449860095978
+45,random_true,15,overlap_000,0,conceptnet:card_games:1524,card games,淟猾,けぉの,0.5140232443809509
+45,random_true,15,overlap_025,25,conceptnet:card_games:1524,card games,淟猾,けぉの,0.5923545360565186
+45,random_true,15,overlap_050,50,conceptnet:card_games:1524,card games,淟猾,けぉの,0.5668835639953613
+45,random_true,15,overlap_075,75,conceptnet:card_games:1524,card games,淟猾,けぉの,0.5194622576236725
+45,random_true,15,overlap_100,100,conceptnet:card_games:1524,card games,淟猾,けぉの,0.4004923701286316
+46,random_true,16,overlap_000,0,conceptnet:lizard:1349,lizard,送乵,ゑべおせ,0.6586292684078217
+46,random_true,16,overlap_025,25,conceptnet:lizard:1349,lizard,送乵,ゑべおせ,0.6210280656814575
+46,random_true,16,overlap_050,50,conceptnet:lizard:1349,lizard,送乵,ゑべおせ,0.7159862220287323
+46,random_true,16,overlap_075,75,conceptnet:lizard:1349,lizard,送乵,ゑべおせ,0.6297403573989868
+46,random_true,16,overlap_100,100,conceptnet:lizard:1349,lizard,送乵,ゑべおせ,0.5612862706184387
+47,random_true,17,overlap_000,0,flour.n.01,flour,觡騳靱,とえり,0.6943639814853668
+47,random_true,17,overlap_025,25,flour.n.01,flour,觡騳靱,とえり,0.812659740447998
+47,random_true,17,overlap_050,50,flour.n.01,flour,觡騳靱,とえり,0.8682568967342377
+47,random_true,17,overlap_075,75,flour.n.01,flour,觡騳靱,とえり,0.4582403302192688
+47,random_true,17,overlap_100,100,flour.n.01,flour,觡騳靱,とえり,0.5084367394447327
+48,random_true,18,overlap_000,0,factotum.n.01,factotum,鋈鼢,ひむつ,0.7529335767030716
+48,random_true,18,overlap_025,25,factotum.n.01,factotum,鋈鼢,ひむつ,0.5328580141067505
+48,random_true,18,overlap_050,50,factotum.n.01,factotum,鋈鼢,ひむつ,0.5172462463378906
+48,random_true,18,overlap_075,75,factotum.n.01,factotum,鋈鼢,ひむつ,0.697551816701889
+48,random_true,18,overlap_100,100,factotum.n.01,factotum,鋈鼢,ひむつ,0.37042951583862305
+49,random_true,19,overlap_000,0,cairene.n.01,cairene,刴墯貽梷,わ,0.6450763940811157
+49,random_true,19,overlap_025,25,cairene.n.01,cairene,刴墯貽梷,わ,0.7348681688308716
+49,random_true,19,overlap_050,50,cairene.n.01,cairene,刴墯貽梷,わ,0.6377393007278442
+49,random_true,19,overlap_075,75,cairene.n.01,cairene,刴墯貽梷,わ,0.4967529773712158
+49,random_true,19,overlap_100,100,cairene.n.01,cairene,刴墯貽梷,わ,0.37010693550109863
+50,random_true,20,overlap_000,0,conceptnet:gentleman:1395,gentleman,魛慌,でた,0.9197104126214981
+50,random_true,20,overlap_025,25,conceptnet:gentleman:1395,gentleman,魛慌,でた,0.7491436004638672
+50,random_true,20,overlap_050,50,conceptnet:gentleman:1395,gentleman,魛慌,でた,0.7828366011381149
+50,random_true,20,overlap_075,75,conceptnet:gentleman:1395,gentleman,魛慌,でた,0.8517741858959198
+50,random_true,20,overlap_100,100,conceptnet:gentleman:1395,gentleman,魛慌,でた,0.40347349643707275
+51,random_true,21,overlap_000,0,workman.n.01,workman,龞賙貺,ゎぁえ,0.6525768637657166
+51,random_true,21,overlap_025,25,workman.n.01,workman,龞賙貺,ゎぁえ,0.8086041510105133
+51,random_true,21,overlap_050,50,workman.n.01,workman,龞賙貺,ゎぁえ,0.5917258262634277
+51,random_true,21,overlap_075,75,workman.n.01,workman,龞賙貺,ゎぁえ,0.7505408227443695
+51,random_true,21,overlap_100,100,workman.n.01,workman,龞賙貺,ゎぁえ,0.4456879496574402
+52,random_true,22,overlap_000,0,back.n.01,back,锏昞,よす,0.8053670227527618
+52,random_true,22,overlap_025,25,back.n.01,back,锏昞,よす,0.85197813808918
+52,random_true,22,overlap_050,50,back.n.01,back,锏昞,よす,0.7300073802471161
+52,random_true,22,overlap_075,75,back.n.01,back,锏昞,よす,0.4487895369529724
+52,random_true,22,overlap_100,100,back.n.01,back,锏昞,よす,0.4485652446746826
+53,random_true,23,overlap_000,0,conceptnet:microbiology:1405,microbiology,厈,むぇきつ,0.7332459688186646
+53,random_true,23,overlap_025,25,conceptnet:microbiology:1405,microbiology,厈,むぇきつ,0.832410916686058
+53,random_true,23,overlap_050,50,conceptnet:microbiology:1405,microbiology,厈,むぇきつ,0.732663631439209
+53,random_true,23,overlap_075,75,conceptnet:microbiology:1405,microbiology,厈,むぇきつ,0.5969905257225037
+53,random_true,23,overlap_100,100,conceptnet:microbiology:1405,microbiology,厈,むぇきつ,0.534820556640625
+54,random_true,24,overlap_000,0,salad.n.01,salad,犰蘟劋绎,ちべとち,0.7106032371520996
+54,random_true,24,overlap_025,25,salad.n.01,salad,犰蘟劋绎,ちべとち,0.7800843715667725
+54,random_true,24,overlap_050,50,salad.n.01,salad,犰蘟劋绎,ちべとち,0.8312810361385345
+54,random_true,24,overlap_075,75,salad.n.01,salad,犰蘟劋绎,ちべとち,0.5552621185779572
+54,random_true,24,overlap_100,100,salad.n.01,salad,犰蘟劋绎,ちべとち,0.5649878680706024
+55,random_true,25,overlap_000,0,church_tower.n.01,church tower,婴螵寵蠒,はゅ,0.5823675990104675
+55,random_true,25,overlap_025,25,church_tower.n.01,church tower,婴螵寵蠒,はゅ,1.0025868499651551
+55,random_true,25,overlap_050,50,church_tower.n.01,church tower,婴螵寵蠒,はゅ,0.48211395740509033
+55,random_true,25,overlap_075,75,church_tower.n.01,church tower,婴螵寵蠒,はゅ,0.6864781379699707
+55,random_true,25,overlap_100,100,church_tower.n.01,church tower,婴螵寵蠒,はゅ,0.3667256832122803
+56,random_true,26,overlap_000,0,princess.n.01,princess,蝤宧萑軜,ぃでよ,0.7700804024934769
+56,random_true,26,overlap_025,25,princess.n.01,princess,蝤宧萑軜,ぃでよ,0.6311632394790649
+56,random_true,26,overlap_050,50,princess.n.01,princess,蝤宧萑軜,ぃでよ,0.6490867137908936
+56,random_true,26,overlap_075,75,princess.n.01,princess,蝤宧萑軜,ぃでよ,0.9969595232978463
+56,random_true,26,overlap_100,100,princess.n.01,princess,蝤宧萑軜,ぃでよ,0.552413672208786
+57,random_true,27,overlap_000,0,worker.n.01,worker,鑱溟溹,ぅぅづ,0.7682699859142303
+57,random_true,27,overlap_025,25,worker.n.01,worker,鑱溟溹,ぅぅづ,0.8282762467861176
+57,random_true,27,overlap_050,50,worker.n.01,worker,鑱溟溹,ぅぅづ,0.7114800810813904
+57,random_true,27,overlap_075,75,worker.n.01,worker,鑱溟溹,ぅぅづ,0.7733886986970901
+57,random_true,27,overlap_100,100,worker.n.01,worker,鑱溟溹,ぅぅづ,0.44013887643814087
+58,random_true,28,overlap_000,0,decoration.n.01,decoration,鬫稈跫,ふがゆ,0.839342325925827
+58,random_true,28,overlap_025,25,decoration.n.01,decoration,鬫稈跫,ふがゆ,0.851622462272644
+58,random_true,28,overlap_050,50,decoration.n.01,decoration,鬫稈跫,ふがゆ,0.6777894496917725
+58,random_true,28,overlap_075,75,decoration.n.01,decoration,鬫稈跫,ふがゆ,0.8785749673843384
+58,random_true,28,overlap_100,100,decoration.n.01,decoration,鬫稈跫,ふがゆ,0.6055934429168701
+59,random_true,29,overlap_000,0,part.n.03,part,闫犀鸆,じどゆ,0.7513510584831238
+59,random_true,29,overlap_025,25,part.n.03,part,闫犀鸆,じどゆ,0.73642897605896
+59,random_true,29,overlap_050,50,part.n.03,part,闫犀鸆,じどゆ,0.770799919962883
+59,random_true,29,overlap_075,75,part.n.03,part,闫犀鸆,じどゆ,0.6219862401485443
+59,random_true,29,overlap_100,100,part.n.03,part,闫犀鸆,じどゆ,0.5810018479824066
+60,random_true,30,overlap_000,0,conceptnet:museum:1573,museum,途鷈涐,ぺけめひる,0.8676514327526093
+60,random_true,30,overlap_025,25,conceptnet:museum:1573,museum,途鷈涐,ぺけめひる,0.4506443738937378
+60,random_true,30,overlap_050,50,conceptnet:museum:1573,museum,途鷈涐,ぺけめひる,0.48714005947113037
+60,random_true,30,overlap_075,75,conceptnet:museum:1573,museum,途鷈涐,ぺけめひる,0.5824644565582275
+60,random_true,30,overlap_100,100,conceptnet:museum:1573,museum,途鷈涐,ぺけめひる,0.5992191433906555
+61,far_at_100,1,overlap_000,0,bit.n.02,bit,顃幚萖,ゕるけ,0.9593141786754131
+61,far_at_100,1,overlap_025,25,bit.n.02,bit,顃幚萖,ゕるけ,0.9960808167234063
+61,far_at_100,1,overlap_050,50,bit.n.02,bit,顃幚萖,ゕるけ,0.7272884845733643
+61,far_at_100,1,overlap_075,75,bit.n.02,bit,顃幚萖,ゕるけ,0.8194052278995514
+61,far_at_100,1,overlap_100,100,bit.n.02,bit,顃幚萖,ゕるけ,1.04659603536129
+62,far_at_100,2,overlap_000,0,insect.n.01,insect,疘膻佝,ぜゃょず,0.6309380829334259
+62,far_at_100,2,overlap_025,25,insect.n.01,insect,疘膻佝,ぜゃょず,0.7385909557342529
+62,far_at_100,2,overlap_050,50,insect.n.01,insect,疘膻佝,ぜゃょず,0.7301316261291504
+62,far_at_100,2,overlap_075,75,insect.n.01,insect,疘膻佝,ぜゃょず,0.43214720487594604
+62,far_at_100,2,overlap_100,100,insect.n.01,insect,疘膻佝,ぜゃょず,0.951087236404419
+63,far_at_100,3,overlap_000,0,nervous_system.n.01,nervous system,跲嬾芖,がづゕほ,0.7367799878120422
+63,far_at_100,3,overlap_025,25,nervous_system.n.01,nervous system,跲嬾芖,がづゕほ,0.8816653564572334
+63,far_at_100,3,overlap_050,50,nervous_system.n.01,nervous system,跲嬾芖,がづゕほ,0.5153763592243195
+63,far_at_100,3,overlap_075,75,nervous_system.n.01,nervous system,跲嬾芖,がづゕほ,0.4999748468399048
+63,far_at_100,3,overlap_100,100,nervous_system.n.01,nervous system,跲嬾芖,がづゕほ,0.9508227184414864
+64,far_at_100,4,overlap_000,0,sail.n.01,sail,屪嬽謵諝,は,1.0202290005981922
+64,far_at_100,4,overlap_025,25,sail.n.01,sail,屪嬽謵諝,は,0.9155688136816025
+64,far_at_100,4,overlap_050,50,sail.n.01,sail,屪嬽謵諝,は,0.7480630278587341
+64,far_at_100,4,overlap_075,75,sail.n.01,sail,屪嬽謵諝,は,0.8053379058837891
+64,far_at_100,4,overlap_100,100,sail.n.01,sail,屪嬽謵諝,は,0.937528308480978
+65,far_at_100,5,overlap_000,0,cap.n.04,cap,斒,やいう,0.7769752889871597
+65,far_at_100,5,overlap_025,25,cap.n.04,cap,斒,やいう,0.8091103732585907
+65,far_at_100,5,overlap_050,50,cap.n.04,cap,斒,やいう,0.7814224362373352
+65,far_at_100,5,overlap_075,75,cap.n.04,cap,斒,やいう,0.669552356004715
+65,far_at_100,5,overlap_100,100,cap.n.04,cap,斒,やいう,0.9036098942160606
+66,far_at_100,6,overlap_000,0,conceptnet:closet:1314,closet,演兹鉯洕,ゅだゑつ,0.811747282743454
+66,far_at_100,6,overlap_025,25,conceptnet:closet:1314,closet,演兹鉯洕,ゅだゑつ,0.7851736098527908
+66,far_at_100,6,overlap_050,50,conceptnet:closet:1314,closet,演兹鉯洕,ゅだゑつ,0.6640011668205261
+66,far_at_100,6,overlap_075,75,conceptnet:closet:1314,closet,演兹鉯洕,ゅだゑつ,0.5801103413105011
+66,far_at_100,6,overlap_100,100,conceptnet:closet:1314,closet,演兹鉯洕,ゅだゑつ,0.8980164974927902
+67,far_at_100,7,overlap_000,0,executive.n.01,executive,咶囹,ねたぱ,0.93602654337883
+67,far_at_100,7,overlap_025,25,executive.n.01,executive,咶囹,ねたぱ,0.48640507459640503
+67,far_at_100,7,overlap_050,50,executive.n.01,executive,咶囹,ねたぱ,0.6368941366672516
+67,far_at_100,7,overlap_075,75,executive.n.01,executive,咶囹,ねたぱ,0.7695700079202652
+67,far_at_100,7,overlap_100,100,executive.n.01,executive,咶囹,ねたぱ,0.8902280852198601
+68,far_at_100,8,overlap_000,0,paint.n.01,paint,芔濣笚圗,せせゎぅ,0.9148764088749886
+68,far_at_100,8,overlap_025,25,paint.n.01,paint,芔濣笚圗,せせゎぅ,1.0085178967565298
+68,far_at_100,8,overlap_050,50,paint.n.01,paint,芔濣笚圗,せせゎぅ,0.6892755925655365
+68,far_at_100,8,overlap_075,75,paint.n.01,paint,芔濣笚圗,せせゎぅ,0.658847987651825
+68,far_at_100,8,overlap_100,100,paint.n.01,paint,芔濣笚圗,せせゎぅ,0.8818158432841301
+69,far_at_100,9,overlap_000,0,conceptnet:slang:1201,slang,瑓荠岡,そは,0.660362035036087
+69,far_at_100,9,overlap_025,25,conceptnet:slang:1201,slang,瑓荠岡,そは,0.7892614006996155
+69,far_at_100,9,overlap_050,50,conceptnet:slang:1201,slang,瑓荠岡,そは,0.7259684205055237
+69,far_at_100,9,overlap_075,75,conceptnet:slang:1201,slang,瑓荠岡,そは,0.7132686376571655
+69,far_at_100,9,overlap_100,100,conceptnet:slang:1201,slang,瑓荠岡,そは,0.8747618198394775
+70,far_at_100,10,overlap_000,0,officeholder.n.01,officeholder,獰癹夔雩,ぜつど,0.8574676662683487
+70,far_at_100,10,overlap_025,25,officeholder.n.01,officeholder,獰癹夔雩,ぜつど,0.7066538631916046
+70,far_at_100,10,overlap_050,50,officeholder.n.01,officeholder,獰癹夔雩,ぜつど,0.8327282071113586
+70,far_at_100,10,overlap_075,75,officeholder.n.01,officeholder,獰癹夔雩,ぜつど,0.8191589862108231
+70,far_at_100,10,overlap_100,100,officeholder.n.01,officeholder,獰癹夔雩,ぜつど,0.8624542057514191
+71,far_at_100,11,overlap_000,0,feather_star.n.01,feather star,耽疍築奊,らづせみ,0.6970418393611908
+71,far_at_100,11,overlap_025,25,feather_star.n.01,feather star,耽疍築奊,らづせみ,0.7621243894100189
+71,far_at_100,11,overlap_050,50,feather_star.n.01,feather star,耽疍築奊,らづせみ,0.5819388329982758
+71,far_at_100,11,overlap_075,75,feather_star.n.01,feather star,耽疍築奊,らづせみ,0.4240334630012512
+71,far_at_100,11,overlap_100,100,feather_star.n.01,feather star,耽疍築奊,らづせみ,0.8545825034379959
+72,far_at_100,12,overlap_000,0,official.n.01,official,拸,けひご,0.9525136761367321
+72,far_at_100,12,overlap_025,25,official.n.01,official,拸,けひご,0.9606288224458694
+72,far_at_100,12,overlap_050,50,official.n.01,official,拸,けひご,0.8204996287822723
+72,far_at_100,12,overlap_075,75,official.n.01,official,拸,けひご,0.7396412789821625
+72,far_at_100,12,overlap_100,100,official.n.01,official,拸,けひご,0.8521978855133057
+73,far_at_100,13,overlap_000,0,conceptnet:computing:1203,computing,庒闷鳐,ごぶ,0.8190224170684814
+73,far_at_100,13,overlap_025,25,conceptnet:computing:1203,computing,庒闷鳐,ごぶ,0.5035994052886963
+73,far_at_100,13,overlap_050,50,conceptnet:computing:1203,computing,庒闷鳐,ごぶ,0.593792200088501
+73,far_at_100,13,overlap_075,75,conceptnet:computing:1203,computing,庒闷鳐,ごぶ,0.6418342888355255
+73,far_at_100,13,overlap_100,100,conceptnet:computing:1203,computing,庒闷鳐,ごぶ,0.8421705663204193
+74,far_at_100,14,overlap_000,0,hotel.n.01,hotel,獟樽乵,うごぃ,0.951440367847681
+74,far_at_100,14,overlap_025,25,hotel.n.01,hotel,獟樽乵,うごぃ,0.6444190740585327
+74,far_at_100,14,overlap_050,50,hotel.n.01,hotel,獟樽乵,うごぃ,0.9237140789628029
+74,far_at_100,14,overlap_075,75,hotel.n.01,hotel,獟樽乵,うごぃ,0.8464114367961884
+74,far_at_100,14,overlap_100,100,hotel.n.01,hotel,獟樽乵,うごぃ,0.8421027362346649
+75,far_at_100,15,overlap_000,0,conceptnet:drawer:1703,drawer,覦,ゆのぼれ,0.6962359249591827
+75,far_at_100,15,overlap_025,25,conceptnet:drawer:1703,drawer,覦,ゆのぼれ,0.6301161050796509
+75,far_at_100,15,overlap_050,50,conceptnet:drawer:1703,drawer,覦,ゆのぼれ,0.6561021506786346
+75,far_at_100,15,overlap_075,75,conceptnet:drawer:1703,drawer,覦,ゆのぼれ,0.6155442595481873
+75,far_at_100,15,overlap_100,100,conceptnet:drawer:1703,drawer,覦,ゆのぼれ,0.8409228175878525
+76,far_at_100,16,overlap_000,0,conceptnet:bottom_of_sea:1537,bottom of sea,耒銋飲汘暗,はむせ,0.9750683344900608
+76,far_at_100,16,overlap_025,25,conceptnet:bottom_of_sea:1537,bottom of sea,耒銋飲汘暗,はむせ,0.6780062317848206
+76,far_at_100,16,overlap_050,50,conceptnet:bottom_of_sea:1537,bottom of sea,耒銋飲汘暗,はむせ,0.6025737524032593
+76,far_at_100,16,overlap_075,75,conceptnet:bottom_of_sea:1537,bottom of sea,耒銋飲汘暗,はむせ,0.42517387866973877
+76,far_at_100,16,overlap_100,100,conceptnet:bottom_of_sea:1537,bottom of sea,耒銋飲汘暗,はむせ,0.8340170383453369
+77,far_at_100,17,overlap_000,0,design.n.04,design,程焄唌玸,す,0.9122201502323151
+77,far_at_100,17,overlap_025,25,design.n.04,design,程焄唌玸,す,0.8692778199911118
+77,far_at_100,17,overlap_050,50,design.n.04,design,程焄唌玸,す,1.0192282497882843
+77,far_at_100,17,overlap_075,75,design.n.04,design,程焄唌玸,す,0.6706616282463074
+77,far_at_100,17,overlap_100,100,design.n.04,design,程焄唌玸,す,0.8301312327384949
+78,far_at_100,18,overlap_000,0,nerve_cell.n.01,nerve cell,蔎攱餰鸐,ぱるらび,0.7250919342041016
+78,far_at_100,18,overlap_025,25,nerve_cell.n.01,nerve cell,蔎攱餰鸐,ぱるらび,0.7860706448554993
+78,far_at_100,18,overlap_050,50,nerve_cell.n.01,nerve cell,蔎攱餰鸐,ぱるらび,0.621943324804306
+78,far_at_100,18,overlap_075,75,nerve_cell.n.01,nerve cell,蔎攱餰鸐,ぱるらび,0.5806024074554443
+78,far_at_100,18,overlap_100,100,nerve_cell.n.01,nerve cell,蔎攱餰鸐,ぱるらび,0.8299901783466339
+79,far_at_100,19,overlap_000,0,conceptnet:box:1293,box,踁糍,ぎゔ,0.796615719795227
+79,far_at_100,19,overlap_025,25,conceptnet:box:1293,box,踁糍,ぎゔ,0.7492355108261108
+79,far_at_100,19,overlap_050,50,conceptnet:box:1293,box,踁糍,ぎゔ,0.5606112480163574
+79,far_at_100,19,overlap_075,75,conceptnet:box:1293,box,踁糍,ぎゔ,0.7432254254817963
+79,far_at_100,19,overlap_100,100,conceptnet:box:1293,box,踁糍,ぎゔ,0.8286645412445068
+80,far_at_100,20,overlap_000,0,bite.n.04,bite,偌脪,べぃ,0.9769551232457161
+80,far_at_100,20,overlap_025,25,bite.n.04,bite,偌脪,べぃ,0.8339696824550629
+80,far_at_100,20,overlap_050,50,bite.n.04,bite,偌脪,べぃ,0.9911665543913841
+80,far_at_100,20,overlap_075,75,bite.n.04,bite,偌脪,べぃ,0.8815118446946144
+80,far_at_100,20,overlap_100,100,bite.n.04,bite,偌脪,べぃ,0.820717066526413
+81,far_at_100,21,overlap_000,0,house.n.01,house,诏饶巑,ぼよ,0.8647026121616364
+81,far_at_100,21,overlap_025,25,house.n.01,house,诏饶巑,ぼよ,0.7511824667453766
+81,far_at_100,21,overlap_050,50,house.n.01,house,诏饶巑,ぼよ,1.1382250636816025
+81,far_at_100,21,overlap_075,75,house.n.01,house,诏饶巑,ぼよ,0.7478610873222351
+81,far_at_100,21,overlap_100,100,house.n.01,house,诏饶巑,ぼよ,0.8176494240760803
+82,far_at_100,22,overlap_000,0,administrator.n.01,administrator,麴,ばゃゕげ,0.8917879015207291
+82,far_at_100,22,overlap_025,25,administrator.n.01,administrator,麴,ばゃゕげ,0.6404310762882233
+82,far_at_100,22,overlap_050,50,administrator.n.01,administrator,麴,ばゃゕげ,0.5281166434288025
+82,far_at_100,22,overlap_075,75,administrator.n.01,administrator,麴,ばゃゕげ,0.7704438865184784
+82,far_at_100,22,overlap_100,100,administrator.n.01,administrator,麴,ばゃゕげ,0.8125080615282059
+83,far_at_100,23,overlap_000,0,choice_morsel.n.01,choice morsel,吰琡笇樷,ぁるぇ,1.0508116744458675
+83,far_at_100,23,overlap_025,25,choice_morsel.n.01,choice morsel,吰琡笇樷,ぁるぇ,0.8251443058252335
+83,far_at_100,23,overlap_050,50,choice_morsel.n.01,choice morsel,吰琡笇樷,ぁるぇ,0.5582302212715149
+83,far_at_100,23,overlap_075,75,choice_morsel.n.01,choice morsel,吰琡笇樷,ぁるぇ,0.7578321993350983
+83,far_at_100,23,overlap_100,100,choice_morsel.n.01,choice morsel,吰琡笇樷,ぁるぇ,0.8019965887069702
+84,far_at_100,24,overlap_000,0,conceptnet:pejorative:1485,pejorative,誠鎃紨夣,ひ,0.7731912732124329
+84,far_at_100,24,overlap_025,25,conceptnet:pejorative:1485,pejorative,誠鎃紨夣,ひ,0.6016307771205902
+84,far_at_100,24,overlap_050,50,conceptnet:pejorative:1485,pejorative,誠鎃紨夣,ひ,0.48733586072921753
+84,far_at_100,24,overlap_075,75,conceptnet:pejorative:1485,pejorative,誠鎃紨夣,ひ,0.5935760736465454
+84,far_at_100,24,overlap_100,100,conceptnet:pejorative:1485,pejorative,誠鎃紨夣,ひ,0.7998776584863663
+85,far_at_100,25,overlap_000,0,earflap.n.01,earflap,墸时倪,ばえほ,0.6623122692108154
+85,far_at_100,25,overlap_025,25,earflap.n.01,earflap,墸时倪,ばえほ,0.7259365916252136
+85,far_at_100,25,overlap_050,50,earflap.n.01,earflap,墸时倪,ばえほ,0.8596833199262619
+85,far_at_100,25,overlap_075,75,earflap.n.01,earflap,墸时倪,ばえほ,0.589691698551178
+85,far_at_100,25,overlap_100,100,earflap.n.01,earflap,墸时倪,ばえほ,0.7996685802936554
+86,far_at_100,26,overlap_000,0,clerk.n.01,clerk,忌屼硰垱,ぐぽせも,0.8396943211555481
+86,far_at_100,26,overlap_025,25,clerk.n.01,clerk,忌屼硰垱,ぐぽせも,0.8007065057754517
+86,far_at_100,26,overlap_050,50,clerk.n.01,clerk,忌屼硰垱,ぐぽせも,0.743505209684372
+86,far_at_100,26,overlap_075,75,clerk.n.01,clerk,忌屼硰垱,ぐぽせも,0.7545964419841766
+86,far_at_100,26,overlap_100,100,clerk.n.01,clerk,忌屼硰垱,ぐぽせも,0.7979864329099655
+87,far_at_100,27,overlap_000,0,defile.n.01,defile,迁朌蔭茼,たでとれ,0.8605633527040482
+87,far_at_100,27,overlap_025,25,defile.n.01,defile,迁朌蔭茼,たでとれ,0.6514872610569
+87,far_at_100,27,overlap_050,50,defile.n.01,defile,迁朌蔭茼,たでとれ,0.7894375920295715
+87,far_at_100,27,overlap_075,75,defile.n.01,defile,迁朌蔭茼,たでとれ,0.5381819009780884
+87,far_at_100,27,overlap_100,100,defile.n.01,defile,迁朌蔭茼,たでとれ,0.7977756857872009
+88,far_at_100,28,overlap_000,0,address.n.02,address,蛹,うそこむ,1.020931851118803
+88,far_at_100,28,overlap_025,25,address.n.02,address,蛹,うそこむ,0.9013449847698212
+88,far_at_100,28,overlap_050,50,address.n.02,address,蛹,うそこむ,0.9782369881868362
+88,far_at_100,28,overlap_075,75,address.n.02,address,蛹,うそこむ,0.815343052148819
+88,far_at_100,28,overlap_100,100,address.n.02,address,蛹,うそこむ,0.7970115095376968
+89,far_at_100,29,overlap_000,0,necessity.n.02,necessity,譛綌黽靅,わばこま,0.7786495089530945
+89,far_at_100,29,overlap_025,25,necessity.n.02,necessity,譛綌黽靅,わばこま,0.8461543321609497
+89,far_at_100,29,overlap_050,50,necessity.n.02,necessity,譛綌黽靅,わばこま,0.8883343413472176
+89,far_at_100,29,overlap_075,75,necessity.n.02,necessity,譛綌黽靅,わばこま,0.7124668657779694
+89,far_at_100,29,overlap_100,100,necessity.n.02,necessity,譛綌黽靅,わばこま,0.7956599444150925
+90,far_at_100,30,overlap_000,0,patch.n.03,patch,祉乹囑綜唍,げふくに,1.0304205231368542
+90,far_at_100,30,overlap_025,25,patch.n.03,patch,祉乹囑綜唍,げふくに,0.9033786281943321
+90,far_at_100,30,overlap_050,50,patch.n.03,patch,祉乹囑綜唍,げふくに,0.6947792768478394
+90,far_at_100,30,overlap_075,75,patch.n.03,patch,祉乹囑綜唍,げふくに,0.7422475814819336
+90,far_at_100,30,overlap_100,100,patch.n.03,patch,祉乹囑綜唍,げふくに,0.7948272675275803

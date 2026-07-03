@@ -1,0 +1,91 @@
+group,rank,synset,lemma,cjk_token,hiragana_token,cosine_distance_100
+close_at_100,1,nettle.n.01,nettle,艑姭顑,てどがら,0.2712116241455078
+close_at_100,2,muscular_structure.n.01,muscular structure,欋芋餵咝,てしふ,0.2824355363845825
+close_at_100,3,conceptnet:colour:1346,colour,鎛伭,らせほゖご,0.2953681945800781
+close_at_100,4,wolfsbane.n.01,wolfsbane,鋸喼,ぺは,0.2980417013168335
+close_at_100,5,anatomist.n.01,anatomist,鏏帔亡淂,ざゆけぁだご,0.30181992053985596
+close_at_100,6,deliveryman.n.01,deliveryman,脕,ゖむざ,0.304943323135376
+close_at_100,7,conceptnet:injury:1921,injury,欻抉勣,なぼんご,0.3070420026779175
+close_at_100,8,appraiser.n.01,appraiser,鯗咁鄦,ぷた,0.3099794387817383
+close_at_100,9,second_fiddle.n.01,second fiddle,閍褻喑錖,ぐっゔ,0.31020528078079224
+close_at_100,10,salesman.n.01,salesman,鴢堚塏,ずじぞゐ,0.3168267607688904
+close_at_100,11,conceptnet:sea:1263,sea,儙壎澠,まがこぺ,0.3171738386154175
+close_at_100,12,ram.n.05,ram,嚴癳瘞鄜,だり,0.3183128833770752
+close_at_100,13,conceptnet:castle:1301,castle,裵蛹箿滦,ふのなぜ,0.31894004344940186
+close_at_100,14,salesperson.n.01,salesperson,跦敖,ぁがぺわの,0.3194674253463745
+close_at_100,15,double_knit.n.01,double knit,釃苐,とおいそ,0.3204694390296936
+close_at_100,16,conceptnet:hammer:1463,hammer,蕢喩阐鶮,えら,0.3211803436279297
+close_at_100,17,celestial_point.n.01,celestial point,鄐辝亼,たべ,0.3214554190635681
+close_at_100,18,specialist.n.01,specialist,橇齦窌,すぃそ,0.3217233419418335
+close_at_100,19,igbo.n.01,igbo,雁摯鳊忴,れほが,0.3245682120323181
+close_at_100,20,conceptnet:fly:1244,fly,凄窰墬,ぶもゐぎ,0.3246060609817505
+close_at_100,21,aconite.n.01,aconite,陝氪,みょた,0.3248865604400635
+close_at_100,22,alga.n.01,alga,裷多,ぉうろ,0.32496732473373413
+close_at_100,23,tapeworm.n.01,tapeworm,緂嘂微,べぜ,0.32851290702819824
+close_at_100,24,conceptnet:astrology:1434,astrology,嗂翂徸,たば,0.33408212661743164
+close_at_100,25,antacid.n.01,antacid,封,くきとぴ,0.3340963125228882
+close_at_100,26,critic.n.02,critic,矌稹,しぼお,0.33763355016708374
+close_at_100,27,jellyfish.n.02,jellyfish,緘脪卷,おな,0.33781105279922485
+close_at_100,28,conceptnet:sky:1400,sky,凨拜,じぺて,0.3402574062347412
+close_at_100,29,hairdresser.n.01,hairdresser,團磺臱,ゔが,0.3405236601829529
+close_at_100,30,evaluator.n.01,evaluator,纑傣罕,をせ,0.3412975072860718
+random_true,1,houseplant.n.01,houseplant,鄱詺塄,ゎぶ,0.5765243768692017
+random_true,2,soup.n.01,soup,慗変睗冂,ぃぎゎ,0.40970730781555176
+random_true,3,conceptnet:boring:1627,boring,鐕磬,ゅる,0.36417698860168457
+random_true,4,dipterous_insect.n.01,dipterous insect,烞篪,にえ,0.6166478395462036
+random_true,5,sleeve.n.01,sleeve,甊熿逬,はやじ,0.45974868535995483
+random_true,6,conceptnet:flat:1295,flat,勤,をゐろ,0.4515184164047241
+random_true,7,conceptnet:fishing:1460,fishing,澊邲,ごひづ,0.44651758670806885
+random_true,8,lap.n.04,lap,揹陜睐懈,ふうあれ,0.4208463430404663
+random_true,9,conceptnet:eat:1216,eat,哩鿼鏒碯,をゆに,0.6146030426025391
+random_true,10,jersey.n.04,jersey,庛疆恀,ゕかや,0.40739357471466064
+random_true,11,system.n.06,system,槼諉,ぽをっ,0.5875450372695923
+random_true,12,appetizer.n.01,appetizer,洰白釢,ありぺ,0.6159626841545105
+random_true,13,isogram.n.01,isogram,红親,ほちせこか,0.7412817478179932
+random_true,14,conceptnet:constant:1546,constant,棦柭仾鿡,ぁをゆ,0.5475449860095978
+random_true,15,conceptnet:card_games:1524,card games,淟猾,けぉの,0.4004923701286316
+random_true,16,conceptnet:lizard:1349,lizard,送乵,ゑべおせ,0.5612862706184387
+random_true,17,flour.n.01,flour,觡騳靱,とえり,0.5084367394447327
+random_true,18,factotum.n.01,factotum,鋈鼢,ひむつ,0.37042951583862305
+random_true,19,cairene.n.01,cairene,刴墯貽梷,わ,0.37010693550109863
+random_true,20,conceptnet:gentleman:1395,gentleman,魛慌,でた,0.40347349643707275
+random_true,21,workman.n.01,workman,龞賙貺,ゎぁえ,0.4456879496574402
+random_true,22,back.n.01,back,锏昞,よす,0.4485652446746826
+random_true,23,conceptnet:microbiology:1405,microbiology,厈,むぇきつ,0.534820556640625
+random_true,24,salad.n.01,salad,犰蘟劋绎,ちべとち,0.5649878680706024
+random_true,25,church_tower.n.01,church tower,婴螵寵蠒,はゅ,0.3667256832122803
+random_true,26,princess.n.01,princess,蝤宧萑軜,ぃでよ,0.552413672208786
+random_true,27,worker.n.01,worker,鑱溟溹,ぅぅづ,0.44013887643814087
+random_true,28,decoration.n.01,decoration,鬫稈跫,ふがゆ,0.6055934429168701
+random_true,29,part.n.03,part,闫犀鸆,じどゆ,0.5810018479824066
+random_true,30,conceptnet:museum:1573,museum,途鷈涐,ぺけめひる,0.5992191433906555
+far_at_100,1,bit.n.02,bit,顃幚萖,ゕるけ,1.04659603536129
+far_at_100,2,insect.n.01,insect,疘膻佝,ぜゃょず,0.951087236404419
+far_at_100,3,nervous_system.n.01,nervous system,跲嬾芖,がづゕほ,0.9508227184414864
+far_at_100,4,sail.n.01,sail,屪嬽謵諝,は,0.937528308480978
+far_at_100,5,cap.n.04,cap,斒,やいう,0.9036098942160606
+far_at_100,6,conceptnet:closet:1314,closet,演兹鉯洕,ゅだゑつ,0.8980164974927902
+far_at_100,7,executive.n.01,executive,咶囹,ねたぱ,0.8902280852198601
+far_at_100,8,paint.n.01,paint,芔濣笚圗,せせゎぅ,0.8818158432841301
+far_at_100,9,conceptnet:slang:1201,slang,瑓荠岡,そは,0.8747618198394775
+far_at_100,10,officeholder.n.01,officeholder,獰癹夔雩,ぜつど,0.8624542057514191
+far_at_100,11,feather_star.n.01,feather star,耽疍築奊,らづせみ,0.8545825034379959
+far_at_100,12,official.n.01,official,拸,けひご,0.8521978855133057
+far_at_100,13,conceptnet:computing:1203,computing,庒闷鳐,ごぶ,0.8421705663204193
+far_at_100,14,hotel.n.01,hotel,獟樽乵,うごぃ,0.8421027362346649
+far_at_100,15,conceptnet:drawer:1703,drawer,覦,ゆのぼれ,0.8409228175878525
+far_at_100,16,conceptnet:bottom_of_sea:1537,bottom of sea,耒銋飲汘暗,はむせ,0.8340170383453369
+far_at_100,17,design.n.04,design,程焄唌玸,す,0.8301312327384949
+far_at_100,18,nerve_cell.n.01,nerve cell,蔎攱餰鸐,ぱるらび,0.8299901783466339
+far_at_100,19,conceptnet:box:1293,box,踁糍,ぎゔ,0.8286645412445068
+far_at_100,20,bite.n.04,bite,偌脪,べぃ,0.820717066526413
+far_at_100,21,house.n.01,house,诏饶巑,ぼよ,0.8176494240760803
+far_at_100,22,administrator.n.01,administrator,麴,ばゃゕげ,0.8125080615282059
+far_at_100,23,choice_morsel.n.01,choice morsel,吰琡笇樷,ぁるぇ,0.8019965887069702
+far_at_100,24,conceptnet:pejorative:1485,pejorative,誠鎃紨夣,ひ,0.7998776584863663
+far_at_100,25,earflap.n.01,earflap,墸时倪,ばえほ,0.7996685802936554
+far_at_100,26,clerk.n.01,clerk,忌屼硰垱,ぐぽせも,0.7979864329099655
+far_at_100,27,defile.n.01,defile,迁朌蔭茼,たでとれ,0.7977756857872009
+far_at_100,28,address.n.02,address,蛹,うそこむ,0.7970115095376968
+far_at_100,29,necessity.n.02,necessity,譛綌黽靅,わばこま,0.7956599444150925
+far_at_100,30,patch.n.03,patch,祉乹囑綜唍,げふくに,0.7948272675275803
