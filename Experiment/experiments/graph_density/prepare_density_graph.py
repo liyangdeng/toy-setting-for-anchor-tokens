@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare pruned graph-density conditions from the noun-only full graph."""
+"""Prepare pruned graph-density conditions from the full graph."""
 
 import argparse
 import json

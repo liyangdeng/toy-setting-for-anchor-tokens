@@ -3,7 +3,6 @@
 ## Source Graph
 
 This report uses `data/semantic_backbones/edges_adj.json` as the full graph.
-Earlier generated experiment groups used `data/semantic_backbones/kg_noun_only/edges.json`; those generated group directories were deleted and regenerated from `edges_adj.json`.
 The node universe for this report is all unique endpoints in `edges_adj.json`, because `edges_adj.json` contains 42 adjective endpoints that are not present in the existing `synsets.json` files.
 
 | Graph | Edges | Nodes |
