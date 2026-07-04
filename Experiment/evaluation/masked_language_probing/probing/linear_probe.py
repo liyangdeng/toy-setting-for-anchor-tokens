@@ -110,6 +110,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "build_probing_c
 from build_probing_corpus import (
     build_relation_templates,
     translate_templates,
+    reverse_translate_templates,
     all_grammar_terminals,
     strip_entities_and_match,
 )
@@ -514,6 +515,7 @@ def _mask_span(sentence, start, length, mask_str):
 
 def build_relation_examples(final_omitted, parallel, cjk_dict, hira_dict,
                              relation_templates_a, relation_templates_b,
+                             reverse_templates_a, reverse_templates_b,
                              grammar_vocab_a, grammar_vocab_b, mask_str):
     """
     final_omitted: mask-RELATION probes (each tagged "track": "relation";
@@ -523,13 +525,23 @@ def build_relation_examples(final_omitted, parallel, cjk_dict, hira_dict,
     per-triple constant: the PCFG redraws the VP structure independently
     for every emitted sentence, so two renderings of the same triple can
     realize different templates (e.g. one draws the TRANS branch, another
-    draws COP). So each USABLE rendering carries its OWN matched template
-    tuple (from strip_entities_and_match) as its label.
+    draws COP).
+
+    Language A and B sentences for the same rendering come from the SAME
+    underlying PCFG draw (build_synset_corpus.py translates one shared
+    `sent` into both languages), but strip_entities_and_match matches
+    against each language's OWN translated token strings -- and those are
+    disjoint between languages, so the raw matched tuple isn't a label
+    that means the same thing across languages. reverse_templates_a/b
+    (from build_probing_corpus.reverse_translate_templates) map each
+    language's matched tuple back to the shared English-terminal identity,
+    which is what actually gets used as the label -- mirroring mask-
+    ENTITY's concept id, which is already language-agnostic by construction.
 
     Returns a list of per-triple records:
       {"relation": rel,
-       "a_rows": [(masked_a_sentence, matched_template_tuple), ...],
-       "b_rows": [(masked_b_sentence, matched_template_tuple), ...]}
+       "a_rows": [(masked_a_sentence, canonical_template_tuple), ...],
+       "b_rows": [(masked_b_sentence, canonical_template_tuple), ...]}
     """
     par = {(e["source"], e["relation"], e["target"]): e for e in parallel}
     examples = []
@@ -544,6 +556,8 @@ def build_relation_examples(final_omitted, parallel, cjk_dict, hira_dict,
             continue
         templates_a = relation_templates_a.get(p["relation"], {})
         templates_b = relation_templates_b.get(p["relation"], {})
+        rev_a = reverse_templates_a.get(p["relation"], {})
+        rev_b = reverse_templates_b.get(p["relation"], {})
         if not templates_a or not templates_b:
             continue
 
@@ -553,10 +567,13 @@ def build_relation_examples(final_omitted, parallel, cjk_dict, hira_dict,
             if m is None:
                 continue
             start, length, matched = m
+            canonical = rev_a.get(matched)
+            if canonical is None:
+                continue
             masked = _mask_span(s, start, length, mask_str)
             if masked not in seen_a:
                 seen_a.add(masked)
-                a_rows.append((masked, matched))
+                a_rows.append((masked, canonical))
 
         b_rows, seen_b = [], set()
         for s in entry["lang_b"]:
@@ -564,10 +581,13 @@ def build_relation_examples(final_omitted, parallel, cjk_dict, hira_dict,
             if m is None:
                 continue
             start, length, matched = m
+            canonical = rev_b.get(matched)
+            if canonical is None:
+                continue
             masked = _mask_span(s, start, length, mask_str)
             if masked not in seen_b:
                 seen_b.add(masked)
-                b_rows.append((masked, matched))
+                b_rows.append((masked, canonical))
 
         if not a_rows or not b_rows:
             continue
@@ -578,18 +598,24 @@ def build_relation_examples(final_omitted, parallel, cjk_dict, hira_dict,
 def run_relation_probe(model_dir, examples, out_dir, seed=42):
     """
     mask-RELATION counterpart to run_probe. Label space is a single GLOBAL
-    template_to_id across every relation's every matched template (mirrors
-    entity track's concept_to_id) -- NOT the relation name, since the
-    classifier's job is to recover the specific realized template; per-
-    relation numbers are a post-hoc groupby over which relation each triple
-    belongs to, exactly like entity track's per_relation_rows.
+    template_to_id across every relation's every CANONICAL (language-
+    agnostic) template identity -- mirrors entity track's concept_to_id.
+    NOT the relation name (the classifier's job is to recover the specific
+    realized template) and NOT the raw per-language matched tuple from
+    strip_entities_and_match (build_relation_examples already converts that
+    to the shared English-terminal identity via reverse_translate_templates
+    -- see its docstring for why: the same PCFG draw renders to completely
+    different, disjoint token strings per language, so the untranslated
+    tuple can't be used as a label shared across languages). Per-relation
+    numbers are a post-hoc groupby over which relation each triple belongs
+    to, exactly like entity track's per_relation_rows.
 
     Training: every triple's every A-rendering is a row, labeled with THAT
-    rendering's own matched template (not a shared per-triple label).
-    Evaluation: every triple's every B-rendering is scored against its own
-    matched template; a triple counts as hit if ANY of its B-renderings is
-    classified correctly (OR-aggregation). Final accuracy = hit triples /
-    total triples.
+    rendering's own canonical template identity (not a shared per-triple
+    label). Evaluation: every triple's every B-rendering is scored against
+    its own canonical template identity; a triple counts as hit if ANY of
+    its B-renderings is classified correctly (OR-aggregation). Final
+    accuracy = hit triples / total triples.
     """
     device = pick_device()
     print(f"device: {device}")
@@ -723,13 +749,15 @@ def main():
         templates = build_relation_templates(args.gen_script, args.grammar)
         templates_a = translate_templates(templates, cjk_dict)
         templates_b = translate_templates(templates, hira_dict)
+        reverse_a = reverse_translate_templates(templates, cjk_dict)
+        reverse_b = reverse_translate_templates(templates, hira_dict)
         terminals = all_grammar_terminals(templates)
         vocab_a = {cjk_dict[t] for t in terminals if t in cjk_dict}
         vocab_b = {hira_dict[t] for t in terminals if t in hira_dict}
 
         examples = build_relation_examples(final_omitted, parallel, cjk_dict, hira_dict,
-                                            templates_a, templates_b, vocab_a, vocab_b,
-                                            tok_probe.mask_token)
+                                            templates_a, templates_b, reverse_a, reverse_b,
+                                            vocab_a, vocab_b, tok_probe.mask_token)
         print(f"built {len(examples)} usable mask-relation triples "
               f"(of {len(final_omitted)} final_omitted relation-track triples)")
         run_relation_probe(model_dir, examples, args.out_dir, seed=args.seed)

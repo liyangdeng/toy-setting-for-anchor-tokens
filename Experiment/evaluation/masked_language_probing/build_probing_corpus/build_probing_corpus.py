@@ -163,6 +163,29 @@ def translate_templates(templates, lang_dict):
     return out
 
 
+def reverse_translate_templates(templates, lang_dict):
+    """Inverse of translate_templates: {relation: {artificial_tuple: english_tuple}}.
+
+    The two languages render the SAME PCFG draw (same sentence, same VP
+    choice) into completely different, disjoint token strings -- so after
+    strip_entities_and_match matches a rendering in one language's tokens,
+    the artificial tuple it returns is NOT a label that means the same
+    thing in the other language. This map recovers the language-agnostic
+    template identity (the original English terminal tuple) so a caller
+    building a classifier label can use ONE shared identity space across
+    languages, the same way mask-ENTITY uses concept id (which is already
+    language-agnostic, coming straight from the KG) rather than the
+    translated target token."""
+    out = {}
+    for rel, by_len in templates.items():
+        out[rel] = {}
+        for tuples in by_len.values():
+            for tup in tuples:
+                if all(t in lang_dict for t in tup):
+                    out[rel][tuple(lang_dict[t] for t in tup)] = tup
+    return out
+
+
 def all_grammar_terminals(templates):
     """Flat set of every English terminal used by ANY relation's templates
     -- lets strip_entities_and_match tell apart 'this token is grammar
