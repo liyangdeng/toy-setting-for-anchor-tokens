@@ -104,9 +104,9 @@ from sklearn.linear_model import LogisticRegression
 
 # mask-RELATION reuses build_probing_corpus.py's template/matching logic
 # rather than duplicating it -- keeps the candidate-template definition and
-# the entity-span-stripping heuristic in exactly one place.
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] /
-                       "masked_language_probing" / "build_probing_corpus"))
+# the entity-span-stripping heuristic in exactly one place. build_probing_corpus/
+# is a sibling of this file's parent dir (both live under masked_language_probing/).
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "build_probing_corpus"))
 from build_probing_corpus import (
     build_relation_templates,
     translate_templates,

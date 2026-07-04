@@ -21,14 +21,19 @@ masked_language_probing/
     build_probing_corpus.py    # stage 1: orchestrator (see below)
     probe_manifest.json        # stage-0 output, kept in the repo
     edges_probing.json         # input KG edges for this experiment
-../probing/
-    linear_probe.py            # stage 3: the actual probe (separate dir, not moved on purpose)
+  probing/
+    linear_probe.py            # stage 3: the actual probe
 ```
 
-`linear_probe.py` lives one level up, in `Experiment/evaluation/probing/`,
-because it's shared machinery (it can also just train a bilingual model from
-scratch with `--do_train`). Everything else here is specific to this
-experiment.
+`probing/` is a sibling of `build_probing_corpus/` (both under
+`masked_language_probing/`) rather than merged into it, because
+`linear_probe.py` is more general-purpose machinery (it can also just train a
+bilingual model from scratch with `--do_train`) than the rest of this
+experiment-specific pipeline. It imports `build_probing_corpus.py`'s
+template/matching functions directly (see "How mask-RELATION works" below) --
+that import resolves the sibling path from `linear_probe.py`'s own location,
+so if you move either directory, fix the `sys.path.insert` at the top of
+`linear_probe.py` too.
 
 ## Pipeline
 
