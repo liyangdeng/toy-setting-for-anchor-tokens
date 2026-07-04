@@ -49,7 +49,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'generalizes' [0.25]
@@ -91,7 +91,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'instantiates' [0.34]
@@ -112,7 +112,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'encompasses' [0.34]
@@ -135,7 +135,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'contains' [0.25]
@@ -156,7 +156,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'completes' [0.34]
@@ -179,7 +179,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'includes' [0.25]
@@ -202,7 +202,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'joins' [0.34]
@@ -224,7 +224,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'contains' [0.34]
@@ -245,7 +245,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'constitutes' [0.34]
@@ -269,7 +269,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'relates_to' [0.25]
@@ -292,7 +292,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'appears_in' [0.25]
@@ -315,7 +315,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'inhabits' [0.25]
@@ -378,7 +378,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'serves' [0.25]
@@ -439,7 +439,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'resembles' [0.34]
@@ -458,7 +458,7 @@ grammar = {
     "Antonym": """
         NP -> N
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'opposes' [0.34]
@@ -497,7 +497,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'performs' [0.25]
@@ -560,7 +560,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'requires' [0.34]
@@ -600,7 +600,7 @@ grammar = {
         # NP rules — adjective slot disabled to prevent "green grass is green"
         NP -> N [1.0]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'exhibits' [0.25]
@@ -662,7 +662,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'contrasts' [0.34]
@@ -722,7 +722,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'involves' [0.34]
@@ -763,7 +763,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'causes' [0.25]
@@ -825,7 +825,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'contains' [0.34]
@@ -887,7 +887,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'pursues' [0.34]
@@ -909,7 +909,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'undergoes' [0.34]
@@ -950,7 +950,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'desires' [0.34]
@@ -993,7 +993,7 @@ grammar = {
         # NP rules — adjective slot disabled to prevent "green grass is green"
         NP -> N [1.0]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'lacks' [0.34]
@@ -1054,7 +1054,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'inspires' [0.34]
@@ -1115,7 +1115,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'begins_with' [0.34]
@@ -1176,7 +1176,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'concludes_with' [0.34]
@@ -1237,7 +1237,7 @@ grammar = {
         NP -> A N [0.7]
         NP -> N [0.3]
 
-        VP -> TRANS \[0\.4\]
+        VP -> TRANS [0.4]
         VP -> COP [0.3]
         TRANS -> V [1.0]
         V -> 'avoids' [0.34]

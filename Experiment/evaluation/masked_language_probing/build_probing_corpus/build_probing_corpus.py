@@ -288,7 +288,7 @@ def train_mono_b(mono_train_script, corpus_b, output_dir, epochs=60, seed=42):
     return str(Path(output_dir) / "final")
 
 
-# ── stage 4: top-1 reason filter (mask-ENTITY only) ─────────────────────────
+# ── stage 4: top-1 reason filter, mask-ENTITY track ─────────────────────────
 
 def load_probes(omitted_triples_path, hira_dict_path):
     """omitted_triples.json only stores (source, relation, target), deduped
