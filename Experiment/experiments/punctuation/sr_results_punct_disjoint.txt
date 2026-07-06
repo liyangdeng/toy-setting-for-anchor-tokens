@@ -1,0 +1,12 @@
+model  : checkpoints_disjoint/final
+pairs  : 500
+layers : [0, 1, 2, 3, 4]
+
+ layer       P@1       P@5
+     0    0.8250    0.9360
+     1    0.8570    0.9520
+     2    0.8800    0.9610
+     3    0.8610    0.9520
+     4    0.7090    0.9020
+
+mean rho (P@1) over layers [0, 1, 2, 3, 4] : 0.8264

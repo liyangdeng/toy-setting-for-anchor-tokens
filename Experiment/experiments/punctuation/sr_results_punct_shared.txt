@@ -1,0 +1,12 @@
+model  : checkpoints_shared/final
+pairs  : 500
+layers : [0, 1, 2, 3, 4]
+
+ layer       P@1       P@5
+     0    0.9700    0.9990
+     1    0.9700    0.9970
+     2    0.9720    0.9970
+     3    0.9730    0.9960
+     4    0.9550    0.9930
+
+mean rho (P@1) over layers [0, 1, 2, 3, 4] : 0.9680
