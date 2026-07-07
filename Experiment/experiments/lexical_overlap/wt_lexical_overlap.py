@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Track cross-lingual token representation alignment via Word Translation Precision (P@1, P@5)
-for Lexical Overlap experiments, making results fully comparable with P@1/P@5 metrics.
+for Lexical Overlap experiments.
 """
 
 import argparse
