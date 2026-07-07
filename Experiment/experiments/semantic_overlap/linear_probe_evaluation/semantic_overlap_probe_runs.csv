@@ -1,0 +1,13 @@
+seed,condition,overlap_percent,track,n_l1_only_edges,n_usable_probe_triples,best_layer,best_layer_accuracy,embedding_layer_accuracy,final_layer,final_layer_accuracy,result_dir
+42,overlap_000,0,entity,2870,2753,2,0.0585,0.016,4,0.0421,evaluation/masked_language_probing/results/semantic_overlap_seed42_overlap_000_entity
+42,overlap_025,25,entity,2152,2064,2,0.077,0.0155,4,0.0572,evaluation/masked_language_probing/results/semantic_overlap_seed42_overlap_025_entity
+42,overlap_050,50,entity,1435,1377,2,0.1373,0.0203,4,0.1264,evaluation/masked_language_probing/results/semantic_overlap_seed42_overlap_050_entity
+42,overlap_075,75,entity,718,689,2,0.2293,0.0261,4,0.1713,evaluation/masked_language_probing/results/semantic_overlap_seed42_overlap_075_entity
+43,overlap_000,0,entity,2870,2753,3,0.0516,0.0145,4,0.0472,evaluation/masked_language_probing/results/semantic_overlap_seed43_overlap_000_entity
+43,overlap_025,25,entity,2152,2064,1,0.0819,0.0141,4,0.0727,evaluation/masked_language_probing/results/semantic_overlap_seed43_overlap_025_entity
+43,overlap_050,50,entity,1435,1377,1,0.1002,0.0189,4,0.0915,evaluation/masked_language_probing/results/semantic_overlap_seed43_overlap_050_entity
+43,overlap_075,75,entity,718,689,3,0.2351,0.0218,4,0.2177,evaluation/masked_language_probing/results/semantic_overlap_seed43_overlap_075_entity
+44,overlap_000,0,entity,2870,2753,3,0.0596,0.0124,4,0.0472,evaluation/masked_language_probing/results/semantic_overlap_seed44_overlap_000_entity
+44,overlap_025,25,entity,2152,2064,2,0.064,0.017,4,0.0484,evaluation/masked_language_probing/results/semantic_overlap_seed44_overlap_025_entity
+44,overlap_050,50,entity,1435,1377,2,0.1075,0.0203,4,0.0871,evaluation/masked_language_probing/results/semantic_overlap_seed44_overlap_050_entity
+44,overlap_075,75,entity,718,689,2,0.2192,0.0203,4,0.1988,evaluation/masked_language_probing/results/semantic_overlap_seed44_overlap_075_entity

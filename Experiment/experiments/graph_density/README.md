@@ -1,4 +1,4 @@
-# Experiment Plan: Effect of Knowledge Graph Density on Cross-lingual Alignment
+# Graph Density Experiment
 
 ## Research Question
 
@@ -15,30 +15,13 @@ The main question is:
 > Does higher semantic graph density improve cross-lingual alignment, after
 > controlling for training size and number of unique facts?
 
-## Core Idea
+## Source Graph
 
-Models are trained on corpora generated from pruned versions of the same full
-knowledge graph. The full graph for this experiment is:
+All conditions are sampled from the same graph:
 
 ```text
 data/semantic_backbones/edges_adj.json
 ```
-
-All density conditions should be derived by pruning/subsampling edges from this
-same full graph, not by rebuilding separate graphs. This keeps the concept
-inventory, token dictionaries, grammar templates, and graph source consistent.
-The node universe is the set of unique endpoints in `edges_adj.json`.
-
-High-density graphs naturally contain more triples. If high-density models
-perform better, the improvement could come from either:
-
-1. More unique semantic facts.
-2. Higher graph density / richer semantic neighborhoods.
-3. More total sentence diversity.
-
-To separate these factors, the experiment includes medium- and high-density
-control conditions with the same number of unique training triples as the
-low-density condition.
 
 ## Experimental Conditions
 
@@ -132,8 +115,8 @@ Primary evaluations:
 1. Word translation precision.
 2. Sentence retrieval precision.
 3. Monolingual MLM accuracy
+4. Linear probing accuracy on each layer.
 
-Report mean and standard deviation across seeds.
 
 ## Full Graph Control
 
@@ -155,14 +138,9 @@ The CJK and Hiragana corpora were generated from the same PCFG sentence set.
 
 ## Evaluation Results
 
-Evaluation was run with the existing repository scripts:
-
-- `evaluation/word_trans_sent_retriev.py` for multilingual word translation and sentence retrieval.
-- `evaluation/accuracy.py` for monolingual Hiragana MLM top-k accuracy and MRR.
-
 All results below are mean +/- sample standard deviation across seeds 42, 43, and 44. Sentence retrieval uses `--n_sample 500`.
 
-All results are visualized. Find them in [visualizations](visualizations).
+All results are visualized in [visualizations](visualizations) for multilingual alignment and monolingual accuracy, [probing visualizations](linear_probe_evaluation/visualizations/).
 
 
 ### Multilingual Alignment
@@ -182,14 +160,9 @@ All results are visualized. Find them in [visualizations](visualizations).
 | `full_graph` | `downsample` | 0.5255 +/- 0.0697 | 0.7433 +/- 0.0572 | 0.4560 +/- 0.0450 | 0.7553 +/- 0.0270 |
 | `full_graph` | `full_corpus` | 0.7150 +/- 0.0277 | 0.8680 +/- 0.0114 | 0.7047 +/- 0.0219 | 0.9013 +/- 0.0162 |
 
-**Visualizations**
-![](visualizations/multilingual_alignment_top1.png)
-![](visualizations/multilingual_alignment_top5.png)
-
-
 ### Monolingual Hiragana MLM Accuracy
 
-| Condition | Mode | MLM top-1 | MLM top-5 | MRR |
+| Condition | Mode | MLM top-1 | MLM top-5 | MLM MRR |
 | --- | --- | ---: | ---: | ---: |
 | `low_40` | `downsample` | 0.5004 +/- 0.0170 | 0.9206 +/- 0.0007 | 0.6752 +/- 0.0083 |
 | `medium_60_full` | `downsample` | 0.4737 +/- 0.0101 | 0.8881 +/- 0.0015 | 0.6482 +/- 0.0054 |
@@ -204,5 +177,40 @@ All results are visualized. Find them in [visualizations](visualizations).
 | `full_graph` | `downsample` | 0.4691 +/- 0.0067 | 0.8597 +/- 0.0031 | 0.6351 +/- 0.0057 |
 | `full_graph` | `full_corpus` | 0.5141 +/- 0.0056 | 0.9101 +/- 0.0068 | 0.6793 +/- 0.0064 |
 
-**Visualizations**
-![](visualizations/monolingual_hiragana_mlm.png)
+## Graph Density Masked-Language Probe Summary (entity)
+
+| condition | strategy | density | seeds | usable probes | best acc | final acc | embedding acc | mean best layer |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| low_40 | coverage | 40% | 3 | 88.7 | 0.2973 +/- 0.0323 | 0.2728 +/- 0.0167 | 0.0423 +/- 0.0109 | 2.3 |
+| low_40_relation | relation | 40% | 3 | 168.7 | 0.2804 +/- 0.1774 | 0.2429 +/- 0.1484 | 0.0237 +/- 0.0061 | 2.7 |
+| medium_60_full | coverage | 60% | 3 | 76.0 | 0.3444 +/- 0.1368 | 0.3191 +/- 0.1457 | 0.0463 +/- 0.0213 | 2.3 |
+| medium_60_relation | relation | 60% | 3 | 244.0 | 0.5095 +/- 0.0689 | 0.4647 +/- 0.0122 | 0.0273 +/- 0.0042 | 3.0 |
+| high_80_full | coverage | 80% | 3 | 63.0 | 0.6606 +/- 0.1359 | 0.6228 +/- 0.1248 | 0.0704 +/- 0.0242 | 2.3 |
+| high_80_relation | relation | 80% | 3 | 210.0 | 0.6958 +/- 0.0659 | 0.6592 +/- 0.0593 | 0.0191 +/- 0.0083 | 2.3 |
+| full_graph | coverage | 100% | 3 | 169.7 | 0.8091 +/- 0.0487 | 0.7920 +/- 0.0286 | 0.0337 +/- 0.0051 | 3.0 |
+
+#### Per-Run Summary
+
+| condition | seed | usable probes | best layer | best acc | final acc | embedding acc |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| low_40 | 42 | 106 | 1 | 0.2642 | 0.2547 | 0.0377 |
+| low_40 | 43 | 87 | 3 | 0.2989 | 0.2759 | 0.0345 |
+| low_40 | 44 | 73 | 3 | 0.3288 | 0.2877 | 0.0548 |
+| low_40_relation | 42 | 166 | 3 | 0.1807 | 0.1566 | 0.0241 |
+| low_40_relation | 43 | 171 | 2 | 0.1754 | 0.1579 | 0.0175 |
+| low_40_relation | 44 | 169 | 3 | 0.4852 | 0.4142 | 0.0296 |
+| medium_60_full | 42 | 90 | 1 | 0.2111 | 0.1778 | 0.0222 |
+| medium_60_full | 43 | 64 | 3 | 0.4844 | 0.4688 | 0.0625 |
+| medium_60_full | 44 | 74 | 3 | 0.3378 | 0.3108 | 0.0541 |
+| medium_60_relation | 42 | 249 | 3 | 0.4659 | 0.4578 | 0.0321 |
+| medium_60_relation | 43 | 247 | 3 | 0.4737 | 0.4575 | 0.0243 |
+| medium_60_relation | 44 | 236 | 3 | 0.5890 | 0.4788 | 0.0254 |
+| high_80_full | 42 | 94 | 3 | 0.5106 | 0.4787 | 0.0426 |
+| high_80_full | 43 | 49 | 2 | 0.7755 | 0.6939 | 0.0816 |
+| high_80_full | 44 | 46 | 2 | 0.6957 | 0.6957 | 0.0870 |
+| high_80_relation | 42 | 208 | 3 | 0.7356 | 0.7019 | 0.0144 |
+| high_80_relation | 43 | 209 | 2 | 0.7321 | 0.6842 | 0.0287 |
+| high_80_relation | 44 | 213 | 2 | 0.6197 | 0.5915 | 0.0141 |
+| full_graph | 42 | 152 | 3 | 0.8618 | 0.8224 | 0.0395 |
+| full_graph | 43 | 165 | 2 | 0.8000 | 0.7879 | 0.0303 |
+| full_graph | 44 | 192 | 4 | 0.7656 | 0.7656 | 0.0312 |
