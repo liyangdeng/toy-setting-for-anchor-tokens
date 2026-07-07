@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Train multilingual MLM models for lexical-overlap & anchoring experiments.
 
-This script is strictly adapted from the format used by the other swp experiments
-(train_semantic_overlap_multilingual, train_punct, train_special). It handles dual corpora,
-shared WordLevel tokenization, and tracks specific frequency strategies as metadata.
+This script is strictly adapted from the format used by the other experiments
+(train_semantic_overlap_multilingual, train_punct, train_special).
 """
 
 import argparse
