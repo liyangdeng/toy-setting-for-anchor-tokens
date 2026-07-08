@@ -137,7 +137,7 @@ Primary evaluations:
 
 All results below are mean +/- sample standard deviation across seeds 42, 43, and 44. Sentence retrieval uses `--n_sample 500`.
 
-All results are visualized. Find them in [visualizations](visualizations) for .
+All results are visualized in [visualizations](visualizations) for multilingual alignment and monolingual accuracy, [probing visualizations](linear_probe_evaluation/visualizations/).
 
 ### Multilingual Alignment
 
