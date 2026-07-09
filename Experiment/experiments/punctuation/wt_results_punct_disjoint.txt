@@ -1,0 +1,13 @@
+Word tranlsation precision, punctuation
+model  : checkpoints_disjoint/final
+pairs  : 2000
+layers : [0, 1, 2, 3, 4]
+
+ layer       P@1       P@5
+     0    0.6547    0.8100
+     1    0.6208    0.8008
+     2    0.6153    0.7930
+     3    0.5860    0.7628
+     4    0.4420    0.6470
+
+mean tau (P@1) over layers [0, 1, 2, 3, 4] : 0.5837

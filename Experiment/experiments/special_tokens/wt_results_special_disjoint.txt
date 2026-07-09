@@ -1,0 +1,13 @@
+Word translation precision, special tokens
+model  : checkpoints_special_disjoint/final
+setting: disjoint
+layers : [0, 1, 2, 3, 4]
+
+ layer       P@1       P@5
+     0    0.5268    0.7057
+     1    0.4977    0.7015
+     2    0.4605    0.6630
+     3    0.4290    0.6232
+     4    0.1765    0.3173
+
+mean tau (P@1) over layers [0, 1, 2, 3, 4] : 0.4181

@@ -123,28 +123,23 @@ src/training/train_multilingual_synset.py
 ```
 ## Evaluation
 
-Evaluation uses the repository's existing evaluation scripts:
+Evaluate whether graph density improves cross-lingual alignment and knowledge
+transfer.
 
-```text
-evaluation/word_trans_sent_retriev.py
-evaluation/accuracy.py
-```
+Primary evaluations:
 
-Primary metrics:
+1. Word translation precision.
+2. Sentence retrieval precision.
+3. Monolingual MLM accuracy
+4. Linear probing accuracy on each layer.
 
-- Word translation precision at top-1 and top-5.
-- Sentence retrieval precision at top-1 and top-5.
-- Monolingual MLM dev top-1, top-5, and MRR.
+## Evaluation Results
 
-Sentence retrieval is evaluated only on triples shared by L1 and L2. Therefore
-`overlap_000` has no sentence-retrieval score.
+All results below are mean +/- sample standard deviation across seeds 42, 43, and 44. Sentence retrieval uses `--n_sample 500`.
 
-## All-Seed Results
+All results are visualized in [visualizations](visualizations) for multilingual alignment and monolingual accuracy, [probing visualizations](linear_probe_evaluation/visualizations/).
 
-The table reports mean +/- sample standard deviation across seeds 42, 43, and
-44.
-
-### Cross-Lingual Alignment
+### Multilingual Alignment
 
 | Condition | Overlap | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -154,7 +149,7 @@ The table reports mean +/- sample standard deviation across seeds 42, 43, and
 | `overlap_075` | 75% | 0.1273 +/- 0.0210 | 0.2617 +/- 0.0354 | 0.0767 +/- 0.0099 | 0.2327 +/- 0.0190 |
 | `overlap_100` | 100% | 0.3523 +/- 0.0988 | 0.5553 +/- 0.1081 | 0.1740 +/- 0.0470 | 0.3807 +/- 0.0559 |
 
-### Monolingual MLM Dev Metrics
+### Monolingual Hiragana MLM Accuracy
 
 | Condition | Overlap | MLM top-1 | MLM top-5 | MLM MRR |
 | --- | ---: | ---: | ---: | ---: |
@@ -164,19 +159,31 @@ The table reports mean +/- sample standard deviation across seeds 42, 43, and
 | `overlap_075` | 75% | 0.5405 +/- 0.0079 | 0.9390 +/- 0.0034 | 0.7077 +/- 0.0046 |
 | `overlap_100` | 100% | 0.5439 +/- 0.0108 | 0.9346 +/- 0.0024 | 0.7091 +/- 0.0060 |
 
-## Interpretation
+### Semantic Overlap Masked-Language Probe Summary (entity)
 
-Cross-lingual alignment improves monotonically as semantic overlap increases.
-Word translation top-1 rises from 0.0071 at 0% overlap to 0.3523 at 100%
-overlap. Word translation top-5 rises from 0.0291 to 0.5553.
+| condition | seeds | usable probes | best acc | final acc | embedding acc | mean best layer |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| overlap_000 | 3 | 2753.0 | 0.0566 +/- 0.0043 | 0.0455 +/- 0.0029 | 0.0143 +/- 0.0018 | 2.7 |
+| overlap_025 | 3 | 2064.0 | 0.0743 +/- 0.0093 | 0.0594 +/- 0.0123 | 0.0155 +/- 0.0015 | 1.7 |
+| overlap_050 | 3 | 1377.0 | 0.1150 +/- 0.0197 | 0.1017 +/- 0.0215 | 0.0198 +/- 0.0008 | 1.7 |
+| overlap_075 | 3 | 689.0 | 0.2279 +/- 0.0080 | 0.1959 +/- 0.0233 | 0.0227 +/- 0.0030 | 2.3 |
 
-Sentence retrieval also improves with overlap, but remains lower than word
-translation. Sentence top-1 rises from 0.0300 at 25% overlap to 0.1740 at 100%
-overlap.
+#### Per-Run Summary
 
-Monolingual MLM performance is nearly flat across conditions. This is useful:
-the alignment gains are not explained by a large change in general MLM
-difficulty.
+| seed | condition | usable probes | best layer | best acc | final acc | embedding acc |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: |
+| 42 | overlap_000 | 2753 | 2 | 0.0585 | 0.0421 | 0.0160 |
+| 43 | overlap_000 | 2753 | 3 | 0.0516 | 0.0472 | 0.0145 |
+| 44 | overlap_000 | 2753 | 3 | 0.0596 | 0.0472 | 0.0124 |
+| 42 | overlap_025 | 2064 | 2 | 0.0770 | 0.0572 | 0.0155 |
+| 43 | overlap_025 | 2064 | 1 | 0.0819 | 0.0727 | 0.0141 |
+| 44 | overlap_025 | 2064 | 2 | 0.0640 | 0.0484 | 0.0170 |
+| 42 | overlap_050 | 1377 | 2 | 0.1373 | 0.1264 | 0.0203 |
+| 43 | overlap_050 | 1377 | 1 | 0.1002 | 0.0915 | 0.0189 |
+| 44 | overlap_050 | 1377 | 2 | 0.1075 | 0.0871 | 0.0203 |
+| 42 | overlap_075 | 689 | 2 | 0.2293 | 0.1713 | 0.0261 |
+| 43 | overlap_075 | 689 | 3 | 0.2351 | 0.2177 | 0.0218 |
+| 44 | overlap_075 | 689 | 2 | 0.2192 | 0.1988 | 0.0203 |
 
 ## Token Embedding Distance Probe
 

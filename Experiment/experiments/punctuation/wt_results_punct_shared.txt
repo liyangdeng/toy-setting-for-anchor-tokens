@@ -1,0 +1,13 @@
+Word tranlsation precision, punctuation
+model  : checkpoints_shared/final
+pairs  : 2000
+layers : [0, 1, 2, 3, 4]
+
+ layer       P@1       P@5
+     0    0.8322    0.9385
+     1    0.7715    0.9187
+     2    0.7532    0.8947
+     3    0.5782    0.7235
+     4    0.4665    0.6165
+
+mean tau (P@1) over layers [0, 1, 2, 3, 4] : 0.6804
