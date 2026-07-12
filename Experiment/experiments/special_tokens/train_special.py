@@ -8,13 +8,13 @@ Train for the special-token experiment
 
   [CLS],[SEP] -> tokenizer post-processor  -> per-language template
   [MASK]      -> MLM collator              -> per-language mask id (custom collator)
-  [PAD],[UNK] -> PAD is attention-masked, UNK never fires.
+  [PAD],[UNK] -> PAD is attention-masked, UNK never fires
 
 usage:
   python train_special.py --setting disjoint \
-      --corpus_a .../corpus_cjk_synset.txt \
-      --corpus_b .../corpus_hiragana_synset.txt \
-      --output_dir .../checkpoints_special_disjoint
+      --corpus_a corpus_cjk_synset.txt \
+      --corpus_b corpus_hiragana_synset.txt \
+      --output_dir checkpoints_special_disjoint
 """
 
 import argparse
