@@ -7,14 +7,14 @@ Train for the special-token experiment
   disjoint  CJK: [BEG]/[END]/[HID]  Hiragana: [CLS]/[SEP]/[MASK]
 
   [CLS],[SEP] -> tokenizer post-processor  -> per-language template
-  [MASK]      -> MLM collator              -> per-language mask id (custom collator)
-  [PAD],[UNK] -> PAD is attention-masked, UNK never fires
+  [MASK]      -> MLM collator              -> per-language mask id
+  [PAD],[UNK] -> PAD is attention masked, UNK never fires
 
 usage:
-  python train_special.py --setting disjoint \
+  python train_special.py --setting shared \
       --corpus_a corpus_cjk_synset.txt \
       --corpus_b corpus_hiragana_synset.txt \
-      --output_dir checkpoints_special_disjoint
+      --output_dir checkpoints_special_shared
 """
 
 import argparse
@@ -42,7 +42,7 @@ from tokenizers.trainers import WordLevelTrainer
 from datasets import Dataset, concatenate_datasets
 
 
-# SPECIAL TOKEN PATTERN: a=CJK, b=Hiragana
+# SPECIAL TOKEN PATTERN: a = CJK, b = Hiragana
 
 SPECIAL_SETTINGS = {
     'shared':   {'a': {'cls': '[CLS]', 'sep': '[SEP]', 'mask': '[MASK]'},
@@ -89,13 +89,11 @@ def set_template(tokenizer, cls_tok, sep_tok):
 # HANDLE MASK
 
 class PerLanguageMLMCollator(DataCollatorForLanguageModeling):
-    """Standard MLM masking, then swap [MASK] to mask id specific for 
-    the language, in each row. For 'shared'/'none' the ids 
-    are equal to [MASK] """
+    """ enable language-specific [MASK] id in each row """
 
     def __init__(self, *args, mask_ids, **kwargs):
         super().__init__(*args, **kwargs)
-        self.mask_ids = mask_ids            # {'a': id, 'b': id}
+        self.mask_ids = mask_ids    # {'a': id, 'b': id}
 
     def torch_call(self, examples):
         langs = [ex.pop('lang') for ex in examples]
@@ -134,7 +132,7 @@ def tokenize_tagged(tagged_rows, tokenizer, policy, max_length=64):
         ds = Dataset.from_dict({'text': texts}).map(
             lambda b: tokenizer(b['text'], truncation=True, max_length=max_length, padding=False),
             batched=True, remove_columns=['text'], load_from_cache_file=False)
-        ds = ds.add_column('lang', [lang] * len(ds))     # needed by the collator
+        ds = ds.add_column('lang', [lang] * len(ds))
         parts.append(ds)
     return concatenate_datasets(parts)
 
@@ -181,10 +179,7 @@ def main():
     set_seed(args.seed)
     policy = SPECIAL_SETTINGS[args.setting]
     print(f"Setting '{args.setting}':")
-    for k in ('cls', 'sep', 'mask'):
-        print(f"  {k:>4}  A/CJK={policy['a'][k]}  B/Hiragana={policy['b'][k]}")
 
-    print('Building tokenizer...')
     tokenizer = build_tokenizer([args.corpus_a, args.corpus_b])
     vocab_size = len(tokenizer)
     print(f'Vocabulary size: {vocab_size}')
@@ -201,7 +196,7 @@ def main():
     (out_dir / 'dev.txt').write_text('\n'.join(s for s, _ in dev_tagged), encoding='utf-8')
     print(f'  Train:{len(train_tagged)}  Dev:{len(dev_tagged)}')
 
-    for lang, label in (('a', 'A/CJK'), ('b', 'B/Hiragana')):
+    for lang, label in (('a', 'CJK'), ('b', 'Hiragana')):
         ex = next((s for s, l in train_tagged if l == lang), None)
         if ex is not None:
             set_template(tokenizer, policy[lang]['cls'], policy[lang]['sep'])
@@ -228,7 +223,7 @@ def main():
         eval_strategy='epoch', save_strategy='epoch', logging_strategy='epoch',
         save_total_limit=2, load_best_model_at_end=True, metric_for_best_model='eval_loss',
         seed=args.seed, report_to='none',
-        remove_unused_columns=False,        # keep the 'lang' column for the collator
+        remove_unused_columns=False,
     )
 
     trainer = Trainer(model=model, args=training_args,
@@ -241,9 +236,6 @@ def main():
     dev_loss   = trainer.evaluate(dev_ds)['eval_loss']
     print(f'\nFinal train perplexity : {math.exp(train_loss):.2f}')
     print(f'Final dev   perplexity : {math.exp(dev_loss):.2f}')
-
-    # save the a-language template + the full per-language bundle,
-    # so evaluation can reconstruct the wrapping (and where each token sits)
 
     set_template(tokenizer, policy['a']['cls'], policy['a']['sep'])
     out = out_dir / 'final'
