@@ -63,7 +63,7 @@ def main():
     ap = argparse.ArgumentParser(description="punctuation corpora")
     ap.add_argument("--hiragana", default="data/corpus/corpus_hiragana_synset.txt")
     ap.add_argument("--cjk",      default="data/corpus/corpus_cjk_synset.txt")
-    ap.add_argument("--parallel", default="parallel_corpus_synset.py")
+    ap.add_argument("--parallel", default="parallel_corpus_synset.json")
     ap.add_argument("--outdir",   default="punct_corpora")
     args = ap.parse_args()
 
