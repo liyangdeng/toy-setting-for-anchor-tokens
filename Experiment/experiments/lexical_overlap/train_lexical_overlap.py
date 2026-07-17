@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Train multilingual MLM models for lexical-overlap & anchoring experiments.
+"""Train multilingual MLM models for lexical-overlap experiments.
 
-This script is strictly adapted from the format used by the other experiments
-(train_semantic_overlap_multilingual, train_punct, train_special).
+This script is adapted from src/training/train_multilingual_synset.py.
+It is strictly adapted to match the baseline hyperparameters and standard
+special token treatment.
 """
 
 import argparse
@@ -28,6 +29,7 @@ from transformers import (
     set_seed,
 )
 
+# Standard list of special tokens matching baseline and semantic setups
 SPECIAL_TOKENS = ["[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"]
 
 
@@ -51,31 +53,44 @@ def read_lines(path):
 
 
 def prepare_dataset(lines, tokenizer, max_length):
-    encodings = tokenizer(lines, truncation=True, max_length=max_length)
+    # Standard tokenization that automatically adds [CLS] and [SEP] universally
+    encodings = tokenizer(lines, truncation=True, max_length=max_length, padding=False)
     return Dataset.from_dict(encodings)
 
 
 def plot_loss_history(trainer, output_dir):
     history = trainer.state.log_history
-    train_loss = [x['loss'] for x in history if 'loss' in x]
-    eval_loss = [x['eval_loss'] for x in history if 'eval_loss' in x]
+    train_records = [r for r in history if 'loss' in r and 'eval_loss' not in r and 'epoch' in r]
+    eval_records  = [r for r in history if 'eval_loss' in r and 'epoch' in r]
+
+    train_epochs = [r['epoch'] for r in train_records]
+    train_losses = [r['loss']  for r in train_records]
+    eval_epochs  = [r['epoch'] for r in eval_records]
+    eval_losses  = [r['eval_loss'] for r in eval_records]
+
+    if not train_losses:
+        print('Warning: no training-loss records found.')
+        return
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.plot(train_epochs, train_losses, marker='o', label='Training loss')
+    if eval_losses:
+        ax.plot(eval_epochs, eval_losses, marker='o', label='Validation loss')
+    ax.set_xlabel('Epoch')
+    ax.set_ylabel('MLM loss')
+    ax.set_title('Lexical-overlap — training and validation loss')
+    ax.grid(True, alpha=0.3)
+    ax.legend()
+    fig.tight_layout()
     
-    plt.figure(figsize=(8, 5))
-    if train_loss:
-        plt.plot(train_loss, label='Train Loss')
-    if eval_loss:
-        plt.plot(eval_loss, label='Eval Loss', linestyle='--')
-    plt.xlabel('Epochs / Log Steps')
-    plt.ylabel('Loss')
-    plt.title('Loss History')
-    plt.legend()
-    plt.grid(True)
-    plt.savefig(Path(output_dir) / "loss_history.png")
-    plt.close()
+    out_path = Path(output_dir) / "loss_curve.png"
+    fig.savefig(out_path, dpi=300, bbox_inches='tight')
+    plt.close(fig)
+    print(f'Loss plot saved to {out_path}')
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Train MLM for Lexical Overlap & Anchoring Experiment")
+    parser = argparse.ArgumentParser(description="Train MLM for Lexical Overlap & Anchoring Experiment (Baseline Hyperparams)")
     parser.add_argument("--condition", type=str, required=True, help="Unique experimental condition token name")
     parser.add_argument("--corpus_a", type=str, required=True, help="Path to modified language A corpus")
     parser.add_argument("--corpus_b", type=str, required=True, help="Path to modified language B corpus")
@@ -83,11 +98,11 @@ def main():
     parser.add_argument("--strategy", type=str, required=True, choices=["high", "mid", "low", "none"], help="Anchor selection strategy")
     parser.add_argument("--output_dir", type=str, required=True, help="Output tracking and checkpoint directory")
     
-    # Standard SWP hyperparameters matched with colleagues' setups
-    parser.add_argument("--epochs", type=int, default=40)
-    parser.add_argument("--batch_size", type=int, default=32)
-    parser.add_argument("--lr", type=float, default=5e-4)
-    parser.add_argument("--max_length", type=int, default=128)
+    # Hyperparameters aligned with other scripts (train_multilingual_synset and train_punct)
+    parser.add_argument("--epochs", type=int, default=60)
+    parser.add_argument("--batch_size", type=int, default=64)
+    parser.add_argument("--lr", type=float, default=1e-3)
+    parser.add_argument("--max_length", type=int, default=64)
     parser.add_argument("--mlm_prob", type=float, default=0.15)
     parser.add_argument("--warmup_steps", type=int, default=50)
     parser.add_argument("--dev_frac", type=float, default=0.1)
@@ -120,17 +135,19 @@ def main():
     train_ds = prepare_dataset(train_sents, tokenizer, args.max_length)
     dev_ds   = prepare_dataset(dev_sents, tokenizer, args.max_length)
 
-    # Standard configuration matching Dufter & Schütze's small setting inside swp_orga
+    # Reverted to smaller configuration (4 layers, 128 hidden size) like other scripts
     config = BertConfig(
         vocab_size=len(tokenizer),
-        hidden_size=256,
-        num_hidden_layers=6,
+        hidden_size=128,
+        num_hidden_layers=4,
         num_attention_heads=4,
-        intermediate_size=1024,
-        max_position_embeddings=512,
+        intermediate_size=512,
+        max_position_embeddings=128,
         pad_token_id=tokenizer.pad_token_id,
     )
     model = BertForMaskedLM(config)
+    n_params = sum(p.numel() for p in model.parameters())
+    print(f'Model parameters: {n_params:,}')
 
     data_collator = DataCollatorForLanguageModeling(
         tokenizer=tokenizer,
@@ -171,18 +188,15 @@ def main():
     train_loss = trainer.evaluate(train_ds)['eval_loss']
     dev_loss   = trainer.evaluate(dev_ds)['eval_loss']
 
-    train_perplexity = math.exp(train_loss) if train_loss < 20 else float('inf')
-    dev_perplexity   = math.exp(dev_loss) if dev_loss < 20 else float('inf')
+    print(f"\nFinal train perplexity : {math.exp(train_loss):.2f}")
+    print(f"Final dev   perplexity : {math.exp(dev_loss):.2f}")
 
-    print(f"\nFinal train perplexity : {train_perplexity:.2f}")
-    print(f"Final dev   perplexity : {dev_perplexity:.2f}")
-
-    # Save tokenizer and model bundle
+    # Save model and tokenizer
     final_output_path = out_dir / "final"
+    trainer.save_model(str(final_output_path))
     tokenizer.save_pretrained(str(final_output_path))
-    model.save_pretrained(str(final_output_path))
 
-    # Structured metadata tailored exactly to match the other pipeline tracking formats
+    # Structured metadata
     metadata = {
         "condition": args.condition,
         "corpus_a": args.corpus_a,
@@ -200,8 +214,8 @@ def main():
         "warmup_steps": args.warmup_steps,
         "dev_frac": args.dev_frac,
         "seed": args.seed,
-        "train_perplexity": train_perplexity,
-        "dev_perplexity": dev_perplexity,
+        "train_perplexity": math.exp(train_loss),
+        "dev_perplexity": math.exp(dev_loss),
         "lexical_overlap_percentage": args.overlap,
         "frequency_strategy": args.strategy,
     }
