@@ -1,4 +1,4 @@
-# Lexical Overlap & Anchoring Experiment
+# Lexical Overlap Experiment
 
 The script processes a source English corpus to select a synchronized, randomized set of "lexical anchors" based on specific frequency strata. It then applies these identical semantic anchors across multiple artificial languages to generate controlled, hybrid corpora for alignment testing.
 
@@ -26,6 +26,11 @@ The pipeline automatically loops through all combinations of the following param
 | **Target Languages** | `cjk`, `hiragana` |
 
 ---
+## Results
+
+
+
+---
 
 ## File and Execution Prerequisites
 
@@ -36,10 +41,3 @@ Ensure the following dataset files are located in your script's working director
 3. **`corpus_[lang]_synset.txt`** — The base artificial token corpora designated for partial structural overwriting.
 
 ---
-
-## How to Run
-
-Execute the automation matrix directly using Python 3:
-
-```bash
-python lexical_anchors.py
