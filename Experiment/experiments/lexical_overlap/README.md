@@ -26,11 +26,6 @@ The pipeline automatically loops through all combinations of the following param
 | **Target Languages** | `cjk`, `hiragana` |
 
 ---
-## Results
-
-
-
----
 
 ## File and Execution Prerequisites
 
