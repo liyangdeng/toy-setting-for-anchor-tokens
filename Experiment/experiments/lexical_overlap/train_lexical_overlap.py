@@ -1,24 +1,31 @@
-#!/usr/bin/env python3
-"""Train multilingual MLM models for lexical-overlap experiments.
+"""
+Trains a small BERT-style MLM on two modified corpora for the Lexical Overlap Experiment.
+No Next Sentence Prediction (NSP) — BertForMaskedLM does MLM only.
 
-This script is adapted from src/training/train_multilingual_synset.py.
-It is strictly adapted to match the baseline hyperparameters and standard
-special token treatment.
+This script is adapted from training/train_multilingual_synset.py.
+It is made to match the baseline hyperparameters and standard special token treatment.
+It adds metadata tracking for the experimental condition, overlap percentage, and frequency strategy.
+
+Usage example:
+    python train_lexical_overlap.py \
+        --corpus_a corpus_cjk_P5_high.txt \
+        --corpus_b corpus_hiragana_P5_high.txt \
+        --output_dir ~/checkpoints_lexical_overlap \
+        --condition high_P5 \
+        --overlap 5.0 \
+        --strategy high
+
+For automated run of multiple conditions, see run_lexical_overlap.py.
 """
 
 import argparse
-import json
 import math
-import os
 import random
 from pathlib import Path
+import json
 
 import matplotlib.pyplot as plt
-from datasets import Dataset
-from tokenizers import Tokenizer
-from tokenizers.models import WordLevel
-from tokenizers.pre_tokenizers import Whitespace
-from tokenizers.trainers import WordLevelTrainer
+
 from transformers import (
     BertConfig,
     BertForMaskedLM,
@@ -28,15 +35,27 @@ from transformers import (
     TrainingArguments,
     set_seed,
 )
+from tokenizers import Tokenizer
+from tokenizers.models import WordLevel
+from tokenizers.pre_tokenizers import Whitespace
+from tokenizers.trainers import WordLevelTrainer
+from datasets import Dataset
 
-# Standard list of special tokens matching baseline and semantic setups
-SPECIAL_TOKENS = ["[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"]
 
+# ── Vocabulary ─────────────────────────────────────────────────────────────────
 
 def build_tokenizer(corpus_files):
+    """
+    Builds a whitespace-split WordLevel tokenizer from all corpus files.
+    Vocabulary covers both Language A and Language B tokens.
+    """
     tokenizer = Tokenizer(WordLevel(unk_token="[UNK]"))
     tokenizer.pre_tokenizer = Whitespace()
-    trainer = WordLevelTrainer(special_tokens=SPECIAL_TOKENS, min_frequency=1)
+    trainer = WordLevelTrainer(
+        special_tokens=["[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"],
+        min_frequency=1
+    )
+    # Train the tokenizer on the provided corpus files
     tokenizer.train([str(path) for path in corpus_files], trainer)
     return PreTrainedTokenizerFast(
         tokenizer_object=tokenizer,
@@ -48,96 +67,128 @@ def build_tokenizer(corpus_files):
     )
 
 
-def read_lines(path):
-    return [line.strip() for line in Path(path).read_text(encoding="utf-8").splitlines() if line.strip()]
+# ── Dataset ────────────────────────────────────────────────────────────────────
+
+def load_corpus(path):
+    lines = Path(path).read_text(encoding="utf-8").strip().split("\n")
+    return [l for l in lines if l.strip()]
 
 
-def prepare_dataset(lines, tokenizer, max_length):
-    # Standard tokenization that automatically adds [CLS] and [SEP] universally
-    encodings = tokenizer(lines, truncation=True, max_length=max_length, padding=False)
-    return Dataset.from_dict(encodings)
+def split_corpus(sentences, dev_frac, seed):
+    """
+    Shuffles deterministically and split into train / dev.
+    """
+    rng = random.Random(seed)
+    shuffled = sentences[:]
+    rng.shuffle(shuffled)
+    n_dev = max(1, int(len(shuffled) * dev_frac))
+    return shuffled[n_dev:], shuffled[:n_dev]   # (train, dev)
 
+
+def tokenize_dataset(sentences, tokenizer, max_length=64):
+    def tokenize(batch):
+        return tokenizer(
+            batch["text"],
+            truncation=True,
+            max_length=max_length,
+            padding=False,
+        )
+    dataset = Dataset.from_dict({"text": sentences})
+    return dataset.map(tokenize, batched=True, remove_columns=["text"])
+
+
+# ── Loss plot ──────────────────────────────────────────────────────────────────
 
 def plot_loss_history(trainer, output_dir):
     history = trainer.state.log_history
-    train_records = [r for r in history if 'loss' in r and 'eval_loss' not in r and 'epoch' in r]
-    eval_records  = [r for r in history if 'eval_loss' in r and 'epoch' in r]
+    train_records = [r for r in history if "loss" in r and "eval_loss" not in r and "epoch" in r]
+    eval_records  = [r for r in history if "eval_loss" in r and "epoch" in r]
 
-    train_epochs = [r['epoch'] for r in train_records]
-    train_losses = [r['loss']  for r in train_records]
-    eval_epochs  = [r['epoch'] for r in eval_records]
-    eval_losses  = [r['eval_loss'] for r in eval_records]
+    train_epochs = [r["epoch"] for r in train_records]
+    train_losses = [r["loss"]  for r in train_records]
+    eval_epochs  = [r["epoch"] for r in eval_records]
+    eval_losses  = [r["eval_loss"] for r in eval_records]
 
     if not train_losses:
-        print('Warning: no training-loss records found.')
+        print("Warning: no training-loss records found.")
         return
 
     fig, ax = plt.subplots(figsize=(8, 5))
-    ax.plot(train_epochs, train_losses, marker='o', label='Training loss')
+    ax.plot(train_epochs, train_losses, marker="o", label="Training loss")
     if eval_losses:
-        ax.plot(eval_epochs, eval_losses, marker='o', label='Validation loss')
-    ax.set_xlabel('Epoch')
-    ax.set_ylabel('MLM loss')
-    ax.set_title('Lexical-overlap — training and validation loss')
+        ax.plot(eval_epochs, eval_losses, marker="o", label="Validation loss")
+    ax.set_xlabel("Epoch")
+    ax.set_ylabel("MLM loss")
+    ax.set_title("Lexical overlap — training and validation loss")
     ax.grid(True, alpha=0.3)
     ax.legend()
     fig.tight_layout()
     
     out_path = Path(output_dir) / "loss_curve.png"
-    fig.savefig(out_path, dpi=300, bbox_inches='tight')
+    fig.savefig(out_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
-    print(f'Loss plot saved to {out_path}')
+    print(f"Loss plot saved to {out_path}")
 
+
+# ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser(description="Train MLM for Lexical Overlap & Anchoring Experiment (Baseline Hyperparams)")
-    parser.add_argument("--condition", type=str, required=True, help="Unique experimental condition token name")
-    parser.add_argument("--corpus_a", type=str, required=True, help="Path to modified language A corpus")
-    parser.add_argument("--corpus_b", type=str, required=True, help="Path to modified language B corpus")
-    parser.add_argument("--overlap", type=float, required=True, help="Target overlap percentage (e.g. 2.5, 5.0, 7.5, 10.0)")
-    parser.add_argument("--strategy", type=str, required=True, choices=["high", "mid", "low", "none"], help="Anchor selection strategy")
-    parser.add_argument("--output_dir", type=str, required=True, help="Output tracking and checkpoint directory")
+    p = argparse.ArgumentParser(description="Train MLM for Lexical Overlap Experiment")
+    p.add_argument("--corpus_a", type=str, required=True, help="Path to modified language A corpus")
+    p.add_argument("--corpus_b", type=str, required=True, help="Path to modified language B corpus")
+    p.add_argument("--output_dir", type=str, required=True)
     
-    # Hyperparameters aligned with other scripts (train_multilingual_synset and train_punct)
-    parser.add_argument("--epochs", type=int, default=60)
-    parser.add_argument("--batch_size", type=int, default=64)
-    parser.add_argument("--lr", type=float, default=1e-3)
-    parser.add_argument("--max_length", type=int, default=64)
-    parser.add_argument("--mlm_prob", type=float, default=0.15)
-    parser.add_argument("--warmup_steps", type=int, default=50)
-    parser.add_argument("--dev_frac", type=float, default=0.1)
-    parser.add_argument("--seed", type=int, default=42)
-    args = parser.parse_args()
+    # Hyperparameters aligned with other scripts
+    p.add_argument("--max_length", type=int, default=64)
+    p.add_argument("--epochs", type=int, default=60)
+    p.add_argument("--batch_size", type=int, default=64)
+    p.add_argument("--mlm_prob", type=float, default=0.15)
+    p.add_argument("--lr", type=float, default=1e-3)
+    p.add_argument("--warmup_steps", type=int, default=50)
+    p.add_argument("--dev_frac", type=float, default=0.1)
+    p.add_argument("--seed", type=int, default=42)
+
+    # Additional arguments for experimental tracking
+    p.add_argument("--condition", type=str, required=True, help="Unique experimental condition token name")
+    p.add_argument("--overlap", type=float, required=True, help="Target overlap percentage (e.g. 2.5, 5.0, 7.5, 10.0)")
+    p.add_argument("--strategy", type=str, required=True, choices=["high", "mid", "low"], help="Anchor selection strategy")
+    args = p.parse_args()
 
     set_seed(args.seed)
     out_dir = Path(args.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"Loading experimental corpora:\n  A: {args.corpus_a}\n  B: {args.corpus_b}")
-    sentences_a = read_lines(args.corpus_a)
-    sentences_b = read_lines(args.corpus_b)
+    corpus_files = [args.corpus_a, args.corpus_b]
 
-    tokenizer = build_tokenizer([args.corpus_a, args.corpus_b])
-    print(f"Shared Vocabulary Size: {len(tokenizer)}")
+    # 1. Build tokenizer from both languages
+    print("Building tokenizer from both corpora...")
+    tokenizer = build_tokenizer(corpus_files)
+    vocab_size = len(tokenizer)
+    print(f"Shared Vocabulary Size: {vocab_size}")
 
-    rng = random.Random(args.seed)
-    rng.shuffle(sentences_a)
-    rng.shuffle(sentences_b)
+    # 2. Load, mix, split, tokenize
+    print(f"Loading experimental corpora...")
+    sentences_a = load_corpus(args.corpus_a)
+    sentences_b = load_corpus(args.corpus_b)
+    all_sentences = sentences_a + sentences_b
+    print(f"{args.corpus_a}: {len(sentences_a)} sentences")
+    print(f"{args.corpus_b}: {len(sentences_b)} sentences")
+    print(f"Total: {len(all_sentences)} sentences")
 
-    dev_len_a = int(len(sentences_a) * args.dev_frac)
-    dev_len_b = int(len(sentences_b) * args.dev_frac)
+    train_sents, dev_sents = split_corpus(all_sentences, args.dev_frac, args.seed)
 
-    train_sents = sentences_a[dev_len_a:] + sentences_b[dev_len_b:]
-    dev_sents   = sentences_a[:dev_len_a] + sentences_b[:dev_len_b]
+    out_dir = Path(args.output_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "train.txt").write_text("\n".join(train_sents), encoding="utf-8")
+    (out_dir / "dev.txt").write_text("\n".join(dev_sents), encoding="utf-8")
+    print(f"Train : {len(train_sents)} sentences | Dev : {len(dev_sents)} sentences")
 
-    print(f"Data split done: {len(train_sents)} train sentences, {len(dev_sents)} dev sentences.")
+    train_ds = tokenize_dataset(train_sents, tokenizer, args.max_length)
+    dev_ds   = tokenize_dataset(dev_sents, tokenizer, args.max_length)
 
-    train_ds = prepare_dataset(train_sents, tokenizer, args.max_length)
-    dev_ds   = prepare_dataset(dev_sents, tokenizer, args.max_length)
-
-    # Reverted to smaller configuration (4 layers, 128 hidden size) like other scripts
+    # 3. Model
     config = BertConfig(
-        vocab_size=len(tokenizer),
+        vocab_size=vocab_size,
         hidden_size=128,
         num_hidden_layers=4,
         num_attention_heads=4,
@@ -147,16 +198,18 @@ def main():
     )
     model = BertForMaskedLM(config)
     n_params = sum(p.numel() for p in model.parameters())
-    print(f'Model parameters: {n_params:,}')
+    print(f"Model parameters: {n_params:,}")
 
+    # 4. Data collator (MLM only, no NSP)
     data_collator = DataCollatorForLanguageModeling(
         tokenizer=tokenizer,
         mlm=True,
         mlm_probability=args.mlm_prob,
     )
 
+    # 5. Train
     training_args = TrainingArguments(
-        output_dir=str(out_dir),
+        output_dir=args.output_dir,
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=args.batch_size,
@@ -180,21 +233,24 @@ def main():
         data_collator=data_collator,
     )
 
-    print("Training initialized model...")
+    print("Training...")
     trainer.train()
 
+    # 6. Loss plot
     plot_loss_history(trainer, args.output_dir)
 
-    train_loss = trainer.evaluate(train_ds)['eval_loss']
-    dev_loss   = trainer.evaluate(dev_ds)['eval_loss']
+    # 7. Final perplexity
+    train_loss = trainer.evaluate(train_ds)["eval_loss"]
+    dev_loss   = trainer.evaluate(dev_ds)["eval_loss"]
 
-    print(f"\nFinal train perplexity : {math.exp(train_loss):.2f}")
-    print(f"Final dev   perplexity : {math.exp(dev_loss):.2f}")
+    print(f"\nFinal train perplexity: {math.exp(train_loss):.2f}")
+    print(f"Final dev perplexity: {math.exp(dev_loss):.2f}")
 
-    # Save model and tokenizer
-    final_output_path = out_dir / "final"
-    trainer.save_model(str(final_output_path))
-    tokenizer.save_pretrained(str(final_output_path))
+    # 8. Save
+    out = out_dir / "final"
+    trainer.save_model(str(out))
+    tokenizer.save_pretrained(str(out))
+    print(f"Saved to {out}")
 
     # Structured metadata
     metadata = {
