@@ -5,21 +5,29 @@ Script adapted from linear_probe.py for the Lexical Overlap Experiment:
      - metadata tracking added
      - condition, overlap and frequency arguments added
 
-Usage example for Lexical Overlap Experiment (train fresh + probe):
-    python linear_probe.py \
+Prerequisite steps:
+    1. Run 'build_probing_corpus.py' to generate initial training datasets 
+       and omitted entity files ('probing_run/a_training.txt', 'probing_run/b_training.txt').
+    2. Run 'build_overlapped_corpora.py' on 'a_training.txt' and 'b_training.txt' 
+       to create condition-specific overlapped corpora (e.g., 'corpus_cjk_P5_high.txt').
+    3. Run this script to train fresh models on the overlapped corpora and execute linear probing.
+
+Usage example for Lexical Overlap Experiment:
+    python linear_probe_lexical_overlap.py \
         --do_train \
-        --corpus_a probing_run/a_training.txt --corpus_b probing_run/b_training.txt \
-        --train_output_dir ./checkpoints_probe \
+        --corpus_a corpus_cjk_P5_high.txt \
+        --corpus_b corpus_hiragana_P5_high.txt \
+        --train_output_dir ./checkpoints_probe/high_P5 \
         --final_omitted probing_run/final_omitted.json \
         --parallel probing_run/final_omitted_corpus/parallel_corpus_synset.json \
         --cjk_dict synset_pos_artificial_cjk_edges_adj_augmented.json \
         --hira_dict synset_pos_artificial_hiragana_edges_adj_augmented.json \
-        --out_dir ./probe_results \
+        --out_dir ./probe_results/high_P5 \
         --condition high_P5 \
         --overlap 5.0 \
         --strategy high
 
-For automated run of multiple conditions, see run_probe_lexical_overlap.py.
+For automated run of multiple conditions, see run_probing_lexical_overlap.py.
 """
 
 import argparse
