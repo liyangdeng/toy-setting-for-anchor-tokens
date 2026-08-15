@@ -1,61 +1,25 @@
 """
-Linear probing for the anchor-token transfer experiment -- mask-ENTITY track.
-(mask-RELATION was tried and dropped: mono-B could already guess the
-relation phrase for most relations without any cross-lingual info, so it
-never survived the leak filter as a clean probe for more than one relation.
-See git history for the removed implementation.)
+Linear probing for the anchor-token transfer experiment.
 
-Two sections:
-  1. TRAINING -- pasted from train_multilingual_synset.py almost verbatim,
-     wrapped in train_multilingual() so this one file can train a bilingual
-     model from scratch if you don't already have a checkpoint.
-  2. LINEAR PROBE. For every probe triple:
-       - take its A sentence(s) and B sentence(s) (from parallel_corpus_
-         synset.json) and mask the single TARGET entity token (kept as
-         [MASK] in the sentence, not deleted -- avoids leakage since the
-         answer token is gone from the input, while the sentence structure
-         the model was trained on stays intact)
-       - run the frozen model, output_hidden_states=True
-       - take the hidden state at the [MASK] position, for every layer
-     Then, per layer L:
-       - fit a linear (logistic regression) classifier on the A vectors,
-         label = target concept id (shared A/B via the synset dicts)
-       - apply that SAME classifier to the B vectors
-       - a TRIPLE counts as correctly-transferred if ANY of its (possibly
-         several) B renderings is classified correctly (OR-aggregation --
-         see run_probe). Final accuracy = hit triples / total triples, not
-         per-sentence accuracy. Training likewise uses every triple's every
-         A rendering as a separate row under the same label, for more
-         context diversity per class.
-     Reports one accuracy curve (layer 0..N) overall and per relation, saves
-     a CSV and a PNG plot.
+Script adapted from linear_probe.py for the Lexical Overlap Experiment:
+     - metadata tracking added
+     - condition, overlap and frequency arguments added
 
-Inputs come from build_probing_corpus.py's output for THIS run:
-  --corpus_a / --corpus_b  <- a_training.txt / b_training.txt
-  --final_omitted          <- final_omitted.json (post-filter probes, each
-                              tagged "track": "entity")
-  --parallel               <- final_omitted_corpus/parallel_corpus_synset.json
-                              (the FRESH parallel file built from
-                              final_omitted.json, not the old full-corpus one)
-
-Usage (train fresh + probe):
+Usage example for Lexical Overlap Experiment (train fresh + probe):
     python linear_probe.py \
         --do_train \
         --corpus_a probing_run/a_training.txt --corpus_b probing_run/b_training.txt \
-        --train_output_dir ./checkpoints_treatment \
+        --train_output_dir ./checkpoints_probe \
         --final_omitted probing_run/final_omitted.json \
         --parallel probing_run/final_omitted_corpus/parallel_corpus_synset.json \
         --cjk_dict synset_pos_artificial_cjk_edges_adj_augmented.json \
         --hira_dict synset_pos_artificial_hiragana_edges_adj_augmented.json \
-        --out_dir ./probe_results_treatment
+        --out_dir ./probe_results \
+        --condition high_P5 \
+        --overlap 5.0 \
+        --strategy high
 
-Usage (probe an existing checkpoint):
-    python linear_probe.py \
-        --model_dir ./checkpoints_no_anchor/final \
-        --final_omitted probing_run/final_omitted.json \
-        --parallel probing_run/final_omitted_corpus/parallel_corpus_synset.json \
-        --cjk_dict ... --hira_dict ... \
-        --out_dir ./probe_results_no_anchor
+For automated run of multiple conditions, see run_probe_lexical_overlap.py.
 """
 
 import argparse
@@ -172,26 +136,29 @@ def plot_loss_history(trainer, output_dir):
     print(f'Loss plot saved to {out_path}')
 
 
-def train_multilingual(corpus_a, corpus_b, output_dir, max_length=64,
+def train_multilingual(condition, overlap, strategy, corpus_a, corpus_b, output_dir, max_length=64,
                         epochs=60, batch_size=64, mlm_prob=0.15, lr=1e-3,
                         warmup_steps=50, dev_frac=0.1, seed=42):
     """Train a small bilingual BERT-style MLM from scratch. Returns the path
     to the saved final checkpoint (output_dir/final)."""
     set_seed(seed)
+    out_dir = Path(output_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
     corpus_files = [corpus_a, corpus_b]
 
     print('Building tokenizer from both corpora...')
     tokenizer = build_tokenizer(corpus_files)
     vocab_size = len(tokenizer)
-    print(f'Vocabulary size: {vocab_size}  (Language A + Language B)')
+    print(f'Shared Vocabulary size: {vocab_size}')
 
     print('Loading corpora...')
     sentences_a = load_corpus(corpus_a)
     sentences_b = load_corpus(corpus_b)
     all_sentences = sentences_a + sentences_b
-    print(f'  Language A : {len(sentences_a)} sentences')
-    print(f'  Language B : {len(sentences_b)} sentences')
-    print(f'  Total      : {len(all_sentences)} sentences')
+    print(f'{corpus_a}: {len(sentences_a)} sentences')
+    print(f'{corpus_b}: {len(sentences_b)} sentences')
+    print(f'Total: {len(all_sentences)} sentences')
 
     train_sents, dev_sents = split_corpus(all_sentences, dev_frac, seed)
 
@@ -199,10 +166,10 @@ def train_multilingual(corpus_a, corpus_b, output_dir, max_length=64,
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / 'train.txt').write_text('\n'.join(train_sents), encoding='utf-8')
     (out_dir / 'dev.txt').write_text('\n'.join(dev_sents),   encoding='utf-8')
-    print(f'  Train : {len(train_sents)} | Dev : {len(dev_sents)}')
+    print(f'Train : {len(train_sents)} | Dev : {len(dev_sents)}')
 
     train_ds = tokenize_dataset(train_sents, tokenizer, max_length)
-    dev_ds   = tokenize_dataset(dev_sents,   tokenizer, max_length)
+    dev_ds   = tokenize_dataset(dev_sents, tokenizer, max_length)
 
     config = BertConfig(
         vocab_size=vocab_size,
@@ -246,17 +213,45 @@ def train_multilingual(corpus_a, corpus_b, output_dir, max_length=64,
 
     print('Training...')
     trainer.train()
+
     plot_loss_history(trainer, output_dir)
 
     train_loss = trainer.evaluate(train_ds)['eval_loss']
     dev_loss   = trainer.evaluate(dev_ds)['eval_loss']
-    print(f'\nFinal train perplexity : {math.exp(train_loss):.2f}')
-    print(f'Final dev   perplexity : {math.exp(dev_loss):.2f}')
+    print(f'\nFinal train perplexity: {math.exp(train_loss):.2f}')
+    print(f'Final dev perplexity: {math.exp(dev_loss):.2f}')
 
     out = out_dir / 'final'
     trainer.save_model(str(out))
     tokenizer.save_pretrained(str(out))
     print(f'Saved to {out}')
+
+    # Add metadata tracking
+    metadata = {
+            "condition": condition,
+            "corpus_a": corpus_a,
+            "corpus_b": corpus_b,
+            "vocab_size": len(tokenizer),
+            "epochs": epochs,
+            "train_sentences": len(train_sents),
+            "dev_sentences": len(dev_sents),
+            "language_a_sentences": len(sentences_a),
+            "language_b_sentences": len(sentences_b),
+            "batch_size": batch_size,
+            "max_length": max_length,
+            "mlm_prob": mlm_prob,
+            "learning_rate": lr,
+            "warmup_steps": warmup_steps,
+            "dev_frac": dev_frac,
+            "seed": seed,
+            "train_perplexity": math.exp(train_loss),
+            "dev_perplexity": math.exp(dev_loss),
+            "lexical_overlap_percentage": overlap,
+            "frequency_strategy": strategy,
+        }
+    
+    (out_dir / "training_metadata.json").write_text(json.dumps(metadata, indent=4), encoding="utf-8")
+    print(f"Metadata tracking successfully recorded inside: {output_dir}")
     return str(out)
 
 
@@ -430,12 +425,12 @@ def write_probe_outputs(rows, per_relation_rows, out_dir):
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    with open(out_dir / "layerwise_accuracy.csv", "w") as f:
+    with open(out_dir / "layerwise_accuracy.csv", "w", encoding="utf-8") as f:
         f.write("layer,accuracy,n\n")
         for r in rows:
             f.write(f"{r['layer']},{r['accuracy']:.4f},{r['n']}\n")
 
-    with open(out_dir / "layerwise_accuracy_per_relation.csv", "w") as f:
+    with open(out_dir / "layerwise_accuracy_per_relation.csv", "w", encoding="utf-8") as f:
         f.write("layer,relation,accuracy,n\n")
         for L, recs in per_relation_rows.items():
             for r in recs:
@@ -462,17 +457,24 @@ def write_probe_outputs(rows, per_relation_rows, out_dir):
 # CLI & EXECUTION
 # =============================================================================
 
-if __name__ == "__main__":
+def main():
     p = argparse.ArgumentParser()
     # Training arguments (optional)
     p.add_argument("--do_train", action="store_true",
                     help="train a fresh bilingual model before probing")
-    p.add_argument("--corpus_a")
-    p.add_argument("--corpus_b")
-    p.add_argument("--train_output_dir", default="./checkpoints/scratch_model")
+    p.add_argument("--corpus_a",
+                    help="a_training.txt from build_probing_corpus.py")
+    p.add_argument("--corpus_b",
+                    help="b_training.txt from build_probing_corpus.py")
+    p.add_argument("--train_output_dir", default="./checkpoints_probe",)
     p.add_argument("--epochs", type=int, default=60)
     p.add_argument("--batch_size", type=int, default=64)
     p.add_argument("--lr", type=float, default=1e-3)
+
+    # Additional arguments for experimental tracking
+    p.add_argument("--condition", type=str)
+    p.add_argument("--overlap", type=float)
+    p.add_argument("--strategy", type=str)
     
     # Probing arguments (required)
     p.add_argument("--model_dir",
@@ -487,20 +489,21 @@ if __name__ == "__main__":
     p.add_argument("--seed", type=int, default=42)
     args = p.parse_args()
 
-    # Fix the randomness across transformers library
-    import transformers
-    transformers.set_seed(args.seed)
-
     # 1. Handle optional pre-training phase
+    # (Training new models on omitted corpora)
     if args.do_train:
         assert args.corpus_a and args.corpus_b, "--do_train needs --corpus_a/--corpus_b"
-        model_dir = train_multilingual(
+        model_dir = train_multilingual(args.condition, args.overlap, args.strategy,
             args.corpus_a, args.corpus_b, args.train_output_dir,
-            epochs=args.epochs, batch_size=args.batch_size, seed=args.seed, lr=args.lr
+            epochs=args.epochs, batch_size=args.batch_size, lr=args.lr, seed=args.seed,
         )
     else:
         assert args.model_dir, "pass --model_dir or use --do_train"
         model_dir = args.model_dir
+
+    model_path = Path(model_dir)
+    if (model_path / "final").exists():
+        model_dir = str(model_path / "final")
 
     # 2. Load tracking data and dictionaries
     final_omitted = [p for p in json.load(open(args.final_omitted, encoding="utf-8")) if p.get("track") == "entity"]
@@ -517,3 +520,6 @@ if __name__ == "__main__":
     
     # 4. Run probing evaluation with the correct arguments matching the new function signature
     run_probe(model_dir, examples, args.out_dir, seed=args.seed)
+
+if __name__ == "__main__":
+    main()
