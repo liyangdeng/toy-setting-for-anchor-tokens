@@ -1,0 +1,3 @@
+metric,comparison,layer,acc_111,acc_011,difference,fisher_p_onesided,significant
+linear_probe,111 vs 011,L3,0.7219,0.0156,+0.7063,4.452e-61,yes
+lm_head,111 vs 011,strict_token,0.0710,0.0781,-0.0071,0.674,no
