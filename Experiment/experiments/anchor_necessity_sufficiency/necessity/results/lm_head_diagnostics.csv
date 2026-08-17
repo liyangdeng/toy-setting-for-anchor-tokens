@@ -1,0 +1,5 @@
+config,similarity,source_token_rate,right_concept_wrong_lang
+000,0.00,0.0097,0.0000
+001,0.33,0.0008,0.0000
+011,0.67,0.0008,0.0000
+111,1.00,0.0000,0.0000
