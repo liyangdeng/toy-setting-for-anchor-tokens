@@ -1,0 +1,23 @@
+metric,comparison_type,cond_A,acc_A,hits_A,cond_B,acc_B,hits_B,diff,p_fisher,p_z,significant_005
+Word Translation,Overlap Growth (Px vs P0),high_P2,0.763,1526/2000,high_P0,0.7645,1529/2000,-0.0015,0.55918,0.54446,NO
+Word Translation,Overlap Growth (Px vs P0),high_P5,0.788,1576/2000,high_P0,0.7645,1529/2000,0.0235,0.040457,0.037282,YES
+Word Translation,Overlap Growth (Px vs P0),high_P7,0.7955,1591/2000,high_P0,0.7645,1529/2000,0.031,0.0099317,0.008979,YES
+Word Translation,Overlap Growth (Px vs P0),high_P10,0.784,1568/2000,high_P0,0.7645,1529/2000,0.0195,0.075327,0.070112,NO
+Word Translation,Overlap Growth (Px vs P0),mid_P2,0.824,1648/2000,mid_P0,0.7645,1529/2000,0.0595,1.9051e-06,1.6242e-06,YES
+Word Translation,Overlap Growth (Px vs P0),mid_P5,0.7905,1581/2000,mid_P0,0.7645,1529/2000,0.026,0.026246,0.024033,YES
+Word Translation,Overlap Growth (Px vs P0),mid_P7,0.8195,1639/2000,mid_P0,0.7645,1529/2000,0.055,1.0647e-05,9.1298e-06,YES
+Word Translation,Overlap Growth (Px vs P0),mid_P10,0.8065,1613/2000,mid_P0,0.7645,1529/2000,0.042,0.00068965,0.00060681,YES
+Word Translation,Overlap Growth (Px vs P0),low_P2,0.8381,1657/1977,low_P0,0.7645,1529/2000,0.0736,3.4842e-09,2.9977e-09,YES
+Word Translation,Overlap Growth (Px vs P0),low_P5,0.8288,1617/1951,low_P0,0.7645,1529/2000,0.0643,3.0488e-07,2.6202e-07,YES
+Word Translation,Overlap Growth (Px vs P0),low_P7,0.8443,1627/1927,low_P0,0.7645,1529/2000,0.0798,1.7171e-10,1.5379e-10,YES
+Word Translation,Overlap Growth (Px vs P0),low_P10,0.877,1669/1903,low_P0,0.7645,1529/2000,0.1125,2.2794e-20,3.2807e-20,YES
+Word Translation,Strategy Comparison (LOW vs Other),low_P0,0.7645,1529/2000,high_P0,0.7645,1529/2000,0.0,0.51486,0.5,NO
+Word Translation,Strategy Comparison (LOW vs Other),low_P0,0.7645,1529/2000,mid_P0,0.7645,1529/2000,0.0,0.51486,0.5,NO
+Word Translation,Strategy Comparison (LOW vs Other),low_P2,0.8381,1657/1977,high_P2,0.763,1526/2000,0.0751,1.7896e-09,1.5431e-09,YES
+Word Translation,Strategy Comparison (LOW vs Other),low_P2,0.8381,1657/1977,mid_P2,0.824,1648/2000,0.0141,0.1256,0.11709,NO
+Word Translation,Strategy Comparison (LOW vs Other),low_P5,0.8288,1617/1951,high_P5,0.788,1576/2000,0.0408,0.00064205,0.00056348,YES
+Word Translation,Strategy Comparison (LOW vs Other),low_P5,0.8288,1617/1951,mid_P5,0.7905,1581/2000,0.0383,0.0012345,0.0010885,YES
+Word Translation,Strategy Comparison (LOW vs Other),low_P7,0.8443,1627/1927,high_P7,0.7955,1591/2000,0.0488,4.0488e-05,3.5042e-05,YES
+Word Translation,Strategy Comparison (LOW vs Other),low_P7,0.8443,1627/1927,mid_P7,0.8195,1639/2000,0.0248,0.020854,0.018857,YES
+Word Translation,Strategy Comparison (LOW vs Other),low_P10,0.877,1669/1903,high_P10,0.784,1568/2000,0.093,5.2042e-15,5.688e-15,YES
+Word Translation,Strategy Comparison (LOW vs Other),low_P10,0.877,1669/1903,mid_P10,0.8065,1613/2000,0.0705,9.44e-10,8.6209e-10,YES
