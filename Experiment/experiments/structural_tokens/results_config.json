@@ -1,0 +1,50 @@
+{
+  "_comment": "Fill acc and n from result CSVs. probe: layerwise_accuracy.csv LAYER 3 row. lm_head: lm_head_accuracy.csv strict_token row, top1 col. wt/sr: P@1 at one FIXED layer, per seed. n = TRIPLE count (probe/lm_head) or PAIR count (wt/sr). hits computed as round(acc*n).",
+
+  "punctuation": {
+    "word_translation": {
+      "shared":   {"seeds": {"42": {"acc": 0.7390, "n": 2000}, "43": {"acc": 0.7275, "n": 2000}, "44": {"acc": 0.7495, "n": 2000}}},
+      "none":     {"seeds": {"42": {"acc": 0.7675, "n": 2000}, "43": {"acc": 0.7545, "n": 2000}, "44": {"acc": 0.7150, "n": 2000}}},
+      "disjoint": {"seeds": {"42": {"acc": 0.3685, "n": 2000}, "43": {"acc": 0.4975, "n": 2000}, "44": {"acc": 0.5070, "n": 2000}}}
+    },
+    "sentence_retrieval": {
+      "shared":   {"seeds": {"42": {"acc": 0.7660, "n": 500}, "43": {"acc": 0.8920, "n": 500}, "44": {"acc": 0.8360, "n": 500}}},
+      "none":     {"seeds": {"42": {"acc": 0.8960, "n": 500}, "43": {"acc": 0.7960, "n": 500}, "44": {"acc": 0.8020, "n": 500}}},
+      "disjoint": {"seeds": {"42": {"acc": 0.3860, "n": 500}, "43": {"acc": 0.5180, "n": 500}, "44": {"acc": 0.5600, "n": 500}}}
+    },
+    "linear_probe": {
+      "shared":   {"acc": 0.9270, "n": 233},
+      "none":     {"acc": 0.8710, "n": 279},
+      "disjoint": {"acc": 0.7489, "n": 231}
+    },
+    "lm_head": {
+      "shared":   {"acc": 0.9185, "n": 233},
+      "none":     {"acc": 0.9104, "n": 279},
+      "disjoint": {"acc": 0.9048, "n": 231}
+    }
+  },
+
+  "special_tokens": {
+    "word_translation": {
+      "shared":   {"seeds": {"42": {"acc": 0.8115, "n": 2000}, "43": {"acc": 0.7520, "n": 2000}, "44": {"acc": 0.7910, "n": 2000}}},
+      "none":     {"seeds": {"42": {"acc": 0.7870, "n": 2000}, "43": {"acc": 0.7720, "n": 2000}, "44": {"acc": 0.8270, "n": 2000}}},
+      "disjoint": {"seeds": {"42": {"acc": 0.6795, "n": 2000}, "43": {"acc": 0.7170, "n": 2000}, "44": {"acc": 0.6665, "n": 2000}}}
+    },
+    "sentence_retrieval": {
+      "shared":   {"seeds": {"42": {"acc": 0.8080, "n": 500}, "43": {"acc": 0.7860, "n": 500}, "44": {"acc": 0.8920, "n": 500}}},
+      "none":     {"seeds": {"42": {"acc": 0.8540, "n": 500}, "43": {"acc": 0.8380, "n": 500}, "44": {"acc": 0.9100, "n": 500}}},
+      "disjoint": {"seeds": {"42": {"acc": 0.7980, "n": 500}, "43": {"acc": 0.8720, "n": 500}, "44": {"acc": 0.7780, "n": 500}}}
+    },
+    "linear_probe": {
+      "shared":   {"acc": 0.9185, "n": 233},
+      "none":     {"acc": 0.9227, "n": 233},
+      "disjoint": {"acc": 0.8970, "n": 233}
+    },
+    "lm_head": {
+      "shared":   {"acc": 0.9142, "n": 233},
+      "none":     {"acc": 0.8841, "n": 233},
+      "disjoint": {"acc": 0.9313, "n": 233}
+    }
+  }
+}
+

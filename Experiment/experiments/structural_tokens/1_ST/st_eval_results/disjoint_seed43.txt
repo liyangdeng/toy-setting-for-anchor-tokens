@@ -1,0 +1,17 @@
+Device : cuda
+Model  : st_checkpoints_disjoint_seed43/final
+
+Vocab size     : 4511
+Hidden size    : 128
+Num parameters : 1,408,671
+
+── Test 1: Word Translation Precision ──────────────────────────────
+  Synset content-token pairs in joint vocab : 2000
+  top-1 precision : 0.7170  (71.7%)
+  top-5 precision : 0.8715  (87.2%)
+
+── Test 2: Sentence Retrieval Precision ────────────────────────────
+  Sentence pairs evaluated : 500
+  top-1 precision : 0.8720  (87.2%)
+  top-5 precision : 0.9680  (96.8%)
+
