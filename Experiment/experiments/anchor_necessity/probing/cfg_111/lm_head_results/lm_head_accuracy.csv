@@ -1,0 +1,4 @@
+metric,top1,top3,n
+lenient,0.0710,0.1065,169
+strict_concept,0.0710,0.1124,169
+strict_token,0.0710,0.1065,169

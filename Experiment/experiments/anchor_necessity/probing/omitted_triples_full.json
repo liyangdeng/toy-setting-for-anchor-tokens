@@ -1,0 +1,4252 @@
+[
+  {
+    "source": "person.n.01",
+    "relation": "CapableOf",
+    "target": "master.n.09"
+  },
+  {
+    "source": "conceptnet:gold:1464",
+    "relation": "AtLocation",
+    "target": "conceptnet:church:1303"
+  },
+  {
+    "source": "hole.n.01",
+    "relation": "UsedFor",
+    "target": "water.n.06"
+  },
+  {
+    "source": "salad.n.01",
+    "relation": "RelatedTo",
+    "target": "dressing.n.04"
+  },
+  {
+    "source": "conceptnet:sky:1400",
+    "relation": "UsedFor",
+    "target": "conceptnet:fly:1244"
+  },
+  {
+    "source": "conceptnet:reception_desk:1690",
+    "relation": "UsedFor",
+    "target": "secretary.n.02"
+  },
+  {
+    "source": "hydrozoan.n.01",
+    "relation": "hyponym",
+    "target": "hydra.n.04"
+  },
+  {
+    "source": "conceptnet:indisposable:1935",
+    "relation": "Antonym",
+    "target": "disposable.n.01"
+  },
+  {
+    "source": "conceptnet:oil:1261",
+    "relation": "UsedFor",
+    "target": "conceptnet:car:1371"
+  },
+  {
+    "source": "checker.n.01",
+    "relation": "RelatedTo",
+    "target": "clerk.n.01"
+  },
+  {
+    "source": "housekeeper.n.01",
+    "relation": "SimilarTo",
+    "target": "maid.n.01"
+  },
+  {
+    "source": "dark_horse.n.01",
+    "relation": "RelatedTo",
+    "target": "campaigner.n.01"
+  },
+  {
+    "source": "conceptnet:lion:1651",
+    "relation": "SimilarTo",
+    "target": "cub.n.03"
+  },
+  {
+    "source": "conceptnet:dame:1514",
+    "relation": "SimilarTo",
+    "target": "sir.n.02"
+  },
+  {
+    "source": "tonic.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:bitter:1643"
+  },
+  {
+    "source": "conceptnet:clew:1513",
+    "relation": "SimilarTo",
+    "target": "bunt.n.03"
+  },
+  {
+    "source": "conceptnet:mug:1687",
+    "relation": "UsedFor",
+    "target": "filling.n.03"
+  },
+  {
+    "source": "latissimus_dorsi.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:long:1458"
+  },
+  {
+    "source": "conceptnet:car:1371",
+    "relation": "HasProperty",
+    "target": "conceptnet:green:1312"
+  },
+  {
+    "source": "conceptnet:castle:1301",
+    "relation": "HasContext",
+    "target": "conceptnet:rail_transport:1557"
+  },
+  {
+    "source": "crottle.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:scotland:1289"
+  },
+  {
+    "source": "conceptnet:gate:1394",
+    "relation": "CapableOf",
+    "target": "swing.n.02"
+  },
+  {
+    "source": "cheese.n.01",
+    "relation": "HasProperty",
+    "target": "a_yellow"
+  },
+  {
+    "source": "clast.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:geology:1296"
+  },
+  {
+    "source": "sea_cucumber.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:bottom_of_sea:1537"
+  },
+  {
+    "source": "francisella.n.01",
+    "relation": "hypernym",
+    "target": "bacteria.n.01"
+  },
+  {
+    "source": "danger.n.03",
+    "relation": "Antonym",
+    "target": "conceptnet:safety:1789"
+  },
+  {
+    "source": "conceptnet:anyone:1682",
+    "relation": "CapableOf",
+    "target": "conceptnet:iron_clothes:1883"
+  },
+  {
+    "source": "conceptnet:science:1616",
+    "relation": "SimilarTo",
+    "target": "conceptnet:art:1286"
+  },
+  {
+    "source": "conceptnet:bird:1238",
+    "relation": "CapableOf",
+    "target": "conceptnet:fly:1244"
+  },
+  {
+    "source": "company_operator.n.01",
+    "relation": "hypernym",
+    "target": "operator.n.02"
+  },
+  {
+    "source": "blaster.n.01",
+    "relation": "hypernym",
+    "target": "workman.n.01"
+  },
+  {
+    "source": "organ.n.01",
+    "relation": "hyponym",
+    "target": "organelle.n.01"
+  },
+  {
+    "source": "conceptnet:steak:1814",
+    "relation": "SimilarTo",
+    "target": "filet.n.03"
+  },
+  {
+    "source": "bight.n.04",
+    "relation": "HasContext",
+    "target": "conceptnet:geography:1277"
+  },
+  {
+    "source": "repair:builder:11",
+    "relation": "CapableOf",
+    "target": "conceptnet:bridge_river:1757"
+  },
+  {
+    "source": "conceptnet:fire:1362",
+    "relation": "HasContext",
+    "target": "conceptnet:economics:1668"
+  },
+  {
+    "source": "derivation.n.01",
+    "relation": "HasContext",
+    "target": "medicine.n.02"
+  },
+  {
+    "source": "tower.n.01",
+    "relation": "HasProperty",
+    "target": "a_manbuilt"
+  },
+  {
+    "source": "box_kite.n.01",
+    "relation": "hypernym",
+    "target": "kite.n.03"
+  },
+  {
+    "source": "cord.n.04",
+    "relation": "hypernym",
+    "target": "fabric.n.01"
+  },
+  {
+    "source": "grave.n.02",
+    "relation": "hypernym",
+    "target": "topographic_point.n.01"
+  },
+  {
+    "source": "conceptnet:eating_apple:1567",
+    "relation": "UsedFor",
+    "target": "fiber.n.03"
+  },
+  {
+    "source": "conceptnet:bird:1238",
+    "relation": "HasProperty",
+    "target": "a_flying"
+  },
+  {
+    "source": "shoulder.n.03",
+    "relation": "HasContext",
+    "target": "conceptnet:topography:1863"
+  },
+  {
+    "source": "home.n.06",
+    "relation": "RelatedTo",
+    "target": "heart.n.02"
+  },
+  {
+    "source": "conceptnet:cotton:1250",
+    "relation": "HasContext",
+    "target": "conceptnet:textiles:1663"
+  },
+  {
+    "source": "conceptnet:fire:1362",
+    "relation": "HasProperty",
+    "target": "a_hot"
+  },
+  {
+    "source": "princess.n.01",
+    "relation": "SimilarTo",
+    "target": "prince.n.01"
+  },
+  {
+    "source": "head.n.04",
+    "relation": "Antonym",
+    "target": "tail.n.01"
+  },
+  {
+    "source": "worker.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:go_home:1684"
+  },
+  {
+    "source": "favorite_son.n.01",
+    "relation": "hypernym",
+    "target": "campaigner.n.01"
+  },
+  {
+    "source": "rwanda.n.01",
+    "relation": "RelatedTo",
+    "target": "bantu.n.01"
+  },
+  {
+    "source": "sir.n.02",
+    "relation": "SimilarTo",
+    "target": "conceptnet:dame:1514"
+  },
+  {
+    "source": "homopterous_insect.n.01",
+    "relation": "RelatedTo",
+    "target": "insect.n.01"
+  },
+  {
+    "source": "patriarch.n.02",
+    "relation": "Antonym",
+    "target": "matriarch.n.01"
+  },
+  {
+    "source": "conceptnet:temple:1414",
+    "relation": "HasContext",
+    "target": "conceptnet:judaism:1747"
+  },
+  {
+    "source": "segment.n.02",
+    "relation": "hypernym",
+    "target": "part.n.03"
+  },
+  {
+    "source": "iceland_moss.n.01",
+    "relation": "RelatedTo",
+    "target": "lichen.n.02"
+  },
+  {
+    "source": "conceptnet:jacket:1465",
+    "relation": "AtLocation",
+    "target": "conceptnet:closet:1314"
+  },
+  {
+    "source": "eatage.n.01",
+    "relation": "AtLocation",
+    "target": "tree.n.01"
+  },
+  {
+    "source": "conceptnet:loft:1533",
+    "relation": "AtLocation",
+    "target": "conceptnet:apartment:1412"
+  },
+  {
+    "source": "deputy.n.02",
+    "relation": "HasContext",
+    "target": "conceptnet:british:1211"
+  },
+  {
+    "source": "conceptnet:gold:1464",
+    "relation": "HasContext",
+    "target": "conceptnet:programming:1495"
+  },
+  {
+    "source": "ration.n.01",
+    "relation": "hyponym",
+    "target": "field_ration.n.01"
+  },
+  {
+    "source": "repair:student:13",
+    "relation": "CapableOf",
+    "target": "conceptnet:chair_committee:1758"
+  },
+  {
+    "source": "towel.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:closet:1314"
+  },
+  {
+    "source": "conceptnet:ship:1242",
+    "relation": "AtLocation",
+    "target": "conceptnet:ocean:1262"
+  },
+  {
+    "source": "conceptnet:lighting_fire:1871",
+    "relation": "UsedFor",
+    "target": "conceptnet:celebrating:1678"
+  },
+  {
+    "source": "thing.n.12",
+    "relation": "HasContext",
+    "target": "conceptnet:historical:1207"
+  },
+  {
+    "source": "life.n.10",
+    "relation": "SimilarTo",
+    "target": "general.n.01"
+  },
+  {
+    "source": "ball.n.06",
+    "relation": "CapableOf",
+    "target": "plaything.n.01"
+  },
+  {
+    "source": "conceptnet:banking:1857",
+    "relation": "HasContext",
+    "target": "conceptnet:aviation:1330"
+  },
+  {
+    "source": "footbridge.n.01",
+    "relation": "RelatedTo",
+    "target": "bridge.n.01"
+  },
+  {
+    "source": "batter.n.02",
+    "relation": "HasContext",
+    "target": "conceptnet:cricket:1248"
+  },
+  {
+    "source": "amorphous_shape.n.01",
+    "relation": "hyponym",
+    "target": "space.n.02"
+  },
+  {
+    "source": "oil_cake.n.01",
+    "relation": "RelatedTo",
+    "target": "residue.n.01"
+  },
+  {
+    "source": "common_roundworm.n.01",
+    "relation": "hypernym",
+    "target": "nematode.n.01"
+  },
+  {
+    "source": "axis.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:atlas:1728"
+  },
+  {
+    "source": "conceptnet:global:1647",
+    "relation": "Antonym",
+    "target": "domestic.n.01"
+  },
+  {
+    "source": "point.n.02",
+    "relation": "hyponym",
+    "target": "beginning.n.04"
+  },
+  {
+    "source": "moneran.n.01",
+    "relation": "hypernym",
+    "target": "microorganism.n.01"
+  },
+  {
+    "source": "lady.n.03",
+    "relation": "UsedFor",
+    "target": "conceptnet:gentleman:1395"
+  },
+  {
+    "source": "therapist.n.01",
+    "relation": "hyponym",
+    "target": "physical_therapist.n.01"
+  },
+  {
+    "source": "conceptnet:label:1943",
+    "relation": "SimilarTo",
+    "target": "cubbyhole.n.01"
+  },
+  {
+    "source": "evaporated_milk.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:can:1290"
+  },
+  {
+    "source": "conceptnet:citizen:1380",
+    "relation": "Antonym",
+    "target": "subject.n.02"
+  },
+  {
+    "source": "puppet.n.03",
+    "relation": "HasContext",
+    "target": "conceptnet:engineering:1278"
+  },
+  {
+    "source": "model.n.03",
+    "relation": "RelatedTo",
+    "target": "influence.n.05"
+  },
+  {
+    "source": "conceptnet:cranefly:1940",
+    "relation": "SimilarTo",
+    "target": "leatherjacket.n.03"
+  },
+  {
+    "source": "flamingo_flower.n.01",
+    "relation": "RelatedTo",
+    "target": "anthurium.n.01"
+  },
+  {
+    "source": "virus.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:reproduce:1565"
+  },
+  {
+    "source": "arch.n.04",
+    "relation": "UsedFor",
+    "target": "conceptnet:support:1271"
+  },
+  {
+    "source": "reproductive_cell.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:cytology:1318"
+  },
+  {
+    "source": "pole.n.06",
+    "relation": "Antonym",
+    "target": "conceptnet:zero:1645"
+  },
+  {
+    "source": "conceptnet:kitchen_table:1765",
+    "relation": "UsedFor",
+    "target": "breakfast.n.01"
+  },
+  {
+    "source": "conceptnet:tiger:1581",
+    "relation": "HasProperty",
+    "target": "a_striped"
+  },
+  {
+    "source": "conceptnet:backhand:1794",
+    "relation": "Antonym",
+    "target": "palm.n.01"
+  },
+  {
+    "source": "conceptnet:auditorium:1624",
+    "relation": "UsedFor",
+    "target": "assembly.n.05"
+  },
+  {
+    "source": "believer.n.02",
+    "relation": "AtLocation",
+    "target": "conceptnet:church:1303"
+  },
+  {
+    "source": "conceptnet:long:1458",
+    "relation": "SimilarTo",
+    "target": "latissimus_dorsi.n.01"
+  },
+  {
+    "source": "bivalve.n.01",
+    "relation": "SimilarTo",
+    "target": "gastropod.n.01"
+  },
+  {
+    "source": "antifreeze.n.01",
+    "relation": "hypernym",
+    "target": "liquid.n.01"
+  },
+  {
+    "source": "flour.n.01",
+    "relation": "SimilarTo",
+    "target": "meal.n.01"
+  },
+  {
+    "source": "conceptnet:barn:1578",
+    "relation": "AtLocation",
+    "target": "conceptnet:country:1215"
+  },
+  {
+    "source": "arbovirus.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:robovirus:1723"
+  },
+  {
+    "source": "sir.n.02",
+    "relation": "SimilarTo",
+    "target": "conceptnet:ma_am:1809"
+  },
+  {
+    "source": "bus_route.n.01",
+    "relation": "RelatedTo",
+    "target": "path.n.03"
+  },
+  {
+    "source": "frill.n.03",
+    "relation": "HasContext",
+    "target": "conceptnet:zoology:1221"
+  },
+  {
+    "source": "natural_depression.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:biology:1234"
+  },
+  {
+    "source": "chlorine_water.n.01",
+    "relation": "RelatedTo",
+    "target": "bleaching_agent.n.01"
+  },
+  {
+    "source": "repair:parking_inspectors:39",
+    "relation": "UsedFor",
+    "target": "conceptnet:footwear:1861"
+  },
+  {
+    "source": "conceptnet:courant:1919",
+    "relation": "HasContext",
+    "target": "conceptnet:heraldry:1664"
+  },
+  {
+    "source": "gingerol.n.01",
+    "relation": "hypernym",
+    "target": "chemical_irritant.n.01"
+  },
+  {
+    "source": "conceptnet:play:1236",
+    "relation": "HasContext",
+    "target": "conceptnet:film:1461"
+  },
+  {
+    "source": "menu.n.02",
+    "relation": "UsedFor",
+    "target": "conceptnet:customer:1769"
+  },
+  {
+    "source": "conceptnet:silk:1311",
+    "relation": "HasContext",
+    "target": "conceptnet:horse_racing:1846"
+  },
+  {
+    "source": "conceptnet:plate:1214",
+    "relation": "AtLocation",
+    "target": "restaurant.n.01"
+  },
+  {
+    "source": "bridge.n.01",
+    "relation": "RelatedTo",
+    "target": "water.n.06"
+  },
+  {
+    "source": "conceptnet:internet:1288",
+    "relation": "CapableOf",
+    "target": "conceptnet:market:1377"
+  },
+  {
+    "source": "housekeeper.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:iron_clothes:1883"
+  },
+  {
+    "source": "aconite.n.01",
+    "relation": "hyponym",
+    "target": "monkshood.n.01"
+  },
+  {
+    "source": "papaya_juice.n.01",
+    "relation": "hypernym",
+    "target": "juice.n.01"
+  },
+  {
+    "source": "thing.n.12",
+    "relation": "CapableOf",
+    "target": "conceptnet:fall_down:1621"
+  },
+  {
+    "source": "pole.n.06",
+    "relation": "HasContext",
+    "target": "conceptnet:electricity:1387"
+  },
+  {
+    "source": "gore.n.03",
+    "relation": "RelatedTo",
+    "target": "horn.n.02"
+  },
+  {
+    "source": "water_vascular_system.n.01",
+    "relation": "RelatedTo",
+    "target": "echinoderm.n.01"
+  },
+  {
+    "source": "christian.n.01",
+    "relation": "HasProperty",
+    "target": "religious.n.01"
+  },
+  {
+    "source": "anatoxin.n.01",
+    "relation": "hypernym",
+    "target": "antigen.n.01"
+  },
+  {
+    "source": "conceptnet:door:1336",
+    "relation": "AtLocation",
+    "target": "conceptnet:subway:1925"
+  },
+  {
+    "source": "cape.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:ity:1808"
+  },
+  {
+    "source": "conceptnet:connective_tissue:1591",
+    "relation": "SimilarTo",
+    "target": "nervous_tissue.n.01"
+  },
+  {
+    "source": "water.n.06",
+    "relation": "HasProperty",
+    "target": "liquid.n.01"
+  },
+  {
+    "source": "namibia.n.01",
+    "relation": "RelatedTo",
+    "target": "south_africa.n.01"
+  },
+  {
+    "source": "conceptnet:people:1233",
+    "relation": "CapableOf",
+    "target": "conceptnet:board_ship:1876"
+  },
+  {
+    "source": "conceptnet:madam:1810",
+    "relation": "SimilarTo",
+    "target": "sir.n.02"
+  },
+  {
+    "source": "powdered_milk.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:india:1487"
+  },
+  {
+    "source": "elected_official.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:chair_meeting:1683"
+  },
+  {
+    "source": "dog.n.01",
+    "relation": "hyponym",
+    "target": "poodle.n.01"
+  },
+  {
+    "source": "ovolo.n.01",
+    "relation": "RelatedTo",
+    "target": "beading.n.02"
+  },
+  {
+    "source": "silkworm.n.02",
+    "relation": "hypernym",
+    "target": "caterpillar.n.01"
+  },
+  {
+    "source": "young_mammal.n.01",
+    "relation": "hyponym",
+    "target": "foal.n.01"
+  },
+  {
+    "source": "range.n.04",
+    "relation": "hypernym",
+    "target": "geological_formation.n.01"
+  },
+  {
+    "source": "homopterous_insect.n.01",
+    "relation": "hypernym",
+    "target": "insect.n.01"
+  },
+  {
+    "source": "palm.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:hardel:1804"
+  },
+  {
+    "source": "conceptnet:planet:1338",
+    "relation": "UsedFor",
+    "target": "conceptnet:living:1260"
+  },
+  {
+    "source": "conceptnet:pain:1424",
+    "relation": "AtLocation",
+    "target": "back.n.01"
+  },
+  {
+    "source": "conceptnet:poddy:1832",
+    "relation": "HasContext",
+    "target": "victoria.n.03"
+  },
+  {
+    "source": "religious_leader.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:offer_solace:1901"
+  },
+  {
+    "source": "thistle.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:heraldiccharge:1599"
+  },
+  {
+    "source": "tom.n.02",
+    "relation": "HasProperty",
+    "target": "conceptnet:nuts:1772"
+  },
+  {
+    "source": "chiton.n.02",
+    "relation": "SimilarTo",
+    "target": "conceptnet:toga:1818"
+  },
+  {
+    "source": "worker.n.01",
+    "relation": "hyponym",
+    "target": "employee.n.01"
+  },
+  {
+    "source": "conceptnet:cotton:1250",
+    "relation": "UsedFor",
+    "target": "conceptnet:sewing:1632"
+  },
+  {
+    "source": "expert.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:chess:1270"
+  },
+  {
+    "source": "conceptnet:fork:1423",
+    "relation": "UsedFor",
+    "target": "conceptnet:eat_vegetables:1785"
+  },
+  {
+    "source": "conceptnet:passageway:1508",
+    "relation": "UsedFor",
+    "target": "conceptnet:walk:1310"
+  },
+  {
+    "source": "prince_of_wales.n.01",
+    "relation": "hypernym",
+    "target": "prince.n.01"
+  },
+  {
+    "source": "conceptnet:lake:1352",
+    "relation": "AtLocation",
+    "target": "conceptnet:park:1471"
+  },
+  {
+    "source": "conceptnet:view:1716",
+    "relation": "Antonym",
+    "target": "model.n.03"
+  },
+  {
+    "source": "pilot.n.01",
+    "relation": "HasProperty",
+    "target": "a_flying"
+  },
+  {
+    "source": "meal.n.01",
+    "relation": "hyponym",
+    "target": "bite.n.04"
+  },
+  {
+    "source": "lord.n.03",
+    "relation": "RelatedTo",
+    "target": "influence.n.05"
+  },
+  {
+    "source": "wheat_flour.n.01",
+    "relation": "hypernym",
+    "target": "flour.n.01"
+  },
+  {
+    "source": "concoction.n.01",
+    "relation": "hyponym",
+    "target": "batter.n.02"
+  },
+  {
+    "source": "lamb.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:finance:1388"
+  },
+  {
+    "source": "conceptnet:horse:1241",
+    "relation": "AtLocation",
+    "target": "conceptnet:movie:1585"
+  },
+  {
+    "source": "conceptnet:writing_instrument:1762",
+    "relation": "UsedFor",
+    "target": "marking.n.02"
+  },
+  {
+    "source": "water.n.06",
+    "relation": "Antonym",
+    "target": "ice.n.02"
+  },
+  {
+    "source": "trepang.n.01",
+    "relation": "RelatedTo",
+    "target": "sea_cucumber.n.01"
+  },
+  {
+    "source": "conceptnet:cake:1267",
+    "relation": "HasProperty",
+    "target": "sweet.n.03"
+  },
+  {
+    "source": "conceptnet:purify:1936",
+    "relation": "Antonym",
+    "target": "defile.n.01"
+  },
+  {
+    "source": "conceptnet:gourmet:1726",
+    "relation": "RelatedTo",
+    "target": "a_expensive"
+  },
+  {
+    "source": "conceptnet:art:1286",
+    "relation": "UsedFor",
+    "target": "conceptnet:education:1604"
+  },
+  {
+    "source": "conceptnet:flat:1295",
+    "relation": "Antonym",
+    "target": "conceptnet:sharp:1415"
+  },
+  {
+    "source": "a_quick",
+    "relation": "Antonym",
+    "target": "a_slow"
+  },
+  {
+    "source": "crack.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:computing:1203"
+  },
+  {
+    "source": "conceptnet:mug:1687",
+    "relation": "AtLocation",
+    "target": "conceptnet:cupboard:1454"
+  },
+  {
+    "source": "whipping_top.n.01",
+    "relation": "hypernym",
+    "target": "top.n.08"
+  },
+  {
+    "source": "conceptnet:weapon:1444",
+    "relation": "UsedFor",
+    "target": "protective_covering.n.01"
+  },
+  {
+    "source": "lady.n.03",
+    "relation": "hypernym",
+    "target": "female_aristocrat.n.01"
+  },
+  {
+    "source": "master.n.09",
+    "relation": "HasContext",
+    "target": "conceptnet:legal:1224"
+  },
+  {
+    "source": "drug.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:bottle:1353"
+  },
+  {
+    "source": "a_tall",
+    "relation": "Antonym",
+    "target": "small.n.01"
+  },
+  {
+    "source": "point_lace.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:write_poem:1911"
+  },
+  {
+    "source": "salad.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:green:1312"
+  },
+  {
+    "source": "specialist.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:generalist:1799"
+  },
+  {
+    "source": "conceptnet:bee:1509",
+    "relation": "CapableOf",
+    "target": "conceptnet:fly:1244"
+  },
+  {
+    "source": "bridesmaid.n.01",
+    "relation": "RelatedTo",
+    "target": "groomsman.n.01"
+  },
+  {
+    "source": "nubian.n.01",
+    "relation": "hypernym",
+    "target": "egyptian.n.01"
+  },
+  {
+    "source": "conceptnet:boat:1280",
+    "relation": "UsedFor",
+    "target": "conceptnet:fishing:1460"
+  },
+  {
+    "source": "tooth.n.02",
+    "relation": "UsedFor",
+    "target": "conceptnet:eating:1257"
+  },
+  {
+    "source": "wing.n.01",
+    "relation": "HasProperty",
+    "target": "a_flying"
+  },
+  {
+    "source": "hunk.n.02",
+    "relation": "RelatedTo",
+    "target": "patch.n.03"
+  },
+  {
+    "source": "lateral_line.n.01",
+    "relation": "RelatedTo",
+    "target": "fish.n.01"
+  },
+  {
+    "source": "conceptnet:bitter:1643",
+    "relation": "Antonym",
+    "target": "sweet.n.03"
+  },
+  {
+    "source": "conceptnet:embroidery:1592",
+    "relation": "SimilarTo",
+    "target": "point_lace.n.01"
+  },
+  {
+    "source": "pectoral.n.01",
+    "relation": "hypernym",
+    "target": "skeletal_muscle.n.01"
+  },
+  {
+    "source": "conceptnet:mouth:1230",
+    "relation": "UsedFor",
+    "target": "conceptnet:kiss:1754"
+  },
+  {
+    "source": "burl.n.02",
+    "relation": "RelatedTo",
+    "target": "hunk.n.02"
+  },
+  {
+    "source": "conceptnet:flowers:1590",
+    "relation": "HasProperty",
+    "target": "conceptnet:white:1268"
+  },
+  {
+    "source": "medicine.n.02",
+    "relation": "SimilarTo",
+    "target": "drug.n.01"
+  },
+  {
+    "source": "soup.n.01",
+    "relation": "HasProperty",
+    "target": "a_hot"
+  },
+  {
+    "source": "bolete.n.01",
+    "relation": "hyponym",
+    "target": "boletus_luridus.n.01"
+  },
+  {
+    "source": "swing.n.02",
+    "relation": "hypernym",
+    "target": "plaything.n.01"
+  },
+  {
+    "source": "water_vascular_system.n.01",
+    "relation": "hypernym",
+    "target": "vascular_system.n.01"
+  },
+  {
+    "source": "agent.n.03",
+    "relation": "Antonym",
+    "target": "conceptnet:patient:1545"
+  },
+  {
+    "source": "conceptnet:vacation:1623",
+    "relation": "UsedFor",
+    "target": "conceptnet:relax:1570"
+  },
+  {
+    "source": "cavity.n.02",
+    "relation": "UsedFor",
+    "target": "conceptnet:fill:1348"
+  },
+  {
+    "source": "liqueur.n.01",
+    "relation": "hypernym",
+    "target": "alcohol.n.01"
+  },
+  {
+    "source": "pilot.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:fly:1244"
+  },
+  {
+    "source": "gastropod.n.01",
+    "relation": "SimilarTo",
+    "target": "bivalve.n.01"
+  },
+  {
+    "source": "conceptnet:ma_am:1809",
+    "relation": "SimilarTo",
+    "target": "conceptnet:miss:1549"
+  },
+  {
+    "source": "aculeus.n.01",
+    "relation": "hypernym",
+    "target": "plant_process.n.01"
+  },
+  {
+    "source": "air_plant.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:biology:1234"
+  },
+  {
+    "source": "leg.n.07",
+    "relation": "Antonym",
+    "target": "sleeve.n.01"
+  },
+  {
+    "source": "conceptnet:story:1637",
+    "relation": "CapableOf",
+    "target": "conceptnet:floor:1306"
+  },
+  {
+    "source": "conceptnet:mountain:1302",
+    "relation": "AtLocation",
+    "target": "austria.n.01"
+  },
+  {
+    "source": "conceptnet:web:1351",
+    "relation": "HasContext",
+    "target": "conceptnet:manufacturing:1858"
+  },
+  {
+    "source": "animal.n.01",
+    "relation": "hypernym",
+    "target": "organism.n.01"
+  },
+  {
+    "source": "controlled_substance.n.01",
+    "relation": "hypernym",
+    "target": "drug.n.01"
+  },
+  {
+    "source": "conceptnet:star:1375",
+    "relation": "HasProperty",
+    "target": "a_pointy"
+  },
+  {
+    "source": "variable.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:constant:1546"
+  },
+  {
+    "source": "air_plant.n.01",
+    "relation": "hyponym",
+    "target": "aeschynanthus.n.01"
+  },
+  {
+    "source": "conceptnet:energy:1273",
+    "relation": "HasContext",
+    "target": "conceptnet:video_games:1435"
+  },
+  {
+    "source": "diplococcus.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:microbiology:1405"
+  },
+  {
+    "source": "specialist.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:conference:1588"
+  },
+  {
+    "source": "conceptnet:cold:1392",
+    "relation": "Antonym",
+    "target": "a_hot"
+  },
+  {
+    "source": "organelle.n.01",
+    "relation": "hyponym",
+    "target": "nucleus.n.01"
+  },
+  {
+    "source": "desk_clerk.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:motel:1630"
+  },
+  {
+    "source": "arbiter.n.02",
+    "relation": "HasContext",
+    "target": "conceptnet:american_football:1838"
+  },
+  {
+    "source": "double_knit.n.01",
+    "relation": "hypernym",
+    "target": "knit.n.01"
+  },
+  {
+    "source": "politician.n.02",
+    "relation": "hyponym",
+    "target": "socialist.n.01"
+  },
+  {
+    "source": "foodstuff.n.02",
+    "relation": "hyponym",
+    "target": "concoction.n.01"
+  },
+  {
+    "source": "salesperson.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:cloud_judgement:1893"
+  },
+  {
+    "source": "ink.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:printing:1297"
+  },
+  {
+    "source": "medicine.n.02",
+    "relation": "RelatedTo",
+    "target": "drug.n.01"
+  },
+  {
+    "source": "specialist.n.01",
+    "relation": "hyponym",
+    "target": "attache.n.01"
+  },
+  {
+    "source": "igbo.n.01",
+    "relation": "RelatedTo",
+    "target": "nigeria.n.01"
+  },
+  {
+    "source": "conceptnet:flowers:1590",
+    "relation": "AtLocation",
+    "target": "conceptnet:park:1471"
+  },
+  {
+    "source": "fragment.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:grammar:1407"
+  },
+  {
+    "source": "paring.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:boring:1627"
+  },
+  {
+    "source": "conceptnet:gentleman:1395",
+    "relation": "UsedFor",
+    "target": "lady.n.03"
+  },
+  {
+    "source": "gravy.n.02",
+    "relation": "AtLocation",
+    "target": "dinner.n.01"
+  },
+  {
+    "source": "officeholder.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:military:1210"
+  },
+  {
+    "source": "bell_tower.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:steeple:1724"
+  },
+  {
+    "source": "conceptnet:scene:1532",
+    "relation": "CapableOf",
+    "target": "location.n.01"
+  },
+  {
+    "source": "igniter.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:starting_fire:1752"
+  },
+  {
+    "source": "conceptnet:garbage:1646",
+    "relation": "Antonym",
+    "target": "artifact.n.01"
+  },
+  {
+    "source": "custard.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:refrigerator:1282"
+  },
+  {
+    "source": "sleeve.n.01",
+    "relation": "hypernym",
+    "target": "cloth_covering.n.01"
+  },
+  {
+    "source": "conceptnet:glass:1285",
+    "relation": "HasProperty",
+    "target": "conceptnet:green:1312"
+  },
+  {
+    "source": "tendon.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:twine:1593"
+  },
+  {
+    "source": "conceptnet:hospital:1426",
+    "relation": "HasProperty",
+    "target": "conceptnet:clean:1457"
+  },
+  {
+    "source": "conceptnet:concretization:1644",
+    "relation": "Antonym",
+    "target": "abstraction.n.06"
+  },
+  {
+    "source": "hairdresser.n.01",
+    "relation": "hypernym",
+    "target": "craftsman.n.03"
+  },
+  {
+    "source": "lady.n.03",
+    "relation": "RelatedTo",
+    "target": "abdomen.n.01"
+  },
+  {
+    "source": "conceptnet:zero:1645",
+    "relation": "Antonym",
+    "target": "pole.n.06"
+  },
+  {
+    "source": "aristocrat.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:plebeian:1481"
+  },
+  {
+    "source": "evaporated_milk.n.01",
+    "relation": "hypernym",
+    "target": "milk.n.01"
+  },
+  {
+    "source": "conceptnet:rail:1554",
+    "relation": "AtLocation",
+    "target": "conceptnet:subway:1925"
+  },
+  {
+    "source": "blob.n.01",
+    "relation": "RelatedTo",
+    "target": "fish.n.01"
+  },
+  {
+    "source": "cave.n.01",
+    "relation": "RelatedTo",
+    "target": "hole.n.01"
+  },
+  {
+    "source": "operator.n.02",
+    "relation": "CapableOf",
+    "target": "conceptnet:talk_on_phone:1897"
+  },
+  {
+    "source": "conceptnet:mountain:1302",
+    "relation": "AtLocation",
+    "target": "conceptnet:surface_of_earth:1455"
+  },
+  {
+    "source": "conceptnet:rubber_stamp:1688",
+    "relation": "AtLocation",
+    "target": "conceptnet:office:1227"
+  },
+  {
+    "source": "conceptnet:helping:1595",
+    "relation": "CapableOf",
+    "target": "conceptnet:good:1470"
+  },
+  {
+    "source": "conceptnet:pilot_light:1812",
+    "relation": "SimilarTo",
+    "target": "igniter.n.01"
+  },
+  {
+    "source": "conceptnet:twine:1593",
+    "relation": "SimilarTo",
+    "target": "tendon.n.01"
+  },
+  {
+    "source": "conceptnet:spice:1547",
+    "relation": "SimilarTo",
+    "target": "herb.n.01"
+  },
+  {
+    "source": "conceptnet:potato:1324",
+    "relation": "AtLocation",
+    "target": "conceptnet:apartment:1412"
+  },
+  {
+    "source": "hotel.n.01",
+    "relation": "RelatedTo",
+    "target": "range.n.04"
+  },
+  {
+    "source": "liquid.n.01",
+    "relation": "hyponym",
+    "target": "antifreeze.n.01"
+  },
+  {
+    "source": "foot.n.01",
+    "relation": "RelatedTo",
+    "target": "process.n.05"
+  },
+  {
+    "source": "hay.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:horses:1768"
+  },
+  {
+    "source": "natural_depression.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:economics:1668"
+  },
+  {
+    "source": "conceptnet:mare:1652",
+    "relation": "SimilarTo",
+    "target": "foal.n.01"
+  },
+  {
+    "source": "conceptnet:car:1371",
+    "relation": "CapableOf",
+    "target": "conceptnet:crash:1654"
+  },
+  {
+    "source": "fuel.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:plane:1339"
+  },
+  {
+    "source": "bleaching_agent.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:cleaning:1626"
+  },
+  {
+    "source": "conceptnet:anyone:1682",
+    "relation": "CapableOf",
+    "target": "aquatic_plant.n.01"
+  },
+  {
+    "source": "believer.n.02",
+    "relation": "CapableOf",
+    "target": "conceptnet:pray:1677"
+  },
+  {
+    "source": "cap.n.04",
+    "relation": "HasContext",
+    "target": "medicine.n.02"
+  },
+  {
+    "source": "conceptnet:gentleman:1395",
+    "relation": "SimilarTo",
+    "target": "lady.n.03"
+  },
+  {
+    "source": "campaigner.n.01",
+    "relation": "hypernym",
+    "target": "politician.n.02"
+  },
+  {
+    "source": "conceptnet:thread:1317",
+    "relation": "UsedFor",
+    "target": "conceptnet:sewing:1632"
+  },
+  {
+    "source": "parasympathetic_nervous_system.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:sympathetic:1792"
+  },
+  {
+    "source": "celestial_body.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:religion:1409"
+  },
+  {
+    "source": "doll.n.01",
+    "relation": "UsedFor",
+    "target": "decoration.n.01"
+  },
+  {
+    "source": "conceptnet:a:1342",
+    "relation": "CapableOf",
+    "target": "conceptnet:container:1283"
+  },
+  {
+    "source": "conceptnet:airport:1540",
+    "relation": "AtLocation",
+    "target": "conceptnet:suitcase:1538"
+  },
+  {
+    "source": "pyramidal_tract.n.01",
+    "relation": "RelatedTo",
+    "target": "spinal_cord.n.01"
+  },
+  {
+    "source": "fabian.n.01",
+    "relation": "RelatedTo",
+    "target": "socialist.n.01"
+  },
+  {
+    "source": "conceptnet:walk:1310",
+    "relation": "Antonym",
+    "target": "conceptnet:run:1237"
+  },
+  {
+    "source": "corn.n.03",
+    "relation": "UsedFor",
+    "target": "nutriment.n.01"
+  },
+  {
+    "source": "conceptnet:wedding:1451",
+    "relation": "HasContext",
+    "target": "conceptnet:humorous:1519"
+  },
+  {
+    "source": "head.n.04",
+    "relation": "Antonym",
+    "target": "subordinate.n.01"
+  },
+  {
+    "source": "domestic.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:foreign:1544"
+  },
+  {
+    "source": "interior_designer.n.01",
+    "relation": "hypernym",
+    "target": "specialist.n.01"
+  },
+  {
+    "source": "aconite.n.01",
+    "relation": "hypernym",
+    "target": "poisonous_plant.n.01"
+  },
+  {
+    "source": "conceptnet:pitcher:1383",
+    "relation": "CapableOf",
+    "target": "conceptnet:container:1283"
+  },
+  {
+    "source": "domestic_animal.n.01",
+    "relation": "hyponym",
+    "target": "dog.n.01"
+  },
+  {
+    "source": "invertebrate.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:vertebrate:1355"
+  },
+  {
+    "source": "shelter.n.02",
+    "relation": "AtLocation",
+    "target": "tree.n.01"
+  },
+  {
+    "source": "piglet.n.01",
+    "relation": "HasProperty",
+    "target": "young.n.01"
+  },
+  {
+    "source": "bluejacket.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:captain_ship:1680"
+  },
+  {
+    "source": "conceptnet:kitten:1337",
+    "relation": "AtLocation",
+    "target": "conceptnet:apartment:1412"
+  },
+  {
+    "source": "conceptnet:chunk:1430",
+    "relation": "SimilarTo",
+    "target": "hunk.n.02"
+  },
+  {
+    "source": "cub.n.03",
+    "relation": "HasProperty",
+    "target": "small.n.01"
+  },
+  {
+    "source": "conceptnet:human:1213",
+    "relation": "HasProperty",
+    "target": "conceptnet:good:1470"
+  },
+  {
+    "source": "conceptnet:soccer:1389",
+    "relation": "HasProperty",
+    "target": "conceptnet:sport:1527"
+  },
+  {
+    "source": "bollworm.n.01",
+    "relation": "RelatedTo",
+    "target": "larva.n.01"
+  },
+  {
+    "source": "alcohol.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:bar:1219"
+  },
+  {
+    "source": "workman.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:complete_job:1902"
+  },
+  {
+    "source": "bread.n.01",
+    "relation": "RelatedTo",
+    "target": "butter.n.01"
+  },
+  {
+    "source": "conceptnet:dissociate:1640",
+    "relation": "Antonym",
+    "target": "associate.n.03"
+  },
+  {
+    "source": "land.n.04",
+    "relation": "AtLocation",
+    "target": "tree.n.01"
+  },
+  {
+    "source": "sternum.n.01",
+    "relation": "RelatedTo",
+    "target": "bone.n.01"
+  },
+  {
+    "source": "rock.n.01",
+    "relation": "RelatedTo",
+    "target": "birthplace.n.02"
+  },
+  {
+    "source": "repair:opposite_of_defunct:33",
+    "relation": "HasProperty",
+    "target": "conceptnet:extant:1937"
+  },
+  {
+    "source": "shape.n.02",
+    "relation": "RelatedTo",
+    "target": "geological_formation.n.01"
+  },
+  {
+    "source": "line.n.11",
+    "relation": "hyponym",
+    "target": "great_circle.n.01"
+  },
+  {
+    "source": "worker.n.01",
+    "relation": "hyponym",
+    "target": "driver.n.02"
+  },
+  {
+    "source": "conceptnet:ankle:1594",
+    "relation": "SimilarTo",
+    "target": "spat.n.03"
+  },
+  {
+    "source": "planula.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:zoology:1221"
+  },
+  {
+    "source": "water.n.06",
+    "relation": "RelatedTo",
+    "target": "life.n.10"
+  },
+  {
+    "source": "bacteria.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:mouth:1230"
+  },
+  {
+    "source": "section.n.13",
+    "relation": "HasContext",
+    "target": "conceptnet:british:1211"
+  },
+  {
+    "source": "living_thing.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:experience_pain:1894"
+  },
+  {
+    "source": "conceptnet:dogs:1569",
+    "relation": "HasProperty",
+    "target": "conceptnet:mean:1368"
+  },
+  {
+    "source": "bull.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:charge:1345"
+  },
+  {
+    "source": "oblique_angle.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:geometry:1222"
+  },
+  {
+    "source": "bunt.n.03",
+    "relation": "RelatedTo",
+    "target": "sail.n.01"
+  },
+  {
+    "source": "conceptnet:president:1393",
+    "relation": "CapableOf",
+    "target": "elected_official.n.01"
+  },
+  {
+    "source": "sea_anemone.n.01",
+    "relation": "AtLocation",
+    "target": "topographic_point.n.01"
+  },
+  {
+    "source": "conceptnet:apogee:1715",
+    "relation": "HasContext",
+    "target": "conceptnet:astrology:1434"
+  },
+  {
+    "source": "conceptnet:movie:1585",
+    "relation": "UsedFor",
+    "target": "conceptnet:entertainment:1601"
+  },
+  {
+    "source": "conceptnet:human:1213",
+    "relation": "CapableOf",
+    "target": "conceptnet:iron_clothes:1883"
+  },
+  {
+    "source": "conceptnet:gold:1464",
+    "relation": "HasProperty",
+    "target": "a_expensive"
+  },
+  {
+    "source": "conceptnet:boat:1280",
+    "relation": "HasContext",
+    "target": "conceptnet:politics:1333"
+  },
+  {
+    "source": "wolfsbane.n.01",
+    "relation": "RelatedTo",
+    "target": "aconitum.n.01"
+  },
+  {
+    "source": "brain.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:thinking:1528"
+  },
+  {
+    "source": "building.n.01",
+    "relation": "hyponym",
+    "target": "place_of_worship.n.01"
+  },
+  {
+    "source": "conceptnet:apogee:1715",
+    "relation": "Antonym",
+    "target": "periapsis.n.01"
+  },
+  {
+    "source": "variable.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:astronomy:1240"
+  },
+  {
+    "source": "leatherjacket.n.03",
+    "relation": "RelatedTo",
+    "target": "fish.n.01"
+  },
+  {
+    "source": "conceptnet:she_cat:1788",
+    "relation": "Antonym",
+    "target": "tom.n.02"
+  },
+  {
+    "source": "core.n.02",
+    "relation": "RelatedTo",
+    "target": "worm.n.01"
+  },
+  {
+    "source": "forewing.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:hind_wing:1714"
+  },
+  {
+    "source": "bordeaux_mixture.n.01",
+    "relation": "RelatedTo",
+    "target": "antifungal.n.01"
+  },
+  {
+    "source": "conceptnet:bridge_railing:1918",
+    "relation": "UsedFor",
+    "target": "conceptnet:safety:1789"
+  },
+  {
+    "source": "anthozoan.n.01",
+    "relation": "hypernym",
+    "target": "coelenterate.n.01"
+  },
+  {
+    "source": "water.n.06",
+    "relation": "UsedFor",
+    "target": "beverage.n.01"
+  },
+  {
+    "source": "conceptnet:boring:1627",
+    "relation": "Antonym",
+    "target": "a_amusing"
+  },
+  {
+    "source": "conceptnet:steel:1249",
+    "relation": "CapableOf",
+    "target": "rust.n.04"
+  },
+  {
+    "source": "young_fish.n.01",
+    "relation": "hyponym",
+    "target": "brit.n.02"
+  },
+  {
+    "source": "conceptnet:cup:1284",
+    "relation": "SimilarTo",
+    "target": "conceptnet:mug:1687"
+  },
+  {
+    "source": "meteorologist.n.01",
+    "relation": "hypernym",
+    "target": "specialist.n.01"
+  },
+  {
+    "source": "knit.n.01",
+    "relation": "SimilarTo",
+    "target": "jersey.n.04"
+  },
+  {
+    "source": "male_chest.n.01",
+    "relation": "hypernym",
+    "target": "thorax.n.02"
+  },
+  {
+    "source": "saddleback.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:horse:1241"
+  },
+  {
+    "source": "juice.n.01",
+    "relation": "hyponym",
+    "target": "carrot_juice.n.01"
+  },
+  {
+    "source": "waist.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:empire_waist:1822"
+  },
+  {
+    "source": "conceptnet:floor:1306",
+    "relation": "HasProperty",
+    "target": "a_flat"
+  },
+  {
+    "source": "conceptnet:razor:1906",
+    "relation": "UsedFor",
+    "target": "paring.n.01"
+  },
+  {
+    "source": "repair:floppy_disks:38",
+    "relation": "HasProperty",
+    "target": "conceptnet:floppy:1833"
+  },
+  {
+    "source": "conceptnet:circle:1265",
+    "relation": "HasProperty",
+    "target": "conceptnet:round:1259"
+  },
+  {
+    "source": "conceptnet:computer:1274",
+    "relation": "CapableOf",
+    "target": "conceptnet:crash:1654"
+  },
+  {
+    "source": "reproductive_cell.n.01",
+    "relation": "SimilarTo",
+    "target": "somatic_cell.n.01"
+  },
+  {
+    "source": "conceptnet:swimming_pool:1697",
+    "relation": "UsedFor",
+    "target": "conceptnet:swim:1501"
+  },
+  {
+    "source": "cleopatra.n.01",
+    "relation": "HasProperty",
+    "target": "a_magnificent"
+  },
+  {
+    "source": "conceptnet:block:1344",
+    "relation": "HasContext",
+    "target": "conceptnet:printing:1297"
+  },
+  {
+    "source": "matter.n.03",
+    "relation": "AtLocation",
+    "target": "universe.n.01"
+  },
+  {
+    "source": "conceptnet:television:1523",
+    "relation": "HasProperty",
+    "target": "a_amusing"
+  },
+  {
+    "source": "conceptnet:grape:1313",
+    "relation": "AtLocation",
+    "target": "conceptnet:mouth:1230"
+  },
+  {
+    "source": "conceptnet:slash_bunt:1813",
+    "relation": "SimilarTo",
+    "target": "bunt.n.03"
+  },
+  {
+    "source": "yardman.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:north_america:1558"
+  },
+  {
+    "source": "flame_cell.n.01",
+    "relation": "RelatedTo",
+    "target": "flatworm.n.01"
+  },
+  {
+    "source": "thorax.n.02",
+    "relation": "UsedFor",
+    "target": "conceptnet:play:1236"
+  },
+  {
+    "source": "conceptnet:dame:1514",
+    "relation": "SimilarTo",
+    "target": "conceptnet:madam:1810"
+  },
+  {
+    "source": "suspension_bridge.n.01",
+    "relation": "hypernym",
+    "target": "bridge.n.01"
+  },
+  {
+    "source": "monkshood.n.01",
+    "relation": "RelatedTo",
+    "target": "aconitum.n.01"
+  },
+  {
+    "source": "weave.n.01",
+    "relation": "RelatedTo",
+    "target": "concoction.n.01"
+  },
+  {
+    "source": "horn.n.02",
+    "relation": "UsedFor",
+    "target": "conceptnet:music:1209"
+  },
+  {
+    "source": "maid.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:clean_house:1756"
+  },
+  {
+    "source": "coral.n.04",
+    "relation": "HasProperty",
+    "target": "conceptnet:living:1260"
+  },
+  {
+    "source": "striate_cortex.n.01",
+    "relation": "hypernym",
+    "target": "cortical_area.n.01"
+  },
+  {
+    "source": "air_plant.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:anaerophyte:1797"
+  },
+  {
+    "source": "subordinate.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:overling:1796"
+  },
+  {
+    "source": "life.n.10",
+    "relation": "RelatedTo",
+    "target": "person.n.01"
+  },
+  {
+    "source": "conceptnet:bus_shelter:1696",
+    "relation": "UsedFor",
+    "target": "repair:waiting_for_bus:12"
+  },
+  {
+    "source": "conceptnet:colour:1346",
+    "relation": "hyponym",
+    "target": "a_blue"
+  },
+  {
+    "source": "conceptnet:pad:1443",
+    "relation": "HasContext",
+    "target": "conceptnet:electronics:1381"
+  },
+  {
+    "source": "conceptnet:round:1259",
+    "relation": "Antonym",
+    "target": "a_pointy"
+  },
+  {
+    "source": "gentian_violet.n.01",
+    "relation": "RelatedTo",
+    "target": "antifungal.n.01"
+  },
+  {
+    "source": "nematode.n.01",
+    "relation": "hyponym",
+    "target": "eelworm.n.01"
+  },
+  {
+    "source": "conceptnet:bridesman:1722",
+    "relation": "SimilarTo",
+    "target": "bridesmaid.n.01"
+  },
+  {
+    "source": "conceptnet:language:1391",
+    "relation": "HasContext",
+    "target": "conceptnet:nonstandard:1406"
+  },
+  {
+    "source": "conceptnet:lizard:1349",
+    "relation": "HasProperty",
+    "target": "a_quick"
+  },
+  {
+    "source": "conceptnet:oil:1261",
+    "relation": "HasProperty",
+    "target": "a_expensive"
+  },
+  {
+    "source": "conceptnet:pad:1443",
+    "relation": "AtLocation",
+    "target": "conceptnet:office:1227"
+  },
+  {
+    "source": "knight.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:chess:1270"
+  },
+  {
+    "source": "conceptnet:ribbon:1500",
+    "relation": "UsedFor",
+    "target": "adornment.n.01"
+  },
+  {
+    "source": "conceptnet:people:1233",
+    "relation": "CapableOf",
+    "target": "conceptnet:bicycle_to_work:1759"
+  },
+  {
+    "source": "conceptnet:bridge_railing:1918",
+    "relation": "AtLocation",
+    "target": "suspension_bridge.n.01"
+  },
+  {
+    "source": "ration.n.01",
+    "relation": "hypernym",
+    "target": "fare.n.04"
+  },
+  {
+    "source": "boulle.n.01",
+    "relation": "hypernym",
+    "target": "embellishment.n.02"
+  },
+  {
+    "source": "politician.n.02",
+    "relation": "HasProperty",
+    "target": "a_wise"
+  },
+  {
+    "source": "servant.n.01",
+    "relation": "RelatedTo",
+    "target": "employee.n.01"
+  },
+  {
+    "source": "conceptnet:niacin:1830",
+    "relation": "HasContext",
+    "target": "vitamin.n.01"
+  },
+  {
+    "source": "conceptnet:community:1566",
+    "relation": "HasContext",
+    "target": "conceptnet:internet:1288"
+  },
+  {
+    "source": "somatic_cell.n.01",
+    "relation": "SimilarTo",
+    "target": "reproductive_cell.n.01"
+  },
+  {
+    "source": "bluejacket.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:sail_boat:1877"
+  },
+  {
+    "source": "wildlife.n.01",
+    "relation": "RelatedTo",
+    "target": "insect.n.01"
+  },
+  {
+    "source": "conceptnet:diner:1539",
+    "relation": "UsedFor",
+    "target": "conceptnet:eat:1216"
+  },
+  {
+    "source": "conceptnet:lake:1352",
+    "relation": "UsedFor",
+    "target": "conceptnet:fishing:1460"
+  },
+  {
+    "source": "authority.n.03",
+    "relation": "HasProperty",
+    "target": "a_strict"
+  },
+  {
+    "source": "hotel.n.01",
+    "relation": "hypernym",
+    "target": "building.n.01"
+  },
+  {
+    "source": "peristome.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:zoology:1221"
+  },
+  {
+    "source": "hydrozoan.n.01",
+    "relation": "hyponym",
+    "target": "sertularian.n.01"
+  },
+  {
+    "source": "soft_drink.n.01",
+    "relation": "Antonym",
+    "target": "liquor.n.01"
+  },
+  {
+    "source": "conceptnet:soldier:1364",
+    "relation": "UsedFor",
+    "target": "protective_covering.n.01"
+  },
+  {
+    "source": "heart.n.02",
+    "relation": "RelatedTo",
+    "target": "center.n.04"
+  },
+  {
+    "source": "groomsman.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:groomsmaid:1942"
+  },
+  {
+    "source": "bridesmaid.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:sports:1217"
+  },
+  {
+    "source": "jewelry.n.01",
+    "relation": "HasProperty",
+    "target": "a_expensive"
+  },
+  {
+    "source": "conceptnet:steeple:1724",
+    "relation": "AtLocation",
+    "target": "conceptnet:church:1303"
+  },
+  {
+    "source": "conceptnet:tube:1571",
+    "relation": "HasProperty",
+    "target": "hollow.n.01"
+  },
+  {
+    "source": "conceptnet:mug:1687",
+    "relation": "UsedFor",
+    "target": "conceptnet:cleaning:1626"
+  },
+  {
+    "source": "dietary.n.01",
+    "relation": "RelatedTo",
+    "target": "diet.n.01"
+  },
+  {
+    "source": "symbolic_logician.n.01",
+    "relation": "hypernym",
+    "target": "logician.n.01"
+  },
+  {
+    "source": "garment.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:suitcase:1538"
+  },
+  {
+    "source": "stop.n.05",
+    "relation": "AtLocation",
+    "target": "organ.n.01"
+  },
+  {
+    "source": "conceptnet:growing_vegetables:1755",
+    "relation": "UsedFor",
+    "target": "conceptnet:eating:1257"
+  },
+  {
+    "source": "cubbyhole.n.01",
+    "relation": "RelatedTo",
+    "target": "compartment.n.01"
+  },
+  {
+    "source": "hotel.n.01",
+    "relation": "AtLocation",
+    "target": "city.n.01"
+  },
+  {
+    "source": "back.n.01",
+    "relation": "RelatedTo",
+    "target": "torso.n.01"
+  },
+  {
+    "source": "head_of_household.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:family:1246"
+  },
+  {
+    "source": "male_aristocrat.n.01",
+    "relation": "hyponym",
+    "target": "cavalier.n.01"
+  },
+  {
+    "source": "home.n.06",
+    "relation": "RelatedTo",
+    "target": "building.n.01"
+  },
+  {
+    "source": "archduchess.n.01",
+    "relation": "SimilarTo",
+    "target": "archduke.n.01"
+  },
+  {
+    "source": "entity.n.01",
+    "relation": "hyponym",
+    "target": "abstraction.n.06"
+  },
+  {
+    "source": "criminologist.n.01",
+    "relation": "hypernym",
+    "target": "specialist.n.01"
+  },
+  {
+    "source": "physical_entity.n.01",
+    "relation": "hyponym",
+    "target": "object.n.01"
+  },
+  {
+    "source": "parr.n.02",
+    "relation": "RelatedTo",
+    "target": "invertebrate.n.01"
+  },
+  {
+    "source": "cornsmut.n.01",
+    "relation": "hypernym",
+    "target": "smut.n.03"
+  },
+  {
+    "source": "line.n.11",
+    "relation": "UsedFor",
+    "target": "fish.n.01"
+  },
+  {
+    "source": "beginning.n.04",
+    "relation": "Antonym",
+    "target": "pole.n.06"
+  },
+  {
+    "source": "military_attache.n.01",
+    "relation": "hypernym",
+    "target": "attache.n.01"
+  },
+  {
+    "source": "queen.n.02",
+    "relation": "UsedFor",
+    "target": "conceptnet:country:1215"
+  },
+  {
+    "source": "covering.n.02",
+    "relation": "hyponym",
+    "target": "protective_covering.n.01"
+  },
+  {
+    "source": "conceptnet:people:1233",
+    "relation": "CapableOf",
+    "target": "evaluator.n.01"
+  },
+  {
+    "source": "stinking_hellebore.n.01",
+    "relation": "hypernym",
+    "target": "hellebore.n.02"
+  },
+  {
+    "source": "liquor.n.01",
+    "relation": "Antonym",
+    "target": "soft_drink.n.01"
+  },
+  {
+    "source": "conceptnet:pipes:1914",
+    "relation": "HasProperty",
+    "target": "hollow.n.01"
+  },
+  {
+    "source": "sediment.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:withdrawal:1793"
+  },
+  {
+    "source": "adornment.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:draw_attention:1896"
+  },
+  {
+    "source": "cat_food.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:container:1283"
+  },
+  {
+    "source": "conceptnet:soccer_field:1920",
+    "relation": "AtLocation",
+    "target": "conceptnet:park:1471"
+  },
+  {
+    "source": "conceptnet:geography:1277",
+    "relation": "AtLocation",
+    "target": "conceptnet:surface_of_earth:1455"
+  },
+  {
+    "source": "repair:adult:24",
+    "relation": "CapableOf",
+    "target": "conceptnet:drive_train:1891"
+  },
+  {
+    "source": "conceptnet:barbershop:1763",
+    "relation": "UsedFor",
+    "target": "paring.n.01"
+  },
+  {
+    "source": "conceptnet:layman:1800",
+    "relation": "Antonym",
+    "target": "specialist.n.01"
+  },
+  {
+    "source": "bluejacket.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:sail_ship:1878"
+  },
+  {
+    "source": "conceptnet:refrigerator:1282",
+    "relation": "AtLocation",
+    "target": "conceptnet:garage:1419"
+  },
+  {
+    "source": "conceptnet:weapon:1444",
+    "relation": "AtLocation",
+    "target": "conceptnet:war:1708"
+  },
+  {
+    "source": "trainman.n.01",
+    "relation": "hyponym",
+    "target": "yardman.n.01"
+  },
+  {
+    "source": "conceptnet:computer:1274",
+    "relation": "CapableOf",
+    "target": "conceptnet:think:1530"
+  },
+  {
+    "source": "tree.n.01",
+    "relation": "UsedFor",
+    "target": "decoration.n.01"
+  },
+  {
+    "source": "ration.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:helping:1595"
+  },
+  {
+    "source": "conceptnet:temple:1414",
+    "relation": "UsedFor",
+    "target": "place_of_worship.n.01"
+  },
+  {
+    "source": "sediment.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:finance:1388"
+  },
+  {
+    "source": "cord.n.04",
+    "relation": "hyponym",
+    "target": "bedford_cord.n.01"
+  },
+  {
+    "source": "conceptnet:centrist:1807",
+    "relation": "SimilarTo",
+    "target": "conceptnet:rightist:1946"
+  },
+  {
+    "source": "repair:animation:22",
+    "relation": "CapableOf",
+    "target": "conceptnet:draw_attention:1896"
+  },
+  {
+    "source": "tendon.n.01",
+    "relation": "RelatedTo",
+    "target": "ligament.n.01"
+  },
+  {
+    "source": "conceptnet:electronics:1381",
+    "relation": "Antonym",
+    "target": "mechanical_device.n.01"
+  },
+  {
+    "source": "conceptnet:hypocenter:1933",
+    "relation": "Antonym",
+    "target": "epicenter.n.01"
+  },
+  {
+    "source": "salesperson.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:seller:1727"
+  },
+  {
+    "source": "rice.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:white:1268"
+  },
+  {
+    "source": "conceptnet:ocean:1262",
+    "relation": "UsedFor",
+    "target": "conceptnet:fishing:1460"
+  },
+  {
+    "source": "conceptnet:dogs:1569",
+    "relation": "CapableOf",
+    "target": "conceptnet:reproduce:1565"
+  },
+  {
+    "source": "conceptnet:wedding:1451",
+    "relation": "AtLocation",
+    "target": "conceptnet:church:1303"
+  },
+  {
+    "source": "cell.n.02",
+    "relation": "HasProperty",
+    "target": "small.n.01"
+  },
+  {
+    "source": "specialist.n.01",
+    "relation": "SimilarTo",
+    "target": "expert.n.01"
+  },
+  {
+    "source": "conceptnet:backhand:1794",
+    "relation": "HasContext",
+    "target": "conceptnet:tennis:1459"
+  },
+  {
+    "source": "condyle.n.01",
+    "relation": "hyponym",
+    "target": "medial_condyle.n.01"
+  },
+  {
+    "source": "choice_morsel.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:gourmet:1726"
+  },
+  {
+    "source": "salesperson.n.01",
+    "relation": "hyponym",
+    "target": "demonstrator.n.02"
+  },
+  {
+    "source": "plant.n.02",
+    "relation": "hyponym",
+    "target": "poisonous_plant.n.01"
+  },
+  {
+    "source": "conceptnet:story:1637",
+    "relation": "AtLocation",
+    "target": "conceptnet:bookstore:1776"
+  },
+  {
+    "source": "conceptnet:zero:1645",
+    "relation": "HasContext",
+    "target": "conceptnet:meteorology:1740"
+  },
+  {
+    "source": "conceptnet:iron:1321",
+    "relation": "CapableOf",
+    "target": "rust.n.04"
+  },
+  {
+    "source": "pyramidal_tract.n.01",
+    "relation": "RelatedTo",
+    "target": "motor_area.n.01"
+  },
+  {
+    "source": "conceptnet:law:1462",
+    "relation": "HasContext",
+    "target": "conceptnet:nonstandard:1406"
+  },
+  {
+    "source": "abyssinian.n.01",
+    "relation": "RelatedTo",
+    "target": "universe.n.01"
+  },
+  {
+    "source": "point_lace.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:embroidery:1592"
+  },
+  {
+    "source": "varnish.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:coat_walls:1889"
+  },
+  {
+    "source": "double_knit.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:sweaters:1910"
+  },
+  {
+    "source": "medium.n.05",
+    "relation": "RelatedTo",
+    "target": "solid.n.01"
+  },
+  {
+    "source": "abyssinian.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:capitalized:1837"
+  },
+  {
+    "source": "conceptnet:gold:1464",
+    "relation": "UsedFor",
+    "target": "jewelry.n.01"
+  },
+  {
+    "source": "medium.n.05",
+    "relation": "RelatedTo",
+    "target": "paint.n.01"
+  },
+  {
+    "source": "oxtail.n.01",
+    "relation": "RelatedTo",
+    "target": "soup.n.01"
+  },
+  {
+    "source": "conceptnet:rightist:1946",
+    "relation": "SimilarTo",
+    "target": "collectivist.n.01"
+  },
+  {
+    "source": "prince.n.01",
+    "relation": "SimilarTo",
+    "target": "highness.n.01"
+  },
+  {
+    "source": "muscle.n.02",
+    "relation": "AtLocation",
+    "target": "sleeve.n.01"
+  },
+  {
+    "source": "poodle.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:mean:1368"
+  },
+  {
+    "source": "ascomycete.n.01",
+    "relation": "hyponym",
+    "target": "discomycete.n.01"
+  },
+  {
+    "source": "inessential.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:mandatory:1938"
+  },
+  {
+    "source": "conceptnet:forest:1326",
+    "relation": "AtLocation",
+    "target": "california.n.01"
+  },
+  {
+    "source": "domestic_cat.n.01",
+    "relation": "hyponym",
+    "target": "alley_cat.n.01"
+  },
+  {
+    "source": "conceptnet:cotton:1250",
+    "relation": "HasProperty",
+    "target": "conceptnet:white:1268"
+  },
+  {
+    "source": "core.n.02",
+    "relation": "RelatedTo",
+    "target": "axis.n.01"
+  },
+  {
+    "source": "cleat.n.01",
+    "relation": "hypernym",
+    "target": "projection.n.04"
+  },
+  {
+    "source": "male_chest.n.01",
+    "relation": "HasProperty",
+    "target": "a_flat"
+  },
+  {
+    "source": "conceptnet:long:1458",
+    "relation": "Antonym",
+    "target": "conceptnet:short:1608"
+  },
+  {
+    "source": "minaret.n.01",
+    "relation": "RelatedTo",
+    "target": "tower.n.01"
+  },
+  {
+    "source": "angle.n.01",
+    "relation": "hyponym",
+    "target": "exterior_angle.n.01"
+  },
+  {
+    "source": "rock.n.01",
+    "relation": "AtLocation",
+    "target": "plain.n.01"
+  },
+  {
+    "source": "ice.n.02",
+    "relation": "HasContext",
+    "target": "conceptnet:slang:1201"
+  },
+  {
+    "source": "conceptnet:tube:1571",
+    "relation": "HasContext",
+    "target": "conceptnet:north_america:1558"
+  },
+  {
+    "source": "junction.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:fork_in_road:1781"
+  },
+  {
+    "source": "mickey_mouse.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:disneyland:1695"
+  },
+  {
+    "source": "buttermilk.n.01",
+    "relation": "RelatedTo",
+    "target": "butter.n.01"
+  },
+  {
+    "source": "stockinet.n.01",
+    "relation": "hypernym",
+    "target": "knit.n.01"
+  },
+  {
+    "source": "conceptnet:suitcase:1538",
+    "relation": "AtLocation",
+    "target": "conceptnet:movie:1585"
+  },
+  {
+    "source": "gore.n.03",
+    "relation": "hypernym",
+    "target": "piece_of_cloth.n.01"
+  },
+  {
+    "source": "conceptnet:door:1336",
+    "relation": "HasProperty",
+    "target": "hollow.n.01"
+  },
+  {
+    "source": "counselor.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:canadian_spelling:1603"
+  },
+  {
+    "source": "servant.n.01",
+    "relation": "hyponym",
+    "target": "body_servant.n.01"
+  },
+  {
+    "source": "conceptnet:generalist:1799",
+    "relation": "Antonym",
+    "target": "specialist.n.01"
+  },
+  {
+    "source": "conceptnet:anaerophyte:1797",
+    "relation": "Antonym",
+    "target": "air_plant.n.01"
+  },
+  {
+    "source": "organism.n.01",
+    "relation": "hypernym",
+    "target": "living_thing.n.01"
+  },
+  {
+    "source": "wide_wale.n.01",
+    "relation": "hypernym",
+    "target": "cord.n.04"
+  },
+  {
+    "source": "dressing.n.04",
+    "relation": "HasContext",
+    "target": "medicine.n.02"
+  },
+  {
+    "source": "birthplace.n.02",
+    "relation": "hypernym",
+    "target": "beginning.n.04"
+  },
+  {
+    "source": "therapist.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:offer_solace:1901"
+  },
+  {
+    "source": "conceptnet:anyone:1682",
+    "relation": "CapableOf",
+    "target": "conceptnet:chair_meeting:1683"
+  },
+  {
+    "source": "piglet.n.01",
+    "relation": "hypernym",
+    "target": "young_mammal.n.01"
+  },
+  {
+    "source": "domestic_cat.n.01",
+    "relation": "hypernym",
+    "target": "cat.n.01"
+  },
+  {
+    "source": "conceptnet:flowers:1590",
+    "relation": "AtLocation",
+    "target": "conceptnet:surface_of_earth:1455"
+  },
+  {
+    "source": "ice.n.02",
+    "relation": "UsedFor",
+    "target": "beverage.n.01"
+  },
+  {
+    "source": "radio_operator.n.01",
+    "relation": "hypernym",
+    "target": "operator.n.02"
+  },
+  {
+    "source": "herero.n.01",
+    "relation": "hypernym",
+    "target": "bantu.n.01"
+  },
+  {
+    "source": "conceptnet:pantothenic_acid:1657",
+    "relation": "HasContext",
+    "target": "vitamin.n.01"
+  },
+  {
+    "source": "conceptnet:symptom:1717",
+    "relation": "Antonym",
+    "target": "causal_agent.n.01"
+  },
+  {
+    "source": "conceptnet:math:1613",
+    "relation": "HasProperty",
+    "target": "conceptnet:complex:1469"
+  },
+  {
+    "source": "annulet.n.02",
+    "relation": "hypernym",
+    "target": "molding.n.02"
+  },
+  {
+    "source": "conceptnet:white:1268",
+    "relation": "Antonym",
+    "target": "conceptnet:black:1298"
+  },
+  {
+    "source": "holly.n.01",
+    "relation": "HasProperty",
+    "target": "a_red"
+  },
+  {
+    "source": "island.n.01",
+    "relation": "hypernym",
+    "target": "land.n.04"
+  },
+  {
+    "source": "counselor.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:legal:1224"
+  },
+  {
+    "source": "conceptnet:mall:1577",
+    "relation": "UsedFor",
+    "target": "conceptnet:shop:1327"
+  },
+  {
+    "source": "drug.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:dialect:1331"
+  },
+  {
+    "source": "squinch.n.01",
+    "relation": "hypernym",
+    "target": "arch.n.04"
+  },
+  {
+    "source": "top.n.08",
+    "relation": "Antonym",
+    "target": "foot.n.01"
+  },
+  {
+    "source": "conceptnet:ginger:1515",
+    "relation": "HasContext",
+    "target": "nigeria.n.01"
+  },
+  {
+    "source": "flag_smut_fungus.n.01",
+    "relation": "hypernym",
+    "target": "smut.n.03"
+  },
+  {
+    "source": "eaglet.n.01",
+    "relation": "RelatedTo",
+    "target": "chick.n.01"
+  },
+  {
+    "source": "meal.n.01",
+    "relation": "SimilarTo",
+    "target": "flour.n.01"
+  },
+  {
+    "source": "spider.n.01",
+    "relation": "hypernym",
+    "target": "arachnid.n.01"
+  },
+  {
+    "source": "hunting_dog.n.01",
+    "relation": "RelatedTo",
+    "target": "dog.n.01"
+  },
+  {
+    "source": "poisonous_plant.n.01",
+    "relation": "hyponym",
+    "target": "dogbane.n.01"
+  },
+  {
+    "source": "conceptnet:patient:1545",
+    "relation": "Antonym",
+    "target": "agent.n.03"
+  },
+  {
+    "source": "conceptnet:glass:1285",
+    "relation": "HasProperty",
+    "target": "conceptnet:sharp:1415"
+  },
+  {
+    "source": "skirt.n.01",
+    "relation": "RelatedTo",
+    "target": "attire.n.01"
+  },
+  {
+    "source": "escort.n.03",
+    "relation": "hypernym",
+    "target": "attendant.n.01"
+  },
+  {
+    "source": "corn.n.03",
+    "relation": "HasProperty",
+    "target": "a_yellow"
+  },
+  {
+    "source": "neuroglia.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:cytology:1318"
+  },
+  {
+    "source": "sail.n.01",
+    "relation": "RelatedTo",
+    "target": "covering.n.02"
+  },
+  {
+    "source": "stew.n.02",
+    "relation": "SimilarTo",
+    "target": "conceptnet:casserole:1653"
+  },
+  {
+    "source": "conceptnet:carpentry:1555",
+    "relation": "HasProperty",
+    "target": "conceptnet:complex:1469"
+  },
+  {
+    "source": "conceptnet:ivy:1816",
+    "relation": "SimilarTo",
+    "target": "vine.n.01"
+  },
+  {
+    "source": "gasohol.n.01",
+    "relation": "hypernym",
+    "target": "fuel.n.01"
+  },
+  {
+    "source": "trapeze.n.01",
+    "relation": "RelatedTo",
+    "target": "swing.n.02"
+  },
+  {
+    "source": "conceptnet:soccer_field:1920",
+    "relation": "HasProperty",
+    "target": "conceptnet:green:1312"
+  },
+  {
+    "source": "place_of_worship.n.01",
+    "relation": "RelatedTo",
+    "target": "believer.n.02"
+  },
+  {
+    "source": "conceptnet:school:1347",
+    "relation": "UsedFor",
+    "target": "shelter.n.02"
+  },
+  {
+    "source": "food.n.01",
+    "relation": "hyponym",
+    "target": "fare.n.04"
+  },
+  {
+    "source": "repair:eggs:10",
+    "relation": "HasProperty",
+    "target": "conceptnet:round:1259"
+  },
+  {
+    "source": "medium.n.05",
+    "relation": "HasContext",
+    "target": "conceptnet:engineering:1278"
+  },
+  {
+    "source": "conceptnet:seller:1727",
+    "relation": "AtLocation",
+    "target": "conceptnet:market:1377"
+  },
+  {
+    "source": "pole.n.06",
+    "relation": "hypernym",
+    "target": "celestial_point.n.01"
+  },
+  {
+    "source": "conceptnet:sea:1263",
+    "relation": "UsedFor",
+    "target": "conceptnet:sail_boat:1877"
+  },
+  {
+    "source": "conceptnet:science:1616",
+    "relation": "UsedFor",
+    "target": "conceptnet:geology:1296"
+  },
+  {
+    "source": "periapsis.n.01",
+    "relation": "Antonym",
+    "target": "apoapsis.n.01"
+  },
+  {
+    "source": "custard.n.01",
+    "relation": "hypernym",
+    "target": "dish.n.02"
+  },
+  {
+    "source": "conceptnet:china:1511",
+    "relation": "AtLocation",
+    "target": "conceptnet:cabinet:1452"
+  },
+  {
+    "source": "repair:painter:15",
+    "relation": "CapableOf",
+    "target": "conceptnet:coat_walls:1889"
+  },
+  {
+    "source": "bloodberry.n.01",
+    "relation": "HasProperty",
+    "target": "a_red"
+  },
+  {
+    "source": "conceptnet:fishing:1460",
+    "relation": "UsedFor",
+    "target": "conceptnet:sport:1527"
+  },
+  {
+    "source": "conceptnet:doctor:1343",
+    "relation": "AtLocation",
+    "target": "conceptnet:dentist:1541"
+  },
+  {
+    "source": "department_head.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:chair_committee:1758"
+  },
+  {
+    "source": "sweet.n.03",
+    "relation": "Antonym",
+    "target": "conceptnet:sour:1512"
+  },
+  {
+    "source": "jewelry.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:suitcase:1538"
+  },
+  {
+    "source": "democrat.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:green:1312"
+  },
+  {
+    "source": "namibia.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:historical:1207"
+  },
+  {
+    "source": "restaurant.n.01",
+    "relation": "UsedFor",
+    "target": "dinner.n.01"
+  },
+  {
+    "source": "high_priest.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:high_priestess:1820"
+  },
+  {
+    "source": "hole.n.01",
+    "relation": "AtLocation",
+    "target": "land.n.04"
+  },
+  {
+    "source": "conceptnet:grape:1313",
+    "relation": "HasProperty",
+    "target": "conceptnet:green:1312"
+  },
+  {
+    "source": "kite.n.03",
+    "relation": "CapableOf",
+    "target": "conceptnet:fly:1244"
+  },
+  {
+    "source": "parasympathetic_nervous_system.n.01",
+    "relation": "RelatedTo",
+    "target": "spinal_cord.n.01"
+  },
+  {
+    "source": "conceptnet:hospital:1426",
+    "relation": "UsedFor",
+    "target": "conceptnet:surgery:1672"
+  },
+  {
+    "source": "tom.n.02",
+    "relation": "HasContext",
+    "target": "conceptnet:derogatory:1243"
+  },
+  {
+    "source": "conceptnet:horse:1241",
+    "relation": "HasProperty",
+    "target": "conceptnet:white:1268"
+  },
+  {
+    "source": "towel.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:motel:1630"
+  },
+  {
+    "source": "conceptnet:door:1336",
+    "relation": "CapableOf",
+    "target": "conceptnet:glass:1285"
+  },
+  {
+    "source": "conceptnet:flowers:1590",
+    "relation": "HasProperty",
+    "target": "conceptnet:wild:1649"
+  },
+  {
+    "source": "insect.n.01",
+    "relation": "hyponym",
+    "target": "homopterous_insect.n.01"
+  },
+  {
+    "source": "aviator.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:base:1287"
+  },
+  {
+    "source": "officeholder.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:captain_ship:1680"
+  },
+  {
+    "source": "hairdresser.n.01",
+    "relation": "RelatedTo",
+    "target": "interior_designer.n.01"
+  },
+  {
+    "source": "conceptnet:robovirus:1723",
+    "relation": "SimilarTo",
+    "target": "arbovirus.n.01"
+  },
+  {
+    "source": "opening.n.01",
+    "relation": "hyponym",
+    "target": "foramen.n.01"
+  },
+  {
+    "source": "conceptnet:passageway:1508",
+    "relation": "UsedFor",
+    "target": "conceptnet:travel:1437"
+  },
+  {
+    "source": "skirt.n.01",
+    "relation": "RelatedTo",
+    "target": "waist.n.01"
+  },
+  {
+    "source": "abyssinian.n.01",
+    "relation": "HasProperty",
+    "target": "a_allergenic"
+  },
+  {
+    "source": "frieze.n.01",
+    "relation": "RelatedTo",
+    "target": "architrave.n.01"
+  },
+  {
+    "source": "interior_angle.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:geometry:1222"
+  },
+  {
+    "source": "florist's_gloxinia.n.01",
+    "relation": "hypernym",
+    "target": "gloxinia.n.01"
+  },
+  {
+    "source": "copt.n.01",
+    "relation": "hypernym",
+    "target": "egyptian.n.01"
+  },
+  {
+    "source": "conceptnet:people:1233",
+    "relation": "CapableOf",
+    "target": "conceptnet:lie:1439"
+  },
+  {
+    "source": "dog.n.01",
+    "relation": "CapableOf",
+    "target": "bite.n.04"
+  },
+  {
+    "source": "hole.n.01",
+    "relation": "RelatedTo",
+    "target": "ball.n.06"
+  },
+  {
+    "source": "restaurant.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:eat:1216"
+  },
+  {
+    "source": "conceptnet:fork:1423",
+    "relation": "AtLocation",
+    "target": "conceptnet:resturant:1505"
+  },
+  {
+    "source": "repair:strong_emotion:14",
+    "relation": "CapableOf",
+    "target": "conceptnet:cloud_judgement:1893"
+  },
+  {
+    "source": "receptionist.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:answer_telephone:1761"
+  },
+  {
+    "source": "conceptnet:metal:1272",
+    "relation": "UsedFor",
+    "target": "conceptnet:make:1384"
+  },
+  {
+    "source": "boletus_edulis.n.01",
+    "relation": "hypernym",
+    "target": "bolete.n.01"
+  },
+  {
+    "source": "towel.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:linen_closet:1586"
+  },
+  {
+    "source": "beautician.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:wave_hair:1880"
+  },
+  {
+    "source": "conceptnet:effect:1429",
+    "relation": "Antonym",
+    "target": "causal_agent.n.01"
+  },
+  {
+    "source": "jellyfish.n.02",
+    "relation": "AtLocation",
+    "target": "jungle.n.01"
+  },
+  {
+    "source": "bull.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:cow:1252"
+  },
+  {
+    "source": "rock.n.01",
+    "relation": "UsedFor",
+    "target": "decoration.n.01"
+  },
+  {
+    "source": "node.n.03",
+    "relation": "RelatedTo",
+    "target": "net.n.06"
+  },
+  {
+    "source": "gelatin.n.02",
+    "relation": "RelatedTo",
+    "target": "ligament.n.01"
+  },
+  {
+    "source": "conceptnet:find_underwater:1913",
+    "relation": "HasProperty",
+    "target": "coral.n.04"
+  },
+  {
+    "source": "conceptnet:unnecessary:1711",
+    "relation": "Antonym",
+    "target": "necessity.n.02"
+  },
+  {
+    "source": "yellow_peril.n.01",
+    "relation": "RelatedTo",
+    "target": "menace.n.01"
+  },
+  {
+    "source": "isogram.n.01",
+    "relation": "hyponym",
+    "target": "isotherm.n.01"
+  },
+  {
+    "source": "conceptnet:alive:1323",
+    "relation": "CapableOf",
+    "target": "conceptnet:grow:1456"
+  },
+  {
+    "source": "gasoline.n.01",
+    "relation": "UsedFor",
+    "target": "fuel.n.01"
+  },
+  {
+    "source": "conceptnet:tent:1410",
+    "relation": "CapableOf",
+    "target": "shelter.n.02"
+  },
+  {
+    "source": "appetizer.n.01",
+    "relation": "AtLocation",
+    "target": "dinner.n.01"
+  },
+  {
+    "source": "conceptnet:fly:1244",
+    "relation": "Antonym",
+    "target": "conceptnet:walk:1310"
+  },
+  {
+    "source": "conceptnet:zero:1645",
+    "relation": "HasContext",
+    "target": "conceptnet:finance:1388"
+  },
+  {
+    "source": "flax_rust.n.01",
+    "relation": "hypernym",
+    "target": "rust.n.04"
+  },
+  {
+    "source": "conceptnet:apartment:1412",
+    "relation": "AtLocation",
+    "target": "conceptnet:complex:1469"
+  },
+  {
+    "source": "junction.n.01",
+    "relation": "hypernym",
+    "target": "topographic_point.n.01"
+  },
+  {
+    "source": "oil_meal.n.01",
+    "relation": "hypernym",
+    "target": "oil_cake.n.01"
+  },
+  {
+    "source": "arthropod.n.01",
+    "relation": "hyponym",
+    "target": "merostomata.n.01"
+  },
+  {
+    "source": "decapod_crustacean.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:zoology:1221"
+  },
+  {
+    "source": "conceptnet:community:1566",
+    "relation": "AtLocation",
+    "target": "conceptnet:church:1303"
+  },
+  {
+    "source": "knob.n.01",
+    "relation": "SimilarTo",
+    "target": "director.n.01"
+  },
+  {
+    "source": "conceptnet:ity:1808",
+    "relation": "SimilarTo",
+    "target": "cape.n.01"
+  },
+  {
+    "source": "bread.n.01",
+    "relation": "AtLocation",
+    "target": "dinner.n.01"
+  },
+  {
+    "source": "conceptnet:withdrawal:1793",
+    "relation": "Antonym",
+    "target": "sediment.n.01"
+  },
+  {
+    "source": "narcotic.n.01",
+    "relation": "RelatedTo",
+    "target": "drug.n.01"
+  },
+  {
+    "source": "conceptnet:grape:1313",
+    "relation": "AtLocation",
+    "target": "diet.n.01"
+  },
+  {
+    "source": "conceptnet:pot:1245",
+    "relation": "HasContext",
+    "target": "victoria.n.03"
+  },
+  {
+    "source": "conceptnet:vertebrate:1355",
+    "relation": "Antonym",
+    "target": "invertebrate.n.01"
+  },
+  {
+    "source": "coating.n.01",
+    "relation": "RelatedTo",
+    "target": "covering.n.02"
+  },
+  {
+    "source": "conceptnet:front:1264",
+    "relation": "Antonym",
+    "target": "back.n.01"
+  },
+  {
+    "source": "apoapsis.n.01",
+    "relation": "Antonym",
+    "target": "periapsis.n.01"
+  },
+  {
+    "source": "grave.n.02",
+    "relation": "HasContext",
+    "target": "conceptnet:nautical:1204"
+  },
+  {
+    "source": "conceptnet:anyone:1682",
+    "relation": "CapableOf",
+    "target": "conceptnet:think:1530"
+  },
+  {
+    "source": "conceptnet:space_shuttle:1477",
+    "relation": "CapableOf",
+    "target": "conceptnet:fly:1244"
+  },
+  {
+    "source": "conceptnet:tiger:1581",
+    "relation": "AtLocation",
+    "target": "jungle.n.01"
+  },
+  {
+    "source": "safety_net.n.02",
+    "relation": "hypernym",
+    "target": "net.n.06"
+  },
+  {
+    "source": "mover.n.01",
+    "relation": "hypernym",
+    "target": "workman.n.01"
+  },
+  {
+    "source": "back.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:front:1264"
+  },
+  {
+    "source": "microflora.n.01",
+    "relation": "RelatedTo",
+    "target": "intestine.n.01"
+  },
+  {
+    "source": "conceptnet:bakkie:1823",
+    "relation": "HasContext",
+    "target": "namibia.n.01"
+  },
+  {
+    "source": "conceptnet:school:1347",
+    "relation": "HasProperty",
+    "target": "conceptnet:boring:1627"
+  },
+  {
+    "source": "sea_anemone.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:outside:1427"
+  },
+  {
+    "source": "conceptnet:metal:1272",
+    "relation": "HasContext",
+    "target": "conceptnet:aviation:1330"
+  },
+  {
+    "source": "calf.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:anatomy:1205"
+  },
+  {
+    "source": "bluejacket.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:board_ship:1876"
+  },
+  {
+    "source": "protozoan.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:cytology:1318"
+  },
+  {
+    "source": "conceptnet:eupatrid:1815",
+    "relation": "SimilarTo",
+    "target": "aristocrat.n.01"
+  },
+  {
+    "source": "ink.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:colour:1346"
+  },
+  {
+    "source": "protective_garment.n.01",
+    "relation": "hypernym",
+    "target": "clothing.n.01"
+  },
+  {
+    "source": "tooth.n.02",
+    "relation": "AtLocation",
+    "target": "conceptnet:mouth:1230"
+  },
+  {
+    "source": "socialist.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:community:1566"
+  },
+  {
+    "source": "cola.n.02",
+    "relation": "AtLocation",
+    "target": "conceptnet:fridge:1399"
+  },
+  {
+    "source": "patriarch.n.02",
+    "relation": "hypernym",
+    "target": "head_of_household.n.01"
+  },
+  {
+    "source": "confluence.n.01",
+    "relation": "hypernym",
+    "target": "geographic_point.n.01"
+  },
+  {
+    "source": "conceptnet:woodworking:1553",
+    "relation": "SimilarTo",
+    "target": "conceptnet:carpentry:1555"
+  },
+  {
+    "source": "conceptnet:plane:1339",
+    "relation": "CapableOf",
+    "target": "conceptnet:crash:1654"
+  },
+  {
+    "source": "residue.n.01",
+    "relation": "hypernym",
+    "target": "matter.n.03"
+  },
+  {
+    "source": "conceptnet:chicken:1300",
+    "relation": "AtLocation",
+    "target": "conceptnet:freezer:1510"
+  },
+  {
+    "source": "conceptnet:crash:1654",
+    "relation": "HasContext",
+    "target": "fiber.n.03"
+  },
+  {
+    "source": "range.n.04",
+    "relation": "UsedFor",
+    "target": "decoration.n.01"
+  },
+  {
+    "source": "aviatrix.n.01",
+    "relation": "RelatedTo",
+    "target": "pilot.n.01"
+  },
+  {
+    "source": "campanula.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:perennial:1694"
+  },
+  {
+    "source": "secretary.n.02",
+    "relation": "CapableOf",
+    "target": "conceptnet:answer_telephone:1761"
+  },
+  {
+    "source": "conceptnet:foreign:1544",
+    "relation": "Antonym",
+    "target": "domestic.n.01"
+  },
+  {
+    "source": "gentian_violet.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:chemistry:1254"
+  },
+  {
+    "source": "conceptnet:required:1482",
+    "relation": "SimilarTo",
+    "target": "necessity.n.02"
+  },
+  {
+    "source": "conceptnet:organic_compound:1518",
+    "relation": "HasProperty",
+    "target": "organic.n.01"
+  },
+  {
+    "source": "conceptnet:tiger:1581",
+    "relation": "CapableOf",
+    "target": "conceptnet:eat:1216"
+  },
+  {
+    "source": "jersey.n.04",
+    "relation": "SimilarTo",
+    "target": "knit.n.01"
+  },
+  {
+    "source": "conceptnet:lobby:1701",
+    "relation": "HasContext",
+    "target": "conceptnet:video_games:1435"
+  },
+  {
+    "source": "conceptnet:citizen:1380",
+    "relation": "AtLocation",
+    "target": "conceptnet:country:1215"
+  },
+  {
+    "source": "conceptnet:people:1233",
+    "relation": "CapableOf",
+    "target": "conceptnet:sail_boat:1877"
+  },
+  {
+    "source": "conceptnet:bee:1509",
+    "relation": "AtLocation",
+    "target": "conceptnet:farm:1239"
+  },
+  {
+    "source": "horizon.n.04",
+    "relation": "RelatedTo",
+    "target": "range.n.04"
+  },
+  {
+    "source": "conceptnet:spirit:1341",
+    "relation": "UsedFor",
+    "target": "conceptnet:religion:1409"
+  },
+  {
+    "source": "conceptnet:anyone:1682",
+    "relation": "CapableOf",
+    "target": "conceptnet:kiss:1754"
+  },
+  {
+    "source": "aviatrix.n.01",
+    "relation": "SimilarTo",
+    "target": "aviator.n.01"
+  },
+  {
+    "source": "cub.n.03",
+    "relation": "HasContext",
+    "target": "conceptnet:humorous:1519"
+  },
+  {
+    "source": "island.n.01",
+    "relation": "UsedFor",
+    "target": "conceptnet:swim:1501"
+  },
+  {
+    "source": "conceptnet:winter:1618",
+    "relation": "HasProperty",
+    "target": "conceptnet:cold:1392"
+  },
+  {
+    "source": "piperin.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:organic_compound:1518"
+  },
+  {
+    "source": "conceptnet:mutton:1811",
+    "relation": "SimilarTo",
+    "target": "lamb.n.01"
+  },
+  {
+    "source": "varnish.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:rail:1554"
+  },
+  {
+    "source": "repair:gel_toothpaste:28",
+    "relation": "UsedFor",
+    "target": "conceptnet:effect:1429"
+  },
+  {
+    "source": "conceptnet:cooking:1332",
+    "relation": "UsedFor",
+    "target": "conceptnet:eating:1257"
+  },
+  {
+    "source": "conceptnet:high_priestess:1820",
+    "relation": "HasContext",
+    "target": "conceptnet:wicca:1522"
+  },
+  {
+    "source": "conceptnet:sky:1400",
+    "relation": "HasProperty",
+    "target": "a_blue"
+  },
+  {
+    "source": "conceptnet:unofficial:1713",
+    "relation": "Antonym",
+    "target": "official.n.01"
+  },
+  {
+    "source": "lemon_juice.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:sour:1512"
+  },
+  {
+    "source": "conceptnet:plebeian:1481",
+    "relation": "Antonym",
+    "target": "aristocrat.n.01"
+  },
+  {
+    "source": "defile.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:clean:1457"
+  },
+  {
+    "source": "blister_rust.n.02",
+    "relation": "hypernym",
+    "target": "rust.n.04"
+  },
+  {
+    "source": "filet.n.03",
+    "relation": "hypernym",
+    "target": "lace.n.02"
+  },
+  {
+    "source": "conceptnet:football:1483",
+    "relation": "HasProperty",
+    "target": "conceptnet:round:1259"
+  },
+  {
+    "source": "moloch.n.01",
+    "relation": "hypernym",
+    "target": "power.n.05"
+  },
+  {
+    "source": "flamingo_flower.n.01",
+    "relation": "HasProperty",
+    "target": "a_pink"
+  },
+  {
+    "source": "conceptnet:dogs:1569",
+    "relation": "CapableOf",
+    "target": "conceptnet:grow:1456"
+  },
+  {
+    "source": "slope.n.01",
+    "relation": "RelatedTo",
+    "target": "peninsula.n.01"
+  },
+  {
+    "source": "ear.n.01",
+    "relation": "RelatedTo",
+    "target": "part.n.03"
+  },
+  {
+    "source": "point_lace.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:sharp:1415"
+  },
+  {
+    "source": "nodule.n.03",
+    "relation": "hypernym",
+    "target": "hunk.n.02"
+  },
+  {
+    "source": "a_slow",
+    "relation": "Antonym",
+    "target": "a_quick"
+  },
+  {
+    "source": "dough.n.01",
+    "relation": "HasProperty",
+    "target": "a_soft"
+  },
+  {
+    "source": "conceptnet:jam:1650",
+    "relation": "SimilarTo",
+    "target": "gelatin.n.02"
+  },
+  {
+    "source": "hand.n.01",
+    "relation": "Antonym",
+    "target": "foot.n.01"
+  },
+  {
+    "source": "conceptnet:cow:1252",
+    "relation": "Antonym",
+    "target": "bull.n.01"
+  },
+  {
+    "source": "conceptnet:fruit:1322",
+    "relation": "UsedFor",
+    "target": "paring.n.01"
+  },
+  {
+    "source": "connoisseur.n.01",
+    "relation": "RelatedTo",
+    "target": "specialist.n.01"
+  },
+  {
+    "source": "antifreeze.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:garage:1419"
+  },
+  {
+    "source": "conceptnet:floor:1306",
+    "relation": "UsedFor",
+    "target": "conceptnet:walk:1310"
+  },
+  {
+    "source": "conceptnet:horse:1241",
+    "relation": "UsedFor",
+    "target": "conceptnet:horse_racing:1846"
+  },
+  {
+    "source": "deliveryman.n.01",
+    "relation": "hyponym",
+    "target": "iceman.n.01"
+  },
+  {
+    "source": "conceptnet:museum:1573",
+    "relation": "UsedFor",
+    "target": "conceptnet:entertainment:1601"
+  },
+  {
+    "source": "conceptnet:craftswoman:1798",
+    "relation": "Antonym",
+    "target": "craftsman.n.03"
+  },
+  {
+    "source": "stop.n.05",
+    "relation": "RelatedTo",
+    "target": "net.n.06"
+  },
+  {
+    "source": "conceptnet:box:1293",
+    "relation": "HasProperty",
+    "target": "a_pointy"
+  },
+  {
+    "source": "salad.n.01",
+    "relation": "HasProperty",
+    "target": "a_healthy"
+  },
+  {
+    "source": "conceptnet:geography:1277",
+    "relation": "HasProperty",
+    "target": "conceptnet:boring:1627"
+  },
+  {
+    "source": "conceptnet:razor:1906",
+    "relation": "HasProperty",
+    "target": "conceptnet:sharp:1415"
+  },
+  {
+    "source": "piperin.n.01",
+    "relation": "hypernym",
+    "target": "chemical_irritant.n.01"
+  },
+  {
+    "source": "conceptnet:government:1309",
+    "relation": "AtLocation",
+    "target": "conceptnet:country:1215"
+  },
+  {
+    "source": "conceptnet:garbage:1646",
+    "relation": "CapableOf",
+    "target": "conceptnet:container:1283"
+  },
+  {
+    "source": "conceptnet:writing_instrument:1762",
+    "relation": "AtLocation",
+    "target": "conceptnet:purse:1584"
+  },
+  {
+    "source": "cavity.n.02",
+    "relation": "hypernym",
+    "target": "space.n.02"
+  },
+  {
+    "source": "ear.n.01",
+    "relation": "hypernym",
+    "target": "sense_organ.n.01"
+  },
+  {
+    "source": "conceptnet:cotton:1250",
+    "relation": "UsedFor",
+    "target": "conceptnet:thread:1317"
+  },
+  {
+    "source": "conceptnet:hypocentre:1641",
+    "relation": "Antonym",
+    "target": "epicenter.n.01"
+  },
+  {
+    "source": "conceptnet:people:1233",
+    "relation": "CapableOf",
+    "target": "bite.n.04"
+  },
+  {
+    "source": "laborer.n.01",
+    "relation": "AtLocation",
+    "target": "torso.n.01"
+  },
+  {
+    "source": "royalty.n.02",
+    "relation": "RelatedTo",
+    "target": "power.n.05"
+  },
+  {
+    "source": "conceptnet:sleep:1468",
+    "relation": "HasProperty",
+    "target": "necessity.n.02"
+  },
+  {
+    "source": "juggernaut.n.01",
+    "relation": "RelatedTo",
+    "target": "power.n.05"
+  },
+  {
+    "source": "control_tower.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:aviation:1330"
+  },
+  {
+    "source": "canonist.n.01",
+    "relation": "RelatedTo",
+    "target": "expert.n.01"
+  },
+  {
+    "source": "potter.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:pitcher:1383"
+  },
+  {
+    "source": "conceptnet:dust:1450",
+    "relation": "AtLocation",
+    "target": "conceptnet:air:1299"
+  },
+  {
+    "source": "inner_ear.n.01",
+    "relation": "HasProperty",
+    "target": "conceptnet:complex:1469"
+  },
+  {
+    "source": "isothiocyanate.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:chemistry:1254"
+  },
+  {
+    "source": "digestive_juice.n.01",
+    "relation": "HasProperty",
+    "target": "a_acidic"
+  },
+  {
+    "source": "cap.n.04",
+    "relation": "Antonym",
+    "target": "conceptnet:floor:1306"
+  },
+  {
+    "source": "craftsman.n.03",
+    "relation": "SimilarTo",
+    "target": "conceptnet:craftswoman:1798"
+  },
+  {
+    "source": "conceptnet:mouse:1305",
+    "relation": "AtLocation",
+    "target": "conceptnet:a:1342"
+  },
+  {
+    "source": "plain.n.01",
+    "relation": "HasProperty",
+    "target": "a_flat"
+  },
+  {
+    "source": "conceptnet:escortee:1941",
+    "relation": "SimilarTo",
+    "target": "escort.n.03"
+  },
+  {
+    "source": "conceptnet:silk:1311",
+    "relation": "HasProperty",
+    "target": "organic.n.01"
+  },
+  {
+    "source": "hunter.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:forest:1326"
+  },
+  {
+    "source": "conceptnet:earring:1568",
+    "relation": "UsedFor",
+    "target": "adornment.n.01"
+  },
+  {
+    "source": "plaything.n.01",
+    "relation": "RelatedTo",
+    "target": "device.n.04"
+  },
+  {
+    "source": "whole.n.02",
+    "relation": "hyponym",
+    "target": "assembly.n.05"
+  },
+  {
+    "source": "pendant.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:grammar:1407"
+  },
+  {
+    "source": "conceptnet:hammer:1463",
+    "relation": "AtLocation",
+    "target": "conceptnet:garage:1419"
+  },
+  {
+    "source": "conceptnet:au:1666",
+    "relation": "HasProperty",
+    "target": "conceptnet:gold:1464"
+  },
+  {
+    "source": "conceptnet:terrace:1421",
+    "relation": "AtLocation",
+    "target": "italy.n.01"
+  },
+  {
+    "source": "conceptnet:iron:1321",
+    "relation": "HasContext",
+    "target": "conceptnet:offensive:1735"
+  },
+  {
+    "source": "pocket.n.09",
+    "relation": "hypernym",
+    "target": "opening.n.01"
+  },
+  {
+    "source": "conceptnet:groomsmaid:1942",
+    "relation": "SimilarTo",
+    "target": "groomsman.n.01"
+  },
+  {
+    "source": "head.n.04",
+    "relation": "Antonym",
+    "target": "point.n.02"
+  },
+  {
+    "source": "horizon.n.04",
+    "relation": "HasContext",
+    "target": "conceptnet:archaeology:1560"
+  },
+  {
+    "source": "guru.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:top_of_mountain:1702"
+  },
+  {
+    "source": "conceptnet:steel_pen:1879",
+    "relation": "CapableOf",
+    "target": "rust.n.04"
+  },
+  {
+    "source": "fabric.n.01",
+    "relation": "hyponym",
+    "target": "lace.n.02"
+  },
+  {
+    "source": "conceptnet:terrace:1421",
+    "relation": "HasProperty",
+    "target": "a_flat"
+  },
+  {
+    "source": "conceptnet:cockroach:1729",
+    "relation": "AtLocation",
+    "target": "conceptnet:at_hotel:1629"
+  },
+  {
+    "source": "second_fiddle.n.01",
+    "relation": "hypernym",
+    "target": "subordinate.n.01"
+  },
+  {
+    "source": "dog_food.n.01",
+    "relation": "hypernym",
+    "target": "petfood.n.01"
+  },
+  {
+    "source": "conceptnet:meat:1258",
+    "relation": "AtLocation",
+    "target": "dinner.n.01"
+  },
+  {
+    "source": "conceptnet:flat:1295",
+    "relation": "HasContext",
+    "target": "wine.n.01"
+  },
+  {
+    "source": "post-office_box.n.01",
+    "relation": "RelatedTo",
+    "target": "bridge.n.01"
+  },
+  {
+    "source": "beading.n.02",
+    "relation": "RelatedTo",
+    "target": "band.n.04"
+  },
+  {
+    "source": "cord.n.04",
+    "relation": "SimilarTo",
+    "target": "conceptnet:thread:1317"
+  },
+  {
+    "source": "conceptnet:pain:1424",
+    "relation": "Antonym",
+    "target": "conceptnet:good:1470"
+  },
+  {
+    "source": "coffee_substitute.n.01",
+    "relation": "hypernym",
+    "target": "coffee.n.01"
+  },
+  {
+    "source": "brakeman.n.01",
+    "relation": "hypernym",
+    "target": "trainman.n.01"
+  },
+  {
+    "source": "conceptnet:lobby:1701",
+    "relation": "UsedFor",
+    "target": "conceptnet:reception_area:1780"
+  },
+  {
+    "source": "domestic.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:adventurous:1720"
+  },
+  {
+    "source": "section.n.13",
+    "relation": "Antonym",
+    "target": "whole.n.02"
+  },
+  {
+    "source": "salesman.n.01",
+    "relation": "CapableOf",
+    "target": "conceptnet:get_fired:1887"
+  },
+  {
+    "source": "starets.n.01",
+    "relation": "hypernym",
+    "target": "adviser.n.01"
+  },
+  {
+    "source": "building.n.01",
+    "relation": "HasProperty",
+    "target": "a_manbuilt"
+  },
+  {
+    "source": "fuel.n.01",
+    "relation": "RelatedTo",
+    "target": "gasoline.n.01"
+  },
+  {
+    "source": "filing.n.02",
+    "relation": "hypernym",
+    "target": "fragment.n.01"
+  },
+  {
+    "source": "conceptnet:a:1342",
+    "relation": "AtLocation",
+    "target": "conceptnet:resturant:1505"
+  },
+  {
+    "source": "wine.n.01",
+    "relation": "UsedFor",
+    "target": "beverage.n.01"
+  },
+  {
+    "source": "conceptnet:rightist:1946",
+    "relation": "SimilarTo",
+    "target": "conceptnet:centrist:1807"
+  },
+  {
+    "source": "fiber.n.03",
+    "relation": "HasContext",
+    "target": "conceptnet:mathematics:1218"
+  },
+  {
+    "source": "aculeus.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:botany:1212"
+  },
+  {
+    "source": "conceptnet:programming:1495",
+    "relation": "AtLocation",
+    "target": "conceptnet:television:1523"
+  },
+  {
+    "source": "running_mate.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:politics:1333"
+  },
+  {
+    "source": "wheat.n.02",
+    "relation": "UsedFor",
+    "target": "conceptnet:eating:1257"
+  },
+  {
+    "source": "sediment.n.01",
+    "relation": "AtLocation",
+    "target": "conceptnet:bottom_of_sea:1537"
+  },
+  {
+    "source": "caudal_appendage.n.01",
+    "relation": "hypernym",
+    "target": "tail.n.01"
+  },
+  {
+    "source": "conceptnet:overling:1796",
+    "relation": "Antonym",
+    "target": "subordinate.n.01"
+  },
+  {
+    "source": "royalty.n.02",
+    "relation": "RelatedTo",
+    "target": "authority.n.03"
+  },
+  {
+    "source": "expert.n.01",
+    "relation": "AtLocation",
+    "target": "plain.n.01"
+  },
+  {
+    "source": "conceptnet:salad_bowl:1689",
+    "relation": "HasContext",
+    "target": "conceptnet:tennis:1459"
+  },
+  {
+    "source": "bridesmaid.n.01",
+    "relation": "SimilarTo",
+    "target": "conceptnet:bridesman:1722"
+  },
+  {
+    "source": "abstraction.n.06",
+    "relation": "Antonym",
+    "target": "conceptnet:specialization:1791"
+  },
+  {
+    "source": "conceptnet:doctor:1343",
+    "relation": "UsedFor",
+    "target": "conceptnet:heal:1770"
+  },
+  {
+    "source": "liquid.n.01",
+    "relation": "Antonym",
+    "target": "solid.n.01"
+  },
+  {
+    "source": "board.n.04",
+    "relation": "hypernym",
+    "target": "fare.n.04"
+  },
+  {
+    "source": "conceptnet:injury:1921",
+    "relation": "CapableOf",
+    "target": "conceptnet:pain:1424"
+  },
+  {
+    "source": "conceptnet:ocean:1262",
+    "relation": "AtLocation",
+    "target": "conceptnet:surface_of_earth:1455"
+  },
+  {
+    "source": "conceptnet:eating:1257",
+    "relation": "UsedFor",
+    "target": "nutriment.n.01"
+  },
+  {
+    "source": "conceptnet:baking_cake:1873",
+    "relation": "UsedFor",
+    "target": "conceptnet:dessert:1363"
+  },
+  {
+    "source": "paper_doll.n.01",
+    "relation": "hypernym",
+    "target": "doll.n.01"
+  },
+  {
+    "source": "abdominal.n.01",
+    "relation": "HasContext",
+    "target": "conceptnet:baseball:1225"
+  },
+  {
+    "source": "defile.n.01",
+    "relation": "Antonym",
+    "target": "conceptnet:purify:1936"
+  },
+  {
+    "source": "conceptnet:people:1233",
+    "relation": "CapableOf",
+    "target": "conceptnet:complete_job:1902"
+  },
+  {
+    "source": "conceptnet:plane:1339",
+    "relation": "AtLocation",
+    "target": "conceptnet:air:1299"
+  },
+  {
+    "source": "conceptnet:king:1253",
+    "relation": "AtLocation",
+    "target": "conceptnet:castle:1301"
+  },
+  {
+    "source": "grub.n.02",
+    "relation": "RelatedTo",
+    "target": "caterpillar.n.01"
+  },
+  {
+    "source": "stop.n.05",
+    "relation": "RelatedTo",
+    "target": "diaphragm.n.02"
+  },
+  {
+    "source": "bird_feed.n.01",
+    "relation": "hypernym",
+    "target": "feed.n.01"
+  }
+]
