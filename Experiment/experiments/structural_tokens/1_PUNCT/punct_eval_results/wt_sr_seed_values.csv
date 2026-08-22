@@ -1,0 +1,10 @@
+setting,seed,word_translation,sentence_retrieval,file
+disjoint,42,0.3685,0.386,disjoint_seed42.txt
+disjoint,43,0.4975,0.518,disjoint_seed43.txt
+disjoint,44,0.507,0.56,disjoint_seed44.txt
+none,42,0.7675,0.896,none_seed42.txt
+none,43,0.7545,0.796,none_seed43.txt
+none,44,0.715,0.802,none_seed44.txt
+shared,42,0.739,0.766,shared_seed42.txt
+shared,43,0.7275,0.892,shared_seed43.txt
+shared,44,0.7495,0.836,shared_seed44.txt

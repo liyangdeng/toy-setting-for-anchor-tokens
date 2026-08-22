@@ -1,0 +1,29 @@
+Device : cuda
+Model  : punct_checkpoints_shared_seed43/final
+
+Vocab size     : 4507
+Hidden size    : 128
+Num parameters : 1,408,155
+
+── Test 1: Word Translation Precision ──────────────────────────────
+  Synset content-token pairs in joint vocab : 2000
+  top-1 precision : 0.7275  (72.8%)
+  top-5 precision : 0.8745  (87.5%)
+
+  Sample wrong predictions (concept | predicted_A | correct_A):
+    abuja.n.01                                pred=芓铜  gold=鑜阵蓼粞
+      pred_synset=ibadan.n.01  gold_synset=abuja.n.01
+    academic_administrator.n.01               pred=呝窯挒  gold=騞鼟澦
+      pred_synset=episcia.n.01  gold_synset=academic_administrator.n.01
+    aconite.n.01                              pred=焍轀  gold=陝氪
+      pred_synset=sea_urchin.n.01  gold_synset=aconite.n.01
+    aconitum.n.01                             pred=頇岷禝  gold=曤糧
+      pred_synset=chilopoda.n.01  gold_synset=aconitum.n.01
+    aculeus.n.01                              pred=摃顑放陟  gold=葏厇櫉怤
+      pred_synset=podetium.n.01  gold_synset=aculeus.n.01
+
+── Test 2: Sentence Retrieval Precision ────────────────────────────
+  Sentence pairs evaluated : 500
+  top-1 precision : 0.8920  (89.2%)
+  top-5 precision : 0.9680  (96.8%)
+

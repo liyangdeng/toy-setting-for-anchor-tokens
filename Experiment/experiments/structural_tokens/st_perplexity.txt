@@ -1,0 +1,15 @@
+setting    seed   dev_ppl    run
+shared     42     2.73       1_ST/st_checkpoints_shared_seed42
+shared     43     2.74       1_ST/st_checkpoints_shared_seed43
+shared     44     2.75       1_ST/st_checkpoints_shared_seed44
+none       42     2.87       1_ST/st_checkpoints_none_seed42
+none       43     2.71       1_ST/st_checkpoints_none_seed43
+none       44     2.83       1_ST/st_checkpoints_none_seed44
+disjoint   42     2.74       1_ST/st_checkpoints_disjoint_seed42
+disjoint   43     2.79       1_ST/st_checkpoints_disjoint_seed43
+disjoint   44     2.79       1_ST/st_checkpoints_disjoint_seed44
+
+# mean +/- std across seeds
+shared     n=3  2.74 +/- 0.01
+none       n=3  2.80 +/- 0.07
+disjoint   n=3  2.78 +/- 0.02

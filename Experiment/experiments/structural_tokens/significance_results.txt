@@ -1,0 +1,1000 @@
+##############################################################################################
+# INPUT CHECK
+##############################################################################################
+
+[PUNCTUATION]
+
+  word_translation:
+    shared   seed 42: acc=0.7390, n=2000  [1_PUNCT/punct_eval_results/shared_seed42.txt]
+    shared   seed 43: acc=0.7275, n=2000  [1_PUNCT/punct_eval_results/shared_seed43.txt]
+    shared   seed 44: acc=0.7495, n=2000  [1_PUNCT/punct_eval_results/shared_seed44.txt]
+    none     seed 42: acc=0.7675, n=2000  [1_PUNCT/punct_eval_results/none_seed42.txt]
+    none     seed 43: acc=0.7545, n=2000  [1_PUNCT/punct_eval_results/none_seed43.txt]
+    none     seed 44: acc=0.7150, n=2000  [1_PUNCT/punct_eval_results/none_seed44.txt]
+    disjoint seed 42: acc=0.3685, n=2000  [1_PUNCT/punct_eval_results/disjoint_seed42.txt]
+    disjoint seed 43: acc=0.4975, n=2000  [1_PUNCT/punct_eval_results/disjoint_seed43.txt]
+    disjoint seed 44: acc=0.5070, n=2000  [1_PUNCT/punct_eval_results/disjoint_seed44.txt]
+
+  sentence_retrieval:
+    shared   seed 42: acc=0.7660, n=500  [1_PUNCT/punct_eval_results/shared_seed42.txt]
+    shared   seed 43: acc=0.8920, n=500  [1_PUNCT/punct_eval_results/shared_seed43.txt]
+    shared   seed 44: acc=0.8360, n=500  [1_PUNCT/punct_eval_results/shared_seed44.txt]
+    none     seed 42: acc=0.8960, n=500  [1_PUNCT/punct_eval_results/none_seed42.txt]
+    none     seed 43: acc=0.7960, n=500  [1_PUNCT/punct_eval_results/none_seed43.txt]
+    none     seed 44: acc=0.8020, n=500  [1_PUNCT/punct_eval_results/none_seed44.txt]
+    disjoint seed 42: acc=0.3860, n=500  [1_PUNCT/punct_eval_results/disjoint_seed42.txt]
+    disjoint seed 43: acc=0.5180, n=500  [1_PUNCT/punct_eval_results/disjoint_seed43.txt]
+    disjoint seed 44: acc=0.5600, n=500  [1_PUNCT/punct_eval_results/disjoint_seed44.txt]
+
+  linear_probe (seed 42):
+    shared  : acc=0.4206, n=233  [1_PUNCT/probing/probe_punct_shared_seed42/layerwise_accuracy.csv]
+    none    : acc=0.4871, n=232  [1_PUNCT/probing/probe_punct_none_seed42/layerwise_accuracy.csv]
+    disjoint: acc=0.2299, n=187  [1_PUNCT/probing/probe_punct_disjoint_seed42/layerwise_accuracy.csv]
+
+  lm_head (seed 42):
+    shared  : acc=0.0343, n=233  [1_PUNCT/probing/lmhead_punct_shared_seed42/lm_head_accuracy.csv]
+    none    : acc=0.0388, n=232  [1_PUNCT/probing/lmhead_punct_none_seed42/lm_head_accuracy.csv]
+    disjoint: acc=0.0214, n=187  [1_PUNCT/probing/lmhead_punct_disjoint_seed42/lm_head_accuracy.csv]
+
+[SPECIAL_TOKENS]
+
+  word_translation:
+    shared   seed 42: acc=0.8115, n=2000  [1_ST/st_eval_results/shared_seed42.txt]
+    shared   seed 43: acc=0.7520, n=2000  [1_ST/st_eval_results/shared_seed43.txt]
+    shared   seed 44: acc=0.7910, n=2000  [1_ST/st_eval_results/shared_seed44.txt]
+    none     seed 42: acc=0.7870, n=2000  [1_ST/st_eval_results/none_seed42.txt]
+    none     seed 43: acc=0.7720, n=2000  [1_ST/st_eval_results/none_seed43.txt]
+    none     seed 44: acc=0.8270, n=2000  [1_ST/st_eval_results/none_seed44.txt]
+    disjoint seed 42: acc=0.6795, n=2000  [1_ST/st_eval_results/disjoint_seed42.txt]
+    disjoint seed 43: acc=0.7170, n=2000  [1_ST/st_eval_results/disjoint_seed43.txt]
+    disjoint seed 44: acc=0.6665, n=2000  [1_ST/st_eval_results/disjoint_seed44.txt]
+
+  sentence_retrieval:
+    shared   seed 42: acc=0.8080, n=500  [1_ST/st_eval_results/shared_seed42.txt]
+    shared   seed 43: acc=0.7860, n=500  [1_ST/st_eval_results/shared_seed43.txt]
+    shared   seed 44: acc=0.8920, n=500  [1_ST/st_eval_results/shared_seed44.txt]
+    none     seed 42: acc=0.8540, n=500  [1_ST/st_eval_results/none_seed42.txt]
+    none     seed 43: acc=0.8380, n=500  [1_ST/st_eval_results/none_seed43.txt]
+    none     seed 44: acc=0.9100, n=500  [1_ST/st_eval_results/none_seed44.txt]
+    disjoint seed 42: acc=0.7980, n=500  [1_ST/st_eval_results/disjoint_seed42.txt]
+    disjoint seed 43: acc=0.8720, n=500  [1_ST/st_eval_results/disjoint_seed43.txt]
+    disjoint seed 44: acc=0.7780, n=500  [1_ST/st_eval_results/disjoint_seed44.txt]
+
+  linear_probe (seed 42):
+    shared  : acc=0.4017, n=234  [1_ST/probing/probe_st_shared_seed42/layerwise_accuracy.csv]
+    none    : acc=0.4487, n=234  [1_ST/probing/probe_st_none_seed42/layerwise_accuracy.csv]
+    disjoint: acc=0.4530, n=234  [1_ST/probing/probe_st_disjoint_seed42/layerwise_accuracy.csv]
+
+  lm_head (seed 42):
+    shared  : acc=0.0556, n=234  [1_ST/probing/lmhead_st_shared_seed42/lm_head_accuracy.csv]
+    none    : acc=0.0342, n=234  [1_ST/probing/lmhead_st_none_seed42/lm_head_accuracy.csv]
+    disjoint: acc=0.0513, n=234  [1_ST/probing/lmhead_st_disjoint_seed42/lm_head_accuracy.csv]
+
+
+##############################################################################################
+# PUNCTUATION
+##############################################################################################
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 42
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed42.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1478/2000  = 0.7390
+disjoint       : 737/2000  = 0.3685
+difference     : +0.3705  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 6.751e-126
+two-prop z     : z = +23.569,  p = 4.003e-123
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 43
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed43.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1455/2000  = 0.7275
+disjoint       : 995/2000  = 0.4975
+difference     : +0.2300  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 4.781e-51
+two-prop z     : z = +14.929,  p = 1.063e-50
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 44
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed44.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1499/2000  = 0.7495
+disjoint       : 1014/2000  = 0.5070
+difference     : +0.2425  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 1.552e-57
+two-prop z     : z = +15.868,  p = 5.284e-57
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 42
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/none_seed42.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+none           : 1535/2000  = 0.7675
+disjoint       : 737/2000  = 0.3685
+difference     : +0.3990  (none - disjoint)
+alternative    : greater
+Fisher exact p : 1.771e-147
+two-prop z     : z = +25.472,  p = 2.033e-143
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 43
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/none_seed43.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+none           : 1509/2000  = 0.7545
+disjoint       : 995/2000  = 0.4975
+difference     : +0.2570  (none - disjoint)
+alternative    : greater
+Fisher exact p : 2.54e-64
+two-prop z     : z = +16.796,  p = 1.302e-63
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 44
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/none_seed44.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+none           : 1430/2000  = 0.7150
+disjoint       : 1014/2000  = 0.5070
+difference     : +0.2080  (none - disjoint)
+alternative    : greater
+Fisher exact p : 5.82e-42
+two-prop z     : z = +13.492,  p = 8.746e-42
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 42
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed42.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/none_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1478/2000  = 0.7390
+none           : 1535/2000  = 0.7675
+difference     : -0.0285  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.03996
+two-prop z     : z = -2.090,  p = 0.03657
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 43
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed43.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/none_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1455/2000  = 0.7275
+none           : 1509/2000  = 0.7545
+difference     : -0.0270  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.05573
+two-prop z     : z = -1.949,  p = 0.0513
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : WORD TRANSLATION
+SEED        : 44
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed44.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/none_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1499/2000  = 0.7495
+none           : 1430/2000  = 0.7150
+difference     : +0.0345  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.01515
+two-prop z     : z = +2.464,  p = 0.01374
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 42
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed42.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 383/500  = 0.7660
+disjoint       : 193/500  = 0.3860
+difference     : +0.3800  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 6.956e-35
+two-prop z     : z = +12.158,  p = 2.603e-34
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 43
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed43.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 446/500  = 0.8920
+disjoint       : 259/500  = 0.5180
+difference     : +0.3740  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 1.61e-40
+two-prop z     : z = +12.967,  p = 9.425e-39
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 44
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed44.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 418/500  = 0.8360
+disjoint       : 280/500  = 0.5600
+difference     : +0.2760  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 5.536e-22
+two-prop z     : z = +9.505,  p = 1.001e-21
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 42
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/none_seed42.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+none           : 448/500  = 0.8960
+disjoint       : 193/500  = 0.3860
+difference     : +0.5100  (none - disjoint)
+alternative    : greater
+Fisher exact p : 5.234e-68
+two-prop z     : z = +16.810,  p = 1.033e-63
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 43
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/none_seed43.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+none           : 398/500  = 0.7960
+disjoint       : 259/500  = 0.5180
+difference     : +0.2780  (none - disjoint)
+alternative    : greater
+Fisher exact p : 7.7e-21
+two-prop z     : z = +9.259,  p = 1.027e-20
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 44
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/none_seed44.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/disjoint_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+none           : 401/500  = 0.8020
+disjoint       : 280/500  = 0.5600
+difference     : +0.2420  (none - disjoint)
+alternative    : greater
+Fisher exact p : 1.049e-16
+two-prop z     : z = +8.209,  p = 1.111e-16
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 42
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed42.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/none_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 383/500  = 0.7660
+none           : 448/500  = 0.8960
+difference     : -0.1300  (shared - none)
+alternative    : two-sided
+Fisher exact p : 4.878e-08
+two-prop z     : z = -5.485,  p = 4.137e-08
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 43
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed43.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/none_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 446/500  = 0.8920
+none           : 398/500  = 0.7960
+difference     : +0.0960  (shared - none)
+alternative    : two-sided
+Fisher exact p : 3.762e-05
+two-prop z     : z = +4.183,  p = 2.874e-05
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 44
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_PUNCT/punct_eval_results/shared_seed44.txt
+SOURCE B    : 1_PUNCT/punct_eval_results/none_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 418/500  = 0.8360
+none           : 401/500  = 0.8020
+difference     : +0.0340  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.1887
+two-prop z     : z = +1.396,  p = 0.1626
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : LINEAR PROBE
+SEED        : 42
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/probing/probe_punct_shared_seed42/layerwise_accuracy.csv
+SOURCE B    : 1_PUNCT/probing/probe_punct_disjoint_seed42/layerwise_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : linear_probe
+shared         : 98/233  = 0.4206
+disjoint       : 43/187  = 0.2299
+difference     : +0.1907  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 2.593e-05
+two-prop z     : z = +4.112,  p = 1.961e-05
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : LINEAR PROBE
+SEED        : 42
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/probing/probe_punct_none_seed42/layerwise_accuracy.csv
+SOURCE B    : 1_PUNCT/probing/probe_punct_disjoint_seed42/layerwise_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : linear_probe
+none           : 113/232  = 0.4871
+disjoint       : 43/187  = 0.2299
+difference     : +0.2571  (none - disjoint)
+alternative    : greater
+Fisher exact p : 3.76e-08
+two-prop z     : z = +5.412,  p = 3.113e-08
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : LINEAR PROBE
+SEED        : 42
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_PUNCT/probing/probe_punct_shared_seed42/layerwise_accuracy.csv
+SOURCE B    : 1_PUNCT/probing/probe_punct_none_seed42/layerwise_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : linear_probe
+shared         : 98/233  = 0.4206
+none           : 113/232  = 0.4871
+difference     : -0.0665  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.1628
+two-prop z     : z = -1.439,  p = 0.15
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : LM HEAD
+SEED        : 42
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/probing/lmhead_punct_shared_seed42/lm_head_accuracy.csv
+SOURCE B    : 1_PUNCT/probing/lmhead_punct_disjoint_seed42/lm_head_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : lm_head
+shared         : 8/233  = 0.0343
+disjoint       : 4/187  = 0.0214
+difference     : +0.0129  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 0.3136
+two-prop z     : z = +0.791,  p = 0.2144
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : LM HEAD
+SEED        : 42
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_PUNCT/probing/lmhead_punct_none_seed42/lm_head_accuracy.csv
+SOURCE B    : 1_PUNCT/probing/lmhead_punct_disjoint_seed42/lm_head_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : lm_head
+none           : 9/232  = 0.0388
+disjoint       : 4/187  = 0.0214
+difference     : +0.0174  (none - disjoint)
+alternative    : greater
+Fisher exact p : 0.2325
+two-prop z     : z = +1.021,  p = 0.1536
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : PUNCTUATION
+METRIC      : LM HEAD
+SEED        : 42
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_PUNCT/probing/lmhead_punct_shared_seed42/lm_head_accuracy.csv
+SOURCE B    : 1_PUNCT/probing/lmhead_punct_none_seed42/lm_head_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : lm_head
+shared         : 8/233  = 0.0343
+none           : 9/232  = 0.0388
+difference     : -0.0045  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.8108
+two-prop z     : z = -0.256,  p = 0.7979
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+
+##############################################################################################
+# SPECIAL TOKENS
+##############################################################################################
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 42
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed42.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1623/2000  = 0.8115
+disjoint       : 1359/2000  = 0.6795
+difference     : +0.1320  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 4.468e-22
+two-prop z     : z = +9.583,  p = 4.709e-22
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 43
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed43.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1504/2000  = 0.7520
+disjoint       : 1434/2000  = 0.7170
+difference     : +0.0350  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 0.006735
+two-prop z     : z = +2.506,  p = 0.006099
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 44
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed44.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1582/2000  = 0.7910
+disjoint       : 1333/2000  = 0.6665
+difference     : +0.1245  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 4.409e-19
+two-prop z     : z = +8.855,  p = 4.179e-19
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 42
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/none_seed42.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+none           : 1574/2000  = 0.7870
+disjoint       : 1359/2000  = 0.6795
+difference     : +0.1075  (none - disjoint)
+alternative    : greater
+Fisher exact p : 8.571e-15
+two-prop z     : z = +7.687,  p = 7.559e-15
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 43
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/none_seed43.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+none           : 1544/2000  = 0.7720
+disjoint       : 1434/2000  = 0.7170
+difference     : +0.0550  (none - disjoint)
+alternative    : greater
+Fisher exact p : 3.838e-05
+two-prop z     : z = +3.988,  p = 3.334e-05
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 44
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/none_seed44.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+none           : 1654/2000  = 0.8270
+disjoint       : 1333/2000  = 0.6665
+difference     : +0.1605  (none - disjoint)
+alternative    : greater
+Fisher exact p : 5.528e-32
+two-prop z     : z = +11.671,  p = 8.952e-32
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 42
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed42.txt
+SOURCE B    : 1_ST/st_eval_results/none_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1623/2000  = 0.8115
+none           : 1574/2000  = 0.7870
+difference     : +0.0245  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.05809
+two-prop z     : z = +1.934,  p = 0.05309
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 43
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed43.txt
+SOURCE B    : 1_ST/st_eval_results/none_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1504/2000  = 0.7520
+none           : 1544/2000  = 0.7720
+difference     : -0.0200  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.1476
+two-prop z     : z = -1.485,  p = 0.1375
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : WORD TRANSLATION
+SEED        : 44
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed44.txt
+SOURCE B    : 1_ST/st_eval_results/none_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : word_translation
+shared         : 1582/2000  = 0.7910
+none           : 1654/2000  = 0.8270
+difference     : -0.0360  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.004272
+two-prop z     : z = -2.896,  p = 0.003778
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 42
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed42.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 404/500  = 0.8080
+disjoint       : 399/500  = 0.7980
+difference     : +0.0100  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 0.3753
+two-prop z     : z = +0.398,  p = 0.3455
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 43
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed43.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 393/500  = 0.7860
+disjoint       : 436/500  = 0.8720
+difference     : -0.0860  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 0.9999
+two-prop z     : z = -3.612,  p = 0.9998
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 44
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed44.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 446/500  = 0.8920
+disjoint       : 389/500  = 0.7780
+difference     : +0.1140  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 7.569e-07
+two-prop z     : z = +4.856,  p = 5.985e-07
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 42
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/none_seed42.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+none           : 427/500  = 0.8540
+disjoint       : 399/500  = 0.7980
+difference     : +0.0560  (none - disjoint)
+alternative    : greater
+Fisher exact p : 0.01206
+two-prop z     : z = +2.336,  p = 0.009757
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 43
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/none_seed43.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+none           : 419/500  = 0.8380
+disjoint       : 436/500  = 0.8720
+difference     : -0.0340  (none - disjoint)
+alternative    : greater
+Fisher exact p : 0.9471
+two-prop z     : z = -1.527,  p = 0.9366
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 44
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/st_eval_results/none_seed44.txt
+SOURCE B    : 1_ST/st_eval_results/disjoint_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+none           : 455/500  = 0.9100
+disjoint       : 389/500  = 0.7780
+difference     : +0.1320  (none - disjoint)
+alternative    : greater
+Fisher exact p : 4.822e-09
+two-prop z     : z = +5.752,  p = 4.413e-09
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 42
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed42.txt
+SOURCE B    : 1_ST/st_eval_results/none_seed42.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 404/500  = 0.8080
+none           : 427/500  = 0.8540
+difference     : -0.0460  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.06317
+two-prop z     : z = -1.941,  p = 0.05228
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 43
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed43.txt
+SOURCE B    : 1_ST/st_eval_results/none_seed43.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 393/500  = 0.7860
+none           : 419/500  = 0.8380
+difference     : -0.0520  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.04284
+two-prop z     : z = -2.104,  p = 0.03535
+significant    : YES  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : SENTENCE RETRIEVAL
+SEED        : 44
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_ST/st_eval_results/shared_seed44.txt
+SOURCE B    : 1_ST/st_eval_results/none_seed44.txt
+----------------------------------------------------------------------------------------------
+metric         : sentence_retrieval
+shared         : 446/500  = 0.8920
+none           : 455/500  = 0.9100
+difference     : -0.0180  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.3971
+two-prop z     : z = -0.953,  p = 0.3406
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : LINEAR PROBE
+SEED        : 42
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/probing/probe_st_shared_seed42/layerwise_accuracy.csv
+SOURCE B    : 1_ST/probing/probe_st_disjoint_seed42/layerwise_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : linear_probe
+shared         : 94/234  = 0.4017
+disjoint       : 106/234  = 0.4530
+difference     : -0.0513  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 0.8878
+two-prop z     : z = -1.121,  p = 0.8689
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : LINEAR PROBE
+SEED        : 42
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/probing/probe_st_none_seed42/layerwise_accuracy.csv
+SOURCE B    : 1_ST/probing/probe_st_disjoint_seed42/layerwise_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : linear_probe
+none           : 105/234  = 0.4487
+disjoint       : 106/234  = 0.4530
+difference     : -0.0043  (none - disjoint)
+alternative    : greater
+Fisher exact p : 0.5737
+two-prop z     : z = -0.093,  p = 0.537
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : LINEAR PROBE
+SEED        : 42
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_ST/probing/probe_st_shared_seed42/layerwise_accuracy.csv
+SOURCE B    : 1_ST/probing/probe_st_none_seed42/layerwise_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : linear_probe
+shared         : 94/234  = 0.4017
+none           : 105/234  = 0.4487
+difference     : -0.0470  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.3498
+two-prop z     : z = -1.029,  p = 0.3037
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : LM HEAD
+SEED        : 42
+COMPARISON  : shared > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/probing/lmhead_st_shared_seed42/lm_head_accuracy.csv
+SOURCE B    : 1_ST/probing/lmhead_st_disjoint_seed42/lm_head_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : lm_head
+shared         : 13/234  = 0.0556
+disjoint       : 12/234  = 0.0513
+difference     : +0.0043  (shared - disjoint)
+alternative    : greater
+Fisher exact p : 0.5
+two-prop z     : z = +0.206,  p = 0.4186
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : LM HEAD
+SEED        : 42
+COMPARISON  : none > disjoint
+ALTERNATIVE : greater (one-sided)
+SOURCE A    : 1_ST/probing/lmhead_st_none_seed42/lm_head_accuracy.csv
+SOURCE B    : 1_ST/probing/lmhead_st_disjoint_seed42/lm_head_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : lm_head
+none           : 8/234  = 0.0342
+disjoint       : 12/234  = 0.0513
+difference     : -0.0171  (none - disjoint)
+alternative    : greater
+Fisher exact p : 0.8736
+two-prop z     : z = -0.914,  p = 0.8197
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+==============================================================================================
+EXPERIMENT  : SPECIAL TOKENS
+METRIC      : LM HEAD
+SEED        : 42
+COMPARISON  : shared vs none
+ALTERNATIVE : two-sided (two-sided)
+SOURCE A    : 1_ST/probing/lmhead_st_shared_seed42/lm_head_accuracy.csv
+SOURCE B    : 1_ST/probing/lmhead_st_none_seed42/lm_head_accuracy.csv
+----------------------------------------------------------------------------------------------
+metric         : lm_head
+shared         : 13/234  = 0.0556
+none           : 8/234  = 0.0342
+difference     : +0.0214  (shared - none)
+alternative    : two-sided
+Fisher exact p : 0.3723
+two-prop z     : z = +1.116,  p = 0.2642
+significant    : no  (Fisher, 0.05)
+==============================================================================================
+
+
+##############################################################################################
+# WT/SR: seeds 42, 43, 44 tested separately.
+# Linear probe: seed 42, fixed layer 3.
+# LM head: seed 42, strict_token top1.
+##############################################################################################

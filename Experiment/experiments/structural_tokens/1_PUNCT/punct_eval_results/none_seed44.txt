@@ -1,0 +1,29 @@
+Device : cuda
+Model  : punct_checkpoints_none_seed44/final
+
+Vocab size     : 4505
+Hidden size    : 128
+Num parameters : 1,407,897
+
+── Test 1: Word Translation Precision ──────────────────────────────
+  Synset content-token pairs in joint vocab : 2000
+  top-1 precision : 0.7150  (71.5%)
+  top-5 precision : 0.8635  (86.4%)
+
+  Sample wrong predictions (concept | predicted_A | correct_A):
+    abdomen.n.01                              pred=飅諥  gold=旅殂惖
+      pred_synset=thorax.n.02  gold_synset=abdomen.n.01
+    abdominal_wall.n.01                       pred=蝼縊  gold=俘煎
+      pred_synset=sympathetic_nervous_system.n.01  gold_synset=abdominal_wall.n.01
+    abuja.n.01                                pred=掑  gold=鑜阵蓼粞
+      pred_synset=lake_nyasa.n.01  gold_synset=abuja.n.01
+    academic_administrator.n.01               pred=痊喷韱  gold=騞鼟澦
+      pred_synset=founding_father.n.01  gold_synset=academic_administrator.n.01
+    actaea.n.01                               pred=先竢勺血  gold=麅襘翡乇
+      pred_synset=helleborus.n.01  gold_synset=actaea.n.01
+
+── Test 2: Sentence Retrieval Precision ────────────────────────────
+  Sentence pairs evaluated : 500
+  top-1 precision : 0.8020  (80.2%)
+  top-5 precision : 0.9380  (93.8%)
+

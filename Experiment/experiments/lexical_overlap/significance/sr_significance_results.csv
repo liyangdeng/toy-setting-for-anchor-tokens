@@ -1,0 +1,23 @@
+metric,comparison_type,cond_A,acc_A,hits_A,cond_B,acc_B,hits_B,diff,p_fisher,p_z,significant_005
+Sentence Retrieval,Overlap Growth (Px vs P0),high_P2,0.828,414/500,high_P0,0.838,419/500,-0.01,0.69448,0.66419,NO
+Sentence Retrieval,Overlap Growth (Px vs P0),high_P5,0.812,406/500,high_P0,0.838,419/500,-0.026,0.87805,0.86036,NO
+Sentence Retrieval,Overlap Growth (Px vs P0),high_P7,0.822,411/500,high_P0,0.838,419/500,-0.016,0.77564,0.74968,NO
+Sentence Retrieval,Overlap Growth (Px vs P0),high_P10,0.856,428/500,high_P0,0.838,419/500,0.018,0.24115,0.21459,NO
+Sentence Retrieval,Overlap Growth (Px vs P0),mid_P2,0.784,392/500,mid_P0,0.838,419/500,-0.054,0.98822,0.9854,NO
+Sentence Retrieval,Overlap Growth (Px vs P0),mid_P5,0.812,406/500,mid_P0,0.838,419/500,-0.026,0.87805,0.86036,NO
+Sentence Retrieval,Overlap Growth (Px vs P0),mid_P7,0.882,441/500,mid_P0,0.838,419/500,0.044,0.027676,0.022483,YES
+Sentence Retrieval,Overlap Growth (Px vs P0),mid_P10,0.828,414/500,mid_P0,0.838,419/500,-0.01,0.69448,0.66419,NO
+Sentence Retrieval,Overlap Growth (Px vs P0),low_P2,0.894,447/500,low_P0,0.838,419/500,0.056,0.0059907,0.0046715,YES
+Sentence Retrieval,Overlap Growth (Px vs P0),low_P5,0.842,421/500,low_P0,0.838,419/500,0.004,0.46564,0.43152,NO
+Sentence Retrieval,Overlap Growth (Px vs P0),low_P7,0.932,466/500,low_P0,0.838,419/500,0.094,1.9722e-06,1.59e-06,YES
+Sentence Retrieval,Overlap Growth (Px vs P0),low_P10,0.912,456/500,low_P0,0.838,419/500,0.074,0.00026812,0.00020168,YES
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P0,0.838,419/500,high_P0,0.838,419/500,0.0,0.53419,0.5,NO
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P0,0.838,419/500,mid_P0,0.838,419/500,0.0,0.53419,0.5,NO
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P2,0.894,447/500,high_P2,0.828,414/500,0.066,0.0016669,0.0012785,YES
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P2,0.894,447/500,mid_P2,0.784,392/500,0.11,1.4147e-06,1.1102e-06,YES
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P5,0.842,421/500,high_P5,0.812,406/500,0.03,0.12088,0.10491,NO
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P5,0.842,421/500,mid_P5,0.812,406/500,0.03,0.12088,0.10491,NO
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P7,0.932,466/500,high_P7,0.822,411/500,0.11,6.6199e-08,5.9332e-08,YES
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P7,0.932,466/500,mid_P7,0.882,441/500,0.05,0.0043368,0.003244,YES
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P10,0.912,456/500,high_P10,0.856,428/500,0.056,0.0037294,0.0028457,YES
+Sentence Retrieval,Strategy Comparison (LOW vs Other),low_P10,0.912,456/500,mid_P10,0.828,414/500,0.084,5.1747e-05,3.9193e-05,YES
