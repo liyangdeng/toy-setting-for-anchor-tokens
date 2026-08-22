@@ -2,20 +2,19 @@
 
 ---
 ## Research Question
+> Does the degree of lexical overlap influence cross-lingual alignment of two artificial languages?
 ---
 
 ## Experimental Conditions
-
-The pipeline automatically loops through all combinations of the following parameters to produce independent dataset variants:
 
 | Parameter | Evaluated Values |
 | :--- | :--- |
 | **Target Overlap ($\%$)** | $2.5\%$, $5.0\%$, $7.5\%$, $10.0\%$ |
 | **Frequency Strategy** | `high`, `mid`, `low` |
-| **Target Languages** | `cjk`, `hiragana` |
 
 ---
 ## Corpus Generation
+
 ---
 ## Training
 ---
@@ -81,14 +80,9 @@ The pipeline automatically loops through all combinations of the following param
 ---
 
 ## Significance Testing
+
 ---
 
 ## File and Execution Prerequisites
-
-Ensure the following dataset files are located in your script's working directory before execution:
-
-1. **`eng_sentences_with_adj.txt`** — The source English baseline text corpus used to extract token distribution metrics.
-2. **`synset_pos_artificial_[lang].json`** — The language-specific dictionaries mapping English source keys to artificial vocabulary structures (containing the `"artificial"` field).
-3. **`corpus_[lang]_synset.txt`** — The base artificial token corpora designated for partial structural overwriting.
 
 ---
