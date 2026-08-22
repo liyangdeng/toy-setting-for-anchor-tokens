@@ -6,9 +6,8 @@ We build a degree-controlled noun concept backbone from WordNet, enriches it wit
 
 ### Syntactic structure
 **1. PCFG production rules** and the per-relation verb-phrase templates live in
-`data/grammar/grammar_templates_adj.py` (adjective-aware; `grammar_templates.py`
-is the no-adjective variant). They are not run directly — the generator imports
-them via `--grammar`. Each relation gets four VP templates, with
+`data/grammar/grammar_templates_adj.py`. It is not run directly — the generator
+imports it via `--grammar`. Each relation gets four VP templates, with
 copula + adjective + preposition bound together via subcategorised
 non-terminals (e.g. ADJ_1/PREP_1) so invalid combinations like is + with
 can't be generated.
