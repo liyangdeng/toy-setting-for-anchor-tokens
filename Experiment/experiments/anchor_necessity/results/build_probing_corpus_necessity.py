@@ -46,12 +46,12 @@ DICTS = REPO / 'data/semantic_backbones/dict_to_artificial/dicts_synset_adj_augm
 CJK_DICT_PATH = DICTS / 'synset_pos_artificial_cjk_edges_adj_augmented.json'
 HIRA_DICT_PATH = DICTS / 'synset_pos_artificial_hiragana_edges_adj_augmented.json'
 MONO_SCRIPT = REPO / 'Experiment/training/train_monolingual_synset.py'
-GEN_SCRIPT_PATH = REPO / 'Experiment/experiments/anchor_necessity/generate_sentences_no_anchors.py'
+GEN_SCRIPT_PATH = REPO / 'Experiment/experiments/anchor_necessity/corpus/generate_sentences_no_anchors.py'
 BUILD_CORPUS_PATH = REPO / 'data/corpus/build_synset_corpus.py'
 SELECT_SCRIPT = REPO / 'Experiment/evaluation/masked_language_probing/build_probing_corpus/select_probe_triples.py'
 BPC_SCRIPT = REPO / 'Experiment/evaluation/masked_language_probing/build_probing_corpus/build_probing_corpus.py'
 
-OUT = REPO / 'Experiment/experiments/anchor_necessity/probing'
+OUT = REPO / 'Experiment/experiments/anchor_necessity/results'
 LANG_A_CONFIG = (1, 1, 1)
 LANG_B_CONFIGS = ['000', '001', '011', '111']
 SEED = 42

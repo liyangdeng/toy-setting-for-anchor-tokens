@@ -56,11 +56,11 @@ much transfer survives as the only remaining similarity is taken away.
 
 ## Corpus Generation
 
-Two builders live in this folder:
+Two builders drive this:
 
 - `corpus/build_different_parallel_corpus.py` — the full parallel corpus
   (nothing held out), used for word translation and sentence retrieval.
-- `probing/build_probing_corpus_necessity.py` — the held-out corpus for the
+- `results/build_probing_corpus_necessity.py` — the held-out corpus for the
   probing metrics, run in stages:
 
   ```bash
@@ -76,7 +76,7 @@ Two builders live in this folder:
   held-out fact that model can already guess on its own, so what remains is a
   clean test of transfer.
 
-`probing/run_overnight.sh` runs the per-setting stages, trains the bilingual
+`results/run_pipeline.sh` runs the per-setting stages, trains the bilingual
 models, and calls the probe and LM-head evaluations for all four settings.
 
 ## Evaluation
