@@ -220,7 +220,6 @@ def main():
     p.add_argument("--cjk_dict", required=True)
     p.add_argument("--hira_dict", required=True)
     p.add_argument("--out_dir", default="./lm_head_results")
-    p.add_argument("--topk", type=int, default=3)
     args = p.parse_args()
 
     final_omitted = [p for p in json.load(open(args.final_omitted)) if p.get("track") == "entity"]
@@ -232,7 +231,7 @@ def main():
     examples = build_examples(final_omitted, parallel, cjk_dict, hira_dict, tok.mask_token)
     print(f"built {len(examples)} usable mask-entity triples "
           f"(of {len(final_omitted)} final_omitted entity-track triples)")
-    evaluate(args.model_dir, examples, cjk_dict, hira_dict, args.out_dir, topk=args.topk)
+    evaluate(args.model_dir, examples, cjk_dict, hira_dict, args.out_dir)
 
 
 if __name__ == "__main__":
