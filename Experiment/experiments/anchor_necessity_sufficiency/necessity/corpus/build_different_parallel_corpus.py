@@ -3,7 +3,7 @@ build_different_parallel_corpus.py
 Experiment-specific corpus + parallel builder for the Anchor Necessity / Sufficiency setting.
 
 This is an assembled ("集合") version of two existing repo tools:
-  - data/generate_sentences/generate_sentences_no_anchors.py  (punctuation-free PCFG generator)
+  - necessity/generate_sentences_no_anchors.py  (punctuation-free PCFG generator)
   - data/corpus/build_synset_corpus.py                        (synset -> artificial-token replacer)
 Both are imported and reused here — no logic is duplicated.
 
@@ -56,7 +56,7 @@ def _load_module(path, name):
     spec.loader.exec_module(mod)
     return mod
 
-gen = _load_module(REPO / 'data/generate_sentences/generate_sentences_no_anchors.py',
+gen = _load_module(REPO / 'Experiment/experiments/anchor_necessity_sufficiency/necessity/generate_sentences_no_anchors.py',
                    'gen_no_anchors')
 bld = _load_module(REPO / 'data/corpus/build_synset_corpus.py', 'build_synset_corpus')
 
