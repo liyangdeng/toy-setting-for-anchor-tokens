@@ -62,7 +62,7 @@ The tables below present results for models trained with seed 42. Visualizations
 
 ### Word Translation and Sentence Retrieval Precision
 
-`evaluation/evaluate_lexical_overlap.py` extends `Experiment/evaluation/word_trans_sent_retirev.py` to evaluate cross-lingual representation alignment at both the token and sentence level across all experimental conditions, as well as plot the results. All models were evaluated under identical conditions using a sample size of 500 parallel sentences per condition.
+`evaluation/evaluate_lexical_overlap.py` extends `Experiment/evaluation/word_trans_sent_retirev.py` to evaluate cross-lingual representation alignment at both the token and sentence level across all experimental conditions. All models were evaluated under identical conditions using a sample size of 500 parallel sentences per condition.
 
 | Condition | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
 | --- | ---: | ---: | ---: | ---: |
@@ -84,16 +84,16 @@ The tables below present results for models trained with seed 42. Visualizations
 
 ### Linear Probing Accuracy
 
-The script `linear_probe/linear_probe_lexical_overlap.py` extends `masked_language_probing/probing/linear_probe.py` to evaluate cross-lingual representation transfer within hidden layers. Execution across all experimental conditions is fully automated using `linear_probe/run_probe_lexical_overlap.py`.
+The script `linear_probe/linear_probe_lexical_overlap.py` extends `Experiment/evaluation/masked_language_probing/probing/linear_probe.py` to evaluate cross-lingual representation transfer within hidden layers. Execution across all experimental conditions is fully automated using `linear_probe/run_probe_lexical_overlap.py`.
 
 Prerequisites:
 1. *Build Initial Probing Corpus*  
-   Run `build_probing_corpus.py` to generate the baseline training datasets and entity-omitted splits:
+   Run `build_probing_corpus.py` to generate "cleaned" versions of the training data:
    - `probing_run/a_training.txt`
    - `probing_run/b_training.txt`
 2. *Generate Overlapped Corpora*  
-   Execute `build_overlapped_corpora.py` on `a_training.txt` and `b_training.txt` to construct condition-specific lexical overlap files (e.g., `corpus_cjk_P5_high.txt`).
-3. *Train & Evaluate** 
+   Execute `build_overlapped_corpora.py` on `a_training.txt` and `b_training.txt` to construct condition-specific lexical overlap files.
+3. *Train & Evaluate*
    Train fresh models on the resulting overlapped corpora and execute the linear probing evaluation scripts.
 
 | Condition | Layer 0 | Layer 1 | Layer 2 | Layer 3 | Layer 4 |
@@ -115,6 +115,9 @@ Prerequisites:
 | `low_P10` | 0.0324 | **0.5144** | **0.6547** | **0.6115** | **0.6007** |
 
 ### LM Head Accuracy
+
+LM Head evaluation builds upon the probe corpus and models, but investigates cross-lingual transfer in the LM prediction head. `lm_head_lexical_overlap.py` remains almost unchanged in comparison to its predecessor `Experiment/evaluation/lm_head/lm_head_eval.py`. `run_lm_head_lexical_overlap.py` automates the whole process across all experimental conditions.
+
 | Condition | strict_token top-1 | strict_token top-3 | strict_concept top-1 | strict_concept top-3 | lenient top-1 | lenient top-3 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | `high_P0` | 0.0360 | 0.0863 | 0.0360 | 0.0899 | 0.0360 | 0.0863 |
@@ -133,12 +136,9 @@ Prerequisites:
 | `low_P7` | 0.0324 | 0.0719 | 0.0396 | 0.0899 | 0.0324 | 0.0719 |
 | `low_P10` | 0.0288 | 0.0647 | 0.0288 | 0.0647 | 0.0288 | 0.0755 |
 
----
 
 ## Significance Testing
 
----
 
 ## File and Execution Prerequisites
 
----
