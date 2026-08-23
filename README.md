@@ -21,7 +21,7 @@ The project builds a synthetic semantic graph, generates artificial-language sen
   - [`Experiment/evaluation/`](Experiment/evaluation/) - alignment, probing,
     accuracy, and significance evaluation.
   - [`Experiment/experiments/`](Experiment/experiments/) - graph density,
-    semantic overlap, lexical overlap, and control experiments.
+    semantic overlap, lexical overlap, structural tokens and control experiments.
 - [`requirements.txt`](requirements.txt) - Python dependencies.
 - [`README.md`](README.md) - this overview.
 
