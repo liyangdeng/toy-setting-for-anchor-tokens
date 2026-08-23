@@ -12,11 +12,14 @@ Make sure to use the correct corpora as --corpus_a / --corpus_b
   disjoint      *;              .,          
 
 usage:
-    python final_train_punct.py --setting shared \
+    python train_punct.py --setting shared \
         --seed 42 \
         --corpus_a corpus_cjk_synset.txt \
         --corpus_b corpus_hiragana_synset.txt \
-        --output_dir checkpoints_shared
+        --output_dir punct_checkpoints_shared
+
+alternatively:
+    bash run_punct_seeds.sh
  
 """
  

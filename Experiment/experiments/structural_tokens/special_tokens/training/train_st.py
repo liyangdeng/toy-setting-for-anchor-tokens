@@ -10,10 +10,13 @@ Train for the special-token experiment
   only isolates the boundary tokens.
 
 usage:
-  python final_train_st.py --setting none \
+  python train_st.py --setting shared \
       --corpus_a corpus_cjk_synset.txt \
       --corpus_b corpus_hiragana_synset.txt \
-      --output_dir st_checkpoints_none
+      --output_dir st_checkpoints_shared
+
+alternatively:
+    bash run_st_wt_sr.sh
 
 """
 
