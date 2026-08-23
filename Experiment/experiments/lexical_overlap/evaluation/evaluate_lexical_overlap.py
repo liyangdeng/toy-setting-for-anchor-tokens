@@ -1,5 +1,5 @@
 """
-Evaluates lexical-overlap models across different experimental conditions, aggregating results and generating plots.
+Evaluates lexical-overlap models across different experimental conditions, aggregating results and generating a plot.
 Using seed 42 as the default seed for evaluation.
 
 Adapted from semantic_overlap/evaluate_seed42_results.py for uniform evaluation and visualization.
@@ -17,9 +17,7 @@ Needed files:
 Outputs:
 - lexical_overlap_evaluation.json
 - lexical_overlap_evaluation.csv
-- visualizations/word_translation_precision.png
-- visualizations/sentence_retrieval_precision.png
-
+- visualizations/wt_sr_top1.png
 As well as evaluation logs for each condition and the shared parallel corpora used for evaluation.
 
 Usage example:
@@ -40,6 +38,7 @@ import subprocess
 import sys
 from pathlib import Path
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
 
 CHECKPOINTS_DIR = "checkpoints"
 EVAL_DIR = "evaluation_lexical_overlap"
@@ -74,17 +73,23 @@ def write_csv(path, rows):
 # Function to run a subprocess command and capture its output
 def run(cmd, *, log_path=None):
     """
-    Runs a subprocess command and captures its output. Optionally logs the output to a file.
+    Runs a subprocess command and captures its output.
     """
     print("Running:", " ".join(str(part) for part in cmd))
     
+    # Force UTF-8 encoding for sub-processes
+    env = os.environ.copy()
+    env["PYTHONIOENCODING"] = "utf-8"
+    env["PYTHONUTF8"] = "1"
+
     result = subprocess.run(
         [str(part) for part in cmd],
         text=True,
         encoding="utf-8",
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
-        check=True
+        check=True,
+        env=env
     )
     if log_path is not None:
         log_path.parent.mkdir(parents=True, exist_ok=True)
@@ -139,24 +144,28 @@ def parse_word_log(text):
 # Function to plot metrics and save the plots
 def plot_metrics(data_rows, output_dir):
     """
-    Plots the evaluation metrics and saves the plots.
-    Each strategy is plotted separately.
+    Plots Word Translation and Sentence Retrieval top-1 precision.
     x-axis: lexical overlap percentage
     y-axis: precision metrics (word translation and sentence retrieval)
     """
-    strategies = ["high", "mid", "low"]
+    strategies = ["low", "mid", "high"]
     x_ticks_values = [0.0, 2.5, 5.0, 7.5, 10.0]
     viz_dir = output_dir / "visualizations"
     viz_dir.mkdir(parents=True, exist_ok=True)
+
+    strat_config = {
+        "low":  {"color": "#1f77b4", "marker": "o", "label_prefix": "Low"},   # Blue Circle
+        "mid":  {"color": "#ff7f0e", "marker": "s", "label_prefix": "Mid"},   # Orange Square
+        "high": {"color": "#2ca02c", "marker": "^", "label_prefix": "High"}   # Green Triangle
+    }
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.5), sharey=True, dpi=300)
     
     # -------------------------------------------------------------
-    # PLOT 1: Word Translation Precision
+    # SUBPLOT 1: Word Translation Top-1
     # -------------------------------------------------------------
-    fig1, axes1 = plt.subplots(1, 3, figsize=(15, 5), sharey=True)
-    
-    for i, strategy in enumerate(strategies):
-        ax = axes1[i]
-        strat_data = [d for d in data_rows if d["frequency_strategy"] == strategy]
+    for strategy in strategies:
+        strat_data = [d for d in data_rows if d.get("frequency_strategy") == strategy]
         strat_data.sort(key=lambda x: x["lexical_overlap_percentage"])
         
         if not strat_data:
@@ -164,74 +173,63 @@ def plot_metrics(data_rows, output_dir):
             
         xs = [d["lexical_overlap_percentage"] for d in strat_data]
         w1_vals = [d["word_top1"] for d in strat_data]
-        w5_vals = [d["word_top5"] for d in strat_data]
+        cfg = strat_config[strategy]
         
-        # Word Top-1 Plot
-        ax.plot(xs, w1_vals, marker="o", linewidth=2.5, markersize=6, color="#1f77b4", label="Top-1")
-        
-        # Word Top-5 Plot
-        ax.plot(xs, w5_vals, marker="s", linewidth=2.5, markersize=6, color="#aec7e8", linestyle="--", label="Top-5")
-        
-        ax.set_title(f"{strategy.capitalize()} Frequency", fontsize=12, fontweight="normal", pad=12)
-        ax.set_xlabel("Lexical overlap", fontsize=11, labelpad=8)
-        ax.set_xticks(x_ticks_values)
-        ax.set_xticklabels([f"{val}%" for val in x_ticks_values])
-        
-        if i == 0:
-            ax.set_ylabel("Word Translation Precision", fontsize=11, labelpad=8)
-            ax.legend(loc="lower left", frameon=True, fontsize=10)
-            
-        ax.set_ylim(0.3, 1.02)
-        ax.grid(True, linestyle="--", alpha=0.5)
+        ax1.plot(
+            xs, w1_vals, 
+            marker=cfg["marker"], 
+            linewidth=2.0, 
+            markersize=6, 
+            color=cfg["color"], 
+            label=f"{cfg['label_prefix']} strategy"
+        )
 
-    fig1.tight_layout()
-    plot1_path = viz_dir / "word_translation_precision.png"
-    fig1.savefig(plot1_path, dpi=300, bbox_inches="tight")
-    plt.close(fig1)
-    print(f"Saved: {plot1_path}")
+    ax1.set_title("Word Translation Precision (Top-1)", fontsize=13, pad=12)
+    ax1.set_xlabel("Lexical overlap (%)", fontsize=12, labelpad=8)
+    ax1.set_ylabel("Precision", fontsize=12, labelpad=8)
+    ax1.set_xticks(x_ticks_values)
+    ax1.set_xticklabels([f"{val}" for val in x_ticks_values], fontsize=11)
+    ax1.set_ylim(0.0, 1.02)
+    ax1.yaxis.set_major_formatter(mtick.PercentFormatter(1.0, decimals=0))
+    ax1.grid(True, linestyle="-", alpha=0.15, color="gray")
+    ax1.legend(loc="lower right", frameon=False, fontsize=10)
 
     # -------------------------------------------------------------
-    # PLOT 2: Sentence Retrieval Precision
+    # SUBPLOT 2: Sentence Retrieval Top-1
     # -------------------------------------------------------------
-    fig2, axes2 = plt.subplots(1, 3, figsize=(15, 5), sharey=True)
-    
-    for i, strategy in enumerate(strategies):
-        ax = axes2[i]
-        strat_data = [d for d in data_rows if d["frequency_strategy"] == strategy]
+    for strategy in strategies:
+        strat_data = [d for d in data_rows if d.get("frequency_strategy") == strategy]
         strat_data.sort(key=lambda x: x["lexical_overlap_percentage"])
         
         if not strat_data:
             continue
             
         xs = [d["lexical_overlap_percentage"] for d in strat_data]
-        s1_vals = [d["sent_top1"] for d in strat_data if d["sent_top1"] is not None]
-        s5_vals = [d["sent_top5"] for d in strat_data if d["sent_top5"] is not None]
+        s1_vals = [d["sent_top1"] for d in strat_data if d.get("sent_top1") is not None]
+        cfg = strat_config[strategy]
         
-        # Sentence Top-1 Plot
         if s1_vals:
-            ax.plot(xs, s1_vals, marker="o", linewidth=2.5, markersize=6, color="#d62728", label="Top-1")
-            
-        # Sentence Top-5 Plot
-        if s5_vals:
-            ax.plot(xs, s5_vals, marker="s", linewidth=2.5, markersize=6, color="#ff9896", linestyle="--", label="Top-5")
-            
-        ax.set_title(f"{strategy.capitalize()} Frequency", fontsize=12, fontweight="normal", pad=12)
-        ax.set_xlabel("Lexical overlap", fontsize=11, labelpad=8)
-        ax.set_xticks(x_ticks_values)
-        ax.set_xticklabels([f"{val}%" for val in x_ticks_values])
-        
-        if i == 0:
-            ax.set_ylabel("Sentence Retrieval Precision", fontsize=11, labelpad=8)
-            ax.legend(loc="lower left", frameon=True, fontsize=10)
-            
-        ax.set_ylim(0.3, 1.02)
-        ax.grid(True, linestyle="--", alpha=0.5)
+            ax2.plot(
+                xs, s1_vals, 
+                marker=cfg["marker"], 
+                linewidth=2.0, 
+                markersize=6, 
+                color=cfg["color"], 
+                label=f"{cfg['label_prefix']} strategy"
+            )
 
-    fig2.tight_layout()
-    plot2_path = viz_dir / "sentence_retrieval_precision.png"
-    fig2.savefig(plot2_path, dpi=300, bbox_inches="tight")
-    plt.close(fig2)
-    print(f"Saved: {plot2_path}")
+    ax2.set_title("Sentence Retrieval Precision (Top-1)", fontsize=13, pad=12)
+    ax2.set_xlabel("Lexical overlap (%)", fontsize=12, labelpad=8)
+    ax2.set_xticks(x_ticks_values)
+    ax2.set_xticklabels([f"{val}" for val in x_ticks_values], fontsize=11)
+    ax2.grid(True, linestyle="-", alpha=0.15, color="gray")
+    ax2.legend(loc="lower right", frameon=False, fontsize=10)
+
+    fig.tight_layout()
+    plot_path = viz_dir / "wt_sr_top1.png"
+    fig.savefig(plot_path, dpi=300, bbox_inches="tight")
+    plt.close(fig)
+    print(f"Saved figure: {plot_path}")
 
 
 def main():
