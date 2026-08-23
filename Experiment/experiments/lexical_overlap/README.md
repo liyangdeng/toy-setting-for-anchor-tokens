@@ -1,11 +1,19 @@
 # Lexical Overlap Experiment
 
----
 ## Research Question
+Previous related work suggests that lexical overlap might be one of the driving factors to cross-lingual alignment. We therefore ask the question:
 > Does the degree of lexical overlap influence cross-lingual alignment of two artificial languages?
----
 
 ## Experimental Conditions
+
+We evaluate 15 experimental conditions (13 of which distinct), gotten by a combination of two variables: target overlap percentage and frequency strategy.
+
+There are five targeted overlap percentages: 0.0, 2.5, 5.0, 7.5 and 10% of the overall corpus. These are computed based on the accumulated absolute frequency of selected overlapped tokens and the absolute numbers of non-distinct tokens of the generated corpus. Since there is a certain amount of randomness in selecting tokens, these percentages are not always met, therefore we state that these are *target* overlap percentages. However, the deviation is minimal and the accumulated score cannot cross the target percentage at any point.
+
+To choose which tokens to overlap, we pick from three designated frequency-pools, so-called frequency strategies:
+- *high*: Tokens ranked 0–9 (high-frequency, functional, or common terms).
+- *mid*: Tokens ranked 10–49 (moderately frequent terms).
+- *low*: Tokens ranked 50–199 (lower-frequency, content-specific terms).
 
 | Condition | Target overlap (%) | Frequency strategy |
 | --- | ---: | ---: |
@@ -25,24 +33,22 @@
 | `low_P7` | 7.5 | `low` |
 | `low_P10` | 10.0 | `low` |
 
----
-## Corpus Generation
-`build_overlapped_corpora.py` processes the flattened generated English corpus (`v3_generated_sentences_adj.txt`) by computing token frequencies to produce a sorted frequency list. It selects anchor tokens based on the target percentage and specified frequency strategy, then maps these anchors to the corresponding artificial language corpora using their respective dictionary files (`synset_pos_artificial_cjk_edges_adj_augmented.json` and `synset_pos_artificial_hiragana_edges_adj_augmented.json`). Finally, it modifies the existing corpora (`corpus_cjk_synset.txt` and `corpus_hiragana_synset.txt`) to generate 15 distinct corpus files using the naming pattern `corpus_{language}_P{int(percentage)}_{strategy}`.
-
-Frequency strategies define the pool of candidate tokens from the sorted frequency list:
-- **`high`**: Tokens ranked 0–9 (high-frequency, functional, or common terms).
-- **`mid`**: Tokens ranked 10–49 (moderately frequent terms).
-- **`low`**: Tokens ranked 50–199 (lower-frequency, content-specific terms).
-
 For a given condition, anchor tokens are sampled randomly from the strategy's candidate pool and accumulated until reaching the target overlap percentage.
 
----
+## Corpus Generation
+
+`corpus/build_overlapped_corpora.py` processes the flattened English corpus (`v3_generated_sentences_adj.txt`) by computing token frequencies to produce a sorted frequency list. It filters candidate anchor tokens based on the specified frequency strategy (`high`, `mid`, or `low`) and shuffles them, and iteratively accumulates their token counts until the target overlap percentage is met, or no remaining candidate tokens fit within the target threshold. The script then maps these anchor tokens to their corresponding artificial language counterparts using the respective dictionary files (`synset_pos_artificial_cjk_edges_adj_augmented.json` and `synset_pos_artificial_hiragana_edges_adj_augmented.json`).
+
+Finally, it replaces the mapped tokens in the target artificial corpora (`corpus_cjk_synset.txt` and `corpus_hiragana_synset.txt`) to generate 15 corpus files per language (13 distinct conditions, as 0% overlap yields identical corpora across all strategies) following the naming scheme `corpus_{language}_P{int(percentage)}_{strategy}`.
+
 ## Training
-`run_lexical_overlap.py` executes `train_lexical_overlap.py` (adapted from `train_multilingual_synset.py`) across 15 conditions—13 of which are distinct—on pairs of overlapped corpora. 
 
-Along with the final model checkpoints, the script logs training metadata for each run.
+`run_lexical_overlap.py` automates the training of Masked Language Models across all 15 experimental conditions (13 distinct conditions) by invoking `train_lexical_overlap.py`.
 
----
+The underlying `train_lexical_overlap.py` script—adapted from `Experiment/training/train_multilingual_synset.py` to maintain hyperparameter and parameter alignment—trains a small bilingual BERT-style MLM (4 layers, 128 hidden size, 4 attention heads) using strictly the MLM objective (without Next Sentence Predictio) and a shared WordLevel tokenizer built directly from the paired corpora.
+
+For each condition, the script concatenates the two modified target language corpora, deterministically splits them into training and validation sets, and saves the resulting datasets (`train.txt` and `dev.txt`), model checkpoints, and training plots. Additionally, it logs a comprehensive `training_metadata.json` file containing the experimental condition configuration and training evaluation metrics.
+
 ## Evaluation
 
 ### Word Translation and Sentence Retrieval Precision
