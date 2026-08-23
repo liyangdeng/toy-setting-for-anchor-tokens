@@ -31,6 +31,7 @@ PARALLEL = "probing_run/final_omitted_corpus/parallel_corpus_synset.json"
 
 for percentage in PERCENTAGE_VALUES:
     for strategy in STRATEGIES:
+        # Optimization for non-distinct configurations
         if percentage == "0.0" and strategy != "high":
             continue
 
