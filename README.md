@@ -1,6 +1,6 @@
 # A Toy Setting for the Anchor Token Hypothesis
 
-This repository is part of the course Software Project at the Heidelberg University. It contains a controlled artificial-language setup for studying the anchor token hypothesis.
+This repository is part of the course *Software Project* at Department of Computational Linguistics, Heidelberg University. It contains a controlled artificial-language setup for studying the anchor token hypothesis.
 
 The project builds a synthetic semantic graph, generates artificial-language sentences from that graph, trains small masked-language models from scratch, and evaluates monolingual learning, cross-lingual alignment, and transfer.
 
@@ -27,7 +27,7 @@ The project builds a synthetic semantic graph, generates artificial-language sen
 
 ## Main Components
 
-### Semantic Backbone
+### 1. Semantic Backbone
 
 The semantic graph starts from WordNet noun synsets and is expanded with selected ConceptNet relations. The default backbone is designed to be connected, degree-controlled, and easy to sample for controlled experiments.
 
@@ -36,7 +36,7 @@ Current graph resources are in:
 - `data/semantic_backbones/edges_adj.json`
 - `data/semantic_backbones/README.md`
 
-### Artificial Language Generation
+### 2. Artificial Language Generation
 
 The project uses PCFG grammar templates to generate sentences over the semantic graph. It supports artificial token inventories such as CJK-style tokens and Hiragana-style tokens, plus different syntactic configurations.
 
@@ -46,7 +46,7 @@ Important files:
 - `data/generate_sentences/v3_generate_sentences.py`
 - `data/generate_sentences/v3_generated_sentences_adj.json`
 
-### Corpus Construction
+### 3. Corpus Construction
 
 Generated graph sentences are converted into model-training corpora, including monolingual corpora and parallel CJK/Hiragana corpora.
 
