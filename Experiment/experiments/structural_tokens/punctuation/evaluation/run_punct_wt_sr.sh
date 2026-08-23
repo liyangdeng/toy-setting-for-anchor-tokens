@@ -3,7 +3,7 @@
 # Run WT and SR evaluation for the PUNCTUATION experiment
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(git -C "$SCRIPT_DIR" rev-parse --show-toplevel)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../../../../.." && pwd)"
 
 cd "$SCRIPT_DIR"
 

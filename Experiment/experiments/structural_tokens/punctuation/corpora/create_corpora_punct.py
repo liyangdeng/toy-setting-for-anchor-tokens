@@ -20,6 +20,18 @@ import argparse
 import sys
 import json
 
+def find_repo_root():
+    current = Path(__file__).resolve().parent
+
+    for parent in [current, *current.parents]:
+        if (parent / "data").is_dir() and (parent / "Experiment").is_dir():
+            return parent
+
+    raise FileNotFoundError("Could not locate repository root.")
+
+
+REPO_ROOT = find_repo_root()
+
 COMMA  = ","
 PERIOD = "."
 
@@ -61,10 +73,25 @@ def process_parallel(src, dst, mode, sides):
 
 def main():
     ap = argparse.ArgumentParser(description="punctuation corpora")
-    ap.add_argument("--hiragana", default="data/corpus/corpus_hiragana_synset.txt")
-    ap.add_argument("--cjk",      default="data/corpus/corpus_cjk_synset.txt")
-    ap.add_argument("--parallel", default="parallel_corpus_synset.json")
-    ap.add_argument("--outdir",   default="punct_corpora")
+    ap.add_argument(
+        "--hiragana",
+        default=REPO_ROOT / "data" / "corpus" / "corpus_hiragana_synset.txt"
+    )
+
+    ap.add_argument(
+        "--cjk",
+        default=REPO_ROOT / "data" / "corpus" / "corpus_cjk_synset.txt"
+    )
+
+    ap.add_argument(
+        "--parallel",
+        default=REPO_ROOT / "data" / "corpus" / "parallel_corpus_synset.json"
+    )
+
+    ap.add_argument(
+        "--outdir",
+        default="punct_corpora"
+    )
     args = ap.parse_args()
 
     hira, cjk, par, outdir = Path(args.hiragana), Path(args.cjk), Path(args.parallel), Path(args.outdir)
