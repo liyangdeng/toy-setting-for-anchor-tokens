@@ -137,8 +137,10 @@ LM Head evaluation builds upon the probe corpus and models, but investigates cro
 | `low_P10` | 0.0288 | 0.0647 | 0.0288 | 0.0647 | 0.0288 | 0.0755 |
 
 
-## Significance Testing
+### Significance Testing
 
+Since no monotonic trends were observed, significance testing was done exclusively using Fisher's exact test (`evaluation/significance/compare_significance.py`). The main goal was to evaluate each condition's significance in comparison to the 0% baseline, as well as to compare low-strategy conditions to conditions with a matching target percentage, since these have shown a trend of improvement compared to other strategies. Comprehensive significance testing results can be found under `significance/`.
 
 ## File and Execution Prerequisites
 
+For file and execution prerequisites, refer to each script's docstrings.
