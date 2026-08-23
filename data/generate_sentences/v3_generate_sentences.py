@@ -48,9 +48,9 @@ This script uses synsets
 
 VP types produced by the grammar
 -----------------------------------------
-  TRANS    — transitive verb:       {type, v}
-  COP      — copula + preposition:  {type, aux, pp}
-  COP_ADJ  — copula + adj + prep:   {type, aux, adjp, pp}
+  TRANS    transitive verb:       {type, v}
+  COP      copula + preposition:  {type, aux, pp}
+  COP_ADJ  copula + adj + prep:   {type, aux, adjp, pp}
 
 ____________________________________________________________________________________
 
@@ -153,7 +153,7 @@ def sample_vp_struct(rules):
 def build_quality_lookup(edges):
     """
     Build {node_id: [adjective tokens]} from HasQuality edges. Adjective
-    tokens are stored verbatim — no stripping of prefixes/suffixes/underscores.
+    tokens are stored verbatim, no stripping of prefixes/suffixes/underscores.
     """
     lookup = defaultdict(list)
     for edge in edges:

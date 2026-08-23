@@ -597,7 +597,7 @@ grammar = {
     """,
 
     "HasProperty": """
-        # NP rules — adjective slot disabled to prevent "green grass is green"
+        # NP rules: adjective slot disabled to prevent "green grass is green"
         NP -> N [1.0]
 
         VP -> TRANS [0.4]
@@ -990,7 +990,7 @@ grammar = {
     # ── ConceptNet Low Frequency ───────────────────────────────────────────────
 
     "NotHasProperty": """
-        # NP rules — adjective slot disabled to prevent "green grass is green"
+        # NP rules: adjective slot disabled to prevent "green grass is green"
         NP -> N [1.0]
 
         VP -> TRANS [0.4]

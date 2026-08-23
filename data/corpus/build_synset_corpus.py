@@ -3,9 +3,9 @@ Build artificial language corpora from synset-based generated sentences.
 
 Reads generated_sentences_synsets.json and applies the synset artificial
 mapping dictionaries to produce:
-  corpus_cjk_synset.txt       — Language A (CJK tokens)
-  corpus_hiragana_synset.txt  — Language B (Hiragana tokens)
-  parallel_corpus_synset.json — parallel corpus for evaluation
+  corpus_cjk_synset.txt       : Language A (CJK tokens)
+  corpus_hiragana_synset.txt  : Language B (Hiragana tokens)
+  parallel_corpus_synset.json : parallel corpus for evaluation
 
 All tokens (synset IDs and grammar terminals) keep their underscores intact,
 matching dictionary keys exactly. Sentences with any OOV token are skipped.
@@ -181,8 +181,8 @@ def main():
         json.dump(parallel, f, indent=2, ensure_ascii=False)
 
     print(f'\nOutput written to {out_dir}:')
-    print(f'  {cjk_path.name}           — {len(cjk_lines)} sentences')
-    print(f'  {hira_path.name}  — {len(hira_lines)} sentences')
+    print(f'  {cjk_path.name}           : {len(cjk_lines)} sentences')
+    print(f'  {hira_path.name}  : {len(hira_lines)} sentences')
     print(f'  {para_path.name}')
 
     # Show a few sample pairs

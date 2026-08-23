@@ -3,11 +3,11 @@ Train a small BERT-style MLM on two artificial language corpora jointly
 (multilingual baseline for the anchor-token hypothesis experiment).
 
 Based on prelim_train_monolingual.py: same architecture, same hyperparameters,
-same train/dev split logic — the only difference is that the tokenizer and
+same train/dev split logic. The only difference is that the tokenizer and
 dataset are built from both Language A (CJK) and Language B (Hiragana) together,
 so the model sees a shared vocabulary and mixed-language sentences.
 
-No Next Sentence Prediction (NSP) — BertForMaskedLM does MLM only.
+No Next Sentence Prediction (NSP), BertForMaskedLM does MLM only.
 
 Usage:
     python train_multilingual_synset.py \
@@ -114,7 +114,7 @@ def plot_loss_history(trainer, output_dir):
         ax.plot(eval_epochs, eval_losses, marker='o', label='Validation loss')
     ax.set_xlabel('Epoch')
     ax.set_ylabel('MLM loss')
-    ax.set_title('Multilingual — training and validation loss')
+    ax.set_title('Multilingual training and validation loss')
     ax.grid(True, alpha=0.3)
     ax.legend()
     fig.tight_layout()
@@ -176,7 +176,7 @@ def main():
     train_ds = tokenize_dataset(train_sents, tokenizer, args.max_length)
     dev_ds   = tokenize_dataset(dev_sents,   tokenizer, args.max_length)
 
-    # 3. Model — same architecture as monolingual for fair comparison
+    # 3. Model: same architecture as monolingual for fair comparison
     config = BertConfig(
         vocab_size=vocab_size,
         hidden_size=128,
