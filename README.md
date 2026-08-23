@@ -1,6 +1,6 @@
 # A Toy Setting for the Anchor Token Hypothesis
 
-This repository is part of the course *Software Project* at Department of Computational Linguistics, Heidelberg University. It contains a controlled artificial-language setup for studying the anchor token hypothesis.
+This repository is part of a student project for the Software Project course at the Department of Computational Linguistics, Heidelberg University. It contains a controlled artificial-language setup for studying the anchor token hypothesis.
 
 The project builds a synthetic semantic graph, generates artificial-language sentences from that graph, trains small masked-language models from scratch, and evaluates monolingual learning, cross-lingual alignment, and transfer.
 
