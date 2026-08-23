@@ -31,19 +31,14 @@ PARALLEL = "probing_run/final_omitted_corpus/parallel_corpus_synset.json"
 
 for percentage in PERCENTAGE_VALUES:
     for strategy in STRATEGIES:
+        # Optimization for non-distinct configurations
         if percentage == "0.0" and strategy != "high":
-            print(
-                f"Skipping strategy: {strategy} for overlap: {percentage}% "
-                "(only one strategy is needed for 0% overlap)"
-            )
             continue
-
-        print(f"Evaluating LM head for strategy: {strategy}, overlap: {percentage}%")
 
         pct_label = int(float(percentage))
         condition = f"{strategy}_P{pct_label}"
         
-        checkpoint_dir = f"./checkpoints/{condition}/final"
+        checkpoint_dir = f"./checkpoints_probe/{condition}/final"
         out_dir = f"./lm_head_results/{condition}"
 
         sys.argv = [
@@ -53,8 +48,7 @@ for percentage in PERCENTAGE_VALUES:
             "--parallel", PARALLEL,
             "--cjk_dict", CJK_DICT,
             "--hira_dict", HIRA_DICT,
-            "--out_dir", out_dir,
-            "--topk", "3"
+            "--out_dir", out_dir
         ]
         head.main()
 
@@ -69,12 +63,15 @@ for percentage in PERCENTAGE_VALUES:
         
         if csv_path.exists():
             df = pd.read_csv(csv_path)
-            row = df[df["metric"] == "strict_token"]
-            if not row.empty:
+            row_token = df[df["metric"] == "strict_token"]
+            row_concept = df[df["metric"] == "strict_concept"]
+            
+            if not row_token.empty and not row_concept.empty:
                 data.append({
                     "percentage": pct_float,
                     "strategy": strategy,
-                    "top1": row["top1"].values[0]
+                    "strict_token_top1": row_token["top1"].values[0],
+                    "strict_concept_top1": row_concept["top1"].values[0]
                 })
 
 results_df = pd.DataFrame(data)
@@ -87,42 +84,49 @@ if not results_df.empty and 0.0 in results_df["percentage"].values:
             new_row["strategy"] = strat
             results_df = pd.concat([results_df, pd.DataFrame([new_row])], ignore_index=True)
 
-fig, ax = plt.subplots(figsize=(7, 5))
+fig, axes = plt.subplots(1, 2, figsize=(13, 5), sharey=True, dpi=300)
 
 styles = {
-    "low": {"color": "#1f77b4", "marker": "o", "label": "Low"},
-    "mid": {"color": "#ff7f0e", "marker": "s", "label": "Mid"},
-    "high": {"color": "#2ca02c", "marker": "^", "label": "High"}
+    "low": {"color": "#1f77b4", "marker": "o", "label": "LM Head Low"},
+    "mid": {"color": "#ff7f0e", "marker": "s", "label": "LM Head Mid"},
+    "high": {"color": "#2ca02c", "marker": "^", "label": "LM Head High"}
 }
 
-for strat in STRATEGIES:
-    sub = results_df[results_df["strategy"] == strat].sort_values("percentage")
-    if not sub.empty:
-        ax.plot(
-            sub["percentage"], sub["top1"] * 100,
-            color=styles[strat]["color"],
-            marker=styles[strat]["marker"],
-            linewidth=2,
-            markersize=7,
-            label=f"LM Head {styles[strat]['label']} top-1"
-        )
+metrics_info = [
+    {"col": "strict_token_top1", "title": "Strict Token (Top-1)", "ylabel": "Accuracy"},
+    {"col": "strict_concept_top1", "title": "Strict Concept (Top-1)", "ylabel": "Accuracy"}
+]
 
-ax.set_xlabel("Lexical overlap (%)", fontsize=12)
-ax.set_ylabel("Accuracy", fontsize=12)
-ax.set_xticks([0.0, 2.5, 5.0, 7.5, 10.0])
-ax.set_ylim(0, 20)
-ax.set_yticks([0, 5, 10, 15, 20])
-ax.yaxis.set_major_formatter("{x:.0f}%")
-ax.grid(True, linestyle="-", alpha=0.2, color="gray")
-ax.spines["top"].set_visible(False)
-ax.spines["right"].set_visible(False)
+for idx, info in enumerate(metrics_info):
+    ax = axes[idx]
+    
+    for strat in STRATEGIES:
+        sub = results_df[results_df["strategy"] == strat].sort_values("percentage")
+        if not sub.empty:
+            ax.plot(
+                sub["percentage"], sub[info["col"]] * 100,
+                color=styles[strat]["color"],
+                marker=styles[strat]["marker"],
+                linewidth=2,
+                markersize=6,
+                label=styles[strat]["label"]
+            )
 
-ax.legend(frameon=False, loc="upper right")
+    ax.set_title(info["title"], fontsize=13, pad=10)
+    ax.set_xlabel("Lexical overlap (%)", fontsize=11)
+    ax.set_ylabel(info["ylabel"] if idx == 0 else "", fontsize=11)
+    ax.set_xticks([0.0, 2.5, 5.0, 7.5, 10.0])
+    ax.set_ylim(0, 20)
+    ax.set_yticks([0, 5, 10, 15, 20])
+    ax.yaxis.set_major_formatter("{x:.0f}%")
+    ax.grid(True, linestyle="-", alpha=0.2, color="gray")
+    
+    if idx == 0:
+        ax.legend(frameon=True, loc="upper right", fontsize=9.5)
 
 plt.tight_layout()
-output_fig_path = Path("./lm_head_results/lm_head_overlap_top1_accuracy.png")
+
+output_fig_path = Path("./lm_head_results/lmh_lexical_overlap.png")
 output_fig_path.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(output_fig_path, dpi=300, bbox_inches="tight")
 plt.close(fig)
-
-print(f"\nSaved summary plot with reordered legend -> {output_fig_path}")

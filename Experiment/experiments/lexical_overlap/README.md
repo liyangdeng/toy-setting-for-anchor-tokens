@@ -1,7 +1,8 @@
 # Lexical Overlap Experiment
 
 ## Research Question
-Previous related work suggests that lexical overlap might be one of the driving factors to cross-lingual alignment. We therefore ask the question:
+
+Some previous work suggests that lexical overlap could be one of the primary drivers of cross-lingual alignment. We therefore address the following research question:
 > Does the degree of lexical overlap influence cross-lingual alignment of two artificial languages?
 
 ## Experimental Conditions
@@ -43,7 +44,7 @@ Finally, it replaces the mapped tokens in the target artificial corpora (`corpus
 
 ## Training
 
-`run_lexical_overlap.py` automates the training of Masked Language Models across all 15 experimental conditions (13 distinct conditions) by invoking `train_lexical_overlap.py`.
+`training/run_lexical_overlap.py` automates the training of Masked Language Models across all 15 experimental conditions (13 distinct conditions) by invoking `training/train_lexical_overlap.py`.
 
 The underlying `train_lexical_overlap.py` script—adapted from `Experiment/training/train_multilingual_synset.py` to maintain hyperparameter and parameter alignment—trains a small bilingual BERT-style MLM (4 layers, 128 hidden size, 4 attention heads) using strictly the MLM objective (without Next Sentence Predictio) and a shared WordLevel tokenizer built directly from the paired corpora.
 
@@ -51,7 +52,18 @@ For each condition, the script concatenates the two modified target language cor
 
 ## Evaluation
 
+Evaluation of our 15 trained models (representing 13 distinct experimental configurations) is based on the project's evaluation framework, using four different metrics:
+1. Word translation precision
+2. Sentence retrieval precision
+3. Linear probing accuracy
+4. LM head accuracy
+
+The tables below present results for models trained with seed 42. Visualizations can be found in their respective directories.
+
 ### Word Translation and Sentence Retrieval Precision
+
+`evaluation/evaluate_lexical_overlap.py` extends `Experiment/evaluation/word_trans_sent_retirev.py` to evaluate cross-lingual representation alignment at both the token and sentence level across all experimental conditions. All models were evaluated under identical conditions using a sample size of 500 parallel sentences per condition.
+
 | Condition | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
 | --- | ---: | ---: | ---: | ---: |
 | `high_P0` | 0.7645 | 0.8945 | 0.8347 | 0.9613 |
@@ -67,10 +79,23 @@ For each condition, the script concatenates the two modified target language cor
 | `low_P0` | 0.7645 | 0.8945 | 0.8347 | 0.9613 |
 | `low_P2` | 0.8381 | 0.9489 | 0.8880 | 0.9733 |
 | `low_P5` | 0.8288 | 0.9411 | 0.0146 | 0.9467 |
-| `low_P7` | 0.8433 | 0.9357 | 0.9300 | 0.9893 |
-| `low_P10` | 0.8770 | 0.9538 | 0.9047 | 0.9807 |
+| `low_P7` | 0.8433 | 0.9357 | **0.9300** | **0.9893** |
+| `low_P10` | **0.8770** | **0.9538** | 0.9047 | 0.9807 |
 
 ### Linear Probing Accuracy
+
+The script `linear_probe/linear_probe_lexical_overlap.py` extends `Experiment/evaluation/masked_language_probing/probing/linear_probe.py` to evaluate cross-lingual representation transfer within hidden layers. Execution across all experimental conditions is fully automated using `linear_probe/run_probe_lexical_overlap.py`.
+
+Prerequisites:
+1. *Build Initial Probing Corpus*  
+   Run `build_probing_corpus.py` to generate "cleaned" versions of the training data:
+   - `probing_run/a_training.txt`
+   - `probing_run/b_training.txt`
+2. *Generate Overlapped Corpora*  
+   Execute `build_overlapped_corpora.py` on `a_training.txt` and `b_training.txt` to construct condition-specific lexical overlap files.
+3. *Train & Evaluate*
+   Train fresh models on the resulting overlapped corpora and execute the linear probing evaluation scripts.
+
 | Condition | Layer 0 | Layer 1 | Layer 2 | Layer 3 | Layer 4 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `high_P0` | 0.0324 | 0.2842 | 0.4460 | 0.4496 | 0.3813 |
@@ -87,9 +112,12 @@ For each condition, the script concatenates the two modified target language cor
 | `low_P2` | 0.0324 | 0.4964 | 0.5216 | 0.4820 | 0.4820 |
 | `low_P5` | 0.0324 | 0.4964 | 0.6259 | 0.5755 | 0.5432 |
 | `low_P7` | 0.0324 | 0.5036 | 0.4784 | 0.5108 | 0.5432 |
-| `low_P10` | 0.0324 | 0.5144 | 0.6547 | 0.6115 | 0.6007 |
+| `low_P10` | 0.0324 | **0.5144** | **0.6547** | **0.6115** | **0.6007** |
 
 ### LM Head Accuracy
+
+LM Head evaluation builds upon the probe corpus and models, but investigates cross-lingual transfer in the LM prediction head. `lm_head_lexical_overlap.py` remains almost unchanged in comparison to its predecessor `Experiment/evaluation/lm_head/lm_head_eval.py`. `run_lm_head_lexical_overlap.py` automates the whole process across all experimental conditions.
+
 | Condition | strict_token top-1 | strict_token top-3 | strict_concept top-1 | strict_concept top-3 | lenient top-1 | lenient top-3 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | `high_P0` | 0.0360 | 0.0863 | 0.0360 | 0.0899 | 0.0360 | 0.0863 |
@@ -108,12 +136,9 @@ For each condition, the script concatenates the two modified target language cor
 | `low_P7` | 0.0324 | 0.0719 | 0.0396 | 0.0899 | 0.0324 | 0.0719 |
 | `low_P10` | 0.0288 | 0.0647 | 0.0288 | 0.0647 | 0.0288 | 0.0755 |
 
----
 
 ## Significance Testing
 
----
 
 ## File and Execution Prerequisites
 
----
