@@ -21,8 +21,19 @@ import subprocess
 import sys
 from pathlib import Path
 
-BASE_BUILDER   = Path("build_synset_corpus.py").resolve()
-CREATE_CORPORA = Path("create_corpora_punct.py").resolve()
+HERE = Path(__file__).resolve().parent
+
+def find_repo_root():
+    for parent in [HERE, *HERE.parents]:
+        if (parent / "data").is_dir() and (parent / "Experiment").is_dir():
+            return parent
+    raise FileNotFoundError("Could not locate repository root.")
+
+
+REPO_ROOT = find_repo_root()
+
+BASE_BUILDER   = REPO_ROOT / "data" / "corpus" / "build_synset_corpus.py"
+CREATE_CORPORA = HERE / "create_corpora_punct.py"
 
 sys.path.insert(0, str(CREATE_CORPORA.parent))
 from create_corpora_punct import process, process_parallel, BOTH

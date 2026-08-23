@@ -6,11 +6,22 @@
 set -euo pipefail
 
 SEED=42
-PROBING_ROOT="probing"
 
-CJK_DICT="${PROBING_ROOT}/synset_pos_artificial_cjk.json"
-HIRA_DICT="${PROBING_ROOT}/synset_pos_artificial_hiragana.json"
-EVAL_SCRIPT="${PROBING_ROOT}/lm_head_eval.py"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../../../../../.." && pwd)"
+
+PUNCT_ROOT="$REPO_ROOT/Experiment/experiments/structural_tokens/punctuation"
+CORPUS_ROOT="$PUNCT_ROOT/corpora"
+LMHEAD_ROOT="$REPO_ROOT/Experiment/evaluation/lm_head"
+
+PROBING_ROOT="$SCRIPT_DIR/probing_runs"
+RESULT_ROOT="$SCRIPT_DIR/lm_head_results"
+
+CJK_DICT="$CORPUS_ROOT/synset_pos_artificial_cjk.json"
+HIRA_DICT="$CORPUS_ROOT/synset_pos_artificial_hiragana.json"
+EVAL_SCRIPT="$LMHEAD_ROOT/lm_head_eval.py"
+
+mkdir -p "$RESULT_ROOT"
 
 for arm in shared none disjoint; do
 
@@ -22,7 +33,7 @@ for arm in shared none disjoint; do
     FINAL_OMITTED="${RUN_DIR}/final_omitted.json"
     PARALLEL="${RUN_DIR}/final_omitted_corpus/parallel_corpus_synset.json"
 
-    OUT_DIR="${PROBING_ROOT}/lmhead_punct_${arm}_seed${SEED}"
+    OUT_DIR="${RESULT_ROOT}/lmhead_punct_${arm}_seed${SEED}"
 
     echo
     echo "============================================================"
@@ -75,9 +86,7 @@ for arm in shared none disjoint; do
 done
 
 echo
-echo "============================================================"
 echo "Results:"
-echo "  probing/lmhead_punct_shared_seed${SEED}/"
-echo "  probing/lmhead_punct_none_seed${SEED}/"
-echo "  probing/lmhead_punct_disjoint_seed${SEED}/"
-echo "============================================================"
+echo "  ${RESULT_ROOT}/lmhead_punct_shared_seed${SEED}/"
+echo "  ${RESULT_ROOT}/lmhead_punct_none_seed${SEED}/"
+echo "  ${RESULT_ROOT}/lmhead_punct_disjoint_seed${SEED}/"

@@ -1,6 +1,11 @@
 #!/bin/bash
+# =============================================================================
+# Run additional SR evaluation for the PUNCTUATION experiment
 
-set -e
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../../../../../.." && pwd)"
+
+cd "$SCRIPT_DIR"
 
 mkdir -p additional_sr_punct_results
 
@@ -10,12 +15,12 @@ do
     do
         echo "Additional punct-free SR: setting=${setting}, seed=${seed}"
 
-        python additional_sr_punct.py \
-            --model "punct_checkpoints_${setting}_seed${seed}/final" \
+        python "$SCRIPT_DIR/additional_sr_punct.py" \
+            --model "$REPO_ROOT/Experiment/experiments/structural_tokens/punctuation/training/punct_checkpoints_${setting}_seed${seed}/final" \
             --test 2 \
-            --cjk punct_corpora/synset_pos_artificial_cjk.json \
-            --hiragana punct_corpora/synset_pos_artificial_hiragana.json \
-            --parallel punct_corpora/parallel_corpus_synset.json \
+            --cjk "$REPO_ROOT/Experiment/experiments/structural_tokens/punctuation/corpora/synset_pos_artificial_cjk.json" \
+            --hiragana "$REPO_ROOT/Experiment/experiments/structural_tokens/punctuation/corpora/synset_pos_artificial_hiragana.json" \
+            --parallel "$REPO_ROOT/Experiment/experiments/structural_tokens/punctuation/corpora/parallel_corpus_synset.json" \
             --seed "${seed}" \
             2>&1 | tee "additional_sr_punct_results/${setting}_seed${seed}.txt"
 
