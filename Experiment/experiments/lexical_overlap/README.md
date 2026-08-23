@@ -7,16 +7,41 @@
 
 ## Experimental Conditions
 
-| Parameter | Evaluated Values |
-| :--- | :--- |
-| **Target Overlap ($\%$)** | $2.5\%$, $5.0\%$, $7.5\%$, $10.0\%$ |
-| **Frequency Strategy** | `high`, `mid`, `low` |
+| Condition | Target overlap (%) | Frequency strategy |
+| --- | ---: | ---: |
+| `high_P0` | 0.0 | `high` |
+| `high_P2` | 2.5 | `high` |
+| `high_P5` | 5.0 | `high` |
+| `high_P7` | 7.5 | `high` |
+| `high_P10` | 10.0 | `high` |
+| `mid_P0` | 0.0 | `mid` |
+| `mid_P2` | 2.5 | `mid` |
+| `mid_P5` | 5.0 | `mid` |
+| `mid_P7` | 7.5 | `mid` |
+| `mid_P10` | 10.0 | `mid` |
+| `low_P0` | 0.0 | `low` |
+| `low_P2` | 2.5 | `low` |
+| `low_P5` | 5.0 | `low` |
+| `low_P7` | 7.5 | `low` |
+| `low_P10` | 10.0 | `low` |
 
 ---
 ## Corpus Generation
+`build_overlapped_corpora.py` processes the flattened generated English corpus (`v3_generated_sentences_adj.txt`) by computing token frequencies to produce a sorted frequency list. It selects anchor tokens based on the target percentage and specified frequency strategy, then maps these anchors to the corresponding artificial language corpora using their respective dictionary files (`synset_pos_artificial_cjk_edges_adj_augmented.json` and `synset_pos_artificial_hiragana_edges_adj_augmented.json`). Finally, it modifies the existing corpora (`corpus_cjk_synset.txt` and `corpus_hiragana_synset.txt`) to generate 15 distinct corpus files using the naming pattern `corpus_{language}_P{int(percentage)}_{strategy}`.
+
+Frequency strategies define the pool of candidate tokens from the sorted frequency list:
+- **`high`**: Tokens ranked 0–9 (high-frequency, functional, or common terms).
+- **`mid`**: Tokens ranked 10–49 (moderately frequent terms).
+- **`low`**: Tokens ranked 50–199 (lower-frequency, content-specific terms).
+
+For a given condition, anchor tokens are sampled randomly from the strategy's candidate pool and accumulated until reaching the target overlap percentage.
 
 ---
 ## Training
+`run_lexical_overlap.py` executes `train_lexical_overlap.py` (adapted from `train_multilingual_synset.py`) across 15 conditions—13 of which are distinct—on pairs of overlapped corpora. 
+
+Along with the final model checkpoints, the script logs training metadata for each run.
+
 ---
 ## Evaluation
 
@@ -59,7 +84,7 @@
 | `low_P10` | 0.0324 | 0.5144 | 0.6547 | 0.6115 | 0.6007 |
 
 ### LM Head Accuracy
-| Condition | strict_token Top-1 | strict_token Top-3 | strict_concept Top-1 | strict_concept Top-3 | lenient Top-1 | lenient Top-3 |
+| Condition | strict_token top-1 | strict_token top-3 | strict_concept top-1 | strict_concept top-3 | lenient top-1 | lenient top-3 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | `high_P0` | 0.0360 | 0.0863 | 0.0360 | 0.0899 | 0.0360 | 0.0863 |
 | `high_P2` | 0.0180 | 0.0827 | 0.0180 | 0.0863 | 0.0180 | 0.0827 |
