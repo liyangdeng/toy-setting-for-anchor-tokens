@@ -9,11 +9,13 @@ Unless changed in the .sh scripts, the main experiments use seeds `42`, `43`, an
 
 # 1. Punctuation experiment
 
-The punctuation experiment tests whether punctuation shared across languages contributes to cross-lingual alignment.
+## Research Question
+
+> Does training with punctuation shared across languages, in addition to shared syntactic structure, contribute to cross-lingual alignment and transfer?
 
 No `[CLS]` or `[SEP]` tokens are used in this experiment.
 
-The three conditions are:
+## Experimental conditions
 
 | Setting | CJK | Hiragana |
 | --- | --- | --- |
@@ -21,11 +23,11 @@ The three conditions are:
 | `none` | no punctuation | no punctuation |
 | `disjoint` | `; *` | `, .` |
 
-Punctuation symbols are registered as special tokens where relevant so that they are not selected as MLM masking targets, to match the second (special token) experiment.
+Punctuation symbols are registered as special tokens where relevant so that they are not selected for MLM masking, to match the second (special token) experiment.
 
 ## 1.1 Corpus preparation
 
-The punctuation corpora are generated using:
+The punctuation corpora are generated using: 
 
 The training script expects separate corpus pairs for the three experimental conditions.
 
@@ -35,8 +37,9 @@ The Hiragana corpus in the `disjoint` condition uses the same `, .` punctuation 
 
 ## 1.2 Train all punctuation models
 
+From `structural_tokens/punctuation`, run: 
 ```bash
-bash punctuation/run_punct_seeds.sh
+bash run_punct_seeds.sh
 ```
 
 A model is saved for every condition and seed:
@@ -88,15 +91,9 @@ python punct_eval_results/summarise_wt_sr_seeds.py \
     --output punctuation_wt_sr_summary.csv
 ```
 
-The script extracts top-1 word-translation and sentence-retrieval precision from each evaluation log and reports:
+The script extracts top-1 Word-Translation and Sentence-Retrieval precision and reports mean ± sample SD across training seeds.
 
-```text
-mean ± sample SD
-```
-
-across training seeds.
-
-It also writes the individual seed values to:
+The individual seed values are written to:
 
 ```text
 punct_eval_results/wt_sr_seed_values.csv
@@ -104,9 +101,9 @@ punct_eval_results/wt_sr_seed_values.csv
 
 ---
 
-## 1.5 Punctuation-free sentence retrieval
+## 1.5 Punctuation-free Sentence Retrieval
 
-The primary punctuation sentence-retrieval evaluation includes punctuation in the mean-pooled sentence representations.
+Sentence Retrieval evaluation includes punctuation in the mean-pooled sentence representations.
 
 An additional control evaluation, just in case, removes:
 
@@ -114,7 +111,7 @@ An additional control evaluation, just in case, removes:
 , . ; *
 ```
 
-before sentence vectors are calculated. This makes the sentence-retrieval input more directly comparable with the special-token experiment, where [CLS] and [SEP]are not part of the static sentence representation.
+before sentence vectors are calculated. This makes the sentence-retrieval input more directly comparable with the special-token experiment, where [CLS] and [SEP] are not part of the static sentence representation.
 
 The relevant scripts are:
 
@@ -140,11 +137,14 @@ python PATH/summarise_additional_sr_punct.py
 
 # 2. Special-token experiment
 
-The special-token experiment manipulates sentence-boundary tokens. The corpus text identical, including punctuation.
+## Research question
+The special-token experiment manipulates BERT's sentence-boundary tokens [CLS] and [SEP]. 
 
-`[MASK]` remains shared in every condition.
+> Does training with [CLS]/[SEP] shared across languages, in addition to shared syntactic structure, contribute to cross-lingual alignment and transfer?
 
-The conditions are:
+The same CJK and Hiragana corpus files are used in all conditions. The corpus includes punctuation. `[MASK]` remains shared in every condition.
+
+## Experimental conditions
 
 | Setting | CJK | Hiragana |
 | --- | --- | --- |
@@ -152,11 +152,16 @@ The conditions are:
 | `none` | no boundary tokens | no boundary tokens |
 | `disjoint` | `[BEG] ... [END]` | `[CLS] ... [SEP]` |
 
-Unlike the punctuation experiment, the same CJK and Hiragana corpus files are used for all three arms.
 
 ---
 
 ## 2.1 Train all special-token models
+
+From `structural_tokens/st`, run: 
+
+```bash
+bash st_run_st_seeds.sh
+```
 
 Set the corpus locations in the script:
 
@@ -165,13 +170,7 @@ CORPUS_A=PATH
 CORPUS_B=PATH
 ```
 
-Training is handled by:
-
-```bash
-bash st_run_st_seeds.sh
-```
-
-The outputs follow the same naming scheme:
+The outputs are saved to:
 
 ```text
 st_checkpoints_shared_seed42/final/
@@ -186,11 +185,11 @@ Each final special-token checkpoint additionally contains:
 special_config.json
 ```
 
-This records the boundary-token policy used for each artificial language. The special-token probing and LM-head evaluation scripts read this file to reproduce the correct special tokens at evaluation time.
+This records the boundary-token policy used for each language. The special-token probing and LM-head evaluation scripts read this file to reproduce the correct special tokens.
 
 ---
 
-## 2.2 Word translation and sentence retrieval
+## 2.2 Word Translation and Sentence Retrieval
 
 ```bash
 bash st/run_st_eval.sh
@@ -201,10 +200,6 @@ synset_pos_artificial_cjk.json       # PATH
 synset_pos_artificial_hiragana.json  # PATH
 parallel_corpus_synset.json          # PATH
 ```
-
-The evaluation again uses the static embedding matrix.
-
-Consequently, `[CLS]`, `[SEP]`, `[BEG]`, and `[END]` are not themselves included in the static word-translation or sentence-retrieval representations. The experiment therefore tests the effect of exposure to the different settings during training.
 
 Results are written to:
 
@@ -269,26 +264,26 @@ layerwise_accuracy.png
 
 ## 3.2 Special-token linear probe
 
-Run from `1_ST/`:
+From `structural_tokens/st`, run: 
 
 ```bash
-cd 1_ST
 bash probing/run_st_probe.sh
 ```
-Here, the probe is implemented in:
+The probe is implemented in:
 
 ```text
 probing/linear_probe_special_final.py
 ```
 The script differs from the one in the 'evaluation' dir because it adds boundary special tokens.
 
-Results are again written as:
+Results are written as:
 
 ```text
 layerwise_accuracy.csv
 layerwise_accuracy_per_relation.csv
 layerwise_accuracy.png
 ```
+each in their corresponding folder, e.g. probing/
 
 ---
 
@@ -303,7 +298,7 @@ layerwise_accuracy.png
 bash punctuation/probing/run_lmhead_punct.sh
 ```
 
-The evaluator is expected at:
+The evaluator itself can be found in:
 
 ```text
 PATH/lm_head_eval.py
@@ -323,9 +318,7 @@ This uses:
 probing/lm_head_eval_special.py
 ```
 
-The special-token evaluator reads `special_config.json` before constructing the Language B prompts.
-
-This is important for the `disjoint` condition. The tokenizer saved by `final_train_st.py` retains the CJK/A-side `[BEG] ... [END]` template, while Hiragana was trained with `[CLS] ... [SEP]`. The evaluator restores the correct Hiragana template before calculating MLM predictions.
+Reads `special_config.json` before constructing the Language B prompts. This is important for the `disjoint` condition. The tokenizer saved by `final_train_st.py` retains the CJK/A-side `[BEG] ... [END]` template, while Hiragana was trained with `[CLS] ... [SEP]`. The evaluator restores the correct Hiragana template before calculating predictions.
 
 Results:
 
@@ -346,27 +339,9 @@ which measure the tendency of the model to predict Language A tokens when prompt
 
 ---
 
-# 5. Development perplexity
+# 5. Perplexity
 
-Training scripts print final train and development perplexities. Perplexities can also be collected automatically from saved Hugging Face trainer states.
-
-From the repository root:
-
-```bash
-python collect_perplexity.py \
-    --glob '1_PUNCT/punct_checkpoints_*' \
-    --out punct_perplexity.txt
-```
-
-For the special-token experiment:
-
-```bash
-python collect_perplexity.py \
-    --glob '1_ST/st_checkpoints_*' \
-    --out st_perplexity.txt
-```
-
-Both experiments can also be processed together:
+If final train and development perplexities need to be collected, run:
 
 ```bash
 python collect_perplexity.py \
@@ -374,85 +349,8 @@ python collect_perplexity.py \
     --out all_perplexity.txt
 ```
 
-The script reports every individual run followed by mean ± standard deviation for each condition.
-
 ---
 
-# 6. Results configuration
-
-`results_config.json` contains the results used for downstream comparison and statistical testing.
-
-The current conventions are:
-
-```text
-word translation   -> top-1 precision
-sentence retrieval -> top-1 precision
-linear probe       -> selected Transformer-layer accuracy
-LM head            -> strict_token top-1 accuracy
-```
-
-For word translation and sentence retrieval, results are stored separately for each training seed.
-
-For probe and LM-head results, `n` denotes the number of evaluated triples. For WT/SR it denotes the number of evaluated aligned pairs.
-
-Any downstream significance-analysis script can be placed at:
-
-```text
-PATH
-```
-
-and configured to read `results_config.json`.
+# 6. Significance tests
 
 ---
-
-# Execution order
-
-## Punctuation
-
-From `punctuation/`:
-
-```bash
-# 1. Train shared / none / disjoint models over all seeds
-bash run_punct_seeds.sh
-
-# 2. Static word translation + sentence retrieval
-bash run_punct_eval.sh
-
-# 3. Summarise WT/SR across seeds
-python punct_eval_results/summarise_wt_sr_seeds.py \
-    punct_eval_results \
-    --output punctuation_wt_sr_summary.csv
-
-# 4. Build probing data, train treatment models and run linear probe
-bash probing/run_punct_probe.sh
-
-# 5. Evaluate LM head
-bash probing/run_lmhead_punct.sh
-
-# 6. Optional punctuation-free SR control
-bash PATH/run_punct_additional_sr.sh
-python PATH/summarise_additional_sr_punct.py
-```
-
-## Special tokens
-
-From `1_ST/`:
-
-```bash
-# 1. Train shared / none / disjoint models over all seeds
-bash run_st_seeds.sh
-
-# 2. Static word translation + sentence retrieval
-bash run_st_eval.sh
-
-# 3. Summarise WT/SR across seeds
-python st_eval_results/summarise_wt_sr_seeds.py \
-    st_eval_results \
-    --output st_wt_sr_summary.csv
-
-# 4. Build probing data, train treatment models and run linear probe
-bash probing/run_st_probe.sh
-
-# 5. Evaluate the trained MLM head
-bash probing/run_lmhead_st.sh
-```

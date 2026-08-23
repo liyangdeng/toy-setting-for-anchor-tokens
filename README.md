@@ -1,11 +1,8 @@
 # A Toy Setting for the Anchor Token Hypothesis
 
-This repository contains a controlled artificial-language setup for studying the
-anchor token hypothesis.
+This repository is part of the course Software Project at the Heidelberg University. It contains a controlled artificial-language setup for studying the anchor token hypothesis.
 
-The project builds a synthetic semantic graph, generates artificial-language
-sentences from that graph, trains small masked-language models from scratch, and
-evaluates monolingual learning, cross-lingual alignment, and transfer.
+The project builds a synthetic semantic graph, generates artificial-language sentences from that graph, trains small masked-language models from scratch, and evaluates monolingual learning, cross-lingual alignment, and transfer.
 
 ## Repository Overview
 
@@ -30,22 +27,18 @@ evaluates monolingual learning, cross-lingual alignment, and transfer.
 
 ## Main Components
 
-### 1. Semantic Backbone
+### Semantic Backbone
 
-The semantic graph starts from WordNet noun synsets and is expanded with selected
-ConceptNet relations. The default backbone is designed to be connected,
-degree-controlled, and easy to sample for controlled experiments.
+The semantic graph starts from WordNet noun synsets and is expanded with selected ConceptNet relations. The default backbone is designed to be connected, degree-controlled, and easy to sample for controlled experiments.
 
 Current graph resources are in:
 
 - `data/semantic_backbones/edges_adj.json`
 - `data/semantic_backbones/README.md`
 
-### 2. Artificial Language Generation
+### Artificial Language Generation
 
-The project uses PCFG grammar templates to generate sentences over the semantic
-graph. It supports artificial token inventories such as CJK-style tokens and
-Hiragana-style tokens, plus different syntactic configurations.
+The project uses PCFG grammar templates to generate sentences over the semantic graph. It supports artificial token inventories such as CJK-style tokens and Hiragana-style tokens, plus different syntactic configurations.
 
 Important files:
 
@@ -53,10 +46,9 @@ Important files:
 - `data/generate_sentences/v3_generate_sentences.py`
 - `data/generate_sentences/v3_generated_sentences_adj.json`
 
-### 3. Corpus Construction
+### Corpus Construction
 
-Generated graph sentences are converted into model-training corpora, including
-monolingual corpora and parallel CJK/Hiragana corpora.
+Generated graph sentences are converted into model-training corpora, including monolingual corpora and parallel CJK/Hiragana corpora.
 
 Important files:
 
@@ -67,8 +59,7 @@ Important files:
 
 ### 4. Model Training
 
-Training scripts build small BERT-style masked-language models from scratch for
-monolingual and multilingual settings.
+Training scripts build small BERT-style masked-language models from scratch for monolingual and multilingual settings.
 
 Important files:
 
@@ -77,14 +68,15 @@ Important files:
 
 ### 5. Experiments and Evaluation
 
-The repository includes experiments for semantic overlap, graph density, lexical
-overlap, punctuation/special-token controls, and masked-language probing.
+The repository includes experiments for semantic overlap, graph density, lexical overlap, punctuation/special-token controls, and masked-language probing.
 
 Key directories:
 
-- `Experiment/experiments/semantic_overlap/`
+- `Experiment/experiments/anchor_necessity/`
 - `Experiment/experiments/graph_density/`
 - `Experiment/experiments/lexical_overlap/`
+- `Experiment/experiments/semantic_overlap/`
+- `Experiment/experiments/structural_tokens/`
 - `Experiment/evaluation/masked_language_probing/`
 - `Experiment/evaluation/significance/`
 
@@ -104,25 +96,8 @@ Install dependencies with:
 pip install -r requirements.txt
 ```
 
-The main dependencies are NLTK, PyTorch, Transformers, Tokenizers, Datasets,
-Accelerate, and Matplotlib.
-
-## Typical Workflow
-
-1. Build or inspect the semantic backbone in `data/semantic_backbones/`.
-2. Generate artificial-language sentences with scripts in
-   `data/generate_sentences/`.
-3. Build CJK/Hiragana training corpora with `data/corpus/build_synset_corpus.py`.
-4. Train monolingual or multilingual MLM models with scripts in
-   `Experiment/training/`.
-5. Run alignment, probing, and significance evaluations under
-   `Experiment/evaluation/` and `Experiment/experiments/`.
-
-For experiment-specific details, see the README files inside each subdirectory.
-
-## Notes
-
-- Large checkpoints and generated experiment outputs are not documented here;
-  check the relevant experiment directory for expected inputs and outputs.
-- The root README is intended as a high-level map. Method details, sampling
-  rules, and result tables belong in the component-level README files.
+## Project Members
+[Liyang Deng](mailto:liyang.deng@stud.uni-heidelberg.de)
+[Liyang Deng](mailto:liyang.deng@stud.uni-heidelberg.de)
+[Liyang Deng](mailto:liyang.deng@stud.uni-heidelberg.de)
+[Liyang Deng](mailto:liyang.deng@stud.uni-heidelberg.de)
