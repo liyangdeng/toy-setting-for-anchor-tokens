@@ -98,6 +98,6 @@ pip install -r requirements.txt
 
 ## Project Members
 [Liyang Deng](mailto:liyang.deng@stud.uni-heidelberg.de)
-[Liyang Deng](mailto:liyang.deng@stud.uni-heidelberg.de)
-[Liyang Deng](mailto:liyang.deng@stud.uni-heidelberg.de)
-[Liyang Deng](mailto:liyang.deng@stud.uni-heidelberg.de)
+[Elizaveta Dovedova](mailto:dovedova@cl.uni-heidelberg.de)
+[Magdalena Ljubić](mailto:ljubic@cl.uni-heidelberg.de)
+[Yuwen Peng](mailto:yuwen.peng@stud.uni-heidelberg.de)
