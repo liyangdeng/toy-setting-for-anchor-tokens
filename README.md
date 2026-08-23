@@ -82,9 +82,11 @@ overlap, punctuation/special-token controls, and masked-language probing.
 
 Key directories:
 
-- `Experiment/experiments/semantic_overlap/`
+- `Experiment/experiments/anchor_necessity/`
 - `Experiment/experiments/graph_density/`
 - `Experiment/experiments/lexical_overlap/`
+- `Experiment/experiments/semantic_overlap/`
+- `Experiment/experiments/structural_tokens/`
 - `Experiment/evaluation/masked_language_probing/`
 - `Experiment/evaluation/significance/`
 
