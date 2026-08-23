@@ -6,21 +6,38 @@
 set -euo pipefail
 
 SEED=42
-PROBING_ROOT="probing"
 
-CJK_DICT="${PROBING_ROOT}/synset_pos_artificial_cjk.json"
-HIRA_DICT="${PROBING_ROOT}/synset_pos_artificial_hiragana.json"
-EVAL_SCRIPT="${PROBING_ROOT}/lm_head_eval_special.py"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/../../../../../.." && pwd)"
 
+ST_ROOT="$REPO_ROOT/Experiment/experiments/structural_tokens/special_tokens"
+CORPUS_ROOT="$ST_ROOT/corpora"
+
+PROBING_ROOT="$SCRIPT_DIR/probing_runs"
+RESULT_ROOT="$SCRIPT_DIR/lm_head_results"
 RUN_DIR="${PROBING_ROOT}/st_probing_run"
 
-FINAL_OMITTED="${RUN_DIR}/final_omitted.json"
-PARALLEL="${RUN_DIR}/final_omitted_corpus/parallel_corpus_synset.json"
+CJK_DICT="$CORPUS_ROOT/synset_pos_artificial_cjk.json"
+HIRA_DICT="$CORPUS_ROOT/synset_pos_artificial_hiragana.json"
+
+EVAL_SCRIPT="$(find "$REPO_ROOT" -type f -name 'lm_head_eval_special.py' -print -quit 2>/dev/null || true)"
+
+if [[ -z "$EVAL_SCRIPT" || ! -f "$EVAL_SCRIPT" ]]; then
+    echo "ERROR: could not find lm_head_eval_special.py under $REPO_ROOT"
+    exit 1
+fi
+
+mkdir -p "$RESULT_ROOT"
 
 for arm in shared none disjoint; do
 
+    # IMPORTANT: use the bilingual omitted/treatment model
     MODEL_DIR="${RUN_DIR}/treatment_${arm}_seed${SEED}/final"
-    OUT_DIR="${PROBING_ROOT}/lmhead_st_${arm}_seed${SEED}"
+
+    FINAL_OMITTED="${RUN_DIR}/final_omitted.json"
+    PARALLEL="${RUN_DIR}/final_omitted_corpus/parallel_corpus_synset.json"
+
+    OUT_DIR="${RESULT_ROOT}/lmhead_st_${arm}_seed${SEED}"
 
     echo
     echo "============================================================"
@@ -33,7 +50,7 @@ for arm in shared none disjoint; do
     echo
 
     if [[ ! -d "${MODEL_DIR}" ]]; then
-        echo "ERROR: treatment model directory does not exist:"
+        echo "ERROR: model directory does not exist:"
         echo "  ${MODEL_DIR}"
         exit 1
     fi
@@ -80,7 +97,6 @@ done
 
 echo
 echo "Results:"
-echo "  probing/lmhead_st_shared_seed${SEED}/"
-echo "  probing/lmhead_st_none_seed${SEED}/"
-echo "  probing/lmhead_st_disjoint_seed${SEED}/"
-echo "============================================================"
+echo "  ${RESULT_ROOT}/lmhead_st_shared_seed${SEED}/"
+echo "  ${RESULT_ROOT}/lmhead_st_none_seed${SEED}/"
+echo "  ${RESULT_ROOT}/lmhead_st_disjoint_seed${SEED}/"

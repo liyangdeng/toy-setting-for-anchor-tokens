@@ -463,7 +463,7 @@ def main():
     p.add_argument("--cjk_dict", required=True)
     p.add_argument("--hira_dict", required=True)
     p.add_argument("--out_dir", default="./probe_results")
-    p.add_argument("--seed", type=int, default=44)
+    p.add_argument("--seed", type=int, default=42)
     args = p.parse_args()
 
     if args.do_train:
