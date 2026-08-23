@@ -44,7 +44,7 @@ Finally, it replaces the mapped tokens in the target artificial corpora (`corpus
 
 ## Training
 
-`run_lexical_overlap.py` automates the training of Masked Language Models across all 15 experimental conditions (13 distinct conditions) by invoking `train_lexical_overlap.py`.
+`training/run_lexical_overlap.py` automates the training of Masked Language Models across all 15 experimental conditions (13 distinct conditions) by invoking `training/train_lexical_overlap.py`.
 
 The underlying `train_lexical_overlap.py` script—adapted from `Experiment/training/train_multilingual_synset.py` to maintain hyperparameter and parameter alignment—trains a small bilingual BERT-style MLM (4 layers, 128 hidden size, 4 attention heads) using strictly the MLM objective (without Next Sentence Predictio) and a shared WordLevel tokenizer built directly from the paired corpora.
 
@@ -55,14 +55,14 @@ For each condition, the script concatenates the two modified target language cor
 Evaluation of our 15 trained models (representing 13 distinct experimental configurations) is based on the project's evaluation framework, using four different metrics:
 1. Word translation precision
 2. Sentence retrieval precision
-3. LM head accuracy
-4. Linear probing
+3. Linear probing accuracy
+4. LM head accuracy
 
-The tables below present results for models trained with seed 42. Visualizations can be found in their respective dirs.
+The tables below present results for models trained with seed 42. Visualizations can be found in their respective directories.
 
 ### Word Translation and Sentence Retrieval Precision
 
-`evaluate_lexical_overlap.py` extends `Experiment/evaluation/word_trans_sent_retirev.py` to evaluate cross-lingual representation alignment at both the token and sentence level across all experimental conditions, as well as plot the results. All models were evaluated under identical conditions using a sample size of 500 parallel sentences per condition.
+`evaluation/evaluate_lexical_overlap.py` extends `Experiment/evaluation/word_trans_sent_retirev.py` to evaluate cross-lingual representation alignment at both the token and sentence level across all experimental conditions, as well as plot the results. All models were evaluated under identical conditions using a sample size of 500 parallel sentences per condition.
 
 | Condition | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
 | --- | ---: | ---: | ---: | ---: |
@@ -83,6 +83,19 @@ The tables below present results for models trained with seed 42. Visualizations
 | `low_P10` | **0.8770** | **0.9538** | 0.9047 | 0.9807 |
 
 ### Linear Probing Accuracy
+
+The script `linear_probe/linear_probe_lexical_overlap.py` extends `masked_language_probing/probing/linear_probe.py` to evaluate cross-lingual representation transfer within hidden layers. Execution across all experimental conditions is fully automated using `linear_probe/run_probe_lexical_overlap.py`.
+
+Prerequisites:
+1. *Build Initial Probing Corpus*  
+   Run `build_probing_corpus.py` to generate the baseline training datasets and entity-omitted splits:
+   - `probing_run/a_training.txt`
+   - `probing_run/b_training.txt`
+2. *Generate Overlapped Corpora*  
+   Execute `build_overlapped_corpora.py` on `a_training.txt` and `b_training.txt` to construct condition-specific lexical overlap files (e.g., `corpus_cjk_P5_high.txt`).
+3. *Train & Evaluate** 
+   Train fresh models on the resulting overlapped corpora and execute the linear probing evaluation scripts.
+
 | Condition | Layer 0 | Layer 1 | Layer 2 | Layer 3 | Layer 4 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `high_P0` | 0.0324 | 0.2842 | 0.4460 | 0.4496 | 0.3813 |
