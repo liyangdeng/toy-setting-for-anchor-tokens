@@ -2,10 +2,9 @@
 
 ## Research Question
 
-Cross-lingual transfer in this project usually leans on anchor tokens: a few
-surface forms shared between the two languages, which give the model somewhere
-to tie their representations together. Here we take that crutch away and ask
-whether transfer still happens without it.
+Cross-lingual transfer in this project usually depends on anchor tokens: a
+small number of surface forms that both languages share. This experiment removes
+them and tests whether transfer still happens when no tokens are shared at all.
 
 > With no shared tokens at all, can two languages still align through structural
 > (word-order) similarity alone, or is a shared anchor actually necessary?
@@ -51,9 +50,8 @@ still match A.
 | `111` | VP NP | VO | N A | 3 / 3 | 100% |
 
 At `111` the two languages have the exact same word order. At `000` they share
-nothing at all, not the tokens and not the order. Sweeping across the four
-settings shows how much transfer survives as the last bit of similarity is taken
-away.
+nothing at all, not the tokens and not the order. Running all four settings
+shows how much transfer remains as the structural similarity is removed.
 
 ## Corpus Generation
 
