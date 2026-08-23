@@ -1,18 +1,18 @@
 """
-Linear probing for the anchor-token transfer experiment -- mask-ENTITY track.
+Linear probing for the anchor-token transfer experiment (mask-ENTITY track).
 (mask-RELATION was tried and dropped: mono-B could already guess the
 relation phrase for most relations without any cross-lingual info, so it
 never survived the leak filter as a clean probe for more than one relation.
 See git history for the removed implementation.)
 
 Two sections:
-  1. TRAINING -- pasted from train_multilingual_synset.py almost verbatim,
+  1. TRAINING: pasted from train_multilingual_synset.py almost verbatim,
      wrapped in train_multilingual() so this one file can train a bilingual
      model from scratch if you don't already have a checkpoint.
   2. LINEAR PROBE. For every probe triple:
        - take its A sentence(s) and B sentence(s) (from parallel_corpus_
          synset.json) and mask the single TARGET entity token (kept as
-         [MASK] in the sentence, not deleted -- avoids leakage since the
+         [MASK] in the sentence, not deleted, which avoids leakage since the
          answer token is gone from the input, while the sentence structure
          the model was trained on stays intact)
        - run the frozen model, output_hidden_states=True
@@ -89,7 +89,7 @@ from sklearn.linear_model import LogisticRegression
 
 
 # ══════════════════════════════════════════════════════════════════════════
-# SECTION 1 — TRAINING (pasted from train_multilingual_synset.py)
+# SECTION 1: TRAINING (pasted from train_multilingual_synset.py)
 # ══════════════════════════════════════════════════════════════════════════
 
 def build_tokenizer(corpus_files):
@@ -161,7 +161,7 @@ def plot_loss_history(trainer, output_dir):
         ax.plot(eval_epochs, eval_losses, marker='o', label='Validation loss')
     ax.set_xlabel('Epoch')
     ax.set_ylabel('MLM loss')
-    ax.set_title('Multilingual — training and validation loss')
+    ax.set_title('Multilingual training and validation loss')
     ax.grid(True, alpha=0.3)
     ax.legend()
     fig.tight_layout()
@@ -261,7 +261,7 @@ def train_multilingual(corpus_a, corpus_b, output_dir, max_length=64,
 
 
 # ══════════════════════════════════════════════════════════════════════════
-# SECTION 2 — LINEAR PROBE
+# SECTION 2: LINEAR PROBE
 # ══════════════════════════════════════════════════════════════════════════
 
 def pick_device():
@@ -298,12 +298,12 @@ def build_examples(final_omitted, parallel, cjk_dict, hira_dict, mask_str):
 
     parallel: the FRESH parallel file built from final_omitted.json in
     build_probing_corpus.py's step 8 (final_omitted_corpus/parallel_corpus_
-    synset.json) -- NOT the old full-corpus parallel file. Its lang_a
+    synset.json), NOT the old full-corpus parallel file. Its lang_a
     sentences are exactly what got appended into a_training.txt, so the model
     actually trained on them.
 
     Each returned example is ONE TRIPLE, carrying ALL of its usable masked
-    A/B sentence renderings (not just one) -- see run_probe for how training
+    A/B sentence renderings (not just one). See run_probe for how training
     (every A rendering, same label) and evaluation (OR across a triple's B
     renderings) use them.
     """
@@ -481,7 +481,7 @@ def main():
                     help="final_omitted.json from build_probing_corpus.py "
                          "(post top-1-filter, post per-relation floor)")
     p.add_argument("--parallel", required=True,
-                    help="final_omitted_corpus/parallel_corpus_synset.json -- the FRESH "
+                    help="final_omitted_corpus/parallel_corpus_synset.json, the FRESH "
                          "parallel file built FROM final_omitted.json (step 8), not the "
                          "old full-corpus parallel_corpus_synset.json")
     p.add_argument("--cjk_dict", required=True)

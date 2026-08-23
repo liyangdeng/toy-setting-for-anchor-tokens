@@ -13,7 +13,7 @@ The metrics here are all BINARY per item (a triple / word-pair / sentence-pair
 either hits or misses), and the two conditions use DIFFERENT evaluation items
 (different corpora / different omitted-triple sets), so the comparison is
 UNPAIRED. For two independent binomials the textbook tool is a two-proportion
-test -- no bootstrap, no per-item file, no re-run needed. You only need four
+test, so no bootstrap, no per-item file, no re-run needed. You only need four
 numbers, all already in the committed result CSVs:
 
     hits_a, n_a, hits_b, n_b        (hits = accuracy * n, rounded)
@@ -30,7 +30,7 @@ write-up; do not pick it after seeing which way the gap goes.
 Layer note (linear probe)
 -------------------------
 Fisher needs a clean binomial (integer hits at ONE layer). So for the probe,
-feed the counts at a single FIXED layer -- we use layer 3 (a mid plateau layer,
+feed the counts at a single FIXED layer. We use layer 3 (a mid plateau layer,
 not the per-condition best layer). The L2-4 average is for the TREND test only,
 where a scalar is all that is needed. For necessity the effect is so large the
 choice is immaterial.

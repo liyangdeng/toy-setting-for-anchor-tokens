@@ -3,7 +3,7 @@ Orchestrator: deprived_triples.json + omitted_triples.json (from
 select_probe_triples.py) -> a fresh mono-B reason filter -> final training
 corpus for the treatment model's Language A.
 
-mask-ENTITY track only -- mask-RELATION was tried and dropped (mono-B could
+mask-ENTITY track only. mask-RELATION was tried and dropped (mono-B could
 already guess the relation phrase for most relations without any
 cross-lingual info; see git history for the removed implementation).
 
@@ -19,12 +19,12 @@ Pipeline:
   2. deprived_sentences.json --[build_corpus_script]--> deprived corpus
      (both languages) + deprived parallel file
      omitted_sentences.json  --[build_corpus_script]--> omitted corpus
-     (both languages, per-triple) -- only lang_b is needed for filtering
+     (both languages, per-triple), only lang_b is needed for filtering
   3. train mono-B on the deprived Hiragana corpus (subprocess:
      train_monolingual_synset.py)
   4. TOP-1 reason filter: omitted_triples.json is deduped across the
      mask-ENTITY and mask-RELATION tracks that select_probe_triples.py
-     computes, so probe_manifest.json is what tells them apart -- only the
+     computes, so probe_manifest.json is what tells them apart, only the
      entity-track subset is used here. For every candidate, mask the target
      token in its B sentence(s) and ask mono-B. Any top-1 hit -> drop
      (mono-B alone can infer it -> not a clean cross-lingual probe).
@@ -41,7 +41,7 @@ Pipeline:
   9. concatenate deprived-A corpus (step 2) + final_omitted-A corpus (step 8)
      -> a_training file (Language A training corpus for the treatment model)
      Also copies deprived-B corpus as b_training (Language B is NOT extended
-     with final_omitted -- that's the whole point of the deprivation).
+     with final_omitted, which is the whole point of the deprivation).
 
 --gen_script and --build_corpus_script are REQUIRED, no default: pick the
 exact script version matching your current grammar/switches, since the PCFG
@@ -218,7 +218,7 @@ def main():
     p.add_argument("--deprived_triples", required=True)
     p.add_argument("--omitted_triples", required=True)
     p.add_argument("--probe_manifest", required=True,
-                   help="probe_manifest.json from select_probe_triples.py -- "
+                   help="probe_manifest.json from select_probe_triples.py, "
                         "the only place that still tags each triple's track "
                         "(entity/relation); omitted_triples.json is deduped "
                         "across both tracks and loses that tag")

@@ -24,7 +24,7 @@ Grouping
 --------
 For a second categorical factor (lexical overlap: high / mid / low frequency
 strategy), pass --group. One Spearman is run PER group and reported separately.
-Never pool differently-behaving groups into one trend -- that dilutes a real
+Never pool differently-behaving groups into one trend, since that dilutes a real
 signal in one group with noise from another.
 
 Score per (condition, seed)

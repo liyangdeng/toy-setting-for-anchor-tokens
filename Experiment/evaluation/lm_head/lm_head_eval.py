@@ -1,5 +1,5 @@
 """
-LM-head evaluation for the anchor-token transfer experiment -- mask-ENTITY.
+LM-head evaluation for the anchor-token transfer experiment (mask-ENTITY).
 
 A fourth evaluation metric next to word translation, sentence retrieval and
 linear probing. Instead of training an external classifier on the hidden
@@ -9,7 +9,7 @@ entity in a sentence on the omitted side and ask the model to fill it.
 Same setup as the probe. Facts are omitted from language B (Hiragana): the
 model trained on the A rendering of each probe triple but never on the B
 rendering, so filling the entity correctly on the B side can only come from the
-A parallel -- i.e. cross-lingual transfer. A = CJK (source), B = Hiragana
+A parallel, i.e. cross-lingual transfer. A = CJK (source), B = Hiragana
 (target, where we prompt).
 
 Because the two vocabularies live in one joint output space, a single "correct"
@@ -19,7 +19,7 @@ criterion is ambiguous, so we report three, from loose to strict:
   strict_concept argmax over BOTH vocabularies       -> the correct CONCEPT
                  (the A token OR the B token of that concept counts)
   strict_token   argmax over BOTH vocabularies        == the correct B token
-                 (must beat every A token too -- the "true transfer" bar)
+                 (must beat every A token too, the "true transfer" bar)
 
 strict_token is the pre-registered primary metric for significance; the other
 two are reported as robustness (does the conclusion hold under a looser or a
@@ -28,7 +28,7 @@ concept-level criterion). Both top-1 and top-3 are reported.
 Two diagnostics (descriptive, per sentence, not tested):
   source_token_rate         how often the model fills a SOURCE (A) token at all
   right_concept_wrong_lang  how often it fills the A token of the CORRECT concept
-                            (right meaning, wrong language -- "cat is suss")
+                            (right meaning, wrong language, "cat is suss")
 
 A triple counts as a hit if ANY of its B renderings hits (OR-aggregation, same
 as the probe). Accuracy = hit triples / total triples.

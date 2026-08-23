@@ -9,7 +9,7 @@ PCFG sentence generator - word-order switches (22.06)
   the two languages share zero tokens (for the anchor-necessity experiment).
   Stripping is per-token and only touches token ENDS, so dots/colons/underscores
   INSIDE synset & conceptnet IDs (e.g. 'abdomen.n.01', 'conceptnet:bee:1509')
-  are preserved — those never sit at a token boundary.
+  are preserved, since those never sit at a token boundary.
 
 last update: 28.06.2026
 
@@ -59,9 +59,9 @@ This script uses synsets
 
 VP types produced by the grammar
 -----------------------------------------
-  TRANS    — transitive verb:       {type, v}
-  COP      — copula + preposition:  {type, aux, pp}
-  COP_ADJ  — copula + adj + prep:   {type, aux, adjp, pp}
+  TRANS    transitive verb:       {type, v}
+  COP      copula + preposition:  {type, aux, pp}
+  COP_ADJ  copula + adj + prep:   {type, aux, adjp, pp}
 
 ____________________________________________________________________________________
 
@@ -164,7 +164,7 @@ def sample_vp_struct(rules):
 def build_quality_lookup(edges):
     """
     Build {node_id: [adjective tokens]} from HasQuality edges. Adjective
-    tokens are stored verbatim — no stripping of prefixes/suffixes/underscores.
+    tokens are stored verbatim, no stripping of prefixes/suffixes/underscores.
     """
     lookup = defaultdict(list)
     for edge in edges:

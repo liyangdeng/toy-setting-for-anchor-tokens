@@ -11,7 +11,7 @@ sentences are generated separately per language and paired by
 pairs the full (non-held-out) corpus.
 
 Each of the 4 B-configs gets its own mono-B leak filter (a triple that's
-"clean" -- i.e. not guessable by a monolingual model alone -- in one word
+"clean" (i.e. not guessable by a monolingual model alone) in one word
 order isn't necessarily clean in another; per the design discussion, we do
 NOT intersect surviving triples across configs, since the metric itself
 (transfer accuracy net of what monolingual reasoning explains) is already
@@ -160,7 +160,7 @@ def stage_fastgen():
     deprived_edges = json.load(open(OUT / 'deprived_triples.json'))
     omitted_edges = json.load(open(OUT / 'omitted_triples.json'))
 
-    print('Generating Language A (config 111) -- deprived + omitted (shared across configs)...')
+    print('Generating Language A (config 111): deprived + omitted (shared across configs)...')
     a_deprived = generate_for_config(deprived_edges, grammars, quality_lookup, LANG_A_CONFIG)
     a_omitted = generate_for_config(omitted_edges, grammars, quality_lookup, LANG_A_CONFIG)
 

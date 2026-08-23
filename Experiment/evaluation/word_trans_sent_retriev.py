@@ -1,14 +1,14 @@
 """
 Evaluate cross-lingual alignment of the jointly trained multilingual MLM.
 
-Test 1 — Word Translation Precision
+Test 1: Word Translation Precision
     For each synset content token, look up its Language B (Hiragana) artificial
     token and its Language A (CJK) artificial token in the joint vocabulary.
     Embed Language B token in isolation (word-embedding lookup, no forward pass).
     Cosine-rank all Language A content-token embeddings as candidates.
     Metric: top-1 and top-5 precision.
 
-Test 2 — Sentence Retrieval Precision
+Test 2: Sentence Retrieval Precision
     Sample parallel sentence pairs from parallel_corpus_synset.json.
     Mean-pool word embeddings over Language A and Language B sentences.
     Cosine-rank Language A sentence vectors as candidates for each Language B query.
@@ -103,7 +103,7 @@ def test1_word_translation(model, tokenizer, cjk_path, hira_path):
     emb   = word_emb_matrix(model)  # (V, H)
 
     # Build aligned pairs for SYNSET content tokens only
-    # (grammar terminals are shared structural words — less interesting to translate)
+    # (grammar terminals are shared structural words, less interesting to translate)
     synset_pairs = []   # (cjk_art, hira_art, concept_key)
     for key, cjk_entry in cjk_dict.items():
         if cjk_entry['source'] != 'synsets':
@@ -117,7 +117,7 @@ def test1_word_translation(model, tokenizer, cjk_path, hira_path):
     print(f'  Synset content-token pairs in joint vocab : {len(synset_pairs)}')
 
     if not synset_pairs:
-        print('  [ERROR] No aligned pairs found — is this a joint multilingual model?')
+        print('  [ERROR] No aligned pairs found. Is this a joint multilingual model?')
         return
 
     # Also build gallery restricted to Language A synset tokens
@@ -126,8 +126,8 @@ def test1_word_translation(model, tokenizer, cjk_path, hira_path):
     a_ids     = np.array([vocab[t] for t in a_tokens])
     b_ids     = np.array([vocab[t] for t in b_tokens])
 
-    a_embs = emb[a_ids]   # (M, H) — Language A (CJK) embeddings
-    b_embs = emb[b_ids]   # (M, H) — Language B (Hiragana) embeddings
+    a_embs = emb[a_ids]   # (M, H): Language A (CJK) embeddings
+    b_embs = emb[b_ids]   # (M, H): Language B (Hiragana) embeddings
 
     # Query: Language B  →  Gallery: Language A (restricted to synset tokens)
     sim = cosine_sim(b_embs, a_embs)   # (M, M)

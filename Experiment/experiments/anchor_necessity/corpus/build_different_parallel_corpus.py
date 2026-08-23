@@ -5,7 +5,7 @@ Experiment-specific corpus + parallel builder for the Anchor Necessity / Suffici
 This is an assembled ("集合") version of two existing repo tools:
   - anchor_necessity/corpus/generate_sentences_no_anchors.py  (punctuation-free PCFG generator)
   - data/corpus/build_synset_corpus.py                        (synset -> artificial-token replacer)
-Both are imported and reused here — no logic is duplicated.
+Both are imported and reused here, no logic is duplicated.
 
 For a FIXED language A (config 111, CJK) paired against language B at each of the four
 structural configs {000, 001, 011, 111} (Hiragana), it writes to ./corpus/:
