@@ -111,7 +111,7 @@ What it does, in order:
    - `a_training.txt` = deprived-A + final_omitted-A (Language A sees
      everything)
    - `b_training.txt` = deprived-B only (Language B never sees the held-out
-     facts, which is the whole point)
+     facts, by design)
 
 ### Stage 2: train the bilingual model(s)
 
@@ -142,8 +142,8 @@ mixed in) works for both runs.
 
 For every layer, this fits a logistic-regression classifier on Language-A
 `[MASK]`-position representations and evaluates it on Language-B's. If a
-classifier trained only on A can still read the fact off B's representation,
-that's evidence of transfer. Outputs `layerwise_accuracy.csv`,
+classifier trained only on A can still recover the fact from B's representation,
+that is evidence of transfer. Outputs `layerwise_accuracy.csv`,
 `layerwise_accuracy_per_relation.csv`, and a PNG plot per run.
 
 ## How mask-RELATION works
@@ -163,7 +163,7 @@ enumerated candidates **exactly**. This works regardless of word order
 entities) and naturally rejects complex/coordinated sentences (their leftover
 tokens either aren't contiguous or don't exactly match any candidate).
 `linear_probe.py` and the leakage filter both reuse this one function so the
-definition of "a valid simple-sentence rendering" never drifts between them.
+definition of "a valid simple-sentence rendering" stays identical in both.
 
 Because the label for mask-RELATION is "which specific template did this
 rendering draw" (the PCFG redraws the VP independently per sentence, so two

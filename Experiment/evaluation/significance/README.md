@@ -74,7 +74,7 @@ Never pool differently-behaving groups into one trend.
 ## Linear probing: which layer value goes into the test
 
 The probe produces a **per-layer** accuracy curve. Layer 0 is the embedding
-floor, layer 1 is the rising edge, and the plateau (where every condition sits
+floor, layer 1 is the rising edge, and the plateau (where every condition is
 near its peak) is **layers 2–4**. So the significance input is taken from that
 plateau, but the two tests take it differently:
 

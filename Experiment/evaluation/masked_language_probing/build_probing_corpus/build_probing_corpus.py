@@ -41,7 +41,7 @@ Pipeline:
   9. concatenate deprived-A corpus (step 2) + final_omitted-A corpus (step 8)
      -> a_training file (Language A training corpus for the treatment model)
      Also copies deprived-B corpus as b_training (Language B is NOT extended
-     with final_omitted, which is the whole point of the deprivation).
+     with final_omitted, which is what the deprivation is for).
 
 --gen_script and --build_corpus_script are REQUIRED, no default: pick the
 exact script version matching your current grammar/switches, since the PCFG

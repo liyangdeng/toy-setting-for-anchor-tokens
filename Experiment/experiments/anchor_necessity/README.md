@@ -71,9 +71,9 @@ Two builders drive this:
   ```
 
   `select` and `fastgen` run once. `mono`, `filter` and `assemble` run once per
-  B setting. `mono` trains a Hiragana-only model, and the `filter` step throws
-  out any held-out fact that model can already guess on its own, so what stays is
-  a clean test of transfer.
+  B setting. `mono` trains a Hiragana-only model, and the `filter` step drops
+  any held-out fact that the model can already predict on its own, so what
+  remains is a clean test of transfer.
 
 `results/run_pipeline.sh` runs the per-setting stages, trains the bilingual
 models, and calls the probe and LM-head evaluations for all four settings.
