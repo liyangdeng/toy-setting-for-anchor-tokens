@@ -2,7 +2,7 @@
 
 Two small tools to check whether a difference in a metric is real or could be
 sampling noise. Both run on the **aggregate numbers already in the committed
-result files** — no retraining, no re-running evaluation, no per-item dumps.
+result files**. No retraining, no re-running evaluation, no per-item dumps.
 
 | Script | Question it answers | Test | When to use |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@ Each teammate decides which test fits their experiment.
 
 ---
 
-## Method 1 — comparison (`compare_significance.py`)
+## Method 1: comparison (`compare_significance.py`)
 
 Our metrics are **binary per item** (a triple / word-pair / sentence-pair
 either hits or misses), and two conditions use **different** evaluation items
@@ -29,7 +29,7 @@ hits_a, n_a, hits_b, n_b        (hits = accuracy * n, rounded to an integer)
 
 The script reports **Fisher's exact test** (exact, safe for small n) plus a
 two-proportion z-test for reference. No bootstrap and no per-item file are
-needed here — the sufficient statistics are just the counts.
+needed here, since the sufficient statistics are just the counts.
 
 ```bash
 python compare_significance.py --metric linear_probe \
@@ -37,14 +37,14 @@ python compare_significance.py --metric linear_probe \
     --name_b cfg_011 --hits_b 5   --n_b 167
 ```
 
-## Method 2 — trend (`trend_significance.py`)
+## Method 2: trend (`trend_significance.py`)
 
 For experiments that sweep an **ordered** variable (density %, overlap %), the
 claim is a monotone trend ("more ⇒ better"), not a pairwise gap. The right tool
 is **Spearman's rank correlation**: it turns both the ordering variable and the
 score into ranks and measures whether they rise together. `rho` (−1..+1) is the
 trend strength; the **permutation** p-value is its significance (it does *not*
-use Fisher — the two tests are independent).
+use Fisher, the two tests are independent).
 
 The unit of the trend test is the **condition**, not the seed. For each
 condition we average its seeds into one score, then run Spearman across the few
@@ -66,7 +66,7 @@ python trend_significance.py --table lexical_probe.csv --metric linear_probe --g
 ```
 
 For a second categorical factor (lexical overlap: high/mid/low frequency),
-pass `--group` — one Spearman is run **per group** and reported separately.
+pass `--group`, and one Spearman is run **per group** and reported separately.
 Never pool differently-behaving groups into one trend.
 
 ---
@@ -76,17 +76,17 @@ Never pool differently-behaving groups into one trend.
 The probe produces a **per-layer** accuracy curve. Layer 0 is the embedding
 floor, layer 1 is the rising edge, and the plateau (where every condition sits
 near its peak) is **layers 2–4**. So the significance input is taken from that
-plateau — but the two tests take it differently:
+plateau, but the two tests take it differently:
 
 - **Trend test (Spearman):** score per run = **mean over layers 2–4**. Spearman
   only needs a scalar, so the average is fine.
 - **Comparison test (Fisher):** use the counts at a **single fixed layer
-  (layer 3)**. Fisher needs a clean binomial — integer hits at one layer. A
+  (layer 3)**. Fisher needs a clean binomial: integer hits at one layer. A
   layer-2–4 average is a non-integer and mixes three correlated measurements of
   the same triples, so it cannot go into Fisher. For necessity the effect is so
   large that layer-3 vs plateau-mean gives the same verdict anyway.
 
-In all cases the layer choice is **fixed and identical across conditions** —
+In all cases the layer choice is **fixed and identical across conditions**,
 never the per-condition best layer (that is post-hoc selection and inflates the
 result).
 
@@ -100,13 +100,13 @@ Decided upstream, documented here so the counts come from the right run:
   language); these measure knowledge transfer.
 
 For retrieval metrics, keep the **gallery size identical** across the two
-conditions being compared (e.g. both sampled at 500) — P@1 depends on it.
+conditions being compared (e.g. both sampled at 500), because P@1 depends on it.
 
 ## Direction (one-sided)
 
 Both tests default to **one-sided** (`--alternative greater`): our hypotheses
 are directional and stated in advance (more anchors / more structure ⇒ better
-alignment). With only 4–5 ordered conditions this matters — a perfect monotone
+alignment). With only 4–5 ordered conditions this matters: a perfect monotone
 trend on 4 points is p = 0.083 two-sided but **0.042 one-sided**. One-sided is
 legitimate *only* because the direction is pre-registered; do not pick the
 direction after seeing which way the data went.
@@ -117,7 +117,7 @@ direction after seeing which way the data went.
 
 Because of time and compute limits we did **not** run 30+ seeds per condition.
 Our significance results therefore **cannot be generalised to arbitrary
-conditions or a new training run** — they show only that, **for the specific
+conditions or a new training run**. They show only that, **for the specific
 models and conditions we trained**, the observed differences (and trends) are
 statistically significant. With so few ordered conditions the p-values are also
 floored by the permutation combinatorics, so the **effect size** (the size of

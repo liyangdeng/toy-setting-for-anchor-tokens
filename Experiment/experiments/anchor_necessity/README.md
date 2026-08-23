@@ -2,46 +2,46 @@
 
 ## Research Question
 
-Cross-lingual transfer in this project usually relies on anchor tokens: a few
-surface forms shared between the two languages that give the model a place to
-tie their representations together. This experiment removes that crutch and asks
-whether transfer can still happen without it.
+Cross-lingual transfer in this project usually leans on anchor tokens: a few
+surface forms shared between the two languages, which give the model somewhere
+to tie their representations together. Here we take that crutch away and ask
+whether transfer still happens without it.
 
 > With no shared tokens at all, can two languages still align through structural
 > (word-order) similarity alone, or is a shared anchor actually necessary?
 
-To isolate structure, the two languages share **zero** tokens, and we vary only
+To isolate structure, the two languages share **zero** tokens, and we only vary
 how similar their word order is.
 
 ## The Two Languages
 
-Both languages are built from the same semantic triples; only the surface script
+Both languages are built from the same semantic triples. Only the surface script
 and the word order differ.
 
 | Language | Role | Script | Word order | Held-out facts |
 | --- | --- | --- | --- | --- |
-| A | source | CJK | fixed at `111` | none — trains on every fact |
+| A | source | CJK | fixed at `111` | none (trains on every fact) |
 | B | target | Hiragana | one of four settings (below) | held out from B, then probed on B |
 
 A always sees the full graph. A fact is removed from B's training data, so if the
-model can still fill it in on the B side, that knowledge can only have come from
-A — i.e. it transferred across the two languages.
+model can still fill it in on the B side, that knowledge could only have come
+from A. That is the transfer we are testing for.
 
-Because the CJK and Hiragana token ranges are disjoint and the sentence generator
-strips punctuation, A and B never share a single token. This is what makes every
+The CJK and Hiragana token ranges are disjoint, and the sentence generator strips
+punctuation, so A and B never share a single token. That is what makes every
 condition a **zero-anchor** setting.
 
 ## Word-Order Settings
 
 Word order is set by three binary switches:
 
-- `s1` — subject / predicate order
-- `s2` — object / verb order
-- `s3` — noun / adjective order
+- `s1` sets the subject / predicate order
+- `s2` sets the object / verb order
+- `s3` sets the noun / adjective order
 
 Language A is fixed at `111`. Language B is run at four settings, each one step
 further from A. "Structural similarity" is just how many of the three switches
-match A.
+still match A.
 
 | B setting | `s1` | `s2` | `s3` | Switches matching A | Structural similarity to A |
 | --- | --- | --- | --- | :---: | :---: |
@@ -50,18 +50,19 @@ match A.
 | `011` | NP VP | VO | N A | 2 / 3 | 67% |
 | `111` | VP NP | VO | N A | 3 / 3 | 100% |
 
-At `111` the two languages have identical word order; at `000` they share nothing
-at all — neither tokens nor structure. Sweeping across the four settings shows how
-much transfer survives as the only remaining similarity is taken away.
+At `111` the two languages have the exact same word order. At `000` they share
+nothing at all, not the tokens and not the order. Sweeping across the four
+settings shows how much transfer survives as the last bit of similarity is taken
+away.
 
 ## Corpus Generation
 
 Two builders drive this:
 
-- `corpus/build_different_parallel_corpus.py` — the full parallel corpus
+- `corpus/build_different_parallel_corpus.py` builds the full parallel corpus
   (nothing held out), used for word translation and sentence retrieval.
-- `results/build_probing_corpus_necessity.py` — the held-out corpus for the
-  probing metrics, run in stages:
+- `results/build_probing_corpus_necessity.py` builds the held-out corpus for the
+  probing metrics. It runs in stages:
 
   ```bash
   python build_probing_corpus_necessity.py --stage select
@@ -71,10 +72,10 @@ Two builders drive this:
   python build_probing_corpus_necessity.py --stage assemble --cfg 000
   ```
 
-  `select` and `fastgen` run once. `mono`, `filter`, and `assemble` run once per
-  B setting. `mono` trains a Hiragana-only model and the `filter` step drops any
-  held-out fact that model can already guess on its own, so what remains is a
-  clean test of transfer.
+  `select` and `fastgen` run once. `mono`, `filter` and `assemble` run once per
+  B setting. `mono` trains a Hiragana-only model, and the `filter` step throws
+  out any held-out fact that model can already guess on its own, so what stays is
+  a clean test of transfer.
 
 `results/run_pipeline.sh` runs the per-setting stages, trains the bilingual
 models, and calls the probe and LM-head evaluations for all four settings.
