@@ -1,7 +1,8 @@
 # Lexical Overlap Experiment
 
 ## Research Question
-Previous related work suggests that lexical overlap might be one of the driving factors to cross-lingual alignment. We therefore ask the question:
+
+Some previous work suggests that lexical overlap could be one of the primary drivers of cross-lingual alignment. We therefore address the following research question:
 > Does the degree of lexical overlap influence cross-lingual alignment of two artificial languages?
 
 ## Experimental Conditions
@@ -51,7 +52,18 @@ For each condition, the script concatenates the two modified target language cor
 
 ## Evaluation
 
+Evaluation of our 15 trained models (representing 13 distinct experimental configurations) is based on the project's evaluation framework, using four different metrics:
+1. Word translation precision
+2. Sentence retrieval precision
+3. LM head accuracy
+4. Linear probing
+
+The tables below present results for models trained with seed 42. Visualizations can be found in their respective dirs.
+
 ### Word Translation and Sentence Retrieval Precision
+
+`evaluate_lexical_overlap.py` extends `Experiment/evaluation/word_trans_sent_retirev.py` to evaluate cross-lingual representation alignment at both the token and sentence level across all experimental conditions, as well as plot the results. All models were evaluated under identical conditions using a sample size of 500 parallel sentences per condition.
+
 | Condition | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
 | --- | ---: | ---: | ---: | ---: |
 | `high_P0` | 0.7645 | 0.8945 | 0.8347 | 0.9613 |
@@ -67,8 +79,8 @@ For each condition, the script concatenates the two modified target language cor
 | `low_P0` | 0.7645 | 0.8945 | 0.8347 | 0.9613 |
 | `low_P2` | 0.8381 | 0.9489 | 0.8880 | 0.9733 |
 | `low_P5` | 0.8288 | 0.9411 | 0.0146 | 0.9467 |
-| `low_P7` | 0.8433 | 0.9357 | 0.9300 | 0.9893 |
-| `low_P10` | 0.8770 | 0.9538 | 0.9047 | 0.9807 |
+| `low_P7` | 0.8433 | 0.9357 | **0.9300** | **0.9893** |
+| `low_P10` | **0.8770** | **0.9538** | 0.9047 | 0.9807 |
 
 ### Linear Probing Accuracy
 | Condition | Layer 0 | Layer 1 | Layer 2 | Layer 3 | Layer 4 |
@@ -87,7 +99,7 @@ For each condition, the script concatenates the two modified target language cor
 | `low_P2` | 0.0324 | 0.4964 | 0.5216 | 0.4820 | 0.4820 |
 | `low_P5` | 0.0324 | 0.4964 | 0.6259 | 0.5755 | 0.5432 |
 | `low_P7` | 0.0324 | 0.5036 | 0.4784 | 0.5108 | 0.5432 |
-| `low_P10` | 0.0324 | 0.5144 | 0.6547 | 0.6115 | 0.6007 |
+| `low_P10` | 0.0324 | **0.5144** | **0.6547** | **0.6115** | **0.6007** |
 
 ### LM Head Accuracy
 | Condition | strict_token top-1 | strict_token top-3 | strict_concept top-1 | strict_concept top-3 | lenient top-1 | lenient top-3 |
