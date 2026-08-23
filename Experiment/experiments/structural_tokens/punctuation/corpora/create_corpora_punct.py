@@ -4,8 +4,8 @@ creates corpora for the punctuation experiment
 takes corpus_hiragana_synset.txt and corpus_cjk_synset.txt
 produced by build_synset_corpus.py and writes:
 
-  1. <hiragana>_nopunct.txt   comma and period removed
-  2. <cjk>_nopunct.txt        comma and period removed
+  1. <hiragana>_none.txt   comma and period removed
+  2. <cjk>_none.txt        comma and period removed
   3. <cjk>_disjoint.txt       comma -> ;   period -> *
 
 also writes the corresponding versions of parallel_corpus_synset.json.
@@ -101,8 +101,8 @@ def main():
             sys.exit(f"input not found: {p}")
 
     jobs = [
-        (hira, outdir / f"{hira.stem}_nopunct{hira.suffix}", "drop"),
-        (cjk,  outdir / f"{cjk.stem}_nopunct{cjk.suffix}",  "drop"),
+        (hira, outdir / f"{hira.stem}_none{hira.suffix}", "drop"),
+        (cjk,  outdir / f"{cjk.stem}_none{cjk.suffix}",  "drop"),
         (cjk,  outdir / f"{cjk.stem}_disjoint{cjk.suffix}", "disjoint"),
     ]
 
@@ -111,7 +111,7 @@ def main():
         print(dst.name)
 
     json_jobs = [
-        (par, outdir / f"{par.stem}_nopunct{par.suffix}",  "drop",     BOTH),
+        (par, outdir / f"{par.stem}_none{par.suffix}",  "drop",     BOTH),
         (par, outdir / f"{par.stem}_disjoint{par.suffix}", "disjoint", (CJK_SIDE,)),
     ]
     for src, dst, mode, sides in json_jobs:
