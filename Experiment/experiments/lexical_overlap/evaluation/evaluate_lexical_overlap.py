@@ -17,7 +17,7 @@ Needed files:
 Outputs:
 - lexical_overlap_evaluation.json
 - lexical_overlap_evaluation.csv
-- visualizations/wt_sr_top1.png
+- visualizations/wt_sr_top1_lexical_overlap.png
 As well as evaluation logs for each condition and the shared parallel corpora used for evaluation.
 
 Usage example:
@@ -226,7 +226,7 @@ def plot_metrics(data_rows, output_dir):
     ax2.legend(loc="lower right", frameon=False, fontsize=10)
 
     fig.tight_layout()
-    plot_path = viz_dir / "wt_sr_top1.png"
+    plot_path = viz_dir / "wt_sr_top1_lexical_overlap.png"
     fig.savefig(plot_path, dpi=300, bbox_inches="tight")
     plt.close(fig)
     print(f"Saved figure: {plot_path}")
