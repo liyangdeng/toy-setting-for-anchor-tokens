@@ -88,11 +88,11 @@ The script `linear_probe/linear_probe_lexical_overlap.py` extends `../../evaluat
 
 Prerequisites:
 1. *Build Initial Probing Corpus*  
-   Run `build_probing_corpus.py` to generate "cleaned" versions of the training data:
+   Run `../../evaluation/masked_language_probing/build_probing_corpus/build_probing_corpus.py` to generate "cleaned" versions of the training data:
    - `probing_run/a_training.txt`
    - `probing_run/b_training.txt`
 2. *Generate Overlapped Corpora*  
-   Execute `build_overlapped_corpora.py` on `a_training.txt` and `b_training.txt` to construct condition-specific lexical overlap files.
+   Execute `linear_probe/build_overlapped_corpora.py` on `a_training.txt` and `b_training.txt` to construct condition-specific lexical overlap files.
 3. *Train & Evaluate*
    Train fresh models on the resulting overlapped corpora and execute the linear probing evaluation scripts.
 
