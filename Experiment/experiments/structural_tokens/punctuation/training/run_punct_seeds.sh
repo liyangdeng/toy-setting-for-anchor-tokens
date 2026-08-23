@@ -1,24 +1,30 @@
 #!/usr/bin/env bash
-# Train the punctuation experiment: 3 settings x N seeds.
-# Each setting uses its OWN corpus pair -- the pairing is the thing to get right.
+# =============================================================================
+# Run the training script for the PUNCTUATION experiment for 3 settings, 3 seeds each.
+
+# Each setting uses its own corpus pair.
+
 set -euo pipefail
 
-# --- edit these --------------------------------------------------------------
-TRAIN=train_punct.py        # your punctuation training script
-OUT_ROOT=punct_checkpoints        # output dirs become ${OUT_ROOT}_${setting}_seed${s}
-SEEDS="42 43 44"                  # add 45 46 for 5 seeds (recommended, effects are small)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PUNCT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-# corpus files: set each to its ACTUAL path (variants may live in a different dir)
-# shared  : original (punctuated) corpora
-CJK_SHARED=punct_corpora/corpus_cjk_synset.txt
-HIR_SHARED=punct_corpora/corpus_hiragana_synset.txt
-# none    : punctuation stripped from both
-CJK_NONE=punct_corpora/corpus_cjk_synset_none.txt
-HIR_NONE=punct_corpora/corpus_hiragana_synset_none.txt
+cd "$SCRIPT_DIR"
+
+TRAIN="$SCRIPT_DIR/train_punct.py"
+OUT_ROOT="punct_checkpoints"
+SEEDS="42 43 44"
+
+# shared
+CJK_SHARED="$PUNCT_DIR/corpora/corpus_cjk_synset.txt"
+HIR_SHARED="$PUNCT_DIR/corpora/corpus_hiragana_synset.txt"
+# none
+CJK_NONE="$PUNCT_DIR/corpora/corpus_cjk_synset_none.txt"
+HIR_NONE="$PUNCT_DIR/corpora/corpus_hiragana_synset_none.txt"
 # disjoint: CJK uses ; and * ; Hiragana keeps , and .  (same file as shared)
-CJK_DISJOINT=punct_corpora/corpus_cjk_synset_disjoint.txt
-HIR_DISJOINT=punct_corpora/corpus_hiragana_synset.txt
-# -----------------------------------------------------------------------------
+CJK_DISJOINT="$PUNCT_DIR/corpora/corpus_cjk_synset_disjoint.txt"
+HIR_DISJOINT="$PUNCT_DIR/corpora/corpus_hiragana_synset.txt"
+
 
 n_done=0
 for setting in shared none disjoint; do

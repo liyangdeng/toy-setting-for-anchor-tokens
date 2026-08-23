@@ -10,7 +10,7 @@ produced by build_synset_corpus.py and writes:
 
 also writes the corresponding versions of parallel_corpus_synset.json.
 
-(!) does not work straight with Clara's build_probing_corpus.py
+(!) does not work straight with build_probing_corpus.py
 -> use punct_to_lp_bridge.py 
 
 """

@@ -20,7 +20,7 @@ usage:
 
 alternatively:
     bash run_punct_seeds.sh
- 
+
 """
  
 import argparse

@@ -1,20 +1,25 @@
 #!/usr/bin/env bash
-# Train the special-token experiment: 3 settings x N seeds.
-# All arms use the SAME corpus -- the manipulation is in the wrapping/tokenizer,
-# not the text -- so only --setting and --seed change across runs.
+# =============================================================================
+# Run the training script for the SPECIAL TOKENS experiment for 3 settings, 3 seeds each.
+
+# Corpus is shared across settings.
 set -euo pipefail
 
-# --- edit these --------------------------------------------------------------
-TRAIN=final_train_st.py            # your special-token training script
-OUT_ROOT=st_checkpoints            # output dirs become ${OUT_ROOT}_${setting}_seed${s}
-SEEDS="43 44"                    # add 45 46 for 5 seeds (recommended, effects are small)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ST_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+STRUCTURAL_DIR="$(cd "$ST_DIR/.." && pwd)"
 
-# one corpus pair for every arm
-CORPUS_A=corpus_cjk_synset.txt        # CJK
-CORPUS_B=corpus_hiragana_synset.txt   # Hiragana
-# -----------------------------------------------------------------------------
 
-# fail loudly if a corpus path is wrong, before wasting any runs
+cd "$SCRIPT_DIR"
+
+TRAIN="$SCRIPT_DIR/train_st.py"
+OUT_ROOT=st_checkpoints
+SEEDS="42 43 44" 
+
+CORPUS_A="$STRUCTURAL_DIR/punctuation/corpora/corpus_cjk_synset.txt"
+CORPUS_B="$STRUCTURAL_DIR/punctuation/corpora/corpus_hiragana_synset.txt" 
+
+# fail if a corpus path is wrong
 for f in "$CORPUS_A" "$CORPUS_B"; do
   [[ -f "$f" ]] || { echo "MISSING corpus: $f" >&2; exit 1; }
 done
