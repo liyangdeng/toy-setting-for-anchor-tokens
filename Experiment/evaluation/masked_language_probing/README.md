@@ -1,4 +1,4 @@
-# Masked Token Probing
+# linear probing
 
 Tests cross-lingual transfer directly: hold a fact out of one language's
 training data entirely, then ask a bilingual model to fill in the blank for
