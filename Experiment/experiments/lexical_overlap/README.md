@@ -38,15 +38,15 @@ For a given condition, anchor tokens are sampled randomly from the strategy's ca
 
 ## Corpus Generation
 
-`corpus/build_overlapped_corpora.py` processes the flattened English corpus (`v3_generated_sentences_adj.txt`) by computing token frequencies to produce a sorted frequency list. It filters candidate anchor tokens based on the specified frequency strategy (`high`, `mid`, or `low`) and shuffles them, and iteratively accumulates their token counts until the target overlap percentage is met, or no remaining candidate tokens fit within the target threshold. The script then maps these anchor tokens to their corresponding artificial language counterparts using the respective dictionary files (`synset_pos_artificial_cjk_edges_adj_augmented.json` and `synset_pos_artificial_hiragana_edges_adj_augmented.json`).
+`corpus/build_overlapped_corpora.py` processes the flattened English corpus (`../../../data/generate_sentences/v3_generated_sentences_adj.txt`) by computing token frequencies to produce a sorted frequency list. It filters candidate anchor tokens based on the specified frequency strategy (`high`, `mid`, or `low`) and shuffles them, and iteratively accumulates their token counts until the target overlap percentage is met, or no remaining candidate tokens fit within the target threshold. The script then maps these anchor tokens to their corresponding artificial language counterparts using the respective dictionary files (`../../../data/semantic_backbones/dict_to_artificial/dicts_synset_adj_augmented/synset_pos_artificial_cjk_edges_adj_augmented.json` and `../../../data/semantic_backbones/dict_to_artificial/dicts_synset_adj_augmented/synset_pos_artificial_hiragana_edges_adj_augmented.json`).
 
-Finally, it replaces the mapped tokens in the target artificial corpora (`corpus_cjk_synset.txt` and `corpus_hiragana_synset.txt`) to generate 15 corpus files per language (13 distinct conditions, as 0% overlap yields identical corpora across all strategies) following the naming scheme `corpus_{language}_P{int(percentage)}_{strategy}`.
+Finally, it replaces the mapped tokens in the target artificial corpora (`../../../data/corpus/corpus_cjk_synset.txt` and `../../../data/corpus/corpus_hiragana_synset.txt`) to generate 15 corpus files per language (13 distinct conditions, as 0% overlap yields identical corpora across all strategies) following the naming scheme `corpus_{language}_P{int(percentage)}_{strategy}`.
 
 ## Training
 
 `training/run_lexical_overlap.py` automates the training of Masked Language Models across all 15 experimental conditions (13 distinct conditions) by invoking `training/train_lexical_overlap.py`.
 
-The underlying `train_lexical_overlap.py` script—adapted from `Experiment/training/train_multilingual_synset.py` to maintain hyperparameter and parameter alignment—trains a small bilingual BERT-style MLM (4 layers, 128 hidden size, 4 attention heads) using strictly the MLM objective (without Next Sentence Predictio) and a shared WordLevel tokenizer built directly from the paired corpora.
+The underlying `train_lexical_overlap.py` script—adapted from `../../training/train_multilingual_synset.py` to maintain hyperparameter and parameter alignment—trains a small bilingual BERT-style MLM (4 layers, 128 hidden size, 4 attention heads) using strictly the MLM objective (without Next Sentence Predictio) and a shared WordLevel tokenizer built directly from the paired corpora.
 
 For each condition, the script concatenates the two modified target language corpora, deterministically splits them into training and validation sets, and saves the resulting datasets (`train.txt` and `dev.txt`), model checkpoints, and training plots. Additionally, it logs a comprehensive `training_metadata.json` file containing the experimental condition configuration and training evaluation metrics.
 
@@ -62,7 +62,7 @@ The tables below present results for models trained with seed 42. Visualizations
 
 ### Word Translation and Sentence Retrieval Precision
 
-`evaluation/evaluate_lexical_overlap.py` extends `Experiment/evaluation/word_trans_sent_retirev.py` to evaluate cross-lingual representation alignment at both the token and sentence level across all experimental conditions. All models were evaluated under identical conditions using a sample size of 500 parallel sentences per condition.
+`evaluation/evaluate_lexical_overlap.py` extends `../../evaluation/word_trans_sent_retirev.py` to evaluate cross-lingual representation alignment at both the token and sentence level across all experimental conditions. All models were evaluated under identical conditions using a sample size of 500 parallel sentences per condition.
 
 | Condition | Word top-1 | Word top-5 | Sentence top-1 | Sentence top-5 |
 | --- | ---: | ---: | ---: | ---: |
@@ -84,7 +84,7 @@ The tables below present results for models trained with seed 42. Visualizations
 
 ### Linear Probing Accuracy
 
-The script `linear_probe/linear_probe_lexical_overlap.py` extends `Experiment/evaluation/masked_language_probing/probing/linear_probe.py` to evaluate cross-lingual representation transfer within hidden layers. Execution across all experimental conditions is fully automated using `linear_probe/run_probe_lexical_overlap.py`.
+The script `linear_probe/linear_probe_lexical_overlap.py` extends `../../evaluation/masked_language_probing/probing/linear_probe.py` to evaluate cross-lingual representation transfer within hidden layers. Execution across all experimental conditions is fully automated using `linear_probe/run_probe_lexical_overlap.py`.
 
 Prerequisites:
 1. *Build Initial Probing Corpus*  
@@ -116,7 +116,7 @@ Prerequisites:
 
 ### LM Head Accuracy
 
-LM Head evaluation builds upon the probe corpus and models, but investigates cross-lingual transfer in the LM prediction head. `lm_head_lexical_overlap.py` remains almost unchanged in comparison to its predecessor `Experiment/evaluation/lm_head/lm_head_eval.py`. `run_lm_head_lexical_overlap.py` automates the whole process across all experimental conditions.
+LM Head evaluation builds upon the probe corpus and models, but investigates cross-lingual transfer in the LM prediction head. `lm_head_lexical_overlap.py` remains almost unchanged in comparison to its predecessor `../../evaluation/lm_head/lm_head_eval.py`. `run_lm_head_lexical_overlap.py` automates the whole process across all experimental conditions.
 
 | Condition | strict_token top-1 | strict_token top-3 | strict_concept top-1 | strict_concept top-3 | lenient top-1 | lenient top-3 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -139,7 +139,7 @@ LM Head evaluation builds upon the probe corpus and models, but investigates cro
 
 ### Significance Testing
 
-Since no monotonic trends were observed, significance testing was done exclusively using Fisher's exact test (`evaluation/significance/compare_significance.py`). The main goal was to evaluate each condition's significance in comparison to the 0% baseline, as well as to compare low-strategy conditions to conditions with a matching target percentage, since these have shown a trend of improvement compared to other strategies. Comprehensive significance testing results can be found under `significance/`.
+Since no monotonic trends were observed, significance testing was done exclusively using Fisher's exact test (`../../evaluation/significance/compare_significance.py`). The main goal was to evaluate each condition's significance in comparison to the 0% baseline, as well as to compare low-strategy conditions to conditions with a matching target percentage, since these have shown a trend of improvement compared to other strategies. Comprehensive significance testing results can be found under `significance/`.
 
 ## File and Execution Prerequisites
 
