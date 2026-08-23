@@ -141,7 +141,7 @@ def parse_word_log(text):
         row["sent_top5"] = None
     return row
 
-# Function to plot metrics and save the plots
+# Function to plot metrics and save the plot
 def plot_metrics(data_rows, output_dir):
     """
     Plots Word Translation and Sentence Retrieval top-1 precision.
@@ -297,7 +297,7 @@ def main():
     write_json(args.output_dir / "lexical_overlap_evaluation.json", {"rows": rows})
     write_csv(args.output_dir / "lexical_overlap_evaluation.csv", rows)
 
-    # Plot final charts
+    # Plot final chart
     plot_metrics(rows, args.output_dir)
     print(f"\nEvaluation pipeline finished successfully! Results stored in {args.output_dir}")
 
